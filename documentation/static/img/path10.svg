@@ -4,41 +4,18 @@
    id="Layer_1"
    x="0px"
    y="0px"
-   width="100%"
-   viewBox="0 0 496 496"
+   width="245803.75"
+   viewBox="0 0 245803.75 245803.75"
    enable-background="new 0 0 496 496"
    xml:space="preserve"
-   sodipodi:docname="code&amp;co-logo.svg"
-   inkscape:export-filename="code&amp;co-logoSimpleRound.svg"
-   inkscape:export-xdpi="300"
-   inkscape:export-ydpi="300"
-   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   height="245803.75"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg"><defs
-   id="defs10" /><sodipodi:namedview
-   id="namedview10"
-   pagecolor="#ffffff"
-   bordercolor="#000000"
-   borderopacity="0.25"
-   inkscape:showpageshadow="2"
-   inkscape:pageopacity="0.0"
-   inkscape:pagecheckerboard="0"
-   inkscape:deskcolor="#d1d1d1"
-   inkscape:zoom="2.3366935"
-   inkscape:cx="248"
-   inkscape:cy="145.29077"
-   inkscape:window-width="2560"
-   inkscape:window-height="1355"
-   inkscape:window-x="1912"
-   inkscape:window-y="-8"
-   inkscape:window-maximized="1"
-   inkscape:current-layer="Layer_1" />
+   id="defs10" />
 <path
    id="path11"
    style="fill:#ffffff;stroke-width:1.19627"
-   d="M 495.78603,248 A 247.78603,247.78603 0 0 1 248,495.78603 247.78603,247.78603 0 0 1 0.213974,248 247.78603,247.78603 0 0 1 248,0.213974 247.78603,247.78603 0 0 1 495.78603,248 Z" />
+   d="M 389.65493,141.8689 A 247.78603,247.78603 0 0 1 141.8689,389.65493 247.78603,247.78603 0 0 1 -105.91713,141.8689 247.78603,247.78603 0 0 1 141.8689,-105.91713 247.78603,247.78603 0 0 1 389.65493,141.8689 Z" />
 
 
 
@@ -49,7 +26,7 @@
 
 <g
    id="g11"
-   transform="matrix(1.5996924,0,0,1.5996924,-153.56517,-71.598141)"><path
+   transform="matrix(1.5996924,0,0,1.5996924,-259.69627,-177.72924)"><path
      fill="#000000"
      opacity="1"
      stroke="none"
@@ -64,8 +41,5 @@
      opacity="1"
      stroke="none"
      d="m 301.77972,165.13139 c 2.452,-3.46978 5.37177,-5.03361 9.22293,-3.69464 3.30329,1.14847 5.1756,3.59302 5.22623,7.12819 0.0477,3.32954 -1.7135,5.64395 -4.6799,7.01608 -2.84937,1.31803 -5.5961,0.87163 -7.90558,-1.12373 -2.79983,-2.41893 -3.61453,-5.46652 -1.86368,-9.3259 z"
-     id="path10"
-     inkscape:export-filename=".\path10.svg"
-     inkscape:export-xdpi="30"
-     inkscape:export-ydpi="30" /></g>
+     id="path10" /></g>
 </svg>

@@ -10,9 +10,9 @@ import { themes as prismThemes } from "prism-react-renderer";
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "My Site",
-  tagline: "Dinosaurs are cool",
-  favicon: "img/favicon.ico",
+  title: "Code&Co",
+  tagline: "Documentación general",
+  favicon: "img/code&co-logoSimpleRound.ico",
 
   themes: ["@docusaurus/theme-mermaid"],
   // In order for Mermaid code blocks in Markdown to work,
@@ -86,7 +86,7 @@ const config = {
         title: "Code&Co",
         logo: {
           alt: "Code&Co Logo",
-          src: "img/code&co-logo.svg",
+          src: "img/code&co-logoSimpleRound.svg",
         },
         items: [
           {
@@ -159,7 +159,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Code&Co. Built with Docusaurus.`,
       },
       prism: {
         theme: prismThemes.github,
