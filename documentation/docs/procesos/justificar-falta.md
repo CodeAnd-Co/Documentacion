@@ -5,8 +5,15 @@ sidebar_position: 2
 
 # Justificación de Faltas
 
-**Última actualización:** 23 de febrero de 2025
+**Última actualización:** 24 de febrero de 2025
 
+---
+
+### Autores
+| Nombre                            | Rol       |
+| --------------------------------- | --------- |
+| Daniel Queijeiro Albo             | Autor     |
+| Ángel Mauricio Ramírez Herrera    | Autor     |
 ---
 
 ### Objetivo

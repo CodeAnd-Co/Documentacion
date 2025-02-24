@@ -5,9 +5,17 @@ sidebar_position: 1
 
 # Juntas Grupales
 
-**Última actualización:** 23 de febrero de 2025
+**Última actualización:** 24 de febrero de 2025
 
 ---
+
+### Autores
+| Nombre                            | Rol       |
+| --------------------------------- | --------- |
+| Daniel Queijeiro Albo             | Autor     |
+| Ángel Mauricio Ramírez Herrera    | Autor     |
+---
+
 
 ### Objetivo
 
