@@ -5,7 +5,7 @@ sidebar_position: 2
 
 # Justificación de Faltas
 
-**Última actualización:** 24 de febrero de 2025
+**Última actualización:** 27 de febrero de 2025 por Diego y Daniel.
 
 ---
 
@@ -14,6 +14,7 @@ sidebar_position: 2
 | --------------------------------- | --------- |
 | Daniel Queijeiro Albo             | Autor     |
 | Ángel Mauricio Ramírez Herrera    | Autor     |
+| Diego Isaac Fuentes Juvera        | Autor     |
 ---
 
 ### Objetivo
@@ -35,7 +36,8 @@ sidebar_position: 2
 | --------------------- | ----------------------------------------------------------------------------------------- | -------------------|
 | **Notificación**      | Informar con 12 horas de anticipación al Comité de Ética sobre la ausencia si es posible  | Colaborador        |
 |                       | Comunicar con 12 horas de anticipación la falta al Team Leader                            | Colaborador        |
-| **Mantenerse al día** | Revisar lo realizado en su ausencia y coordinarse con el equipo                           | Colaborador        |
+| **Previo a la sesión**| Reasignar tareas necesarias a otros colaboradores                                         | Team Leader        |
+| **Mantenerse al día** | Revisar lo realizado en su ausencia y coordinarse con el Team Leader para reponer actividades | Team Leader/Colaborador |
 |                       | Asegurar que no haya retrasos en sus responsabilidades                                    | Colaborador        |
 | **Revisión**          | Verificar la justificación presentada                                                     | Comité de Ética    |
 |                       | Aprobar o rechazar la justificación según criterios                                       | Comité de Ética    |
