@@ -27,10 +27,9 @@ Garantizar la calidad de cada release
 | Fase          | Descripción | Responsables |
 |--------------|------------|--------------|
 | **Preparación** | Identificar flujo alterno de la función o método a probar. | Autor del caso de uso |
-|  | Realizar un árbol de decisión. | Autor del caso de uso |
 |  | Determinar los casos de prueba clave (datos de entrada, salida esperada, salida recibida). | Autor del caso de uso |
 |  | Realizar una matriz de casos de prueba con los datos del paso anterior. | Autor del caso de uso |
-| **Construcción** | Codificar los casos de prueba definidos en la matriz, utilizando ellos frameworks definidos. | Autor de la prueba |
+| **Construcción** | Codificar los casos de prueba definidos en la matriz, utilizando los frameworks definidos. | Autor de la prueba |
 | **Ejecución** | Ejecutar las pruebas localmente. | Autor de la prueba |
 | **Revisión y retroalimentación** | Analizar los resultados, revisando las pruebas exitosas y no exitosas. | Autor de la prueba |
 |  | En caso de algún caso no exitoso, informar al autor del caso de uso. | Autor de la prueba |
