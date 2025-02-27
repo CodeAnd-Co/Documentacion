@@ -8,8 +8,10 @@ sidebar_position: 1
 **Última actualización:** 26 de febrero de 2025  
 **Versión:** 1.0
 
-## Autor
-- Emiliano Gomez Gonzalez   
+### Autores
+| Nombre                            | Rol       |
+| --------------------------------- | --------- |
+| Emiliano Gomez Gonzalez             | Autor     | 
 
 ## Objetivo  
 Transformar historias de usuario en una definición clara de un Producto Mínimo Viable (MVP), asegurando que el producto inicial sea funcional, viable y alineado con las necesidades del usuario.
