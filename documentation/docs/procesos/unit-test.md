@@ -8,9 +8,13 @@ sidebar_position: 1
 **Última actualización:** 24 de febrero de 2025  
 **Version:** 1.0
 
-## Autores  
-- Emiliano Gómez González  
-- Ian Julián Estrada Castro  
+
+### Autores
+| Nombre                            | Rol       |
+| --------------------------------- | --------- |
+| Emiliano Gomez Gonzalez            | Autor     |
+| Ian Julián Estrada Castro   | Autor     |
+---
 
 ## Objetivo  
 Garantizar la calidad de cada release  
