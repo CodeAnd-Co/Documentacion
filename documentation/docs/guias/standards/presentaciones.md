@@ -6,6 +6,7 @@ sidebar_position: 2
 # Estándar de Presentaciones
 
 **Última actualización:** 27 de febrero de 2025
+
 **Autor:** Juan Eduardo Rosas Cerón - A01710168
 
 ## 1. Objetivo
