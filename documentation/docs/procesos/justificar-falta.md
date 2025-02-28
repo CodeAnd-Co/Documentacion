@@ -1,6 +1,6 @@
 ---
 title: Justificación de Faltas
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 # Justificación de Faltas
