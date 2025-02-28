@@ -1,6 +1,6 @@
 ---
 title: Proceso de Definición de MVP  
-sidebar_position: 1
+sidebar_position: 7
 ---
 
 # Proceso de Definición de MVP
