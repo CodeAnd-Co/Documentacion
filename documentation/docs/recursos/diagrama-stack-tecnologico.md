@@ -29,10 +29,8 @@ graph TD
     D -->|Tipo de DB| D1[SQL: PostgreSQL, MySQL / NoSQL: MongoDB, Firebase]
     
     %% Infraestructura y DevOps
-    E -->|Contenedores| E1[Docker / Kubernetes]
     E -->|Hosting| E2[AWS / GCP / Azure / Vercel / Netlify]
     E -->|CI/CD| E3[GitHub Actions / Jenkins / GitLab CI]
-    E -->|Monitoreo| E4[Prometheus / Grafana / New Relic]
 
     %% Integraciones y APIs
     F -->|Tipo de API| F1[REST / GraphQL / WebSockets]
