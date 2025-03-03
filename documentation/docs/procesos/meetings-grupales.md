@@ -5,7 +5,7 @@ sidebar_position: 2
 
 # Juntas Grupales
 
-**Última actualización:** 24 de febrero de 2025
+**Última actualización:** 3 de marzo de 2025
 
 ---
 
@@ -14,6 +14,7 @@ sidebar_position: 2
 | --------------------------------- | --------- |
 | Daniel Queijeiro Albo             | Autor     |
 | Ángel Mauricio Ramírez Herrera    | Autor     |
+| Valeria Zúñiga Mendoza    | Autor     |
 ---
 
 
@@ -31,23 +32,24 @@ sidebar_position: 2
 
 ### Proceso
 
-| Fase              | Descripción                                                   | Responsables           | 
-| ----------------- | ------------------------------------------------------------- | ---------------------- |
-| **Preparación**   | Definir el tema y la agenda de la junta                      | Presentadores de la junta |
-|                   | Enviar la convocatoria con al menos 24 horas de anticipación | Presentadores de la junta |
-|                   | Avisar 10 minutos antes del inicio para confirmar asistencia  | Presentadores de la junta |
-|                   | Llegar o conectarse al espacio asignado                       | Todos                  |
-|                   | Esperar 5 minutos de tolerancia para iniciar                  | Todos                  |
-|                   | Registrar la asistencia de los presentes                      | Presentadores de la junta |
-|                   | Establecer un temporizador con el tiempo acordado             | Presentadores de la junta |
-| **Presentación**  | Comunicar el objetivo de la junta                             | Presentadores de la junta |
-|                   | Abordar los temas establecidos en la agenda                   | Presentadores de la junta |
-| **Diálogo**       | Brindar espacio a los miembros para expresar ideas y dudas    | Presentadores de la junta |
-|                   | Tomar nota de la retroalimentación recibida en una minuta     | Presentadores de la junta |
-| **Cierre**        | Resumir los acuerdos alcanzados                               | Presentadores de la junta |
-|                   | Definir próximos pasos y responsables                         | Presentadores de la junta |
-|                   | Finalizar la junta dentro del tiempo establecido              | Presentadores de la junta |
----
+| Fase              | Descripción                                                   | Responsables           | Meta y práctica específica del CMMI |
+| ----------------- | ------------------------------------------------------------- | ---------------------- | ----------------------------------- |
+| **Preparación**  | Enviar encuesta para consultar los temas de la junta.                      | Presentadores de la junta | RD, SP 1.1 (Recopilación de necesidades y expectativas) |
+| | Llenar la plantilla de juntas efectivas: <u>*[Plantilla](https://docs.google.com/document/d/1kQ_WNJF6ZAqBEqnu3a1I7ls6aLCqXvPdEHlpKwQGfEM/edit?usp=drive_link)*</u> | Presentadores de la junta | OPD, SP 1.3 (Implementación de procesos organizacionales) |
+| | Definir el objetivo y la agenda de la junta                      | Presentadores de la junta | PMC, SP 1.1 (Planificación de monitoreo y control) |
+| | Enviar la convocatoria con al menos 12 horas de anticipación, indicando horario y lugar | Presentadores de la junta | PMC, SP 1.2 (Definir compromisos con el equipo) |
+| | Llegar o conectarse al espacio asignado                       | Todos                  | OPD, SP 1.5 (Garantizar el cumplimiento de procesos organizacionales) |
+| | Esperar 5 minutos de tolerancia para iniciar                  | Todos                  | PMC, SP 1.2 (Seguimiento de compromisos del equipo) |
+| | 15 minutos después del horario definido, registrar la asistencia de los presentes | Presentadores de la junta | MA, SP 1.1 (Registro de datos para medición y análisis) |
+| | Establecer un temporizador con el tiempo acordado             | Presentadores de la junta | PMC, SP 1.3 (Monitoreo del progreso y desempeño) |
+| **Presentación**  | Comunicar el objetivo de la junta                             | Presentadores de la junta | PP, SP 1.1 (Establecimiento de objetivos del proyecto) |
+| | Abordar los temas establecidos en la agenda                   | Presentadores de la junta | PMC, SP 1.3 (Monitoreo del estado del proyecto) |
+| **Diálogo**       | Brindar espacio a los miembros para expresar ideas y dudas    | Presentadores de la junta | RD, SP 1.1 (Recopilación de necesidades y expectativas) |
+| | Tomar nota de la retroalimentación recibida en una minuta     | Presentadores de la junta | VER, SP 1.3 (Registro y análisis de revisiones) |
+| **Cierre**        | Resumir los acuerdos alcanzados                               | Presentadores de la junta | PMC, SP 1.5 (Evaluación de avances y resultados) |
+| | Definir próximos pasos y responsables                         | Presentadores de la junta | PP, SP 1.5 (Identificación de tareas futuras) |
+| | Finalizar la junta dentro del tiempo establecido              | Presentadores de la junta | PMC, SP 1.6 (Gestión del cumplimiento del cronograma) |
+
 
 ### Salidas
 
