@@ -5,7 +5,22 @@ sidebar_position: 1
 
 # Requisitos
 
-**Última actualización:** 16 de febrero de 2025
+**Última actualización:** 03 de marzo de 2025
+
+### **Proveedores de Requisitos**  
+   - **Internos**: Personas dentro de Code & Co.  
+   - **Externos**: Cliente.  
+
+### **Lista de Proveedores de Requisitos**  
+
+| Proveedor | Rol | Autoridad | Tipo de Requisitos | Método de Comunicación |
+|-----------|-----|-----------|--------------------|------------------------|
+| Product Owner | Interno | Alta | Funcionales y de negocio | Reuniones diarias en equipo, Whatsapp y Discord.|
+| Juan Pablo García (Socio Formador) | Externo | Alta | Funcionales, de negocio y UX | Reuniones 2 veces por semana, Whatsapp y Correo |
+| Architecture Owner| Interno | Alta | No funcionales, de información | Reuniones diarias en equipo, Whatsapp y Discord.  |
+| UX/UI | Interno | Alta | de Interfaz | Reuniones diarias en equipo, Whatsapp y Discord. |
+| Team Members | Interno | Media | Funcionales y No funcionales | Reuniones diarias en equipo, Whatsapp y Discord. |
+
 
 ## Requisitos Funcionales
 
