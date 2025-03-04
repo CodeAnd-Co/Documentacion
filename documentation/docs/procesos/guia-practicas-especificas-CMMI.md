@@ -10,9 +10,10 @@ sidebar_position: 1
 ---
 
 ### Autores
-| Nombre                            | Rol       |
-| --------------------------------- | --------- |
-| Valeria Zúñiga Mendoza            | Autor     |
+| Nombre                            | Rol         |
+| --------------------------------- | ----------- |
+| Valeria Zúñiga Mendoza            | Autor       |
+| Diego Isaac Fuentes Juvera        | modificador |
 
 ---
 
@@ -34,7 +35,7 @@ sidebar_position: 1
 | **Lectura y comprensión**   | Leer la práctica en CMMI en: <u>*[CMMI® para Desarrollo, Versión 1.3](https://insights.sei.cmu.edu/documents/87/2010_019_001_28782.pdf)*</u>. Resumir la práctica y añadirla en el documento: <u>*[Comprendiendo las áreas de proceso del CMMI](https://docs.google.com/document/d/19lSwMuoRpzJko4hnMJNj_W6A81tCjo35x_u47YBxRyw/edit?usp=sharing)*</u>. | OPF, SP 1.1 (Establecer procesos organizacionales)|
 | **Análisis**               | Determinar si la práctica requiere una actividad dentro de un proceso existente o un proceso nuevo completo. | OPF, SP 1.2 (Desarrollar procesos organizacionales)|
 | **Investigación**          | Verificar si la práctica ya está siendo implementada. | PMC, SP 1.2 (Recopilar y analizar métricas de desempeño)|
-| **Documentación**          | Hacer la guía del proceso o integrar la actividad en un proceso ya existente. | OPD, SP 1.4 (Documentar procesos organizacionales) |
+| **Documentación**          | Hacer la guía del proceso o integrar la actividad en un proceso ya existente dentro de Docusaurus.  | OPD, SP 1.4 (Documentar procesos organizacionales) |
 | **Mapa de procesos**       | Si ya está implementado y es un proceso, añadirlo al mapa de procesos: <u>*[Mapa de procesos](https://docs.google.com/drawings/d/18ZwTSSonobQVJMhQZP2_13EgN5SdL2d8qCYpkC7VBFI/edit?usp=sharing)*</u>| OPF, SP 1.5 (Implementar mejoras en los procesos organizacionales)|
 | **Implementación**         | Si no está implementado y aún no es un proceso formal, es un experimento. Comentar al departamento en “Anuncios” en Discord en qué guía de proceso se encuentra para que empiecen a implementarlo. | PMC, SP 1.2 (Recopilar y analizar métricas de desempeño)|
 | **Registro y seguimiento** | Hacer el registro completando todos los campos: <u>*[Registro de procesos](https://docs.google.com/spreadsheets/d/18SHmBFPBfMzNBGKS2MCTInfWZjIuCaOdzfeRAsxTqlY/edit?usp=sharing)*</u>. | MA, SP 1.3 (Monitorear métricas de procesos)|
