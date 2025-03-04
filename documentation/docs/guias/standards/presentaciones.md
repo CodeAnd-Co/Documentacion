@@ -11,9 +11,9 @@ sidebar_position: 2
 
 ## 1. Objetivo
 
-Definir un conjunto de buenas prácticas y lineamientos para la elaboración y ejecución de presentaciones dentro de nustro departamento, con el fin de asegurar claridad, profesionalismo y efectividad en la comunicación con los Stakeholders.
+Definir buenas prácticas y lineamientos para la elaboración y ejecución de presentaciones en nuestro departamento, con el fin de asegurar claridad, profesionalismo y efectividad en la comunicación con los Stakeholders.
 
-## 2. Formato de Presentaciónes
+## 2. Formato de Presentaciones
 
 ### 2.1. Herramientas recomendadas
 - PowerPoint
@@ -26,7 +26,7 @@ Cada presentación debe seguir la siguiente estructura:
 
 1. **Portada**
    - Título de la presentación
-   - Nombre del presentador/es
+   - Nombre del o los presentadores
    - Fecha en que se va a presentar
    - Nombre del equipo de trabajo
    - Logo del departamento
@@ -39,11 +39,12 @@ Cada presentación debe seguir la siguiente estructura:
    - Justificación del tema a tratar
 
 4. **Desarrollo**
-   - Slides con puntos clave
+   - Diapositivas con puntos clave
    - Información concisa
-   - Imagenes
+   - Imágenes representativas o relevantes
    - Uso de gráficos, diagramas y tablas si es necesario
-   - Evitar bloques largos de texto (más de 100 palabras)
+   - Evitar bloques largos de texto (más de 30 palabras)
+   - Evitar usar más de 8 cuadros de texto por diapositiva
 
 5. **Conclusiones**
    - Resumen de los puntos clave
@@ -66,13 +67,13 @@ Cada presentación debe seguir la siguiente estructura:
   - **Rosa:** feminidad, dulzura, juventud
 
 ### 3.2. Tipografía
-- Usar Arial o Times new roman
+- Usar Arial o Times New Roman
 - Tamaño mínimo de 30 pts para texto y 40 pts para títulos
 - Evitar uso excesivo de negritas, cursivas y subrayados
 - Usar un color de letra que contraste con el fondo
 
 ### 3.3. Imágenes
-- Preferir imagenes Png con fondo transparente
+- Preferir imágenes PNG con fondo transparente
 
 ## 4. Prácticas de Presentación
 
@@ -91,4 +92,4 @@ Cada presentación deberá ser evaluada por el Presentation Owner correspondient
 - Habilidad del presentador al presentar
 - Cumplimiento en los tiempos
 
-Procurando siempre cumplir con este estándar
+Siempre se debe procurar cumplir con este estándar
