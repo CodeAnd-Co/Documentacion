@@ -1,5 +1,5 @@
 ---
-title: Recuperar de Asistencias
+title: Recuperar Asistencias
 sidebar_position: 8
 ---
 
