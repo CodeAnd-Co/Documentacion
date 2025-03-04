@@ -5,7 +5,7 @@ sidebar_position: 3
 
 # Justificación de Faltas
 
-**Última actualización:** 27 de febrero de 2025 por Diego y Daniel.
+**Última actualización:** 3 de marzo de 2025 por Nicolas.
 
 ---
 
@@ -15,6 +15,7 @@ sidebar_position: 3
 | Daniel Queijeiro Albo             | Autor     |
 | Ángel Mauricio Ramírez Herrera    | Autor     |
 | Diego Isaac Fuentes Juvera        | Autor     |
+| Nicolas Hood Figueroa             | Autor     |
 ---
 
 ### Objetivo
@@ -24,10 +25,7 @@ sidebar_position: 3
 
 ### Entradas
 
-1. Fecha de la falta
-2. Motivo de la falta
-3. Evidencia justificativa (si aplica)
-4. Notificación previa
+1. [Formato de Justificación de faltas](https://docs.google.com/document/d/1iaZjdpeGxCJ-D3fAqPj4vEzI2uxdseNqC2Qj9vblE5I/edit?usp=sharing)
 ---
 
 ### Proceso
@@ -36,6 +34,7 @@ sidebar_position: 3
 | --------------------- | ----------------------------------------------------------------------------------------- | -------------------|
 | **Notificación**      | Informar con 12 horas de anticipación al Comité de Ética sobre la ausencia si es posible  | Colaborador        |
 |                       | Comunicar con 12 horas de anticipación la falta al Team Leader                            | Colaborador        |
+|                       | Presentar el formato de justificaciones de faltas debidamente completado en la carpeta [Justificación de faltas](https://drive.google.com/drive/folders/1XTXSAhKDnb3mBSdOwFK179TPhYcSdHsi?usp=drive_link)                            | Colaborador        |
 | **Previo a la sesión**| Reasignar tareas necesarias a otros colaboradores                                         | Team Leader        |
 | **Mantenerse al día** | Revisar lo realizado en su ausencia y coordinarse con el Team Leader para reponer actividades | Team Leader/Colaborador |
 |                       | Asegurar que no haya retrasos en sus responsabilidades                                    | Colaborador        |
@@ -46,7 +45,7 @@ sidebar_position: 3
 ---
 
 ### Salidas
-1. Registro de justificación de falta
+1. Documento con el registro de justificación de falta
 2. Resolución de la justificación
 3. Notificación al colaborador
 ---
