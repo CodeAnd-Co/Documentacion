@@ -95,23 +95,23 @@ Cada presentación deberá ser evaluada por el Presentation Owner correspondient
 
 ## 6. Duración de la Presentación
 
-Cada presentación deberá tener una duración dependiendo en el tipo de información mostrada con base en:
+Cada presentación deberá tener una duración dependiendo del tipo de información mostrada con base en:
 - Presentación informativa: ~5-10 minutos
 - Propuestas para el proyecto: ~10 -20 minutos
-- Reportes para avances: ~5 - 15 minutos
+- Reportes de avances: ~5 - 15 minutos
 - Capacitaciones: ~20 - 45 minutos
 
 ## 7. Uso de Fuentes y Citados
 
-Cada presentación que uso o cite algún material ajeno o a que no sea de su autoría, debe seguir los siguiente alineamientos:
+Cada presentación que use o cite algún material ajeno o que no sea de su autoría, deberá seguir los siguientes alineamientos:
 
 - Citar en formato APA 7
 - Usar fuentes de información verídicas y variadas
 - Incluir las citas en una diapositiva al final de la presentación
 
-## 8. Preparación Previas a una presentación
+## 8. Preparación Previa a una presentación
 
-Antes de cada presentación se debe asegurar los siguientes alineamientos:
+Antes de cada presentación se deberá asegurar los siguientes alineamientos:
 
 - Verificar la legibilidad de la presentación
 - Verificar si se entiende el audio (si aplica)
