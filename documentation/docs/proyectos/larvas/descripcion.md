@@ -5,11 +5,12 @@ sidebar_position: 1
 
 # Descripción General del Proyecto
 
-**Última actualización:** 16 de febrero de 2025
+**Última actualización:** 05 de marzo de 2025
 
-**Nombre de la Empresa:** Escribe el nombre aquí
+**Nombre de la Empresa:** Tech-nebrios
 
 ## Análisis de Necesidades 😑
+Falta de optimización en el flujo de trabajo, generando gastos innecesarios
 
 ### Problemas Actuales
 
