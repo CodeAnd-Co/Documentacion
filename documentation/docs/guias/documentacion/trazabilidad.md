@@ -7,17 +7,26 @@ sidebar_position: 5
 
 **Última actualización:** 3 de marzo de 2025  
 
-Para prevenir problemas por cambios en documentos donde trabajan varias personas simultáneamente, así como para contar con un sistema de trazabilidad de cambios, se propone implementar el siguiente sistema de control de versiones.
+## **Autores**  
+
+| **Nombre**              | **Rol**   |
+|-------------------------|----------|
+| Rommel Toledo C.       | Autor    |
+| Daniel Contreras C.    | Autor    |
+
+---
+
+Se implementa el siguiente sistema de control de versiones para prevenir problemas por cambios en documentos donde trabajan varias personas simultáneamente.
 
 ## **1. Control de Versiones en Documentos**  
 
-Es recomendable añadir al final de cada documento un apartado titulado **“Control de Versiones”**, el cual debe incluir:
+Se recomienda añadir al final de cada documento un apartado titulado **“Control de Versiones”** que incluya:
 
 - Un registro de cada versión.  
 - El nombre de los colaboradores.  
 - Un listado de los cambios realizados.  
 
-Esto permitirá un mejor seguimiento de las modificaciones y asegurará que cada actualización quede documentada.
+Esto permite un mejor seguimiento de las modificaciones y asegura que cada actualización quede documentada.
 
 :::tip Beneficio  
 El uso de un control de versiones evita confusiones y facilita una colaboración eficiente en documentos compartidos.
@@ -25,7 +34,7 @@ El uso de un control de versiones evita confusiones y facilita una colaboración
 
 ## **2. Convención para el Manejo de Versiones**  
 
-Se sugiere utilizar la siguiente convención para la numeración de las versiones de los documentos:
+Se utiliza la siguiente convención para enumerar las versiones:
 
 | **Tipo de Versión**  | **Descripción** |
 |----------------------|----------------|
@@ -50,4 +59,6 @@ Se sugiere utilizar la siguiente convención para la numeración de las versione
 **Cambios realizados:**  
 - Se corrigió la gramática y ortografía del documento.  
 
-Siguiendo los pasos mencionados en está guía asegurarás una gestión más limpia y eficiente de cambios hechos en la documentación.
+---
+
+Siguiendo los pasos mencionados en esta guía, asegurarás una gestión más limpia y eficiente de cambios hechos en la documentación.
