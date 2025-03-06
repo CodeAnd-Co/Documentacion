@@ -94,7 +94,9 @@ Los requisitos no funcionales establecen las expectativas en términos de tiempo
 - El sistema debe ser accesible desde aplicaciones móviles (iOS)
 
 **Mantenibilidad**  
-- La documentación del código debe seguir el estándar establecido. [Estándar](https://docs.google.com/document/d/1RPutuY5q3qYghD482fGrDR-I2wly3_SeheZYyDsCkwk/edit?tab=t.0#heading=h.1z7xoikh12wg)
+- La documentación del código debe seguir el estándar establecido
+  - [Estándar](https://docs.google.com/document/d/1RPutuY5q3qYghD482fGrDR-I2wly3_SeheZYyDsCkwk/edit?tab=t.0#heading=h.1z7xoikh12wg)
+- El código debe estar documentado adecuadamente utilizando comentarios explicativos y convenciones de documentación estándar para facilitar la comprensión por parte de otros desarrolladores.
 - El código debe ser acompañado por pruebas unitarias con al menos un 80% de cobertura.
 
 **Escalabilidad**  
@@ -103,3 +105,7 @@ Los requisitos no funcionales establecen las expectativas en términos de tiempo
 **Seguridad**  
 - Los datos sensibles, como contraseñas, deben estar cifrados utilizando una librería o método confiables.
 - El sistema debe realizar copias de seguridad de datos automáticas cada 7 días debido a que es muy importante realizar respaldos.
+
+**Interoperabilidad**
+- El sistema debe ser capaz de integrarse con servicios de almacenamiento en la nube AWS debido a que el cliente cuenta con este servicio.
+- El sistema debe ser capaz de intercambiar datos con aplicaciones de terceros mediante APIs RESTful, utilizando el estándar JSON para el formato de intercambio.
