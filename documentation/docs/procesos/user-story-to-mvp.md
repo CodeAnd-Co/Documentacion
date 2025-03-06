@@ -6,12 +6,13 @@ sidebar_position: 7
 # Proceso de Definición de MVP
 
 **Última actualización:** 06 de marzo de 2025  
-**Versión:** 2.0
+**Versión:** 2.1
 
 ## Autores  
 | Nombre                  | Rol   |
 |-------------------------|-------|
 | Emiliano Gómez González | Autor |
+| Juan Pablo Chávez Leal  | Modificador|
 
 ## Objetivo  
 Transformar historias de usuario en una definición clara de un Producto Mínimo Viable (MVP), asegurando que el producto inicial sea funcional, viable y alineado con las necesidades del usuario.
@@ -34,7 +35,9 @@ Transformar historias de usuario en una definición clara de un Producto Mínimo
 | | Definir los criterios de éxito del MVP. | Equipo de Producto | RD, SP 3.3 (Analizar requisitos) |
 | | Planificar las fases de desarrollo y lanzamiento. | Equipo de Producto | PP, SP 2.1 (Establecer el presupuesto y el cronograma) |
 | **Validación con Stakeholders** | Presentar la propuesta del MVP a clientes y equipo técnico. | Equipo de Producto | VAL, SP 2.1 (Realizar la validación de productos o componentes de productos seleccionados) |
+| | Presentar la Especificación de Requerimientos de Software a clientes y asegurar la firma de validación del socio.| Equipo de Producto | PP, SP 3.3 (Obtener el compromiso con el plan.)
 | | Ajustar según retroalimentación sin perder el enfoque de viabilidad. | Equipo de Producto |  |
+
 
 ## Salida   
 1. Lista final de funcionalidades esenciales  
