@@ -4,22 +4,12 @@ sidebar_position: 15
 ---
 
 # Empatizar con el socio formador: Clave para el éxito del proyecto
----
-**Notas compartidas en Discord:** 11 de febrero de 2025  
-**Última actualización:** 06 de marzo de 2025  
-
-| Nombre                            | Rol       |
-| --------------------------------- | --------- |
-| Paola María Garrido Montes        | Autor     |
----
 
 ### ¿Qué significa realmente empatizar con el socio formador?
-
 Empatizar con el socio formador va más allá de escuchar sus expectativas y desafíos actuales. El objetivo de esta etapa inicial es comprender profundamente sus necesidades, ya que esto es fundamental para diseñar soluciones efectivas y centradas en el usuario final.
 
 ### Herramientas y técnicas para empatizar
-
-- **Mapa de actores:**  
+- **Mapa de Actores:**  
   Representa visualmente todas las partes interesadas en el proyecto, identificando quiénes son los actores clave, sus roles y cómo interactúan dentro del sistema. Esto es esencial para alinear las expectativas y definir relaciones de colaboración efectivas.
 
 - **Storytelling:**  
@@ -34,9 +24,8 @@ Empatizar con el socio formador va más allá de escuchar sus expectativas y des
 - **Grupo de control:**  
   Reúne a un grupo de personas para debatir sobre el proyecto, lo que permite descubrir necesidades no satisfechas y obtener una retroalimentación directa.
 
-- **Mapas del pasado, presente y futuro:**  
+- **Mapas del Pasado, Presente y Futuro:**  
   Ayudan a visualizar la evolución de un producto o servicio, identificando patrones y tendencias que guiarán el diseño hacia soluciones más innovadoras.
 
 ### De la empatía a las soluciones
-
 Al utilizar las herramientas y técnicas anteriores, no solo se define el problema del cliente y del usuario final, sino que se construyen soluciones con un enfoque de valor. En última instancia, empatizar con el socio asegura que cada acción tomada esté alineada con sus objetivos y se traduzca en un impacto positivo de manera tangible.
