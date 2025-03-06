@@ -88,3 +88,27 @@ Propuestas alternativas:
         - **Consumo de recursos**: El uso intensivo de XML y el incremento en el número de conexiones pueden llevar a un mayor consumo de procesador y memoria.
 
 ## Desgloce de arquitectura
+
+**Frontend**: Flutter (Dart)
+**Backend**: 
+**Servicios AWS**: RDS, S3, EC2
+
+## Frontend
+
+### Tecnologías
+
+### Características
+
+## Backend
+
+### Tecnologías
+
+### Características
+
+## Endpoints principales
+
+## Servicios de infraestructura
+
+## Documentación de código
+
+## Beneficios de la arquitectura seleccionada
