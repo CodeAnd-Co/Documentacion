@@ -1,18 +1,18 @@
 ---
-title: "RF3: Usuario cierra sesión."  
-sidebar_position: 4
+title: "RF9: Usuario selecciona tractores a analizar."  
+sidebar_position: 10
 ---
 
-# RF3: Usuario cierra sesión.
+# RF9: Usuario selecciona tractores a analizar.
 
-**Última actualización:** 03 de marzo de 2025
+**Última actualización:** 05 de marzo de 2025
 
 ### Historia de Usuario
 
-Como usuario, quiero cerrar mi sesión para dejar de tener acceso al sistema.
+Como usuario, quiero seleccionar los tractores a analizar para ...
 
   **Criterios de Aceptación:**
-  - El sistema debe garantizar que una vez el usuario cierre sesión ni el sistema ni los datos del usuario sean accesibles.
+  - 
 
 ---
 

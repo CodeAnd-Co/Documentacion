@@ -1,18 +1,18 @@
 ---
-title: "RF3: Usuario cierra sesión."  
-sidebar_position: 4
+title: "RF6: Usuario selecciona el rancho a analizar."  
+sidebar_position: 7
 ---
 
-# RF3: Usuario cierra sesión.
+# RF6: Usuario selecciona el rancho a analizar.
 
-**Última actualización:** 03 de marzo de 2025
+**Última actualización:** 04 de marzo de 2025
 
 ### Historia de Usuario
 
-Como usuario, quiero cerrar mi sesión para dejar de tener acceso al sistema.
+Como usuario, quiero consultar los datos, gráficas o generar reportes del rancho seleccionado.
 
   **Criterios de Aceptación:**
-  - El sistema debe garantizar que una vez el usuario cierre sesión ni el sistema ni los datos del usuario sean accesibles.
+  - 
 
 ---
 
