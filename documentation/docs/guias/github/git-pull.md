@@ -86,6 +86,7 @@ Implementar estas prácticas garantizará una gestión efectiva de las solicitud
 
 <!--- Antes de hacer la solicitud, repasa los puntos siguientes y pon una `x` en todas las cajas que aplican -->
 
+- [ ] He determinado que los cambios no tienen un impacto negativo en el sistema
 - [ ] Ortografía y gramática correctas
 - [ ] Formato en Markdown consistente con el resto de la documentación
 - [ ] Enlaces y referencias son funcionales
