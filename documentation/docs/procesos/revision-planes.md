@@ -1,74 +1,59 @@
-# Procedimiento para la Revisión de Planes de Proyecto
+---
+title: Revisión de Planes de Proyecto  
+sidebar_position: 7  
+---  
 
-**Versión 1.0**  
-**Autor:** Carlos Iván Fonseca Mondragón  
-**Última modificación:** 04/03/25  
+# Revisión de Planes de Proyecto  
 
-## Introducción  
-A través de este procedimiento, se establece un mecanismo para revisar de manera periódica los planes que podrían afectar al proyecto, de manera que se mantengan alineados con la realidad del desarrollo, la priorización asignada por el cliente y los recursos con los que se cuenta.  
+**Última actualización:** 05 de marzo de 2025  
+**Versión:** 1.0  
 
 ---
 
-## 1. Planes a revisar (PP, SP 1.2 - Establecer las estimaciones de los atributos de los productos de trabajo y de las tareas)  
-En cada revisión, se evaluarán los siguientes:  
+### Autor  
+| Nombre                            | Rol       |  
+| --------------------------------- | --------- |  
+| Carlos Iván Fonseca Mondragón     | Autor     |  
+---
 
-- Work Breakdown Structure (WBS).  
-- Historias de usuario o lista de entregables.  
-- Plan de trabajo en Excel.  
-- Registros de reuniones por equipo.  
+### Objetivo  
+ * Asegurar que los planes del proyecto se mantengan actualizados y alineados con la realidad del desarrollo, la priorización del cliente y los recursos disponibles.  
+---
+
+### Entradas  
+
+1. Work Breakdown Structure (WBS)  
+2. Historias de usuario o lista de entregables  
+3. Plan de trabajo en Excel  
+4. Registros de reuniones por equipo  
 
 ---
 
-## 2. Frecuencia de revisión (PPQA, SP 1.1 - Objetivos de calidad y criterios de adherencia al proceso)  
-Al inicio de cada sprint.  
+### Proceso  
+
+| Fase                          | Descripción | Responsables | Meta y práctica específica del CMMI |  
+|--------------------------------|------------|--------------|-------------------------------------|  
+| **Reunión de verificación de planes** | Evaluar si los planes actuales siguen en línea con la realidad del proyecto. | Todo el equipo | PP, SP 2.6 (Planificar el involucramiento de las partes interesadas) |  
+| **Evaluación de la WBS**       | Identificar nuevas tareas, eliminar o modificar existentes. | Todo el equipo | PP, SP 1.2 (Establecer las estimaciones de los atributos de los productos de trabajo y de las tareas) |  
+| **Revisión de Prioridades**    | Confirmar cambios de instrucciones o prioridades del cliente. | Todo el equipo | REQM, SP 1.3 (Gestionar cambios en los requisitos) |  
+| **Ajuste de Estimaciones**     | Validar si los tiempos y asignaciones reflejan la realidad. | Todo el equipo | PP, SP 1.2 (Establecer las estimaciones de los atributos de los productos de trabajo y de las tareas) |  
+| **Identificación de Imprevistos** | Actualizar cronograma si es necesario. | Todo el equipo | RSKM, SP 2.2 (Ajustar los planes de mitigación de riesgos) |  
+| **Implementación de Cambios**  | Modificar la WBS, actualizar historias de usuario y plan de trabajo. | Responsables asignados | CM, SP 1.2 (Controlar la configuración) |  
+| **Comunicación de Cambios**    | Enviar avisos en Discord y documentar en el log del equipo. | Todo el equipo | REQM, SP 1.4 (Mantener la trazabilidad bidireccional de los requisitos) |  
+| **Seguimiento**                | Monitorear el impacto de los ajustes en las siguientes revisiones. | Todo el equipo | MA, SP 2.3 (Registrar datos y resultados de medición) |  
 
 ---
 
-## 3. Proceso de revisión (PP, SP 2.6 - Planificar la involucración de las partes interesadas)  
-### 3.1 Reunión de revisión de planes  
-- **Participantes:** Todo el equipo del proyecto.  
-- **Responsable:** Team Leader.  
-- **Duración:** 30 minutos.  
-- **Objetivo:** Evaluar si los planes actuales siguen en línea con la realidad del proyecto.  
+### Salidas  
 
-### 3.2 Aspectos a evaluar  
-- **WBS:**  
-  - ¿Hay nuevas tareas o actividades?  
-  - ¿Es necesario eliminar o hacer cambios en las tareas actuales?  
-
-- **Prioridades del Cliente:**  
-  - ¿El cliente ha dado nuevas instrucciones o cambios en las prioridades actuales?  
-  - ¿Hay dependencias nuevas?  
-
-- **Estimaciones de tiempo:**  
-  - ¿Las estimaciones actuales reflejan el tiempo real de trabajo?  
-  - ¿Es necesario hacer cambios en los puntos de equipo o en las horas de trabajo asignadas?  
-
-- **Imprevistos:**  
-  - ¿Es necesario actualizar el cronograma de trabajo?  
+1. Planes actualizados y alineados con las necesidades del proyecto.  
+2. Mayor precisión en la estimación y asignación de recursos.  
+3. Menor riesgo de desviaciones y retrasos.  
 
 ---
 
-## 4. Adaptación y ajustes (REQM, SP 1.3 - Gestionar cambios en los requisitos)  
-En caso de que sea necesario implementar cambios, se seguirán estas acciones:  
+### Métricas  
 
-- Actualizar la WBS, de manera que refleje las nuevas tareas y/o modificaciones.  
-- Ajustar el orden de las historias de usuario para seguir las prioridades actualizadas.  
-- Revisar el plan de trabajo en Excel, cambiando tiempos y asignaciones a como sea necesario.  
-- En un log, ir registrando y documentando los cambios y las razones para justificar estas modificaciones.  
-
----
-
-## 5. Comunicación de cambios y seguimiento (REQM, SP 1.4 - Mantener la trazabilidad bidireccional de los requisitos)  
-
-- Enviar un aviso y resumen de cambios al equipo a través del canal en Discord.  
-- Asignar responsables para implementar los cambios.  
-- Hacer un monitoreo de los impactos causados por los ajustes en las próximas revisiones.  
-
----
-
-## 6. Resultados esperados (PPQA, SP 1.2 - Evaluar objetivamente los procesos y productos de trabajo)  
-
-- Planes actualizados y alineados con las necesidades actuales del proyecto.  
-- Mayor precisión en la estimación y asignación de recursos.  
-- Menor riesgo de desviaciones y retrasos.  
+1. **Número de cambios registrados** en la WBS y plan de trabajo.  
+2. **Variación en estimaciones de tiempo** antes y después de ajustes.  
+3. **Impacto de los cambios** medido en efectividad y cumplimiento del cronograma.  
