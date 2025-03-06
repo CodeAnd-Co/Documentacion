@@ -7,9 +7,10 @@ sidebar_position: 2
 
 ## Acuerdos de Trabajo de Code & Co
 
-**Última actualización:** 15 de febrero de 2025
+**Última actualización:** 5 de marzo de 2025
 
-El siguiente documento presenta la lista de acuerdos de trabajo aprobados por los integrantes de Code & Co el 12 de febrero de 2025.
+El siguiente documento presenta la lista de acuerdos de trabajo aprobados por los integrantes de Code & Co el 12 de febrero de 2025. <br/>
+[**Acuerdos de trabajo**](https://docs.google.com/document/d/1mz1KD1-Z3sQfMqjhzpGMwiYkXqED8yAG3cx9PrHhcJM/edit?usp=sharing)
 
 ### Organización y Responsabilidad
 
@@ -25,7 +26,8 @@ El siguiente documento presenta la lista de acuerdos de trabajo aprobados por lo
 
 # Acuerdos de Ética de Code & Co
 
-El siguiente documento presenta la lista de acuerdos éticos aprobados por los integrantes de Code & Co. Estos acuerdos buscan fomentar un ambiente de respeto, compromiso y colaboración efectiva dentro del equipo y en la relación con los socios formadores.
+El siguiente documento presenta la lista de acuerdos éticos aprobados por los integrantes de Code & Co. Estos acuerdos buscan fomentar un ambiente de respeto, compromiso y colaboración efectiva dentro del equipo y en la relación con los socios formadores.<br/>
+[**Código de ética**](https://docs.google.com/document/d/1LhAkMUyIpxsvJrCAnYDsvjy-cb7lF-kDMwFnwzGXTko/edit?usp=sharing)
 
 ## Principios Éticos
 
