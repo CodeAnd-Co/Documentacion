@@ -5,7 +5,7 @@ sidebar_position: 1
 
 # Guía de Estándares de Codificación
 
-**Última actualización:** 3 de marzo de 2025  
+**Última actualización:** 5 de marzo de 2025  
 
 ## **Autores**  
 
