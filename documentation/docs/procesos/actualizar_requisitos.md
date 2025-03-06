@@ -38,8 +38,8 @@ sidebar_position: 7
 | **Identificaación del Requerimiento Actualizado** | Identificar el número del requisito y los cambios aplicados | RM, SP 1.5 (Asegurar el alineamiento entre el trabajo del proyecto y los requisitos) |
 | **Identificación de los de los documentos con el requerimiento a actualizar** | Identificar todos los documentos que usen, referencien o definan el requisito | RM, SP 1.5 (Asegurar el alineamiento entre el trabajo del proyecto y los requisitos) |
 | **Modificación de los documentos correspondientes** | Modificar las partes correspondientes donde el requerimiento este plasmado en cada documento | RM, SP 1.5 (Asegurar el alineamiento entre el trabajo del proyecto y los requisitos) |
-| **Creacion del Reporte de Inconsistencia** | Copiar y completar la plantilla del reporte de incosistencias con la información correspondiente [Reporte de inconsistencia](https://Taco.com) | RM, SP 1.5 (Asegurar el alineamiento entre el trabajo del proyecto y los requisitos) |
-| **Cierre** | Verificar que los documentos fueron completados de forma satisfactoria, luego guardar el reporte de inconsistencias dentro de Drive | RM, SP 1.5 (Asegurar el alineamiento entre el trabajo del proyecto y los requisitos) |
+| **Creacion del Reporte de Inconsistencia** | Copiar y completar la plantilla del reporte de incosistencias con la información correspondiente [Reporte de inconsistencia](https://docs.google.com/document/d/1oFEtJ4wL4jAugo7VBqZViLJWfcgjDt24BJohPeyZFPA/edit?tab=t.0) | RM, SP 1.5 (Asegurar el alineamiento entre el trabajo del proyecto y los requisitos) |
+| **Cierre** | Un PO verifique que los documentos fueron completados de forma satisfactoria, luego guardar el reporte de inconsistencias dentro de Drive | RM, SP 1.5 (Asegurar el alineamiento entre el trabajo del proyecto y los requisitos) |
 
 ### Salidas
 1. Documentos actualizados
