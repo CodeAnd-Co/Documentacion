@@ -1,3 +1,9 @@
+---
+title: Plantilla Manual de Arquitectura
+sidebar_position: 14
+---
+
+
 ### Autores
 
 | Nombre           | Rol   |
