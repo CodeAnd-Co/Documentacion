@@ -8,11 +8,14 @@ sidebar_position: 4
 **Última actualización:** 05 de marzo de 2025
 
 ### Historia de Usuario
-
-
+Como administrador del sistema, quiero visualizar los datos recolectados de manera intuitiva a través de gráficos generados automáticamente, para obtener una representación visual clara del desempeño y producción sin necesidad de revisar datos en tablas.
 
   **Criterios de Aceptación:**
-  
+  - El sistema debe mostrar gráficos con los datos recolectados en tiempo real.
+  - La visualización debe ser automática y no requerir configuración manual.
+  - Los gráficos deben actualizarse dinámicamente conforme se registren nuevos datos.
+  - La interfaz debe ser clara y comprensible, con etiquetas adecuadas en los gráficos.
+  - La representación visual debe facilitar la interpretación de tendencias y patrones.
 
 ---
 

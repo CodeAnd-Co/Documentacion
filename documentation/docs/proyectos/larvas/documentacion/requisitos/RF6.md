@@ -8,11 +8,13 @@ sidebar_position: 7
 **Última actualización:** 05 de marzo de 2025
 
 ### Historia de Usuario
-
-
+Como trabajadora del sistema, quiero ingresar la información de una charola nueva en el sistema y guardarla en la base de datos, para llevar un registro digital preciso de la producción y rastrear la trazabilidad de las charolas.
 
   **Criterios de Aceptación:**
-
+  - El sistema debe permitir el ingreso de una nueva charola con su identificador único.
+  - Se debe registrar la fecha de creación, peso y estado de la charola.
+  - La información ingresada debe guardarse correctamente en la base de datos.
+  - El sistema debe confirmar el registro exitoso mediante una notificación o mensaje visual.
 
 ---
 

@@ -8,11 +8,13 @@ sidebar_position: 6
 **Última actualización:** 05 de marzo de 2025
 
 ### Historia de Usuario
-
-
+Como usuario de la aplicación, quiero ver una pantalla de presentación con el logo de Zuustento antes de acceder a la interfaz principal, para tener una experiencia visual más profesional y reconocer la identidad de la aplicación al iniciar.
 
   **Criterios de Aceptación:**
-  
+  - El sistema debe mostrar el logo de Zuustento durante 1 segundo antes de redirigir a la pantalla de inicio.
+  - La pantalla de presentación no debe retrasar el acceso a la aplicación.
+  - El splashscreen debe aparecer solo al abrir la aplicación, no al navegar dentro de ella.
+  - La animación debe ser fluida y compatible con dispositivos móviles.
 
 ---
 

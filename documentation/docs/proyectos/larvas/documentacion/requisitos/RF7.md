@@ -8,11 +8,11 @@ sidebar_position: 8
 **Última actualización:** 05 de marzo de 2025
 
 ### Historia de Usuario
-
-
+Como usuario del sistema, quiero buscar una charola específica a través de una barra de navegación, para localizar rápidamente su información sin necesidad de revisar manualmente los registros.
 
   **Criterios de Aceptación:**
-
+  - El sistema debe permitir la búsqueda de charolas por identificador único.
+  - La búsqueda debe ser rápida y sin afectar el rendimiento del sistema.
 
 ---
 

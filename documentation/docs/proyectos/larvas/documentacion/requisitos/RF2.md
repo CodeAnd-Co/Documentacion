@@ -8,11 +8,14 @@ sidebar_position: 3
 **Última actualización:** 05 de marzo de 2025
 
 ### Historia de Usuario
-
-
+Como usuario, quiero ingresar a mi cuenta a través de un proceso de autenticación de dos pasos, para garantizar una mayor seguridad en el acceso a mi cuenta.
 
   **Criterios de Aceptación:**
-  
+  - El sistema debe solicitar al usuario su usuario y contraseña para iniciar sesión.
+  - Luego de ingresar sus credenciales, el usuario debe recibir un código de verificación en su correo electrónico o aplicación de    autenticación.
+  - El usuario debe ingresar correctamente el código de verificación para completar el inicio de sesión.
+  - Si el código es incorrecto o expira, el sistema debe notificar al usuario y permitirle solicitar un nuevo código.
+  - La autenticación de dos pasos debe ser opcional pero configurable por el usuario en los ajustes de seguridad.
 
 ---
 
