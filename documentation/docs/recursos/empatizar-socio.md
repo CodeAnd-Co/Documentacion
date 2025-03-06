@@ -5,6 +5,15 @@ sidebar_position: 15
 
 # Empatizar con el socio formador: Clave para el éxito del proyecto
 
+---
+**Compartido por Discord:** 11 de febrero de 2025  
+**Última actualización:** 6 de marzo de 2025
+
+| Nombre                            | Rol       |
+| --------------------------------- | --------- |
+| Paola María Garrido Montes         | Autor     |
+---
+
 ### ¿Qué significa realmente empatizar con el socio formador?
 Empatizar con el socio formador va más allá de escuchar sus expectativas y desafíos actuales. El objetivo de esta etapa inicial es comprender profundamente sus necesidades, ya que esto es fundamental para diseñar soluciones efectivas y centradas en el usuario final.
 
