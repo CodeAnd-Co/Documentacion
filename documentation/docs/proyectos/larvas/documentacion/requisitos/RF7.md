@@ -1,20 +1,18 @@
 ---
-title: "RF7: Super Administrador, Cliente Lee Empleado"  
+title: "RF7: Buscar charola"  
 sidebar_position: 8
 ---
 
-# RF7: Super Administrador, Cliente Lee Empleado
+# RF7: Buscar charola
 
-**Última actualización:** 01 de marzo de 2025
+**Última actualización:** 05 de marzo de 2025
 
 ### Historia de Usuario
 
-Como administrador, quiero poder visualizar la información de un empleado específico para consultar sus datos y verificar su estado dentro del sistema.
+
 
   **Criterios de Aceptación:**
-  - El sistema debe mostrar los detalles completos del empleado, como nombre, puesto y estado.
-  - El acceso debe ser restringido al Super Administrador o al Cliente correspondiente.
-  - El sistema debe mostrar una interfaz limpia y fácil de leer.
+
 
 ---
 

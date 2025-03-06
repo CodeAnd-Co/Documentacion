@@ -1,20 +1,18 @@
 ---
-title: "RF1: Super Administrador Crea Cliente"  
+title: "RF1: Iniciar Sesión"  
 sidebar_position: 2
 ---
 
-# RF1: Super Administrador Crea Cliente
+# RF1: Iniciar Sesión
 
-**Última actualización:** 01 de marzo de 2025
+**Última actualización:** 05 de marzo de 2025
 
 ### Historia de Usuario
 
-Como administrador, quiero registrar un nuevo cliente en el sistema para gestionar la asignación de uniformes a sus empleados de manera organizada y eficiente.
+
 
   **Criterios de Aceptación:**
-  - El sistema debe permitir al Super Administrador ingresar los datos necesarios del cliente (nombre, correo electrónico, teléfono, etc.).
-  - El cliente debe recibir un correo electrónico de bienvenida al completar el registro.
-  - El cliente creado debe estar disponible en el sistema y poder ser gestionado por el Super Administrador.
+  
 
 ---
 

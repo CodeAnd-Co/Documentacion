@@ -1,21 +1,18 @@
 ---
-title: "RF2: Super Administrador Lee Cliente"  
+title: "RF2: Autenticación de la cuenta"  
 sidebar_position: 3
 ---
 
-# RF2: Super Administrador Lee Cliente
+# RF2: Autenticación de la cuenta
 
-**Última actualización:** 01 de marzo de 2025
+**Última actualización:** 05 de marzo de 2025
 
 ### Historia de Usuario
 
-Como administrador, quiero visualizar la información detallada de un cliente específico para comprender mejor sus necesidades y asegurar una correcta asignación de uniformes a sus empleados.
+
 
   **Criterios de Aceptación:**
-  - El sistema debe permitir al Super Administrador buscar y seleccionar a un cliente por su ID o nombre.
-  - El sistema debe mostrar información detallada del cliente (nombre, correo electrónico, número de teléfono, etc.).
-  - El Super Administrador debe poder visualizar esta información de manera clara y accesible sin necesidad de navegar por diferentes pantallas.
-  - En caso de que el cliente no exista, el sistema debe mostrar un mensaje de error adecuado.
+  
 
 ---
 

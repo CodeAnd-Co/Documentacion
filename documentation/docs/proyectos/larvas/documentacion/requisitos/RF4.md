@@ -1,20 +1,18 @@
 ---
-title: "RF4: Super Administrador Elimina Cliente"  
+title: "RF4: Consultar historial de ancestros de una charola"  
 sidebar_position: 5
 ---
 
-# RF4: Super Administrador Elimina Cliente
+# RF4: Consultar historial de ancestros de una charola
 
-**Última actualización:** 01 de marzo de 2025
+**Última actualización:** 05 de marzo de 2025
 
 ### Historia de Usuario
 
-Como administrador, quiero eliminar el registro de un cliente que ya no requiere nuestros servicios para mantener una base de datos precisa y evitar asignaciones innecesarias de uniformes.
+
 
   **Criterios de Aceptación:**
-  - El sistema debe permitir al Super Administrador eliminar un cliente.
-  - El sistema debe pedir una confirmación antes de realizar la eliminación.
-  - El cliente eliminado debe ser removido completamente del sistema, incluyendo sus datos asociados.
+  
 
 ---
 

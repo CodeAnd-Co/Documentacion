@@ -1,20 +1,18 @@
 ---
-title: "RF3: Super Administrador Actualiza Cliente"  
+title: "RF3: Consultar gráficas (administrador)"  
 sidebar_position: 4
 ---
 
-# RF3: Super Administrador Actualiza Cliente
+# RF3: Consultar gráficas (administrador)
 
-**Última actualización:** 01 de marzo de 2025
+**Última actualización:** 05 de marzo de 2025
 
 ### Historia de Usuario
 
-Como administrador, quiero modificar los datos de un cliente existente para mantener su información actualizada y reflejar cualquier cambio en sus requisitos o estructura organizativa.
+
 
   **Criterios de Aceptación:**
-  - El sistema debe permitir al Super Administrador actualizar la información del cliente.
-  - El sistema debe verificar que los campos obligatorios estén completos antes de permitir la actualización.
-  - Si la actualización es exitosa, el sistema debe mostrar un mensaje de confirmación.
+  
 
 ---
 

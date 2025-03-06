@@ -1,20 +1,18 @@
 ---
-title: "RF5: Super Administrador Consulta Clientes"  
+title: "RF5: Splashscreen"  
 sidebar_position: 6
 ---
 
-# RF5: Super Administrador Consulta Clientes
+# RF5: Splashscreen
 
-**Última actualización:** 01 de marzo de 2025
+**Última actualización:** 05 de marzo de 2025
 
 ### Historia de Usuario
 
-Como administrador, quiero acceder a un listado completo de clientes con opciones de filtro y búsqueda para gestionar eficientemente sus perfiles y necesidades de uniformes.
+
 
   **Criterios de Aceptación:**
-  - El sistema debe mostrar una lista de todos los clientes registrados.
-  - El Super Administrador debe poder buscar clientes por nombre o ID.
-  - La lista debe incluir detalles relevantes como nombre, correo y estado del cliente.
+  
 
 ---
 

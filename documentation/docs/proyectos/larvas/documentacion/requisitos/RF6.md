@@ -1,20 +1,18 @@
 ---
-title: "RF6: Super Administrador Crea Empleado"  
+title: "RF6: Registrar Charola"  
 sidebar_position: 7
 ---
 
-# RF6: Super Administrador Crea Empleado
+# RF6: Registrar Charola
 
-**Última actualización:** 01 de marzo de 2025
+**Última actualización:** 05 de marzo de 2025
 
 ### Historia de Usuario
 
-Como administrador, quiero poder registrar un nuevo empleado y asignarlo a un cliente específico para gestionar sus permisos dentro del sistema, asegurando un control adecuado sobre sus accesos.
+
 
   **Criterios de Aceptación:**
-  - El sistema debe permitir al Super Administrador ingresar los datos necesarios para crear un empleado.
-  - El sistema debe verificar que los campos obligatorios estén completos antes de crear al empleado.
-  - Después de crear el empleado, el sistema debe mostrar un mensaje de éxito.
+
 
 ---
 

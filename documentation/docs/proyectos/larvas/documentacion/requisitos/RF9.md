@@ -1,20 +1,18 @@
 ---
-title: "RF9: Super Administrador Elimina Empleado"  
+title: "RF9: Eliminar Charola"  
 sidebar_position: 10
 ---
 
-# RF9: Super Administrador Elimina Empleado
+# RF9: Eliminar Charola
 
-**Última actualización:** 01 de marzo de 2025
+**Última actualización:** 05 de marzo de 2025
 
 ### Historia de Usuario
 
-Como administrador, quiero poder dar de baja a un empleado para revocar sus accesos y asegurar que ya no tenga permisos dentro del sistema.
+
 
   **Criterios de Aceptación:**
-  - El sistema debe permitir al Super Administrador eliminar un empleado.
-  - Antes de eliminar al empleado, el sistema debe pedir una confirmación para evitar eliminaciones accidentales.
-  - Una vez eliminado, el empleado debe ser completamente removido del sistema.
+  
 
 ---
 
