@@ -51,7 +51,7 @@ La priorización de requerimientos se puede encontrar aquí:
 
 [Insertar documento con la priorización de sus requerimientos]
 
-La especificación de historias de usuario se llevarán a cabo teniendo en cuenta la definición de [**Done**](../definicion-de-done.md) y [**Ready**](../definicion-de-ready.md) que se encuentran en este archivo:
+La especificación de historias de usuario se llevarán a cabo teniendo en cuenta la definición de [**Done**](/docs/definicion-de-done.md) y [**Ready**](/docs/definicion-de-ready.md) que se encuentran en este archivo:
 
 ---
 
@@ -83,7 +83,7 @@ Documentar claramente las funcionalidades y código del sistema para lectura en 
 - Se agregaron espacios alrededor de operadores y comas.
 - Se agregan punto y coma al final de definiciones simples.
 - Para documentar el código utilizaremos el estándar de documentación JS docs.
-- El detalle del estándar de codificación se podrá ver en el siguiente documento: [**Estandar de codificación**](../guias/standards/general.md).
+- El detalle del estándar de codificación se podrá ver en el siguiente documento: [**Estandar de codificación**](/docs/guias/standards/general.md).
 
 ---
 
@@ -91,27 +91,32 @@ Documentar claramente las funcionalidades y código del sistema para lectura en 
 
 Este diagrama de paquetes representa la organización de un backend. Se divide en varias secciones principales:
 
-### 1. Módulos  
-Cada módulo contiene:  
-- **Data**: Gestión de la base de datos, incluyendo modelos y repositorios.  
+### 1. Módulos
+
+Cada módulo contiene:
+
+- **Data**: Gestión de la base de datos, incluyendo modelos y repositorios.
 - **Controllers**: Manejo de solicitudes HTTP, estructurado en:
-  - `RoutesIndexes`: Punto de entrada de las rutas.  
-  - `Routes`: Definición de rutas.  
-  - `Controllers`: Implementación de la lógica de negocio.  
+  - `RoutesIndexes`: Punto de entrada de las rutas.
+  - `Routes`: Definición de rutas.
+  - `Controllers`: Implementación de la lógica de negocio.
 
-### 2. Util  
-- **Middlewares**: Funciones intermedias para procesar solicitudes.  
-- **Services**: Lógica reutilizable independiente de los controladores.  
+### 2. Util
 
-### 3. Views  
-Sección opcional para manejar vistas en caso de ser necesario.  
+- **Middlewares**: Funciones intermedias para procesar solicitudes.
+- **Services**: Lógica reutilizable independiente de los controladores.
 
-### 4. Pruebas Unitarias  
-Cada módulo puede incluir pruebas unitarias para garantizar su correcto funcionamiento.  
+### 3. Views
 
-### 5. Archivos Principales  
-- app.js: Punto de entrada del servidor.  
-- node_modules: Dependencias del proyecto.  
+Sección opcional para manejar vistas en caso de ser necesario.
 
+### 4. Pruebas Unitarias
+
+Cada módulo puede incluir pruebas unitarias para garantizar su correcto funcionamiento.
+
+### 5. Archivos Principales
+
+- app.js: Punto de entrada del servidor.
+- node_modules: Dependencias del proyecto.
 
 ![alt text](plantilla-diagrama-de-paquetes.png)

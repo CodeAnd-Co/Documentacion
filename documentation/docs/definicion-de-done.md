@@ -18,7 +18,7 @@ title: Definicion de Done
 - La documentación relacionada está actualizada.
 - El código será comentado usando:
   - [**JSDoc** ](https://medium.com/swlh/creating-better-jsdoc-documentation-8b7a65744dcb).
-  - [**Estandar de codificación**](../guias/standards/general.md)
+  - [**Estandar de codificación**](/docs/guias/standards/general.md)
 - Se documentará todo lo relacionado en el Docusaurus:
   - Manual de usuario.
   - Interfaz y descripción.
