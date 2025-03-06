@@ -87,3 +87,7 @@ Documentar claramente las funcionalidades y código del sistema para lectura en 
 - El detalle del estándar de codificación se podrá ver en el siguiente documento: [**Estandar de codificación**](../guias/standards/general.md).
 
 ---
+
+### Patrones de diseño y diagrama de paquetes
+
+![alt text](plantilla-diagrama-de-paquetes.png)
