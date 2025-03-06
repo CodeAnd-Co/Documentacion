@@ -1,23 +1,20 @@
+---
+title: Manual de arquitectura y estrategia tecnica
+sidebar_position: 3
+---
+
 ## Tipo de arquitectura de software
 
-Escribir el tipo de arquitectura que maneja su proyecto.
-
-**Ejemplo:**
-
-- Arquitectura basada en la nube
+Arquitectura basada en servicios en la nube con API REST en NodeJS y frontend desacoplado en React
 
 ---
 
 ## Desglose de arquitectura
 
-Escribir el desglose de los componentes de arquitectura.
-
-**Ejemplo:**
-La arquitectura se compone de capas principales:
-
 - **Frontend** (React + AWS Amplify)
 - **Backend** (Node.JS + Express + AWS EC2)
 - **Servicios AWS** (DynamoDB, S3, etc.)
+- **Servicios Google** (Firebase)
 
 ---
 
@@ -25,21 +22,18 @@ La arquitectura se compone de capas principales:
 
 ### Objetivo
 
-Desglose del componente Frontend de la arquitectura.
-
-**Ejemplo:**
-
 - Interfaz de usuario para la tienda en línea y el backoffice
 
 ### Tecnologías
 
-Escribir todas las tecnologías que se usarán para el frontend (Frameworks de diseño, tecnologías para consumir APIs).
+- React (vite)
+- AWS Amplify para el hosting del frontend
+- Tailwind CSS
+- Material UI
+- MercadoPago
+- Axios para consumir la API REST
 
 ### Características
-
-Agregar las características del frontend de su proyecto.
-
-**Ejemplo:**
 
 - **E-commerce**
   - Página principal con productos
@@ -54,40 +48,31 @@ Agregar las características del frontend de su proyecto.
   - Uso de Pre Signed URLs para subir las imágenes de los productos a S3
   - Manejo de autenticación y roles
   - El frontend solo muestra opciones según el rol del usuario
+- **Carga de imágenes**
+  - Uso de Pre Signed URLs para subir las imágenes de los productos a S3
+- **Manejo de autenticacion de roles**
+  - El frontend solo muestra opciones según el rol del usuario
 
 ### Despliegue de su frontend
 
-Donde se hosteará su frontend.
-
----
+- AWS Amplify
 
 ## Backend
 
 ### Objetivo
 
-Desglose del componente Backend de la arquitectura.
-
-**Ejemplo:**
-
 - Exponer una API REST para manejar la autenticación de usuarios, producto y pedidos.
 
 ### Tecnologías
-
-Escribir las tecnologías que se usarán para crear el backend.
-
-**Ejemplo:**
 
 - Node.JS + Express.JS para construir la API
 - DynamoDB SDK para interactuar con la base de datos
 - AWS S3 SDK para manejar las imágenes
 - JWT para manejar la autenticación
 - PM2 para administrar procesos en producción
+- MercadoPago SDK
 
 ### Características
-
-Agregar las características del backend de su proyecto.
-
-**Ejemplo:**
 
 - **API REST**
   - Se definen endpoints para los usuarios
@@ -117,16 +102,13 @@ Proveer infraestructura escalable y segura para la aplicación.
 
 ### Servicios
 
-Escribe tu servicio a utilizar, justificación técnica breve de la elección del servicio y alternativas consideradas.
-
-**Ejemplo:**
-
-- **S3 de Amazon**
-  - El socio ya contaba con servicios de AWS y nos dará acceso a los mismos.
-
-**Alternativas:**
-
-- Azure
+- S3 de Amazon
+- El socio ya contaba con servicios de AWS y nos dará acceso a los mismos.
+- DynamoDB como base de datos
+- AWS amplify gen 2
+- IAM para la seguridad y gestión
+- CloudWatch para el monitoreo de logs del backend en EBS
+- Google Firebase para el registro de usuarios
 
 ---
 
@@ -136,8 +118,6 @@ Escribe tu servicio a utilizar, justificación técnica breve de la elección de
 
 Documentar claramente las funcionalidades y código del sistema para lectura en caso de confusiones.
 
-**Ejemplo:**
-
 - Se agregaron espacios alrededor de operadores y comas.
 - Se agregan punto y coma al final de definiciones simples.
 - Para documentar el código utilizaremos el estándar de documentación JS docs.
@@ -146,10 +126,6 @@ Documentar claramente las funcionalidades y código del sistema para lectura en 
 ---
 
 ## Beneficios de la arquitectura seleccionada
-
-Redactar los beneficios de la arquitectura seleccionada.
-
-**Ejemplo:**
 
 - Escalable
 - Segura
