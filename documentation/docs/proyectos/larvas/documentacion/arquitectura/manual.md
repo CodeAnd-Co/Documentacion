@@ -98,16 +98,30 @@ Propuestas alternativas:
 
 ### Tecnologías
 <!-- Escribir todas las tecnologías que se usarán para el frontend (Frameworks de diseño, tecnologías para consumir APIs) -->
+- Framework principal: Flutter (Dart)
+- Consumo de APIs: HTTP package, Dio
+- Persistencia local: Hive, Shared Preferences
+- Autenticación: Amazon Cognito
+- Notificaciones: Amazon SNS
+- Almacenamiento de archivos: Amazon S3
+- GraphQL (opcional): AWS AppSync
+
 
 **Framework principal**: Flutter (Dart) 
 
 ### Características
 
 ## Backend
+<!-- Desglose del componente Backend de la arquitectura -->
 
 ### Tecnologías
+<!-- Escribir las tecnologías que se usarán para crear el backend (librerías para conexión con bases de datos, bases de datos, frameworks, lenguajes) -->
+- Node.JS + Express para construir la API
+- AWS S3 sdk para manejar las imágenes
+- PM2 para administrar procesos en producción
 
 ### Características
+<!-- Agregar las características del backend de su proyecto -->
 
 ## Endpoints principales
 
