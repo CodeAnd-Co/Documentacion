@@ -7,6 +7,7 @@ title: Plantila Plan STP
 | Nombre           | Rol   |
 | ---------------- | ----- |
 | Daniel Contreras | Autor |
+| Emiliano Gomez   | Autor |
 
 ---
 

@@ -8,6 +8,7 @@ title: Plantilla estrategia tecnica
 | ---------------- | ----- |
 | Diego Alfaro     | Autor |
 | Daniel Contreras | Autor |
+| Emiliano Gomez   | Autor |
 
 ---
 
@@ -88,6 +89,31 @@ Documentar claramente las funcionalidades y código del sistema para lectura en 
 
 ---
 
-### Patrones de diseño y diagrama de paquetes
+## Patrones de diseño y diagrama de paquetes
+
+Este diagrama de paquetes representa la organización de un backend. Se divide en varias secciones principales:
+
+### 1. Módulos  
+Cada módulo contiene:  
+- **Data**: Gestión de la base de datos, incluyendo modelos y repositorios.  
+- **Controllers**: Manejo de solicitudes HTTP, estructurado en:
+  - `RoutesIndexes`: Punto de entrada de las rutas.  
+  - `Routes`: Definición de rutas.  
+  - `Controllers`: Implementación de la lógica de negocio.  
+
+### 2. Util  
+- **Middlewares**: Funciones intermedias para procesar solicitudes.  
+- **Services**: Lógica reutilizable independiente de los controladores.  
+
+### 3. Views  
+Sección opcional para manejar vistas en caso de ser necesario.  
+
+### 4. Pruebas Unitarias  
+Cada módulo puede incluir pruebas unitarias para garantizar su correcto funcionamiento.  
+
+### 5. Archivos Principales  
+- app.js: Punto de entrada del servidor.  
+- node_modules: Dependencias del proyecto.  
+
 
 ![alt text](plantilla-diagrama-de-paquetes.png)
