@@ -1,5 +1,6 @@
 ---
-title: Plantilla manual de arquitectura
+title: Plantilla Manual de Arquitectura
+sidebar_position: 14
 ---
 
 ### Autores
