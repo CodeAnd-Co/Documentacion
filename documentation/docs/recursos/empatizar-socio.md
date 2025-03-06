@@ -9,7 +9,7 @@ sidebar_position: 15
 Empatizar con el socio formador va más allá de escuchar sus expectativas y desafíos actuales. El objetivo de esta etapa inicial es comprender profundamente sus necesidades, ya que esto es fundamental para diseñar soluciones efectivas y centradas en el usuario final.
 
 ### Herramientas y técnicas para empatizar
-- **Mapa de Actores:**  
+- **Mapa de actores:**  
   Representa visualmente todas las partes interesadas en el proyecto, identificando quiénes son los actores clave, sus roles y cómo interactúan dentro del sistema. Esto es esencial para alinear las expectativas y definir relaciones de colaboración efectivas.
 
 - **Storytelling:**  
@@ -24,7 +24,7 @@ Empatizar con el socio formador va más allá de escuchar sus expectativas y des
 - **Grupo de control:**  
   Reúne a un grupo de personas para debatir sobre el proyecto, lo que permite descubrir necesidades no satisfechas y obtener una retroalimentación directa.
 
-- **Mapas del Pasado, Presente y Futuro:**  
+- **Mapas del pasado, presente y futuro:**  
   Ayudan a visualizar la evolución de un producto o servicio, identificando patrones y tendencias que guiarán el diseño hacia soluciones más innovadoras.
 
 ### De la empatía a las soluciones
