@@ -15,13 +15,13 @@ sidebar_position: 7
 | ----------------------------------- | --------- |
 | Juan Eduardo Rosas Ceron            | Autor     |
 | Pablo Hazael Hurtado Mireles        | Co-Autor  |
-| Juan Carlos Carlderon Garcia        | Co-Autor  |
+| Juan Carlos Calderón García        | Co-Autor  |
 
 ---
 
-### Objetivo
+### Objetivos
 
-* Actualizar los documentos que dependan de los requisitos 
+* Actualizar los documentos que incluyan los requisitos actualizados
 * Documentar inconsistencias entre los requisitos, planes del proyecto, productos de trabajo, fuentes y condiciones
 
 ---
@@ -29,17 +29,17 @@ sidebar_position: 7
 ### Entradas
 
 1. Requisito actualizado
-2. Documentos donde el requisito es definido, referenciado
+2. Documentos donde el requisito es definido o referenciado
 
 ### Proceso
 
 | Fase                        | Descripción                      | Meta y práctica específica del CMMI |
 |-----------------------------|----------------------------------|-------------------------------------|
-| **Identificaación del Requerimiento Actualizado** | Identificar el número del requisito y los cambios aplicados | RM, SP 1.5 (Asegurar el alineamiento entre el trabajo del proyecto y los requisitos) |
-| **Identificación de los de los documentos con el requerimiento a actualizar** | Identificar todos los documentos que usen, referencien o definan el requisito | RM, SP 1.5 (Asegurar el alineamiento entre el trabajo del proyecto y los requisitos) |
-| **Modificación de los documentos correspondientes** | Modificar las partes correspondientes donde el requerimiento este plasmado en cada documento | RM, SP 1.5 (Asegurar el alineamiento entre el trabajo del proyecto y los requisitos) |
-| **Creacion del Reporte de Inconsistencia** | Copiar y completar la plantilla del reporte de incosistencias con la información correspondiente [Reporte de inconsistencia](https://docs.google.com/document/d/1oFEtJ4wL4jAugo7VBqZViLJWfcgjDt24BJohPeyZFPA/edit?tab=t.0) | RM, SP 1.5 (Asegurar el alineamiento entre el trabajo del proyecto y los requisitos) |
-| **Cierre** | Un PO verifique que los documentos fueron completados de forma satisfactoria, luego guardar el reporte de inconsistencias dentro de Drive | RM, SP 1.5 (Asegurar el alineamiento entre el trabajo del proyecto y los requisitos) |
+| **Identificación del Requerimiento Actualizado** | Identificar el ID del requisito y los cambios aplicados. | RM, SP 1.5 (Asegurar el alineamiento entre el trabajo del proyecto y los requisitos) |
+| **Identificación de los de los documentos con el requerimiento a actualizar** | Identificar todos los documentos que usen, referencien o definan el requisito. | RM, SP 1.5 (Asegurar el alineamiento entre el trabajo del proyecto y los requisitos) |
+| **Modificación de los documentos correspondientes** | Modificar las partes referentes al requerimiento en cada documento. | RM, SP 1.5 (Asegurar el alineamiento entre el trabajo del proyecto y los requisitos) |
+| **Creación del Reporte de Inconsistencia** | Si no se ha hecho, crear una copia de la [plantilla de reporte de inconsistencia](https://docs.google.com/document/d/1oFEtJ4wL4jAugo7VBqZViLJWfcgjDt24BJohPeyZFPA/edit?tab=t.0). Agregar una entrada al reporte de inconsistencias con la información correspondiente de acuerdo al ejemplo.  | RM, SP 1.5 (Asegurar el alineamiento entre el trabajo del proyecto y los requisitos) |
+| **Cierre** | Un PO debe verificar que los documentos fueron actualizados de forma satisfactoria y se añadió la entrada al reporte de inconsistencias| RM, SP 1.5 (Asegurar el alineamiento entre el trabajo del proyecto y los requisitos) |
 
 ### Salidas
 1. Documentos actualizados
