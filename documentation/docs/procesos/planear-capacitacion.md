@@ -5,7 +5,7 @@ sidebar_position: 2
 
 # Planes de Capacitación
 
-**Última actualización:** 4 de marzo de 2025
+**Última actualización:** 5 de marzo de 2025
 
 ---
 
