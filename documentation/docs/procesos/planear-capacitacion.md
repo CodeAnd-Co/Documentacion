@@ -13,8 +13,7 @@ sidebar_position: 2
 | Nombre                            | Rol       |
 | --------------------------------- | --------- |
 | Emiliano Valdivia Lara             | Autor     |
-| --------------------------------- | --------- |
-|Miguel Ángle Uribe Esquivel        | Autor     |
+|Miguel Ángel Uribe Esquivel        | Co-Autor     |
 ---
 
 
@@ -32,12 +31,15 @@ sidebar_position: 2
 
 ### Proceso
 
-| Fase                           | Descripción                                                                               | Responsables           | Práctica(s) específicas |
-|--------------------------------|-------------------------------------------------------------------------------------------|------------------------|-------------------------|
-| **Definición de conocimientos necesarios** | Una vez que se ha determinado la tecnología a usar, se determinan los conocimientos específicos necesarios para el proyecto. | Architecture Owner, Product Owner | - |
-| **Investigación**              | Se investiga la curva de aprendizaje, así como recursos para adquirir el conocimiento.    | Architecture Owner     | - |
-| **Definición de criterios**    | Se definen criterios para determinar que los conocimientos han sido adquiridos con éxito. | Architecture Owner     | - |
-| **Planificación**              | Se realiza un plan detallado para el aprendizaje. El plan determina tiempos y proporciona recursos. | Equipo de trabajo     | - |
+| Fase                               | Descripción                                                                                      | Responsables              | Práctica(s) específicas |
+|------------------------------------|------------------------------------------------------------------------------------------------|---------------------------|-------------------------|
+| **Definición de conocimientos necesarios** | Se evalúa la nueva tecnología y se analiza su impacto en el proyecto.                          | Architecture Owner, Product Owner | PP 2.4: Plan for necessary resources to perform the project.  <br/> TS 1.3: Select the product-component solutions that best satisfy the criteria established. |
+| **Investigación**                  | Se investiga los conocimientos necesarios para poder hacer uso de la tecnología. A su vez, se recopila la documentación de la misma. | Architecture Owner        | - |
+|                                    | Se investiga la curva de aprendizaje de esta tecnología para determinar cuánto tiempo dedicar a la capacitación. | Architecture Owner        | - |
+|                                    | Se buscan recursos fácilmente accesibles para adquirir el conocimiento.                        | Todos                     | - |
+| **Definición de criterios**        | Se establecen criterios para evaluar que los conocimientos han sido adquiridos con éxito.     | Architecture Owner        | PP 2.5: Plan for knowledge and skills needed to perform the project. |
+| **Planificación**                  | En una reunión con el equipo completo, se realiza un plan de capacitación detallado. El plan determina tiempos y proporciona recursos de aprendizaje. | Equipo de trabajo        | PP 2.5: Plan for knowledge and skills needed to perform the project. |
+
 
 
 ### Salidas
@@ -47,7 +49,4 @@ sidebar_position: 2
 
 ### Métricas
 
-1. Tiempo de ejecución de la junta vs. tiempo planeado  
-2. Porcentaje de asistencia  
-3. Número de acuerdos alcanzados por junta  
-4. Retroalimentación de los asistentes sobre la efectividad de la junta  
+1. Se logra seguir el plan establecido  
