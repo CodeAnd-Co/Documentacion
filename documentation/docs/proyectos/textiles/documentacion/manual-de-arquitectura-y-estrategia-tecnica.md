@@ -3,6 +3,18 @@ title: Manual de arquitectura y estrategia tecnica
 sidebar_position: 3
 ---
 
+### Autores
+
+| Nombre           | Rol   |
+| ---------------- | ----- |
+| Diego Alfaro     | Autor |
+| Daniel Contreras | Autor |
+| Emiliano Gomez   | Autor |
+
+**Última actualización por:** Diego Alfaro, 5 de marzo de 2025
+
+---
+
 ## Tipo de arquitectura de software
 
 Arquitectura basada en servicios en la nube con API REST en NodeJS y frontend desacoplado en React
