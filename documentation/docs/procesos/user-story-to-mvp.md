@@ -26,14 +26,14 @@ Transformar historias de usuario en una definición clara de un Producto Mínimo
 
 | **Fase**                            | **Descripción** | **Responsables** | **Meta y práctica específica del CMMI** |
 |--------------------------------------|----------------|------------------|--------------------------|
-| **Recopilación y Priorización** | Revisar y organizar las historias de usuario según su relevancia y viabilidad. | Equipo de Producto | RD, SP 1.1 (Elicit Stakeholder Needs) |
-| | Aplicar la técnica MoSCoW para priorizar. | Equipo de Producto | RD, SP 1.3 (Analyze & Validate Requirements) |
-| **Identificación de Funcionalidades Clave** | Desglosar las historias de usuario en funcionalidades específicas. | Equipo de Producto | RD, SP 3.2 (Establish a Definition of Required Functionality) |
-| | Evaluar si las funcionalidades son viables | Equipo de Producto | TS, SP 1.1 (Develop Alternative Solutions) |
-| **Definición del Alcance del MVP** | Establecer qué funcionalidades serán parte del MVP y cuáles se postergarán. | Equipo de Producto | REQM, SP 1.2 (Obtain Commitment to Requirements) |
-| | Definir los criterios de éxito del MVP. | Equipo de Producto | RD, SP 3.3 (Analyze Requirements) |
-| | Planificar las fases de desarrollo y lanzamiento. | Equipo de Producto | PP, SP 2.1 (Establish the Budget and Schedule) |
-| **Validación con Stakeholders** | Presentar la propuesta del MVP a clientes y equipo técnico. | Equipo de Producto | VAL, SP 2.1 (Perform Validation on Selected Product or Product Components) |
+| **Recopilación y Priorización** | Revisar y organizar las historias de usuario según su relevancia y viabilidad. | Equipo de Producto | RD, SP 1.1 (Conocer las necesidades de las partes interesadas) |
+| | Aplicar la técnica MoSCoW para priorizar. | Equipo de Producto |  |
+| **Identificación de Funcionalidades Clave** | Desglosar las historias de usuario en funcionalidades específicas. | Equipo de Producto | RD, SP 3.2 (Establecer y mantener una definición de la funcionalidad requerida) |
+| | Evaluar si las funcionalidades son viables | Equipo de Producto | TS, SP 1.1 (Desarrollar soluciones alternativas) |
+| **Definición del Alcance del MVP** | Establecer qué funcionalidades serán parte del MVP y cuáles se postergarán. | Equipo de Producto | REQM, SP 1.2 (Obtener compromiso con los requisitos) |
+| | Definir los criterios de éxito del MVP. | Equipo de Producto | RD, SP 3.3 (Analizar requisitos) |
+| | Planificar las fases de desarrollo y lanzamiento. | Equipo de Producto | PP, SP 2.1 (Establecer el presupuesto y el cronograma) |
+| **Validación con Stakeholders** | Presentar la propuesta del MVP a clientes y equipo técnico. | Equipo de Producto | VAL, SP 2.1 (Realizar la validación de productos o componentes de productos seleccionados) |
 | | Ajustar según retroalimentación sin perder el enfoque de viabilidad. | Equipo de Producto |  |
 
 ## Salida   
