@@ -1,6 +1,6 @@
 ---
 title: "RF9: Usuario selecciona tractores a analizar."  
-sidebar_position: 2
+sidebar_position: 10
 ---
 
 # RF9: Usuario selecciona tractores a analizar.

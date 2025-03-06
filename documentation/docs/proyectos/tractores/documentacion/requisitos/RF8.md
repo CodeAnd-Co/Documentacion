@@ -1,6 +1,6 @@
 ---
 title: "RF8: Usuario consulta los tractores disponibles."  
-sidebar_position: 2
+sidebar_position: 9
 ---
 
 # RF8: Usuario consulta los tractores disponibles.
