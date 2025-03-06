@@ -55,7 +55,7 @@ Implementar estas prácticas garantizará una gestión efectiva de las solicitud
 
 <!--- Agrega una breve descripción del cambio en una línea -->
 
-[Ejemplo: Se agregó una nueva guía sobre los estándares de codificacion]
+[Ejemplo: Se agregó una nueva guía sobre los estándares de codificación]
 
 ## Descripción detallada
 
