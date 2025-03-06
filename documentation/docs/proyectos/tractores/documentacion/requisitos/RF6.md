@@ -1,6 +1,6 @@
 ---
 title: "RF6: Usuario selecciona el rancho a analizar."  
-sidebar_position: 2
+sidebar_position: 7
 ---
 
 # RF6: Usuario selecciona el rancho a analizar.

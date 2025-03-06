@@ -1,6 +1,6 @@
 ---
 title: "RF5: Usuario consulta los ranchos disponibles."  
-sidebar_position: 2
+sidebar_position: 6
 ---
 
 # RF5: Usuario consulta los ranchos disponibles.

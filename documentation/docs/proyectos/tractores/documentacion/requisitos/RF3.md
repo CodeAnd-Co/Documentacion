@@ -1,6 +1,6 @@
 ---
 title: "RF3: Usuario cierra sesión."  
-sidebar_position: 2
+sidebar_position: 4
 ---
 
 # RF3: Usuario cierra sesión.

@@ -1,6 +1,6 @@
 ---
 title: "RF7: Usuario modifica selección de rancho a analizar."  
-sidebar_position: 2
+sidebar_position: 8
 ---
 
 # RF7: Usuario modifica selección de rancho a analizar.
