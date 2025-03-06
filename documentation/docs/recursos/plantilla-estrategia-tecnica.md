@@ -51,9 +51,7 @@ La priorización de requerimientos se puede encontrar aquí:
 
 [Insertar documento con la priorización de sus requerimientos]
 
-La especificación de historias de usuario se llevarán a cabo teniendo en cuenta la definición de **Done** y **Ready** que se encuentran en este archivo:
-
-[Meter el link al apartado de Docusaurus con el Done y Ready]
+La especificación de historias de usuario se llevarán a cabo teniendo en cuenta la definición de [**Done**](../definicion-de-done.md) y [**Ready**](../definicion-de-ready.md) que se encuentran en este archivo:
 
 ---
 
