@@ -3,8 +3,8 @@ title: Planes de proyecto y productos de trabajo
 sidebar_position: 7
 ---
 
-# 1.5 RM Planes de proyecto y productos de trabajo
-## Actualización de requisitos en documentos
+ 
+# Actualización de requisitos en documentos
 
 **Última actualización:** 6 de marzo de 2025.
 
