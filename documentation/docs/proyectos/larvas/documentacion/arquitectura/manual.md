@@ -96,9 +96,11 @@ Propuestas alternativas:
 ## Frontend
 <!-- Desglose del componente Frontend de la arquitectura -->
 
+**Objetivo**: Interfaz de usuario para el registro y consulta de charolas (cajas)
+
 ### Tecnologías
 <!-- Escribir todas las tecnologías que se usarán para el frontend (Frameworks de diseño, tecnologías para consumir APIs) -->
-- Framework principal: Flutter (Dart)
+- **Framework principal**: Flutter (Dart)
 - Consumo de APIs: HTTP package, Dio
 - Persistencia local: Hive, Shared Preferences
 - Autenticación: Amazon Cognito
@@ -106,10 +108,16 @@ Propuestas alternativas:
 - Almacenamiento de archivos: Amazon S3
 - GraphQL (opcional): AWS AppSync
 
-
-**Framework principal**: Flutter (Dart) 
-
 ### Características
+- Panel de registro
+    - Formulario de registro de charola
+    - Eliminar charola
+    - Modificar charola
+- Inicio de sesión
+- Consulta de charolas
+- Análisis de charolas 
+    - Gráficos del historial de las charolas
+
 
 ## Backend
 <!-- Desglose del componente Backend de la arquitectura -->
