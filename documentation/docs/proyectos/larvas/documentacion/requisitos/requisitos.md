@@ -80,32 +80,26 @@ Los requisitos no funcionales establecen las expectativas en términos de tiempo
 ### Requisitos Específicos
 
 **Rendimiento**  
-- El tiempo de respuesta del sistema debe ser menor a 5 segundos.  
-- El sistema debe ser capaz de soportar al menos 100 usuarios concurrentes.
+- El sistema debe responder a las solicitudes del usuario dentro de un tiempo de respuesta aceptable; menos de 2 segundos para la mayoría de las operaciones.
 
 **Usabilidad**  
-- El administrador debe tardar menos de 6 horas en aprender a utilizar el sistema de backoffice.  
-- El sistema debe ser compatible con los siguientes navegadores:  
-  - Chrome versión 133.0.6943.126  
-  - Firefox 135.0.1  
-- Un empleado debe tardar menos de 1 hora en aprender a utilizar el sistema de e-commerce.
+- La interfaz debe ser intuitiva, permitiendo a los usuarios navegar fácilmente. Los botones deben ser de fácil interacción, y las gráficas deben mostrar datos relevantes de manera clara y comprensible.
+- El sistema deberá adaptarse a una interfaz de tableta.
 
 **Disponibilidad**  
-- El sistema debe contar con redundancia de datos y sistemas de respaldo para garantizar la disponibilidad continua.
+- El tiempo debe estar disponible entre semana (Lunes-Viernes) la mayoría del tiempo, sin embargo, en fines de semana se pueden hacer servicios de mantenimiento.
+- El sistema tolerará un máximo de 48 horas fuera de servicio. Preferentemente en un fin de semana (Sábado y Domingo)
 
 **Portabilidad y compatibilidad**  
-- El sistema debe contar con estándares abiertos para facilitar la integración con otros sistemas.
+- El sistema debe ser accesible desde aplicaciones móviles (iOS)
 
 **Mantenibilidad**  
-- El sistema debe contar con una documentación clara y actualizada. Un desarrollador debe poder encontrarla en un plazo de 15 minutos.
+- La documentación del código debe seguir el estándar establecido. [Estándar](https://docs.google.com/document/d/1RPutuY5q3qYghD482fGrDR-I2wly3_SeheZYyDsCkwk/edit?tab=t.0#heading=h.1z7xoikh12wg)
+- El código debe ser acompañado por pruebas unitarias con al menos un 80% de cobertura.
 
 **Escalabilidad**  
-- El sistema debe soportar un rango de entre 5,000 y 10,000 usuarios registrados.  
-- El sistema debe permitir la carga masiva de datos y facilitar la incorporación de nuevas funciones sin afectar las existentes.
+- El sistema debe ser escalable para manejar un aumento de hasta 20 usuarios simultáneos sin que exista una decadencia significativa del rendimiento ya que Zuustento pretende una expansión a futuro en los próximos 2 años. 
 
 **Seguridad**  
-- Los datos sensibles, como contraseñas, deben estar cifrados utilizando bcrypt.  
-- Una computadora debe tardar más de 3 años en descifrar la contraseña cifrada.  
-- El sistema debe contar con protección contra ataques CSRF y ataques de inyección NoSQL.  
-- El sistema debe contar con un sistema de autorización y autenticación robusto.  
-- El sistema debe cerrar automáticamente la sesión de los usuarios después de 8 horas de inactividad.
+- Los datos sensibles, como contraseñas, deben estar cifrados utilizando una librería o método confiables.
+- El sistema debe realizar copias de seguridad de datos automáticas cada 7 días debido a que es muy importante realizar respaldos.
