@@ -1,15 +1,15 @@
 ---
-title: "RF5: Usuario consulta los ranchos disponibles."  
+title: "RF7: Usuario modifica selección de rancho a analizar."  
 sidebar_position: 2
 ---
 
-# RF5: Usuario consulta los ranchos disponibles.
+# RF7: Usuario modifica selección de rancho a analizar.
 
-**Última actualización:** 04 de marzo de 2025
+**Última actualización:** 05 de marzo de 2025
 
 ### Historia de Usuario
 
-Como usuario, quiero consultar los ranchos disponibles en el sistema para ...
+Como usuario, quiero modificar el rancho a analizar para ...
 
   **Criterios de Aceptación:**
   - 

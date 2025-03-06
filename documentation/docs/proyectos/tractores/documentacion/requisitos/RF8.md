@@ -1,15 +1,15 @@
 ---
-title: "RF5: Usuario consulta los ranchos disponibles."  
+title: "RF8: Usuario consulta los tractores disponibles."  
 sidebar_position: 2
 ---
 
-# RF5: Usuario consulta los ranchos disponibles.
+# RF8: Usuario consulta los tractores disponibles.
 
-**Última actualización:** 04 de marzo de 2025
+**Última actualización:** 05 de marzo de 2025
 
 ### Historia de Usuario
 
-Como usuario, quiero consultar los ranchos disponibles en el sistema para ...
+Como usuario, quiero consultar los tractores disponibles en el sistema para ...
 
   **Criterios de Aceptación:**
   - 
