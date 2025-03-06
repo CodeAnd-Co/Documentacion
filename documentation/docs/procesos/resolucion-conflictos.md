@@ -39,7 +39,7 @@ sidebar_position: 2
 
 | Fase              | Descripción                                                   | Responsables           | Meta y práctica específica del CMMI |
 | ----------------- | ------------------------------------------------------------- | ---------------------- | ----------------------------------- |
-| **Identificación**    | Identificar el nivel del conflicto. Consultar [guía de identificación de niveles de conflicto.](guia_nivel_conflicto.md) | Moderador | PPQA SG 1.2 | 
+| **Identificación**    | Identificar el nivel del conflicto. Consultar [guía de identificación de niveles de conflicto.](resolucion-conflictos.md#escalamiento-de-conflictos) | Moderador | PPQA SG 1.2 | 
 | **Nivel 5** | Separar a las personas para evitar que se sigan haciendo daño | Moderador | PPQA SP 2.1 |
 | **Nivel 4** | Establecer estructuras de seguridad para disminuir el nivel de conflicto: diplomacia, pensamientos constructivos del otro grupo, empatía, negociaciones con un comité. | Moderador | PPQA SP 2.1 |
 | **Nivel 3** |  Ser objetivo, obtener datos sobre la situación y establecer los hechos. Negociar sólo si en la negociación no entran los valores de los involucrados. | Moderador e Involucrados | PPQA SP 2.1 |
