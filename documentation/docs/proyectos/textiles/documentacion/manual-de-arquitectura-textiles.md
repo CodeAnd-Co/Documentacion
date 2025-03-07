@@ -1,5 +1,5 @@
 ---
-title: Manual de arquitectura y estrategia tecnica
+title: Manual de arquitectura
 sidebar_position: 3
 ---
 
