@@ -5,7 +5,7 @@ sidebar_position: 2
 
 # Guía de hacer un plan de proyecto
 
-**Última actualización:** 5 de marzo de 2025.
+**Última actualización:** 6 de marzo de 2025.
 
 ---
 
@@ -15,13 +15,15 @@ sidebar_position: 2
 | Valeria Zúñiga Mendoza            | Autor       |
 | Max Toscano Díaz        | Colaborador |
 | Carlos Iván Fonseca Mondragón        | Colaborador |
+| Mariana Juárez Ramírez        | Colaborador |
+| Sofía Osorio Suárez        | Colaborador |
 
 ---
 
 ### Objetivo
 
 * Elaborar un plan de proyecto efectivo alineado con varias prácticas del **CMMI-DEV V1.3**.
-* Asegurar la planificación, estimación de esfuerzo, asignación de recursos y monitoreo de avances para optimizar la ejecución y el cumplimiento de los objetivos estratégicos.
+* Asegurar la planificación, estimación de esfuerzo, asignación de recursos, designación del líder responsable del éxito de cada actividad y monitoreo de avances para optimizar la ejecución y el cumplimiento de los objetivos estratégicos.
 
 
 ---
@@ -38,12 +40,14 @@ sidebar_position: 2
 |----------|----------------|-----------------|-----------------------------------------|
 | **Plan de proyecto** | Seguir la <u>*[plantilla de Plan de Proyecto](https://docs.google.com/spreadsheets/d/1ASpVrD2yAUDSG3F0yN3xRMQW_yR_ykhLwBdV2hSwv5Y/edit?usp=sharing)*</u> | Team Lead | **PP, SP 2.7** (Establecer el plan de proyecto) |
 | **Definición de tareas** | Definir las tareas Work Items list: requerimientos, tareas, etc. | Team Lead, Product Owner, Architecture Owner | **PP, SP 2.7** (Establecer el plan de proyecto) |
+| **Asignación de líder responsable** | Asignar a cada líder la tarea correspondiente a su área de especialidad, asegurando que sean responsables del éxito de la actividad | Team Leader | **PP, SP 2.7** (Consideraciones de infraestructura) |
 | **Estimación de esfuerzo y costo** | Establecer puntos departamentales a cada tarea en equipo considerando:- Número de interfaces y su complejidad.- Volumen de datos.- Velocidad y complejidad del equipo.- Elementos de la arquitectura. Si hay desacuerdos, seguir la siguiente fórmula:`= (Estimación más optimista + estimación más pesimista + estimación más probable*4 ) / 6` | Todos los miembros del equipo | **PP, SP 1.2** (Establecer las estimaciones de los atributos de los productos de trabajo y de las tareas) |
 | **Conversión de puntos a horas** | La conversión de puntos departamentales a horas se establece según la hoja “Estimación y reestimación de costos”. Donde se indica la conversión actual y la reestimación según el tamaño y el costo real del historial. | No aplica | **PP, SP 1.2** (Establecer las estimaciones de los atributos de los productos de trabajo y de las tareas), **PP, SP 1.4** (Estimar el esfuerzo y el coste) |
 | **Presupuesto del proyecto** | El Team Lead establece el presupuesto según la fórmula anterior, revisando periódicamente la página de “estimación y reestimación de costos” y cambia la fórmula de “costo estimado” según sea necesario. | Team Lead | **PP, SP 1.4** (Estimar el esfuerzo y el coste), **PP, SP 2.1** (Establecer el presupuesto y el calendario) |
 | **Identificación de dependencias y fechas fijas** | Identificar cuando las tareas tienen fecha fija o cuando hay dependencias, es decir cuando otras tareas deban ser completadas antes para que esta pueda ser ejecutada, añadir en la primera columna “D” (Dependencia) o “F” (Fecha fija). | Team Lead, Product Owner, Architecture Owner | **PP, SP 2.1** (Establecer el presupuesto y el calendario) |
 | **Priorización de tareas** | Ordenar las tareas por prioridad considerando fechas fijas, dependencias y para requisitos basarse en la prioridad del MVP. | Team Lead, Product Owner | **PP, SP 2.1** (Establecer el presupuesto y el calendario) |
 | **Asignación de fechas** | Establecer la fecha de las tareas según la prioridad. | Team Lead, Product Owner | **PP, SP 2.1** (Establecer el presupuesto y el calendario) |
+| **Plan de Entregas** | Seguir el apartado de Planificación que se encuentra en el Docusaurus de su respectivo proyecto. Llenar la fecha de finalización y estado | Team Leader | **PP, SP 2.1** (Establecer el presupuesto y el calendario) |
 | **Seguimiento del valor acumulado** | Gestionar la gráfica de valor acumulado esperado vs ganado a lo largo del tiempo. | Team Lead | **PMC, SP 1.1** (Monitorizar los parámetros de planificación del proyecto) |
 | **Seguimiento del costo acumulado** | Gestionar la gráfica de costo acumulado esperado vs ganado a lo largo del tiempo. | Team Lead | **PMC, SP 1.1** (Monitorizar los parámetros de planificación del proyecto) |
 | **Gestión de riesgos** | Gestionar los riesgos del proyecto según x proceso. | Team Lead | **PP, SP 2.2** (Identificar los riesgos del proyecto)**PMC, SP 1.3** (Monitorizar los riesgos del proyecto) |
@@ -58,4 +62,5 @@ sidebar_position: 2
 3. **Lista de tareas priorizadas y estimadas** con su asignación de fechas.
 4. **Monitoreo continuo** del desempeño, riesgos y ajustes requeridos.
 5. **Documentación de desviaciones y replanificación** en caso de ser necesario.
+6. **Plan de Entrega** con fechas de finalización de las fases y los hitos.
 
