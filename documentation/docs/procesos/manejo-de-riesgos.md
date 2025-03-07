@@ -48,9 +48,9 @@ sidebar_position: 1
 | **Evaluación de Riesgos** | Determinar la probabilidad de ocurrencia y el impacto potencial de los riesgos. | Team Leader | PP, SP 2.2 (Identificar los riesgos del proyecto) |
 | **Mitigación de Riesgos** | Definir un plan de acción y fecha de ejecución para prevenir que el riesgo se transforme en un problema o, de no ser posible, reducir las probabilidades de que ocurra. | Team Leader | PP, SP 2.2 (Identificar los riesgos del proyecto) |
 | | Seleccionar a un miembro del equipo para ser el responsable de asegurar el cumplimiento del plan de acción. | Team Leader | PP, SP 2.2 (Identificar los riesgos del proyecto) |
-| | De ser necesario, compartir con los stakeholders relevantes los riesgos identificados y el plan de acción para mitigarlos. | Product Owner | PP, SP 2.2 (Identificar los riesgos del proyecto) |
+| | Compartir con los stakeholders relevantes los riesgos identificados y el plan de acción para mitigarlos. | Product Owner | PP, SP 2.2 (Identificar los riesgos del proyecto) |
 | | Implementar los planes de mitigación y establecer un monitoreo continuo. | Team Leader | PP, SP 2.2 (Identificar los riesgos del proyecto) |
-| **Reevaluación de Riesgos** | Pendiente | Team Leader | PP, SP 1.3 (Monitorear los riesgos del proyecto) |
+| **Reevaluación de Riesgos** | Mantener un seguimiento de los riesgos identificados y realizar revaloraciones en caso de ser necesario. | Team Leader | PP, SP 2.2 (Identificar los riesgos del proyecto) |
 
 ---
 
