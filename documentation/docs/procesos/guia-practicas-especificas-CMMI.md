@@ -13,7 +13,7 @@ sidebar_position: 1
 | Nombre                            | Rol         |
 | --------------------------------- | ----------- |
 | Valeria Zúñiga Mendoza            | Autor       |
-| Diego Isaac Fuentes Juvera        | modificador |
+| Diego Isaac Fuentes Juvera        | Modificador |
 
 ---
 
