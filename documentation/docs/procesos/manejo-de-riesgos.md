@@ -41,7 +41,7 @@ sidebar_position: 1
 
 | **Fase**                  | **Descripción** | **Responsables** | **Meta y práctica específica del CMMI** |
 |---------------------------|----------------|------------------|-----------------------------------------|
-| **Preparación**           | Crear una copia de la plantilla de [Gestión de Riesgos y Problemas](https://docs.google.com/spreadsheets/d/1GmvdZNFUk9v_0GbXoIJFn5uTSP-205IGCwFFjFO3f6A/edit) (esta servirá como apoyo para el manejo de los riesgos). | Team Leader | PP, SP 2.2 (Identificar los riesgos del proyecto) |
+| **Preparación**           | Crear una copia de la plantilla de [Gestión de Riesgos y Problemas](https://docs.google.com/spreadsheets/d/10taZIz3F3eSA6oQNUeCHmHSEP7WQNuz3cz7xqmjrGCg/edit) (esta servirá como apoyo para el manejo de los riesgos). | Team Leader | PP, SP 2.2 (Identificar los riesgos del proyecto) |
 | **Identificación de Riesgos** | Definir todos los problemas potenciales que pueden obstaculizar el logro de los objetivos del proyecto. | Team Leader | PP, SP 2.2 (Identificar los riesgos del proyecto) |
 | **Análisis de Riesgos** | Definir las causas y efectos que pueden tener los riesgos identificados. | Team Leader | PP, SP 2.2 (Identificar los riesgos del proyecto) |
 | | Definir de qué manera actualmente se están tratando estos riesgos. | Team Leader | PP, SP 2.2 (Identificar los riesgos del proyecto) |
