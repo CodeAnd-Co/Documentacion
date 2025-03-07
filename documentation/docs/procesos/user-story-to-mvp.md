@@ -6,7 +6,7 @@ sidebar_position: 7
 # Proceso de Definición de MVP
 
 **Última actualización:** 07 de marzo de 2025  
-**Versión:** 3.3
+**Versión:** 3.4
 
 ## Autores  
 | Nombre                  | Rol   |
@@ -40,7 +40,8 @@ Transformar historias de usuario en una definición clara de un Producto Mínimo
 | | Definir los criterios de éxito del MVP. | Equipo de Producto | RD, SP 3.3 (Analizar requisitos) |
 | | Planificar las fases de desarrollo y lanzamiento. | Equipo de Producto | PP, SP 2.1 (Establecer el presupuesto y el cronograma) |
 | **Validación con Stakeholders** | Presentar la propuesta del MVP a clientes y equipo técnico. | Equipo de Producto | VAL, SP 2.1 (Realizar la validación de productos o componentes de productos seleccionados) |
-| | Presentar la Especificación de Requerimientos de Software a clientes y asegurar la firma de validación del socio.| Equipo de Producto | REQM, SP 1.2 (Obtener compromiso con los requisitos), PP, SP 3.3 (Obtener el compromiso con el plan.)| |
+| | Presentar la [Especificación de Requerimientos de Software](https://docs.google.com/document/d/1OWg8yaLw4GkswP0XC09DK0pY9ICuLIayXk5lSzIWzI4/edit?usp=drive_link) a clientes y asegurar la firma de validación del socio.| Equipo de Producto | REQM, SP 1.2 (Obtener compromiso con los requisitos)| |
+| | Presentar a clientes el formato [Compromiso con el plan](https://docs.google.com/document/d/119q5ZKeP8v-ymSohetKmaGKy_QUTAEWhlEDfpBnkRC8/edit?usp=sharing) y asegurar su firma.| Equipo de trabajo | PP 3.3 (Obtener el compromiso con el plan) |
 | | Ajustar según retroalimentación sin perder el enfoque de viabilidad. | Equipo de Producto |  |
 
 
@@ -52,3 +53,4 @@ Transformar historias de usuario en una definición clara de un Producto Mínimo
 | Autor | Descripción del cambio | Versión |
 |---------|-------------------------|---------|
 | Emiliano Gomez Gonzalez | Corrige un paso del proceso del MVP | 3.3 |
+| Juan Pablo Chávez Leal | Adición de la actividad relacionada al compromis con el plan, además de se vinculan los documentos a sus plantillas| 3.4|
