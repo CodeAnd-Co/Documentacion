@@ -6,7 +6,7 @@ sidebar_position: 7
 # Proceso de Definición de MVP
 
 **Última actualización:** 06 de marzo de 2025  
-**Versión:** 3.0
+**Versión:** 3.1
 
 ## Autores  
 | Nombre                  | Rol   |
@@ -29,7 +29,7 @@ Transformar historias de usuario en una definición clara de un Producto Mínimo
 
 | **Fase**                            | **Descripción** | **Responsables** | **Meta y práctica específica del CMMI** |
 |--------------------------------------|----------------|------------------|--------------------------|
-| **Identificación de proveedores de requisitos** | Recolección de información de los proveedores apropiados de requisitos    | Equipo de producto | REQM SP 1.1 (Comprender los requisitos) |
+| **Identificación de proveedores de requisitos** | Recolección de información de los proveedores apropiados de requisitos| Equipo de producto | REQM SP 1.1 (Comprender los requisitos) |
 |     | Generar una tabla con la información del proveedor, su rol, la autoridad que tiene, el tipo de requisitos que provee, y el método de comunicación que se tiene con él.     | Product Owner    |  REQM SP 1.1 (Comprender los requisitos)  |
 |   |  Usar el método de comunicación para llegar a una comprensión compartida sobre los requisitos.      | Product Owner            | REQM SP 1.1 (Comprender los requisitos)  |
 | **Recopilación y Priorización** | Revisar y organizar las historias de usuario según su relevancia y viabilidad. | Equipo de Producto | RD, SP 1.1 (Conocer las necesidades de las partes interesadas) |
@@ -40,9 +40,12 @@ Transformar historias de usuario en una definición clara de un Producto Mínimo
 | | Definir los criterios de éxito del MVP. | Equipo de Producto | RD, SP 3.3 (Analizar requisitos) |
 | | Planificar las fases de desarrollo y lanzamiento. | Equipo de Producto | PP, SP 2.1 (Establecer el presupuesto y el cronograma) |
 | **Validación con Stakeholders** | Presentar la propuesta del MVP a clientes y equipo técnico. | Equipo de Producto | VAL, SP 2.1 (Realizar la validación de productos o componentes de productos seleccionados) |
-| | Presentar la Especificación de Requerimientos de Software a clientes y asegurar la firma de validación del socio.| Equipo de Producto | REQM, SP 1.2 (Obtener compromiso con los requisitos)
+| | Presentar la Especificación de Requerimientos de Software a clientes y asegurar la firma de validación del socio.| Equipo de Producto | REQM, SP 1.2 (Obtener compromiso con los requisitos)|
+| | Presentar el Compromiso con el plan y asegurar su firma por el socio formador | Equipo de Producto | PP, SP 3.3 (Obtener el compromiso con el plan.)|
 | | Ajustar según retroalimentación sin perder el enfoque de viabilidad. | Equipo de Producto |  |
 
 
 ## Salida   
-1. Lista final de funcionalidades esenciales  
+1. Lista final de funcionalidades esenciales. 
+2. Funcionalidades validadas por el socio.
+3. Plan de proyecto validado por el socio. 
