@@ -5,7 +5,7 @@ sidebar_position: 2
 
 # Guía de hacer un plan de proyecto
 
-**Última actualización:** 5 de marzo de 2025.
+**Última actualización:** 6 de marzo de 2025.
 
 ---
 
