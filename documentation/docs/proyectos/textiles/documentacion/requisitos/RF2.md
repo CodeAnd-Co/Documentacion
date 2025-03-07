@@ -1,30 +1,38 @@
 ---
-title: "RF2: Super Administrador Lee Cliente"  
+title: "RF2: Super Administrador Consulta Lista de Usuarios"  
 sidebar_position: 3
 ---
 
-# RF2: Super Administrador Lee Cliente
+# RF2: Super Administrador Consulta Lista de Usuarios  
 
-**Última actualización:** 01 de marzo de 2025
-
-### Historia de Usuario
-
-Como administrador, quiero visualizar la información detallada de un cliente específico para comprender mejor sus necesidades y asegurar una correcta asignación de uniformes a sus empleados.
-
-  **Criterios de Aceptación:**
-  - El sistema debe permitir al Super Administrador buscar y seleccionar a un cliente por su ID o nombre.
-  - El sistema debe mostrar información detallada del cliente (nombre, correo electrónico, número de teléfono, etc.).
-  - El Super Administrador debe poder visualizar esta información de manera clara y accesible sin necesidad de navegar por diferentes pantallas.
-  - En caso de que el cliente no exista, el sistema debe mostrar un mensaje de error adecuado.
+**Última actualización:** 06 de marzo de 2025  
 
 ---
 
-### Diagrama de Secuencia
+## Historia de Usuario  
+Como administrador, quiero acceder a un listado de usuarios con opciones de búsqueda y filtros para gestionar su información y accesos de manera eficiente.
+---
 
-> *Descripción*: El diagrama de secuencia ilustra cómo el Super Administrador interactúa con el sistema para buscar y visualizar los detalles de un cliente, destacando las interacciones entre el administrador, la base de datos y la interfaz de usuario.
+## **Criterios de Aceptación:**  
+
+1. El Super Administrador debe poder acceder a la opción **"Lista de Usuarios"** desde el panel de administración.  
+2. Se debe mostrar una tabla con la siguiente información de cada usuario:  
+   - Nombre completo  
+   - Correo electrónico  
+   - Rol  
+   - Estado (Activo/Inactivo)  
+3. Debe existir una barra de búsqueda para filtrar usuarios por nombre o correo electrónico.  
+4. Debe permitir paginación si hay muchos usuarios registrados.  
+5. Si no hay usuarios en la base de datos, se debe mostrar un mensaje indicando que no hay registros disponibles.  
 
 ---
 
-### Mockup
+## **Diagrama de Secuencia**  
 
-> *Descripción*: El mockup muestra la interfaz donde el Super Administrador puede consultar la información de un cliente. Se incluyen los campos de búsqueda y visualización de datos, con el diseño organizado para facilitar la navegación.
+> *Descripción*: El diagrama de secuencia muestra la interacción del Super Administrador con el sistema para consultar la lista de usuarios. Incluye los pasos de solicitud, procesamiento y respuesta de los datos obtenidos de la base de datos.  
+
+---
+
+## **Mockup**  
+
+> *Descripción*: El mockup representa la interfaz de usuario donde el Super Administrador puede ver la lista de usuarios en formato de tabla, con opciones para filtrar, buscar y paginar los resultados.  

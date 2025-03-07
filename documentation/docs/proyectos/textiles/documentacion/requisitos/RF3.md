@@ -1,29 +1,37 @@
 ---
-title: "RF3: Super Administrador Actualiza Cliente"  
+title: "RF3: Super Administrador Lee Usuario"  
 sidebar_position: 4
 ---
 
-# RF3: Super Administrador Actualiza Cliente
+# RF3: Super Administrador Lee Usuario  
 
-**Última actualización:** 01 de marzo de 2025
-
-### Historia de Usuario
-
-Como administrador, quiero modificar los datos de un cliente existente para mantener su información actualizada y reflejar cualquier cambio en sus requisitos o estructura organizativa.
-
-  **Criterios de Aceptación:**
-  - El sistema debe permitir al Super Administrador actualizar la información del cliente.
-  - El sistema debe verificar que los campos obligatorios estén completos antes de permitir la actualización.
-  - Si la actualización es exitosa, el sistema debe mostrar un mensaje de confirmación.
+**Última actualización:** 06 de marzo de 2025  
 
 ---
 
-### Diagrama de Secuencia
+## Historia de Usuario  
+Como administrador, quiero visualizar la información detallada de un usuario, incluyendo su rol y permisos, para asegurar que su acceso al sistema sea el adecuado.
+---
 
-> *Descripción*: El diagrama de secuencia muestra el flujo entre el Super Administrador, el sistema de actualización de cliente y la base de datos para realizar la actualización de los datos del cliente.
+## **Criterios de Aceptación:**  
+
+1. El Super Administrador debe poder hacer clic en un usuario dentro de la **Lista de Usuarios** para ver su información detallada.  
+2. Se debe mostrar un panel con los siguientes datos:  
+   - Nombre completo  
+   - Correo electrónico  
+   - Rol asignado  
+   - Estado del usuario (Activo/Inactivo)  
+   - Fecha de creación de la cuenta  
+3. Si el usuario no existe, se debe mostrar un mensaje de error.  
 
 ---
 
-### Mockup
+## **Diagrama de Secuencia**  
 
-> *Descripción*: El mockup muestra cómo el Super Administrador interactúa con la interfaz para modificar los datos del cliente. Se incluyen campos editables y botones para guardar los cambios.
+> *Descripción*: El diagrama de secuencia ilustra el flujo de interacción entre el Super Administrador y el sistema cuando se solicita la información detallada de un usuario. Se muestra la consulta, la respuesta de la base de datos y la visualización de los datos.  
+
+---
+
+## **Mockup**  
+
+> *Descripción*: El mockup muestra la interfaz donde se presenta la información detallada de un usuario, organizada en un panel de fácil lectura con los datos clave.  
