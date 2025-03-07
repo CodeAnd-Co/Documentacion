@@ -5,7 +5,7 @@ sidebar_position: 3
 
 # Guía de Solicitudes de Extracción
 
-**Última actualización:** 16 de febrero de 2025
+**Última actualización:** 6 de marzo de 2025
 
 _Detalla el proceso para crear, revisar y aprobar pull requests, fomentando una colaboración efectiva y asegurando la calidad del código antes de su integración._
 
@@ -42,3 +42,79 @@ _Detalla el proceso para crear, revisar y aprobar pull requests, fomentando una 
 5. **Aprobación Formal**: Una vez que todas las pruebas hayan pasado y la revisión haya sido completada, obtén la aprobación formal de los revisores antes de proceder con la fusión.
 
 Implementar estas prácticas garantizará una gestión efectiva de las solicitudes de extracción, promoviendo una colaboración eficiente y manteniendo la calidad del código en el proyecto.
+
+**Plantilla de PR**
+
+```
+<!--- Plantilla de PR para dacusaurus -->
+<!--- Autor: Ian Julián Estrada Castro -->
+<!--- Versión 1.1 -->
+<!--- Última actualización: 6 de marzo de 2025 -->
+
+# Solicitud de cambio (PR)
+
+<!--- Agrega una breve descripción del cambio en una línea -->
+
+[Ejemplo: Se agregó una nueva guía sobre los estándares de codificación]
+
+## Descripción detallada
+
+<!-- Explica con más detalle lo que hiciste y por qué -->
+
+[Ejemplo: Este cambio integra un estándar de codificación porque actualmente no hay uno establecido]
+
+### Archivos modificados
+
+<!--- Lista los archivos que agregaste, modificaste o eliminaste -->
+
+[Ejemplo:
+- `docs/estándares.md` (Nuevo documento)
+- `docs/procesos.md` (Modificado)
+- `docs/errores.md` (Eliminado)]
+
+## Tipo de cambio
+
+<!--- ¿Qué hace este cambio? Pon una `x` en los espacios que aplican: -->
+
+- [ ] Documentación (Un nuevo proceso, práctica, guía, estándar, documentación de proyecto, etc.)
+- [ ] Modificación en documentación existente (Modificaciones a procesos, prácticas, guías, estándares, documentación de proyecto, etc.)
+- [ ] Hotfix (Una modificación rápida o urgente, eliminación de archivos repetidos, correcciones ortográficas, etc.)
+- [ ] Refactorización de documentación (Reorganización de contenido sin cambios significativos)
+- [ ] Eliminación de documentación obsoleta
+
+## Checklits del autor:
+
+<!--- Antes de hacer la solicitud, repasa los puntos siguientes y pon una `x` en todas las cajas que aplican -->
+
+- [ ] He determinado que los cambios no tienen un impacto negativo en el sistema
+- [ ] Ortografía y gramática correctas
+- [ ] Formato en Markdown consistente con el resto de la documentación
+- [ ] Enlaces y referencias son funcionales
+- [ ] Imágenes y código bien formateados (si aplica)
+- [ ] Contenido actualizado y relevante
+- [ ] Fecha y versión actualizados (si aplica)
+- [ ] Alguien más está asignado como evaluador (tester/reviewer)
+
+## Checklist del evaluador:
+
+<!--- Repasa los puntos siguientes, y pon una `x` en todas las cajas que aplican -->
+
+- [ ] La descripción en la tabla que se encuentra en la parte inferior del documento coincide con la descripción del pull request
+- [ ] Los cambios no afectan negativamente la documentación o generan inconsistencias
+- [ ] Ortografía y gramática correctas
+- [ ] He notificado al autor del PR en caso de dudas o ajustes necesarios
+
+
+## Registro de cambios:
+
+<!-- En la parte inferior de los documentos Markdown debe haber una tabla como la siguiente -->
+
+| Autor | Descripción del cambio | Versión |
+|---------|-------------------------|---------|
+| [Tu nombre] | [Breve descripción del cambio] | [Versión] |
+```
+
+## Registro de cambios
+| Autor | Descripción del cambio | Versión |
+|---------|-------------------------|---------|
+| Ian Julián Estrada Castro | Agregué la plantilla para pull request | 1.1 |
