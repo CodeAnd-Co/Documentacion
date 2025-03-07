@@ -19,6 +19,7 @@ Establecer lineamientos claros para el desarrollo, asegurando calidad y consiste
 ## Repositorios
 
 Utilizaremos 3 repositorios separados que manejarán:
+
 - **Backend local**: El backend que estará acoplado a electron en cada uno de los equipos del cliente y donde se hará el procesamiento de los datos de los reportes, así como la creación de y modificación de los mismos. Se empaquetará en la app de electron mediante una estrategia de empaquetado de submódulo.
 - **Backend desplegado**: Este será el alojado en la instancia del EC2, donde se manejará el guardado de los datos como el control de acceso basado en roles y las plantillas creadas.
 - **Frontend**: El frontend estará hosteado localmente en la aplicación de Electron.
@@ -27,7 +28,7 @@ De esta manera nuestro sistema puede ser modular y las responsabilidades se divi
 
 ## Estrategia de Ramas
 
-![alt text](../../../recursos/Manejo-de-ramas.png)
+![alt text](/img/manejo-de-ramas.png)
 
 Utilizaremos 3 ramas principales:
 
@@ -89,7 +90,7 @@ Documentar claramente las funcionalidades y código del sistema para lectura en 
 
 ### Backend desacoplado
 
-![alt text](../../../recursos/plantilla-diagrama-de-paquetes.png)
+![alt text](/img/plantilla-diagrama-de-paquetes.png)
 
 Este diagrama de paquetes representa la organización del backend alojado en la instancia del EC2. Se divide en varias secciones principales:
 
@@ -132,18 +133,21 @@ Este diagrama de paquetes representa la organización de la app local de electro
 Esta carpeta sigue una arquitectura basada en CLEAN con MVC.
 
 - **Core**: Encapsula la lógica de negocio. Cada módulo del proyecto tendrá su propia carpeta dentro de `Core`, que contendrá:
+
   - **Entities**: Representan los objetos de negocio con lógica encapsulada dentro del objeto.
   - **Repositories**: Contratos para el almacenamiento de los datos.
-  - **Archivos principales**: 
+  - **Archivos principales**:
     - **useCase1.js**: Cada caso de uso tendrá su archivo ".js". No deben saber nada sobre HTTP, Express, bases de datos, ni ningún framework.
 
 - **Infra**: Maneja conexiones con el backend remoto y almacenamiento local.
+
   - **Module**: Cada módulo tendrá su carpeta propia que contendrá:
     - **Database**: Implementa los repositorios definidos en `Core/module/repositories`.
   - **Api**: Comunicación con el backend alojado en el EC2.
   - **Services**: Lógica reutilizable alrededor del proyecto.
 
 - **Presentation**: Define las rutas y controladores para interactuar con el frontend local. Cada módulo del proyecto tendrá su propia carpeta dentro de `Presentation`, que contendrá:
+
   - **RoutesIndexes**: Punto de entrada de las rutas.
   - **Routes**: Definición de las rutas de la API.
   - **Controllers**: Implementación de la lógica que interactúa con los casos de uso.
@@ -152,13 +156,14 @@ Esta carpeta sigue una arquitectura basada en CLEAN con MVC.
   - **app.js**: Punto de entrada principal del backend. Su función es inicializar y configurar el servidor local de la aplicación.
 
 ## 2. Frontend
+
 Esta carpeta usa MVVM para el manejo de las vistas
 
 - **Views**: Son las interfaces que el usuario ve.
 - **ViewModels**: Contienen la lógica para manejar la UI y la comunicación con el backend local.
 - **Models**: Representación de la base de datos.
 - **Utils**: .Funciones de ayuda.
-- **Archivo principal**: 
+- **Archivo principal**:
   - **index.js**: Punto de entrada de Electron.
 
 ### 3. Pruebas Unitarias
