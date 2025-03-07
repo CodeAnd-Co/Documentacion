@@ -1,9 +1,9 @@
 ---
-title: Estimación de alcance, esfuerzo y coste del proyecto
+title: Estimación de alcance, esfuerzo y coste del proyecto (WBS)
 sidebar_position: 2
 ---
 
-# Estimación de alcance, esfuerzo y coste del proyecto
+# Estimación de alcance, esfuerzo y coste del proyecto (WBS)
 
 **Última actualización:** 4 de marzo de 2025
 
