@@ -18,16 +18,16 @@ sidebar_position: 8
 
 ### Objetivo
 
-* Garantizar el cambio en la arquitectura de un proyecto de manera estructurada
-* Minimizar los riesgos de la migración del sistema
+* Garantizar el cambio en la arquitectura de un proyecto de manera estructurada.
+* Minimizar los riesgos de la migración del sistema.
 * Asegurar que la calidad del software siga igual aun con el imprevisto.
 ---
 
 ### Entradas
 
-1. Manual de Arquitectura anterior
-2. Motivo del cambio
-3. Nombre(s) de la nueva arquitectura y/o tecnología a utilizar
+1. Manual de Arquitectura anterior.
+2. Motivo del cambio.
+3. Nombre(s) de la nueva arquitectura y/o tecnología a utilizar.
 
 
 ### Proceso
@@ -45,5 +45,5 @@ sidebar_position: 8
 ---
 
 ### Salidas
-1. Manual de Arquitectura actualizado
-2. Sistema Migrado
+1. Manual de Arquitectura actualizado.
+2. Sistema Migrado.
