@@ -96,7 +96,9 @@ Propuestas alternativas:
 ## Frontend
 <!-- Desglose del componente Frontend de la arquitectura -->
 
-**Objetivo**: Interfaz de usuario para el registro y consulta de charolas (cajas)
+### Objetivo 
+
+Interfaz de usuario para el registro y consulta de charolas (cajas)
 
 ### Tecnologías
 <!-- Escribir todas las tecnologías que se usarán para el frontend (Frameworks de diseño, tecnologías para consumir APIs) -->
@@ -118,9 +120,16 @@ Propuestas alternativas:
 - Análisis de charolas 
     - Gráficos del historial de las charolas
 
+### Despliegue de su frontend
+
+Donde se hosteará su frontend.
+
+---
 
 ## Backend
 <!-- Desglose del componente Backend de la arquitectura -->
+
+### Objetivo 
 
 ### Tecnologías
 <!-- Escribir las tecnologías que se usarán para crear el backend (librerías para conexión con bases de datos, bases de datos, frameworks, lenguajes) -->
@@ -131,17 +140,14 @@ Propuestas alternativas:
 ### Características
 <!-- Agregar las características del backend de su proyecto -->
 
-## Endpoints principales
+### Despliegue
+
+### Endpoints principales
 
 ## Servicios de infraestructura
 
-## Documentación de código
-**Objetivo**: documentar claramente las funcionalidades y código del sistema para lectura en caso de confusiones
-- Se agregan espacios alrededor de operadores y comas
-- Se agregan punto y coma al final de definiciones simples
-- Para documentar el código utilizaremos el estándar de documentación JS docs
-- El detalle del estándar de codificación se podrá ver en el siguiente documento:
-    - [Estándar de codificación](https://docs.google.com/document/d/1RPutuY5q3qYghD482fGrDR-I2wly3_SeheZYyDsCkwk/edit?tab=t.0#heading=h.1z7xoikh12wg)
+### Objetivo
 
+### Servicios
 
 ## Beneficios de la arquitectura seleccionada
