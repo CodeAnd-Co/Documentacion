@@ -10,6 +10,8 @@ title: Plantilla estrategia tecnica
 | Daniel Contreras | Autor |
 | Emiliano Gomez   | Autor |
 
+**Última actualización por:** Diego Alfaro, 7 de marzo de 2025
+
 ---
 
 # Plantilla Estrategia tecnica
@@ -26,7 +28,7 @@ Utilizaremos 2 repositorios separados, tanto para el backend como para el fronte
 
 ## Estrategia de Ramas
 
-![alt text](Manejo-de-ramas.png)
+![alt text](/docs/recursos/Manejo-de-ramas.png)
 
 Utilizaremos 3 ramas principales:
 
@@ -77,12 +79,10 @@ La estrategia que se seguirá para las pruebas será la siguiente:
 
 Documentar claramente las funcionalidades y código del sistema para lectura en caso de confusiones.
 
-**Ejemplo:**
-
-- Se agregaron espacios alrededor de operadores y comas.
+- Se agregaran espacios alrededor de operadores y comas.
 - Se agregan punto y coma al final de definiciones simples.
 - Para documentar el código utilizaremos el estándar de documentación JS docs.
-- El detalle del estándar de codificación se podrá ver en el siguiente documento: [**Estandar de codificación**](/docs/guias/standards/general.md).
+- Para ver mas informacion de el estandar de codificacion ver el documento: [**Estandar de codificación**](/docs/guias/standards/general.md).
 
 ---
 
@@ -90,7 +90,7 @@ Documentar claramente las funcionalidades y código del sistema para lectura en 
 
 ### Backend
 
-![alt text](plantilla-diagrama-de-paquetes.png)
+![alt text](/docs/recursos/plantilla-diagrama-de-paquetes.png)
 
 Este diagrama de paquetes representa la organización de un backend. Se divide en varias secciones principales:
 
@@ -98,16 +98,18 @@ Este diagrama de paquetes representa la organización de un backend. Se divide e
 
 Cada módulo contiene:
 
-- **Data**: Gestión de la base de datos, incluyendo modelos y repositorios.
-- **Controllers**: Manejo de solicitudes HTTP, estructurado en:
-  - `RoutesIndexes`: Punto de entrada de las rutas.
-  - `Routes`: Definición de rutas.
-  - `Controllers`: Implementación de la lógica de negocio.
+- **Data**:
+  - `Repositorios` Gestión de la base de datos.
+  - `Modelos` Creacion de los modelos de datos.
+- **Controladores**: Manejo de solicitudes HTTP, estructurado en:
+  - `IndiceRutas`: Punto de entrada de las rutas.
+  - `Rutas`: Definición de rutas.
+  - `Controladores`: Implementación de la lógica de negocio.
 
 ### 2. Util
 
 - **Middlewares**: Funciones intermedias para procesar solicitudes.
-- **Services**: Lógica reutilizable independiente de los controladores.
+- **Servicios**: Lógica reutilizable independiente de los controladores.
 
 ### 3. Views
 

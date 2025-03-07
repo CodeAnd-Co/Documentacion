@@ -13,15 +13,15 @@ _Cronograma, hitos y entregables._
 
 :::warning Borrar Después de llenar la información
 
-| Fase del Proyecto | Fecha de Inicio | Fecha de Finalización | Responsable | Estado   |
-| ----------------- | --------------- | --------------------- | ----------- | -------- |
-| Planificación     | [Fecha]         | [Fecha]               | [Nombre]    | [Estado] |
-| Análisis          | [Fecha]         | [Fecha]               | [Nombre]    | [Estado] |
-| Diseño            | [Fecha]         | [Fecha]               | [Nombre]    | [Estado] |
-| Desarrollo        | [Fecha]         | [Fecha]               | [Nombre]    | [Estado] |
-| Pruebas           | [Fecha]         | [Fecha]               | [Nombre]    | [Estado] |
-| Implementación    | [Fecha]         | [Fecha]               | [Nombre]    | [Estado] |
-| Cierre            | [Fecha]         | [Fecha]               | [Nombre]    | [Estado] |
+| Fase del Proyecto                       | Fecha de Finalización | Estado   |
+| --------------------------------------- | --------------------- | -------- |
+| Fase de Inicio                          | [Fecha]               | [Estado] |
+| Construcción 1 (Prueba de Arquitectura) | [Fecha]               | [Estado] |
+| Construcción 2 (MVP)                    | [Fecha]               | [Estado] |
+| Transición 1 (MVP)                      | [Fecha]               | [Estado] |
+| Construcción 3 (MBI)                    | [Fecha]               | [Estado] |
+| Transición 2 (MBI)                      | [Fecha]               | [Estado] |
+| Cierre                                  | [Fecha]               | [Estado] |
 
 :::
 
@@ -29,15 +29,15 @@ _Cronograma, hitos y entregables._
 
 :::warning Borrar Después de llenar la información
 
-| Hito                     | Descripción                             | Fecha Estimada | Responsable | Estado   |
-| ------------------------ | --------------------------------------- | -------------- | ----------- | -------- |
-| Inicio del Proyecto      | Inicio formal del proyecto              | [Fecha]        | [Nombre]    | [Estado] |
-| Aprobación de Requisitos | Aprobación final de los requisitos      | [Fecha]        | [Nombre]    | [Estado] |
-| Finalización del Diseño  | Compleción del diseño del sistema       | [Fecha]        | [Nombre]    | [Estado] |
-| Desarrollo Completo      | Finalización del desarrollo del sistema | [Fecha]        | [Nombre]    | [Estado] |
-| Pruebas Completas        | Finalización de las pruebas             | [Fecha]        | [Nombre]    | [Estado] |
-| Implementación Exitosa   | Implementación exitosa en producción    | [Fecha]        | [Nombre]    | [Estado] |
-| Cierre del Proyecto      | Cierre formal del proyecto              | [Fecha]        | [Nombre]    | [Estado] |
+| Hito                     | Descripción                             | Fecha Estimada | Estado   |
+| ------------------------ | --------------------------------------- | -------------- | -------- |
+| Inicio del Proyecto      | Inicio formal del proyecto              | [Fecha]        | [Estado] |
+| Aprobación de Requisitos | Aprobación final de los requisitos      | [Fecha]        | [Estado] |
+| Finalización del Diseño  | Compleción del diseño del sistema       | [Fecha]        | [Estado] |
+| Desarrollo Completo      | Finalización del desarrollo del sistema | [Fecha]        | [Estado] |
+| Pruebas Completas        | Finalización de las pruebas             | [Fecha]        | [Estado] |
+| Implementación Exitosa   | Implementación exitosa en producción    | [Fecha]        | [Estado] |
+| Cierre del Proyecto      | Cierre formal del proyecto              | [Fecha]        | [Estado] |
 
 :::
 

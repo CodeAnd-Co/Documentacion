@@ -3,10 +3,10 @@ title: Ciclo de vida del proyecto
 sidebar_position: 14
 ---
 
-# Ciclo de Vida en DAD
+# Ciclo de vida en DAD
 
 
-### En qué consiste?
+### ¿En qué consiste?
 
 En Disciplined Agile Delivery (DAD), el ciclo de vida de desarrollo de software es un enfoque estructurado pero flexible que guía cómo se gestiona un proyecto desde su inicio hasta su entrega y mantenimiento. A diferencia de metodologías ágiles más tradicionales como Scrum, DAD reconoce que hay múltiples formas de trabajar y proporciona varios ciclos de vida en función del contexto del equipo y del negocio.
 
@@ -64,3 +64,8 @@ El ciclo de vida Lean Startup en Disciplined Agile Delivery (DAD) está diseñad
 | Favorece la innovación y la experimentación controlada. | Requiere una mentalidad flexible y tolerante al fracaso. |
 | Facilita el ajuste o pivote del producto según la demanda real del mercado. | Puede ser difícil de coordinar en equipos grandes o distribuidos. |
 | Optimiza el uso de recursos al centrarse en lo esencial para el cliente. | La falta de una visión clara a largo plazo puede dificultar la planificación estratégica. |
+
+
+## El ciclo de vida de Code & Co
+
+Escogimos el ciclo de vida **DAD Básico** porque se alinea con nuestro objetivo de lograr un 90% de satisfacción de clientes y miembros del departamento. DAD promueve la entrega continua de valor, lo que facilita la medición de la satisfacción mediante encuestas NPS y permite ajustar el proceso según las necesidades del cliente y del equipo. Su enfoque flexible y adaptativo mejora la calidad del proyecto y aumenta las posibilidades de éxito. Además de apoyar nuestro objetivo de satisfacción, DAD ofrece beneficios adicionales como la integración de buenas prácticas a base de iteraciones como Scrum, Kanban y Lean, la gestión proactiva de riesgos y la colaboración continua entre los diferentes roles del equipo. Todo esto contribuye a un proceso ágil, eficiente y centrado en el cliente, mientras fomenta la mejora continua y la optimización de los procesos dentro de la organización.

@@ -1,29 +1,35 @@
 ---
-title: "RF7: Super Administrador, Cliente Lee Empleado"  
+title: "RF7: Super Administrador Consulta Lista de Roles"  
 sidebar_position: 8
 ---
 
-# RF7: Super Administrador, Cliente Lee Empleado
+# RF7: Super Administrador Consulta Lista de Roles  
 
-**Última actualización:** 01 de marzo de 2025
-
-### Historia de Usuario
-
-Como administrador, quiero poder visualizar la información de un empleado específico para consultar sus datos y verificar su estado dentro del sistema.
-
-  **Criterios de Aceptación:**
-  - El sistema debe mostrar los detalles completos del empleado, como nombre, puesto y estado.
-  - El acceso debe ser restringido al Super Administrador o al Cliente correspondiente.
-  - El sistema debe mostrar una interfaz limpia y fácil de leer.
+**Última actualización:** 06 de marzo de 2025  
 
 ---
 
-### Diagrama de Secuencia
+## Historia de Usuario  
+Como administrador, quiero poder ver un listado de roles con filtros y opciones de búsqueda para gestionar el acceso de los usuarios de manera eficiente.
+---
 
-> *Descripción*: El diagrama de secuencia muestra el flujo de consulta de un empleado, donde el Super Administrador o Cliente solicita la información y el sistema responde con los datos del empleado.
+## **Criterios de Aceptación:**  
+
+1. El Super Administrador debe poder acceder a la opción **"Lista de Roles"** dentro del panel de administración.  
+2. La lista debe mostrar los siguientes datos de cada rol:  
+   - Nombre del rol  
+   - Cantidad de usuarios asignados a ese rol  
+3. Debe permitir filtrar roles por nombre.  
+4. Si no hay roles registrados, se debe mostrar un mensaje indicando que no hay registros disponibles.  
 
 ---
 
-### Mockup
+## **Diagrama de Secuencia**  
 
-> *Descripción*: El mockup muestra cómo se visualizan los datos del empleado en la interfaz, con campos como nombre, cargo y estado, accesibles para el Super Administrador o Cliente.
+> *Descripción*: El diagrama de secuencia muestra la interacción entre el Super Administrador y el sistema para consultar la lista de roles, incluyendo la solicitud de datos y su visualización.  
+
+---
+
+## **Mockup**  
+
+> *Descripción*: El mockup muestra la interfaz donde el Super Administrador puede ver la lista de roles disponibles, con opciones de búsqueda y filtrado.  

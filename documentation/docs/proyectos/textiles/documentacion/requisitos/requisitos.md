@@ -5,7 +5,7 @@ sidebar_position: 1
 
 # Requisitos
 
-**Última actualización:** 03 de marzo de 2025
+**Última actualización:** 06 de marzo de 2025
 
 ### **Proveedores de Requisitos**  
    - **Internos**: Personas dentro de Code & Co.  
@@ -13,14 +13,13 @@ sidebar_position: 1
 
 ### **Lista de Proveedores de Requisitos**  
 
-| Proveedor | Rol | Autoridad | Tipo de Requisitos | Método de Comunicación |
-|-----------|-----|-----------|--------------------|------------------------|
-| Product Owner | Interno | Alta | Funcionales y de negocio | Reuniones diarias en equipo, Whatsapp y Discord.|
-| Juan Pablo García (Socio Formador) | Externo | Alta | Funcionales, de negocio y UX | Reuniones 2 veces por semana, Whatsapp y Correo |
-| Architecture Owner| Interno | Alta | No funcionales, de información | Reuniones diarias en equipo, Whatsapp y Discord.  |
-| UX/UI | Interno | Alta | de Interfaz | Reuniones diarias en equipo, Whatsapp y Discord. |
-| Team Members | Interno | Media | Funcionales y No funcionales | Reuniones diarias en equipo, Whatsapp y Discord. |
-
+| Proveedor                        | Rol       | Autoridad | Tipo de Requisitos             | Método de Comunicación                                 |
+|-----------------------------------|-----------|-----------|--------------------------------|--------------------------------------------------------|
+| Product Owner                     | Interno  | Alta      | Funcionales y de negocio      | Reuniones diarias en equipo, Whatsapp y Discord.        |
+| Juan Pablo García (Socio Formador)| Externo  | Alta      | Funcionales, de negocio y UX  | Reuniones 2 veces por semana, Whatsapp y Correo         |
+| Architecture Owner                | Interno  | Alta      | No funcionales, de información| Reuniones diarias en equipo, Whatsapp y Discord.        |
+| UX/UI                              | Interno  | Alta      | de Interfaz                    | Reuniones diarias en equipo, Whatsapp y Discord.        |
+| Team Members                      | Interno  | Media     | Funcionales y No funcionales  | Reuniones diarias en equipo, Whatsapp y Discord.        |
 
 ## Requisitos Funcionales
 
@@ -30,86 +29,88 @@ Los requisitos funcionales del sistema describen una variedad de acciones que lo
 
 ---
 
-### Requisitos Específicos
+### Requisitos Específicos MVP
 
-[**RF1**](RF1.md): Super Administrador Crea Cliente  
-[**RF2**](RF2.md): Super Administrador Lee Cliente  
-[**RF3**](RF3.md): Super Administrador Actualiza Cliente  
-[**RF4**](RF4.md): Super Administrador Elimina Cliente  
-[**RF5**](RF5.md): Super Administrador Consulta Clientes  
-[**RF6**](RF6.md): Super Administrador Crea Empleado  
-[**RF7**](RF7.md): Super Administrador, Cliente Lee Empleado  
-[**RF8**](RF8.md): Super Administrador Actualiza Empleado  
-[**RF9**](RF9.md): Super Administrador Elimina Empleado  
-[**RF10**](RF10.md): Super Administrador Importa Empleados  
-[**RF11**](RF11.md): Super Administrador, Cliente Consulta Empleados  
-[**RF12**](RF12.md): Super Administrador Crea Grupo de Empleados  
-[**RF13**](RF13.md): Super Administrador, Cliente Lee Grupo de Empleados  
-[**RF14**](RF14.md): Super Administrador Actualiza Grupo de Empleados  
-[**RF15**](RF15.md): Super Administrador Elimina Grupo de Empleados  
-[**RF16**](RF16.md): Super Administrador, Cliente Consulta Grupos de Empleados  
-[**RF17**](RF17.md): Super Administrador Crea Rol  
-[**RF18**](RF18.md): Super Administrador Lee Rol  
-[**RF19**](RF19.md): Super Administrador Actualiza Rol  
-[**RF20**](RF20.md): Super Administrador Elimina Rol  
-[**RF21**](RF21.md): Super Administrador Consulta Roles  
-[**RF22**](RF22.md): Super Administrador Crea Producto  
-[**RF23**](RF23.md): Super Administrador, Cliente Lee Producto  
-[**RF24**](RF24.md): Super Administrador Actualiza Producto  
-[**RF25**](RF25.md): Super Administrador Elimina Producto  
-[**RF26**](RF26.md): Super Administrador Importa Productos  
-[**RF27**](RF27.md): Super Administrador, Cliente Consulta Productos  
-[**RF28**](RF28.md): Super Administrador Crea Grupo de Productos  
-[**RF29**](RF29.md): Super Administrador, Cliente Lee Grupo de Productos  
-[**RF30**](RF30.md): Super Administrador Actualiza Grupo de Productos  
-[**RF31**](RF31.md): Super Administrador Elimina Grupo de Productos  
-[**RF32**](RF32.md): Super Administrador, Cliente Consulta Grupo de Productos  
-[**RF33**](RF33.md): Super Administrador Crea Set de Grupo de Productos  
-[**RF34**](RF34.md): Super Administrador, Cliente Lee Set de Grupo de Productos  
-[**RF35**](RF35.md): Super Administrador Actualiza Set de Grupo de Productos  
-[**RF36**](RF36.md): Super Administrador Elimina Set de Grupo de Productos  
-[**RF37**](RF37.md): Super Administrador, Cliente Consulta Sets de Grupo de Productos  
-[**RF38**](RF38.md): Super Administrador Crea Cliente  
-[**RF39**](RF39.md): Super Administrador Lee Cliente  
-[**RF40**](RF40.md): Super Administrador Actualiza Cliente  
-[**RF41**](RF41.md): Super Administrador Elimina Cliente  
-[**RF42**](RF42.md): Super Administrador Crea Cuota  
-[**RF43**](RF43.md): Super Administrador, Cliente Lee Cuota  
-[**RF44**](RF44.md): Super Administrador Actualiza Cuota  
-[**RF45**](RF45.md): Super Administrador Elimina Cuota  
-[**RF46**](RF46.md): Super Administrador, Cliente Consulta Cuotas  
-[**RF47**](RF47.md): Super Administrador Crea Tipo de Pago  
-[**RF48**](RF48.md): Super Administrador, Cliente Lee Tipo de Pago  
-[**RF49**](RF49.md): Super Administrador Actualiza Tipo de Pago  
-[**RF50**](RF50.md): Super Administrador Elimina Tipo de Pago  
-[**RF51**](RF51.md): Super Administrador, Cliente Consulta Tipos de Pago  
-[**RF52**](RF52.md): Super Administrador, Cliente Lee Pedido  
-[**RF53**](RF53.md): Super Administrador Actualiza Pedido  
-[**RF54**](RF54.md): Super Administrador Elimina Pedido  
-[**RF55**](RF55.md): Super Administrador, Cliente Consulta Pedidos  
-[**RF56**](RF56.md): Super Administrador, Cliente Lee Solicitud  
-[**RF57**](RF57.md): Super Administrador, Cliente Actualiza Solicitud  
-[**RF58**](RF58.md): Super Administrador, Cliente Consulta Solicitudes  
-[**RF59**](RF59.md): Empleado Crea Solicitud  
-[**RF60**](RF60.md): Empleado Lee Solicitud  
-[**RF61**](RF61.md): Empleado Elimina Solicitud  
-[**RF62**](RF62.md): Empleado Consulta Solicitudes  
-[**RF63**](RF63.md): Empleado Recibe Notificaciones de Estado de Solicitud  
-[**RF64**](RF64.md): Empleado Accede al Centro de Ayuda    
-[**RF65**](RF65.md): Empleado Leer Carrito de Compras  
+[**RF1**](RF1.md): Super Administrador Crea Usuario  
+[**RF2**](RF2.md): Super Administrador Consulta Lista de Usuarios  
+[**RF3**](RF3.md): Super Administrador Lee Usuario  
+[**RF4**](RF4.md): Super Administrador Actualiza Usuario  
+[**RF5**](RF5.md): Super Administrador Elimina Usuario  
+[**RF6**](RF6.md): Super Administrador Crea Rol  
+[**RF7**](RF7.md): Super Administrador Consulta Lista de Roles  
+[**RF10**](RF10.md): Super Administrador Elimina Rol  
+[**RF11**](RF11.md): Super Administrador Crea Cliente  
+[**RF12**](RF12.md): Super Administrador Consulta Lista de Clientes  
+[**RF13**](RF13.md): Super Administrador, Lee Cliente  
+[**RF15**](RF15.md): Super Administrador Elimina Cliente  
+[**RF16**](RF16.md): Super Administrador Crea Empleado  
+[**RF17**](RF17.md): Super Administrador Consulta Lista de Empleados  
+[**RF18**](RF18.md): Super Administrador Lee Empleado  
+[**RF20**](RF20.md): Super Administrador Elimina Empleado  
+[**RF21**](RF21.md): Super Administrador Crea Grupo de Empleados  
+[**RF22**](RF22.md): Super Administrador Consulta Lista de Grupos de Empleados  
+[**RF23**](RF23.md): Super Administrador Lee Grupo de Empleados  
+[**RF25**](RF25.md): Super Administrador Elimina Grupo de Empleados.  
+[**RF26**](RF26.md): Super Administrador Crea Producto  
+[**RF27**](RF27.md): Super Administrador, Cliente Consulta Lista de Productos  
+[**RF30**](RF30.md): Super Administrador Elimina Producto  
+[**RF31**](RF31.md): Super Administrador Crea Set de Cuotas  
+[**RF32**](RF32.md): Super Administrador, Cliente Consulta Lista de Set de Cuotas  
+[**RF33**](RF33.md): Super Administrador, Cliente Lee Set de Cuotas  
+[**RF35**](RF35.md): Super Administrador Elimina Set de Cuotas  
+[**RF36**](RF36.md): Super Administrador Crea Evento  
+[**RF37**](RF37.md): Super Administrador, Cliente Consulta Lista de Eventos  
+[**RF38**](RF38.md): Super Administrador, Cliente Lee Evento  
+[**RF40**](RF40.md): Super Administrador, Cliente Elimina Evento  
+[**RF41**](RF41.md): Super Administrador Crea Set de Productos  
+[**RF42**](RF42.md): Super Administrador, Cliente Consulta Lista de Sets de Productos  
+[**RF43**](RF43.md): Super Administrador, Cliente Lee Set de Productos  
+[**RF45**](RF45.md): Super Administrador Elimina Set de Productos  
+[**RF46**](RF46.md): Super Administrador Crea Categoria de Productos  
+[**RF47**](RF47.md): Super Administrador Consulta Lista de Categorias de Productos  
+[**RF50**](RF50.md): Elimina Categoria de Productos  
+[**RF51**](RF51.md): Super Administrador Crea Tipo de Pago  
+[**RF52**](RF52.md): Super Administrador, Cliente Consulta Lista de Tipos de Pago  
+[**RF53**](RF53.md): Super Administrador, Cliente Lee Tipo de Pago  
+[**RF55**](RF55.md): Super Administrador Elimina Tipo de Pago  
+[**RF56**](RF56.md): Super Administrador Importa Productos  
+[**RF57**](RF57.md): Super Administrador Importa Empleados  
+[**RF58**](RF58.md): Super Administrador Exporta Productos  
+[**RF59**](RF59.md): Super Administrador Exportar Empleados  
+[**RF60**](RF60.md): Super Administrador, Cliente Consulta Lista de Pedidos  
+[**RF61**](RF61.md): Super Administrador, Cliente Lee Pedido  
+[**RF63**](RF63.md): Super Administrador Elimina Pedido  
+
+### Requisitos Específicos MBI
+
+[**RF8**](RF8.md): Super Administrador Lee Rol  
+[**RF9**](RF9.md): Super Administrador Actualiza Rol  
+[**RF14**](RF14.md): Super Administrador Actualiza Cliente  
+[**RF19**](RF19.md): Super Administrador Actualiza Empleado  
+[**RF24**](RF24.md): Super Administrador Actualiza Grupo de Empleados  
+[**RF28**](RF28.md): Super Administrador, Cliente Lee Producto  
+[**RF29**](RF29.md): Super Administrador Actualizar Producto  
+[**RF34**](RF34.md): Super Administrador Actualiza Set de Cuotas  
+[**RF39**](RF39.md): Super Administrador Actualiza Evento  
+[**RF44**](RF44.md): Super Administrador Actualiza Set de Productos  
+[**RF48**](RF48.md): Super Administrador, Cliente Lee Categoria de Productos  
+[**RF49**](RF49.md): Super Administrador Actualiza Categoria de Productos  
+[**RF54**](RF54.md): Super Administrador Actualiza Tipo de Pago  
+[**RF62**](RF62.md): Super Administrador, Cliente Actualiza Pedido  
+[**RF64**](RF64.md): Empleado Accede al Centro de Ayuda  
+[**RF65**](RF65.md): Empleado Lee Carrito de Compras  
 [**RF66**](RF66.md): Empleado Actualiza Carrito de Compras  
 [**RF67**](RF67.md): Empleado Elimina Productos del Carrito  
 [**RF68**](RF68.md): Empleado Agrega Producto al Carrito  
 [**RF69**](RF69.md): Empleado Crea Pedido  
 [**RF70**](RF70.md): Empleado Lee Pedido  
-[**RF71**](RF71.md): Empleado Elimina Pedido  
-[**RF72**](RF72.md): Empleado Consulta Pedidos  
+[**RF71**](RF71.md): Empleado Finaliza Pedido  
+[**RF72**](RF72.md): Empleado Consulta Lista de Pedidos  
 [**RF73**](RF73.md): Empleado Recibe Notificaciones de Estado del Pedido  
 [**RF74**](RF74.md): Empleado Lee Producto  
-[**RF75**](RF75.md): Empleado Consulta Productos  
+[**RF75**](RF75.md): Empleado Consulta Lista de Productos  
 [**RF76**](RF76.md): Empleado Lee Balance  
 [**RF77**](RF77.md): Empleado Selecciona Tipo de Pago  
-[**RF78**](RF78.md): Empleado Lee Historial
 
 ---
 
