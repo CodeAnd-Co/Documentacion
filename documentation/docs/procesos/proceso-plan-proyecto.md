@@ -1,9 +1,9 @@
 ---
-title: Guía para hacer un plan de proyecto.
+title: Guía para hacer un plan de proyecto
 sidebar_position: 2
 ---
 
-# Guía para hacer un plan de proyecto.
+# Guía para hacer un plan de proyecto
 
 **Última actualización:** 7 de marzo de 2025.
 
@@ -67,3 +67,7 @@ sidebar_position: 2
 5. **Documentación de desviaciones y replanificación** en caso de ser necesario.
 6. **Plan de Entrega** con fechas de finalización de las fases y los hitos.
 
+## Registro de cambios
+| Autor | Descripción del cambio | Versión |
+|---------|-------------------------|---------|
+| Carlos Iván Fonseca Mondragón | Correcciones de ortografía y redacción | 1.1 |

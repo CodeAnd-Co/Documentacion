@@ -57,3 +57,8 @@ sidebar_position: 2
 ### Métricas
 
 1. Número de tareas generadas y estimadas
+
+## Registro de cambios
+| Autor | Descripción del cambio | Versión |
+|---------|-------------------------|---------|
+| Carlos Iván Fonseca Mondragón | Correcciones de ortografía y redacción | 1.1 |

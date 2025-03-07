@@ -5,8 +5,8 @@ sidebar_position: 7
 
 # Revisión de Planes de Proyecto  
 
-**Última actualización:** 05 de marzo de 2025  
-**Versión:** 1.0  
+**Última actualización:** 07 de marzo de 2025  
+**Versión:** 1.1  
 
 ---
 
@@ -62,3 +62,8 @@ sidebar_position: 7
 1. **Número de cambios registrados** en la WBS y plan de trabajo.  
 2. **Variación en estimaciones de tiempo** antes y después de ajustes.  
 3. **Impacto de los cambios** medido en efectividad y cumplimiento del cronograma.  
+
+## Registro de cambios
+| Autor | Descripción del cambio | Versión |
+|---------|-------------------------|---------|
+| Carlos Iván Fonseca Mondragón | Correcciones de ortografía y redacción | 1.1 |
