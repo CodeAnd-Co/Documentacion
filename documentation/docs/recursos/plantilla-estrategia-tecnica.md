@@ -67,8 +67,7 @@ Garantizar un software confiable a través de buenas prácticas de aseguramiento
 
 La estrategia que se seguirá para las pruebas será la siguiente:
 
-- **Plantilla STP**: [Llenar la plantilla con el plan de pruebas de su proyecto]
-- **Plan de pruebas**: [Poner el link hacia el apartado de STP]
+- **STP**: [Llenar la plantilla con el plan de pruebas de su proyecto]
 
 ---
 
@@ -88,6 +87,10 @@ Documentar claramente las funcionalidades y código del sistema para lectura en 
 ---
 
 ## Patrones de diseño y diagrama de paquetes
+
+### Backend
+
+![alt text](plantilla-diagrama-de-paquetes.png)
 
 Este diagrama de paquetes representa la organización de un backend. Se divide en varias secciones principales:
 
@@ -118,5 +121,3 @@ Cada módulo puede incluir pruebas unitarias para garantizar su correcto funcion
 
 - app.js: Punto de entrada del servidor.
 - node_modules: Dependencias del proyecto.
-
-![alt text](plantilla-diagrama-de-paquetes.png)
