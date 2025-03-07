@@ -203,6 +203,7 @@ import TabItem from '@theme/TabItem';
 ---
 
 ### Recursos Necesarios
-  - [**Manueal de arquitectura y estrategia tecnica** ](docs/proyectos/textiles/documentacion/manual-de-arquitectura-y-estrategia-tecnica.md).
+  - [**Manual de arquitectura** ](./documentacion/manual-de-arquitectura-textiles.md).
+  - [**Manual de estrategia técnica** ](./documentacion/estrategia-tecnica-textiles.md).
 
   
