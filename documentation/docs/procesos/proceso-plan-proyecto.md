@@ -48,7 +48,7 @@ sidebar_position: 2
 | **Seguimiento del costo acumulado** | Gestionar la gráfica de costo acumulado esperado vs ganado a lo largo del tiempo. | Team Lead | **PMC, SP 1.1** (Monitorizar los parámetros de planificación del proyecto) |
 | **Gestión de riesgos** | Gestionar los riesgos del proyecto según x proceso. | Team Lead | **PP, SP 2.2** (Identificar los riesgos del proyecto)**PMC, SP 1.3** (Monitorizar los riesgos del proyecto) |
 | **Monitoreo diario** | En las dailys establecer responsables en el plan de proyectos, actualizar el estado de las tareas, según el proyecto x de Daily meetings. | Team Lead, Miembros del equipo | **PMC, SP 1.2** (Monitorizar los compromisos) |
-| **Replanificación** | Para identificar si vamos atrasados, se calcula el valor de SPI con la fórmula:`SPI = valor real acumulado / valor planeado`Después se calcula la desviación con la fórmula:`(1 - SPI) * 100`Interpretación de la desviación:- **0-15%**: Aún es factible el plan.- **15-30%**: Se deben tomar decisiones drásticas.- **Más del 30%**: Se necesita un nuevo plan. | Team Lead | **PP, SP 2.1** (Establecer el presupuesto y el calendario) |
+| **Replanificación** | Para identificar si vamos atrasados, se calcula el valor de SPI con la fórmula:`SPI = valor real acumulado / valor planeado`Después se calcula la desviación con la fórmula:`(1 - SPI) * 100`Interpretación de la desviación:- **0-15%**: Aún es factible el plan.- **15-30%**: Se deben tomar decisiones drásticas.- **Más del 30%**: Se necesita un nuevo plan. | Team Lead | **PP, SP 2.1** (Establecer el presupuesto y el calendario) **PP, SP 3.2** (Conciliar los niveles de trabajo y de recursos) |
 
 
 
