@@ -35,7 +35,7 @@ Transformar historias de usuario en una definición clara de un Producto Mínimo
 | **Recopilación y Priorización** | Revisar y organizar las historias de usuario según su relevancia y viabilidad. | Equipo de Producto | RD, SP 1.1 (Conocer las necesidades de las partes interesadas) |
 | | Aplicar la técnica MoSCoW para priorizar. | Equipo de Producto |  |
 | **Identificación de Funcionalidades Clave** | Desglosar las historias de usuario en funcionalidades específicas. | Equipo de Producto | RD, SP 3.2 (Establecer y mantener una definición de la funcionalidad requerida) |
-| | Evaluar si las funcionalidades son viables | Equipo de Producto | TS, SP 1.1 (Desarrollar soluciones alternativas) |
+| | Evaluar si las funcionalidades son viables, tomando en cuenta su valor al negocio y alcanzabilidad | Equipo de Producto | TS, SP 1.1 (Desarrollar soluciones alternativas) PP(SP 1.1 Comprender los requisitos) |
 | **Definición del Alcance del MVP** | Establecer qué funcionalidades serán parte del MVP y cuáles se postergarán. | Equipo de Producto | REQM, SP 1.2 (Obtener compromiso con los requisitos) |
 | | Definir los criterios de éxito del MVP. | Equipo de Producto | RD, SP 3.3 (Analizar requisitos) |
 | | Planificar las fases de desarrollo y lanzamiento. | Equipo de Producto | PP, SP 2.1 (Establecer el presupuesto y el cronograma) |
