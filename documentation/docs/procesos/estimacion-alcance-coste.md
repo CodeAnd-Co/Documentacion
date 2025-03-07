@@ -59,4 +59,4 @@ sidebar_position: 2
 
 ### Métricas
 
-1. 
+1. Número de tareas generadas y estimadas
