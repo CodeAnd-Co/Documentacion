@@ -11,7 +11,7 @@ sidebar_position: 3
 | Daniel Contreras | Autor |
 | Emiliano Gomez   | Autor |
 
-**Última actualización por:** Diego Alfaro, 5 de marzo de 2025
+**Última actualización por:** Diego Alfaro, 7 de marzo de 2025
 
 ---
 
@@ -121,19 +121,6 @@ Proveer infraestructura escalable y segura para la aplicación.
 - IAM para la seguridad y gestión
 - CloudWatch para el monitoreo de logs del backend en EBS
 - Google Firebase para el registro de usuarios
-
----
-
-## Documentación del código
-
-### Objetivo
-
-Documentar claramente las funcionalidades y código del sistema para lectura en caso de confusiones.
-
-- Se agregaron espacios alrededor de operadores y comas.
-- Se agregan punto y coma al final de definiciones simples.
-- Para documentar el código utilizaremos el estándar de documentación JS docs.
-- El detalle del estándar de codificación se podrá ver en el siguiente documento: _[Estandar de codificación_] (agregar link).
 
 ---
 
