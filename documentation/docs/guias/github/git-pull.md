@@ -84,7 +84,7 @@ Implementar estas prácticas garantizará una gestión efectiva de las solicitud
 - [ ] Refactorización de documentación (Reorganización de contenido sin cambios significativos)
 - [ ] Eliminación de documentación obsoleta
 
-## Checklits del autor:
+## Checklist del autor:
 
 <!--- Antes de hacer la solicitud, repasa los puntos siguientes y pon una `x` en todas las cajas que aplican -->
 
