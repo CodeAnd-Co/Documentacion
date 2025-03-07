@@ -11,9 +11,12 @@ sidebar_position: 7
 ---
 
 ### Autor  
-| Nombre                            | Rol       |  
-| --------------------------------- | --------- |  
-| Carlos Iván Fonseca Mondragón     | Autor     |  
+| Nombre                              | Rol       |  
+| ----------------------------------- | --------- |  
+| Carlos Iván Fonseca Mondragón       | Autor     |
+| Juan Eduardo Rosas Ceron            | Co-Autor  |
+| Pablo Hazael Hurtado Mireles        | Co-Autor  |
+| Juan Carlos Carlderón Garcóa        | Co-Autor  |  
 ---
 
 ### Objetivo  
