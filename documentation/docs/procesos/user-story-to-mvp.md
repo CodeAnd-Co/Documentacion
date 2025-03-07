@@ -5,8 +5,8 @@ sidebar_position: 7
 
 # Proceso de Definición de MVP
 
-**Última actualización:** 06 de marzo de 2025  
-**Versión:** 3.1
+**Última actualización:** 07 de marzo de 2025  
+**Versión:** 3.2
 
 ## Autores  
 | Nombre                  | Rol   |
@@ -30,8 +30,8 @@ Transformar historias de usuario en una definición clara de un Producto Mínimo
 | **Fase**                            | **Descripción** | **Responsables** | **Meta y práctica específica del CMMI** |
 |--------------------------------------|----------------|------------------|--------------------------|
 | **Identificación de proveedores de requisitos** | Recolección de información de los proveedores apropiados de requisitos| Equipo de producto | REQM SP 1.1 (Comprender los requisitos) |
-|     | Generar una tabla con la información del proveedor, su rol, la autoridad que tiene, el tipo de requisitos que provee, y el método de comunicación que se tiene con él.     | Product Owner    |  REQM SP 1.1 (Comprender los requisitos)  |
-|   |  Usar el método de comunicación para llegar a una comprensión compartida sobre los requisitos.      | Product Owner            | REQM SP 1.1 (Comprender los requisitos)  |
+|     | Generar una tabla con la información del proveedor, su rol, la autoridad que tiene, el tipo de requisitos que provee, y el método de comunicación que se tiene con él.     | Product Owner    |  REQM SP 1.1 (Comprender los requisitos), PP, SP 2.6 (Planificar la involucración de las partes interesadas)  |
+|   |  Usar el método de comunicación para llegar a una comprensión compartida sobre los requisitos.      | Product Owner            | REQM SP 1.1 (Comprender los requisitos), PP, SP 2.6 (Planificar la involucración de las partes interesadas)  |
 | **Recopilación y Priorización** | Revisar y organizar las historias de usuario según su relevancia y viabilidad. | Equipo de Producto | RD, SP 1.1 (Conocer las necesidades de las partes interesadas) |
 | | Aplicar la técnica MoSCoW para priorizar. | Equipo de Producto |  |
 | **Identificación de Funcionalidades Clave** | Desglosar las historias de usuario en funcionalidades específicas. | Equipo de Producto | RD, SP 3.2 (Establecer y mantener una definición de la funcionalidad requerida) |
