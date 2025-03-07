@@ -29,15 +29,11 @@ Como **Super Administrador**, quiero poder registrar nuevos usuarios en el siste
 
 ## **Diagrama de Secuencia**  
 
-![Diagrama de Secuencia]()  
-
 > *Descripción*: El diagrama de secuencia muestra cómo el **Super Administrador** interactúa con el sistema para registrar un nuevo usuario. Inicia con la selección de la opción "Crear Usuario", la validación de los datos ingresados, el almacenamiento en la base de datos y la notificación al nuevo usuario.  
 
 ---
 
 ## **Mockup**  
-
-![Mockup]  
 
 > *Descripción*: El mockup representa la interfaz del sistema donde el **Super Administrador** completa los datos del nuevo usuario, selecciona su rol y permisos, y confirma la creación del usuario en el sistema.  
 
