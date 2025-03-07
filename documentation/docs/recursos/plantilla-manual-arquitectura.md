@@ -1,3 +1,8 @@
+---
+title: Plantilla Manual de Arquitectura
+sidebar_position: 14
+---
+
 ### Autores
 
 | Nombre           | Rol   |
@@ -10,16 +15,17 @@
 
 ## Tipo de arquitectura de software
 
-Escribir el tipo de arquitectura que maneja su proyecto. 
+Escribir el tipo de arquitectura que maneja su proyecto.
 
 **Ejemplo:**
+
 - Arquitectura basada en la nube
 
 ---
 
 ## Desglose de arquitectura
 
-Escribir el desglose de los componentes de arquitectura. 
+Escribir el desglose de los componentes de arquitectura.
 
 **Ejemplo:**
 La arquitectura se compone de capas principales:
@@ -33,18 +39,23 @@ La arquitectura se compone de capas principales:
 ## Frontend
 
 ### Objetivo
-Desglose del componente Frontend de la arquitectura. 
+
+Desglose del componente Frontend de la arquitectura.
 
 **Ejemplo:**
+
 - Interfaz de usuario para la tienda en línea y el backoffice
 
 ### Tecnologías
+
 Escribir todas las tecnologías que se usarán para el frontend (Frameworks de diseño, tecnologías para consumir APIs).
 
 ### Características
-Agregar las características del frontend de su proyecto. 
+
+Agregar las características del frontend de su proyecto.
 
 **Ejemplo:**
+
 - **E-commerce**
   - Página principal con productos
   - Carrito de compras y checkout
@@ -60,6 +71,7 @@ Agregar las características del frontend de su proyecto.
   - El frontend solo muestra opciones según el rol del usuario
 
 ### Despliegue de su frontend
+
 Donde se hosteará su frontend.
 
 ---
@@ -67,15 +79,19 @@ Donde se hosteará su frontend.
 ## Backend
 
 ### Objetivo
-Desglose del componente Backend de la arquitectura. 
+
+Desglose del componente Backend de la arquitectura.
 
 **Ejemplo:**
+
 - Exponer una API REST para manejar la autenticación de usuarios, producto y pedidos.
 
 ### Tecnologías
+
 Escribir las tecnologías que se usarán para crear el backend.
 
 **Ejemplo:**
+
 - Node.JS + Express.JS para construir la API
 - DynamoDB SDK para interactuar con la base de datos
 - AWS S3 SDK para manejar las imágenes
@@ -83,9 +99,11 @@ Escribir las tecnologías que se usarán para crear el backend.
 - PM2 para administrar procesos en producción
 
 ### Características
-Agregar las características del backend de su proyecto. 
+
+Agregar las características del backend de su proyecto.
 
 **Ejemplo:**
+
 - **API REST**
   - Se definen endpoints para los usuarios
   - Uso de middlewares para proteger las rutas según el rol del usuario
@@ -97,9 +115,11 @@ Agregar las características del backend de su proyecto.
   - AWS CloudWatch para registrar errores y métricas
 
 ### Despliegue
+
 - AWS EC2 para el despliegue del backend.
 
 ### Endpoints Principales
+
 - Usar Swagger UI para documentar endpoints.
 
 ---
@@ -107,9 +127,11 @@ Agregar las características del backend de su proyecto.
 ## Servicios de infraestructura
 
 ### Objetivo
+
 Proveer infraestructura escalable y segura para la aplicación.
 
 ### Servicios
+
 Escribe tu servicio a utilizar, justificación técnica breve de la elección del servicio y alternativas consideradas.
 
 **Ejemplo:**
@@ -118,20 +140,8 @@ Escribe tu servicio a utilizar, justificación técnica breve de la elección de
   - El socio ya contaba con servicios de AWS y nos dará acceso a los mismos.
 
 **Alternativas:**
+
 - Azure
-
----
-
-## Documentación del código
-
-### Objetivo
-Documentar claramente las funcionalidades y código del sistema para lectura en caso de confusiones.
-
-**Ejemplo:**
-- Se agregaron espacios alrededor de operadores y comas.
-- Se agregan punto y coma al final de definiciones simples.
-- Para documentar el código utilizaremos el estándar de documentación JS docs.
-- El detalle del estándar de codificación se podrá ver en el siguiente documento: **Estandar de codificación**.
 
 ---
 
@@ -140,6 +150,7 @@ Documentar claramente las funcionalidades y código del sistema para lectura en 
 Redactar los beneficios de la arquitectura seleccionada.
 
 **Ejemplo:**
+
 - Escalable
 - Segura
 - Optimizada
