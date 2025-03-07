@@ -40,8 +40,7 @@ Transformar historias de usuario en una definición clara de un Producto Mínimo
 | | Definir los criterios de éxito del MVP. | Equipo de Producto | RD, SP 3.3 (Analizar requisitos) |
 | | Planificar las fases de desarrollo y lanzamiento. | Equipo de Producto | PP, SP 2.1 (Establecer el presupuesto y el cronograma) |
 | **Validación con Stakeholders** | Presentar la propuesta del MVP a clientes y equipo técnico. | Equipo de Producto | VAL, SP 2.1 (Realizar la validación de productos o componentes de productos seleccionados) |
-| | Presentar la Especificación de Requerimientos de Software a clientes y asegurar la firma de validación del socio.| Equipo de Producto | REQM, SP 1.2 (Obtener compromiso con los requisitos)|
-| | Presentar el Compromiso con el plan y asegurar su firma por el socio formador | Equipo de Producto | PP, SP 3.3 (Obtener el compromiso con el plan.)|
+| | Presentar la Especificación de Requerimientos de Software a clientes y asegurar la firma de validación del socio.| Equipo de Producto | REQM, SP 1.2 (Obtener compromiso con los requisitos), PP, SP 3.3 (Obtener el compromiso con el plan.)| |
 | | Ajustar según retroalimentación sin perder el enfoque de viabilidad. | Equipo de Producto |  |
 
 
