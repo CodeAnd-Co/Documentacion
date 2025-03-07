@@ -6,7 +6,7 @@ sidebar_position: 7
 # Proceso de Definición de MVP
 
 **Última actualización:** 07 de marzo de 2025  
-**Versión:** 3.2
+**Versión:** 3.3
 
 ## Autores  
 | Nombre                  | Rol   |
@@ -48,3 +48,7 @@ Transformar historias de usuario en una definición clara de un Producto Mínimo
 1. Lista final de funcionalidades esenciales. 
 2. Funcionalidades validadas por el socio.
 3. Plan de proyecto validado por el socio. 
+
+| Autor | Descripción del cambio | Versión |
+|---------|-------------------------|---------|
+| Emiliano Gomez Gonzalez | Corrige un paso del proceso del MVP | 3.3 |

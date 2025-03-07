@@ -5,7 +5,7 @@ sidebar_position: 1
 
 # Descripción General del Proyecto
 
-**Última actualización:** 5 de marzo de 2025
+**Última actualización:** 7 de marzo de 2025
 
 **Nombre de la Empresa:** Altertex US
 
@@ -51,19 +51,11 @@ Su propósito es reducir los tiempos de ingreso de datos y facilitar la configur
 
 ### Actividades Incluidas
 
-:::warning Borrar Después de llenar la información
-
-Describir las tareas y procesos que se llevarán a cabo para alcanzar los entregables.
-
-:::
+  - [**Planificación del proyecto** ](docs/proyectos/textiles/documentacion/planificacion.md).
 
 ### Limitaciones
 
-:::warning Borrar Después de llenar la información
-
-Especificar lo que no está incluido en el proyecto para evitar malentendidos.
-
-:::
+Cualquier modificación al alcance del proyecto deberá ser evaluada en términos de impacto en el cronograma, costos y recursos. Los cambios deberán ser aprobados formalmente por ambas partes antes de su implementación. 
 
 ## Equipo del Proyecto 👥
 
@@ -211,9 +203,6 @@ import TabItem from '@theme/TabItem';
 ---
 
 ### Recursos Necesarios
+  - [**Manueal de arquitectura y estrategia tecnica** ](docs/proyectos/textiles/documentacion/manual-de-arquitectura-y-estrategia-tecnica.md).
 
-:::warning Borrar Después de llenar la información
-
-Identificar los recursos humanos, materiales y tecnológicos requeridos para el proyecto.
-
-:::
+  
