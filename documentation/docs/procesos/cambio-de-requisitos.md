@@ -14,6 +14,8 @@ sidebar_position: 8
 | --------------------------------- | --------- |
 | Daniel Contreras Chávez           | Autor     |
 | Paola Garrido Montes              | Autor     |
+| Miguel Angel Uribe Esquivel              | Co-autor     |
+| Galo Alejandro del Rio Viggiano              | Co-autor     |
 ---
 
 ### Objetivo
@@ -41,7 +43,8 @@ sidebar_position: 8
 | **Aprobación / negación**    | Product Owner, Team Leader y Architecture Owner deberán hacer la revisión de la solicitud de cambio y entregar su decisión final junto con la justificación de la misma, a más tardar un día después de cuando se realizó la solicitud.                                                | Product Owner, Team Leader, Architecture Owner    | REQM SP 1.3 (Administrar cambios a los requisitos), PP SP 2.7 (Establecer y mantener los elementos del plan). |
 | **Actualización** | En caso de ser necesario, actualizar dependendencias, entregables y/o funciones clave, cronograma y/o presupuesto, plan de riesgos y/o estándares.                                               | Colaborador    | REQM SP 1.4 (Mantener la trazabilidad de los requisitos), CM SP 1.2 (Controlar cambios en la línea base), PP, SP 3.2 (Conciliar los niveles de trabajo y de recursos) |
 |                   | Añadir fecha de cambio en el apartado de *Resolución* en la hoja de "Solicitud de cambio". | Colaborador  | CM SP 1.3 (Establecer línea base), PP, SP 3.2 (Conciliar los niveles de trabajo y de recursos) |
-|                   | Actualizar base de datos de requisitos, añadiendo la tabla de la nueva versión con los requisitos actualizados. | Colaborador | CM SP 1.4 (Registrar y reportar estado de la configuración), PP, SP 3.2 (Conciliar los niveles de trabajo y de recursos) |        
+|                   | Actualizar base de datos de requisitos, añadiendo la tabla de la nueva versión con los requisitos actualizados. | Colaborador | CM SP 1.4 (Registrar y reportar estado de la configuración), PP, SP 3.2 (Conciliar los niveles de trabajo y de recursos) |       
+|                   | Registrar en la plantilla, la firma de todos los colaboradores de proyectos. Esta se registra en la hoja de 'compromiso', donde cada integrante colocará su nombre junto al campo de si esta enterado o no del cambio inicial o el resto de cambios. | Colaborador | SP 1.2 (Obtener el compromiso sobre los requisitos.) |       
 ---
 
 ### Salidas
