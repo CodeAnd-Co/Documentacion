@@ -1,18 +1,18 @@
 ---
-title: "RF3: Usuario cierra sesión."  
-sidebar_position: 4
+title: "RF5: Usuario consulta los ranchos disponibles."  
+sidebar_position: 6
 ---
 
-# RF3: Usuario cierra sesión.
+# RF5: Usuario consulta los ranchos disponibles.
 
-**Última actualización:** 03 de marzo de 2025
+**Última actualización:** 04 de marzo de 2025
 
 ### Historia de Usuario
 
-Como usuario, quiero cerrar mi sesión para dejar de tener acceso al sistema.
+Como usuario, quiero consultar los ranchos disponibles en el sistema para ...
 
   **Criterios de Aceptación:**
-  - El sistema debe garantizar que una vez el usuario cierre sesión ni el sistema ni los datos del usuario sean accesibles.
+  - 
 
 ---
 
