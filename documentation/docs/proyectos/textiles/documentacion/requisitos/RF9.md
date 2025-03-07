@@ -1,29 +1,34 @@
 ---
-title: "RF9: Super Administrador Elimina Empleado"  
+title: "RF9: Super Administrador Actualiza Rol"  
 sidebar_position: 10
 ---
 
-# RF9: Super Administrador Elimina Empleado
+# RF9: Super Administrador Actualiza Rol  
 
-**Última actualización:** 01 de marzo de 2025
-
-### Historia de Usuario
-
-Como administrador, quiero poder dar de baja a un empleado para revocar sus accesos y asegurar que ya no tenga permisos dentro del sistema.
-
-  **Criterios de Aceptación:**
-  - El sistema debe permitir al Super Administrador eliminar un empleado.
-  - Antes de eliminar al empleado, el sistema debe pedir una confirmación para evitar eliminaciones accidentales.
-  - Una vez eliminado, el empleado debe ser completamente removido del sistema.
+**Última actualización:** 06 de marzo de 2025  
 
 ---
 
-### Diagrama de Secuencia
+## Historia de Usuario  
+Como administrador, quiero poder modificar los permisos y la información de un rol para mantener el sistema actualizado y seguro.
+---
 
-> *Descripción*: El diagrama de secuencia muestra el flujo de eliminación de un empleado, donde el Super Administrador solicita la eliminación y el sistema confirma la acción antes de proceder.
+## **Criterios de Aceptación:**  
+
+1. El Super Administrador debe poder modificar la información de un rol existente.  
+2. Se debe permitir cambiar el nombre y los permisos asignados.  
+3. El sistema debe validar que el nuevo nombre no esté duplicado.  
+4. Si la actualización es exitosa, los cambios deben reflejarse de inmediato en la lista de roles.  
+5. Si hay un error, el sistema debe mostrar un mensaje indicando el problema.  
 
 ---
 
-### Mockup
+## **Diagrama de Secuencia**  
 
-> *Descripción*: El mockup muestra la interfaz donde el Super Administrador puede eliminar un empleado, con un botón de confirmación para realizar la eliminación.
+> *Descripción*: El diagrama de secuencia muestra el proceso mediante el cual el Super Administrador actualiza un rol, validando los datos y aplicando los cambios.  
+
+---
+
+## **Mockup**  
+
+> *Descripción*: El mockup representa la interfaz donde el Super Administrador puede modificar la información de un rol y guardar los cambios.  

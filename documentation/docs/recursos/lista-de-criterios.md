@@ -16,9 +16,9 @@ sidebar_position: 16
 ### **Criterios para Proveedores de Requisitos**  
 
 #### **1. Autoridad y Conocimiento**  
-- Nivel de expertise en el dominio del negocio y/o en el sistema a desarrollar.  
+- Conocimiento sobre el negocio o en el sistema a desarrollar.  
 - Capacidad de toma de decisiones sobre los requisitos.  
-- Conocimiento de estándares y mejores prácticas del sector.  
+- Conocimiento de estándares y mejores prácticas.  
 
 #### **2. Claridad y Comunicación**  
 - Habilidad para expresar necesidades y expectativas de manera precisa.  

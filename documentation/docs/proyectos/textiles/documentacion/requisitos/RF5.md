@@ -1,29 +1,33 @@
 ---
-title: "RF5: Super Administrador Consulta Clientes"  
+title: "RF5: Super Administrador Elimina Usuario"  
 sidebar_position: 6
 ---
 
-# RF5: Super Administrador Consulta Clientes
+# RF5: Super Administrador Elimina Usuario  
 
-**Última actualización:** 01 de marzo de 2025
-
-### Historia de Usuario
-
-Como administrador, quiero acceder a un listado completo de clientes con opciones de filtro y búsqueda para gestionar eficientemente sus perfiles y necesidades de uniformes.
-
-  **Criterios de Aceptación:**
-  - El sistema debe mostrar una lista de todos los clientes registrados.
-  - El Super Administrador debe poder buscar clientes por nombre o ID.
-  - La lista debe incluir detalles relevantes como nombre, correo y estado del cliente.
+**Última actualización:** 06 de marzo de 2025  
 
 ---
 
-### Diagrama de Secuencia
+## Historia de Usuario  
+Como administrador, quiero poder eliminar a un usuario que ya no requiera acceso al sistema para mantener una base de datos precisa y evitar accesos innecesarios.
+---
 
-> *Descripción*: El diagrama de secuencia muestra cómo el Super Administrador consulta la lista de clientes, interactuando con la base de datos para obtener los datos de todos los clientes registrados.
+## **Criterios de Aceptación:**  
+
+1. El Super Administrador debe poder acceder a la opción **"Eliminar Usuario"** dentro del panel de información de un usuario.  
+2. Antes de eliminar, se debe mostrar una ventana de confirmación para evitar eliminaciones accidentales.  
+3. Si el usuario es eliminado con éxito, el sistema debe actualizar la lista de usuarios y mostrar un mensaje de confirmación.  
+4. Si ocurre un error en la eliminación, se debe mostrar un mensaje de error indicando el motivo.  
 
 ---
 
-### Mockup
+## **Diagrama de Secuencia**  
 
-> *Descripción*: El mockup presenta la interfaz de consulta de clientes, donde el Super Administrador puede ver una lista paginada o filtrada de clientes.
+> *Descripción*: El diagrama de secuencia ilustra los pasos que sigue el sistema cuando el Super Administrador elimina un usuario. Incluye la confirmación, la eliminación en la base de datos y la actualización de la lista de usuarios.  
+
+---
+
+## **Mockup**  
+
+> *Descripción*: El mockup muestra la interfaz donde el Super Administrador puede eliminar un usuario, con una ventana de confirmación para evitar acciones accidentales.  

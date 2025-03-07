@@ -1,29 +1,34 @@
 ---
-title: "RF6: Super Administrador Crea Empleado"  
+title: "RF6: Super Administrador Crea Rol"  
 sidebar_position: 7
 ---
 
-# RF6: Super Administrador Crea Empleado
+# RF6: Super Administrador Crea Rol  
 
-**Última actualización:** 01 de marzo de 2025
-
-### Historia de Usuario
-
-Como administrador, quiero poder registrar un nuevo empleado y asignarlo a un cliente específico para gestionar sus permisos dentro del sistema, asegurando un control adecuado sobre sus accesos.
-
-  **Criterios de Aceptación:**
-  - El sistema debe permitir al Super Administrador ingresar los datos necesarios para crear un empleado.
-  - El sistema debe verificar que los campos obligatorios estén completos antes de crear al empleado.
-  - Después de crear el empleado, el sistema debe mostrar un mensaje de éxito.
+**Última actualización:** 06 de marzo de 2025  
 
 ---
 
-### Diagrama de Secuencia
+## Historia de Usuario  
+Como administrador, quiero poder crear nuevos roles personalizados con permisos específicos para asignarlos a los usuarios del sistema y gestionar su acceso de manera estructurada.
+---
 
-> *Descripción*: El diagrama de secuencia muestra el flujo del proceso de creación de un nuevo empleado, con la interacción entre el Super Administrador, el formulario de ingreso y la base de datos.
+## **Criterios de Aceptación:**  
+
+1. El Super Administrador debe poder acceder a la opción **"Crear Rol"** dentro del panel de administración.  
+2. Debe permitir ingresar un nombre para el rol y definir los permisos asociados.  
+3. Al guardar, el sistema debe validar que el nombre del rol no esté duplicado.  
+4. Si la creación es exitosa, el nuevo rol debe aparecer en la lista de roles disponibles.  
+5. Si hay un error, el sistema debe mostrar un mensaje indicando el problema.  
 
 ---
 
-### Mockup
+## **Diagrama de Secuencia**  
 
-> *Descripción*: El mockup presenta la interfaz donde el Super Administrador puede ingresar los datos de un nuevo empleado, con campos requeridos y botones de acción para crear al empleado.
+> *Descripción*: El diagrama de secuencia representa el proceso mediante el cual el Super Administrador crea un nuevo rol, especificando sus permisos y confirmando la acción.  
+
+---
+
+## **Mockup**  
+
+> *Descripción*: El mockup muestra la interfaz donde el Super Administrador puede ingresar el nombre del rol y seleccionar los permisos antes de crearlo.  

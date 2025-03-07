@@ -1,29 +1,37 @@
 ---
-title: "RF4: Super Administrador Elimina Cliente"  
+title: "RF4: Super Administrador Actualiza Usuario"  
 sidebar_position: 5
 ---
 
-# RF4: Super Administrador Elimina Cliente
+# RF4: Super Administrador Actualiza Usuario  
 
-**Última actualización:** 01 de marzo de 2025
-
-### Historia de Usuario
-
-Como administrador, quiero eliminar el registro de un cliente que ya no requiere nuestros servicios para mantener una base de datos precisa y evitar asignaciones innecesarias de uniformes.
-
-  **Criterios de Aceptación:**
-  - El sistema debe permitir al Super Administrador eliminar un cliente.
-  - El sistema debe pedir una confirmación antes de realizar la eliminación.
-  - El cliente eliminado debe ser removido completamente del sistema, incluyendo sus datos asociados.
+**Última actualización:** 06 de marzo de 2025  
 
 ---
 
-### Diagrama de Secuencia
+## Historia de Usuario  
+Como administrador, quiero poder modificar la información de un usuario, incluyendo su rol y permisos, para mantener el sistema actualizado y alineado con las necesidades de la organización.
+---
 
-> *Descripción*: El diagrama de secuencia muestra cómo el Super Administrador interactúa con el sistema para eliminar un cliente, con la validación y confirmación antes de realizar la acción.
+## **Criterios de Aceptación:**  
+
+1. El Super Administrador debe poder acceder a la opción **"Editar Usuario"** dentro del panel de información de un usuario.  
+2. Se deben permitir modificaciones en los siguientes campos:  
+   - Nombre completo  
+   - Correo electrónico  
+   - Rol del usuario  
+   - Estado (Activo/Inactivo)  
+3. Si los datos son válidos, el sistema debe guardar los cambios y mostrar un mensaje de confirmación.  
+4. Si hay errores en la entrada de datos, se debe mostrar un mensaje de error indicando qué corregir.  
 
 ---
 
-### Mockup
+## **Diagrama de Secuencia**  
 
-> *Descripción*: El mockup muestra la pantalla donde el Super Administrador puede eliminar un cliente, con la opción de confirmación antes de ejecutar la acción.
+> *Descripción*: El diagrama de secuencia representa el proceso mediante el cual el Super Administrador edita la información de un usuario. Se muestra la interacción con la base de datos para la actualización de datos y la confirmación del cambio.  
+
+---
+
+## **Mockup**  
+
+> *Descripción*: El mockup representa la interfaz donde el Super Administrador puede modificar los datos de un usuario a través de un formulario con los campos editables y un botón de confirmación.  

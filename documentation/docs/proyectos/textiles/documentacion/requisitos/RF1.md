@@ -1,33 +1,44 @@
 ---
-title: "RF1: Super Administrador Crea Cliente"  
+title: "RF1: Super Administrador Crea Usuario"  
 sidebar_position: 2
 ---
 
-# RF1: Super Administrador Crea Cliente
+# RF1: Super Administrador Crea Usuario
 
-**Última actualización:** 01 de marzo de 2025
-
-### Historia de Usuario
-
-Como administrador, quiero registrar un nuevo cliente en el sistema para gestionar la asignación de uniformes a sus empleados de manera organizada y eficiente.
-
-  **Criterios de Aceptación:**
-  - El sistema debe permitir al Super Administrador ingresar los datos necesarios del cliente (nombre, correo electrónico, teléfono, etc.).
-  - El cliente debe recibir un correo electrónico de bienvenida al completar el registro.
-  - El cliente creado debe estar disponible en el sistema y poder ser gestionado por el Super Administrador.
+**Última actualización:** 06 de marzo de 2025
 
 ---
 
-### Diagrama de Secuencia
+## Historia de Usuario  
 
-![Diagrama de Secuencia] 
+Como **Super Administrador**, quiero poder registrar nuevos usuarios en el sistema, asignándoles un rol y permisos específicos para gestionar su acceso de manera estructurada y eficiente.  
 
-> *Descripción*: El diagrama de secuencia muestra cómo el Super Administrador interactúa con el sistema para crear un cliente, detallando los pasos de solicitud de datos, validación y confirmación.
+### **Criterios de Aceptación:**  
+
+1. El Super Administrador debe poder acceder a la opción de **"Crear Usuario"** desde el panel de administración.  
+2. Se debe mostrar un formulario con los siguientes campos obligatorios:  
+   - Nombre completo  
+   - Correo electrónico  
+   - Rol del usuario (Ejemplo: Administrador, Usuario estándar, Moderador, etc.)  
+   - Permisos específicos según el rol seleccionado  
+3. Si los datos ingresados son válidos, el sistema debe registrar al nuevo usuario y mostrar un mensaje de confirmación.  
+4. Si algún campo obligatorio está vacío o con formato incorrecto, se debe mostrar un mensaje de error indicando qué corregir.  
+5. El usuario recién creado debe poder iniciar sesión con las credenciales proporcionadas.  
 
 ---
 
-### Mockup
+## **Diagrama de Secuencia**  
 
-![Mockup]
+![Diagrama de Secuencia]()  
 
-> *Descripción*: El mockup representa la interfaz del sistema donde el Super Administrador puede ingresar los datos del nuevo cliente. Muestra los campos requeridos y los botones de acción disponibles.
+> *Descripción*: El diagrama de secuencia muestra cómo el **Super Administrador** interactúa con el sistema para registrar un nuevo usuario. Inicia con la selección de la opción "Crear Usuario", la validación de los datos ingresados, el almacenamiento en la base de datos y la notificación al nuevo usuario.  
+
+---
+
+## **Mockup**  
+
+![Mockup]  
+
+> *Descripción*: El mockup representa la interfaz del sistema donde el **Super Administrador** completa los datos del nuevo usuario, selecciona su rol y permisos, y confirma la creación del usuario en el sistema.  
+
+---
