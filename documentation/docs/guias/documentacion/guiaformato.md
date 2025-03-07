@@ -5,7 +5,7 @@ sidebar_position: 10
 
 
 # Formato para Documentos
-
+**Última actualización:** 7 de marzo de 2025  
 ## Code & Co.
 
 ---
