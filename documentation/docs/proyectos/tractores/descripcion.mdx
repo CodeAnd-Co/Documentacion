@@ -5,7 +5,8 @@ sidebar_position: 1
 
 # Descripción General del Proyecto
 
-**Última actualización:** 3 de Marzo de 2025
+**Última actualización:** 8 de Marzo de 2025
+**Versión:** V1.1
 
 ---
 
@@ -13,73 +14,74 @@ sidebar_position: 1
 | Nombre                            | Rol       |
 | --------------------------------- | --------- |
 | Diego Isaac Fuentes Juvera        | Autor     |
+| Juan Pablo Chávez Leal            | Autor     |
 
 ---
 
 
-**Nombre de la Empresa:** Escribe el nombre aquí
+**Nombre de la Empresa:** Case New Holland México
 
 ## Análisis de Necesidades 😑
 
 ### Problemas Actuales
 
-:::warning Borrar Después de llenar la información
+CNH busca mejorar su conexión con los clientes después de la compra, ofreciendo soporte post-venta eficiente mediante un sistema centralizado de reportes. Actualmente, los distribuidores deben de solicitar la generación de sus reportes de manera manual, lo que genera perdida de tiempo a la hora de realizar toda la limpieza de la información extraída. La nueva solución digitalizará este proceso para brindar una experiencia más ágil y automatizada. 
 
-Describir los desafíos o ineficiencias que enfrenta el cliente en sus procesos actuales.
-
-:::
 
 ### Restricciones
+- Existen 10 semanas para desarrollar la solución.
+- Conexión a internet: El sistema requerirá acceso a internet para poder sincronizar los datos ya sea mediante una conexión con Field Ops o TLXplorer.
+- Acceso restringido a datos en plataforma global: Debido a políticas dentro de CNH la integración completa con Field Ops no es viable, requiriendo métodos alternativos de acceso.
+- Uso exclusivo de Windows 11: La aplicación de escritorio estará diseñada para ejecutarse en sistemas operativos Windows, debido a que todas las computadoras de CNH utilizan este sistema. 
 
-:::warning Borrar Después de llenar la información
 
-Señalar limitaciones de tiempo, presupuesto o recursos que puedan afectar el proyecto.
-
-:::
 
 ## Objetivos del Proyecto 🎯
 
 ### Objetivo Principal:
 
-:::warning Borrar Después de llenar la información
+- Lograr un 70% de reducción en los tiempos promedio del proceso de generación de reportes para el final del semestre.
 
-Describir el propósito fundamental del proyecto, indicando qué se espera lograr al finalizarlo.
+Al medir los tiempos que toma generar cada reporte en un periodo de una semana antes de implementar el sistema, promediarlos, y comparar los resultados con la misma medida después de implementar el sistema podemos determinar si se cumple.
 
-:::
+
 
 ### Objetivos Específicos
 
-:::warning Borrar Después de llenar la información
+- Simplificar el proceso de generación de reportes para que cualquier empleado lo realice con preparación mínima.
+- Lograr que un empleado de CNH cuya función no sea hacer reportes, logre hacer un reporte.
 
-Detallar metas concretas y medibles que contribuyan al logro del objetivo principal.
+Se medirá la satisfacción de un empleado antes y después de usar el sistema, este empleado deberá ser alguien que no ha generado ningún reporte.
 
-:::
+- Lograr un 90% de satisfacción del cliente, mediante escucha activa, gestión de expectativas y mejora continua.
+Al medir la satisfacción de los usuarios con una encuesta de satisfacción, podemos aprovar el objetivo.
+
 
 ## Alcance del Proyecto ➡️
 
 ### Entregables
 
-:::warning Borrar Después de llenar la información
+El proyecto será dividido en tres módulos principales: 
+- Reportes.
+- Alertas
+- Predicciones
 
-Enumerar los productos, servicios o resultados que se entregarán al finalizar el proyecto.
+El alcance inicial del proyecto está enfocado al módulo de generación de reportes, el módulo de alertas se desarrollará de manera posterior, y el módulo de predicciones se desarrollará si la capacidad del departamento lo permite. A su vez, el alcance inicial estará limitado al CaeTec para después ser escalado al resto de los clientes de CNH.
 
-:::
+Se entregará al socio:
+- Aplicación de escritorio.
+- Repositorio del proyecto.
+- Un instalador.
+- Cuentas de servicios.
+- Manuales de usuario y de instalación.
 
 ### Actividades Incluidas
 
-:::warning Borrar Después de llenar la información
-
-Describir las tareas y procesos que se llevarán a cabo para alcanzar los entregables.
-
-:::
+[Cronograma](documentacion/planificacion.md)
 
 ### Limitaciones
 
-:::warning Borrar Después de llenar la información
-
-Especificar lo que no está incluido en el proyecto para evitar malentendidos.
-
-:::
+Cualquier modificación al alcance del proyecto deberá ser evaluada en términos de impacto en el cronograma, costos y recursos. Los cambios deberán ser aprobados formalmente por ambas partes antes de su implementación.
 
 ## Equipo del Proyecto 👥
 
@@ -215,16 +217,24 @@ import TabItem from '@theme/TabItem';
 
 ### Estructura Organizacional
 
-:::warning Borrar Después de llenar la información
+| Nombre                  | Rol         |
+| ----------------------- | ----------- |
+| Diego Isaac Fuentes Juvera      | Product Owner, UX/UI, Presentation Owner|
+| Juan Pablo Chávez Leal          | Team Member, QA, Presentation Owner |
+| Rommer Toledo Crespo            | Team Lead |
+| Pablo Hazael Hurtado Mireles    | Team Member, UX/UI, Writing Owner |
+| Daniel Contreras Chávez         | QA, Architecture Owner, Presentation Owner |
+| Daniel Queijeiro Albo           | Team Member, SEPG, Comité de ética |
+|Mauricio Anguiano Juárez         | Team Member, UX/UI |
+| Juan Antonio Landeros Velázquez | Writing Owner, Team Member, QA |
 
-Presentar la jerarquía y las relaciones entre los miembros del equipo.
-
-:::
 
 ### Recursos Necesarios
 
-:::warning Borrar Después de llenar la información
+[Manual de arquitectura](./documentacion/arquitectura.md)
 
-Identificar los recursos humanos, materiales y tecnológicos requeridos para el proyecto.
+[Manual de estrategia técnica](./documentacion/estrategia.md)
 
-:::
+| Autor | Descripción del cambio | Versión |
+|---------|-------------------------|---------|
+| Juan Pablo Chávez Leal | Adición de todo exceptuando "Roles y Responsabilidades" | V1.1 |
