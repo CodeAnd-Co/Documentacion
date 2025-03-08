@@ -8,7 +8,7 @@ sidebar_position: 5
 | ---------------- | ----- |
 | Emiliano Gomez   | Autor |
 
-Version: 1.0
+Version: 1.1
 
 Última actualización: 08 de marzo de 2025
 
@@ -26,9 +26,15 @@ Escribir el desglose de los componentes de arquitectura.
 
 La arquitectura se compone de capas principales:
 
-- **Frontend** Flutter (Dart)
-- **Backend** (Node-express)
-- **Servicios AWS** (RDS, S3, EC2)
+- **Frontend:** Flutter (Dart)
+- **Backend:** (Node-express)
+- **Servicios AWS:** (S3, EC2)
+- **Base de datos:** (MySQL)
+ ---
+**Diagrama de Despliegue**
+
+![alt text](image.png)
+
 ---
 
 ## Frontend
@@ -83,8 +89,6 @@ Escribir las tecnologías que se usarán para crear el backend.
 ### Características
 
 Agregar las características del backend de su proyecto.
-
-**Ejemplo:**
 
 - **API REST**
   - Se definen endpoints para el consumo de servicios
@@ -247,3 +251,4 @@ Organiza las funcionalidades de una aplicación en servicios independientes y re
 | Autor | Descripción del cambio | Versión |
 |---------|-------------------------|---------|
 | Emiliano Gomez Gonzalez | Documento inicial | 1.0 |
+| Emiliano Gomez Gonzalez | Agrega Diagrama de Despliegue| 1.1 |
