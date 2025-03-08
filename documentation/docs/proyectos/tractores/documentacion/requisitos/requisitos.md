@@ -5,8 +5,8 @@ sidebar_position: 1
 
 # Requisitos
 
-**Última actualización:** 03 de marzo de 2025
-
+**Última actualización:** 07 de marzo de 2025
+**Versión:** V1.1
 ### **Proveedores de Requisitos**  
    - **Internos**: Personas dentro de Code & Co.  
    - **Externos**: Cliente.  
@@ -85,33 +85,30 @@ Los requisitos no funcionales establecen las expectativas en términos de tiempo
 
 ### Requisitos Específicos
 
-**Rendimiento**  
-- El tiempo de respuesta del sistema debe ser menor a 5 segundos.  
-- El sistema debe ser capaz de soportar al menos 100 usuarios concurrentes.
+**Rendimiento**.
+- La aplicación será capaz de generar un reporte de una gráfica en menos de 10 segundos.
+- La aplicación será capaz de leer un archivo de Excel de 2,500 registros en menos de 20 segundos.
+- El sistema debe tardar menos de 10 segundos en cargar una plantilla de reporte.
+- Las plantillas deben tardar menos de 10 segundos en ser guardadas en el servidor.
+- El sistema debe soportar más de 50 usuarios simultáneos cargando plantillas de reportes.
 
-**Usabilidad**  
-- El administrador debe tardar menos de 6 horas en aprender a utilizar el sistema de backoffice.  
-- El sistema debe ser compatible con los siguientes navegadores:  
-  - Chrome versión 133.0.6943.126  
-  - Firefox 135.0.1  
-- Un empleado debe tardar menos de 1 hora en aprender a utilizar el sistema de e-commerce.
+**Escalabilidad**.
+- El sistema debe ser capaz de permitir la creación y  uso de nuevas fórmulas.
 
-**Disponibilidad**  
-- El sistema debe contar con redundancia de datos y sistemas de respaldo para garantizar la disponibilidad continua.
+**Usabilidad**.
+- Los reportes básicos deben poder ser generados por cualquier empleado de la empresa con una capacitación menor a 20 minutos. 
 
-**Portabilidad y compatibilidad**  
-- El sistema debe contar con estándares abiertos para facilitar la integración con otros sistemas.
+**Portabilidad**.
+- El sistema solo estará disponible en el sistema operativo de Windows 11.
+- El sistema debe funcionar perfectamente en los equipos DELL de la compañía.
+- El sistema debe contar con una manera de ser instalada en cualquier momento, ya sea vía USB o alojar el ejecutable en el Google Drive del socio.
 
-**Mantenibilidad**  
-- El sistema debe contar con una documentación clara y actualizada. Un desarrollador debe poder encontrarla en un plazo de 15 minutos.
+**Seguridad**.
+- El sistema debe dar acceso basado en los roles: Administrador y Usuario general.
+- Toda la información sensible debe estar cifrada.
+- La aplicación no debe ser accesible de manera pública.
+- La aplicación debe poder ser deshabilitada en caso de robo/extravío de un equipo que la tenga instalada.
 
-**Escalabilidad**  
-- El sistema debe soportar un rango de entre 5,000 y 10,000 usuarios registrados.  
-- El sistema debe permitir la carga masiva de datos y facilitar la incorporación de nuevas funciones sin afectar las existentes.
-
-**Seguridad**  
-- Los datos sensibles, como contraseñas, deben estar cifrados utilizando bcrypt.  
-- Una computadora debe tardar más de 3 años en descifrar la contraseña cifrada.  
-- El sistema debe contar con protección contra ataques CSRF y ataques de inyección NoSQL.  
-- El sistema debe contar con un sistema de autorización y autenticación robusto.  
-- El sistema debe cerrar automáticamente la sesión de los usuarios después de 8 horas de inactividad.
+| Autor | Descripción del cambio | Versión |
+|---------|-------------------------|---------|
+| Juan Pablo Chávez | Adición de requisitos no-funcionales | V1.1 |
