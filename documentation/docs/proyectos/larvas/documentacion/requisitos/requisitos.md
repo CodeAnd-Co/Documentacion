@@ -63,6 +63,7 @@ Los requisitos funcionales del sistema describen una variedad de acciones que lo
 - [**RF29**](RF29.md): Registar la información del Frass obtenido 
 - [**RF30**](RF30.md): Editar la información del Frass obtenido  
 - [**RF31**](RF31.md): Eliminar la información del Frass obtenido 
+- [**RF32**](RF32.md): Archivar datos visuales de charolas
 
 ---
 
@@ -76,40 +77,35 @@ Los requisitos no funcionales establecen las expectativas en términos de tiempo
 
 ### Requisitos Específicos
 
-### Tiempo de respuesta y Rendimiento
+### Rendimiento
 - El sistema debe responder a las solicitudes del usuario dentro de un tiempo de respuesta aceptable; menos de 2 segundos para la mayoría de las operaciones.
 
 ### Escalabilidad
 - El sistema debe ser escalable para manejar un aumento de hasta 20 usuarios simultáneos sin que exista una decadencia significativa del rendimiento ya que Zuustento pretende una expansión a futuro en los próximos 2 años. En este plazo el límite de colaboradores es de 20, sin embargo, aunque no es mucho, es importante hacer el sistema escalable para futuros cambios.
 
-### Conectividad
-- El sistema podrá funcionar con internet ya que en el lugar donde se trabaja cuenta con servicio Wi-Fi.
-
 ### Disponibilidad
-- El tiempo debe estar disponible entre semana la mayoría del tiempo, sin embargo, en fines de semana se pueden hacer servicios de mantenimiento.
-
-- El sistema tolerará un máximo de 48 horas fuera de servicio (preferentemente en un fin de semana)
+- Desde la perspectiva del tiempo debe estar disponible entre semana la mayoría del tiempo, sin embargo, en fines de semana se pueden hacer servicios de mantenimiento.
+- El sistema tolerará un máximo de 48 horas fuera de servicio (preferentemente en un fin de semana).
 
 ### Usabilidad
-- La interfaz debe ser intuitiva, permitiendo a los usuarios navegar fácilmente. Los botones deben ser de fácil interacción, y las gráficas deben mostrar datos relevantes de manera clara y comprensible.
-- Minimalista, con una interfaz que no parezca muy desordenada. Limpio.
+- La interfaz debe ser intuitiva, permitiendo a los usuarios navegar con facilidad. Los botones deben ofrecer una interacción sencilla y las gráficas presentar los datos relevantes de forma clara y comprensible. El diseño debe ser minimalista y limpio, evitando un aspecto desordenado, y estar optimizado para su uso en tabletas.
 - El sistema deberá adaptarse a una interfaz de tableta
 
-### Seguridad de Datos
+### Portabilidad
+- La aplicación móvil debe funcionar en Windows 10 y iOS 18 en adelante
+
+### Seguridad 
 - El sistema debe realizar copias de seguridad de datos automáticas  cada 7 días. Debido a que es muy importante realizar respaldos.
 - Información sensible (credenciales) deben estar cifradas con un método confiable.
 
-### Mantenibilidad y Calidad del Código
-- La documentación del código debe seguir el estándar
+### Mantenibilidad 
+- La documentación del código debe seguir el estándar establecido en el equipo Tech-Nebrios. 
 - Todo el código debe estar documentado adecuadamente utilizando comentarios explicativos y convenciones de documentación estándar para facilitar la comprensión por parte de otros desarrolladores.
 - El código debe ser acompañado por pruebas unitarias con al menos un 80% de cobertura.
 
 ### Interoperabilidad
 - El sistema debe ser capaz de integrarse con servicios de almacenamiento en la nube AWS debido a que el cliente cuenta con este servicio.
 - El sistema debe ser capaz de intercambiar datos con aplicaciones de terceros mediante APIs RESTful, utilizando el estándar JSON para el formato de intercambio.
-
-### Compatibilidad
-- El sistema debe ser accesible desde aplicaciones móviles (iOS)
 
 ### Registro de cambios 
 | Autor | Descripción del cambio | Versión |

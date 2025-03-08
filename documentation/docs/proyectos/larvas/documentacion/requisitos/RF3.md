@@ -8,7 +8,7 @@ sidebar_position: 4
 **Última actualización:** 08 de marzo de 2025
 
 ### Historia de Usuario
-Como administrador del sistema, quiero consultar el historial de ancestros de una charola específica dentro del sistema, para rastrear su origen y evolución, asegurando un mejor control sobre la producción.
+Como usuario del sistema, quiero consultar el historial de ancestros de una charola específica dentro del sistema, para rastrear su origen y evolución, asegurando un mejor control sobre la producción.
 
   **Criterios de Aceptación:**
   - El sistema debe permitir al administrador seleccionar una charola específica.
