@@ -17,6 +17,9 @@ sidebar_position: 2
 | Carlos Iván Fonseca Mondragón        | Colaborador |
 | Mariana Juárez Ramírez        | Colaborador |
 | Sofía Osorio Suárez        | Colaborador |
+| Juan Eduardo Rosas Cerón | Colaborador|
+| Pablo Hazael Hurtado Mireles | Colaborador|
+| Juan Carlos Calderón García | Colaborador|
 
 ---
 
