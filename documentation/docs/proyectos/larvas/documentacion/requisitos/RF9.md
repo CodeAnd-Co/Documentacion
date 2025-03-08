@@ -1,30 +1,29 @@
 ---
-title: "RF9: Eliminar Charola"  
+title: "RF9: Cerrar sesión"  
 sidebar_position: 10
 ---
 
-# RF9: Eliminar Charola
+# RF9: Cerrar sesión
 
-**Última actualización:** 05 de marzo de 2025
+**Última actualización:** 09 de marzo de 2025
 
 ### Historia de Usuario
-Como usuario del sistema, quiero borrar los datos de una charola en la base de datos, para eliminar registros obsoletos o incorrectos y mantener la base de datos actualizada y ordenada.
-
+Como usuario de la aplicación, quiero cerrar mi cuenta de usuario en la aplicación, para finalizar mi sesión de manera segura y evitar accesos no autorizados en mi cuenta.
 
   **Criterios de Aceptación:**
-  - El sistema debe permitir la eliminación de charolas solo a usuarios autorizados.
-  - Antes de eliminar una charola, se debe mostrar un mensaje de confirmación.
-  - Los datos eliminados deben registrarse en un historial de auditoría para control interno.
-  - La eliminación debe reflejarse de inmediato en la base de datos sin afectar otros registros.
+  - El sistema debe proporcionar un botón de "Cerrar Sesión" accesible en la interfaz.
+  - Al cerrar sesión, el usuario debe ser redirigido a la pantalla de inicio de sesión.
+  - Se debe invalidar la sesión activa para evitar que otra persona acceda sin autenticación.
+  - El cierre de sesión debe ser rápido y no afectar la usabilidad del sistema.
 
 ---
 
 ### Diagrama de Secuencia
 
-> *Descripción*: El diagrama de secuencia muestra el flujo de eliminación de un empleado, donde el Super Administrador solicita la eliminación y el sistema confirma la acción antes de proceder.
+> *Descripción*: El diagrama de secuencia muestra cómo el Super Administrador selecciona un archivo, el sistema valida los datos y luego importa los empleados al sistema.
 
 ---
 
 ### Mockup
 
-> *Descripción*: El mockup muestra la interfaz donde el Super Administrador puede eliminar un empleado, con un botón de confirmación para realizar la eliminación.
+> *Descripción*: El mockup muestra la interfaz donde el Super Administrador puede cargar un archivo de empleados, con la opción de revisar los datos antes de importarlos.

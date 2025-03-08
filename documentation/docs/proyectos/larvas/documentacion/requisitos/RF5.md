@@ -1,29 +1,29 @@
 ---
-title: "RF5: Splashscreen"  
+title: "RF5: Registrar Charola"  
 sidebar_position: 6
 ---
 
-# RF5: Splashscreen
+# RF5: Registrar Charola
 
-**Última actualización:** 05 de marzo de 2025
+**Última actualización:** 08 de marzo de 2025
 
 ### Historia de Usuario
-Como usuario de la aplicación, quiero ver una pantalla de presentación con el logo de Zuustento antes de acceder a la interfaz principal, para tener una experiencia visual más profesional y reconocer la identidad de la aplicación al iniciar.
+Como trabajadora del sistema, quiero ingresar la información de una charola nueva en el sistema y guardarla en la base de datos, para llevar un registro digital preciso de la producción y rastrear la trazabilidad de las charolas.
 
   **Criterios de Aceptación:**
-  - El sistema debe mostrar el logo de Zuustento durante 1 segundo antes de redirigir a la pantalla de inicio.
-  - La pantalla de presentación no debe retrasar el acceso a la aplicación.
-  - El splashscreen debe aparecer solo al abrir la aplicación, no al navegar dentro de ella.
-  - La animación debe ser fluida y compatible con dispositivos móviles.
+  - El sistema debe permitir el ingreso de una nueva charola con su identificador único.
+  - Se debe registrar la fecha de creación, peso y estado de la charola.
+  - La información ingresada debe guardarse correctamente en la base de datos.
+  - El sistema debe confirmar el registro exitoso mediante una notificación o mensaje visual.
 
 ---
 
 ### Diagrama de Secuencia
 
-> *Descripción*: El diagrama de secuencia muestra cómo el Super Administrador consulta la lista de clientes, interactuando con la base de datos para obtener los datos de todos los clientes registrados.
+> *Descripción*: El diagrama de secuencia muestra el flujo del proceso de creación de un nuevo empleado, con la interacción entre el Super Administrador, el formulario de ingreso y la base de datos.
 
 ---
 
 ### Mockup
 
-> *Descripción*: El mockup presenta la interfaz de consulta de clientes, donde el Super Administrador puede ver una lista paginada o filtrada de clientes.
+> *Descripción*: El mockup presenta la interfaz donde el Super Administrador puede ingresar los datos de un nuevo empleado, con campos requeridos y botones de acción para crear al empleado.

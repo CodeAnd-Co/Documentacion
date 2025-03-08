@@ -1,30 +1,29 @@
 ---
-title: "RF3: Consultar gráficas (administrador)"  
+title: "RF3: Consultar historial de ancestros de una charola"  
 sidebar_position: 4
 ---
 
-# RF3: Consultar gráficas (administrador)
+# RF3: Consultar historial de ancestros de una charola
 
-**Última actualización:** 05 de marzo de 2025
+**Última actualización:** 08 de marzo de 2025
 
 ### Historia de Usuario
-Como administrador del sistema, quiero visualizar los datos recolectados de manera intuitiva a través de gráficos generados automáticamente, para obtener una representación visual clara del desempeño y producción sin necesidad de revisar datos en tablas.
+Como administrador del sistema, quiero consultar el historial de ancestros de una charola específica dentro del sistema, para rastrear su origen y evolución, asegurando un mejor control sobre la producción.
 
   **Criterios de Aceptación:**
-  - El sistema debe mostrar gráficos con los datos recolectados en tiempo real.
-  - La visualización debe ser automática y no requerir configuración manual.
-  - Los gráficos deben actualizarse dinámicamente conforme se registren nuevos datos.
-  - La interfaz debe ser clara y comprensible, con etiquetas adecuadas en los gráficos.
-  - La representación visual debe facilitar la interpretación de tendencias y patrones.
+  - El sistema debe permitir al administrador seleccionar una charola específica.
+  - Se debe mostrar el historial completo de la charola, incluyendo las charolas de las que proviene.
+  - La información debe ser clara y organizada, permitiendo una navegación intuitiva.
+  - La visualización del historial debe actualizarse en tiempo real conforme se registren nuevos datos.
 
 ---
 
 ### Diagrama de Secuencia
 
-> *Descripción*: El diagrama de secuencia muestra el flujo entre el Super Administrador, el sistema de actualización de cliente y la base de datos para realizar la actualización de los datos del cliente.
+> *Descripción*: El diagrama de secuencia muestra cómo el Super Administrador interactúa con el sistema para eliminar un cliente, con la validación y confirmación antes de realizar la acción.
 
 ---
 
 ### Mockup
 
-> *Descripción*: El mockup muestra cómo el Super Administrador interactúa con la interfaz para modificar los datos del cliente. Se incluyen campos editables y botones para guardar los cambios.
+> *Descripción*: El mockup muestra la pantalla donde el Super Administrador puede eliminar un cliente, con la opción de confirmación antes de ejecutar la acción.

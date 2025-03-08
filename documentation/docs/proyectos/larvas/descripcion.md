@@ -14,11 +14,9 @@ Falta de optimización en el flujo de trabajo, generando gastos innecesarios
 
 ### Problemas Actuales
 
-:::warning Borrar Después de llenar la información
-
-Describir los desafíos o ineficiencias que enfrenta el cliente en sus procesos actuales.
-
-:::
+- Dificultad para analizar datos históricos.
+- La adquisición de una máquina de tamizado automático implicó la mezcla de múltiples cajas, lo que impidió el seguimiento de las cajas mezcladas.
+- Al depender de hojas de Excel, la visualización y búsqueda de información histórica resulta tediosa. Esto dificulta la generación de reportes o proyecciones a futuro.
 
 ### Restricciones
 
@@ -32,19 +30,13 @@ Señalar limitaciones de tiempo, presupuesto o recursos que puedan afectar el pr
 
 ### Objetivo Principal:
 
-:::warning Borrar Después de llenar la información
-
-Describir el propósito fundamental del proyecto, indicando qué se espera lograr al finalizarlo.
-
-:::
+- Optimizar la gestión y seguimiento de la producción de Tenebrios en la granja
 
 ### Objetivos Específicos
 
-:::warning Borrar Después de llenar la información
-
-Detallar metas concretas y medibles que contribuyan al logro del objetivo principal.
-
-:::
+- Reducir en un 30% el tiempo dedicado a la recolección y registro manual de datos.
+- Eliminar la necesidad del cliente de registrar sus datos de manera manual delegando el registro de datos a los trabajadores.
+- Asegurar una tasa de precisión del 95% en los datos registrados para la toma de decisiones.
 
 ## Alcance del Proyecto ➡️
 

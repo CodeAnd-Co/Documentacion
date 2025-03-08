@@ -1,30 +1,30 @@
 ---
-title: "RF2: Autenticación de la cuenta"  
+title: "RF2: Consultar gráficas (administrador)"  
 sidebar_position: 3
 ---
 
-# RF2: Autenticación de la cuenta
+# RF2: Consultar gráficas (administrador)
 
 **Última actualización:** 05 de marzo de 2025
 
 ### Historia de Usuario
-Como usuario, quiero ingresar a mi cuenta a través de un proceso de autenticación de dos pasos, para garantizar una mayor seguridad en el acceso a mi cuenta.
+Como administrador del sistema, quiero visualizar los datos recolectados de manera intuitiva a través de gráficos generados automáticamente, para obtener una representación visual clara del desempeño y producción sin necesidad de revisar datos en tablas.
 
   **Criterios de Aceptación:**
-  - El sistema debe solicitar al usuario su usuario y contraseña para iniciar sesión.
-  - Luego de ingresar sus credenciales, el usuario debe recibir un código de verificación en su correo electrónico o aplicación de    autenticación.
-  - El usuario debe ingresar correctamente el código de verificación para completar el inicio de sesión.
-  - Si el código es incorrecto o expira, el sistema debe notificar al usuario y permitirle solicitar un nuevo código.
-  - La autenticación de dos pasos debe ser opcional pero configurable por el usuario en los ajustes de seguridad.
+  - El sistema debe mostrar gráficos con los datos recolectados en tiempo real.
+  - La visualización debe ser automática y no requerir configuración manual.
+  - Los gráficos deben actualizarse dinámicamente conforme se registren nuevos datos.
+  - La interfaz debe ser clara y comprensible, con etiquetas adecuadas en los gráficos.
+  - La representación visual debe facilitar la interpretación de tendencias y patrones.
 
 ---
 
 ### Diagrama de Secuencia
 
-> *Descripción*: El diagrama de secuencia ilustra cómo el Super Administrador interactúa con el sistema para buscar y visualizar los detalles de un cliente, destacando las interacciones entre el administrador, la base de datos y la interfaz de usuario.
+> *Descripción*: El diagrama de secuencia muestra el flujo entre el Super Administrador, el sistema de actualización de cliente y la base de datos para realizar la actualización de los datos del cliente.
 
 ---
 
 ### Mockup
 
-> *Descripción*: El mockup muestra la interfaz donde el Super Administrador puede consultar la información de un cliente. Se incluyen los campos de búsqueda y visualización de datos, con el diseño organizado para facilitar la navegación.
+> *Descripción*: El mockup muestra cómo el Super Administrador interactúa con la interfaz para modificar los datos del cliente. Se incluyen campos editables y botones para guardar los cambios.

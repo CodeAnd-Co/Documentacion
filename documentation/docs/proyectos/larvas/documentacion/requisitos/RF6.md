@@ -1,29 +1,27 @@
 ---
-title: "RF6: Registrar Charola"  
+title: "RF6: Buscar charola"  
 sidebar_position: 7
 ---
 
-# RF6: Registrar Charola
+# RF6: Buscar charola
 
-**Última actualización:** 05 de marzo de 2025
+**Última actualización:** 08 de marzo de 2025
 
 ### Historia de Usuario
-Como trabajadora del sistema, quiero ingresar la información de una charola nueva en el sistema y guardarla en la base de datos, para llevar un registro digital preciso de la producción y rastrear la trazabilidad de las charolas.
+Como usuario del sistema, quiero buscar una charola específica a través de una barra de navegación, para localizar rápidamente su información sin necesidad de revisar manualmente los registros.
 
   **Criterios de Aceptación:**
-  - El sistema debe permitir el ingreso de una nueva charola con su identificador único.
-  - Se debe registrar la fecha de creación, peso y estado de la charola.
-  - La información ingresada debe guardarse correctamente en la base de datos.
-  - El sistema debe confirmar el registro exitoso mediante una notificación o mensaje visual.
+  - El sistema debe permitir la búsqueda de charolas por identificador único.
+  - La búsqueda debe ser rápida y sin afectar el rendimiento del sistema.
 
 ---
 
 ### Diagrama de Secuencia
 
-> *Descripción*: El diagrama de secuencia muestra el flujo del proceso de creación de un nuevo empleado, con la interacción entre el Super Administrador, el formulario de ingreso y la base de datos.
+> *Descripción*: El diagrama de secuencia muestra el flujo de consulta de un empleado, donde el Super Administrador o Cliente solicita la información y el sistema responde con los datos del empleado.
 
 ---
 
 ### Mockup
 
-> *Descripción*: El mockup presenta la interfaz donde el Super Administrador puede ingresar los datos de un nuevo empleado, con campos requeridos y botones de acción para crear al empleado.
+> *Descripción*: El mockup muestra cómo se visualizan los datos del empleado en la interfaz, con campos como nombre, cargo y estado, accesibles para el Super Administrador o Cliente.
