@@ -4,10 +4,11 @@ title: Plan STP
 
 ### Autores
 
-| Nombre           | Rol   |
-| ---------------- | ----- |
+| Nombre                      | Rol   |
+| --------------------------- | ----- |
 | Miguel Angel Uribe Esquivel | Autor |
-| Ian Julián Estrada Castro | Autor |
+| Ian Julián Estrada Castro   | Autor |
+| Juan Eduardo Rosas Cerón    | Autor |
 
 ---
 
@@ -59,6 +60,8 @@ El proposito de este plan es garantizar la calidad del software, detectando y co
 
 ### Estrategia de Pruebas
 
+Usaremos pruebas manuales y automatizadas dentro de la aplicación. 
+
 ### Tipos de Pruebas
 
 - Pruebas Funcionales.
@@ -94,7 +97,8 @@ El proposito de este plan es garantizar la calidad del software, detectando y co
 
 - Casos de prueba.
 - Scripts de las pruebas.
-- Datos de las pruebas
+- Datos de las pruebas.
+- Resultados de las pruebas.
 
 # Recursos para Pruebas
 
@@ -131,10 +135,12 @@ Herramientas a considerar:
 
 # Riesgos y Mitigación
 
-| Riesgos | Mitigación | 
-| ------- | ---------- |
-| Disponibilidad del entorno | Prioizar las funciones que forman parte del MVP |
-| El uso de una nueva tecnología (Flutter) para la aplicación móvil | Capacitación en Flutter |
+| Riesgos                                                           | Mitigación | 
+| ----------------------------------------------------------------- | --------------------------------------------------- |
+| Disponibilidad del entorno                                        | Prioizar las funciones que forman parte del MVP     |
+| El uso de una nueva tecnología (Flutter) para la aplicación móvil | Capacitación en Flutter                             |
+| Implementación de frameworks de pruebas                           | Capacitación en el uso de los frameworks y sus usos |
+| Los usuarios finales no se adaptan a la aplicación                | Capacitación y retroalimentación de los usuarios    |
 
 # Manejo de las Pruebas
 
@@ -159,3 +165,11 @@ Espacio para incluir referencias adicionales o documentación complementaria, co
 - Enlaces a carpetas con casos de prueba detallados.
 - Documentos relacionados con normativas de calidad o metodologías de prueba utilizadas.
 - Información adicional que ayude a la comprensión del plan de pruebas.
+
+# Registro de cambios
+
+| Autor                       | Descripción                                | Versión |
+| --------------------------- | ------------------------------------------ | ------- |
+| Miguel Angel Uribe Esquivel | Primera versión                            | 1.0     |
+| Ian Julián Estrada Castro   | Agregar frameworks, dispositivos y riesgos | 1.1     |
+| Juan Eduardo Rosas Ceron    | Manejo de pruebas y Aprobacion y firma     | 1.2     |
