@@ -14,7 +14,7 @@ title: Plan STP
 # Introducción
 
 ### Propósito
-El proposito de este plan es garantizar la calidad del software, detectando y corrigiendo errores a tiempo para asegurar que el producto cumpla con los requisitos y expectativas de los usuarios.
+El proposito de este plan es garantizar la calidad del software, detectando y corrigiendo errores a tiempo para asegurar que el producto cumpla con los requisitos y expectativas de los usuarios en la aplicación móvil "Zuustentotracker".
 
 ### Alcance
 **Registro:** Al digitalizar el proceso de captura de datos, la intención es reducir los errores y la duplicidad de información, lo que permite consultar con datos más fiables y que el equipo de trabajo dedique más tiempo a las actividades de mayor valor.
@@ -53,8 +53,7 @@ El proposito de este plan es garantizar la calidad del software, detectando y co
 
 ### Fuera del Alcance
 
-- Ejemplo 1
-- Ejemplo 2
+- Pendiente
 
 # Aproximación a las Pruebas
 
@@ -93,13 +92,17 @@ El proposito de este plan es garantizar la calidad del software, detectando y co
 
 # Entregables de las Pruebas
 
-- Documentación de la realización y resultado de las pruebas.
+- Casos de prueba.
+- Scripts de las pruebas.
+- Datos de las pruebas
 
 # Recursos para Pruebas
 
+**Personal**: El ingeniero de QA se asegurará de la correcta aplicación de las pruebas y calidad del código. Los miembros del equipo se encargarán de hacer las pruebas. El autor de la prueba debe ser diferente al autor del caso de uso/historia de usuario.
+
 **Herramientas**: Frameworks de testing en node
 
-- jest
+- Jest
 
 Herramientas a considerar:
 
@@ -113,28 +116,30 @@ Herramientas a considerar:
 **Dispositivos**:
 
 - Tablet industrial con Windows 10
+- Computadoras portátiles del equipo (Windows 10 y 11, MacOS Sequoia 15.3.1)
+- Dispositivos móviles del equipo (iOS 18, Android 14)
 
 # Ambientes de Prueba
 
 En esta sección se deben describir los entornos en los que se llevarán a cabo las pruebas. Es importante incluir:
 
-- Tipos de entornos utilizados (desarrollo, pruebas, producción, etc.).
-- Configuración de los entornos, como bases de datos de prueba y servidores.
-- Dispositivos o plataformas en las que se ejecutarán las pruebas (iOS, Android, navegadores, etc.).
-
-- MacOS Sequoia 15.3.1, Windows 10 y 11
+- Entornos locales con las mismas dependencias que el entorno de producción
+- Base de datos para pruebas con datos simulados (REALISTAS)
+- Computadoras portátiles: MacOS Sequoia 15.3.1, Windows 10 y 11. Ambiente de desarrollo
 
 # Casos de Prueba
 
 Aquí se documentan los casos de prueba diseñados para validar la funcionalidad del software. Se debe incluir:
 
-- Una descripción de cómo se estructuran los casos de prueba.
-- Criterios para seleccionar los casos de prueba según el alcance del sistema.
-- Ubicación o referencia donde se pueden consultar los casos de prueba detallados.
+Por cada requisito funcional/historia de usuario que forma parte del MVP y MBI debe haber un caso de prueba. [Guía para hacer casos prueba a partir de casos de uso](https://www.fing.edu.uy/inco/cursos/ingsoft/iis/files/3172_0958_usecase.pdf)
 
 # Riesgos y Mitigación
 
 Identificación de posibles riesgos que podrían afectar las pruebas y sus estrategias de mitigación. Se deben considerar:
+
+| Riesgos | Mitigación | 
+| ------- | ---------- |
+| Disponibilidad del entorno | Prioizar las funciones que forman parte del MVP |
 
 - Retrasos en el desarrollo o disponibilidad del entorno.
 - Problemas de compatibilidad entre dispositivos o plataformas.
