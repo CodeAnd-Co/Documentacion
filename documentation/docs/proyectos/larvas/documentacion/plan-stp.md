@@ -121,29 +121,20 @@ Herramientas a considerar:
 
 # Ambientes de Prueba
 
-En esta sección se deben describir los entornos en los que se llevarán a cabo las pruebas. Es importante incluir:
-
 - Entornos locales con las mismas dependencias que el entorno de producción
 - Base de datos para pruebas con datos simulados (REALISTAS)
 - Computadoras portátiles: MacOS Sequoia 15.3.1, Windows 10 y 11. Ambiente de desarrollo
 
 # Casos de Prueba
 
-Aquí se documentan los casos de prueba diseñados para validar la funcionalidad del software. Se debe incluir:
-
-Por cada requisito funcional/historia de usuario que forma parte del MVP y MBI debe haber un caso de prueba. [Guía para hacer casos prueba a partir de casos de uso](https://www.fing.edu.uy/inco/cursos/ingsoft/iis/files/3172_0958_usecase.pdf)
+- Por cada requisito funcional/historia de usuario que forma parte del MVP y MBI debe haber un caso de prueba. [Guía para hacer casos prueba a partir de casos de uso](https://www.fing.edu.uy/inco/cursos/ingsoft/iis/files/3172_0958_usecase.pdf)
 
 # Riesgos y Mitigación
-
-Identificación de posibles riesgos que podrían afectar las pruebas y sus estrategias de mitigación. Se deben considerar:
 
 | Riesgos | Mitigación | 
 | ------- | ---------- |
 | Disponibilidad del entorno | Prioizar las funciones que forman parte del MVP |
-
-- Retrasos en el desarrollo o disponibilidad del entorno.
-- Problemas de compatibilidad entre dispositivos o plataformas.
-- Estrategias para minimizar los riesgos, como priorizar pruebas críticas o realizar pruebas tempranas.
+| El uso de una nueva tecnología (Flutter) para la aplicación móvil | Capacitación en Flutter |
 
 # Manejo de las Pruebas
 
