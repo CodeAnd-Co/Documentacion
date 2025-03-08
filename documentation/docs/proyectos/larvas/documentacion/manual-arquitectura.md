@@ -90,8 +90,6 @@ Escribir las tecnologías que se usarán para crear el backend.
 
 Agregar las características del backend de su proyecto.
 
-**Ejemplo:**
-
 - **API REST**
   - Se definen endpoints para el consumo de servicios
   - Uso de middlewares para proteger las rutas según el rol del usuario
