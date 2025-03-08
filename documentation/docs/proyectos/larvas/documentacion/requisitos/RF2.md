@@ -16,6 +16,7 @@ Como administrador del sistema, quiero visualizar los datos recolectados de mane
   - Los gráficos deben actualizarse dinámicamente conforme se registren nuevos datos.
   - La interfaz debe ser clara y comprensible, con etiquetas adecuadas en los gráficos.
   - La representación visual debe facilitar la interpretación de tendencias y patrones.
+  - El sistema debe garantizar la seguridad de los datos visualizados, asegurando que solo usuarios autorizados puedan acceder a ellos.
 
 ---
 

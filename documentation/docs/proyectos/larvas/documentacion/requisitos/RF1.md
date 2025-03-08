@@ -11,10 +11,11 @@ sidebar_position: 2
 Como usuario de la aplicación, quiero autenticarme en el sistema ingresando mi usuario y contraseña, para acceder de forma segura a la aplicación y utilizar sus funcionalidades sin restricciones.
 
   **Criterios de Aceptación:**
-  - El sistema debe permitir al usuario ingresar su usuario y contraseña para autenticarse.
-  - Si las credenciales son correctas, el usuario debe acceder a la aplicación.
+  - El sistema debe permitir al usuario ingresar su usuario y contraseña para autenticarse mediante una interfaz clara e intuitiva.
+  - Si las credenciales son correctas, el usuario debe acceder a la aplicación y ser redirigido a la pantalla principal. 
   - Si las credenciales son incorrectas, el sistema debe mostrar un mensaje de error.
-  - La autenticación debe ser segura y proteger los datos de acceso de los usuarios.
+  - Si el usuario cierra sesión, el sistema debe invalidar la sesión activa y redirigirlo a la pantalla de inicio de sesión.
+  - La autenticación debe ser segura y estar encriptada para proteger los datos de acceso de los usuarios.
 
 ---
 

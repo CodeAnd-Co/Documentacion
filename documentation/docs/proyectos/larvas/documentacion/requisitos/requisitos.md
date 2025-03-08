@@ -43,7 +43,7 @@ Los requisitos funcionales del sistema describen una variedad de acciones que lo
 - [**RF9**](RF9.md): Cerrar sesión
 - [**RF10**](RF10.md): Consultar información detallada de una charola 
 - [**RF11**](RF11.md): Descargar reportes
-- [**RF12**](RF12.md): Notificaciones 
+- [**RF12**](RF12.md): Alertas
 - [**RF13**](RF13.md): Registrar usuario  
 - [**RF14**](RF14.md): Borrar usuario 
 - [**RF15**](RF15.md): Filtrar las charolas por escarabajo y larva

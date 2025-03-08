@@ -13,7 +13,6 @@ Como usuario del sistema, quiero modificar los datos de una charola que están g
   **Criterios de Aceptación:**
   - El sistema debe permitir la edición de los datos de una charola previamente registrada.
   - Solo los usuarios autorizados deben poder modificar la información.
-  - Se debe mantener un historial de cambios con fecha y usuario que realizó la modificación.
   - La actualización de datos debe reflejarse de inmediato en la base de datos.
 
 ---

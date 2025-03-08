@@ -13,7 +13,8 @@ Como trabajadora del sistema, quiero ingresar la información de una charola nue
   **Criterios de Aceptación:**
   - El sistema debe permitir el ingreso de una nueva charola con su identificador único.
   - Se debe registrar la fecha de creación, peso y estado de la charola.
-  - La información ingresada debe guardarse correctamente en la base de datos.
+  - Si hay un error en el ingreso, el sistema debe proporcionar un mensaje de error, indicando qué campo requiere corrección.
+  - La información ingresada debe guardarse correctamente en la base de datos de manera segura y consistente.
   - El sistema debe confirmar el registro exitoso mediante una notificación o mensaje visual.
 
 ---
