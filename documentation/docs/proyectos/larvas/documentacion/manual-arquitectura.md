@@ -8,6 +8,9 @@ sidebar_position: 5
 | ---------------- | ----- |
 | Emiliano Gomez   | Autor |
 
+Version: 1.0
+Última actualización: 08 de marzo de 2025
+
 ---
 
 ## Tipo de arquitectura de software
@@ -240,3 +243,6 @@ Organiza las funcionalidades de una aplicación en servicios independientes y re
 - **Complejidad en la implementación**: La adopción de SOA puede ser costosa y requerir una gestión adecuada de los servicios.
 
 
+| Autor | Descripción del cambio | Versión |
+|---------|-------------------------|---------|
+| Emiliano Gomez Gonzalez | Documento inicial | 1.0 |
