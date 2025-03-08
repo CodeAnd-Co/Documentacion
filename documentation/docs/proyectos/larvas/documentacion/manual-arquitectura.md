@@ -9,6 +9,7 @@ sidebar_position: 5
 | Emiliano Gomez   | Autor |
 
 Version: 1.0
+
 Última actualización: 08 de marzo de 2025
 
 ---
