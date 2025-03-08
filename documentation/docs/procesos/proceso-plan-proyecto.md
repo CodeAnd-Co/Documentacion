@@ -3,14 +3,13 @@ title: PR4 Guía de hacer un plan de proyecto
 sidebar_position: 4
 ---
 
-# Guía de hacer un plan de proyecto
+# Guía para hacer un plan de proyecto
 
 **Última actualización:** 7 de marzo de 2025.
 
 ---
 
 ### Autores
-
 | Nombre                        | Rol         |
 | ----------------------------- | ----------- |
 | Valeria Zúñiga Mendoza        | Autor       |
@@ -18,26 +17,27 @@ sidebar_position: 4
 | Carlos Iván Fonseca Mondragón | Colaborador |
 | Mariana Juárez Ramírez        | Colaborador |
 | Sofía Osorio Suárez           | Colaborador |
+| Diego Alfaro Pinto            | Colaborador |
+| Arturo Sánchez Rodríguez      | Colaborador |
+| Juan Eduardo Rosas Cerón      | Colaborador |
+| Pablo Hazael Hurtado Mireles  | Colaborador |
+| Juan Carlos Calderon García   | Colaborador |
 
 ---
 
 ### Objetivo
 
-- Elaborar un plan de proyecto efectivo alineado con varias prácticas del **CMMI-DEV V1.3**.
-- Asegurar la planificación, estimación de esfuerzo, asignación de recursos, designación del líder responsable del éxito de cada actividad y monitoreo de avances para optimizar la ejecución y el cumplimiento de los objetivos estratégicos.
+* Elaborar un plan de proyecto efectivo alineado con varias prácticas del **CMMI-DEV V1.3**.
+* Asegurar la planificación, estimación de esfuerzo, asignación de recursos, designación del líder responsable del éxito de cada actividad y monitoreo de avances para optimizar la ejecución y el cumplimiento de los objetivos estratégicos.
+
 
 ---
 
 ### Entradas
 
-1. Lista de requerimientos del proyecto.
+1. Lista de requisitos del proyecto.
 2. Work Items List.
 3. Datos de recursos.
-4. SRS.
-5. WBS.
-6. Plan de Capacitacion.
-7. Plan de Recursos.
-8. Plan de Riesgos.
 
 ### Proceso
 
@@ -58,15 +58,21 @@ sidebar_position: 4
 | **Seguimiento del costo acumulado**               | Gestionar la gráfica de costo acumulado esperado vs ganado a lo largo del tiempo.                                                                                                                                                                                                                                                                                 | Team Lead                                    | **PMC, SP 1.1** (Monitorizar los parámetros de planificación del proyecto)                                                                                 |
 | **Las partes interesadas**                        | Crear un plan de con la siguiente plantilla de <u>_[involucramiento de los stakeholders](https://docs.google.com/spreadsheets/d/1aURFnilKIHpuje5Ks9QqGiC_vBVYi_M4H5WAYBjOX_w/edit?usp=sharing)_</u>                                                                                                                                                               | Product Owner, Team Lead                     | **PP, SP 2.6** (Planificar la involucración de las partes interesadas)                                                                                     |
 | **Gestión de riesgos**                            | Gestionar los riesgos del proyecto según x proceso.                                                                                                                                                                                                                                                                                                               | Team Lead                                    | **PP, SP 2.2** (Identificar los riesgos del proyecto), **PP, SP 1.3** (Monitorizar los riesgos del proyecto)                                               |
+| **Comprobacion de gestion datos**                 | Una vez identificadas las partes interesadas, confirmar que la gestion de los datos se adieren a las [**politicas de gestion de datos**](/intro/politicas/gestion-de-datos.md)                                                                                                                                                                                    | Product Owner                                | **PP, SP 3.3** (Obtener el compromiso con el plan.)                                                                                                        |
 | **Compromiso con el plan**                        | Ya que los miembros del equipo estén de acuerdo con el plan y se hayan hecho los ajustes necesarios, validar las milestones y fechas de entrega con el cliente.                                                                                                                                                                                                   | Product Owner                                | **PP, SP 3.3** (Obtener el compromiso con el plan.)                                                                                                        |
 | **Monitoreo diario**                              | En las dailys establecer responsables en el plan de proyectos, actualizar el estado de las tareas, según el proyecto x de Daily meetings.                                                                                                                                                                                                                         | Team Lead, Miembros del equipo               | **PMC, SP 1.2** (Monitorizar los compromisos)                                                                                                              |
 | **Replanificación**                               | Para identificar si vamos atrasados, se calcula el valor de SPI con la fórmula:`SPI = valor real acumulado / valor planeado`Después se calcula la desviación con la fórmula:`(1 - SPI) * 100`Interpretación de la desviación:- **0-15%**: Aún es factible el plan.- **15-30%**: Se deben tomar decisiones drásticas.- **Más del 30%**: Se necesita un nuevo plan. | Team Lead                                    | **PP, SP 2.1** (Establecer el presupuesto y el calendario) **PP, SP 3.2** (Conciliar los niveles de trabajo y de recursos)                                 |
 
-### Salidas
 
+### Salidas
 1. **Plan de proyecto** documentado y alineado con CMMI.
 2. **Presupuesto y cronograma** definidos y ajustables.
 3. **Lista de tareas priorizadas y estimadas** con su asignación de fechas.
 4. **Monitoreo continuo** del desempeño, riesgos y ajustes requeridos.
 5. **Documentación de desviaciones y replanificación** en caso de ser necesario.
 6. **Plan de Entrega** con fechas de finalización de las fases y los hitos.
+
+## Registro de cambios
+| Autor | Descripción del cambio | Versión |
+|---------|-------------------------|---------|
+| Carlos Iván Fonseca Mondragón | Correcciones de ortografía y redacción | 1.1 |
