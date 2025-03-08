@@ -110,3 +110,8 @@ Los requisitos no funcionales establecen las expectativas en términos de tiempo
 
 ### Compatibilidad
 - El sistema debe ser accesible desde aplicaciones móviles (iOS)
+
+### Registro de cambios 
+| Autor | Descripción del cambio | Versión |
+|---------|-------------------------|---------|
+| Armando Méndez Castro | Historias de usuario y requisitos no funcionales | 1.0 |
