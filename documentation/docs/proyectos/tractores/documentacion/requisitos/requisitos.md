@@ -6,7 +6,7 @@ sidebar_position: 1
 # Requisitos
 
 **Última actualización:** 07 de marzo de 2025
-
+**Versión:** V1.1
 ### **Proveedores de Requisitos**  
    - **Internos**: Personas dentro de Code & Co.  
    - **Externos**: Cliente.  
@@ -108,3 +108,7 @@ Los requisitos no funcionales establecen las expectativas en términos de tiempo
 - Toda la información sensible debe estar cifrada.
 - La aplicación no debe ser accesible de manera pública.
 - La aplicación debe poder ser deshabilitada en caso de robo/extravío de un equipo que la tenga instalada.
+
+| Autor | Descripción del cambio | Versión |
+|---------|-------------------------|---------|
+| Juan Pablo Chávez | Adición de requisitos no-funcionales | V1.1 |
