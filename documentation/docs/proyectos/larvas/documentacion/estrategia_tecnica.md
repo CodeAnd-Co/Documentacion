@@ -48,7 +48,7 @@ Alinear las decisiones técnicas con los objetivos de negocio.
 
 La priorización de requerimientos se puede encontrar aquí:
 
-[Priorización de sus requerimientos](https://docs.google.com/spreadsheets/d/1E5J6ugtuWdjWGQqJeEW1vYByL9mUm9-9wHdZaO0a2zE/edit?gid=0#gid=0)
+[Priorización de requerimientos](https://docs.google.com/spreadsheets/d/1E5J6ugtuWdjWGQqJeEW1vYByL9mUm9-9wHdZaO0a2zE/edit?gid=0#gid=0)
 
 
 
@@ -127,7 +127,7 @@ Cada módulo puede incluir pruebas unitarias para garantizar su correcto funcion
 - app.js: Punto de entrada del servidor.
 - node_modules: Dependencias del proyecto.
 
-### Aplicacion en Flutter
+## Aplicación en Flutter
 
 ![alt text](Diagrama_de_paquetes.png)
 
@@ -163,6 +163,6 @@ Contiene todas las pruebas unitarias.
 - **Domain**: casos de uso
 - **ViewModel**: validación de estados y lógica de presentación
 
-### 6. Librarias
+### 6. Librerias
 
 Almacena dependencias internas o librerias personalizadas que pueden ser reutilizadas en distintos módulos
