@@ -5,6 +5,6 @@ sidebar_position: 12
 
 # Work Breakdown Structure
 
-**Última actualización:** 19 de febrero de 2025
+**Última actualización:** 7 de Marzo por Miguel Angel Uribe Esquivel
 
 ![alt text](./WBS-departamental.png)
