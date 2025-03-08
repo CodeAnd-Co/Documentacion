@@ -7,6 +7,7 @@ title: Plan STP
 | Nombre           | Rol   |
 | ---------------- | ----- |
 | Miguel Angel Uribe Esquivel | Autor |
+| Ian Julián Estrada Castro | Autor |
 
 ---
 
@@ -27,6 +28,7 @@ El proposito de este plan es garantizar la calidad del software, detectando y co
 - **RBAC**: Control de Acceso Basado en Roles (Role-Based Access Control).
 - **MVP**: Producto Mínimo Viable (Minimum Viable Product).
 - **MBI**: Incremento Mínimo de Negocio (Minimum Business Increment).
+- **UI**: User Interface (Interfaz de Usuario)
 
 # Objetivos de las Pruebas
 
