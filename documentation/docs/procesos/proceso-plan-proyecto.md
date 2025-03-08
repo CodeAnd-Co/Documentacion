@@ -19,7 +19,10 @@ sidebar_position: 4
 | Mariana Juárez Ramírez        | Colaborador |
 | Sofía Osorio Suárez           | Colaborador |
 | Diego Alfaro Pinto            | Colaborador |
-| Arturo Sánchez Rodríguez      | Autor       |
+| Arturo Sánchez Rodríguez      | Colaborador |
+| Juan Eduardo Rosas Cerón      | Colaborador |
+| Pablo Hazael Hurtado Mireles  | Colaborador |
+| Juan Carlos Calderon García   | Colaborador |
 
 ---
 
