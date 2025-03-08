@@ -152,19 +152,15 @@ Explicación de cómo se gestionarán los defectos y los resultados de las prueb
 
 # Aprobación y Firma
 
-Proceso de validación del plan de pruebas. Se debe incluir:
+Proceso para validar las pruebas
 
-- Responsables de la aprobación (QA, Product Owner, equipo de desarrollo, etc.).
-- Procedimiento para documentar la ejecución de las pruebas y su aprobación.
-- Criterios para determinar si el software está listo para su lanzamiento.
+- Realizar la documentación de la prueba correspondiente.
+- Notificar al responsable de la aprobación.
+- Notificar al QA.
 
 # Apéndices
 
-Espacio para incluir referencias adicionales o documentación complementaria, como:
-
-- Enlaces a carpetas con casos de prueba detallados.
-- Documentos relacionados con normativas de calidad o metodologías de prueba utilizadas.
-- Información adicional que ayude a la comprensión del plan de pruebas.
+- [Guía para hacer casos prueba a partir de casos de uso](https://www.fing.edu.uy/inco/cursos/ingsoft/iis/files/3172_0958_usecase.pdf)
 
 # Registro de cambios
 
