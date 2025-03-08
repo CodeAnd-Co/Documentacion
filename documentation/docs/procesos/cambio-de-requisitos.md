@@ -15,6 +15,8 @@ sidebar_position: 9
 | ----------------------- | ----- |
 | Daniel Contreras Chávez | Autor |
 | Paola Garrido Montes    | Autor |
+| Miguel Angel Uribe Esquivel              | Co-autor     |
+| Galo Alejandro del Rio Viggiano              | Co-autor     |
 
 ---
 
@@ -45,7 +47,7 @@ sidebar_position: 9
 | **Actualización**                   | En caso de ser necesario, actualizar dependendencias, entregables y/o funciones clave, cronograma y/o presupuesto, plan de riesgos y/o estándares.                                                                                      | Colaborador                                    | REQM SP 1.4 (Mantener la trazabilidad de los requisitos), CM SP 1.2 (Controlar cambios en la línea base), PP, SP 3.2 (Conciliar los niveles de trabajo y de recursos), REQM SP 1.5 (SP 1.5 Asegurar el alineamiento entre el trabajo del proyecto y los requisitos), REQM, SP 1.2 (Obtener el compromiso sobre los requisitos) |
 |                                     | Añadir fecha de cambio en el apartado de _Resolución_ en la hoja de "Solicitud de cambio".                                                                                                                                              | Colaborador                                    | CM SP 1.3 (Establecer línea base), PP, SP 3.2 (Conciliar los niveles de trabajo y de recursos)                                                                                                                                                                                                                                 |
 |                                     | Actualizar base de datos de requisitos, añadiendo la tabla de la nueva versión con los requisitos actualizados.                                                                                                                         | Colaborador                                    | CM SP 1.4 (Registrar y reportar estado de la configuración), PP, SP 3.2 (Conciliar los niveles de trabajo y de recursos), REQM SP 1.5 (SP 1.5 Asegurar el alineamiento entre el trabajo del proyecto y los requisitos).                                                                                                        |
-
+| | Registrar en la plantilla, la firma de todos los colaboradores de proyectos. Esta se registra en la hoja de 'compromiso', donde cada integrante colocará su nombre junto al campo de si esta enterado o no del cambio inicial o el resto de cambios. | Colaborador | SP 1.2 (Obtener el compromiso sobre los requisitos.) |
 ---
 
 ### Salidas
