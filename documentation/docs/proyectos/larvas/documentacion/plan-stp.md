@@ -42,6 +42,10 @@ El proposito de este plan es garantizar la calidad del software, detectando y co
 
 # Alcance de las Pruebas
 
+- Módulos:
+    - Registro.
+    - Visualización.
+
 ### Dentro del Alcance
 
 - Ejemplo 1
@@ -61,15 +65,15 @@ El proposito de este plan es garantizar la calidad del software, detectando y co
 - Pruebas Funcionales.
 - Pruebas de Usabilidad.
 - Pruebas de Rendimiento.
-- Pruebas de interfaz.
+- Pruebas de Interfaz.
 
 ### Niveles de Pruebas
 
 - Pruebas Unitarias.
 - Pruebas de Integración.
-- Pruebas Heuristicas
-- Pruebas de Despliegue
-- Pruebas de Estrés. 
+- Pruebas Heuristicas.
+- Pruebas de Despliegue.
+- Pruebas de Estrés.
 
 # Criterios de las Pruebas
 
@@ -93,13 +97,22 @@ El proposito de este plan es garantizar la calidad del software, detectando y co
 
 # Recursos para Pruebas
 
-Ejemplos:
+**Herramientas**: Frameworks de testing en node
 
-**Personal**:
+- jest
 
-**Herramientas**:
+Herramientas a considerar:
+
+- chai
+- chai-http
+- mocha
+- mochawesome
+- nyc
+- sinon
 
 **Dispositivos**:
+
+- Tablet industrial con Windows 10
 
 # Ambientes de Prueba
 
@@ -108,6 +121,8 @@ En esta sección se deben describir los entornos en los que se llevarán a cabo 
 - Tipos de entornos utilizados (desarrollo, pruebas, producción, etc.).
 - Configuración de los entornos, como bases de datos de prueba y servidores.
 - Dispositivos o plataformas en las que se ejecutarán las pruebas (iOS, Android, navegadores, etc.).
+
+- MacOS Sequoia 15.3.1, Windows 10 y 11
 
 # Casos de Prueba
 
