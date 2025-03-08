@@ -1,6 +1,6 @@
 ---
-**title:** PR7 Revisión de Planes de Proyecto
-**sidebar_position:** 7
+title: PR7 Revisión de Planes de Proyecto
+sidebar_position: 7
 ---
 
 # Revisión de Planes de Proyecto
