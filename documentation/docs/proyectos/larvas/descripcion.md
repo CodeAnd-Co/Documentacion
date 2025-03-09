@@ -5,6 +5,10 @@ sidebar_position: 1
 
 # Descripción General del Proyecto
 
+| Nombre | Rol |
+|---------|-------------------------|
+| Armando Méndez Castro | Autor | 
+
 **Última actualización:** 09 de marzo de 2025
 
 **Nombre de la Empresa:** Tech-nebrios
