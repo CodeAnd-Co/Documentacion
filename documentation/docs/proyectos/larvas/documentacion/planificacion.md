@@ -5,7 +5,7 @@ sidebar_position: 3
 
 # Planificación
 
-**Última actualización:** 16 de febrero de 2025
+**Última actualización:** 09 de marzo de 2025
 
 _Cronograma, hitos y entregables._
 
