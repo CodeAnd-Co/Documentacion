@@ -78,4 +78,4 @@ sidebar_position: 4
 | Autor | Descripción del cambio | Versión |
 |---------|-------------------------|---------|
 | Carlos Iván Fonseca Mondragón | Correcciones de ortografía y redacción | 1.1 |
-|Juan Pablo Chávez Leal | Adición del formato de Comrpomiso con el plan | 1.2 |
+|Juan Pablo Chávez Leal | Adición del formato de Compromiso con el plan | 1.2 |
