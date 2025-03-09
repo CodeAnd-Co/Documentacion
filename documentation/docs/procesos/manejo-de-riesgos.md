@@ -1,6 +1,6 @@
 ---
-title: Gestión de Riesgos
-sidebar_position: 1
+title: PR16 Gestión de Riesgos
+sidebar_position: 16
 ---
 
 # Gestión de Riesgos
