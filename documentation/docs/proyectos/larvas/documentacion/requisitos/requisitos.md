@@ -111,3 +111,5 @@ Los requisitos no funcionales establecen las expectativas en términos de tiempo
 | Autor | Descripción del cambio | Versión |
 |---------|-------------------------|---------|
 | Armando Méndez Castro | Historias de usuario y requisitos no funcionales | 1.0 |
+| Miguel Angel Uribe Esquivel  | Reviewer y autorizador | 1.0 |
+
