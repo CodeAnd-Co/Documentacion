@@ -8,6 +8,7 @@ sidebar_position: 7
 |---------|-------------------------|
 | Armando Méndez Castro | Autor | 
 | Emiliano Valdivia Lara  | Autor | 
+| Miguel Angel Uribe Esquivel  | Autor |
 
 **Última actualización:** 9 de Marzo 
 
