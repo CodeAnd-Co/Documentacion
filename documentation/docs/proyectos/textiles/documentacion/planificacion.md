@@ -19,9 +19,11 @@ _Cronograma, hitos y entregables._
 | Construcción 1 (Prueba de Arquitectura) | [Fecha]               | [Estado] |
 | Construcción 2 (MVP)                    | [Fecha]               | [Estado] |
 | Transición 1 (MVP)                      | [Fecha]               | [Estado] |
-| Construcción 3 (MBI)                    | [Fecha]               | [Estado] |
-| Transición 2 (MBI)                      | [Fecha]               | [Estado] |
-| Cierre                                  | [Fecha]               | [Estado] |
+| Construcción 3 (MBI 1)                  | [Fecha]               | [Estado] |
+| Transición 2 (MBI 1)                    | [Fecha]               | [Estado] |
+| Construcción 4 (MBI 2)                  | [Fecha]               | [Estado] |
+| Transición 3 (MBI 2)                    | [Fecha]               | [Estado] |
+
 
 :::
 
@@ -33,7 +35,7 @@ _Cronograma, hitos y entregables._
 | ------------------------ | --------------------------------------- | -------------- | -------- |
 | Inicio del Proyecto      | Inicio formal del proyecto              | [Fecha]        | [Estado] |
 | Aprobación de Requisitos | Aprobación final de los requisitos      | [Fecha]        | [Estado] |
-| Finalización del Diseño  | Compleción del diseño del sistema       | [Fecha]        | [Estado] |
+| Finalización del Diseño  | Finalización de diseño del sistema      | [Fecha]        | [Estado] |
 | Desarrollo Completo      | Finalización del desarrollo del sistema | [Fecha]        | [Estado] |
 | Pruebas Completas        | Finalización de las pruebas             | [Fecha]        | [Estado] |
 | Implementación Exitosa   | Implementación exitosa en producción    | [Fecha]        | [Estado] |
