@@ -5,6 +5,10 @@ sidebar_position: 1
 
 # Requisitos
 
+| Nombre | Rol |
+|---------|-------------------------|
+| Armando Méndez Castro | Autor | 
+
 **Última actualización:** 06 de marzo de 2025
 
 ### **Proveedores de Requisitos**  

@@ -1,5 +1,6 @@
 ---
 title: Plan STP
+sidebar_position: 6
 ---
 
 ### Autores
