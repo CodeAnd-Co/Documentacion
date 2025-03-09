@@ -50,7 +50,7 @@ No tenemos restricciones en cuanto a presupuesto o recursos; sin embargo, sí en
 
 ### Actividades Incluidas
 
-[**Plan de valor ganado**](https://docs.google.com/spreadsheets/d/1E5J6ugtuWdjWGQqJeEW1vYByL9mUm9-9wHdZaO0a2zE/edit?gid=946746748#gid=946746748) 
+[**Plan de valor ganado**](https://docs.google.com/spreadsheets/d/1PFMwN-SyA-G5YSp8TMKDWmnJ7Na7gvQugry9THQ-tvY/edit?pli=1&gid=1482751787#gid=1482751787) 
 
 ### Limitaciones
 
