@@ -25,7 +25,7 @@ Utilizaremos 2 repositorios separados, tanto para el backend como para el fronte
 
 ## Estrategia de Ramas
 
-![alt text](./../../../recursos/Manejo-de-ramas.png)
+![alt text](/img/manejo-de-ramas.png)
 
 Utilizaremos 3 ramas principales:
 
@@ -48,9 +48,7 @@ Alinear las decisiones técnicas con los objetivos de negocio.
 
 La priorización de requerimientos se puede encontrar aquí:
 
-[Priorización de requerimientos](https://docs.google.com/spreadsheets/d/1E5J6ugtuWdjWGQqJeEW1vYByL9mUm9-9wHdZaO0a2zE/edit?gid=0#gid=0)
-
-
+[***Priorización de requerimientos***](https://docs.google.com/spreadsheets/d/1E5J6ugtuWdjWGQqJeEW1vYByL9mUm9-9wHdZaO0a2zE/edit?gid=0#gid=0)
 
 La especificación de historias de usuario se llevarán a cabo teniendo en cuenta la definición de [**Done**](./../../../../docs/definicion-de-done.md) y [**Ready**](./../../../../docs/definicion-de-ready.md) que se encuentran en este archivo:
 
@@ -68,11 +66,7 @@ Garantizar un software confiable a través de buenas prácticas de aseguramiento
 
 La estrategia que se seguirá para las pruebas será la siguiente:
 
-
-# importante
-
-- **STP**: [Llenar la plantilla con el plan de pruebas de su proyecto]
-
+[***STP***](./plan-stp.md)
 
 ---
 
@@ -95,7 +89,7 @@ Documentar claramente las funcionalidades y código del sistema para lectura en 
 
 ### Backend
 
-![alt text](./../../../recursos/plantilla-diagrama-de-paquetes.png)
+![alt text](/img/plantilla-diagrama-de-paquetes.png)
 
 Este diagrama de paquetes representa la organización de un backend. Se divide en varias secciones principales:
 
