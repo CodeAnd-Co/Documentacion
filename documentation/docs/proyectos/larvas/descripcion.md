@@ -33,12 +33,6 @@ No tenemos restricciones en cuanto a presupuesto o recursos; sin embargo, sí en
 #### Objetivo 2: 
 - Desarrollar e implementar  un sistema de gráficas interactivas en la plataforma, permitiendo al Socio Formador visualizar y utilizar datos clave para respaldar su toma de decisiones y reducir su incertidumbre en un plazo de 3 meses
 
-### Objetivos Específicos
-
-- Reducir en un 30% el tiempo dedicado a la recolección y registro manual de datos.
-- Eliminar la necesidad del cliente de registrar sus datos de manera manual delegando el registro de datos a los trabajadores.
-- Asegurar una tasa de precisión del 95% en los datos registrados para la toma de decisiones.
-
 ## Alcance del Proyecto ➡️
 
 ### Entregables
@@ -52,7 +46,7 @@ No tenemos restricciones en cuanto a presupuesto o recursos; sin embargo, sí en
 
 ### Actividades Incluidas
 
-[Plan de entregas](https://docs.google.com/spreadsheets/d/1E5J6ugtuWdjWGQqJeEW1vYByL9mUm9-9wHdZaO0a2zE/edit?gid=946746748#gid=946746748) 
+[**Plan de valor ganado**](https://docs.google.com/spreadsheets/d/1E5J6ugtuWdjWGQqJeEW1vYByL9mUm9-9wHdZaO0a2zE/edit?gid=946746748#gid=946746748) 
 
 ### Limitaciones
 
@@ -343,7 +337,7 @@ import TabItem from '@theme/TabItem';
 
 | Nombre                            | Rol       |
 | --------------------------------- | --------- |
-| Mariana Juárez Ramírez            | Team Leader,      |
+| Mariana Juárez Ramírez            | Team Leader      |
 | Emiliano Gómez González   | Architecture Owner      |
 | Sofía Osorio Suárez   | Product Owner     |
 | Juan Eduardo Rosas Cerón  | Presentation Owner      |
@@ -351,13 +345,14 @@ import TabItem from '@theme/TabItem';
 | Emiliano Valdívia Lara | Q/A       |
 | Juan Carlos Calderón García | Team Member |      |
 | Ian Julián Estrada Castro   | Juntas Owner   |
-| Armando Méndez Castro   | Team Member, UX/UI Diseñador   |
+| Armando Méndez Castro   | Team Member   |
 
 ### Recursos Necesarios
 
-- Manual de arquitectura
-- Manual de estrategia técnica 
+- [**Manual de arquitectura** ](./documentacion/manual-arquitectura.md)
+- [**Estrategía técnica**](https://docs.google.com/spreadsheets/d/1E5J6ugtuWdjWGQqJeEW1vYByL9mUm9-9wHdZaO0a2zE/edit?gid=946746748#gid=946746748) 
 
 | Autor | Descripción del cambio | Versión |
 |---------|-------------------------|---------|
-| Armando Méndez Castro | Adición y definición del contenido | 1.1 |
+| Armando Méndez Castro | Adición y definición del contenido | 1.0 |
+| Armando Méndez Castro | correciones del contenido | 1.1 |
