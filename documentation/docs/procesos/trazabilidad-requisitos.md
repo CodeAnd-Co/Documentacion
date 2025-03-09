@@ -1,7 +1,8 @@
 ---
-title: Comprensión y trazabilidad de requisitos
-sidebar_position: 9
+title: PR8 Comprensión y trazabilidad de requisitos
+sidebar_position: 8
 ---
+
 # Comprensión y trazabilidad de requisitos
 
 **Última actualización:** 9 de marzo de 2025
@@ -10,20 +11,24 @@ sidebar_position: 9
 ---
 
 ### Autores
-| Nombre                            | Rol       |
-| --------------------------------- | --------- |
-| Angélica Ríos Cuentas             | Autor     |
+
+| Nombre                | Rol   |
+| --------------------- | ----- |
+| Angélica Ríos Cuentas | Autor |
+
 ---
 
 ### Objetivo
 
-* Establecer el proceso para  mantener una trazabilidad bidireccional en los requisitos.
+- Establecer el proceso para mantener una trazabilidad bidireccional en los requisitos.
+
 ---
 
 ### Entradas
 
 1. Requisitos definidos para un MVP
 2. Requisitos definidos para un MBI
+
 ---
 
 ## Proceso de Comprensión y Trazabilidad de Requisitos
@@ -38,10 +43,9 @@ sidebar_position: 9
 
 ---
 
-### Salidas  
+### Salidas
 
-1. Un documento general que consolida los requisitos de cada proyecto, organizados en:  
-   - **Requisitos funcionales**, clasificados en **MVP** (Producto Mínimo Viable) y **MBI** (Incremento Mínimo de Negocio).  
-   - **Requisitos no funcionales**, que establecen condiciones de calidad y restricciones del sistema.  
-2. Un documento individual para cada requisito funcional, detallando su historia de usuario, criterios de aceptación, diagramas e interfaces.  
-
+1. Un documento general que consolida los requisitos de cada proyecto, organizados en:
+   - **Requisitos funcionales**, clasificados en **MVP** (Producto Mínimo Viable) y **MBI** (Incremento Mínimo de Negocio).
+   - **Requisitos no funcionales**, que establecen condiciones de calidad y restricciones del sistema.
+2. Un documento individual para cada requisito funcional, detallando su historia de usuario, criterios de aceptación, diagramas e interfaces.

@@ -2,7 +2,7 @@
 title: Definicion de Ready
 ---
 
-# Definicion de Done
+# Definicion de Ready
 
 ---
 
