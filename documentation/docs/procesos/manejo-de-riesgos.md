@@ -5,7 +5,7 @@ sidebar_position: 1
 
 # Gestión de Riesgos
 
-**Última actualización:** 7 de marzo de 2025.
+**Última actualización:** 8 de marzo de 2025.
 
 ---
 
@@ -42,6 +42,7 @@ sidebar_position: 1
 | **Mitigación de Riesgos** | Determinar la probabilidad de ocurrir y el impacto potencial de los riesgos. | **Team Leader** | **PP, SP 2.2** (Identificar los riesgos del proyecto) |
 | | Por cada riesgo identificado cuya magnitud sea **"Riesgo Alto"** (este valor se calcula en automático en la plantilla) realizar un plan de mitigación del riesgo. | **Team Leader** | **PP, SP 2.2** (Identificar los riesgos del proyecto) |
 | **Comunicación de Riesgos** | Compartir a los stakeholders relevantes los riesgos identificados y el plan de acción para mitigarlos. | **Product Owner** | **PP, SP 2.2** (Identificar los riesgos del proyecto) |
+| **Aprobación de Riesgos** | Obtener la aprobación de los stakeholders relevantes respecto a la documentación de los riesgos identificados. | **Product Owner** | **PP, SP 2.2** (Identificar los riesgos del proyecto) |
 
 ---
 
