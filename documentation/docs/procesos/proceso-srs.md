@@ -5,8 +5,8 @@ sidebar_position: 3
 
 # Proceso de Definición de SRS
 
-**Última actualización:** 07 de marzo de 2025  
-**Versión:** 4.0
+**Última actualización:** 08 de marzo de 2025  
+**Versión:** 4.1
 
 ## Autores
 
@@ -45,7 +45,7 @@ Definir, documentar y validar los requisitos del software, asegurando su alineac
 |                                                 | Definir los criterios de éxito del MVP y MBI.                                                                                                                          | Equipo de Producto | RD, SP 3.3 (Analizar requisitos)                                                                            |
 |                                                 | Planificar las fases de desarrollo y lanzamiento.                                                                                                                      | Equipo de Producto | PP, SP 2.1 (Establecer el presupuesto y el cronograma)                                                      |
 | **Validación con Stakeholders**                 | Presentar la propuesta del SRS a clientes y equipo técnico.                                                                                                            | Equipo de Producto | VAL, SP 2.1 (Realizar la validación de productos o componentes de productos seleccionados)                  |
-|                                                 | Presentar la Especificación de Requerimientos de Software a clientes y asegurar la firma de validación del socio.                                                      | Equipo de Producto | REQM, SP 1.2 (Obtener compromiso con los requisitos), PP, SP 3.3 (Obtener el compromiso con el plan.)       |
+|                                                 | Presentar la Especificación de Requerimientos de Software a clientes y asegurar la firma de validación del socio.                                                      | Equipo de Producto | REQM, SP 1.2 (Obtener compromiso con los requisitos)      |
 |                                                 | Ajustar según retroalimentación sin perder el enfoque de viabilidad.                                                                                                   | Equipo de Producto |                                                                                                             |
 
 ## Salida
@@ -58,4 +58,5 @@ Definir, documentar y validar los requisitos del software, asegurando su alineac
 | ----------------------- | ----------------------------------- | ------- |
 | Emiliano Gómez González | Corrige un paso del proceso del SRS | 3.3     |
 | Valeria Zuñiga Mendoza  | Ahora abarca la obtención del SRS   | 4.0     |
-| Angel Mauricio Ramirez  | Ahora abarca la obtención del SRS   | 4,o     |
+| Angel Mauricio Ramirez  | Ahora abarca la obtención del SRS   | 4.0     |
+|Juan Pablo Chávez Leal | Eliminación de práctica 3.3 | 4.1 |
