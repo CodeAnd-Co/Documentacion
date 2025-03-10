@@ -137,4 +137,4 @@ PR4_Plan_Proyecto
 | Autor                  | Descripción del cambio            | Versión |
 | ---------------------- | --------------------------------- | ------- |
 | Valeria Zuñiga Mendoza | Ahora abarca la obtención del SRS | 1.0     |
-| Angel Mauricio Ramirez | Ahora abarca la obtención del SRS | 1,o     |
+| Angel Mauricio Ramirez | Ahora abarca la obtención del SRS | 1.0     |
