@@ -10,8 +10,8 @@ sidebar_position: 4
 ---
 
 ## Historia de Usuario  
-Como administrador, quiero visualizar la información detallada de un usuario, incluyendo su rol y permisos, para asegurar que su acceso al sistema sea el adecuado.
----
+
+Como **Super Administrador**, quiero visualizar la información detallada de un usuario, incluyendo su rol y permisos, para asegurar que su acceso al sistema sea el adecuado.
 
 ## **Criterios de Aceptación:**  
 
