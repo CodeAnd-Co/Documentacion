@@ -34,7 +34,7 @@ sidebar_position: 14
 
 | **Fase** | **Descripción** | **Responsable** | **Meta y práctica específica del CMMI** |
 |----------|----------------|-----------------|-----------------------------------------|
-| **Identificación** | Determinar los recursos que requiere el departamento para su modo de trabajo, abarcando equipos y herramientas. Llenar la plantilla de <u>*[plan de adquisición](https://docs.google.com/document/d/1mVy8YricjPGQBq1CTrkcR_UkMM8S7XF0MPidEjbTotk/edit?tab=t.0)*</u>. | Team Member | **PP, SP 1.1** (Establecer alcance del proyecto), **IPM, SP 1.3** (Establecer ambiente de Trabajo)|
+| **Identificación** | Determinar los recursos que requiere el departamento para su modo de trabajo, abarcando equipos y herramientas. Llenar la plantilla de <u>*[plan de adquisición](https://docs.google.com/spreadsheets/d/1rfgAww-EvXrArA5EODB8mOchM08H8ADhetAuesV0Q8E/edit?usp=sharing)*</u>. | Team Member | **PP, SP 1.1** (Establecer alcance del proyecto), **IPM, SP 1.3** (Establecer ambiente de Trabajo)|
 || Verificar la situación actual de la adquisición de dichos recursos. | Product Owner | **IPM, SP 1.3** (Establecer ambiente de Trabajo) |
 | **Evaluación** | Evaluar la relevancia que cada recurso tiene para el departamento. | Team Lead, Team Member | **PP, SP 1.1** (Establecer alcance del proyecto), **PP, SP 2.4** (Planeación de recursos en el proyecto)|
 || Asignar a los responsables de administrar cada recurso. | Team Leader | **PP, SP 2.4** (Planeación de recursos en el proyecto) |
