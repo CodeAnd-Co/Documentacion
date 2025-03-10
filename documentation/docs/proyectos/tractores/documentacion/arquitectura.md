@@ -5,7 +5,7 @@ sidebar_position: 4
 
 # Manual de Arquitectura de Software
 
-**Última actualización** 05 de marzo de 2025 por Daniel Contreras
+**Última actualización** 09 de marzo de 2025 por Diego Fuentes
 
 ---
 
@@ -15,6 +15,7 @@ sidebar_position: 4
 | Daniel Contreras                  | Autor     |
 | Diego Alfaro                      | Autor     |
 | Emiliano Gómez                    | Autor     |
+| Diego Fuentes                     | Modificador |
 ---
 
 ## Tipo de arquitectura de software
@@ -101,7 +102,7 @@ Escribir las tecnologías que se usarán para crear el backend.
 **Backend local:**
 - Node.JS + Express.JS para hacer peticiones al backend desplegado.
 - JS PDF para el descargado de archivos al almacenamiento local
-- Sheet JS para el uso, y creación de fórmulas de excel sobre los datos
+- Hyperformula para el uso, y creación de fórmulas de excel sobre los datos
 - Chart JS para la creación y uso de gráficas
 
 ### Características
