@@ -1,6 +1,9 @@
-# **Política de Gestión de Datos del Proyecto**
-
 ---
+title: Política de Gestión de Datos del Proyecto
+sidebar_position: 2
+---
+
+# **Política de Gestión de Datos del Proyecto**
 
 ### Autores
 
@@ -88,6 +91,7 @@ De acuerdo con el modelo **CMMI PP SP 2.3 (Gestión de Datos del Proyecto)**, se
    - Se utilizará un repositorio para el seguimiento de cambios en datos críticos.
 
 7. **Revisión y validación (PP SP 2.3, MA SP 2.2)**
+
    - Se evaluará la información recopilada para garantizar que cumpla con los objetivos del proyecto.
 
 ## **6. Mecanismos de Protección y Seguridad**
@@ -113,6 +117,7 @@ Para garantizar el cumplimiento de esta política, se implementarán mecanismos 
    - Se utilizarán herramientas de gestión de configuración para mantener la trazabilidad.
 
 3. **Medidas correctivas y acciones disciplinarias**:
+
    - Cualquier incumplimiento de esta política puede derivar en medidas correctivas o disciplinarias según lo establecido por la organización.
    - Se fomentará la capacitación del equipo en buenas prácticas de gestión de datos.
 
