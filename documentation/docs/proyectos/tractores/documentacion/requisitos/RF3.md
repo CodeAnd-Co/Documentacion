@@ -5,14 +5,15 @@ sidebar_position: 4
 
 # RF3: Usuario cierra sesión.
 
-**Última actualización:** 03 de marzo de 2025
+**Última actualización:** 07 de marzo de 2025
 
 ### Historia de Usuario
 
-Como usuario, quiero cerrar mi sesión para dejar de tener acceso al sistema.
+Yo como usuario quiero cerrar sesión en el sistema de manera segura termino de utilizar la aplicación de escritorio, asegurando que no se puede accede a mis datos sin mis credenciales.
 
   **Criterios de Aceptación:**
   - El sistema debe garantizar que una vez el usuario cierre sesión ni el sistema ni los datos del usuario sean accesibles.
+  - Al cerrar sesión, el sistema debe redirigir al usuario a la página de inicio de sesión.
 
 ---
 
@@ -29,3 +30,11 @@ Como usuario, quiero cerrar mi sesión para dejar de tener acceso al sistema.
 ![Mockup]
 
 > *Descripción*: El mockup representa la interfaz del sistema donde el usuario puede cerrar sesión. Muestra los campos requeridos y los botones de acción disponibles.
+
+---
+
+### Pruebas Unitarias 
+| ID Prueba | Descripción | Resultado Esperado |
+|-----------|-------------|--------------------|
+|PU-RF3-01|Cerrar sesión desde la aplicación.|El usuario es redirigido a la pantalla de inicio de sesión|
+|PU-RF3-02|Intento de acceso después de cerrar sesión.|El sistema requiere autenticación nuevamente.|

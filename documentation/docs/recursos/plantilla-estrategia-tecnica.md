@@ -26,7 +26,7 @@ Utilizaremos 2 repositorios separados, tanto para el backend como para el fronte
 
 ## Estrategia de Ramas
 
-![alt text](Manejo-de-ramas.png)
+![alt text](/img/manejo-de-ramas.png)
 
 Utilizaremos 3 ramas principales:
 
@@ -90,7 +90,7 @@ Documentar claramente las funcionalidades y código del sistema para lectura en 
 
 ### Backend
 
-![alt text](plantilla-diagrama-de-paquetes.png)
+![alt text](/img/plantilla-diagrama-de-paquetes.png)
 
 Este diagrama de paquetes representa la organización de un backend. Se divide en varias secciones principales:
 
