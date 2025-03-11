@@ -166,6 +166,8 @@ Los requisitos no funcionales establecen las expectativas en términos de tiempo
 - El sistema debe contar con un sistema de autorización y autenticación robusto.
 - El sistema debe cerrar automáticamente la sesión de los usuarios después de 8 horas de inactividad.
 
+---
+
 ## Requisitos de información
 
 [Diagrama MER](/docs/proyectos/textiles/documentacion/diagrama-mer/)
@@ -369,3 +371,24 @@ import TabItem from '@theme/TabItem';
 
 </TabItem>
 </Tabs>
+
+---
+
+## Reglas de negocio
+
+#### Descripción General
+Las reglas de negocio son un conjunto de condiciones, restricciones y procedimientos que definen cómo debe operar un sistema de acuerdo con los objetivos y necesidades de una organización. Estas reglas dictan el comportamiento del software en aspectos como validaciones, cálculos, flujos de trabajo y permisos de usuario. Su correcta implementación garantiza que el sistema refleje con precisión los procesos y políticas del negocio, asegurando coherencia y cumplimiento con los requisitos establecidos.
+
+---
+
+- Solo el administrador puede registrar, modificar o eliminar clientes y empleados. 
+- Un cliente debe tener al menos un empleado asociado para poder realizar compras.
+- No se pueden registrar empleados sin asignarlos a un cliente específico.
+- Cada cliente puede tener un catálogo de productos personalizados.
+- Solo los administradores pueden asignar y modificar roles. 
+- Los permisos de los usuarios están definidos por su rol (administrador, cliente, empleado).
+- Un usuario no puede modificar su propio rol ni asignarse más. 
+- Se debe validar el inventario antes de confirmar una orden.
+- Los pagos pueden realizarse en MXN, USD o puntos acumulados. 
+- Los empleados solo pueden comprar productos autorizados por su empresa.
+- Se debe verificar el saldo disponible o puntos antes de autorizar una compra. 
