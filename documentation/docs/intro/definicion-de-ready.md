@@ -1,5 +1,6 @@
 ---
 title: Definicion de Ready
+sidebar_position: 5
 ---
 
 # Definicion de Ready
@@ -8,9 +9,10 @@ title: Definicion de Ready
 
 ### Autores
 
-| Nombre       | Rol   |
-| ------------ | ----- |
-| Diego Alfaro | Autor |
+| Nombre        | Rol         |
+| ------------- | ----------- |
+| Diego Alfaro  | Autor       |
+| Angel Ramírez | Modificador |
 
 ---
 
@@ -25,8 +27,8 @@ title: Definicion de Ready
 - La historia de usuario está asignada a su debido responsable.
 - La historia ha sido validada por el **Product Owner**.
 - Todos los miembros del equipo están al tanto de la existencia y la descripción de la historia de usuario.
-- La historia no debe estar bloqueada por una dependencia o por otra historia de usuario que no se haya realizado aún.
-- La historia debe contar con diagramas si aplica:
-  - Si es una historia de **2.5 o más puntos**, se debe incluir un **diagrama de secuencia**.
-  - Si es una historia de **2.5 o más puntos** y el usuario interactúa con la interfaz, se debe incluir un **diagrama de secuencia**.
 - La historia debe contar con su **wireframe o mockup** de interfaz.
+
+| Autor                          | Descripción del cambio                            | Versión |
+| ------------------------------ | ------------------------------------------------- | ------- |
+| Angel Mauricio Ramirez Herrera | Se eliminó la creación de diagramas de secuencia. | 1.1     |
