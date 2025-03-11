@@ -5,9 +5,9 @@ sidebar_position: 5
 
 ### Autores
 
-| Nombre         | Rol   |
-| -------------- | ----- |
-| Juan Eduardo   | Autor |
+| Nombre       | Rol   |
+| ------------ | ----- |
+| Juan Eduardo | Autor |
 
 ---
 
@@ -48,9 +48,9 @@ Alinear las decisiones técnicas con los objetivos de negocio.
 
 La priorización de requerimientos se puede encontrar aquí:
 
-[***Priorización de requerimientos***](https://docs.google.com/spreadsheets/d/1E5J6ugtuWdjWGQqJeEW1vYByL9mUm9-9wHdZaO0a2zE/edit?gid=0#gid=0)
+[**_Priorización de requerimientos_**](https://docs.google.com/spreadsheets/d/1E5J6ugtuWdjWGQqJeEW1vYByL9mUm9-9wHdZaO0a2zE/edit?gid=0#gid=0)
 
-La especificación de historias de usuario se llevarán a cabo teniendo en cuenta la definición de [**Done**](./../../../../docs/definicion-de-done.md) y [**Ready**](./../../../../docs/definicion-de-ready.md) que se encuentran en este archivo:
+La especificación de historias de usuario se llevarán a cabo teniendo en cuenta la definición de [**Done**](/docs/intro/definicion-de-done/) y [**Ready**](/docs/intro/definicion-de-ready/) que se encuentran en este archivo:
 
 ---
 
@@ -66,7 +66,7 @@ Garantizar un software confiable a través de buenas prácticas de aseguramiento
 
 La estrategia que se seguirá para las pruebas será la siguiente:
 
-[***STP***](./plan-stp.md)
+[**_STP_**](./plan-stp.md)
 
 ---
 
@@ -131,6 +131,7 @@ Este diagrama describe la distribución de paquetes de la aplicación en Flutter
 ### 1. Framework
 
 Framework es un paquete que se encarga de la gestión de la vista de la presentación.
+
 - **Views**: Contiene los elementos graficos de la aplicación, la UI.
   - **Fonts**: Fuentes de texto usadas en la aplicación.
   - **Prefabs**: Partes reutilizables como botones, tarjetas, etc.
@@ -139,6 +140,7 @@ Framework es un paquete que se encarga de la gestión de la vista de la presenta
 ### 2. Data
 
 Data maneja la adquisición de los datos.
+
 - **Network**: Conexiones a internet y llamadas a APIs.
   - **Model**: Modelos de datos que representan la información obtenida por las APIs y bases de datos.
 - **Repository**: Repositorios encargados de obtener los datos, remotos desde la red o locales.
@@ -154,6 +156,7 @@ Domain es la núcleo de la lógica dentro de la aplicación
 ### 5. Pruebas unitarias
 
 Contiene todas las pruebas unitarias.
+
 - **Data**: repositorios, APIs, modelos
 - **Domain**: casos de uso
 - **ViewModel**: validación de estados y lógica de presentación

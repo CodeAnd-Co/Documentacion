@@ -53,7 +53,7 @@ La priorización de requerimientos se puede encontrar aquí:
 
 [Insertar documento con la priorización de sus requerimientos]
 
-La especificación de historias de usuario se llevarán a cabo teniendo en cuenta la definición de [**Done**](/docs/definicion-de-done.md) y [**Ready**](/docs/definicion-de-ready.md) que se encuentran en este archivo:
+La especificación de historias de usuario se llevarán a cabo teniendo en cuenta la definición de [**Done**](/docs/intro/definicion-de-done/) y [**Ready**](/docs/intro/definicion-de-ready/) que se encuentran en este archivo:
 
 ---
 
