@@ -44,7 +44,6 @@ _Cronograma, hitos y entregables._
 ## Entregables del Proyecto
 
 
-
 1. **Documento de Requisitos:** Descripción detallada de los requisitos del sistema.
 2. **Diseño del Sistema:** Plan detallado de la arquitectura y componentes del sistema.
 3. **Código Fuente:** Código completo y funcional del sistema desarrollado.
