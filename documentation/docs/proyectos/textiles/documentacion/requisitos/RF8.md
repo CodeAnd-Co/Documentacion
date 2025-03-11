@@ -10,8 +10,9 @@ sidebar_position: 9
 ---
 
 ## Historia de Usuario  
+
 Como administrador, quiero poder visualizar la información de un rol para consultar sus permisos y los usuarios asignados.
----
+
 
 ## **Criterios de Aceptación:**  
 

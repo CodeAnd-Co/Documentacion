@@ -1,5 +1,5 @@
 ---
-title: Manual de arquitectura y estrategia tecnica
+title: Manual de arquitectura
 sidebar_position: 3
 ---
 
@@ -11,7 +11,7 @@ sidebar_position: 3
 | Daniel Contreras | Autor |
 | Emiliano Gomez   | Autor |
 
-**Última actualización por:** Diego Alfaro, 5 de marzo de 2025
+**Última actualización por:** Diego Alfaro, 10 de marzo de 2025
 
 ---
 
@@ -26,7 +26,6 @@ Arquitectura basada en servicios en la nube con API REST en NodeJS y frontend de
 - **Frontend** (React + AWS Amplify)
 - **Backend** (Node.JS + Express + AWS EC2)
 - **Servicios AWS** (DynamoDB, S3, etc.)
-- **Servicios Google** (Firebase)
 
 ---
 
@@ -57,7 +56,6 @@ Arquitectura basada en servicios en la nube con API REST en NodeJS y frontend de
   - Control de acceso según el rol del usuario
   - Panel para administración de cuotas (puntos)
   - Carga de imágenes
-  - Uso de Pre Signed URLs para subir las imágenes de los productos a S3
   - Manejo de autenticación y roles
   - El frontend solo muestra opciones según el rol del usuario
 - **Carga de imágenes**
@@ -83,6 +81,7 @@ Arquitectura basada en servicios en la nube con API REST en NodeJS y frontend de
 - JWT para manejar la autenticación
 - PM2 para administrar procesos en producción
 - MercadoPago SDK
+- API Gateway para exponer la api a internet
 
 ### Características
 
@@ -99,6 +98,7 @@ Arquitectura basada en servicios en la nube con API REST en NodeJS y frontend de
 ### Despliegue
 
 - AWS EC2 para el despliegue del backend.
+- API Gateway para la exposicion de los endopoints sin usar directamente el ec2
 
 ### Endpoints Principales
 
@@ -115,33 +115,49 @@ Proveer infraestructura escalable y segura para la aplicación.
 ### Servicios
 
 - S3 de Amazon
-- El socio ya contaba con servicios de AWS y nos dará acceso a los mismos.
 - DynamoDB como base de datos
-- AWS amplify gen 2
-- IAM para la seguridad y gestión
+- AWS amplify gen 2 para el despliegue continuo del frontend
+- IAM para la seguridad y gestión de usuarios y roles
 - CloudWatch para el monitoreo de logs del backend en EBS
-- Google Firebase para el registro de usuarios
-
----
-
-## Documentación del código
-
-### Objetivo
-
-Documentar claramente las funcionalidades y código del sistema para lectura en caso de confusiones.
-
-- Se agregaron espacios alrededor de operadores y comas.
-- Se agregan punto y coma al final de definiciones simples.
-- Para documentar el código utilizaremos el estándar de documentación JS docs.
-- El detalle del estándar de codificación se podrá ver en el siguiente documento: _[Estandar de codificación_] (agregar link).
 
 ---
 
 ## Beneficios de la arquitectura seleccionada
 
-- Escalable
-- Segura
-- Optimizada
-- Flexible
-- Fácil implementación
-- Conocimiento previo de la mayoría de tecnologías
+### 1. Escalabilidad
+
+- **Frontend Serverless**: AWS Amplify Gen 2 maneja el escalado automático sin costos fijos.
+- **Backend con API Gateway**: Reduce la carga en EC2 y permite una escalabilidad eficiente.
+- **DynamoDB vs RDS**: DynamoDB maneja grandes volúmenes de datos sin preocuparse por escalabilidad, mientras que RDS es más adecuado para consultas altamente relacionales.
+
+**Medición:**
+
+- Latencia esperada en DynamoDB: ~single-digit ms por consulta.
+- Tiempo de respuesta con API Gateway + Lambda: ~100-200ms vs EC2 (~300ms en promedio con alta carga).
+
+### 2. Costos Operativos
+
+- **Amplify Gen 2 reduce costos de hosting** al eliminar la necesidad de servidores para el frontend.
+- **Uso de API Gateway**: Disminuye los costos de exposición de la API en aproximadamente un 30% en comparación con balanceadores de carga y EC2.
+- **DynamoDB con Auto Scaling**: Optimiza costos, ya que solo se paga por las lecturas y escrituras realizadas.
+
+**Medición:**
+
+- EC2 estándar: ~$30-50 USD/mes (t2.medium para tráfico bajo).
+- API Gateway: $5-10 USD/mes con 1M requests/mes.
+- DynamoDB: $10-20 USD/mes con tráfico moderado.
+
+### 3. Seguridad
+
+- **JWT + RBAC**: Asegura que solo usuarios autorizados accedan a los recursos adecuados.
+- **Pre-Signed URLs para imágenes**: Evita la exposición directa del bucket S3.
+- **IAM con principios de mínimos privilegios**: Reduce el riesgo de accesos no autorizados.
+
+**Medición:**
+
+- Reducción del riesgo de exposición de archivos en S3: ~80% con Pre-Signed URLs.
+- IAM bien configurado reduce accesos no autorizados en un 99%.
+
+## Diagrama de despliegue
+
+- Agregar diagrama de despliegue

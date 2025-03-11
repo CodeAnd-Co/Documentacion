@@ -10,8 +10,9 @@ sidebar_position: 10
 ---
 
 ## Historia de Usuario  
+
 Como administrador, quiero poder modificar los permisos y la información de un rol para mantener el sistema actualizado y seguro.
----
+
 
 ## **Criterios de Aceptación:**  
 

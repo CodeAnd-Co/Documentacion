@@ -5,15 +5,16 @@ sidebar_position: 3
 
 # RF2: Usuario registrado inicia sesión.
 
-**Última actualización:** 03 de marzo de 2025
+**Última actualización:** 07 de marzo de 2025
 
 ### Historia de Usuario
 
-Como usuario, quiero iniciar sesión para poder acceder al sistema desde mi cuenta.
+Yo como usuario registrado de CNH quiero ingresar mis credenciales a la aplicación de escritorio para acceder a mis datos y funcionalidades dentro del sistema.
 
   **Criterios de Aceptación:**
   - El sistema debe permitir a lo usuarios registrados acceder a sus cuentas e ingresar al sistema.
-  - El sistema debe impedir que usuarios no registrados ingresen al sistema. 
+  - Si las credenciales son incorrectas, el sistema debe de mostrar un mensaje claro de error.
+  - Si el usuario ingresa correctamente, debe de ser reedirigido a la página principal.
 
 ---
 
@@ -30,3 +31,13 @@ Como usuario, quiero iniciar sesión para poder acceder al sistema desde mi cuen
 ![Mockup]
 
 > *Descripción*: El mockup representa la interfaz del sistema donde el usuario puede iniciar de sesión. Muestra los campos requeridos y los botones de acción disponibles.
+
+---
+
+### Pruebas Unitarias 
+| ID Prueba | Descripción | Resultado Esperado |
+|-----------|-------------|--------------------|
+|PU-RF2-01|Inicio de sesión con credenciales válidas.|El usuario es autenticado y redirigidoa la página principal|
+|PU-RF2-02|Inicio de sesión con contraseña incorrecta.|Se muestra un mensaje de error claro indicando que la credencial es inválida.|
+|PU-RF2-03|Inicio de sesión con correo no registrado.|Se muestra un mensaje de error claro indicando que la credencial es inválida.|
+|PU-RF2-04 |Inicio de sesión con campos vacíos|Se muestra un mensaje de error claro pidiendo completar los campos necesarios.|

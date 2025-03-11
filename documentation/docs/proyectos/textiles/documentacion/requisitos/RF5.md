@@ -10,8 +10,9 @@ sidebar_position: 6
 ---
 
 ## Historia de Usuario  
+
 Como administrador, quiero poder eliminar a un usuario que ya no requiera acceso al sistema para mantener una base de datos precisa y evitar accesos innecesarios.
----
+
 
 ## **Criterios de Aceptación:**  
 
