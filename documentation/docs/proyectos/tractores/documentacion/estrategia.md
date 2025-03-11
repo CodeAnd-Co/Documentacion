@@ -53,7 +53,7 @@ La priorización de requerimientos se puede encontrar aquí:
 
 [Priorización de requerimientos](https://docs.google.com/spreadsheets/d/14zEYm84Y-QQ2gP_btGMyOinaKZQsw_wrYQQwqiqdSLY/edit?gid=1792238005#gid=1792238005)
 
-La especificación de historias de usuario se llevarán a cabo teniendo en cuenta la definición de [**Done**](../../../definicion-de-done.md) y [**Ready**](../../../definicion-de-ready.md) que se encuentran en este archivo:
+La especificación de historias de usuario se llevarán a cabo teniendo en cuenta la definición de [**Done**](/docs/intro/definicion-de-done/) y [**Ready**](/docs/intro/definicion-de-ready/) que se encuentran en este archivo:
 
 ---
 
@@ -153,6 +153,7 @@ Esta carpeta sigue una arquitectura basada en CLEAN con MVC.
   - **Controllers**: Implementación de la lógica que interactúa con los casos de uso.
 
 - **Archivo principal**:
+
   - **app.js**: Punto de entrada principal del backend. Su función es inicializar y configurar el servidor local de la aplicación.
 
 ## 2. Frontend
