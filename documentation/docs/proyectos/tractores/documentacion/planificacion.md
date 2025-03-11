@@ -14,8 +14,8 @@ _Cronograma, hitos y entregables._
 | Fase del Proyecto                       | Fecha de Finalización | Estado      |
 | --------------------------------------- | --------------------- | ----------- |
 | Fase de Inicio                          | 12/03/25              | En progreso |
-| Construcción 1 (Prueba de Arquitectura) | 11/04/25              | No empezado |
-| Construcción 2 (MVP)                    | 25/04/25              | No empezado |
+| Construcción 1 (Prueba de Arquitectura) | 04/04/25              | No empezado |
+| Construcción 2 (MVP)                    | 18/04/25              | No empezado |
 | Transición 1 (MVP)                      | 05/05/25              | No empezado |
 | Construcción 3 (MBI 1)                  | 09/05/25              | No empezado |
 | Transición 2 (MBI 1)                    | 21/05/25              | No empezado |
