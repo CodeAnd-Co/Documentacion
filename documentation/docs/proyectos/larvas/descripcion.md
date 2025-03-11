@@ -35,7 +35,7 @@ No tenemos restricciones en cuanto a presupuesto o recursos; sin embargo, sí en
 #### Objetivo 1: 
 - Con la entrega de nuestro MVP, reducir el tiempo de registro de datos en un 30% en un plazo 1 mes
 #### Objetivo 2: 
-- Desarrollar e implementar  un sistema de gráficas interactivas en la plataforma, permitiendo al Socio Formador visualizar y utilizar datos clave para respaldar su toma de decisiones y reducir su incertidumbre en un plazo de 3 meses
+- Proporcionar datos clave para respaldar su toma de decisiones y disminuir su incetidumbre en un plazo de 3 meses.
 
 ## Alcance del Proyecto ➡️
 
