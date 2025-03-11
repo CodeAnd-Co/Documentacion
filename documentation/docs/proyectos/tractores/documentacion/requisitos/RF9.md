@@ -1,18 +1,19 @@
 ---
-title: "RF9: Usuario selecciona tractores a analizar."  
+title: "RF9: Usuario modifica seleccion de rancho a analizar."  
 sidebar_position: 10
 ---
 
-# RF9: Usuario selecciona tractores a analizar.
+# RF9: Usuario modifica selección de rancho a analizar.
 
-**Última actualización:** 05 de marzo de 2025
+**Última actualización:** 07 de marzo de 2025
 
 ### Historia de Usuario
 
-Como usuario, quiero seleccionar los tractores a analizar para ...
+Yo como usuario quiero cambiar el rancho seleccionado para poder analizar los diferentes tractores que están asignados a este rancho seleccionado.
 
   **Criterios de Aceptación:**
-  - 
+  - El usuario debe poder modificar la selección del rancho
+  - Al cambiar el rancho, el sistema debe de actualizar los tractores asignados a este rancho
 
 ---
 
@@ -20,7 +21,7 @@ Como usuario, quiero seleccionar los tractores a analizar para ...
 
 ![Diagrama de Secuencia] 
 
-> *Descripción*: El diagrama de secuencia muestra cómo el usuario interactúa con el sistema para cerrar sesión, detallando los pasos de solicitud de datos, validación y confirmación.
+> *Descripción*: El diagrama de secuencia muestra el proceso de cambio de selección de rancho y la actualización de los tractores en la pantalla.
 
 ---
 
@@ -28,4 +29,13 @@ Como usuario, quiero seleccionar los tractores a analizar para ...
 
 ![Mockup]
 
-> *Descripción*: El mockup representa la interfaz del sistema donde el usuario puede cerrar sesión. Muestra los campos requeridos y los botones de acción disponibles.
+> *Descripción*: El mockup representa la interfaz donde se muestra la modificación de la selección del rancho
+
+---
+
+### Pruebas Unitarias 
+| ID Prueba | Descripción | Resultado Esperado |
+|-----------|-------------|--------------------|
+|PU-RF9-01|Cambiar el rancho seleccionado.|Se actualizan los tractores asignados al nuevo rancho seleccionado|
+|PU-RF-02|Verificar actualización.|La información se refresca sin necesidad de recargar la aplicación|
+|PU-RF-03|Comprobar persistencia.|Al navegar entre secciones se mantiene el nuevo rancho seleccionado.|

@@ -10,8 +10,9 @@ sidebar_position: 7
 ---
 
 ## Historia de Usuario  
+
 Como administrador, quiero poder crear nuevos roles personalizados con permisos específicos para asignarlos a los usuarios del sistema y gestionar su acceso de manera estructurada.
----
+
 
 ## **Criterios de Aceptación:**  
 

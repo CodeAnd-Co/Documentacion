@@ -5,7 +5,7 @@ sidebar_position: 3
 
 # Guía de Solicitudes de Extracción
 
-**Última actualización:** 6 de marzo de 2025
+**Última actualización:** 7 de marzo de 2025
 
 _Detalla el proceso para crear, revisar y aprobar pull requests, fomentando una colaboración efectiva y asegurando la calidad del código antes de su integración._
 
@@ -43,13 +43,15 @@ _Detalla el proceso para crear, revisar y aprobar pull requests, fomentando una 
 
 Implementar estas prácticas garantizará una gestión efectiva de las solicitudes de extracción, promoviendo una colaboración eficiente y manteniendo la calidad del código en el proyecto.
 
+6. **Eliminación de la rama**: Una vez que se haya hecho la fusión, elimina la rama. IMPORTANTE: No eliminar las ramas principales (main, staging, develop).
+
 **Plantilla de PR**
 
 ```
 <!--- Plantilla de PR para dacusaurus -->
 <!--- Autor: Ian Julián Estrada Castro -->
-<!--- Versión 1.1 -->
-<!--- Última actualización: 6 de marzo de 2025 -->
+<!--- Versión 1.2 -->
+<!--- Última actualización: 7 de marzo de 2025 -->
 
 # Solicitud de cambio (PR)
 
@@ -82,7 +84,7 @@ Implementar estas prácticas garantizará una gestión efectiva de las solicitud
 - [ ] Refactorización de documentación (Reorganización de contenido sin cambios significativos)
 - [ ] Eliminación de documentación obsoleta
 
-## Checklits del autor:
+## Checklist del autor:
 
 <!--- Antes de hacer la solicitud, repasa los puntos siguientes y pon una `x` en todas las cajas que aplican -->
 
@@ -103,6 +105,7 @@ Implementar estas prácticas garantizará una gestión efectiva de las solicitud
 - [ ] Los cambios no afectan negativamente la documentación o generan inconsistencias
 - [ ] Ortografía y gramática correctas
 - [ ] He notificado al autor del PR en caso de dudas o ajustes necesarios
+- [ ] Una vez que acepte el PR, eliminaré la rama
 
 
 ## Registro de cambios:
@@ -118,3 +121,4 @@ Implementar estas prácticas garantizará una gestión efectiva de las solicitud
 | Autor | Descripción del cambio | Versión |
 |---------|-------------------------|---------|
 | Ian Julián Estrada Castro | Agregué la plantilla para pull request | 1.1 |
+| Ian Julián Estrada Castro | Agregué un campo en el checklist del evaluador | 1.2 |

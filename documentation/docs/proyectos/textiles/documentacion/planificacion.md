@@ -7,6 +7,7 @@ sidebar_position: 3
 
 **Última actualización:** 10 de marzo de 2025
 
+
 _Cronograma, hitos y entregables._
 
 ## Cronograma del Proyecto
@@ -26,7 +27,6 @@ _Cronograma, hitos y entregables._
 
 ## Hitos del Proyecto
 
-
 | Hito                     | Descripción                             | Fecha Estimada | Estado       |
 | ------------------------ | --------------------------------------- | -------------- | ------------ |
 | Inicio del Proyecto      | Inicio formal del proyecto              | 14/02/25       | Terminado    |
@@ -36,9 +36,6 @@ _Cronograma, hitos y entregables._
 | Pruebas Completas        | Finalización de las pruebas             | 01/05/25       | No empezado  |
 | Implementación Exitosa   | Implementación exitosa en producción    | 02/05/25       | No empezado  |
 | Cierre del Proyecto      | Cierre formal del proyecto              | 11/06/25       | No empezado  |
-
-
-
 
 
 ## Entregables del Proyecto

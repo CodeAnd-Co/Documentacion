@@ -10,17 +10,16 @@ sidebar_position: 3
 ---
 
 ## Historia de Usuario  
-Como administrador, quiero acceder a un listado de usuarios con opciones de búsqueda y filtros para gestionar su información y accesos de manera eficiente.
----
+
+Como **Super Administrador**, quiero acceder a un listado de usuarios con opciones de búsqueda y filtros para gestionar su información y accesos de manera eficiente.
+
 
 ## **Criterios de Aceptación:**  
 
 1. El Super Administrador debe poder acceder a la opción **"Lista de Usuarios"** desde el panel de administración.  
 2. Se debe mostrar una tabla con la siguiente información de cada usuario:  
    - Nombre completo  
-   - Correo electrónico  
    - Rol  
-   - Estado (Activo/Inactivo)  
 3. Debe existir una barra de búsqueda para filtrar usuarios por nombre o correo electrónico.  
 4. Debe permitir paginación si hay muchos usuarios registrados.  
 5. Si no hay usuarios en la base de datos, se debe mostrar un mensaje indicando que no hay registros disponibles.  

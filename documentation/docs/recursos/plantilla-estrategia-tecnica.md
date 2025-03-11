@@ -26,7 +26,7 @@ Utilizaremos 2 repositorios separados, tanto para el backend como para el fronte
 
 ## Estrategia de Ramas
 
-![alt text](Manejo-de-ramas.png)
+![alt text](/img/manejo-de-ramas.png)
 
 Utilizaremos 3 ramas principales:
 
@@ -51,7 +51,7 @@ La priorización de requerimientos se puede encontrar aquí:
 
 [Insertar documento con la priorización de sus requerimientos]
 
-La especificación de historias de usuario se llevarán a cabo teniendo en cuenta la definición de [**Done**](/docs/definicion-de-done.md) y [**Ready**](/docs/definicion-de-ready.md) que se encuentran en este archivo:
+La especificación de historias de usuario se llevarán a cabo teniendo en cuenta la definición de [**Done**](/docs/intro/definicion-de-done/) y [**Ready**](/docs/intro/definicion-de-ready/) que se encuentran en este archivo:
 
 ---
 
@@ -90,7 +90,7 @@ Documentar claramente las funcionalidades y código del sistema para lectura en 
 
 ### Backend
 
-![alt text](plantilla-diagrama-de-paquetes.png)
+![alt text](/img/plantilla-diagrama-de-paquetes.png)
 
 Este diagrama de paquetes representa la organización de un backend. Se divide en varias secciones principales:
 
