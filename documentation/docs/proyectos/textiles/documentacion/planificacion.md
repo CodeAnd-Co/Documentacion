@@ -5,45 +5,41 @@ sidebar_position: 3
 
 # Planificación
 
-**Última actualización:** 16 de febrero de 2025
+**Última actualización:** 10 de marzo de 2025
+
 
 _Cronograma, hitos y entregables._
 
 ## Cronograma del Proyecto
 
-:::warning Borrar Después de llenar la información
+| Fase del Proyecto                       | Fecha de Finalización | Estado       |
+| --------------------------------------- | --------------------- | ------------ |
+| Fase de Inicio                          | 14/03/25             | En progreso  |
+| Construcción 1 (Prueba de Arquitectura) | 28/03/25             | No empezado  |
+| Construcción 2 (MVP)                    | 14/04/25             | No empezado  |
+| Transición 1 (MVP)                      | 16/04/25             | No empezado  |
+| Construcción 3 (MBI)                    | 21/04/25             | No empezado  |
+| Transición 2 (MBI)                      | 23/04/25             | No empezado  |
+| Construcción 4 (MBI 2)                  | 29/04/25             | No empezado  |
+| Transición 3 (MBI 2)                    | 23/04/25             | No empezado  |
+| Cierre                                  | 24/04/25             | No empezado  |
 
-| Fase del Proyecto                       | Fecha de Finalización | Estado   |
-| --------------------------------------- | --------------------- | -------- |
-| Fase de Inicio                          | [Fecha]               | [Estado] |
-| Construcción 1 (Prueba de Arquitectura) | [Fecha]               | [Estado] |
-| Construcción 2 (MVP)                    | [Fecha]               | [Estado] |
-| Transición 1 (MVP)                      | [Fecha]               | [Estado] |
-| Construcción 3 (MBI)                    | [Fecha]               | [Estado] |
-| Transición 2 (MBI)                      | [Fecha]               | [Estado] |
-| Cierre                                  | [Fecha]               | [Estado] |
-
-:::
 
 ## Hitos del Proyecto
 
-:::warning Borrar Después de llenar la información
+| Hito                     | Descripción                             | Fecha Estimada | Estado       |
+| ------------------------ | --------------------------------------- | -------------- | ------------ |
+| Inicio del Proyecto      | Inicio formal del proyecto              | 14/02/25       | Terminado    |
+| Aprobación de Requisitos | Aprobación final de los requisitos      | 05/03/25       | Terminado    |
+| Finalización del Diseño  | Compleción del diseño del sistema       | 28/03/25       | En progreso  |
+| Desarrollo Completo      | Finalización del desarrollo del sistema | 29/04/25       | No empezado  |
+| Pruebas Completas        | Finalización de las pruebas             | 01/05/25       | No empezado  |
+| Implementación Exitosa   | Implementación exitosa en producción    | 02/05/25       | No empezado  |
+| Cierre del Proyecto      | Cierre formal del proyecto              | 11/06/25       | No empezado  |
 
-| Hito                     | Descripción                             | Fecha Estimada | Estado   |
-| ------------------------ | --------------------------------------- | -------------- | -------- |
-| Inicio del Proyecto      | Inicio formal del proyecto              | [Fecha]        | [Estado] |
-| Aprobación de Requisitos | Aprobación final de los requisitos      | [Fecha]        | [Estado] |
-| Finalización del Diseño  | Compleción del diseño del sistema       | [Fecha]        | [Estado] |
-| Desarrollo Completo      | Finalización del desarrollo del sistema | [Fecha]        | [Estado] |
-| Pruebas Completas        | Finalización de las pruebas             | [Fecha]        | [Estado] |
-| Implementación Exitosa   | Implementación exitosa en producción    | [Fecha]        | [Estado] |
-| Cierre del Proyecto      | Cierre formal del proyecto              | [Fecha]        | [Estado] |
-
-:::
 
 ## Entregables del Proyecto
 
-:::warning Borrar Después de llenar la información
 
 1. **Documento de Requisitos:** Descripción detallada de los requisitos del sistema.
 2. **Diseño del Sistema:** Plan detallado de la arquitectura y componentes del sistema.

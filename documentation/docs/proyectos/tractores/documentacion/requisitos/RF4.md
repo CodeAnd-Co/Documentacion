@@ -1,18 +1,18 @@
 ---
-title: "RF4: Usuario consulta módulo de análisis."  
+title: "RF4: Usuario consulta datos de contacto."  
 sidebar_position: 5
 ---
 
-# RF4: Usuario consulta módulo de análisis.
+# RF4: Usuario consulta datos de contacto.
 
-**Última actualización:** 04 de marzo de 2025
+**Última actualización:** 07 de marzo de 2025
 
 ### Historia de Usuario
 
-Como usuario, quiero consultar el módulo de análisis para observar gráficas o generar reportes.
+Yo como usuario quiero acceder a la información de contacto de CNH, para poder solicitar ayuda en el caso de no tener una cuenta activa en la aplicación o que las credenciales estén incorrectas.
 
   **Criterios de Aceptación:**
-  - 
+  - El sistema debe de permitir a los usuarios acceder a una sección donde se encuentra toda la información de contacto de CNH.
 
 ---
 
@@ -20,7 +20,7 @@ Como usuario, quiero consultar el módulo de análisis para observar gráficas o
 
 ![Diagrama de Secuencia] 
 
-> *Descripción*: El diagrama de secuencia muestra cómo el usuario interactúa con el sistema para cerrar sesión, detallando los pasos de solicitud de datos, validación y confirmación.
+> *Descripción*: El diagrama muestra como el usuario accede a la sección de datos de contacto.
 
 ---
 
@@ -28,4 +28,11 @@ Como usuario, quiero consultar el módulo de análisis para observar gráficas o
 
 ![Mockup]
 
-> *Descripción*: El mockup representa la interfaz del sistema donde el usuario puede cerrar sesión. Muestra los campos requeridos y los botones de acción disponibles.
+> *Descripción*: El mockup representa la interfaz donde el usuario puede ver los datos de contacto.
+
+---
+
+### Pruebas Unitarias 
+| ID Prueba | Descripción | Resultado Esperado |
+|-----------|-------------|--------------------|
+|PU-RF4-01|Acceder a la sección de datos de contacto.|La información de contacto se muestra correctamente.|
