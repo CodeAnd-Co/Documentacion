@@ -28,3 +28,12 @@ Como usuario del sistema, quiero consultar el historial de ancestros de una char
 ### Mockup
 
 > *Descripción*: El mockup muestra la pantalla donde el Super Administrador puede eliminar un cliente, con la opción de confirmación antes de ejecutar la acción.
+
+### Pruebas Unitarias 
+| ID Prueba  | Descripción                                               | Resultado Esperado  |
+|------------|-----------------------------------------------------------|---------------------|
+| PU-RF3-01  | Consultar el historial de una charola que tiene ancestros registrados. | El sistema muestra correctamente todas las charolas de las que proviene la charola seleccionada. |
+| PU-RF3-02  | Consultar el historial de una charola sin ancestros registrados. | El sistema indica que no hay datos disponibles sin generar errores. |
+| PU-RF3-03  | Verificar la actualización del historial en tiempo real. | Si se registra un nuevo ancestro, el historial se actualiza automáticamente sin necesidad de recargar la página. |
+| PU-RF3-04  | Buscar una charola inexistente. | El sistema muestra un mensaje de error indicando que la charola no existe. |
+| PU-RF3-05  | Validar la navegación entre generaciones de charolas. | El sistema permite desplazarse entre diferentes niveles de ancestros sin fallos. |
