@@ -44,18 +44,24 @@ El proposito de este plan es garantizar la calidad del software, detectando y co
 
 # Alcance de las Pruebas
 
-- Módulos:
-    - Registro.
-    - Visualización.
-
 ### Dentro del Alcance
 
-- Ejemplo 1
-- Ejemplo 2
-
-### Fuera del Alcance
-
-- Pendiente
+- Módulos:
+    - Usuarios
+      - Registrar
+      - Autentificar
+      - Eliminar
+      - Consultar
+      - Editar
+    - Charolas y Frass
+      - Registrar
+      - Eliminar
+      - Consultar
+      - Editar
+    - Reportes
+      - Descargar
+    - Gráficas
+      - Consultar
 
 # Aproximación a las Pruebas
 
@@ -91,7 +97,6 @@ Usaremos pruebas manuales y automatizadas dentro de la aplicación.
 ### Criterios de Suspensión
 
 - Fallos críticos que impidan el funcionamiento básico de la aplicación.
-- Baja satisfacción de los involucrados.
 - Problemas de despliegue y relación con los servidores.
 
 # Entregables de las Pruebas
