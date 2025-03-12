@@ -21,7 +21,7 @@ _Cronograma, hitos y entregables._
 | Transición 2 (MBI)                      | 23/04/25             | No empezado  |
 | Construcción 4 (MBI 2)                  | 29/04/25             | No empezado  |
 | Transición 3 (MBI 2)                    | 23/04/25             | No empezado  |
-| Cierre                                  | 24/04/25             | No empezado  |
+| Cierre                                  | 11/06/25             | No empezado  |
 
 
 ## Hitos del Proyecto
