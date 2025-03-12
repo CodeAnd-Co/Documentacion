@@ -25,3 +25,13 @@ Como usuario del sistema, quiero buscar una charola específica a través de una
 ### Mockup
 
 > *Descripción*: El mockup muestra cómo se visualizan los datos del empleado en la interfaz, con campos como nombre, cargo y estado, accesibles para el Super Administrador o Cliente.
+
+### Pruebas Unitarias 
+| ID Prueba  | Descripción                                               | Resultado Esperado  |
+|------------|-----------------------------------------------------------|---------------------|
+| PU-RF6-01  | Buscar una charola existente por su identificador único.  | El sistema muestra la charola correspondiente con su información detallada. |
+| PU-RF6-02  | Intentar buscar una charola con un identificador inexistente. | El sistema informa que no se encontraron resultados sin generar errores. |
+| PU-RF6-03  | Realizar una búsqueda con el campo vacío.                 | El sistema impide la búsqueda y muestra un mensaje indicando que el identificador es obligatorio. |
+| PU-RF6-04  | Evaluar el tiempo de respuesta de la búsqueda.            | La búsqueda devuelve los resultados en un tiempo óptimo sin afectar el rendimiento. |
+| PU-RF6-05  | Probar la búsqueda con caracteres no válidos.             | El sistema bloquea la búsqueda e informa que el identificador debe ser numérico o alfanumérico según corresponda. |
+| PU-RF6-06  | Validar búsqueda con múltiples registros en la base de datos. | La búsqueda sigue funcionando de manera eficiente, sin demoras significativas. |

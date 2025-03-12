@@ -32,3 +32,12 @@ Como usuario de la aplicación, quiero autenticarme en el sistema ingresando mi 
 ![Mockup]
 
 > *Descripción*: El mockup representa la interfaz del sistema donde el Super Administrador puede ingresar los datos del nuevo cliente. Muestra los campos requeridos y los botones de acción disponibles.
+
+### Pruebas Unitarias 
+| ID Prueba  | Descripción                                             | Resultado Esperado  |
+|------------|---------------------------------------------------------|---------------------|
+| PU-RF1-01  | Inicio de sesión con credenciales válidas.              | El usuario es autenticado y redirigido a la pantalla principal. |
+| PU-RF1-02  | Inicio de sesión con contraseña incorrecta.             | Se muestra un mensaje de error indicando que la contraseña es incorrecta. |
+| PU-RF1-03  | Inicio de sesión con usuario no registrado.             | Se muestra un mensaje de error indicando que el usuario no existe. |
+| PU-RF1-04  | Inicio de sesión con campos vacíos.                     | Se muestra un mensaje de error solicitando completar los campos. |
+| PU-RF1-05  | Tiempo de sesión expira por inactividad.                | La sesión es invalidada y el usuario es redirigido a la pantalla de inicio de sesión. |
