@@ -350,6 +350,7 @@ import TabItem from '@theme/TabItem';
 | Juan Carlos Calderón García | Team Member |      |
 | Ian Julián Estrada Castro   | Juntas Owner   |
 | Armando Méndez Castro   | Team Member   |
+| Miguel Angel Uribe Esquivel  | Team Member   |
 
 ### Recursos Necesarios
 
