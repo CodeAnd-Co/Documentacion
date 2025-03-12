@@ -7,7 +7,6 @@ sidebar_position: 3
 
 **Última actualización:** 10 de marzo de 2025
 
-
 _Cronograma, hitos y entregables._
 
 ## Cronograma del Proyecto
@@ -22,10 +21,11 @@ _Cronograma, hitos y entregables._
 | Transición 2 (MBI)                      | 23/04/25             | No empezado  |
 | Construcción 4 (MBI 2)                  | 29/04/25             | No empezado  |
 | Transición 3 (MBI 2)                    | 23/04/25             | No empezado  |
-| Cierre                                  | 24/04/25             | No empezado  |
+| Cierre                                  | 11/06/25             | No empezado  |
 
 
 ## Hitos del Proyecto
+
 
 | Hito                     | Descripción                             | Fecha Estimada | Estado       |
 | ------------------------ | --------------------------------------- | -------------- | ------------ |
@@ -36,6 +36,9 @@ _Cronograma, hitos y entregables._
 | Pruebas Completas        | Finalización de las pruebas             | 01/05/25       | No empezado  |
 | Implementación Exitosa   | Implementación exitosa en producción    | 02/05/25       | No empezado  |
 | Cierre del Proyecto      | Cierre formal del proyecto              | 11/06/25       | No empezado  |
+
+
+
 
 
 ## Entregables del Proyecto
