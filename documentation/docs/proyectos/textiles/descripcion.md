@@ -189,8 +189,8 @@ import TabItem from '@theme/TabItem';
 
 | Nombre                                 | Rol                                |
 | -------------------------------------- | ---------------------------------- |
-| Rodrigo Antonio Benítez De la Portilla | Team Leader, QA                    |
-| Ángel Mauricio Ramírez Herrera         | Architecture Owner                 |
+| Rodrigo Antonio Benítez De la Portilla | Team Leader                        |
+| Ángel Mauricio Ramírez Herrera         | QA                                 |
 | Angélica Ríos Cuentas                  | Product Owner                      |
 | Hiram Israel Mendoza López             | Presentation Owner, Team Member    |
 | Nicolás Hood Figueroa                  | Team Member, UX/UI Diseñador       |

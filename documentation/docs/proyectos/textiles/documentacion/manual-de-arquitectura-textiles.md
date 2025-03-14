@@ -160,4 +160,58 @@ Proveer infraestructura escalable y segura para la aplicación.
 
 ## Diagrama de despliegue
 
-- Agregar diagrama de despliegue
+```mermaid
+flowchart TB
+ subgraph Cliente["Cliente"]
+        Browser["Navegador del Usuario"]
+  end
+ subgraph Frontend["Frontend (AWS Amplify)"]
+        AmplifyHosting["AWS Amplify Hosting"]
+        ReactApp["React + Vite App (Material UI, Axios)"]
+  end
+ subgraph API["API"]
+        APIGateway["API Gateway (HTTPS Endpoints)"]
+  end
+ subgraph Produccion["Entorno de Producción"]
+        NodeJSProd["Node.js+Express (API Producción:3000)"]
+        PM2Prod["PM2"]
+        JWT["JWT Authentication"]
+  end
+ subgraph Staging["Entorno de Staging"]
+        NodeJSStaging["Node.js+Express (API Staging:4000)"]
+        PM2Staging["PM2"]
+        JWTS["JWT Authentication"]
+  end
+ subgraph EC2["Backend (EC2)"]
+        Produccion
+        Staging
+  end
+ subgraph Almacenamiento["Almacenamiento"]
+        DynamoDB["Amazon DynamoDB (Base de datos)"]
+        S3["Amazon S3 (Almacenamiento de\nimágenes)"]
+  end
+ subgraph AWS["AWS"]
+        PeticionesHTTPS
+        Frontend
+        API
+        EC2
+        Almacenamiento
+  end
+    Browser -- Peticiones HTTPS --> Frontend
+    AmplifyHosting --> ReactApp
+    ReactApp -- Llamadas a la API --> APIGateway
+
+    APIGateway -- Peticiones de Producción --> PeticionesHTTPS
+    APIGateway -- Peticiones de Staging --> PeticionesHTTPS
+
+    PeticionesHTTPS --> NodeJSProd
+    PeticionesHTTPS --> NodeJSStaging
+
+    PM2Prod -- Administra --> NodeJSProd
+    PM2Staging -- Administra --> NodeJSStaging
+    NodeJSProd -- Valida Tokens --> JWT
+    NodeJSStaging -- Valida Tokens --> JWTS
+
+    NodeJSProd -- CRUD e Imagenes --> Almacenamiento
+    NodeJSStaging -- CRUD e Imagenes --> Almacenamiento
+```
