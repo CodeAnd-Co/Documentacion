@@ -6,7 +6,7 @@ sidebar_position: 7
 # Revisión de Planes de Proyecto
 
 **Última actualización:** 07 de marzo de 2025
-**Versión:** 1.1
+**Versión:** 1.2
 
 ---
 
