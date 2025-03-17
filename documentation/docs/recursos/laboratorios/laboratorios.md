@@ -29,7 +29,6 @@ Contenido:
 - ¿Qué es React?
 - Primeros Pasos
 - Componentes y Props
-- Estado y eventos en React
 - Listas y renderizado dinámico
 - React Router
 -
