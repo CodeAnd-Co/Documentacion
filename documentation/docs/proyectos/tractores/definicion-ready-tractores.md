@@ -1,8 +1,9 @@
 ---
 title: Definicion de Ready
+sidebar_position: 3
 ---
 
-# Definicion de Ready para Tractech
+# Definicion de Ready (Tractech)
 
 ---
 
