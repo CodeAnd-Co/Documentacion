@@ -45,7 +45,11 @@ _Detalla el proceso para crear, revisar y aprobar pull requests, fomentando una 
 Implementar estas prácticas garantizará una gestión efectiva de las solicitudes de extracción, promoviendo una colaboración eficiente y manteniendo la calidad del código en el proyecto.
 :::
 
-6. **Eliminación de la rama**: Una vez que se haya hecho la fusión, elimina la rama. IMPORTANTE: No eliminar las ramas principales (main, staging, develop).
+6. **Eliminación de la rama**: Una vez que se haya hecho la fusión, elimina la rama. 
+
+:::warning Importante  
+ No eliminar las ramas principales definidas según la estratégia técnica. Ejemplo: main, staging, develop.
+ :::
 
 **Plantilla de PR**
 
