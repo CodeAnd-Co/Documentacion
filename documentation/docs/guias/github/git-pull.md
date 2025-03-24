@@ -67,15 +67,6 @@ Implementar estas prácticas garantizará una gestión efectiva de las solicitud
 
 [Ejemplo: Este cambio integra un estándar de codificación porque actualmente no hay uno establecido]
 
-### Archivos modificados
-
-<!--- Lista los archivos que agregaste, modificaste o eliminaste -->
-
-[Ejemplo:
-- `docs/estándares.md` (Nuevo documento)
-- `docs/procesos.md` (Modificado)
-- `docs/errores.md` (Eliminado)]
-
 ## Tipo de cambio
 
 <!--- ¿Qué hace este cambio? Pon una `x` en los espacios que aplican: -->
@@ -103,7 +94,7 @@ Implementar estas prácticas garantizará una gestión efectiva de las solicitud
 
 <!--- Repasa los puntos siguientes, y pon una `x` en todas las cajas que aplican -->
 
-- [ ] La descripción en la tabla que se encuentra en la parte inferior del documento coincide con la descripción del pull request
+- [ ] El registro de cambios coincide con la descripción del pull request
 - [ ] Los cambios no afectan negativamente la documentación o generan inconsistencias
 - [ ] Ortografía y gramática correctas
 - [ ] He notificado al autor del PR en caso de dudas o ajustes necesarios
@@ -112,11 +103,12 @@ Implementar estas prácticas garantizará una gestión efectiva de las solicitud
 
 ## Registro de cambios:
 
-<!-- En la parte inferior de los documentos Markdown debe haber una tabla como la siguiente -->
+<!-- En la parte inferior de los documentos Markdown debe haber una tabla como la siguiente
 
 | Autor | Descripción del cambio | Versión |
 |---------|-------------------------|---------|
 | [Tu nombre] | [Breve descripción del cambio] | [Versión] |
+ -->
 ```
 
 ## Registro de cambios
