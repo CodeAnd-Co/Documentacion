@@ -107,7 +107,7 @@ Implementar estas prácticas garantizará una gestión efectiva de las solicitud
 
 <!-- ## Registro de cambios
 
-Seguir la guía para mantener un control de versiones en la documentación.
+Seguir la guía para mantener un control de versiones en la documentación: https://codeandco-wiki.netlify.app/docs/guias/documentacion/trazabilidad
 En la parte inferior de los documentos Markdown debe haber una tabla como la siguiente:
 
 | Autor | Descripción del cambio | Versión |
@@ -119,7 +119,7 @@ En la parte inferior de los documentos Markdown debe haber una tabla como la sig
 ## Registro de cambios
 
 :::tip Guía  
-Seguir la guía para mantener un control de versiones en la documentación. ['Guía'](../documentacion/trazabilidad.md)
+Seguir la guía para mantener un control de versiones en la documentación. ['Guía'](https://codeandco-wiki.netlify.app/docs/guias/documentacion/trazabilidad)
 :::
 
 | Autor | Descripción del cambio | Versión |
