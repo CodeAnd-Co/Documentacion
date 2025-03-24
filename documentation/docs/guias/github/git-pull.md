@@ -5,7 +5,7 @@ sidebar_position: 3
 
 # Guía de Solicitudes de Extracción
 
-**Última actualización:** 7 de marzo de 2025
+**Última actualización:** 24 de marzo de 2025
 
 _Detalla el proceso para crear, revisar y aprobar pull requests, fomentando una colaboración efectiva y asegurando la calidad del código antes de su integración._
 
@@ -52,8 +52,8 @@ Implementar estas prácticas garantizará una gestión efectiva de las solicitud
 ```
 <!--- Plantilla de PR para dacusaurus -->
 <!--- Autor: Ian Julián Estrada Castro -->
-<!--- Versión 1.2 -->
-<!--- Última actualización: 7 de marzo de 2025 -->
+<!--- Versión 2.0 -->
+<!--- Última actualización: 24 de marzo de 2025 -->
 
 # Solicitud de cambio (PR)
 
@@ -117,3 +117,4 @@ En la parte inferior de los documentos Markdown debe haber una tabla como la sig
 |---------|-------------------------|---------|
 | Ian Julián Estrada Castro | Agregué la plantilla para pull request | 1.1 |
 | Ian Julián Estrada Castro | Agregué un campo en el checklist del evaluador | 1.2 |
+| Ian Julián Estrada Castro | Eliminé apartado de lista de archivos, cambié un elemento de la lista del evaluador y comenté el apartado de registro de cambios en plantilla. Hice referencia de la guía para mantener un control de versiones en la documentación | 2.0 |
