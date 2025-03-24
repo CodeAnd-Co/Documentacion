@@ -101,9 +101,10 @@ Implementar estas prácticas garantizará una gestión efectiva de las solicitud
 - [ ] Una vez que acepte el PR, eliminaré la rama
 
 
-## Registro de cambios:
+<!-- ## Registro de cambios
 
-<!-- En la parte inferior de los documentos Markdown debe haber una tabla como la siguiente
+Seguir la Guía para mantener un control de versiones en la documentación"
+En la parte inferior de los documentos Markdown debe haber una tabla como la siguiente
 
 | Autor | Descripción del cambio | Versión |
 |---------|-------------------------|---------|
