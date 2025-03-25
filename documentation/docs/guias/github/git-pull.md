@@ -7,6 +7,12 @@ sidebar_position: 3
 
 **Última actualización:** 24 de marzo de 2025
 
+### Autores
+
+| Nombre                          | Rol      |
+| ------------------------------- | -------- |
+| Ángel Mauricio Ramírez         | Autor    |
+
 _Detalla el proceso para crear, revisar y aprobar pull requests, fomentando una colaboración efectiva y asegurando la calidad del código antes de su integración._
 
 ## Criterios para la Creación de Pull Requests
