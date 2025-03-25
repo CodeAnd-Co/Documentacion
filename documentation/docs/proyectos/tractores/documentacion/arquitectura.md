@@ -177,3 +177,7 @@ graph TD
 
     Internet --> InfraestructuraAWS
 ```
+
+| Autor | Descripción del cambio | Versión |
+|---------|-------------------------|---------|
+| Juan Pablo Chávez Leal | Adición del diagrama de despliegue | V2 |
