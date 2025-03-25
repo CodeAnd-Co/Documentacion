@@ -25,7 +25,7 @@ Arquitectura basada en servicios en la nube con API REST en NodeJS y frontend de
 
 - **Frontend** (React + AWS Amplify)
 - **Backend** (Node.JS + Express + AWS EC2)
-- **Servicios AWS** (DynamoDB, S3, etc.)
+- **Servicios AWS** (DynamoDB, S3, etc.). Todos los servicios de aws seran utilizados en la region us-east-1
 
 ---
 
