@@ -145,3 +145,34 @@ Redactar los beneficios de la arquitectura seleccionada.
 - Fácil implementación
 - Conocimiento previo de la mayoría de tecnologías
 - No necesitamos contratar instancias grandes
+
+## Diagrama de despliegue
+``` mermaid 
+graph TD
+    Usuario --> |Accede a| Harvester
+    Administrador --> |Accede a| Harvester
+    subgraph Harvester
+        subgraph Electron
+        end
+    end
+
+    Harvester -->|Accede a través de| Internet
+
+    subgraph InfraestructuraAWS [Infraestructura AWS]
+        subgraph VPC ["Virtual Private Cloud - VPC"]
+        subgraph Server ["Servidor: t4g.xlarge"]
+            subgraph EC2 ["EC2"]
+                subgraph ServidorUbuntu["Servidor Ubuntu"]
+                    subgraph Sistema["Entorno: Node.js"]
+                       ExpressFramework["Framework: Express"] 
+                    end
+                end
+            end
+            end
+            MySQL["Base de datos: MySQL"]
+            
+        end
+    end
+
+    Internet --> InfraestructuraAWS
+```
