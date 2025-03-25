@@ -5,7 +5,7 @@ sidebar_position: 4
 
 # Manual de Arquitectura de Software
 
-**Última actualización** 09 de marzo de 2025 por Diego Fuentes
+**Última actualización** 25 de marzo de 2025 por Juan Pablo Chávez Leal
 
 ---
 
@@ -16,6 +16,7 @@ sidebar_position: 4
 | Diego Alfaro                      | Autor     |
 | Emiliano Gómez                    | Autor     |
 | Diego Fuentes                     | Modificador |
+| Juan Pablo Chávez Leal            | Modificador|
 ---
 
 ## Tipo de arquitectura de software
