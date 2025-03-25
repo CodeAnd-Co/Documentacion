@@ -107,8 +107,8 @@ Implementar estas prácticas garantizará una gestión efectiva de las solicitud
 
 <!-- ## Registro de cambios
 
-Seguir la Guía para mantener un control de versiones en la documentación"
-En la parte inferior de los documentos Markdown debe haber una tabla como la siguiente
+Seguir la guía para mantener un control de versiones en la documentación: https://codeandco-wiki.netlify.app/docs/guias/documentacion/trazabilidad
+En la parte inferior de los documentos Markdown debe haber una tabla como la siguiente:
 
 | Autor | Descripción del cambio | Versión |
 |---------|-------------------------|---------|
@@ -117,8 +117,15 @@ En la parte inferior de los documentos Markdown debe haber una tabla como la sig
 ```
 
 ## Registro de cambios
+
+:::tip Guía  
+Seguir la guía para mantener un control de versiones en la documentación. ['Guía'](https://codeandco-wiki.netlify.app/docs/guias/documentacion/trazabilidad)
+:::
+
 | Autor | Descripción del cambio | Versión |
 |---------|-------------------------|---------|
+| Ángel Mauricio Ramírez | Primera versión de guía de solicitudes de extracción | 1.0 |
 | Ian Julián Estrada Castro | Agregué la plantilla para pull request | 1.1 |
 | Ian Julián Estrada Castro | Agregué un campo en el checklist del evaluador | 1.2 |
 | Ian Julián Estrada Castro | Eliminé apartado de lista de archivos, cambié un elemento de la lista del evaluador y comenté el apartado de registro de cambios en plantilla. Hice referencia de la guía para mantener un control de versiones en la documentación | 2.0 |
+| Ian Julián Estrada Castro | Corregí error ortográfico. Agregué enlace a guía para mantener un control de versiones en la documentación  | 2.1 |
