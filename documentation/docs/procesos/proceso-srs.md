@@ -5,8 +5,8 @@ sidebar_position: 3
 
 # Proceso de Definición de SRS
 
-**Última actualización:** 08 de marzo de 2025
-**Versión:** 4.1
+**Última actualización:** 25 de marzo de 2025
+**Versión:** 4.2
 
 ## Autores
 
@@ -36,7 +36,8 @@ Definir, documentar y validar los requisitos del software, asegurando su alineac
 | ----------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------ | ------------------------------------------------------------------------------------------------------------------- |
 | **Identificación de proveedores de requisitos** | Recolección de información de los proveedores apropiados de requisitos                                                                                                 | Equipo de producto | **REQM SP 1.1** (Comprender los requisitos)                                                                         |
 |                                                 | Generar una tabla con la información del proveedor, su rol, la autoridad que tiene, el tipo de requisitos que provee, y el método de comunicación que se tiene con él. | Product Owner      | **REQM SP 1.1** (Comprender los requisitos), **PP, SP 2.6** (Planificar la involucración de las partes interesadas) |
-|                                                 | Usar el método de comunicación para llegar a una comprensión compartida sobre los requisitos.                                                                          | Product Owner      | **REQM SP 1.1** (Comprender los requisitos), **PP, SP 2.6** (Planificar la involucración de las partes interesadas) |
+|                                                 | Durante las primeras 4 semanas realizar juntas con los provedores de requisitos usando el método de comunicación correspondiente para recopilar la información necesaria para definir requisitos.                           |       Product Owner      | **REQM SP 1.1** (Comprender los requisitos), **PP, SP 2.6** (Planificar la involucración de las partes interesadas) |
+| **Recopilación y Priorización**                 | En base a la información recopilada definir requisitos del proyecto respondiendo a las siguientes preguntas: ¿Contamos con el tiempo necesario para implementarlo? ¿Contamos con las capacidades técnicas para desarrollarlo? ¿Agrega valor al proyecto? ¿Se alinea con la necesidad del socio? ¿Es viable desarrollarlo? | Equipo de producto | **REQM SP 1.1** (Comprender los requisitos)                                                                         |
 | **Recopilación y Priorización**                 | Revisar y organizar las historias de usuario según su relevancia y viabilidad.                                                                                         | Equipo de Producto | **RD, SP 1.1** (Conocer las necesidades de las partes interesadas)                                                  |
 |                                                 | Aplicar la técnica MoSCoW para priorizar.                                                                                                                              | Equipo de Producto |                                                                                                                     |
 | **Identificación de Funcionalidades Clave**     | Desglosar las historias de usuario en funcionalidades específicas.                                                                                                     | Equipo de Producto | **RD, SP 3.2** (Establecer y mantener una definición de la funcionalidad requerida)                                 |
@@ -60,3 +61,4 @@ Definir, documentar y validar los requisitos del software, asegurando su alineac
 | Valeria Zuñiga Mendoza  | Ahora abarca la obtención del SRS   | 4.0     |
 | Angel Mauricio Ramirez  | Ahora abarca la obtención del SRS   | 4.0     |
 | Juan Pablo Chávez Leal  | Eliminación de práctica 3.3         | 4.1     |
+| Angélica Ríos Cuentas   | Definición de cuándo sacamos los requisitos y cómo decidimos qué requisitos aceptar | 4.2  |
