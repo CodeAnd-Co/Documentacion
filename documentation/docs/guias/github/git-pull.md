@@ -1,11 +1,17 @@
 ---
-title: Guía de Solicitudes de Extracción
+title: Guía de Pull Request
 sidebar_position: 3
 ---
 
-# Guía de Solicitudes de Extracción
+# Guía de Pull Request
 
 **Última actualización:** 24 de marzo de 2025
+
+### Autores
+
+| Nombre                          | Rol      |
+| ------------------------------- | -------- |
+| Ángel Mauricio Ramírez         | Autor    |
 
 _Detalla el proceso para crear, revisar y aprobar pull requests, fomentando una colaboración efectiva y asegurando la calidad del código antes de su integración._
 
@@ -42,7 +48,7 @@ _Detalla el proceso para crear, revisar y aprobar pull requests, fomentando una 
 5. **Aprobación Formal**: Una vez que todas las pruebas hayan pasado y la revisión haya sido completada, obtén la aprobación formal de los revisores antes de proceder con la fusión.
 
 :::tip Beneficio  
-Implementar estas prácticas garantizará una gestión efectiva de las solicitudes de extracción, promoviendo una colaboración eficiente y manteniendo la calidad del código en el proyecto.
+Implementar estas prácticas garantizará una gestión efectiva de las Pull Request, promoviendo una colaboración eficiente y manteniendo la calidad del código en el proyecto.
 :::
 
 6. **Eliminación de la rama**: Una vez que se haya hecho la fusión, elimina la rama. 
@@ -54,7 +60,7 @@ Implementar estas prácticas garantizará una gestión efectiva de las solicitud
 **Plantilla de PR**
 
 ```
-<!--- Plantilla de PR para dacusaurus -->
+<!--- Plantilla de PR para docusaurus -->
 <!--- Autor: Ian Julián Estrada Castro -->
 <!--- Versión 2.0 -->
 <!--- Última actualización: 24 de marzo de 2025 -->
@@ -129,3 +135,6 @@ Seguir la guía para mantener un control de versiones en la documentación. ['Gu
 | Ian Julián Estrada Castro | Agregué un campo en el checklist del evaluador | 1.2 |
 | Ian Julián Estrada Castro | Eliminé apartado de lista de archivos, cambié un elemento de la lista del evaluador y comenté el apartado de registro de cambios en plantilla. Hice referencia de la guía para mantener un control de versiones en la documentación | 2.0 |
 | Ian Julián Estrada Castro | Corregí error ortográfico. Agregué enlace a guía para mantener un control de versiones en la documentación  | 2.1 |
+| Juan Eduardo Rosas Cerón     | Solicitudes de extracción -> Pull Request      | 2.2     |
+| Juan Carlos Calderón García  | Solicitudes de extracción -> Pull Request      | 2.2     |
+| Pablo Hazael Hurtado Mireles | Solicitudes de extracción -> Pull Request      | 2.2     |
