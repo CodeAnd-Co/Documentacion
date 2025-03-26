@@ -132,12 +132,12 @@ Este diagrama de paquetes representa la organización de la app local de electro
 
 Esta carpeta sigue una arquitectura basada en CLEAN con MVC.
 
-- **Core**: Encapsula la lógica de negocio. Cada módulo del proyecto tendrá su propia carpeta dentro de `Core`, que contendrá:
+- **Data**: Se encarga de la persistencia y recuperación de los datos. Encapsula el consumo de API's y los modelos. Cada módulo del proyecto tendrá su propia carpeta dentro de `Data`, que contendrá:
 
-  - **Entities**: Representan los objetos de negocio con lógica encapsulada dentro del objeto.
-  - **Repositories**: Contratos para el almacenamiento de los datos.
-  - **Archivos principales**:
-    - **useCase1.js**: Cada caso de uso tendrá su archivo ".js". No deben saber nada sobre HTTP, Express, bases de datos, ni ningún framework.
+  - **API**: Módulos para realizar llamadas a API's externas, si la aplicación lo necesita.
+  - **Database**: Configuración de la base de datos y sus conexiones.
+  - **Modelos**: Definen las estructuras de datos de la aplicación (esquemas, clases).
+  - **Repositories**: Abstracción de acceso de datos para separar la implementación de la lógica de negocio.
 
 - **Infra**: Maneja conexiones con el backend remoto y almacenamiento local.
 
