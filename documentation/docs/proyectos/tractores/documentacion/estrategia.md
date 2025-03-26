@@ -134,16 +134,15 @@ Esta carpeta sigue una arquitectura basada en CLEAN con MVC.
 
 - **Data**: Se encarga de la persistencia y recuperación de los datos. Encapsula el consumo de API's y los modelos. Cada módulo del proyecto tendrá su propia carpeta dentro de `Data`, que contendrá:
 
-  - **API**: Módulos para realizar llamadas a API's externas, si la aplicación lo necesita.
+  - **API**: Módulos para realizar llamadas a API's externas, si la aplicación lo necesita. Ej: Comunicación con el backend alojado en el EC2.
   - **Database**: Configuración de la base de datos y sus conexiones.
-  - **Modelos**: Definen las estructuras de datos de la aplicación (esquemas, clases).
+  - **Models**: Definen las estructuras de datos de la aplicación (esquemas, clases).
   - **Repositories**: Abstracción de acceso de datos para separar la implementación de la lógica de negocio.
 
-- **Infra**: Maneja conexiones con el backend remoto y almacenamiento local.
+- **Domain**: Contiene la lógica de negocio pura de la aplicación.
 
   - **Module**: Cada módulo tendrá su carpeta propia que contendrá:
-    - **Database**: Implementa los repositorios definidos en `Core/module/repositories`.
-  - **Api**: Comunicación con el backend alojado en el EC2.
+    - **UseCases**: Define los casos de uso de la aplicación. Cada uno representa una operación clave.
   - **Services**: Lógica reutilizable alrededor del proyecto.
 
 - **Presentation**: Define las rutas y controladores para interactuar con el frontend local. Cada módulo del proyecto tendrá su propia carpeta dentro de `Presentation`, que contendrá:
