@@ -2,9 +2,9 @@
 title: Estrategia técnica TracTech
 ---
 
-**Versión 1.0**
+**Versión 2.0**
 
-**Última modificación**: 6 de marzo de 2025 por Daniel Contreras Chávez
+**Última modificación**: 25 de marzo de 2025
 
 ---
 
@@ -172,9 +172,10 @@ Cada módulo puede incluir pruebas unitarias para garantizar su correcto funcion
 
 Se encarga de la integración de la aplicación con ElectronJS
 
-- **main.js**: Archivo principal de electron. Crea la ventana, gestiona eventos del sistema. Inicia Electron y conecta frontend con backend local.
-- **preload.js**: Sript que se ejecuta antes de la carga de la página de electron, permitiendo la comunicación entre el frontend y el backend de manera segura.
+- **main.js**: Archivo principal de Electron. Crea la ventana, gestiona eventos del sistema. Inicia Electron y conecta frontend con backend local.
+- **preload.js**: Script que se ejecuta antes de la carga de la página de electron, permitiendo la comunicación entre el frontend y el backend de manera segura.
 
+---
 
 # Registro de cambios
 
