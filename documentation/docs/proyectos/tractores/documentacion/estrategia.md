@@ -147,22 +147,20 @@ Esta carpeta sigue una arquitectura basada en CLEAN con MVC.
 
 - **Presentation**: Define las rutas y controladores para interactuar con el frontend local. Cada módulo del proyecto tendrá su propia carpeta dentro de `Presentation`, que contendrá:
 
-  - **RoutesIndexes**: Punto de entrada de las rutas.
-  - **Routes**: Definición de las rutas de la API.
+  - **Routes**: Punto de entrada de las rutas y definición de las rutas de la API.
   - **Controllers**: Implementación de la lógica que interactúa con los casos de uso.
 
 - **Archivo principal**:
 
   - **app.js**: Punto de entrada principal del backend. Su función es inicializar y configurar el servidor local de la aplicación.
 
-## 2. Frontend
+### 2. Frontend
 
 Esta carpeta usa MVVM para el manejo de las vistas
 
-- **Views**: Son las interfaces que el usuario ve.
-- **ViewModels**: Contienen la lógica para manejar la UI y la comunicación con el backend local.
-- **Models**: Representación de la base de datos.
-- **Utils**: .Funciones de ayuda.
+- **Views**: Son las interfaces que el usuario ve y con las que interactúa.
+- **ViewModels**: Contienen la lógica para manejar la UI y la comunicación con el backend local. Procesa los datos antes de comunicarlos a los Views.
+- **Utils**: Funciones auxiliares que mejoran la eficiencia del código.
 - **Archivo principal**:
   - **index.js**: Punto de entrada de Electron.
 
@@ -170,7 +168,17 @@ Esta carpeta usa MVVM para el manejo de las vistas
 
 Cada módulo puede incluir pruebas unitarias para garantizar su correcto funcionamiento.
 
-### 4. Archivos Principales
+### 4. Electron
 
-- **main.js**: (Inicia Electron y conecta frontend con backend local)
-- **node_modules**: Dependencias del proyecto.
+Se encarga de la integración de la aplicación con ElectronJS
+
+- **main.js**: Archivo principal de electron. Crea la ventana, gestiona eventos del sistema. Inicia Electron y conecta frontend con backend local.
+- **preload.js**: Sript que se ejecuta antes de la carga de la página de electron, permitiendo la comunicación entre el frontend y el backend de manera segura.
+
+
+# Registro de cambios
+
+| Autor                           | Descripción             | Versión |
+|---------------------------------| ----------------------- |---------|
+| Daniel Contreras Chavez       | Primera versión de la estratégia técnica | 1.0     | 
+| Ian Julián Estrada Castro  | Se hizo el cambio del diagrama de paquetes de la aplicación local en electron  | 2.0     | 
