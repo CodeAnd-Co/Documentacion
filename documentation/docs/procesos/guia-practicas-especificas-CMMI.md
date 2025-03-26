@@ -1,11 +1,11 @@
 ---
-title: PR1 Guía de prácticas específicas del CMMI y generación de procesos
+title: PR1 Proceso para la generación de procesos
 sidebar_position: 1
 ---
 
-# Guía de prácticas específicas del CMMI y generación de procesos
+# Proceso para la generación de procesos
 
-**Última actualización:** 3 de marzo de 2025.
+**Última actualización:** 26 de marzo de 2025.
 
 ---
 
@@ -15,6 +15,7 @@ sidebar_position: 1
 | -------------------------- | ----------- |
 | Valeria Zúñiga Mendoza     | Autor       |
 | Diego Isaac Fuentes Juvera | Modificador |
+| Juan Pablo Chávez Leal     | Modificador |
 
 ---
 
@@ -47,3 +48,8 @@ sidebar_position: 1
 ### Salidas
 
 1. Práctica específica del CMMI definida, documentada, e institucionalizada.
+
+
+| Autor | Descripción del cambio | Versión |
+|---------|-------------------------|---------|
+| Juan Pablo Chávez Leal | Corrección de título | V1.1 |
