@@ -11,7 +11,8 @@ sidebar_position: 3
 
 | **Nombre**              | **Rol**  |
 |-------------------------|----------|
-| Galo Alejandro del Río Vigiano           | Autor    |
+| Galo Alejandro del Río Vigiano | Autor    |
+| Ian Julián Estrada Castro      | Coautor    |
 
 ---
 
