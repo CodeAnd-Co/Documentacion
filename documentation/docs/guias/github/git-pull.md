@@ -60,7 +60,7 @@ Implementar estas prácticas garantizará una gestión efectiva de las Pull Requ
 **Plantilla de PR**
 
 ```
-<!--- Plantilla de PR para dacusaurus -->
+<!--- Plantilla de PR para docusaurus -->
 <!--- Autor: Ian Julián Estrada Castro -->
 <!--- Versión 2.0 -->
 <!--- Última actualización: 24 de marzo de 2025 -->
