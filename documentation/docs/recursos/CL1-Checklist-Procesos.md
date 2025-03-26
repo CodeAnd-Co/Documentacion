@@ -33,7 +33,7 @@ sidebar_position: 17
 - [ ] El proceso está libre de errores ortográficos y de puntuación.
 - [ ] El lenguaje es claro y conciso.
 
-### Otra
+### Otros criterios
 
 - [ ] Todos los enlaces y referencias a otros documentos funcionan y complementan el proceso.
 - [ ] Todos los pasos son necesarios y no pueden omitirse sin afectar la ejecución.
