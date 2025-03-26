@@ -156,7 +156,7 @@ Esta carpeta sigue una arquitectura basada en CLEAN con MVC.
 
 ### 2. Frontend
 
-Esta carpeta usa MVVM para el manejo de las vistas
+Esta carpeta se encarga de la interfaz de usuario y la interacción con el usuario.
 
 - **Views**: Son las interfaces que el usuario ve y con las que interactúa.
 - **ViewModels**: Contienen la lógica para manejar la UI y la comunicación con el backend local. Procesa los datos antes de comunicarlos a los Views.
