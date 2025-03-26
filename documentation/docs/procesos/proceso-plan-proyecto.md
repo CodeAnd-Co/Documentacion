@@ -5,7 +5,7 @@ sidebar_position: 4
 
 # Proceso para hacer un plan de proyecto
 
-**Última actualización:** 08 de marzo de 2025.
+**Última actualización:** 25 de marzo de 2025.
 
 ---
 
