@@ -124,7 +124,7 @@ Cada módulo puede incluir pruebas unitarias para garantizar su correcto funcion
 
 ### Aplicación local de electron
 
-![alt text](./diagrama%20de%20paquetes%20Electron.drawio.png)
+![alt text](./diagrama%20de%20paquetes%20Electron-Diagrama_Paquetes.drawio.png)
 
 Este diagrama de paquetes representa la organización de la app local de electron. Se divide en varias secciones principales:
 
