@@ -2,9 +2,9 @@
 title: Estrategia técnica TracTech
 ---
 
-**Versión 1.0**
+**Versión 2.0**
 
-**Última modificación**: 6 de marzo de 2025 por Daniel Contreras Chávez
+**Última modificación**: 25 de marzo de 2025
 
 ---
 
@@ -124,7 +124,7 @@ Cada módulo puede incluir pruebas unitarias para garantizar su correcto funcion
 
 ### Aplicación local de electron
 
-![alt text](./diagrama%20de%20paquetes%20Electron.drawio.png)
+![alt text](./diagrama%20de%20paquetes%20Electron-Diagrama_Paquetes.drawio.png)
 
 Este diagrama de paquetes representa la organización de la app local de electron. Se divide en varias secciones principales:
 
@@ -132,38 +132,35 @@ Este diagrama de paquetes representa la organización de la app local de electro
 
 Esta carpeta sigue una arquitectura basada en CLEAN con MVC.
 
-- **Core**: Encapsula la lógica de negocio. Cada módulo del proyecto tendrá su propia carpeta dentro de `Core`, que contendrá:
+- **Data**: Se encarga de la persistencia y recuperación de los datos. Encapsula el consumo de API's y los modelos. Cada módulo del proyecto tendrá su propia carpeta dentro de `Data`, que contendrá:
 
-  - **Entities**: Representan los objetos de negocio con lógica encapsulada dentro del objeto.
-  - **Repositories**: Contratos para el almacenamiento de los datos.
-  - **Archivos principales**:
-    - **useCase1.js**: Cada caso de uso tendrá su archivo ".js". No deben saber nada sobre HTTP, Express, bases de datos, ni ningún framework.
+  - **API**: Módulos para realizar llamadas a API's externas, si la aplicación lo necesita. Ej: Comunicación con el backend alojado en el EC2.
+  - **Database**: Configuración de la base de datos y sus conexiones.
+  - **Models**: Definen las estructuras de datos de la aplicación (esquemas, clases).
+  - **Repositories**: Abstracción de acceso de datos para separar la implementación de la lógica de negocio.
 
-- **Infra**: Maneja conexiones con el backend remoto y almacenamiento local.
+- **Domain**: Contiene la lógica de negocio pura de la aplicación.
 
   - **Module**: Cada módulo tendrá su carpeta propia que contendrá:
-    - **Database**: Implementa los repositorios definidos en `Core/module/repositories`.
-  - **Api**: Comunicación con el backend alojado en el EC2.
+    - **UseCases**: Define los casos de uso de la aplicación. Cada uno representa una operación clave.
   - **Services**: Lógica reutilizable alrededor del proyecto.
 
 - **Presentation**: Define las rutas y controladores para interactuar con el frontend local. Cada módulo del proyecto tendrá su propia carpeta dentro de `Presentation`, que contendrá:
 
-  - **RoutesIndexes**: Punto de entrada de las rutas.
-  - **Routes**: Definición de las rutas de la API.
+  - **Routes**: Punto de entrada de las rutas y definición de las rutas de la API.
   - **Controllers**: Implementación de la lógica que interactúa con los casos de uso.
 
 - **Archivo principal**:
 
   - **app.js**: Punto de entrada principal del backend. Su función es inicializar y configurar el servidor local de la aplicación.
 
-## 2. Frontend
+### 2. Frontend
 
-Esta carpeta usa MVVM para el manejo de las vistas
+Esta carpeta se encarga de la interfaz de usuario y la interacción con el usuario.
 
-- **Views**: Son las interfaces que el usuario ve.
-- **ViewModels**: Contienen la lógica para manejar la UI y la comunicación con el backend local.
-- **Models**: Representación de la base de datos.
-- **Utils**: .Funciones de ayuda.
+- **Views**: Son las interfaces que el usuario ve y con las que interactúa.
+- **ViewModels**: Contienen la lógica para manejar la UI y la comunicación con el backend local. Procesa los datos antes de comunicarlos a los Views.
+- **Utils**: Funciones auxiliares que mejoran la eficiencia del código.
 - **Archivo principal**:
   - **index.js**: Punto de entrada de Electron.
 
@@ -171,7 +168,18 @@ Esta carpeta usa MVVM para el manejo de las vistas
 
 Cada módulo puede incluir pruebas unitarias para garantizar su correcto funcionamiento.
 
-### 4. Archivos Principales
+### 4. Electron
 
-- **main.js**: (Inicia Electron y conecta frontend con backend local)
-- **node_modules**: Dependencias del proyecto.
+Se encarga de la integración de la aplicación con ElectronJS
+
+- **main.js**: Archivo principal de Electron. Crea la ventana, gestiona eventos del sistema. Inicia Electron y conecta frontend con backend local.
+- **preload.js**: Script que se ejecuta antes de la carga de la página de electron, permitiendo la comunicación entre el frontend y el backend de manera segura.
+
+---
+
+# Registro de cambios
+
+| Autor                           | Descripción             | Versión |
+|---------------------------------| ----------------------- |---------|
+| Daniel Contreras Chavez       | Primera versión de la estratégia técnica | 1.0     | 
+| Ian Julián Estrada Castro  | Se hizo el cambio del diagrama de paquetes de la aplicación local en electron  | 2.0     | 

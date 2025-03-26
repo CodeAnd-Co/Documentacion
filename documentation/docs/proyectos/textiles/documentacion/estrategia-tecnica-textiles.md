@@ -164,5 +164,3 @@ Closes #XX
 ### CD
 
 Para el despliegue continuo del backend utilizaremos un script de [_github actions_](/docs/guias/github/github-actions.md) paa hacer pull automaticamente y desplegar las ramas de produccion (main) y pruebas (staging), por lo que no tendremos que manejar estas acciones manualmente.
-
-El uso y descripcion de este se encontrara en el [*manual de uso de github actions*](agregar el link al manual de github actions)
