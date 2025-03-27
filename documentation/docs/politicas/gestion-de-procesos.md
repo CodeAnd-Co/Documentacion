@@ -52,6 +52,7 @@ Las necesidades de proceso se refieren a las bases que deben satisfacer los proc
 
 Los objetivos se revisan semanalmente durante los reportes de estado. Una vez recibida la retroalimentación por parte de los stakeholders, el departamento analizará los comentarios y realizará los ajustes necesarios.
 
+
 ---
 ### **Agradecimientos**
 - J.E.D.I. Software
