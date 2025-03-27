@@ -99,6 +99,8 @@ Este diagrama de paquetes representa la organización del backend alojado en la 
 Cada módulo contiene:
 
 - **Data**: Gestión de la base de datos, incluyendo modelos y repositorios.
+  - **Repositorios**: Abstracción de acceso de datos para separar la implementación de la lógica de negocio.
+  - **Modelos**: Definen las estructuras de datos de la aplicación (esquemas, clases).
 - **Rutas**: Definición de rutas.
 - **Controladores**: Implementación de la lógica de negocio.
 
