@@ -15,6 +15,8 @@ En Google Drive solo se debería alojar documentos cuyo formato no puede ser tra
 
 También se debe tener en cuenta el tema del documento que se subirá a Drive. Es importante para mantener la organización de las carpetas de Code&Co.
 
+Galo
+
 #### Estructura:
 
 La carpeta de Drive empieza general y por cada nivel empieza a ser específico, el primer nivel cuenta con las carpetas:
