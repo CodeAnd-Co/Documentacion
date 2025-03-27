@@ -4,6 +4,7 @@ sidebar_position: 3
 ---
 
 # **Política de Gestión de Procesos**
+**Última actualización** 27 de marzo de 2025
 
 ### Autores
 
