@@ -1,6 +1,6 @@
 ---
-title: PR17 Modificar proceso
-sidebar_position: 17
+title: PR19 Modificar proceso
+sidebar_position: 19
 ---
 
 # Modificar proceso
