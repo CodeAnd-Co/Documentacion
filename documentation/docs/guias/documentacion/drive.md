@@ -7,7 +7,7 @@ sidebar_position: 1
 
 ---
 
-**Última actualización:** 26 de Marzo de 2025
+**Última actualización:** 27 de Marzo de 2025
 
 #### ¿Qué debería estar en Google Drive?
 
@@ -36,7 +36,7 @@ Cada carpeta de proyecto debe incluir las siguientes subcarpetas:
   - Trabajo
   - Visión del proyecto
   - Alcance del proyecto (especificación de requerimientos)
-  - Cualquier otro que aplique
+  - _Cualquier otro que aplique_
 
 - **Arquitectura**
 
@@ -45,7 +45,7 @@ Cada carpeta de proyecto debe incluir las siguientes subcarpetas:
   - Matriz de conocimientos técnicos
   - Planes de capacitación de tecnologías
   - Pruebas de arquitectura
-  - Cualquier otro que aplique
+  - _Cualquier otro que aplique_
 
 - **Juntas**
 
@@ -56,9 +56,12 @@ Cada carpeta de proyecto debe incluir las siguientes subcarpetas:
 - **Logs**
 
   - Defect Log
-  - Notas
+  - Time Log
+
+- **Notas**
+
   - Información general del proyecto
-  - Cualquier otro que aplique
+  - _Cualquier otro que aplique_
 
 - **Planes**
 
@@ -70,7 +73,7 @@ Cada carpeta de proyecto debe incluir las siguientes subcarpetas:
   - Plan de valor ganado
   - Plan de gestión de riesgos
   - Plan de recursos
-  - Cualquier otro que aplique
+  - _Cualquier otro que aplique_
 
 - **Pruebas**
 
@@ -80,7 +83,7 @@ Cada carpeta de proyecto debe incluir las siguientes subcarpetas:
   - Heurísticas
   - Rendimiento
   - Estrés
-  - Cualquier otro que aplique
+  - _Cualquier otro que aplique_
 
 - **Requerimientos**
 
@@ -89,15 +92,16 @@ Cada carpeta de proyecto debe incluir las siguientes subcarpetas:
   - Gestión de cambio de requisitos
   - Aprobaciones
   - Priorizaciones
-  - Cualquier otro que aplique
+  - _Cualquier otro que aplique_
 
 - **Stakeholders**
   - Documentos proporcionados por el socio formador
   - Matriz de involucramiento
-  - Cualquier otro que aplique
+  - _Cualquier otro que aplique_
 
-| Autor                | Descripción del cambio                      | Versión |
-| -------------------- | ------------------------------------------- | ------- |
-| Diego Fuentes Juvera | Creación de documento inicial               | V1      |
-| Juan Pablo Chávez    | Completa modificación del documento         | V2      |
-| Max Toscano          | Implementación de la estructura de carpetas | V3      |
+| Autor                | Descripción del cambio                                | Versión |
+| -------------------- | ----------------------------------------------------- | ------- |
+| Diego Fuentes Juvera | Creación de documento inicial                         | 1.0     |
+| Juan Pablo Chávez    | Completa modificación del documento                   | 2.0     |
+| Max Toscano          | Implementación de la estructura de carpetas           | 2.1     |
+| Max Toscano          | Corrección de formato e implementación de información | 2.2     |
