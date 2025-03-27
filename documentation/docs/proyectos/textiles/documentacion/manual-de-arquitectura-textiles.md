@@ -25,7 +25,7 @@ Arquitectura basada en servicios en la nube con API REST en NodeJS y frontend de
 
 - **Frontend** (React + AWS Amplify)
 - **Backend** (Node.JS + Express + AWS EC2)
-- **Servicios AWS** (DynamoDB, S3, etc.)
+- **Servicios AWS** (DynamoDB, S3, etc.). Todos los servicios de aws seran utilizados en la region us-east-1
 
 ---
 
@@ -37,12 +37,11 @@ Arquitectura basada en servicios en la nube con API REST en NodeJS y frontend de
 
 ### Tecnologías
 
-- React (vite)
+- React (vite) 19.0.0
 - AWS Amplify para el hosting del frontend
-- Tailwind CSS
-- Material UI
+- Material UI 6.4.7
 - MercadoPago
-- Axios para consumir la API REST
+- Axios para consumir la API REST 1.7.9
 
 ### Características
 
@@ -75,10 +74,10 @@ Arquitectura basada en servicios en la nube con API REST en NodeJS y frontend de
 
 ### Tecnologías
 
-- Node.JS + Express.JS para construir la API
-- DynamoDB SDK para interactuar con la base de datos
-- AWS S3 SDK para manejar las imágenes
-- JWT para manejar la autenticación
+- Node.JS 22.14 + Express.JS 4.21.2 para construir la API
+- DynamoDB SDK 3.751.0 para interactuar con la base de datos
+- AWS S3 SDK 3.750.0 para manejar las imágenes
+- JWT 9.0.2 para manejar la autenticación
 - PM2 para administrar procesos en producción
 - MercadoPago SDK
 - API Gateway para exponer la api a internet
@@ -97,7 +96,7 @@ Arquitectura basada en servicios en la nube con API REST en NodeJS y frontend de
 
 ### Despliegue
 
-- AWS EC2 para el despliegue del backend.
+- AWS EC2 con ububtu 22.04 para el despliegue del backend.
 - API Gateway para la exposicion de los endopoints sin usar directamente el ec2
 
 ### Endpoints Principales

@@ -1,11 +1,17 @@
 ---
-title: Guía de Solicitudes de Extracción
+title: Guía de Pull Request
 sidebar_position: 3
 ---
 
-# Guía de Solicitudes de Extracción
+# Guía de Pull Request
 
-**Última actualización:** 7 de marzo de 2025
+**Última actualización:** 24 de marzo de 2025
+
+### Autores
+
+| Nombre                          | Rol      |
+| ------------------------------- | -------- |
+| Ángel Mauricio Ramírez         | Autor    |
 
 _Detalla el proceso para crear, revisar y aprobar pull requests, fomentando una colaboración efectiva y asegurando la calidad del código antes de su integración._
 
@@ -41,17 +47,23 @@ _Detalla el proceso para crear, revisar y aprobar pull requests, fomentando una 
 
 5. **Aprobación Formal**: Una vez que todas las pruebas hayan pasado y la revisión haya sido completada, obtén la aprobación formal de los revisores antes de proceder con la fusión.
 
-Implementar estas prácticas garantizará una gestión efectiva de las solicitudes de extracción, promoviendo una colaboración eficiente y manteniendo la calidad del código en el proyecto.
+:::tip Beneficio  
+Implementar estas prácticas garantizará una gestión efectiva de las Pull Request, promoviendo una colaboración eficiente y manteniendo la calidad del código en el proyecto.
+:::
 
-6. **Eliminación de la rama**: Una vez que se haya hecho la fusión, elimina la rama. IMPORTANTE: No eliminar las ramas principales (main, staging, develop).
+6. **Eliminación de la rama**: Una vez que se haya hecho la fusión, elimina la rama. 
+
+:::warning Importante  
+ No eliminar las ramas principales definidas según la estratégia técnica. Ejemplo: main, staging, develop.
+ :::
 
 **Plantilla de PR**
 
 ```
-<!--- Plantilla de PR para dacusaurus -->
+<!--- Plantilla de PR para docusaurus -->
 <!--- Autor: Ian Julián Estrada Castro -->
-<!--- Versión 1.2 -->
-<!--- Última actualización: 7 de marzo de 2025 -->
+<!--- Versión 2.0 -->
+<!--- Última actualización: 24 de marzo de 2025 -->
 
 # Solicitud de cambio (PR)
 
@@ -64,15 +76,6 @@ Implementar estas prácticas garantizará una gestión efectiva de las solicitud
 <!-- Explica con más detalle lo que hiciste y por qué -->
 
 [Ejemplo: Este cambio integra un estándar de codificación porque actualmente no hay uno establecido]
-
-### Archivos modificados
-
-<!--- Lista los archivos que agregaste, modificaste o eliminaste -->
-
-[Ejemplo:
-- `docs/estándares.md` (Nuevo documento)
-- `docs/procesos.md` (Modificado)
-- `docs/errores.md` (Eliminado)]
 
 ## Tipo de cambio
 
@@ -101,24 +104,37 @@ Implementar estas prácticas garantizará una gestión efectiva de las solicitud
 
 <!--- Repasa los puntos siguientes, y pon una `x` en todas las cajas que aplican -->
 
-- [ ] La descripción en la tabla que se encuentra en la parte inferior del documento coincide con la descripción del pull request
+- [ ] El registro de cambios coincide con la descripción del pull request
 - [ ] Los cambios no afectan negativamente la documentación o generan inconsistencias
 - [ ] Ortografía y gramática correctas
 - [ ] He notificado al autor del PR en caso de dudas o ajustes necesarios
 - [ ] Una vez que acepte el PR, eliminaré la rama
 
 
-## Registro de cambios:
+<!-- ## Registro de cambios
 
-<!-- En la parte inferior de los documentos Markdown debe haber una tabla como la siguiente -->
+Seguir la guía para mantener un control de versiones en la documentación: https://codeandco-wiki.netlify.app/docs/guias/documentacion/trazabilidad
+En la parte inferior de los documentos Markdown debe haber una tabla como la siguiente:
 
 | Autor | Descripción del cambio | Versión |
 |---------|-------------------------|---------|
 | [Tu nombre] | [Breve descripción del cambio] | [Versión] |
+ -->
 ```
 
 ## Registro de cambios
+
+:::tip Guía  
+Seguir la guía para mantener un control de versiones en la documentación. ['Guía'](https://codeandco-wiki.netlify.app/docs/guias/documentacion/trazabilidad)
+:::
+
 | Autor | Descripción del cambio | Versión |
 |---------|-------------------------|---------|
+| Ángel Mauricio Ramírez | Primera versión de guía de solicitudes de extracción | 1.0 |
 | Ian Julián Estrada Castro | Agregué la plantilla para pull request | 1.1 |
 | Ian Julián Estrada Castro | Agregué un campo en el checklist del evaluador | 1.2 |
+| Ian Julián Estrada Castro | Eliminé apartado de lista de archivos, cambié un elemento de la lista del evaluador y comenté el apartado de registro de cambios en plantilla. Hice referencia de la guía para mantener un control de versiones en la documentación | 2.0 |
+| Ian Julián Estrada Castro | Corregí error ortográfico. Agregué enlace a guía para mantener un control de versiones en la documentación  | 2.1 |
+| Juan Eduardo Rosas Cerón     | Solicitudes de extracción -> Pull Request      | 2.2     |
+| Juan Carlos Calderón García  | Solicitudes de extracción -> Pull Request      | 2.2     |
+| Pablo Hazael Hurtado Mireles | Solicitudes de extracción -> Pull Request      | 2.2     |
