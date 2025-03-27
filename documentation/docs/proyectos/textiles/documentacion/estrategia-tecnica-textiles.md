@@ -136,21 +136,16 @@ Cada módulo puede incluir pruebas unitarias para garantizar su correcto funcion
 ```
 
 ## Plantilla PR FrontEnd
+
 Última actualización 26/03/25
 
 ---
 
 # Descripción
 
-Incluye un resumen del cambio y el problema que se ha solucionado. También proporciona el contexto relevante y la motivación para este cambio. Lista cualquier dependencia requerida para esta modificación.
-
-Soluciona # (que problema soluciona)
-
 ---
 
 ## Tipo de cambio
-
-Elimina las opciones que no sean relevantes.
 
 - [ ] Corrección de error (cambio no disruptivo que soluciona un problema)
 - [ ] Nueva función (cambio no disruptivo que agrega funcionalidad)
@@ -161,16 +156,20 @@ Elimina las opciones que no sean relevantes.
 ---
 
 # ¿Qué archivo fue el que modifiqué?
+
 Ejemplo:
+
 - Componente1.jsx
 - Estilos.css
 
 ---
 
 # ¿Cómo se ha probado?
+
 Describe resumidamente cómo lo probaste y funciona. Ejemplo:
+
 - "Se probó manualmente en Chrome y Safari. Se validó que el botón 'Guardar' guarda correctamente la información y se muestra una alerta de éxito."
-*En caso de cambio mínimo:*
+  _En caso de cambio mínimo:_
 - "El cambio fue visualmente unicamente (color del boton). Se validó en los navegadores principales. No se requirieron pruebas funcionales."
 
 ---
@@ -183,8 +182,9 @@ Describe resumidamente cómo lo probaste y funciona. Ejemplo:
 
 ---
 
-# Versión: V1
-# Rodrigo Antonio Benítez De La Portilla
+Versión: V1
+Rodrigo Antonio Benítez De La Portilla
+Arutro Sanchez Rodriguez
 
 ```
 
