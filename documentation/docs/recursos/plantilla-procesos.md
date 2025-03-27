@@ -1,9 +1,9 @@
 ---
 title: PR00 Plantilla de procesos
-sidebar_position: 2
+sidebar_position: 19
 ---
 
-# PR00 [Nombre del proceso]
+# PR00 Plantilla de procesos
 
 **Última actualización:** [fecha]  
 **Versión:** 0.0
