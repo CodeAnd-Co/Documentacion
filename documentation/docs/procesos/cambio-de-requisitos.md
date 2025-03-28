@@ -80,3 +80,4 @@ Los líderes del equipo deberán basarse en los siguientes criterios para la apr
 | Autor                   | Descripción del cambio              | Versión |
 | ----------------------- | ----------------------------------- | ------- |
 | Angélica Ríos Cuentas   | Definición de cómo decidimos qué requisitos aceptar| 1.1     |
+| Daniel Contreras Chávez | Criterios de aceptación, gravedad y cronograma | 1.2 |
