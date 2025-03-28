@@ -26,7 +26,7 @@ Versión: 1.0
 
 ### Entradas
 
-1. Registros de evaluaciones anteriores en donde se identicaron debilidades en los procesos.
+1. Registros de evaluaciones anteriores en donde se identificaron debilidades en los procesos.
 2. Necesidades de mejora de procesos.
 3. Estrategias o aproximaciones de mejora de procesos.
 
