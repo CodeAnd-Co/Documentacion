@@ -42,7 +42,7 @@ sidebar_position: 18
 | **Cargar lista de procesos** | Registro de procesos evaluados en el documento correspondiente. | Team Lead | — |
 | **Revisión con checklist** | Evaluación con [checklist de procesos](/docs/recursos/CL1-Checklist-Procesos) para validar correcta aplicación. | Equipo SEPG / Calidad | **PPQA SP 1.1** |
 | **Recopilación de hallazgos** | Documentación de problemas, observaciones u oportunidades de mejora. | Equipo SEPG / Calidad | **PPQA SP 1.2** |
-| **Decisión de acción** | En caso de no cumplimiento, decidir si se realiza acción correctiva o se modifica el proceso. Si se requiere una acción correctiva formal, se activa el [proceso para acciones correctivas](/docs/procesos/PR18-Proceso-para-acciones-correctivas). | Equipo SEPG | **PPQA SP 1.1, 1.2** |
+| **Decisión de acción** | En caso de no cumplimiento, decidir si se realiza acción correctiva o se modifica el proceso. Si se requiere una acción correctiva formal, se activa el [proceso para acciones correctivas](/docs/procesos/PR18-proceso-acciones-correctivas). | Equipo SEPG | **PPQA SP 1.1, 1.2** |
 
 ### Salidas
 - Informe de evaluación.
