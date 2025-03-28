@@ -3,7 +3,7 @@ title: Estándar para la Definición de Checklists
 sidebar_position: 4
 ---
 
-# Estándar para la Modificación o Creación de Procesos
+# Estándar para la Definición de Checklists
 
 **Última actualización:** 27 de marzo de 2025
 
