@@ -1,21 +1,21 @@
 ---
-title: PR18 Proceso para acciones correctivas
-sidebar_position: 17
+title: PR19 Proceso para evaluación de procesos
+sidebar_position: 18
 ---
 
-# PR18 Proceso para acciones correctivas
+# PR19 Proceso para evaluación de procesos
 
-**Última actualización:** 26 de marzo de 2025
+**Última actualización:** 27 de marzo de 2025  
 **Versión:** 1.0
 
 ---
 
 ### Autores
 
-| Nombre                     | Rol   |
-| -------------------------- | ----- |
-| Valeria Zúñiga Mendoza     | Autor |
-| Paola María Garrido Montes | Autor |
+| Nombre                      | Rol   |
+| --------------------------- | ----- |
+| Mauricio Anguiano Juarez    | Autor |
+| Juan Carlos Calderón García | Autor |
 
 ---
 
@@ -25,35 +25,24 @@ sidebar_position: 17
 
 ---
 
-### Entradas
+## **Evaluación de Procesos en Iteraciones**
 
-1. Riesgo identificado.
-2. Problema detectado en un proceso existente.
-3. Propuesta de mejora aprobada.
-4. Cambio en las necesidades u objetivos de la empresa.
+### **Entradas**
+- Documento de informe de evaluación:  
+    - Lista de procesos realizados durante la iteración.  
+    - Checklist de procesos.  
+    - Registro de la evaluación.  
+    - Hallazgos/Errores encontrados.
 
 ### Proceso
 
-| Fase                         | Descripción                                                                                                                                                                                                                                                                                         | Responsable                            | Meta y práctica específica del CMMI                                                                                                |
-| ---------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
-| **Identificar el problema**  | -Se identifican mejoras en los procesos actuales. -Se detectan problemas que requieren ajustes según la matriz de riesgos. -La magnitud del riesgo es mayor a **establecer número**. -Se aprueban propuestas de mejora para implementación. -Cambian las necesidades o los objetivos de la empresa. | Miembro del equipo                     | **OPD, SP 1.1** (Establecer los procesos estándar), **RSKM, SP 2.1** (Identificar los riesgos)                                     |
-| **Análisis del problema**    | Se evalúa la magnitud del problema, el plan de mitigación y plan de contingencia, se asigna un responsable en la matriz de gestión de riesgos.                                                                                                                                                      | Miembro del equipo                     | **RSKM, SP 2.2** (Evaluar, clasificar y priorizar los riesgos), **RSKM, SP 3.1** (Desarrollar los planes de mitigación de riesgos) |
-|                              | Se hacen los cambios necesarios en el proceso afectado.                                                                                                                                                                                                                                             | Miembro del equipo                     | **OPD, SP 1.1** (Establecer los procesos estándar), **OPF, SP 3.2** (Desplegar los procesos estándar)                              |
-|                              | Se comunica la actualización al equipo a través de Discord en el canal de "Procesos/experimentos". Se capacita a los involucrados si es necesario.                                                                                                                                                  | Miembro del equipo                     | -                                                                                                                                  |
-|                              | Se actualiza el historial de cambios, la versión, colaboradores y la fecha de última actualización del proceso.                                                                                                                                                                                     | Miembro del equipo                     | -                                                                                                                                  |
-| **Validación y seguimiento** | Se vuelve a corroborar que se cumpla con la <u>_[checklist de procesos](/docs/recursos/CL1-Checklist-Procesos)_</u>.                                                                                                                                                                                | SEPG de la meta específica relacionada | **PPQA, SP 1.1** (Evaluar objetivamente los procesos), **PPQA, SP 1.2** (Evaluar objetivamente los productos de trabajo)           |
-|                              | Se revisa el cambio implementado con una revisión entre pares. Se monitorea su efectividad en la siguiente iteración. Si el problema persiste, se reevalúa el ajuste.                                                                                                                               | SEPG de la meta específica relacionada | -                                                                                                                                  |
-|                              | Se reevalúa el riesgo en la matriz de riesgos.                                                                                                                                                                                                                                                      | SEPG de la meta específica relacionada | **RSKM, SP 3.2** (Implementar los planes de mitigación de riesgos), **RSKM, SP 2.2** (Evaluar, clasificar y priorizar los riesgos) |
+| Fase | Descripción | Responsable | Práctica específica del CMMI |
+|------|-------------|-------------|------------------------------|
+| **Seleccionar procesos a evaluar** | Identificación de los procesos ejecutados en la iteración. | Team Lead | — |
+| **Cargar lista de procesos** | Registro de procesos evaluados en el documento correspondiente. | Team Lead | — |
+| **Revisión con checklist** | Evaluación con checklist para validar correcta aplicación. | Equipo SEPG / Calidad | **PPQA SP 1.1** |
+| **Recopilación de hallazgos** | Documentación de problemas, observaciones u oportunidades de mejora. | Equipo SEPG / Calidad | **PPQA SP 1.2** |
+| **Decisión de acción** | En caso de no cumplimiento, decidir si se realiza acción correctiva o se modifica el proceso. Si se requiere una acción correctiva formal, se activa el proceso [PR18 - Proceso para acciones correctivas](/docs/procesos/PR18-Proceso-para-acciones-correctivas). | Equipo SEPG | **PPQA SP 1.1, 1.2** |
 
 ### Salidas
-
-1. Proceso actualizado.
-2. Historial de cambios reflejado en la documentación.
-3. Corrección validada y en funcionamiento.
-
-## Historial de Cambios
-
-| Autor                      | Descripción del cambio                    | Versión |
-| -------------------------- | ----------------------------------------- | ------- |
-| Valeria Zuñiga Mendoza     | Proceso inicial para acciones correctivas | 1.0     |
-| Paola María Garrido Montes | Proceso inicial para acciones correctivas | 1.0     |
+- Informe de evaluación.
