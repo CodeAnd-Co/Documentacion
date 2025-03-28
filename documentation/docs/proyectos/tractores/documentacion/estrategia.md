@@ -2,9 +2,9 @@
 title: Estrategia técnica TracTech
 ---
 
-**Versión 2.0**
+**Versión 2.1**
 
-**Última modificación**: 25 de marzo de 2025
+**Última modificación**: 27 de marzo de 2025
 
 ---
 
@@ -90,7 +90,7 @@ Documentar claramente las funcionalidades y código del sistema para lectura en 
 
 ### Backend desacoplado
 
-![alt text](/img/plantilla-diagrama-de-paquetes.png)
+![alt text](./diagrama-de-paquetes-backend-desacoplado.png)
 
 Este diagrama de paquetes representa la organización del backend alojado en la instancia del EC2. Se divide en varias secciones principales:
 
@@ -99,19 +99,15 @@ Este diagrama de paquetes representa la organización del backend alojado en la 
 Cada módulo contiene:
 
 - **Data**: Gestión de la base de datos, incluyendo modelos y repositorios.
-- **Controllers**: Manejo de solicitudes HTTP, estructurado en:
-  - `RoutesIndexes`: Punto de entrada de las rutas.
-  - `Routes`: Definición de rutas.
-  - `Controllers`: Implementación de la lógica de negocio.
+  - **Repositorios**: Abstracción de acceso de datos para separar la implementación de la lógica de negocio.
+  - **Modelos**: Definen las estructuras de datos de la aplicación (esquemas, clases).
+- **Rutas**: Definición de rutas.
+- **Controladores**: Implementación de la lógica de negocio.
 
 ### 2. Util
 
 - **Middlewares**: Funciones intermedias para procesar solicitudes.
-- **Services**: Lógica reutilizable independiente de los controladores.
-
-### 3. Views
-
-Como el backend alojado en la instancia del EC2 no tendrá vistas, no incluímos esa sección.
+- **Servicios**: Lógica reutilizable independiente de los controladores.
 
 ### 4. Pruebas Unitarias
 
@@ -124,7 +120,7 @@ Cada módulo puede incluir pruebas unitarias para garantizar su correcto funcion
 
 ### Aplicación local de electron
 
-![alt text](./diagrama%20de%20paquetes%20Electron-Diagrama_Paquetes.drawio.png)
+![alt text](./diagrama-de-paquetes-electron-diagrama_paquetes.png)
 
 Este diagrama de paquetes representa la organización de la app local de electron. Se divide en varias secciones principales:
 
@@ -136,19 +132,19 @@ Esta carpeta sigue una arquitectura basada en CLEAN con MVC.
 
   - **API**: Módulos para realizar llamadas a API's externas, si la aplicación lo necesita. Ej: Comunicación con el backend alojado en el EC2.
   - **Database**: Configuración de la base de datos y sus conexiones.
-  - **Models**: Definen las estructuras de datos de la aplicación (esquemas, clases).
-  - **Repositories**: Abstracción de acceso de datos para separar la implementación de la lógica de negocio.
+  - **Modelos**: Definen las estructuras de datos de la aplicación (esquemas, clases).
+  - **Repositorios**: Abstracción de acceso de datos para separar la implementación de la lógica de negocio.
 
 - **Domain**: Contiene la lógica de negocio pura de la aplicación.
 
-  - **Module**: Cada módulo tendrá su carpeta propia que contendrá:
+  - **Modulo**: Cada módulo tendrá su carpeta propia que contendrá:
     - **UseCases**: Define los casos de uso de la aplicación. Cada uno representa una operación clave.
-  - **Services**: Lógica reutilizable alrededor del proyecto.
+  - **Servicios**: Lógica reutilizable alrededor del proyecto.
 
 - **Presentation**: Define las rutas y controladores para interactuar con el frontend local. Cada módulo del proyecto tendrá su propia carpeta dentro de `Presentation`, que contendrá:
 
-  - **Routes**: Punto de entrada de las rutas y definición de las rutas de la API.
-  - **Controllers**: Implementación de la lógica que interactúa con los casos de uso.
+  - **Rutas**: Punto de entrada de las rutas y definición de las rutas de la API.
+  - **Controladores**: Implementación de la lógica que interactúa con los casos de uso.
 
 - **Archivo principal**:
 
@@ -158,8 +154,7 @@ Esta carpeta sigue una arquitectura basada en CLEAN con MVC.
 
 Esta carpeta se encarga de la interfaz de usuario y la interacción con el usuario.
 
-- **Views**: Son las interfaces que el usuario ve y con las que interactúa.
-- **ViewModels**: Contienen la lógica para manejar la UI y la comunicación con el backend local. Procesa los datos antes de comunicarlos a los Views.
+- **Vistas**: Son las interfaces que el usuario ve y con las que interactúa.
 - **Utils**: Funciones auxiliares que mejoran la eficiencia del código.
 - **Archivo principal**:
   - **index.js**: Punto de entrada de Electron.
@@ -183,3 +178,4 @@ Se encarga de la integración de la aplicación con ElectronJS
 |---------------------------------| ----------------------- |---------|
 | Daniel Contreras Chavez       | Primera versión de la estratégia técnica | 1.0     | 
 | Ian Julián Estrada Castro  | Se hizo el cambio del diagrama de paquetes de la aplicación local en electron  | 2.0     | 
+| Ian Julián Estrada Castro  | Se quitó ViewModels del diagrama de paquetes. Se actualizó diagrama de backend desacoplado. Se cambió a español  | 2.1     | 

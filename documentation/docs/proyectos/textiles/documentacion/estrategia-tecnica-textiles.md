@@ -14,7 +14,7 @@ title: Estrategia tecnica
 
 ---
 
-# Plantilla Estrategia tecnica
+# Estrategia tecnica
 
 ## Objetivo
 
@@ -38,6 +38,12 @@ Utilizaremos 3 ramas principales:
 - **Staging**: Rama pre-productiva usada para preparar el release de las versiones y realizar pruebas de aceptación.
 - **Develop**: Rama de desarrollo donde se mantiene la integración de todos los desarrollos del equipo.
 - **Feature**: Ramas temporales destinadas para el código de uno o varios developers que trabajan en una característica.
+
+## Estrategia de commits
+
+Se utilizaran los llamados **"conventional commits"**.
+
+Se puede encontrar la informacion de como crear los conventionals commits en este [link](https://www.conventionalcommits.org/en/v1.0.0/)
 
 ---
 
@@ -129,34 +135,146 @@ Cada módulo puede incluir pruebas unitarias para garantizar su correcto funcion
 
 ```
 
-## Descripción
-<!-- Explica brevemente qué cambios se han realizado y el propósito del PR. -->
+## Plantilla PR FrontEnd
 
-## ¿Qué se ha cambiado?
-<!-- Lista los cambios más importantes en este PR. -->
-- [ ] Cambio 1
-- [ ] Cambio 2
-- [ ] Cambio 3
+Última actualización 26/03/25
 
-## Capturas de pantalla (si aplica)
-<!-- Agrega capturas de pantalla o GIFs si los cambios incluyen UI/UX. -->
+---
 
-## Issue relacionado
-<!-- Enlaza el issue relacionado si aplica. Usa "Closes #XX" para cerrar el issue automáticamente. -->
-Closes #XX
+# Descripción
 
-## Checklist
-<!-- Asegúrate de completar esta lista antes de solicitar revisión. -->
-- [ ] Mi código sigue las normas del proyecto
-- [ ] He ejecutado pruebas y funcionan correctamente
-- [ ] La documentación ha sido actualizada si es necesario
+---
 
-## ¿Cómo probarlo?
-<!-- Instrucciones detalladas para que el revisor pueda probar los cambios. -->
-1. Ir a...
-2. Ejecutar...
-3. Verificar...
+## Tipo de cambio
 
+- [ ] Corrección de error (cambio no disruptivo que soluciona un problema)
+- [ ] Nueva función (cambio no disruptivo que agrega funcionalidad)
+- [ ] Cambio disruptivo (corrección o función que afecta la compatibilidad existente)
+- [ ] Este cambio requiere una actualización en la documentación
+- [ ] Camio mínimo (Visual o de bajo impacto, sin afectcar lógica )
+
+---
+
+# ¿Qué archivo fue el que modifiqué?
+
+Ejemplo:
+
+- Componente1.jsx
+- Estilos.css
+
+---
+
+# ¿Cómo se ha probado?
+
+Describe resumidamente cómo lo probaste y funciona. Ejemplo:
+
+- "Se probó manualmente en Chrome y Safari. Se validó que el botón 'Guardar' guarda correctamente la información y se muestra una alerta de éxito."
+  _En caso de cambio mínimo:_
+- "El cambio fue visualmente unicamente (color del boton). Se validó en los navegadores principales. No se requirieron pruebas funcionales."
+
+---
+
+### Cambios menores
+
+- [ ] Este PR realiza un cambio mínimo que no afecta la lógica del sistema
+- [ ] Se validó visualmente el componente afectado
+- [ ] No se realizaron pruebas unitarias porque no aplica
+
+---
+
+Versión: V1
+Rodrigo Antonio Benítez De La Portilla
+Arutro Sanchez Rodriguez
+
+```
+
+```
+## Plantilla PR BackEnd
+Última actualización 26/03/25
+
+---
+
+### Autores
+
+| Nombre                         | Rol   |
+| ------------------------------ | ----- |
+| Rodrigo Antonio Benítez De La Portilla          | Autor |
+| Arturo Sánchez Rodríguez | Autor |
+
+---
+
+# Descripción
+
+Incluye un resumen del cambio y el problema que se ha solucionado. También proporciona el contexto relevante y la motivación para este cambio. Lista cualquier dependencia requerida para esta modificación.
+
+---
+
+## Tipo de cambio
+
+- [ ] Corrección de error (fix sin romper funcionalidades existentes)
+- [ ] Nueva funcionalidad (feature sin romper funcionalidades existentes)
+- [ ] Cambio disruptivo (rompe compatibilidad o modifica comportamiento actual )
+- [ ] Actualización de documentación requerida
+- [ ] Cambio mínimo (cambio visual o estructural que no afecta la lógica del sistema)
+
+---
+
+# ¿Qué archivo fue el que modifique?
+Ejemplo:
+- UserController.js
+- api.js
+
+---
+
+# ¿Cómo se ha probado?
+Describe berevemente cómo se probó esta funcionalidad. Ejemplo:
+- "Se probaron los endpoints '/api/login' y '/api/profile' con Postman. Las respuestas fueron correctas y sin errores en consola."
+- "Se realizaron pruebas visuales/manuales. No se detectaron impactos en lógica ni funcionalidad."
+
+---
+
+# Notas para cambios menores
+- [ ] Este PR realiza un cambio mínimo que no afecta la lógica del sistema.
+- [ ] Se validó el comportamiento básico y no se detectaron efectos colaterales.
+- [ ] No se realizaron pruebas automatizadas porque no aplica
+
+---
+
+# Lista de verificación del autor
+
+- [ ] El código sigue las normas de estilo del proyecto
+- [ ] He realizado una autoevaluación del código
+- [ ] El código estña comentado en las secciones complejas o no obvias
+- [ ] Documentación actualizada aplica
+- [ ] El código no genera nuevas advertencias o errores
+- [ ] Se añadieron pruebas relevantes
+
+---
+
+# Lista de Verificación de Pruebas
+- [ ] Las pruebas unitarias nuevas y existentes pasan correctamente con mis cambios
+- [ ] Las pruebas de estrés nuevas y existentes pasan correctamente con mis cambios
+- [ ] Las pruebas de volumen nuevas y existentes pasan correctamente con mis cambios
+- [ ] Las pruebas de seguridad nuevas y existentes pasan correctamente con mis cambios
+- [ ] Las pruebas de conectividad nuevas y existentes pasan correctamente con mis cambios
+- [ ] Las pruebas de integración nuevas y existentes pasan correctamente con mis cambios
+- [ ] Las pruebas heurísticas nuevas y existentes pasan correctamente con mis cambios
+- [ ] Los cambios dependientes han sido combinados y publicados en los módulos descendentes
+
+---
+
+## Checklist del evaluador:
+
+- [ ] La descripción del Pull Request es clara y específica
+- [ ] No se introducen errores ni inconsistencias
+- [ ] Ortografía y gramática correctas en documentación
+- [ ] El código es entendible y cumple con los estándares
+- [ ] Notifiqué al autor del PR si encontré errores, dudas o sugerencias
+- [ ] (Si se aprueba) Procedo a eliminar la rama correspondiente
+
+---
+
+# Versión: V1
 ```
 
 ## CI / CD
