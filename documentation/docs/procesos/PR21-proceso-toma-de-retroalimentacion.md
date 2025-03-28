@@ -1,5 +1,5 @@
 ---
-title: PR21 Proceso de establecimiento de planes de acción para mejorar procesos.
+title: PR21 Proceso de toma de retroalimentación.
 sidebar_position: 21
 ---
 
