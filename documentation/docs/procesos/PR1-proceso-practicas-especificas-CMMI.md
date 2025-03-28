@@ -8,6 +8,8 @@ sidebar_position: 1
 **Última actualización:** 28 de marzo de 2025
 **Versión:** 2.1
 
+prueba
+
 ---
 
 ### Autores
