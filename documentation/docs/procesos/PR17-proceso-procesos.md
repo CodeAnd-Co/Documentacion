@@ -5,8 +5,8 @@ sidebar_position: 2
 
 # PR17 Proceso de generación de procesos
 
-**Última actualización:** 26 de marzo de 2025
-**Versión:** 2.0
+**Última actualización:** 27 de marzo de 2025
+**Versión:** 2.1
 
 ---
 
@@ -36,7 +36,7 @@ sidebar_position: 2
 
 | Fase                                   | Descripción                                                                                                                                                                                                                                                       | Responsable        | Meta y práctica específica del CMMI                                                                                        |
 | -------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------ | -------------------------------------------------------------------------------------------------------------------------- |
-| **Definición**                         | Utilizar la plantilla de formato base (añadir link) para describir el proceso. Incluir: objetivo, entrada y salidas del proceso.                                                                                                                                  | Miembro del equipo | **OPD, SP 1.1** (Establecer los procesos estándar)                                                                         |
+| **Definición**                         | Utilizar la <u>_[plantilla de formato base](/docs/recursos/plantilla-procesos)_</u> para describir el proceso. Incluir: objetivo, entrada y salidas del proceso.                                                                                                  | Miembro del equipo | **OPD, SP 1.1** (Establecer los procesos estándar)                                                                         |
 | **Métricas y criterios de aceptación** | Establecer las métricas de desempeño del proceso y los criterios de entrada. (Este bloque debe ser completado por el equipo PPQA).                                                                                                                                | Miembro del equipo | **MA, SP 1.2** (Especificar las medidas), **PPQA, SP 1.1** (Evaluar los procesos frente a los procedimientos establecidos) |
 | **Establecer los pasos**               | Identificar las fases y el flujo del proceso. Detallar, en orden de ejecución, las actividades y tareas correspondientes a cada fase.                                                                                                                             | Miembro del equipo | **OPD, SP 1.1** (Establecer los procesos estándar)                                                                         |
 | **Asignar responsables**               | Para cada fase del proceso, definir los responsables correspondientes y añadir la práctica específica del CMMI relacionada.                                                                                                                                       | Miembro del equipo | **OPD, SP 1.1** (Establecer los procesos estándar)                                                                         |
@@ -58,3 +58,4 @@ sidebar_position: 2
 | -------------------------- | ------------------------------------- | ------- |
 | Valeria Zuñiga Mendoza     | Proceso inicial para generar procesos | 2.0     |
 | Paola María Garrido Montes | Proceso inicial para generar procesos | 2.0     |
+| Valeria Zuñiga Mendoza     | Añadir la plantilla base de procesos  | 2.1     |
