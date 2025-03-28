@@ -5,7 +5,7 @@ sidebar_position: 20
 
 # PR20 Proceso de establecimiento de planes de acción para mejorar procesos.
 
-**Última actualización:** 26 de marzo de 2025.
+**Última actualización:** 27 de marzo de 2025.
 Versión: 1.0
 
 ---
