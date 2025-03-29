@@ -41,3 +41,9 @@ sidebar_position: 21
 - Mejoras registradas en la bitácora.
 - Mejoras implementadas en el Plan de Valor Ganado y el plan de iteración.
 - Supervisión documentada de la ejecución de mejoras.
+
+## Registro de cambios
+
+| Autor                           | Descripción del cambio                           | Versión |
+| -----------------------------   | ------------------------------------------------ | ------- |
+| Galo Alejandro del Rio Viggiano | Primera versión                                  | 1.0     |
