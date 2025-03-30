@@ -5,8 +5,8 @@ sidebar_position: 3
 
 # Proceso de Definición de SRS
 
-**Última actualización:** 25 de marzo de 2025
-**Versión:** 4.2
+**Última actualización:** 30 de marzo de 2025
+**Versión:** 4.3
 
 ## Autores
 
@@ -17,6 +17,7 @@ sidebar_position: 3
 | Angélica Ríos Cuentas   | Modificador |
 | Valeria Zuñiga Mendoza  | Modificador |
 | Angel Mauricio Ramirez  | Modificador |
+| Mariana Juárez Ramírez  | Modificador |
 
 ## Objetivo
 
@@ -63,3 +64,4 @@ Definir, documentar y validar los requisitos del software, asegurando su alineac
 | Angel Mauricio Ramirez  | Ahora abarca la obtención del SRS   | 4.0     |
 | Juan Pablo Chávez Leal  | Eliminación de práctica 3.3         | 4.1     |
 | Angélica Ríos Cuentas   | Definición de cuándo sacamos los requisitos y cómo decidimos qué requisitos aceptar | 4.2  |
+| Mariana Juárez Ramírez  | Se mapeó la práctica PP SP 3.3      | 4.3     |
