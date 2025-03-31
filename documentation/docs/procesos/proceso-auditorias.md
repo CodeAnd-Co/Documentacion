@@ -42,7 +42,7 @@ sidebar_position: 18
 | **Ejecución de auditoría** | Revisión con checklist de auditoría para verificar cumplimiento de criterios establecidos. | Team Lead / SEPG / Team Member | **PPQA SP 1.1** |
 | **Registro de hallazgos** | Documentación de desviaciones, observaciones y oportunidades de mejora sobre procesos y productos. | Team Lead / SEPG | **PPQA SP 1.2** |
 | **Revisión de hallazgos** | Validación y clasificación de hallazgos para determinar su impacto y acciones necesarias. | Team Lead / SEPG | **PPQA SP 1.2** |
-| **Decisión de acción** | Determinar si se requieren acciones correctivas o preventivas. En caso necesario, activar el [proceso para acciones correctivas](/documentation/docs/procesos/PR18-proceso-acciones-correctivas.md"). | Team Lead | **PPQA SP 1.1, 1.2** |
+| **Decisión de acción** | Determinar si se requieren acciones correctivas o preventivas. En caso necesario, activar el [proceso para acciones correctivas](/documentation/docs/procesos/PR18-proceso-acciones-correctivas.md). | Team Lead | **PPQA SP 1.1, 1.2** |
 
 ### Salidas
 - Informe de auditoría interna.
