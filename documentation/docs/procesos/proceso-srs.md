@@ -5,8 +5,8 @@ sidebar_position: 3
 
 # Proceso de Definición de SRS
 
-**Última actualización:** 25 de marzo de 2025
-**Versión:** 4.2
+**Última actualización:** 30 de marzo de 2025
+**Versión:** 4.3
 
 ## Autores
 
@@ -17,6 +17,7 @@ sidebar_position: 3
 | Angélica Ríos Cuentas   | Modificador |
 | Valeria Zuñiga Mendoza  | Modificador |
 | Angel Mauricio Ramirez  | Modificador |
+| Mariana Juárez Ramírez  | Modificador |
 
 ## Objetivo
 
@@ -36,6 +37,7 @@ Definir, documentar y validar los requisitos del software, asegurando su alineac
 | ----------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------ | ------------------------------------------------------------------------------------------------------------------- |
 | **Identificación de proveedores de requisitos** | Recolección de información de los proveedores apropiados de requisitos                                                                                                 | Equipo de producto | **REQM SP 1.1** (Comprender los requisitos)                                                                         |
 |                                                 | Generar una tabla con la información del proveedor, su rol, la autoridad que tiene, el tipo de requisitos que provee, y el método de comunicación que se tiene con él. | Product Owner      | **REQM SP 1.1** (Comprender los requisitos), **PP, SP 2.6** (Planificar la involucración de las partes interesadas) |
+|                                                 | Generar un documento que establezca y unifique los compromisos y responsabilidades asumidas por el cliente y por los miembros del proyecto respectivo. | Product Owner      | **PP, SP 3.3** (Identificar el soporte necesario y negociar los compromisos con las partes interesadas relevantes) |
 |                                                 | Durante las primeras 4 semanas realizar juntas con los provedores de requisitos usando el método de comunicación correspondiente para recopilar la información necesaria para definir requisitos.                           |       Product Owner      | **REQM SP 1.1** (Comprender los requisitos), **PP, SP 2.6** (Planificar la involucración de las partes interesadas) |
 | **Recopilación y Priorización**                 | En base a la información recopilada definir requisitos del proyecto respondiendo a las siguientes preguntas: ¿Contamos con el tiempo necesario para implementarlo? ¿Contamos con las capacidades técnicas para desarrollarlo? ¿Agrega valor al proyecto? ¿Se alinea con la necesidad del socio? ¿Es viable desarrollarlo? | Equipo de producto | **REQM SP 1.1** (Comprender los requisitos)                                                                         |
 |               | Revisar y organizar las historias de usuario según su relevancia y viabilidad.                                                                                         | Equipo de Producto | **RD, SP 1.1** (Conocer las necesidades de las partes interesadas)                                                  |
@@ -62,3 +64,4 @@ Definir, documentar y validar los requisitos del software, asegurando su alineac
 | Angel Mauricio Ramirez  | Ahora abarca la obtención del SRS   | 4.0     |
 | Juan Pablo Chávez Leal  | Eliminación de práctica 3.3         | 4.1     |
 | Angélica Ríos Cuentas   | Definición de cuándo sacamos los requisitos y cómo decidimos qué requisitos aceptar | 4.2  |
+| Mariana Juárez Ramírez  | Se mapeó la práctica PP SP 3.3      | 4.3     |
