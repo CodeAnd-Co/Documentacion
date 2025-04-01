@@ -51,7 +51,7 @@ Versión: 1.1
 
 ## Registro de cambios
 
-| Autor                         | Descripción del cambio             | Versión |
-| ----------------------------- | ---------------------------------- | ------- |
-| Carlos Iván Fonseca Mondragón | Creación del documento             | 1.0     |
-| Carlos Iván Fonseca Mondragón | Cambio de título y de dependencias | 1.1     |
+| Autor                         | Descripción del cambio              | Versión |
+| ----------------------------- | ----------------------------------- | ------- |
+| Carlos Iván Fonseca Mondragón | Creación del documento              | 1.0     |
+| Carlos Iván Fonseca Mondragón | Cambio de título y de dependenciasç | 1.1     |
