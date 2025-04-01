@@ -5,8 +5,8 @@ sidebar_position: 17
 
 # PR18 Proceso para acciones correctivas
 
-**Última actualización:** 26 de marzo de 2025
-**Versión:** 1.0
+**Última actualización:** 31 de marzo de 2025
+**Versión:** 1.1
 
 ---
 
@@ -57,3 +57,4 @@ sidebar_position: 17
 | -------------------------- | ----------------------------------------- | ------- |
 | Valeria Zuñiga Mendoza     | Proceso inicial para acciones correctivas | 1.0     |
 | Paola María Garrido Montes | Proceso inicial para acciones correctivas | 1.0     |
+| Ian Julián Estrada Castro  | Se agregó enlace y práctica OPD SP 1.3    | 1.1     |
