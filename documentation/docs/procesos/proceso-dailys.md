@@ -3,7 +3,7 @@ title: PR19 Proceso para Dailys
 sidebar_position: 18
 ---
 
-# Proceso para Dailys
+# PR19: Proceso para Dailys
 
 ## Autores
 
@@ -11,7 +11,7 @@ sidebar_position: 18
 |---------------------------|-------|
 | Arturo Sánchez Rodríguez | Autor |
 | Juan Pablo Chávez Leal   | Modificador |
-| Daniel COntreras Chávez  | Modificador |
+| Daniel Contreras Chávez  | Modificador |
 
 ## Objetivo
 
@@ -30,7 +30,7 @@ sidebar_position: 18
 |--------------------------|-------------|--------------|--------------------------------------|
 | **Inicio** | Puntualidad iniciando a cierta hora y durando máximo 15 minutos. | Facilitador | PMC SP 1.1 - Monitorear el progreso contra el plan |
 | **Monitoreo y gestión del tiempo** | Controlar el tiempo de cada Daily y asegurar que la Daily no supere los 15 minutos y evaluar si la reunión está cumpliendo su propósito. | Facilitador | PMC SP 1.5 - Asegurar que el trabajo sigue el plan establecido |
-| **Turno de cada miembro** | Responder a las preguntas clave:<br> - ¿Qué hice ayer?<br> - ¿Qué haré hoy?<br> - ¿Tengo algún impedimento? | Todo el equipo | PMC SP 1.2 - Proporcionar visibilidad sobre el estado del trabajo |
+| **Turno de cada miembro** | Responder a las preguntas clave: - ¿Qué hice ayer? - ¿Qué haré hoy? - ¿Tengo algún impedimento? | Todo el equipo | PMC SP 1.2 - Proporcionar visibilidad sobre el estado del trabajo |
 | **Identificación de bloqueos** | Detectar problemas de avance (no resolver en la Daily, agendarlo para su resolución). | Facilitador | PMC SP 1.3 - Monitorear los riesgos del proyecto |
 | **Priorizar bloqueos** | Si se identificaron bloqueos, se deberán organizar para su resolución posteriormente. | Team Leader | PMC SP 1.4 - Gestionar problemas identificados |
 | **Seguimiento de bloqueos** | Revisar bloqueos registrados en la Daily y confirmar su resolución. | Team Leader | PMC SP 1.4 - Gestionar problemas identificados |
