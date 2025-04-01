@@ -1,12 +1,12 @@
 ---
-title: PR20 Proceso de establecimiento de planes de acción para mejorar procesos.
+title: PR20 Proceso de establecimiento de planes de mejora
 sidebar_position: 20
 ---
 
-# PR20 Proceso de establecimiento de planes de acción para mejorar procesos.
+# PR20 Proceso de establecimiento de planes de mejora
 
-**Última actualización:** 27 de marzo de 2025.
-Versión: 1.0
+**Última actualización:** 31 de marzo de 2025.
+Versión: 1.1
 
 ---
 
@@ -34,7 +34,7 @@ Versión: 1.0
 
 | **Fase**                                     | **Descripción**                                                                                                                                                                                                                   | **Responsable**                       | **Meta y práctica específica del CMMI** |
 | -------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------- | --------------------------------------- |
-| **Identificación de estrategias y acciones** | Identificar estrategias, aproximaciones y acciones para tratar las mejoras de procesos identificadas. Se debe evaluar la viabilidad de los cambios. En caso de ser necesario, realizar pruebas piloto antes de su implementación. | Comité de dirección, Grupo de proceso | **OPF, SP 2.1**                         |
+| **Identificación de estrategias y acciones** | Identificar estrategias, aproximaciones y acciones para tratar las mejoras de procesos identificadas. Se debe evaluar la viabilidad de los cambios. En caso de ser necesario, realizar pruebas piloto antes de su implementación. | Comité de dirección, Grupo de proceso | **OPF, SP 1.3 OPF, SP 2.1**             |
 | **Creación de equipos de acción de proceso** | Establecer equipos responsables de implementar las acciones de proceso. Incluir a propietarios del proceso y profesionales involucrados en su ejecución.                                                                          | Grupo de proceso                      | **OPF, SP 2.1**                         |
 | **Documentación del plan**                   | Elaborar el plan de acción de proceso, incluyendo: infraestructura, objetivos, mejoras a tratar, planificación y seguimiento, recursos, estrategias de pilotaje, riesgos y métodos de medición de eficacia.                       | Equipos de acción de proceso          | **OPF, SP 2.1. MA, SP 1.2**             |
 | **Revisión y negociación**                   | Revisar y negociar el plan de acción con las partes interesadas para asegurar compromiso y viabilidad.                                                                                                                            | Comité de dirección, Grupo de proceso | **OPF, SP 2.1. PPQA, SP 1.1**           |
@@ -51,6 +51,7 @@ Versión: 1.0
 
 ## Registro de cambios
 
-| Autor                         | Descripción del cambio | Versión |
-| ----------------------------- | ---------------------- | ------- |
-| Carlos Iván Fonseca Mondragón | Creación del documento | 1.0     |
+| Autor                         | Descripción del cambio             | Versión |
+| ----------------------------- | ---------------------------------- | ------- |
+| Carlos Iván Fonseca Mondragón | Creación del documento             | 1.0     |
+| Carlos Iván Fonseca Mondragón | Cambio de título y de dependencias | 1.1     |
