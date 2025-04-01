@@ -5,6 +5,8 @@ sidebar_position: 18
 
 # PR19: Proceso para Dailys
 
+**Última actualización** 1 de Abril de 2025
+
 ## Autores
 
 | Nombre                    | Rol   |
@@ -28,12 +30,12 @@ sidebar_position: 18
 
 | Fase                     | Descripción | Responsables | Meta y práctica específica del CMMI |
 |--------------------------|-------------|--------------|--------------------------------------|
-| **Inicio** | Puntualidad iniciando a cierta hora y durando máximo 15 minutos. | Facilitador | PMC SP 1.1 - Monitorear el progreso contra el plan |
-| **Monitoreo y gestión del tiempo** | Controlar el tiempo de cada Daily y asegurar que la Daily no supere los 15 minutos y evaluar si la reunión está cumpliendo su propósito. | Facilitador | PMC SP 1.5 - Asegurar que el trabajo sigue el plan establecido |
+| **Inicio** | Puntualidad iniciando a cierta hora y durando máximo 15 minutos. | Facilitador |  |
+| **Monitoreo y gestión del tiempo** | Controlar el tiempo de cada Daily y asegurar que la Daily no supere los 15 minutos y evaluar si la reunión está cumpliendo su propósito. | Facilitador | PMC SP 1.5 - Asegurar que el trabajo sigue el plan establecido, **PMC, SP 1.1**(Monitorizar los parámetros de planificación del proyecto) |
 | **Turno de cada miembro** | Responder a las preguntas clave: - ¿Qué hice ayer? - ¿Qué haré hoy? - ¿Tengo algún impedimento? | Todo el equipo | PMC SP 1.2 - Proporcionar visibilidad sobre el estado del trabajo |
-| **Identificación de bloqueos** | Detectar problemas de avance (no resolver en la Daily, agendarlo para su resolución). | Facilitador | PMC SP 1.3 - Monitorear los riesgos del proyecto |
-| **Priorizar bloqueos** | Si se identificaron bloqueos, se deberán organizar para su resolución posteriormente. | Team Leader | PMC SP 1.4 - Gestionar problemas identificados |
-| **Seguimiento de bloqueos** | Revisar bloqueos registrados en la Daily y confirmar su resolución. | Team Leader | PMC SP 1.4 - Gestionar problemas identificados |
+| **Identificación de bloqueos** | Detectar problemas de avance (no resolver en la Daily, agendarlo para su resolución). | Facilitador | PMC SP 1.3 - Monitorear los riesgos del proyecto, **PMC, SP 1.1**(Monitorizar los parámetros de planificación del proyecto) |
+| **Priorizar bloqueos** | Si se identificaron bloqueos, se deberán organizar para su resolución posteriormente. | Team Leader | PMC SP 1.4 - Gestionar problemas identificados, **PMC, SP 1.1**(Monitorizar los parámetros de planificación del proyecto) |
+| **Seguimiento de bloqueos** | Revisar bloqueos registrados en la Daily y confirmar su resolución. | Team Leader | PMC SP 1.4 - Gestionar problemas identificados, **PMC, SP 1.1**(Monitorizar los parámetros de planificación del proyecto) |
 | **Cierre** | Confirmar el objetivo del día y verificar que los miembros del equipo tengan claro su plan de trabajo. | Todo el equipo | PMC SP 1.5 - Asegurar que el trabajo sigue el plan establecido |
 
 ## Salidas
@@ -49,3 +51,8 @@ sidebar_position: 18
 2. Cantidad de impedimentos identificados y resueltos.
 3. Asistencia: ¿Todos participaron?
 4. Eficiencia de seguimiento: porcentaje de problemas detectados en una Daily resueltos antes de la siguiente Daily.
+
+| Autor                   | Descripción del cambio              | Versión |
+| ----------------------- | ----------------------------------- | ------- |
+| Juan Pablo Chávez Leal  | Adición de prácticas específicas PMC | 1.1 |
+| Daniel Contreras Chávez | Adición de prácticas específicas PMC | 1.1 |
