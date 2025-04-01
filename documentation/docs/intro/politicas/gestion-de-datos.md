@@ -134,5 +134,3 @@ Para garantizar el cumplimiento de esta política, se implementarán mecanismos 
 | Autor                        | Descripción del cambio            | Versión |
 | ---------------------------- | --------------------------------- | ------- |
 | Juan Eduardo Rosas Cerón     | Se quitaron las Salidas           | 1.1     |
-| Juan Carlos Calderón García  | Se quitaron las Salidas           | 1.1     |
-| Pablo Hazael Hurtado Mireles | Se quitaron las Salidas           | 1.1     |
