@@ -5,8 +5,8 @@ sidebar_position: 16
 
 # PR19 Proceso para auditorías internas
 
-**Última actualización:** 27 de marzo de 2025  
-**Versión:** 2.0
+**Última actualización:** 1 de abril de 2025  
+**Versión:** 2.1
 
 ---
 
@@ -16,6 +16,8 @@ sidebar_position: 16
 | --------------------------- | ----- |
 | Mauricio Anguiano Juarez    | Autor |
 | Juan Carlos Calderón García | Autor |
+| Daniel Contreras Chávez     | Modificador |
+| Juan Pablo Chávez Leal      | Modificador |
 
 ---
 
@@ -40,7 +42,7 @@ sidebar_position: 16
 |------|-------------|-------------|------------------------------|
 | **Planificación de auditoría** | Identificación de procesos y/o productos de trabajo sujetos a auditoría durante la iteración. | Team Lead / SEPG | **PPQA SP 1.1** |
 | **Ejecución de auditoría** | Revisión con checklist de auditoría para verificar cumplimiento de criterios establecidos. | Team Lead / SEPG / Team Member | **PPQA SP 1.1** |
-| **Registro de hallazgos** | Documentación de desviaciones, observaciones y oportunidades de mejora sobre procesos y productos. | Team Lead / SEPG | **PPQA SP 1.2** |
+| **Registro de hallazgos** | Documentación de desviaciones, observaciones y oportunidades de mejora sobre procesos y productos. | Team Lead / SEPG | **PPQA SP 1.2**, **PMC SP 1.1** |
 | **Revisión de hallazgos** | Validación y clasificación de hallazgos para determinar su impacto y acciones necesarias. | Team Lead / SEPG | **PPQA SP 1.2** |
 | **Decisión de acción** | Determinar si se requieren acciones correctivas o preventivas. En caso necesario, activar el [proceso para acciones correctivas](/docs/procesos/PR18-proceso-acciones-correctivas.md). | Team Lead | **PPQA SP 1.1, 1.2** |
 
@@ -54,3 +56,4 @@ sidebar_position: 16
 |---------|-------------------------|---------|
 |Mauricio Anguiano Juarez| Cambio de proceso a proceso de auditorias | 2.0 |
 |Juan Carlos Calderón García | Cambio de proceso a proceso de auditorias | 2.0 |
+| Daniel C y Juan Pablo C | Adición de SP 1.1 de PMC | 2.1
