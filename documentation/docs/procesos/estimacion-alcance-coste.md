@@ -5,7 +5,7 @@ sidebar_position: 2
 
 # Estimación de alcance, esfuerzo y coste del proyecto (WBS)
 
-**Última actualización:** 7 de marzo de 2025
+**Última actualización:** 1 de abril de 2025
 
 ---
 
@@ -15,7 +15,8 @@ sidebar_position: 2
 | -------------------------- | ----- |
 | Diego Isaac Fuentes Juvera | Autor |
 | Daniel Queijeiro Albo      | Autor |
-
+| Daniel Contreras Chávez    | Modificador |
+| Juan Pablo Chávez Leal     | Modificador |
 ---
 
 ### Objetivo
@@ -41,8 +42,8 @@ sidebar_position: 2
 |                           | Separar cada fase en paquetes de entregables necesarios para cumplir con la fase.                                                                                                                                                                                                                                                                                                                                                               | Team Leader   | **PP 1.2**                          |
 |                           | Dividir cada paquete en entregables específicos.                                                                                                                                                                                                                                                                                                                                                                                                | Team Leader   | **PP 1.2**                          |
 |                           | Generar un diagrama jerárquico con todos los componentes identificados.                                                                                                                                                                                                                                                                                                                                                                         | Team Leader   | **PP 1.4**                          |
-| **Planes de soporte**     | Generar un plan de proyecto según el proceso<u>_[guía para generar un plan de proyecto](https://codeandco-wiki.netlify.app/docs/procesos/proceso-plan-proyecto/)_</u> donde se incluyen la definición de riesgos y sus tareas de mitigación, tareas para los entregables y las actividades de soporte, tareas para la adquisición de habilidades y conocimiento y tareas para integrar y gestionar elementos fuera del desarrollo, entre otras. | Team Leader   | **PP 1.1, PP 2.1, PP 2.7**          |
-|                           | Generar el resto de planes de soporte necesarios. Ej.: Plan de configuración, plan de calidad, plan de verificación.                                                                                                                                                                                                                                                                                                                            | Team Leader   | **PP 2.3**                          |
+| **Planes de soporte**     | Generar un plan de proyecto según el proceso [*para generar un plan de proyecto*](https://codeandco-wiki.netlify.app/docs/procesos/proceso-plan-proyecto/) donde se incluyen la definición de riesgos y sus tareas de mitigación, tareas para los entregables y las actividades de soporte, tareas para la adquisición de habilidades y conocimiento y tareas para integrar y gestionar elementos fuera del desarrollo, entre otras. | Team Leader   | **PP 1.1, PP 2.1, PP 2.7, PMC 1.1**          |
+|                           | Generar el resto de planes de soporte necesarios. Ej.: Plan de configuración, plan de calidad, plan de verificación.                                                                                                                                                                                                                                                                                                                            | Team Leader   | **PP 2.3, PMC  1.1**                          |
 | **Integración y gestión** | Definir tareas y entregables necesarios para complementar lo generado en la fase de desarrollo. Ej.: Manuales de usuario                                                                                                                                                                                                                                                                                                                        | Team Leader   | **PP 3.1**                          |
 
 ### Salidas
@@ -61,3 +62,4 @@ sidebar_position: 2
 | Autor                         | Descripción del cambio                 | Versión |
 | ----------------------------- | -------------------------------------- | ------- |
 | Carlos Iván Fonseca Mondragón | Correcciones de ortografía y redacción | 1.1     |
+| Daniel C. y Juan Pablo C.     | Agregar práctica de PMC 1.1            | 1.2     |
