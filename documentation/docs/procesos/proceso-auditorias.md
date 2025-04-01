@@ -1,6 +1,6 @@
 ---
 title: PR17 Proceso para auditorías internas
-sidebar_position: 18
+sidebar_position: 16
 ---
 
 # PR19 Proceso para auditorías internas

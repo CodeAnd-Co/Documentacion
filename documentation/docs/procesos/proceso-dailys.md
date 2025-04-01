@@ -1,3 +1,8 @@
+---
+title: PR19 Proceso para Dailys
+sidebar_position: 18
+---
+
 # Proceso para Dailys
 
 ## Autores
@@ -5,6 +10,8 @@
 | Nombre                    | Rol   |
 |---------------------------|-------|
 | Arturo Sánchez Rodríguez | Autor |
+| Juan Pablo Chávez Leal   | Modificador |
+| Daniel COntreras Chávez  | Modificador |
 
 ## Objetivo
 
