@@ -98,3 +98,4 @@ Esto se hace en la documentación del pull request.
 | Autor                          | Descripción del cambio                 | Versión |
 | ------------------------------ | -------------------------------------- | ------- |
 | Galo Alejandro del Río Vigiano | Primera versión del estándar           | 1.0     |
+| Ian Julián Estrada Castro      | Primera versión del estándar           | 1.0     |
