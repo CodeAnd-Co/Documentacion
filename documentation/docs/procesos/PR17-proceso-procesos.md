@@ -1,12 +1,12 @@
 ---
-title: PR17 Proceso de generación de procesos
-sidebar_position: 2
+title: PR0 Proceso de generación de procesos
+sidebar_position: 0
 ---
 
-# PR17 Proceso de generación de procesos
+# PR0 Proceso de generación de procesos
 
-**Última actualización:** 27 de marzo de 2025
-**Versión:** 2.1
+**Última actualización:** 01 de Abril de 2025
+**Versión:** 2.2
 
 ---
 
@@ -16,6 +16,7 @@ sidebar_position: 2
 | -------------------------- | ----- |
 | Valeria Zúñiga Mendoza     | Autor |
 | Paola María Garrido Montes | Autor |
+| Juan Pablo Chávez Leal     | Modificador |
 
 ---
 
@@ -59,3 +60,4 @@ sidebar_position: 2
 | Valeria Zuñiga Mendoza     | Proceso inicial para generar procesos | 2.0     |
 | Paola María Garrido Montes | Proceso inicial para generar procesos | 2.0     |
 | Valeria Zuñiga Mendoza     | Añadir la plantilla base de procesos  | 2.1     |
+| Juan Pablo Chávez Leal     | Cambios de lógica para docusaurus     | 2.2     |
