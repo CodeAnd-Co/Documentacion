@@ -11,7 +11,7 @@ Explicar el funcionamiento de la integración de pagos utilizando **Mercado Pago
 
 ---
 
-#  Documentación Técnica: Integración con Mercado Pago - Checkout Pro
+#  Documentación Integración con Mercado Pago utilizando Checkout Pro
 
 ##  Objetivo
 Implementar una integración con **Mercado Pago Checkout Pro** que permita a los usuarios pagar productos desde el frontend, generando una preferencia de pago desde el backend.
