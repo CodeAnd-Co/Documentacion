@@ -58,9 +58,9 @@ Los requisitos no funcionales establecen las expectativas en términos de tiempo
 
 ### Historial de cambios
 
-| Tipo de Versión | Descripción             | Fecha    | Colaborador                            |
-| --------------- | ----------------------- | -------- | -------------------------------------- |
-| 1.0             | Creación de Descripción | 6/3/2025 | Ángel Mauricio Ramírez Herrera         |
-| 1.1             | Modificación Roles      | 3/4/2025 | Rodrigo Antonio Benítez De La Portilla |
+| Tipo de Versión | Descripción                            | Fecha    | Colaborador                            |
+| --------------- | -------------------------------------- | -------- | -------------------------------------- |
+| 1.0             | Creación de Requisitos No funcionales  | 6/3/2025 | Ángel Mauricio Ramírez Herrera         |
+| 1.1             | Modificación Requisitos No funcionales | 3/4/2025 | Rodrigo Antonio Benítez De La Portilla |
 
 ---
