@@ -759,7 +759,622 @@ Este seria nuestro controlador que nos regresa un ur json con los mensajes de si
 
 De esta manera, podemos tanto subir y ver archivos de S3
 
+# Creacion del frontend del proyecto
 
+## Componente para el formulario de login
+
+Primero tenemos que instalar una libreria muy importante que se usara en todo el proyecto
+
+```
+npm install axios
+```
+
+Esta libreria nos ayuda a hacer peticiones https, como las peticiones post y get
+
+Tambien tenemos que instalar las librerias para los componentes estilizados de material ui
+
+```
+npm install @mui/styled-engine-sc @mui/material @emotion/styled @emotion/react
+```
+
+Estas son las librerias necesarias para poder utilizar los componentes de MUI
+
+Ahora creamos nuestor component llamado `LoginForm` adentro del archivo `LoginForm.jsx`
+
+```js
+
+<Box
+      display='flex'
+      justifyContent='center'
+      alignItems='center'
+      minHeight='90vh'
+      bgcolor='#fffff'
+    >
+      <Card sx={{ width: 400, padding: 3, boxShadow: 3 }}>
+        <CardHeader
+          title='Welcome Back'
+          subheader='Enter your details to sign in'
+          sx={{ textAlign: "center" }}
+        />
+        <CardContent>
+          <form onSubmit={handleSubmit}>
+            <TextField
+              fullWidth
+              label='Name'
+              variant='outlined'
+              margin='normal'
+              value={name}
+              onChange={(event) => setName(event.target.value)}
+              required
+            />
+            <TextField
+              fullWidth
+              label='Email'
+              type='email'
+              variant='outlined'
+              margin='normal'
+              value={email}
+              onChange={(event) => setEmail(event.target.value)}
+              required
+            />
+            <TextField
+              fullWidth
+              label='Password'
+              type='password'
+              variant='outlined'
+              margin='normal'
+              value={password}
+              onChange={(event) => setPassword(event.target.value)}
+              required
+            />
+            {message && (
+              <Typography
+                color={message.includes("successful") ? "green" : "red"}
+                textAlign='center'
+                mt={1}
+              >
+                {message}
+              </Typography>
+            )}
+            <CardActions>
+              <Button
+                type='submit'
+                variant='contained'
+                fullWidth
+                sx={{ mt: 2 }}
+              >
+                Sign In
+              </Button>
+            </CardActions>
+          </form>
+          {/* Register Button */}
+          <Stack
+            direction='row'
+            justifyContent='center'
+            alignItems='center'
+            mt={2}
+          >
+            <Typography variant='body2'>Don't have an account?</Typography>
+            <Button
+              onClick={() => navigate("/register")}
+              variant='text'
+              sx={{ ml: 1 }}
+            >
+              Register
+            </Button>
+          </Stack>
+        </CardContent>
+      </Card>
+    </Box>
+  );
+```
+
+En este componente necesitamos la funcion encargada de hacer la logica una vez que se presiona el boton
+
+```js
+const handleSubmit = async (event) => {
+  event.preventDefault();
+  const data = { email, password, name };
+
+  try {
+    await axios.post(`${API_URL}/api/login`, data, {
+      withCredentials: true,
+      headers: { "x-api-key": "api-key" }, // Ensures cookies are sent/received
+    });
+
+    // Send request with credentials enabled
+    const response = await axios.get(`${API_URL}/api/auth/me`, {
+      withCredentials: true,
+      headers: { "x-api-key": "api-key" },
+    });
+
+    setUser(response.data.user);
+
+    setMessage("Login successful");
+
+    // Redirect after successful login
+    setTimeout(() => navigate("/home"), 1000); // Redirect after 1 second
+  } catch (error) {
+    console.error("Error:", error);
+    setMessage("An error occurred");
+  }
+};
+```
+
+Tambien tenemos que definir las variables de estado
+
+```js
+const [email, setEmail] = useState("");
+const [password, setPassword] = useState("");
+const [name, setName] = useState("");
+const [message, setMessage] = useState("");
+const navigate = useNavigate();
+const { setUser } = useAuth();
+```
+
+A diferencia de el backend donde se usaba la linea `process.env.Variable`, en react se utiliza de esta manera
+
+```js
+const API_URL = import.meta.env.VITE_API_URL;
+```
+
+De esta manera podemos recibir el URL de nuestra api
+
+Ahora ya tenemos nuestro componente de login creado
+
+## Componente para el formulario de registro
+
+Crear el componente de registro es similar al componente de login, sigue la misma logica, solo que en lugar de mandar una peticion a la ruta de login, se hace a la ruta de registrar
+
+```js
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import axios from "axios";
+import {
+  TextField,
+  Button,
+  Card,
+  CardContent,
+  CardHeader,
+  CardActions,
+  Typography,
+  Box,
+  FormControlLabel,
+  Checkbox,
+} from "@mui/material";
+
+const API_URL = import.meta.env.VITE_API_URL;
+
+export default function RegisterForm() {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [name, setName] = useState("");
+  const [message, setMessage] = useState("");
+  const [termsAccepted, setTermsAccepted] = useState(false); // New state for checkbox
+  const navigate = useNavigate(); // Initialize the navigate function
+
+  const handelSubmit = async (event) => {
+    event.preventDefault();
+
+    if (!termsAccepted) {
+      setMessage("You must accept the terms and conditions.");
+      return;
+    }
+
+    const data = { email, password, name };
+
+    try {
+      const response = await axios.post(`${API_URL}/api/register`, data, {
+        withCredentials: true,
+        headers: { "x-api-key": "api-key" },
+      });
+      setMessage(response.data.message);
+
+      // Redirect to login page after successful registration
+      setTimeout(() => navigate("/login"), 1000); // Redirect to login after 1 second
+    } catch (error) {
+      console.log("Error:", error);
+      setMessage("An error occurred during registration.");
+    }
+  };
+
+  return (
+    <Box
+      display='flex'
+      justifyContent='center'
+      alignItems='center'
+      minHeight='90vh'
+      bgcolor='#fffff'
+    >
+      <Card sx={{ width: 400, padding: 3, boxShadow: 3 }}>
+        <CardHeader
+          title='Create an Account'
+          subheader='Enter your details to sign up'
+          sx={{ textAlign: "center" }}
+        />
+        <CardContent>
+          <form onSubmit={handelSubmit}>
+            <TextField
+              fullWidth
+              label='Name'
+              variant='outlined'
+              margin='normal'
+              value={name}
+              onChange={(event) => setName(event.target.value)}
+              required
+            />
+            <TextField
+              fullWidth
+              label='Email'
+              type='email'
+              variant='outlined'
+              margin='normal'
+              value={email}
+              onChange={(event) => setEmail(event.target.value)}
+              required
+            />
+            <TextField
+              fullWidth
+              label='Password'
+              type='password'
+              variant='outlined'
+              margin='normal'
+              value={password}
+              onChange={(event) => setPassword(event.target.value)}
+              required
+            />
+            <FormControlLabel
+              control={
+                <Checkbox
+                  checked={termsAccepted}
+                  onChange={(event) => setTermsAccepted(event.target.checked)}
+                  color='primary'
+                  sx={{ "& .MuiSvgIcon-root": { fontSize: 18 } }} // Smaller checkbox
+                />
+              }
+              label={
+                <Typography variant='body2' sx={{ fontSize: "0.75rem" }}>
+                  I agree to the{" "}
+                  <a
+                    href='/terms-of-service'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                    style={{ fontSize: "0.75rem" }}
+                  >
+                    Terms of Service
+                  </a>{" "}
+                  and{" "}
+                  <a
+                    href='/privacy-policy'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                    style={{ fontSize: "0.75rem" }}
+                  >
+                    Privacy Policy
+                  </a>
+                </Typography>
+              }
+            />
+            {message && (
+              <Typography
+                color={message.includes("successful") ? "green" : "red"}
+                textAlign='center'
+                mt={2}
+              >
+                {message}
+              </Typography>
+            )}
+            <CardActions>
+              <Button
+                type='submit'
+                variant='contained'
+                fullWidth
+                sx={{ mt: 2 }}
+              >
+                Create Account
+              </Button>
+            </CardActions>
+          </form>
+        </CardContent>
+        <div style={{ textAlign: "center", marginBottom: "16px" }}>
+          <Typography
+            variant='body2'
+            color='textSecondary'
+            sx={{ fontSize: "0.75rem" }}
+          >
+            Already have an account?{" "}
+            <Button
+              onClick={() => navigate("/login")}
+              variant='text'
+              sx={{ fontSize: "0.75rem" }}
+            >
+              Sign In
+            </Button>
+          </Typography>
+        </div>
+      </Card>
+    </Box>
+  );
+}
+```
+
+Con el componente de registro creado, ahora podemos acceder de manera normal sistema, ya que ya podemos hacer el login con nuestras credenciales
+
+## Otros componentes
+
+### Componente de home
+
+Este es el componente al que se redirige una vez se hace login
+
+```js
+import { Link, useNavigate } from "react-router-dom";
+import { useAuth } from "./AuthProvider";
+import axios from "axios";
+import Button from "@mui/material/Button";
+import { useState } from "react";
+
+const API_URL = import.meta.env.VITE_API_URL;
+
+function Home() {
+  const { user, logout } = useAuth();
+  const [imageUrl, setImageUrl] = useState(null);
+  const navigate = useNavigate();
+
+  const handleLogout = async () => {
+    await axios.post(
+      `${API_URL}/api/logout`,
+      {},
+      { withCredentials: true, headers: { "x-api-key": "api-key" } }
+    );
+    logout();
+    navigate("/login");
+  };
+
+  const handleGetImage = async () => {
+    try {
+      const response = await axios.get(
+        `${API_URL}/s3/images/1740439302693-f210cf52db93505f5be2c4e5f477504e.jpg`,
+        {},
+        { withCredentials: true, headers: { "x-api-key": "api-key" } }
+      );
+
+      const url = response.data.url;
+      setImageUrl(url);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  return (
+    <div>
+      <h1>Welcome to My React App</h1>
+      <nav>
+        <Button variant='contained'>
+          <Link to='/upload'>Upload</Link>
+        </Button>
+      </nav>
+
+      <Button variant='contained' onClick={handleGetImage}>
+        Obtener imagen de S3
+      </Button>
+
+      {imageUrl && (
+        <div className='image-container'>
+          <img src={imageUrl} alt='Product' />
+        </div>
+      )}
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+
+      <button onClick={handleLogout}>Logout</button>
+    </div>
+  );
+}
+
+export default Home;
+```
+
+Este componente es muy sencillo, ya que solamente tenemos 4 botones, uno que nos redirige a la pagina para subir un archiv, un boton que obtiene una imagen de s3 y la despliega, y un boton para hacer logout.
+
+### Componente de upload
+
+Para nuestra pagina que nos deja subir un archivo utilizaremos este componente
+
+```js
+import axios from "axios";
+import { useState } from "react";
+import Cookies from "js-cookie";
+
+const API_URL = import.meta.env.VITE_API_URL;
+
+export default function Upload() {
+  const [file, setFile] = useState(null);
+
+  const handleFileChange = (event) => {
+    setFile(event.target.files[0]); // Store the selected file
+  };
+
+  const handleUpload = async () => {
+    if (!file) {
+      alert("Please select a file first.");
+      return;
+    }
+
+    const formData = new FormData();
+    formData.append("file", file); // Key should match backend expectation
+
+    try {
+      const response = await axios.post(`${API_URL}/s3/upload`, formData, {
+        headers: {
+          "Content-Type": "multipart/form-data",
+          "x-api-key": "api-key",
+        },
+        withCredentials: true,
+      });
+
+      alert("File uploaded successfully!");
+      console.log(response.data);
+    } catch (error) {
+      console.error("Error uploading file:", error);
+    }
+  };
+
+  return (
+    <div>
+      <input type='file' onChange={handleFileChange} />
+      <button onClick={handleUpload}>Upload File</button>
+    </div>
+  );
+}
+```
+
+Como podemos ver simplemente nos pide escoger un archivo local, y lo envia al endpoint que creamos para poder subir ese archivo
+
+### AuthProvider
+
+Este componente es muy importante, ya que es lo que hace que nuestras rutas esten protegidasm y que se tenga que hacer login antes de utilizar las paginas
+
+Este componente se divide en 3 partes
+
+#### Custom hook useAuth
+
+```js
+import { createContext, useContext, useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
+import axios from "axios";
+
+const API_URL = import.meta.env.VITE_API_URL;
+const AuthContext = createContext(null);
+
+export const AuthProvider = ({ children }) => {
+  const [user, setUser] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const location = useLocation(); // Get the current URL
+
+  useEffect(() => {
+    // Avoid fetching user data if already logged in or on login/register pages
+    if (
+      !user &&
+      location.pathname !== "/login" &&
+      location.pathname !== "/register"
+    ) {
+      axios
+        .get(`${API_URL}/api/auth/me`, {
+          withCredentials: true,
+          headers: { "x-api-key": "api-key" },
+        })
+        .then((res) => setUser(res.data.user))
+        .catch((error) => {
+          if (error.response) {
+            console.log(error);
+            console.warn("Acceso denegado");
+            setUser(null);
+          }
+        })
+        .finally(() => setLoading(false));
+    } else {
+      setLoading(false); // Set loading to false if on login or register
+    }
+  }, [user, location.pathname]); // Re-run on user change or URL change
+
+  const logout = async () => {
+    await axios.post(
+      `${API_URL}/api/logout`,
+      {},
+      { withCredentials: true, headers: { "x-api-key": "api-key" } }
+    );
+    setUser(null);
+  };
+
+  return (
+    <AuthContext.Provider value={{ user, setUser, loading, logout }}>
+      {children}
+    </AuthContext.Provider>
+  );
+};
+
+export const useAuth = () => useContext(AuthContext);
+```
+
+Este componente es el que hace la peticion al api para poder autorizar nuestro token JWT
+
+#### Componente de ruta protegida
+
+```js
+import { useAuth } from "./AuthProvider";
+import { Navigate } from "react-router-dom";
+
+const ProtectedRoute = ({ children }) => {
+  const { user, loading } = useAuth();
+
+  if (loading) return <p>Loading...</p>;
+  return user ? children : <Navigate to='/login' />;
+};
+
+export default ProtectedRoute;
+```
+
+Este componente utiliza el custom hook anterior, para reenviar a la ruta de login en caso de que no se autentifique el token
+
+Estos dos componentes anteriores se utilizan de esta manera
+
+```js
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import Home from "./Home";
+import "./App.css";
+import RegisterForm from "./RegisterForm";
+import LoginForm from "./LoginForm";
+import Upload from "./Upload";
+import ProtectedRoute from "./ProtectedRoute";
+import { AuthProvider } from "./AuthProvider";
+
+function App() {
+  return (
+    <Router>
+      <AuthProvider>
+        <Routes>
+          <Route path='/login/' element={<LoginForm />} />
+          <Route path='/register/' element={<RegisterForm />} />
+          <Route
+            path='/home/'
+            element={
+              <ProtectedRoute>
+                <Home />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path='upload'
+            element={
+              <ProtectedRoute>
+                <Upload />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path='/'
+            element={
+              <ProtectedRoute>
+                <Home />
+              </ProtectedRoute>
+            }
+          />
+        </Routes>
+      </AuthProvider>
+    </Router>
+  );
+}
+
+export default App;
+```
+
+Se tiene que colocar el AuthProvider adentro del routeador para que todas las rutas puedan utilizarlo
+
+Tambien hay que wrappear el componente que se va a rendeerizar en la ruta en el componente de ruta protegida, de esta manera la ruta va a reedirigir al login en caso de que no se este autenticado
+
+# Despliegue de la aplicacion
 
 ## Integración con Mercado Pago utilizando Checkout Pro
 
@@ -802,7 +1417,7 @@ Integrar el sistema de pagos **Checkout Pro** de Mercado Pago en una aplicación
 MERCADO_PAGO_ACCESS_TOKEN=TEST-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 ```
 
- Este token será tu llave secreta para autenticar las peticiones al SDK de Mercado Pago.
+Este token será tu llave secreta para autenticar las peticiones al SDK de Mercado Pago.
 
 ---
 
@@ -920,7 +1535,7 @@ module.exports = router;
 ```
 
 **¿Qué hace esta ruta?**
-Ya con el controlador listo, ocupamos definir una ruta que lo llame. Para eso crearemos un archivo llamado `mercadoPago.routes.js` donde creamos una ruta POST que se encarga de que reciba las solicitudes del frontend. 
+Ya con el controlador listo, ocupamos definir una ruta que lo llame. Para eso crearemos un archivo llamado `mercadoPago.routes.js` donde creamos una ruta POST que se encarga de que reciba las solicitudes del frontend.
 
 ---
 
@@ -948,7 +1563,6 @@ Ya con el controlador listo, ocupamos definir una ruta que lo llame. Para eso cr
 **¿Qué hacemos aqui?**
 Antes de pasar al frontend, vamos a probar si el endpoint está funcionando correctamente, utilizando Postman y creamos una petición de tipo `POST`, siguiendo los pasos anteriores.
 
-
 ```json
 {
   "id": "123456789",
@@ -958,17 +1572,18 @@ Antes de pasar al frontend, vamos a probar si el endpoint está funcionando corr
 
 **¿Qué se espera recibir?**
 
-
 ---
 
-## 5. Frontend 
+## 5. Frontend
 
 ### 5.1 Instalar SDK React
+
 Ahora en el frontend abrimos la terminal en la carpeta del frontend y ejecutamos:
 
 ```bash
 npm install @mercadopago/sdk-react
 ```
+
 ---
 
 ### 5.2 Crear BotonPago.jsx
@@ -1049,9 +1664,7 @@ Crea un componente nuevo en el frontend llamado `BotonPago.jsx`. Este componente
 5. Se abre el checkout de Mercado Pago.
 6. Al finalizar, el usuario es redirigido a una de las URLs configuradas.
 
-
 ---
-
 
 | **Tipo de Versión** | **Descripción**                                       | **Fecha** | **Colaborador**              |
 | ------------------- | ----------------------------------------------------- | --------- | ---------------------------- |
