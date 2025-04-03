@@ -11,6 +11,7 @@ Yo como usuario quiero cambiar el rancho seleccionado para poder analizar los di
 
   **Precondiciones:**
   - Se consultaron los ranchos.
+  - Los ranchos dispobibles se muestran en un menú desplegable.
 
   **Criterios de Aceptación:**
   - El usuario debe poder modificar la selección del rancho.
