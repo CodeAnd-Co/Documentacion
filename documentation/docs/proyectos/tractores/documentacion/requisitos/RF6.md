@@ -5,16 +5,18 @@ sidebar_position: 7
 
 # RF6: Usuario consulta el módulo de análisis.
 
-**Última actualización:** 07 de marzo de 2025
+**Última actualización:** 03 de abril de 2025
 
 ### Historia de Usuario
 
-Yo como usuario quiero acceder al módulo de análisis para obtener información detallada y poder visualizar métricas sobre los datos del sistema.
+Yo como usuario quiero acceder a un módulo de análisis que me permita visualizar métricas, gráficos y estadísticas relevantes sobre los datos del sistema, con una carga eficiente, para tomar decisiones basadas en datos.
 
   **Criterios de Aceptación:**
-  - El sistema debe de permitir a los usuarios acceder al módulo de análisis desde el menú principal.
-  - El módulo debe de mostrar, gráficos y estadísticas de los datos.
-  - El sistema carga los datos de manera rápida y eficiente.
+  - El módulo debe estar disponible desde el menú principal.
+  - La navegación al módulo debe ser inmediata (latencia < 1 segundo en condiciones normales).
+  - La carga inicial de los datos y gráficos debe completarse en menos de 10 segundos (en conexiones estándar).
+  - Si el volumen de datos es grande, el sistema debe mostrar un indicador de carga mientras se procesa la información.
+  - En caso de fallo en la carga, mostrar un botón de "Reintentar" y un mensaje claro (no errores técnicos crudos).
 
 ---
 
