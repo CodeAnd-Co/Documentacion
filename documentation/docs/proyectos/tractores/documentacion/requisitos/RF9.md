@@ -5,8 +5,6 @@ sidebar_position: 10
 
 # RF9: Usuario modifica selección de rancho a analizar.
 
-**Última actualización:** 07 de marzo de 2025
-
 ### Historia de Usuario
 
 Yo como usuario quiero cambiar el rancho seleccionado para poder analizar los diferentes tractores que están asignados a este rancho seleccionado.
