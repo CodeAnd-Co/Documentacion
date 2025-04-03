@@ -13,7 +13,7 @@ Se implementa el siguiente sistema de historial de cambios para prevenir problem
 
 Es obligatorio añadir al final de cada documento un apartado titulado **Historial de cambios”** que incluya:
 
-- El tipo de version (numero de version)
+- El tipo de versión (numero de version)
 - Descripcion del cambio
 - Fecha del cambio
 - Colaboradores participantes

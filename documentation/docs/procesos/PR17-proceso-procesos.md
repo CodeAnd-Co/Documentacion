@@ -42,7 +42,7 @@ sidebar_position: 0
 
 ## Historial de Cambios
 
-| Version | Descripción del cambio                | Fecha    | Colaborador                |
+| Versión | Descripción del cambio                | Fecha    | Colaborador                |
 | ------- | ------------------------------------- | -------- | -------------------------- |
 | 2.0     | Proceso inicial para generar procesos |          | Valeria Zuñiga Mendoza     |
 | 2.0     | Proceso inicial para generar procesos |          | Paola María Garrido Monte  |
