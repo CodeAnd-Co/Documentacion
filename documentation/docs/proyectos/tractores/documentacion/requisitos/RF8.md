@@ -13,14 +13,14 @@ Yo como usuario quiero seleccionar un rancho específico de la lista disponible 
 
   **Criterios de Aceptación:**
   - Al seleccionar un rancho, el sistema debe resaltarlo visualmente (checkmark) para confirmar la selección.
-Al seleccionar un rancho, el sistema debe mostrar automáticamente la lista de tractores vinculados a ese rancho.
-La lista de tractores debe incluir al menos:
+  - Al seleccionar un rancho, el sistema debe mostrar automáticamente la lista de tractores vinculados a ese rancho.
+  - La lista de tractores debe incluir al menos:
 Identificador del tractor (ej.: número de serie o nombre).
-Si no hay tractores asociados al rancho, mostrar un mensaje claro: "No se encontraron tractores registrados para este rancho".
-Permitir volver a la lista de ranchos sin perder el filtro/búsqueda anterior.
-La carga de los tractores debe ser inmediata (< 2 segundo) desde la selección del rancho.
-Si la carga demora (ej.: muchos tractores), mostrar un indicador de progreso (spinner).
-Si el rancho seleccionado no existe (ej.: fue eliminado), mostrar un error amigable y recargar la lista automáticamente.
+  - Si no hay tractores asociados al rancho, mostrar un mensaje claro: "No se encontraron tractores registrados para este rancho".
+  - Permitir volver a la lista de ranchos sin perder el filtro/búsqueda anterior.
+  - La carga de los tractores debe ser inmediata (< 2 segundo) desde la selección del rancho.
+  - Si la carga demora (ej.: muchos tractores), mostrar un indicador de progreso (spinner).
+  - Si el rancho seleccionado no existe (ej.: fue eliminado), mostrar un error amigable y recargar la lista automáticamente.
 
 ---
 
