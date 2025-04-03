@@ -5,7 +5,7 @@ sidebar_position: 6
 
 # Proceso para identificar recursos
 
-**Última actualización:** 6 de marzo de 2025.
+**Última actualización:** 1 de Abril de 2025.
 
 ---
 
@@ -15,6 +15,8 @@ sidebar_position: 6
 | ------------------------------- | ----------- |
 | Juan Antonio Landeros Velázquez | Autor       |
 | Armando Méndez Castro           | Colaborador |
+| Juan Pablo Chávez Leal          | Modificador |
+| Daniel Contreras Chávez         | Modificador |
 
 ---
 
@@ -40,9 +42,16 @@ sidebar_position: 6
 |                         | Identificar en qué etapas del proyecto resultan pertinentes dichos recursos.                                                                                                                                                                                                                                                                                                                                                                                                                                                   | Team Member            | **PP, SP 2.4** (Planeación de recursos en el proyecto)                                                    |
 |                         | Definir el uso específico que se dará a cada recurso.                                                                                                                                                                                                                                                                                                                                                                                                                                                                          | Team Member            | **PP, SP 2.4** (Planeación de recursos en el proyecto)                                                    |
 |                         | Comprobar si el departamento ya cuenta con cada recurso.                                                                                                                                                                                                                                                                                                                                                                                                                                                                       | Product Owner          | **PP, SP 2.4** (Planeación de recursos en el proyecto)                                                    |
-| **Evaluación continua** | Revisar el <u>_[plan de recursos](https://docs.google.com/spreadsheets/d/1OT4_ssxMjGavbrr5AA35Lu_H7lh68kxyCN6FcmlTQWQ/edit?gid=0#gid=0)_</u>, y <u>_[proceso de junta grupal](https://codeandco-wiki.netlify.app/docs/procesos/meetings-grupales/)_</u>. De este modo, se podrán identificar los componentes del entorno de trabajo que requieren atención o que presenten fallas.Se debe actualizar la columna correspondiente a las necesidades de recursos en dicho plan y gestionar su adquisición en el Plan de Recursos. | Team Member            | **PP, SP 1.2** (Establecer las estimaciones de los atributos de los productos de trabajo y de las tareas) |
-|                         | Por último, se procederá a la actualización del plan del proyecto.                                                                                                                                                                                                                                                                                                                                                                                                                                                             | Team Member            | **PP, SP 2.7** (Establecer plan de proyecto)                                                              |
+| **Evaluación continua** | Revisar el <u>_[plan de recursos](https://docs.google.com/spreadsheets/d/1OT4_ssxMjGavbrr5AA35Lu_H7lh68kxyCN6FcmlTQWQ/edit?gid=0#gid=0)_</u>, y <u>_[proceso de junta grupal](https://codeandco-wiki.netlify.app/docs/procesos/meetings-grupales/)_</u>. De este modo, se podrán identificar los componentes del entorno de trabajo que requieren atención o que presenten fallas.Se debe actualizar la columna correspondiente a las necesidades de recursos en dicho plan y gestionar su adquisición en el Plan de Recursos. | Team Member            | **PP, SP 1.2** (Establecer las estimaciones de los atributos de los productos de trabajo y de las tareas). 
+**PMC, SP 1.1**(Monitorizar los parámetros de planificación del proyecto) |
+|                         | Por último, se procederá a la actualización del plan del proyecto.                                                                                                                                                                                                                                                                                                                                                                                                                                                             | Team Member            | **PP, SP 2.7** (Establecer plan de proyecto). **PMC, SP 1.1**(Monitorizar los parámetros de planificación del proyecto)                                                             |
 
 ### Salidas
 
 1. Plan de recursos actualizados
+
+
+| Autor | Descripción del cambio | Versión |
+|---------|-------------------------|---------|
+| Daniel Contreras Chávez | Adición de prácticas específicas PMC | V1.2|
+| Juan Pablo Chávez Leal | Adción de prácticas específicas PMC  | V1.2 |

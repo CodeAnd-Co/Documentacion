@@ -1,10 +1,17 @@
-# Proceso de Mejora de Procesos Existentes
+---
+title: PR22 Proceso de Mejora de Procesos Existentes
+sidebar_position: 21
+---
+
+# PR22: Proceso de Mejora de Procesos Existentes
 
 ## Autor
 
 | Nombre                    | Rol   |
 |---------------------------|-------|
 | Arturo Sánchez Rodríguez | Autor |
+| Juan Pablo Chávez Leal | Modificador|
+|Daniel Contreras Chávez | Modificador |
 
 ## Objetivo
 
