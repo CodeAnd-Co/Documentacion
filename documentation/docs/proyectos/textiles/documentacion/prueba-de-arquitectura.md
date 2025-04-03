@@ -759,13 +759,66 @@ Este seria nuestro controlador que nos regresa un ur json con los mensajes de si
 
 De esta manera, podemos tanto subir y ver archivos de S3
 
-# Integración de Mercado Pago con Checkout Pro
 
-# Documentación Integración con Mercado Pago utilizando Checkout Pro
+
+## Integración con Mercado Pago utilizando Checkout Pro
+
+### Objetivo
+
+Integrar el sistema de pagos **Checkout Pro** de Mercado Pago en una aplicación web, desde cero. Aprenderás desde la creación de cuenta hasta el despliegue de un botón de pago funcional.
 
 ---
 
-### 1. `configMercadoPago.js`
+### Requisitos previos
+
+- Tener una cuenta de Mercado Pago (se puede crear una gratuita).
+- Tener un backend con Node.js funcionando.
+- Tener un frontend hecho en React.
+- Tener Postman o herramienta para probar endpoints.
+- Conocimientos básicos de JavaScript y HTTP.
+
+---
+
+### 1. Crear cuenta en Mercado Pago
+
+1. Ir a [https://www.mercadopago.com.mx/](https://www.mercadopago.com.mx/)
+2. Haz clic en **"Crear cuenta"**
+3. Selecciona una cuenta de **tipo empresa/negocio** (esto es importante para habilitar funciones de pagos).
+4. Completa los datos de registro como nombre del negocio, correo electrónico, etc.
+5. Verifica tu cuenta mediante correo electrónico o SMS.
+
+---
+
+### 2. Obtener credenciales (Access Token)
+
+1. Ingresa a [https://www.mercadopago.com.mx/developers/panel](https://www.mercadopago.com.mx/developers/panel)
+2. En el menú izquierdo, ve a **"Credenciales"**
+3. Verás dos ambientes:
+   - **Producción** (para ventas reales)
+4. Copia el **Access Token** del ambiente de **test**.
+5. Crea un archivo `.env` en tu backend y agrega la variable:
+
+```env
+MERCADO_PAGO_ACCESS_TOKEN=TEST-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+```
+
+ Este token será tu llave secreta para autenticar las peticiones al SDK de Mercado Pago.
+
+---
+
+## 3. Configuración del Backend
+
+### 3.1 Instalar SDK
+
+```bash
+npm install mercadopago
+```
+
+Esto instala el cliente oficial de Mercado Pago lo cual nos permitirá usar todas las funciones que Mercado Pago ofrece.
+
+---
+
+### 3.2 configMercadoPago.js
 
 ```js
 const { MercadoPagoConfig } = require("mercadopago");
@@ -777,14 +830,12 @@ const mercadopago = new MercadoPagoConfig({
 module.exports = mercadopago;
 ```
 
-**Explicación**:
-
-- Se inicializa el cliente SDK de Mercado Pago con el **Access Token**.
-- Se exporta para ser reutilizado donde se cree la preferencia.
+**¿Qué hace esto?**
+Ahora creamos un archivo llamado `configMercadoPago.js` en el backend. Este archivo se encargará de iniciañizar Mercado Pago con el Access Token. Lo que hará es importar la clase `MercadoPagoConfig` desde el SDK, crea una instancia con el token y se exporta para que pueda ser utilizada en todo el backend,
 
 ---
 
-### 2. `configPreference.js`
+### 3.3 configPreference.js
 
 ```js
 const mercadopago = require("./configMercadoPago");
@@ -817,15 +868,12 @@ const createPreference = async (products) => {
 module.exports = createPreference;
 ```
 
-**Explicación**:
-
-- Transforma productos al formato de Mercado Pago.
-- Define URLs de redirección y genera la preferencia.
-- Devuelve `id` e `init_point`.
+**¿Qué hace este archivo?**
+Ahora creamos una funcion que nos permite generar una `preferencia de pago`. Una preferencia es como una orden que le dice a Mercado Pago qué producto se va a pagar, el costo y a donde va a redirigir al usuario según el estado del pago, por lo cual tenemos que crear un archivo llamado `configPreference.js` para reibir una lista de producto.
 
 ---
 
-### 3. `mercadoPago.controller.js`
+### 3.4 mercadoPago.controller.js
 
 ```js
 const createPreference = require("../../util/createPreference");
@@ -852,14 +900,12 @@ const createPreferenceHandler = async (req, res) => {
 module.exports = { createPreferenceHandler };
 ```
 
-**Explicación**:
-
-- Controlador que crea la preferencia con los productos recibidos.
-- Devuelve el `init_point` para usar en el frontend.
+**¿Qué hace este controlador?**
+Ocupamos una función que reciba las peticiones desde el frontend y utilice la función `createPreference` para responder con el link de pago, para eso creamos un archivo de controlador llamado `mercadoPago.controller.js` donde definimos la función de `createPreferenceHandler` la cual se encarga de verificar los productos recibidos y genera la preferencia.
 
 ---
 
-### 4. `mercadoPago.routes.js`
+### 3.5 mercadoPago.routes.js
 
 ```js
 const express = require("express");
@@ -873,18 +919,59 @@ router.post("/create_preference", createPreferenceHandler);
 module.exports = router;
 ```
 
-**Explicación**:
-
-- Define la ruta POST para crear la preferencia.
-- Conectada al controlador explicado arriba.
+**¿Qué hace esta ruta?**
+Ya con el controlador listo, ocupamos definir una ruta que lo llame. Para eso crearemos un archivo llamado `mercadoPago.routes.js` donde creamos una ruta POST que se encarga de que reciba las solicitudes del frontend. 
 
 ---
 
-# Aqui empieza el frontend
+### 4. Probar endpoint con Postman
 
-## Frontend
+1. Método: `POST`
+2. URL: `http://localhost:3000/api/mercadoPago/create_preference`
+3. Headers:
+   - `Content-Type: application/json`
+   - `x-api-key: TU_API_KEY` (si usas middleware de autenticación)
+4. Body (raw JSON):
 
-### 5. `BotonPago.jsx`
+```json
+{
+  "products": [
+    {
+      "title": "Producto de prueba",
+      "quantity": 1,
+      "unit_price": 1000
+    }
+  ]
+}
+```
+
+**¿Qué hacemos aqui?**
+Antes de pasar al frontend, vamos a probar si el endpoint está funcionando correctamente, utilizando Postman y creamos una petición de tipo `POST`, siguiendo los pasos anteriores.
+
+
+```json
+{
+  "id": "123456789",
+  "init_point": "https://www.mercadopago.com/checkout/start?pref_id=...."
+}
+```
+
+**¿Qué se espera recibir?**
+
+
+---
+
+## 5. Frontend 
+
+### 5.1 Instalar SDK React
+Ahora en el frontend abrimos la terminal en la carpeta del frontend y ejecutamos:
+
+```bash
+npm install @mercadopago/sdk-react
+```
+---
+
+### 5.2 Crear BotonPago.jsx
 
 ```jsx
 import { useState } from "react";
@@ -948,20 +1035,23 @@ function BotonPago() {
 export default BotonPago;
 ```
 
-**Explicación**:
-
-- Envía solicitud al backend.
-- Muestra botón Wallet de Mercado Pago con la preferencia generada.
+**¿Qué hace este componente?**
+Crea un componente nuevo en el frontend llamado `BotonPago.jsx`. Este componente tendrá un botón que al hacer clic nos enviará la solicitud al backend para generar la preferencia, recibiendo el `preferenceId` podemos mostrar el botón de MercadoPago utilizando el componente `Wallet` del SDK.
 
 ---
 
-## Resultado
+## Flujo completo
 
-- El usuario hace clic en “Pagar con Mercado Pago”.
-- Se abre el checkout.
-- Luego del pago, es redirigido según el estado (`success`, `failure`, `pending`).
+1. El usuario hace clic en “Pagar con Mercado Pago”.
+2. El frontend llama al backend para generar una preferencia.
+3. El backend responde con un `init_point`.
+4. El frontend carga el botón de pago.
+5. Se abre el checkout de Mercado Pago.
+6. Al finalizar, el usuario es redirigido a una de las URLs configuradas.
+
 
 ---
+
 
 | **Tipo de Versión** | **Descripción**                                       | **Fecha** | **Colaborador**              |
 | ------------------- | ----------------------------------------------------- | --------- | ---------------------------- |
