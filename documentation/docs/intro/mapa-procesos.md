@@ -59,6 +59,9 @@ sidebar_position: 2
         %% PR15 Juntas Grupales
         %% PR15_Juntas_Grupales
 
+        %% PR24 Proceso para llevar a cabo métricas y análisis
+        PR24_Realizar_Metricas_Analisis
+
         Proceso
 
         PR1_Guia_SP_Procesos --> Proceso: Practica especifica
@@ -72,6 +75,10 @@ sidebar_position: 2
         PR8_Trazabilidad_Requisitos --> PR9_Gestion_Cambios_Requisitos: Requisitos
         PR7_Revision_Plan_Proyecto --> PR9_Gestion_Cambios_Requisitos: Inconsistencia de requisitos
 
+        PR24_Realizar_Metricas_Analisis --> PR4_Plan_Proyecto: Métricas del proyecto
+        PR24_Realizar_Metricas_Analisis --> PR7_Revision_Plan_Proyecto: Indicadores de revisión
+        PR24_Realizar_Metricas_Analisis --> PR8_Trazabilidad_Requisitos: Criterios de trazabilidad
+        PR24_Realizar_Metricas_Analisis --> PR9_Gestion_Cambios_Requisitos: Impacto medido
 
 
 ```
