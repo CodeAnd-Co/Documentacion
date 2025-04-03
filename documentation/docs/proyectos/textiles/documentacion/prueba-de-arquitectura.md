@@ -11,16 +11,6 @@ sidebar_position: 3
 
 Antes de comenzar, hay que instalar la version de node especificadas en el manual de arquitectura
 
-<<<<<<< HEAD
-
-### Frontend
-
-=======
-
-# Documentación Integración con Mercado Pago utilizando Checkout Pro
-
-> > > > > > > 02ef58a0469881f04eb2da32276bbb2466d0197b
-
 #### Creacion del proyecto
 
 Abrir la terminar y moverse al directorio donde se desea crear la aplicacion, una vez ahi, ejecutar el comando
