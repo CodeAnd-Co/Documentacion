@@ -22,7 +22,52 @@ Como usuario del sistema, quiero ingresar la información de una charola nueva e
 ### Diagrama de Secuencia
 
 > *Descripción*: El diagrama de secuencia muestra el flujo del proceso de creación de un nuevo empleado, con la interacción entre el Super Administrador, el formulario de ingreso y la base de datos.
+```mermaid
+sequenceDiagram  
+      actor Usuario 
+      participant View as View
+      participant ViewModel as ViewModel
+      participant Domain as Domain
+      participant Repository as Repository
+      participant APIClient as API Client (MVVM)
+      participant APIService as API Service (MVVM)
+      participant Controller as Controller
+      participant Model as Model
+      participant Database as Base de Datos
 
+    alt GET
+    Usuario->>View: (GET) do Registrar Charola
+    View->>ViewModel: do RegistrarCharola()
+    ViewModel->>ViewModel: GET RegistrarCharola()
+    ViewModel-->>View: response
+    View-->>Usuario: response
+    end
+
+    
+
+    alt POST
+    Usuario->>View: (POST) do Registrar Charola
+    View->>ViewModel: do RegistrarCharola(Datos)
+    ViewModel->>Domain: charolaRequirement.registrar(charola)
+    Domain->>Repository: repository.registrar(charola)
+    Repository->>APIClient: apiClient.registrar(charola)
+    APIClient->>APIService: apiService.registrar(charola)
+    APIService->>Controller: @POST ("/registrar-charola")
+    Controller->>Controller: exports.postCharola = async(req, res)
+    Controller->>Model: charolaModel.registrarCharola(datos)
+    Model->>Database: crearCharola(query)
+    Database-->>Model: response
+    Model-->>Controller: response
+    Controller-->>APIService: response
+    APIService-->>APIClient: response
+    APIClient-->>Repository: response
+    Repository-->>Domain: response
+    Domain-->>ViewModel: response
+    ViewModel-->>View: response
+    View-->>Usuario: response
+    end
+    
+```
 ---
 
 ### Mockup
