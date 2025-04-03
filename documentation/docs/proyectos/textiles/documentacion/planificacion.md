@@ -5,7 +5,7 @@ sidebar_position: 3
 
 # Planificación
 
-**Última actualización:** 10 de marzo de 2025
+**Última actualización:** 28 de marzo de 2025
 
 _Cronograma, hitos y entregables._
 
@@ -13,14 +13,14 @@ _Cronograma, hitos y entregables._
 
 | Fase del Proyecto                       | Fecha de Finalización | Estado       |
 | --------------------------------------- | --------------------- | ------------ |
-| Fase de Inicio                          | 14/03/25             | En progreso  |
-| Construcción 1 (Prueba de Arquitectura) | 28/03/25             | No empezado  |
-| Construcción 2 (MVP)                    | 14/04/25             | No empezado  |
-| Transición 1 (MVP)                      | 16/04/25             | No empezado  |
-| Construcción 3 (MBI)                    | 21/04/25             | No empezado  |
-| Transición 2 (MBI)                      | 23/04/25             | No empezado  |
-| Construcción 4 (MBI 2)                  | 29/04/25             | No empezado  |
-| Transición 3 (MBI 2)                    | 23/04/25             | No empezado  |
+| Fase de Inicio                          | 14/03/25             | Terminado  |
+| Construcción 1 (Prueba de Arquitectura) | 28/03/25             | En progreso |
+| Construcción 2 (MVP)                    | 30/04/25             | No empezado  |
+| Transición 1 (MVP)                      | 06/05/25             | No empezado  |
+| Construcción 3 (MBI)                    | 13/05/25             | No empezado  |
+| Transición 2 (MBI)                      | 19/05/25             | No empezado  |
+| Construcción 4 (MBI 2)                  | 29/05/25             | No empezado  |
+| Transición 3 (MBI 2)                    | 05/06/25             | No empezado  |
 | Cierre                                  | 11/06/25             | No empezado  |
 
 
@@ -32,9 +32,9 @@ _Cronograma, hitos y entregables._
 | Inicio del Proyecto      | Inicio formal del proyecto              | 14/02/25       | Terminado    |
 | Aprobación de Requisitos | Aprobación final de los requisitos      | 05/03/25       | Terminado    |
 | Finalización del Diseño  | Compleción del diseño del sistema       | 28/03/25       | En progreso  |
-| Desarrollo Completo      | Finalización del desarrollo del sistema | 29/04/25       | No empezado  |
-| Pruebas Completas        | Finalización de las pruebas             | 01/05/25       | No empezado  |
-| Implementación Exitosa   | Implementación exitosa en producción    | 02/05/25       | No empezado  |
+| Desarrollo Completo      | Finalización del desarrollo del sistema | 29/05/25       | No empezado  |
+| Pruebas Completas        | Finalización de las pruebas             | 02/06/25       | No empezado  |
+| Implementación Exitosa   | Implementación exitosa en producción    | 04/06/25       | No empezado  |
 | Cierre del Proyecto      | Cierre formal del proyecto              | 11/06/25       | No empezado  |
 
 
@@ -50,3 +50,4 @@ _Cronograma, hitos y entregables._
 4. **Documentación Técnica:** Manuales y guías para el mantenimiento y uso del sistema.
 5. **Informe de Pruebas:** Resultados detallados de las pruebas realizadas y correcciones aplicadas.
 6. **Informe Final:** Resumen del proyecto, incluyendo lecciones aprendidas y recomendaciones.
+
