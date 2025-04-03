@@ -5,17 +5,6 @@ sidebar_position: 19
 
 # PR00 Plantilla de procesos
 
-**Última actualización:** [fecha]  
-**Versión:** 0.0
-
----
-
-## Autores
-
-| Nombre            | Rol   |
-| ----------------- | ----- |
-| [Insertar nombre] | Autor |
-
 ---
 
 ## Objetivo
@@ -43,7 +32,7 @@ sidebar_position: 19
 
 ## Historial de Cambios
 
-| Autor             | Cambio realizado               | Versión                            |
-| ----------------- | ------------------------------ | ---------------------------------- |
-| [Insertar nombre] | [Breve descripción del cambio] | 0.0                                |
-| [Insertar nombre] | [Breve descripción del cambio] | Modificación significativa o menor |
+| **Tipo de Versión**     | **Descripción**                                                                                | **Fecha**                           | **Colaborador**                                |
+| ----------------------- | ---------------------------------------------------------------------------------------------- | ----------------------------------- | ---------------------------------------------- |
+| **Versión Mayor (x.0)** | Se asigna cuando se agregan o eliminan secciones completas de la documentación.                | La fecha de modificacion / creacion | Colaborador o colaboradores de la modificacion |
+| **Versión Menor (1.x)** | Se asigna cuando se realizan ajustes menores, como detalles de redacción, ortografía o estilo. | La fecha de modificacion / creacion | Colaborador o colaboradores de la modificacion |
