@@ -5,8 +5,6 @@ sidebar_position: 9
 
 # RF8: Eliminar Charola
 
-**Última actualización:** 03 de abril de 2025
-
 ### Historia de Usuario
 Como usuario del sistema, quiero borrar los datos de una charola en la base de datos, para eliminar registros obsoletos o incorrectos y mantener la base de datos actualizada y ordenada.
 
