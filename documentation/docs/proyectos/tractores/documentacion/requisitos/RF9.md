@@ -49,4 +49,4 @@ Yo como usuario quiero cambiar el rancho seleccionado para poder analizar los di
 | **Tipo de Versión** | **Descripción** | **Fecha** | **Colaborador** |
 | ------------------- | --------------- | --------- | --------------- |
 | **1.0** | Primera versión de del RF9 | 7/03/2025 | Daniel Contreras Chavez |
-| **1.0** | Se agregaron precondiciones | 3/04/2025 | Ian Julián Estrada Castro |
+| **1.1** | Se agregaron precondiciones | 3/04/2025 | Ian Julián Estrada Castro |
