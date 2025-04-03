@@ -5,17 +5,6 @@ sidebar_position: 2
 
 # Mapa de Procesos
 
-**Última actualización:** 07 de marzo de 2025
-
----
-
-### Autores
-
-| Nombre                 | Rol   |
-| ---------------------- | ----- |
-| Valeria Zuñiga Mendoza | Autor |
-| Angel Mauricio Ramirez | Autor |
-
 ---
 
 ```mermaid
@@ -141,7 +130,7 @@ PR4_Plan_Proyecto
 
 ## Historial de Cambios
 
-| Autor                  | Descripción del cambio            | Versión |
-| ---------------------- | --------------------------------- | ------- |
-| Valeria Zuñiga Mendoza | Ahora abarca la obtención del SRS | 1.0     |
-| Angel Mauricio Ramirez | Ahora abarca la obtención del SRS | 1.0     |
+| **Tipo de Versión** | **Descripción**                               | **Fecha** | **Colaborador**                 |
+| ------------------- | --------------------------------------------- | --------- | ------------------------------- |
+| **1.0**             | Ahora abarca la obtención del SRS   | 7/3/2025  | Valeria Zuñiga y Angel Ramírez |
+| **1.1**             | Añadir Proceso de Métricas y Análisis al Mapa de Procesos | 3/4/2025  | Rommel Toledo      |
