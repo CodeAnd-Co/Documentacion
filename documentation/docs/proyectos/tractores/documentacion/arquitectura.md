@@ -138,8 +138,8 @@ Redactar los beneficios de la arquitectura seleccionada.
 ## Diagrama de despliegue
 ``` mermaid 
 graph TD
-    Usuario --> |Accede a| Dispositivo
-    Administrador --> |Accede a| Dispositivo
+    Usuario <--> |Accede a| Dispositivo
+    Administrador <--> |Accede a| Dispositivo
     subgraph Dispositivo
       subgraph Windows 10
         subgraph Harvester
@@ -147,7 +147,7 @@ graph TD
       end
     end
 
-    Dispositivo <-->|https| Internet
+    Dispositivo <--> |https| Internet
 
     subgraph InfraestructuraAWS [Infraestructura AWS]
         subgraph VPC ["Virtual Private Cloud - VPC"]
@@ -164,7 +164,7 @@ graph TD
             end
     end
 
-    Internet <--> InfraestructuraAWS
+    Internet <--> |https| InfraestructuraAWS
     
 ```
 
