@@ -980,45 +980,45 @@ export default function RegisterForm() {
 
   return (
     <Box
-      display='flex'
-      justifyContent='center'
-      alignItems='center'
-      minHeight='90vh'
-      bgcolor='#fffff'
+      display="flex"
+      justifyContent="center"
+      alignItems="center"
+      minHeight="90vh"
+      bgcolor="#fffff"
     >
       <Card sx={{ width: 400, padding: 3, boxShadow: 3 }}>
         <CardHeader
-          title='Create an Account'
-          subheader='Enter your details to sign up'
+          title="Create an Account"
+          subheader="Enter your details to sign up"
           sx={{ textAlign: "center" }}
         />
         <CardContent>
           <form onSubmit={handelSubmit}>
             <TextField
               fullWidth
-              label='Name'
-              variant='outlined'
-              margin='normal'
+              label="Name"
+              variant="outlined"
+              margin="normal"
               value={name}
               onChange={(event) => setName(event.target.value)}
               required
             />
             <TextField
               fullWidth
-              label='Email'
-              type='email'
-              variant='outlined'
-              margin='normal'
+              label="Email"
+              type="email"
+              variant="outlined"
+              margin="normal"
               value={email}
               onChange={(event) => setEmail(event.target.value)}
               required
             />
             <TextField
               fullWidth
-              label='Password'
-              type='password'
-              variant='outlined'
-              margin='normal'
+              label="Password"
+              type="password"
+              variant="outlined"
+              margin="normal"
               value={password}
               onChange={(event) => setPassword(event.target.value)}
               required
@@ -1028,26 +1028,26 @@ export default function RegisterForm() {
                 <Checkbox
                   checked={termsAccepted}
                   onChange={(event) => setTermsAccepted(event.target.checked)}
-                  color='primary'
+                  color="primary"
                   sx={{ "& .MuiSvgIcon-root": { fontSize: 18 } }} // Smaller checkbox
                 />
               }
               label={
-                <Typography variant='body2' sx={{ fontSize: "0.75rem" }}>
+                <Typography variant="body2" sx={{ fontSize: "0.75rem" }}>
                   I agree to the{" "}
                   <a
-                    href='/terms-of-service'
-                    target='_blank'
-                    rel='noopener noreferrer'
+                    href="/terms-of-service"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     style={{ fontSize: "0.75rem" }}
                   >
                     Terms of Service
                   </a>{" "}
                   and{" "}
                   <a
-                    href='/privacy-policy'
-                    target='_blank'
-                    rel='noopener noreferrer'
+                    href="/privacy-policy"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     style={{ fontSize: "0.75rem" }}
                   >
                     Privacy Policy
@@ -1058,7 +1058,7 @@ export default function RegisterForm() {
             {message && (
               <Typography
                 color={message.includes("successful") ? "green" : "red"}
-                textAlign='center'
+                textAlign="center"
                 mt={2}
               >
                 {message}
@@ -1066,8 +1066,8 @@ export default function RegisterForm() {
             )}
             <CardActions>
               <Button
-                type='submit'
-                variant='contained'
+                type="submit"
+                variant="contained"
                 fullWidth
                 sx={{ mt: 2 }}
               >
@@ -1078,14 +1078,14 @@ export default function RegisterForm() {
         </CardContent>
         <div style={{ textAlign: "center", marginBottom: "16px" }}>
           <Typography
-            variant='body2'
-            color='textSecondary'
+            variant="body2"
+            color="textSecondary"
             sx={{ fontSize: "0.75rem" }}
           >
             Already have an account?{" "}
             <Button
               onClick={() => navigate("/login")}
-              variant='text'
+              variant="text"
               sx={{ fontSize: "0.75rem" }}
             >
               Sign In
@@ -1149,18 +1149,18 @@ function Home() {
     <div>
       <h1>Welcome to My React App</h1>
       <nav>
-        <Button variant='contained'>
-          <Link to='/upload'>Upload</Link>
+        <Button variant="contained">
+          <Link to="/upload">Upload</Link>
         </Button>
       </nav>
 
-      <Button variant='contained' onClick={handleGetImage}>
+      <Button variant="contained" onClick={handleGetImage}>
         Obtener imagen de S3
       </Button>
 
       {imageUrl && (
-        <div className='image-container'>
-          <img src={imageUrl} alt='Product' />
+        <div className="image-container">
+          <img src={imageUrl} alt="Product" />
         </div>
       )}
       <br></br>
@@ -1223,7 +1223,7 @@ export default function Upload() {
 
   return (
     <div>
-      <input type='file' onChange={handleFileChange} />
+      <input type="file" onChange={handleFileChange} />
       <button onClick={handleUpload}>Upload File</button>
     </div>
   );
@@ -1310,7 +1310,7 @@ const ProtectedRoute = ({ children }) => {
   const { user, loading } = useAuth();
 
   if (loading) return <p>Loading...</p>;
-  return user ? children : <Navigate to='/login' />;
+  return user ? children : <Navigate to="/login" />;
 };
 
 export default ProtectedRoute;
@@ -1335,10 +1335,10 @@ function App() {
     <Router>
       <AuthProvider>
         <Routes>
-          <Route path='/login/' element={<LoginForm />} />
-          <Route path='/register/' element={<RegisterForm />} />
+          <Route path="/login/" element={<LoginForm />} />
+          <Route path="/register/" element={<RegisterForm />} />
           <Route
-            path='/home/'
+            path="/home/"
             element={
               <ProtectedRoute>
                 <Home />
@@ -1346,7 +1346,7 @@ function App() {
             }
           />
           <Route
-            path='upload'
+            path="upload"
             element={
               <ProtectedRoute>
                 <Upload />
@@ -1354,7 +1354,7 @@ function App() {
             }
           />
           <Route
-            path='/'
+            path="/"
             element={
               <ProtectedRoute>
                 <Home />
@@ -1635,7 +1635,7 @@ function BotonPago() {
 
   return (
     <div>
-      <Button variant='contained' color='primary' onClick={crearPreferencia}>
+      <Button variant="contained" color="primary" onClick={crearPreferencia}>
         Pagar con Mercado Pago
       </Button>
       {preferenceId && (
@@ -1666,6 +1666,116 @@ Crea un componente nuevo en el frontend llamado `BotonPago.jsx`. Este componente
 
 ---
 
-| **Tipo de Versión** | **Descripción**                                       | **Fecha** | **Colaborador**              |
-| ------------------- | ----------------------------------------------------- | --------- | ---------------------------- |
-| **1.0**             | Se creo la documentacion de la prueba de arquitectura | 4/3/2025  | Arturo Sanchez, Diego Alfaro |
+# Pruebas
+
+## Prueba de rendimiento
+
+### Objetivo
+
+Ejecutar una prueba de rendimiento sobre el endpoint de **registro de usuarios** del sistema. El objetivo es simular múltiples registros consecutivos para evaluar el comportamiento de la arquitectura bajo carga y validar la capacidad del sistema para manejar múltiples registros de usuarios consecutivos, sin errores ni degradación del rendimiento.
+
+## Herramientas necesarias
+
+- [Postman](https://www.postman.com/)
+- Acceso a la colección de pruebas o endpoints del sistema
+
+---
+
+## Paso 1: Obtener CSRF Token
+
+1. Abre Postman y crea una nueva solicitud con la siguiente URL: https://nr8nw243lb.execute-api.us-east-1.amazonaws.com/csrf-token
+2. Cambia el método a `GET`.
+3. Haz clic en **Send**.
+4. Copia el valor del campo `"csrfToken"` de la respuesta.
+
+## Paso 2: Ejecutar el script de carga en el endpoint de registro
+
+1. Crea una nueva solicitud en Postman con la siguiente URL: https://nr8nw243lb.execute-api.us-east-1.amazonaws.com/api/register
+2. Cambia el método a `POST`.
+3. Ve a la pestaña **"Headers"** y añade una key llamada "x-api-key" e introduce un valor como "apiKey".
+4. Ve a la pestaña **"Body"** indicando el tipo de body como raw, JSON.
+
+```javascript
+  {
+    "email": "user@example.com",
+    "password": "Test1234!",
+    "name": "user"
+  }
+```
+
+5. Ve a la pestaña **"Pre-request Script"** y pega el siguiente script, reemplazando el csrfToken donde se indica:
+
+```javascript
+const totalRequests = 2;
+const delayBetweenRequests = 0; // Ejecutar inmediatamente sin pausas
+
+const url =
+  "https://nr8nw243lb.execute-api.us-east-1.amazonaws.com/api/register";
+const method = "POST";
+const apiKey = "apikey"; // Reemplazar con tu API key real
+const csrfToken = "HpaBZMv9-HNzDqmYsppZ211Le3QuYYYY-X50"; // Reemplazar con el token obtenido en el paso 1
+
+let completedRequests = 0;
+
+function makeRequest() {
+  completedRequests++;
+  console.log(`Sending request ${completedRequests}/${totalRequests}`);
+
+  const requestBody = {
+    email: `user${completedRequests}@example.com`,
+    password: "Test1234!",
+    name: `user${completedRequests}`,
+  };
+
+  pm.sendRequest(
+    {
+      url: url,
+      method: method,
+      header: {
+        "Content-Type": "application/json",
+        "x-api-key": apiKey,
+        "X-CSRF-Token": csrfToken,
+      },
+      body: JSON.stringify(requestBody),
+    },
+    function (err, res) {
+      if (err) {
+        console.error(`Error on request ${completedRequests}:`, err);
+      } else {
+        console.log(`Request ${completedRequests} Status: ${res.status}`);
+        console.log(`Response: ${res.json ? res.json() : res.text()}`);
+      }
+
+      if (completedRequests < totalRequests) {
+        makeRequest(); // Ejecutar inmediatamente la siguiente solicitud
+      } else {
+        console.log("All requests completed.");
+      }
+    }
+  );
+}
+
+makeRequest();
+```
+
+## Paso 3: Ejecutar el script
+
+1. Haz clic en "Send" en la solicitud que contiene el script anterior.
+2. Abre la consola de Postman para ver los resultados en tiempo real.
+
+## Resultados esperados
+
+- Para solicitudes exitosas, deberías ver algo como:
+  - Request 7 Status: Created
+  - Request 8 Status: Created
+- Si alguna solicitud falla, verás un mensaje como:
+  - Error on request 14: ...
+- Al completar todas las solicitudes, la consola mostrará:
+  - All requests completed.
+
+---
+
+| **Tipo de Versión** | **Descripción**                                        | **Fecha** | **Colaborador**              |
+| ------------------- | ------------------------------------------------------ | --------- | ---------------------------- |
+| **1.0**             | Se creo la documentacion de la prueba de arquitectura  | 4/3/2025  | Arturo Sanchez, Diego Alfaro |
+| **1.1**             | Se añadió la documentacion de la prueba de rendimiento | 3/4/2025  | Valeria Zúñiga Mendoza       |
