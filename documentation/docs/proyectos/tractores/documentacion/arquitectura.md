@@ -5,18 +5,6 @@ sidebar_position: 4
 
 # Manual de Arquitectura de Software
 
-**Última actualización** 25 de marzo de 2025 por Juan Pablo Chávez Leal
-
----
-
-### Autores
-| Nombre                            | Rol       |
-| --------------------------------- | --------- |
-| Daniel Contreras                  | Autor     |
-| Diego Alfaro                      | Autor     |
-| Emiliano Gómez                    | Autor     |
-| Diego Fuentes                     | Modificador |
-| Juan Pablo Chávez Leal            | Modificador|
 ---
 
 ## Tipo de arquitectura de software
@@ -178,6 +166,17 @@ graph TD
     Internet <--> InfraestructuraAWS
     
 ```
+
+---
+
+### Autores
+
+| Nombre                            | Rol       |
+| --------------------------------- | --------- |
+| Daniel Contreras                  | Autor     |
+| Diego Alfaro                      | Autor     |
+| Emiliano Gómez                    | Autor     |
+| Diego Fuentes                     | Modificador |
 
 ---
 
