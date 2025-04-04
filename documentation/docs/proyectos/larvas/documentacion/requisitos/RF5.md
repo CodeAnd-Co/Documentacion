@@ -5,7 +5,6 @@ sidebar_position: 6
 
 # RF5: Registrar Charola
 
-**Última actualización:** 08 de marzo de 2025
 
 ### Historia de Usuario
 Como usuario del sistema, quiero ingresar la información de una charola nueva en el sistema y guardarla en la base de datos, para llevar un registro digital preciso de la producción y rastrear la trazabilidad de las charolas.
@@ -39,8 +38,8 @@ sequenceDiagram
     Usuario->>View: (GET) do Registrar Charola
     View->>ViewModel: do RegistrarCharola()
     ViewModel->>ViewModel: GET RegistrarCharola()
-    ViewModel-->>View: response
-    View-->>Usuario: response
+    ViewModel-->>View: respuesta
+    View-->>Usuario: respuesta
     end
 
     alt POST (200)
@@ -54,18 +53,18 @@ sequenceDiagram
     Controller->>Controller: exports.postCharola = async(req, res)
     Controller->>Model: charolaModel.registrarCharola(datos)
     Model->>Database: crearCharola(query)
-    Database-->>Model: response
-    Model-->>Controller: response
-    Controller-->>APIService: response
-    APIService-->>APIClient: response
-    APIClient-->>Repository: response
-    Repository-->>Domain: response
-    Domain-->>ViewModel: response
-    ViewModel-->>View: response
-    View-->>Usuario: ✅ ¡Charola registrada exitosamente!
+    Database-->>Model: respuesta
+    Model-->>Controller: respuesta
+    Controller-->>APIService: respuesta
+    APIService-->>APIClient: respuesta
+    APIClient-->>Repository: respuesta
+    Repository-->>Domain: respuesta
+    Domain-->>ViewModel: respuesta
+    ViewModel-->>View: respuesta
+    View-->>Usuario: ¡Charola registrada exitosamente!
     end
 
-    alt ERROR (400) - Bad Request
+    alt ERROR (400) - Peticion incorrecta
     Usuario->>View: (POST) do Registrar Charola (Datos inválidos)
     View->>ViewModel: do RegistrarCharola(Datos inválidos)
     ViewModel->>Domain: charolaRequirement.registrar(charola)
@@ -74,16 +73,16 @@ sequenceDiagram
     APIClient->>APIService: apiService.registrar(charola)
     APIService->>Controller: @POST ("/registrar-charola")
     Controller->>Controller: Validar datos
-    Controller-->>APIService: ❌ 400 Bad Request (Faltan datos o formato incorrecto)
-    APIService-->>APIClient: ❌ 400 Bad Request
-    APIClient-->>Repository: ❌ 400 Bad Request
-    Repository-->>Domain: ❌ 400 Bad Request
-    Domain-->>ViewModel: ❌ 400 Bad Request
-    ViewModel-->>View: ⚠️ Error: Datos inválidos. Verifica la información.
-    View-->>Usuario: ⚠️ Los datos ingresados son incorrectos. Por favor, revisa los campos obligatorios.
+    Controller-->>APIService: 400 Peticion incorrecta (Faltan datos o formato incorrecto)
+    APIService-->>APIClient: 400 Peticion incorrecta
+    APIClient-->>Repository: 400 Peticion incorrecta
+    Repository-->>Domain: 400 Peticion incorrecta
+    Domain-->>ViewModel: 400 Peticion incorrecta
+    ViewModel-->>View: Error: Datos inválidos. Verifica la información.
+    View-->>Usuario: Los datos ingresados son incorrectos. Por favor, revisa los campos obligatorios.
     end
 
-    alt ERROR (500) - Internal Server Error
+    alt ERROR (500) - Error Interno en el Servidor
     Usuario->>View: (POST) do Registrar Charola
     View->>ViewModel: do RegistrarCharola(Datos)
     ViewModel->>Domain: charolaRequirement.registrar(charola)
@@ -93,15 +92,15 @@ sequenceDiagram
     APIService->>Controller: @POST ("/registrar-charola")
     Controller->>Model: charolaModel.registrarCharola(datos)
     Model->>Database: crearCharola(query)
-    Database--X Model: ❌ Error en la consulta
-    Model--X Controller: ❌ Error inesperado en la base de datos
-    Controller-->>APIService: ❌ 500 Internal Server Error
-    APIService-->>APIClient: ❌ 500 Internal Server Error
-    APIClient-->>Repository: ❌ 500 Internal Server Error
-    Repository-->>Domain: ❌ 500 Internal Server Error
-    Domain-->>ViewModel: ❌ 500 Internal Server Error
-    ViewModel-->>View: ❌ Error interno en el servidor. Intenta más tarde.
-    View-->>Usuario: 🚨 Hubo un problema en el sistema. Intenta de nuevo más tarde.
+    Database--X Model: Error en la consulta
+    Model--X Controller: Error inesperado en la base de datos
+    Controller-->>APIService: 500 Error Interno en el Servidor
+    APIService-->>APIClient: 500 Error Interno en el Servidor
+    APIClient-->>Repository: 500 Error Interno en el Servidor
+    Repository-->>Domain: 500 Error Interno en el Servidor
+    Domain-->>ViewModel: 500 Error Interno en el Servidor
+    ViewModel-->>View: Error interno en el servidor. Intenta más tarde.
+    View-->>Usuario: Hubo un problema en el sistema. Intenta de nuevo más tarde.
     end
 
     alt ERROR 101 - Sin conexión a Internet
@@ -110,9 +109,9 @@ sequenceDiagram
     ViewModel->>Domain: charolaRequirement.registrar(charola)
     Domain->>Repository: repository.registrar(charola)
     Repository->>APIClient: apiClient.registrar(charola)
-    APIClient--X ViewModel: ❌ 101 Error: No hay conexión a Internet
-    ViewModel-->>View: ❌ No se pudo conectar al servidor.
-    View-->>Usuario: 🌐 No hay conexión a Internet. Revisa tu red e intenta nuevamente.
+    APIClient--X ViewModel: 101 Error: No hay conexión a Internet
+    ViewModel-->>View: No pudo conectar al servidor.
+    View-->>Usuario: No hay conexión a Internet. Revisa tu red e intenta nuevamente.
     end
     
 ```
