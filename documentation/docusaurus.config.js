@@ -95,12 +95,12 @@ const config = {
             position: "left",
           },
           {
-            to: "/docs/category/guías/",
+            to: "/docs/category/guías",
             label: "Guías",
             position: "left",
           },
           {
-            to: "/docs/category/recursos/",
+            to: "/docs/category/recursos",
             label: "Recursos",
             position: "left",
           },
