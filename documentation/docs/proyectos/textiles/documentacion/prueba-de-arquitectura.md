@@ -1376,6 +1376,135 @@ Tambien hay que wrappear el componente que se va a rendeerizar en la ruta en el 
 
 # Despliegue de la aplicacion
 
+## Despliegue del backend
+
+### Servidor
+
+#### Instalaciones iniciales
+
+Para hacer el despliegue del backend utilizamos un servidor de AWS EC2 de tipo `t2.micro`, usando la imagen de `Ubuntu` 22.04
+
+Primero hay que lanzar nuestra instancia de ec2, si no se sabe como lanzar una instancia de ec2, consultar este corto [video](https://www.youtube.com/watch?v=86Tuwtn3zp0)
+
+Luego de tener nuestra instancia, vamos a acceder a ella por medio de ssh, en el caso para la prueba de arquitectura usamos este comando
+
+```
+ssh -i "PruebaArquitectura.pem" ubuntu@ec2-18-206-253-81.compute-1.amazonaws.com
+```
+
+donde `"PruebaArquitectura.pem"` es la llave privada que creamos, en caso de no tenerla en el mismo directorio a donde se encuentra la terminal, tambien se puede agregar el path del archivo `.pem`
+
+Una vez se haya ingresado a la terminal del servidor, vamos a hacer varios pasos
+
+Primero tenemos que instalar node en nuestro servidor usando estos comandos
+
+```
+sudo apt update && sudo apt upgrade -y
+```
+
+```
+curl -fsSL https://deb.nodesource.com/setup_current.x | sudo -E bash -
+```
+
+```
+sudo apt install -y nodejs
+```
+
+y por ultimo verificamos la instalacion
+
+```
+node -v
+npm -v
+```
+
+Una vez tenemos instalado node, tambien tenemos que instalar pm2 de manera global
+
+```
+npm install -g pm2
+```
+
+Una vez instalado pm2 podemos comenzar a subir nuestra aplicacion
+
+#### Configurar git
+
+Ahora para poder subir nuestra aplicacion utilizaremos github, asi que clonaremos nuestro repositorio, pero no de la manera usual por http, si no que lo haremos por medio de ssh, lo que nos servira mas adelante
+
+Primero tenemos que crear un par de llaves para pode agregar a github
+
+```
+ssh-keygen -t rsa -b 4096 -C "tu-email@example.com"
+```
+
+Seguir los pasos para poder crear nuestras llaves
+
+Una vez creadas las llaves, tenemos que copiar el contenido de la llave publica y agregarla al siguente apartado en guthub
+
+![alt text](/img/llave-ssh-github.png)
+
+Ahora en el servidor podemos correr este comando
+
+```
+ssh -T git@github.com
+```
+
+Y si todo se hizo correctamente deberia aparecer un mensaje como este
+
+```
+Hi DiegoAlfaro1! You've successfully authenticated, but GitHub does not provide shell access.
+```
+
+Ahora podemos pasar a clonar nuestro repositorio
+
+Esto se hace de manera similar a como normalmente se clona un repositorio, solo que en lugar de copiar el mismo comando desde github, se tiene que seleccionar SSH, y de esa manera les dara el comando necesario, una vez con ese comando en nuestro servidor copiaremos de esta manera el repositorio
+
+```
+git clone git@github.com:DiegoAlfaro1/prueba-arquitectura-backend-textiles.git
+```
+
+Ahora nos moveremos a la carpeta que se creo con nuestro repositorio, e instalaremos las dependencias
+
+Una vez tenemos las dependencias instaladas, podemos crear nuestros porcesos que son los que mantienen la aplicacion corriendo
+
+Primero iniciaremos el proceso de produccion, antes de iniciar el proceso, tenemos que asegurarnos que estemos en el directorio que tiene toda nuestra aplicacion, y que hayamos agregado los .env necesarios
+
+Ahora si podemos correr nuestro comando para crear el proceso de produccion
+
+```
+pm2 start ecosystem.config.js --only app-production
+```
+
+Esto hace que se ejecute el archivo de `ecosystem.config.js`, el cual nos ayudara a iniciar nuestra app en diferentes puertos dependiendo del nombre de la aplicacion
+
+Ahora tambien podemos empezar nuestro proceso de staging, el cual es el mismo comando solo cambiando el nombre de la aplicacion
+
+```
+pm2 start ecosystem.config.js --only app-staging
+```
+
+Ahora ya tenemos nuestras aplicaciones corriendo y podemos consultarlas en los puertos 3000 y 4000 de nuestro servidor
+
+#### Api gateway
+
+Para poder utilizar petciones cifradas por medio de https sin tener que configurar un ceritifcado en nuestro de servidor, se utilizo api gateway
+
+Para poder configurar api gateway se uso este video, el cual tambien explica como desplegar una aplicacion en ec2 [video](https://www.youtube.com/watch?v=1238WUz0_fk)
+
+#### CI/CD
+
+Para el desliegue continuo se utilizo un script de github actions el cual se encuentra en la carpeta .github/workflows, el cual nos ayuda a que no tengas que hacer una actualizacion de los archivos manualmente y no tener que recargar nuestro proceso, para ver mas a fondo el script consultar la [guia de github actions](../../../guias/github/github-actions.md)
+
+## Despliegue del frontend
+
+El despliegue del frontend se hizo con aws apmlify
+
+Primero hay que ingresar al apartado de aws amplify, y crear nuestra app, esto nos llevara a diferentes configuraciones donde tendremos que darle acceso al repositorio de github, y automaticamente detectara los comandos necesarios para desplegar la aplicacion, como se puede ver, amplify automaticamente despliega la rama main, esto es muy importante ya que nos ayudara a poder desplegar nuestra rama staging de la misma manera
+
+Luego de desplegar la rama, simplemente hay que agregar nuestras variables de entorno a este apartado
+
+![alt_text](/img/amplify.png)
+
+Y con esto ya tendriamos desplegado el frontend, al igual que el backend de nuestra prueba de arquitectura
+
 ## Integración con Mercado Pago utilizando Checkout Pro
 
 ### Objetivo
