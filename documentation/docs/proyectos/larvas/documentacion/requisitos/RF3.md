@@ -162,3 +162,8 @@ sequenceDiagram
 | PU-RF3-03  | Verificar la actualización del historial en tiempo real. | Si se registra un nuevo ancestro, el historial se actualiza automáticamente sin necesidad de recargar la página. |
 | PU-RF3-04  | Buscar una charola inexistente. | El sistema muestra un mensaje de error indicando que la charola no existe. |
 | PU-RF3-05  | Validar la navegación entre generaciones de charolas. | El sistema permite desplazarse entre diferentes niveles de ancestros sin fallos. |
+
+| Tipo de Versión | Descripción                                  | Fecha    | Colaborador                             |
+|-----------------|----------------------------------------------|----------|-----------------------------------------|
+| 1.0           | Creación de requisito  | 08/04/2025 | Armando Méndez Castro  |
+| 2.0           | Agregar diagrama de secuencia | 3/4/2025 | Armando méndez Castro        |
