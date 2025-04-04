@@ -95,6 +95,11 @@ const config = {
             position: "left",
           },
           {
+            to: "/docs/category/procesos",
+            label: "Procesos",
+            position: "left",
+          },
+          {
             to: "/docs/category/proyectos",
             label: "Proyectos",
             position: "left",
