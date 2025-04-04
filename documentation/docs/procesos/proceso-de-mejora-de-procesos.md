@@ -1,17 +1,9 @@
 ---
-title: PR22 Proceso de Mejora de Procesos Existentes
-sidebar_position: 21
+title: PR23 Proceso de Mejora de Procesos Existentes
+sidebar_position: 23
 ---
 
-# PR22: Proceso de Mejora de Procesos Existentes
-
-## Autor
-
-| Nombre                    | Rol   |
-|---------------------------|-------|
-| Arturo Sánchez Rodríguez | Autor |
-| Juan Pablo Chávez Leal | Modificador|
-|Daniel Contreras Chávez | Modificador |
+# PR23: Proceso de Mejora de Procesos Existentes
 
 ## Objetivo
 
@@ -52,3 +44,10 @@ sidebar_position: 21
 1. Número de procesos mejorados en un periodo de tiempo.
 2. Mediciones de aceptación de los cambios realizados.
 3. Impacto en la reducción de errores después de la mejora.
+
+## Historial de Cambios
+
+| **Tipo de Versión** | **Descripción**                               | **Fecha** | **Colaborador**                 |
+| ------------------- | --------------------------------------------- | --------- | ------------------------------- |
+| **1.0**             | Creación del proceso   | 30/3/2025  | Arturo Sánchez Rodríguez, Juan Pablo Chávez Leal, Daniel Contreras Chávez |
+| **1.1**             | Corrección del número del proceso | 3/4/2025  | Rommel Toledo Crespo      |

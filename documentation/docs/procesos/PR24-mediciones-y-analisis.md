@@ -5,7 +5,7 @@ sidebar_position: 24
 
 # PR24 Proceso para llevar a cabo métricas y análisis
 
-**Última actualización:** 02/04/2025  
+**Última actualización:** 03/04/2025  
 **Versión:** 1.0
 
 ---
