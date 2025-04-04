@@ -185,4 +185,4 @@ graph TD
 | **Tipo de versión** | **Descripción**                    | **Fecha** | **Colaborador**        |
 |---------------------|------------------------------------| --------- | ---------------------- |
 | **2.0**             | Adición del diagrama de despliegue | 25/03/2025  | Juan Pablo Chávez Leal |
-| **2.1**             | Corrección al diagrama de despliegue | 03/04/2025 | Ian Julián Estrada Castro |
+| **2.1**             | Corrección al diagrama de despliegue | 04/04/2025 | Ian Julián Estrada Castro |
