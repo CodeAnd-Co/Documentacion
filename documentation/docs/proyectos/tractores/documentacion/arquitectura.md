@@ -154,7 +154,8 @@ graph TD
             subgraph EC2 ["EC2"]
                 subgraph ServidorUbuntu["Servidor Ubuntu"]
                     subgraph Sistema["Entorno: Node.js"]
-                       ExpressFramework["node-express"] 
+                       ExpressFramework["node-express"]
+                       NodeModules["node_modules/"] 
                        APP["app.js"]
                     end
                     MySQL["Base de datos: MySQL"]
