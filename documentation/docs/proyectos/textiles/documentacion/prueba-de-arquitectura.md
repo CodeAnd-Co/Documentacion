@@ -1801,7 +1801,7 @@ Crea un componente nuevo en el frontend llamado `BotonPago.jsx`. Este componente
 
 ### Objetivo
 
-Ejecutar una prueba de rendimiento sobre el endpoint de **registro de usuarios** del sistema. El objetivo es simular múltiples registros consecutivos para evaluar el comportamiento de la arquitectura bajo carga y validar la capacidad del sistema para manejar múltiples registros de usuarios consecutivos, sin errores ni degradación del rendimiento.
+Ejecutar una prueba de rendimiento sobre el endpoint de **registro de usuarios** del sistema. El objetivo es simular múltiples registros consecutivos para evaluar el comportamiento de la arquitectura bajo carga y validar la capacidad del sistema para manejar múltiples registros de usuarios consecutivos, sin errores.
 
 ## Herramientas necesarias
 
