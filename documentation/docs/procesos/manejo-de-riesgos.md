@@ -5,8 +5,6 @@ sidebar_position: 16
 
 # Gestión de Riesgos
 
-**Última actualización:** 04 de abril de 2025.
-
 ---
 
 ## **Objetivo**
@@ -73,7 +71,7 @@ Esta probabilidad puede ser estimada por el equipo con base en la experiencia y 
 
 | **Tipo de Versión** | **Descripción**                                                                                                                | **Fecha** | **Colaborador**                                   |
 | ------------------- | ------------------------------------------------------------------------------------------------------------------------------ | --------- | ------------------------------------------------- |
-| **1.0**             | Creacion de proceso de gestión de riesgos                                                                                      | 01/2/2025 | Rommel Toledo, Daniel Quejeiro, Mauricio Anguiano |
+| **1.0**             | Creacion de proceso de gestión de riesgos                                                                                      | 03/3/2025 | Rommel Toledo, Daniel Quejeiro, Mauricio Anguiano |
 | **1.1**             | Se agregó una fase en el proceso para el monitoreo de riesgos y información para la definición de requisitos y su probabilidad | 04/4/2025 | Angélica Ríos, Paola Garrido                      |
 
 ---
