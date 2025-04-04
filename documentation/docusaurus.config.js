@@ -95,13 +95,8 @@ const config = {
             position: "left",
           },
           {
-            to: "/docs/category/procesos",
-            label: "Procesos",
-            position: "left",
-          },
-          {
-            to: "/docs/category/proyectos",
-            label: "Proyectos",
+            to: "/docs/category/guías/",
+            label: "Guías",
             position: "left",
           },
           {
@@ -110,8 +105,13 @@ const config = {
             position: "left",
           },
           {
-            to: "/docs/category/guías/",
-            label: "Guías",
+            to: "/docs/category/procesos",
+            label: "Procesos",
+            position: "left",
+          },
+          {
+            to: "/docs/category/proyectos",
+            label: "Proyectos",
             position: "left",
           },
         ],
