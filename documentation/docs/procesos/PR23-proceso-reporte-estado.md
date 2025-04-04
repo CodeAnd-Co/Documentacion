@@ -1,11 +1,11 @@
 ---
-title: PR23 Reporte de Estado
-sidebar_position: 23
+title: PR22 Reporte de Estado
+sidebar_position: 22
 ---
 
 ---
 
-# PR23 Reporte de Estado
+# PR22 Reporte de Estado
 
 ## Objetivo
 
@@ -59,4 +59,4 @@ sidebar_position: 23
 | **Tipo de Versión** | **Descripción**                               | **Fecha** | **Colaborador**                 |
 | ------------------- | --------------------------------------------- | --------- | ------------------------------- |
 | **1.0**             | Creación del proceso de reporte de estado   | 31/3/2025  | Diego Fuentes|
-| **2.0**             | Corrección completa del proceso de reporte de estado para hacerlo ejecutable en pocas horas.  | 03/04/2025  | Diego Fuentes|
+| **2.0**             | Corrección completa del proceso de reporte de estado para hacerlo ejecutable en pocas horas.  | 03/04/2025  | Diego Fuentes |
