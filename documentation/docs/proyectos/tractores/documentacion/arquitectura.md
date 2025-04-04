@@ -159,27 +159,31 @@ graph TD
       end
     end
 
-    Dispositivo -->|https:80| Internet
+    Dispositivo <-->|https| Internet
 
     subgraph InfraestructuraAWS [Infraestructura AWS]
         subgraph VPC ["Virtual Private Cloud - VPC"]
-        subgraph Server ["Servidor: t4g.xlarge"]
             subgraph EC2 ["EC2"]
                 subgraph ServidorUbuntu["Servidor Ubuntu"]
                     subgraph Sistema["Entorno: Node.js"]
-                       ExpressFramework["Framework: Express"] 
+                       ExpressFramework["node-express"] 
+                       APP["app.js"]
                     end
+                    MySQL["Base de datos: MySQL"]
                 end
             end
             end
-            MySQL["Base de datos: MySQL"]
-            
-        end
     end
 
-    Internet --> InfraestructuraAWS
+    Internet <--> InfraestructuraAWS
+    
 ```
 
-| Autor | Descripción del cambio | Versión |
-|---------|-------------------------|---------|
-| Juan Pablo Chávez Leal | Adición del diagrama de despliegue | V2 |
+---
+
+## Historial de cambios
+
+| **Tipo de versión** | **Descripción**                    | **Fecha** | **Colaborador**        |
+|---------------------|------------------------------------| --------- | ---------------------- |
+| **2.0**             | Adición del diagrama de despliegue | 25/03/2025  | Juan Pablo Chávez Leal |
+| **2.1**             | Corrección al diagrama de despliegue | 03/04/2025 | Ian Julián Estrada Castro |
