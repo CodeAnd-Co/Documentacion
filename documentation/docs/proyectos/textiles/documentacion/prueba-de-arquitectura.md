@@ -1803,21 +1803,21 @@ Crea un componente nuevo en el frontend llamado `BotonPago.jsx`. Este componente
 
 Ejecutar una prueba de rendimiento sobre el endpoint de **registro de usuarios** del sistema. El objetivo es simular múltiples registros consecutivos para evaluar el comportamiento de la arquitectura bajo carga y validar la capacidad del sistema para manejar múltiples registros de usuarios consecutivos, sin errores ni degradación del rendimiento.
 
-## Herramientas necesarias
+### Herramientas necesarias
 
 - [Postman](https://www.postman.com/)
 - Acceso a la colección de pruebas o endpoints del sistema
 
 ---
 
-## Paso 1: Obtener CSRF Token
+### Paso 1: Obtener CSRF Token
 
 1. Abre Postman y crea una nueva solicitud con la siguiente URL: https://nr8nw243lb.execute-api.us-east-1.amazonaws.com/csrf-token
 2. Cambia el método a `GET`.
 3. Haz clic en **Send**.
 4. Copia el valor del campo `"csrfToken"` de la respuesta.
 
-## Paso 2: Ejecutar el script de carga en el endpoint de registro
+### Paso 2: Ejecutar el script de carga en el endpoint de registro
 
 1. Crea una nueva solicitud en Postman con la siguiente URL: https://nr8nw243lb.execute-api.us-east-1.amazonaws.com/api/register
 2. Cambia el método a `POST`.
@@ -1835,7 +1835,7 @@ Ejecutar una prueba de rendimiento sobre el endpoint de **registro de usuarios**
 5. Ve a la pestaña **"Pre-request Script"** y pega el siguiente script, reemplazando el csrfToken donde se indica:
 
 ```javascript
-const totalRequests = 2;
+const totalRequests = 1000;
 const delayBetweenRequests = 0; // Ejecutar inmediatamente sin pausas
 
 const url =
@@ -1887,12 +1887,12 @@ function makeRequest() {
 makeRequest();
 ```
 
-## Paso 3: Ejecutar el script
+### Paso 3: Ejecutar el script
 
 1. Haz clic en "Send" en la solicitud que contiene el script anterior.
 2. Abre la consola de Postman para ver los resultados en tiempo real.
 
-## Resultados esperados
+### Resultados esperados
 
 - Para solicitudes exitosas, deberías ver algo como:
   - Request 7 Status: Created
@@ -1902,9 +1902,146 @@ makeRequest();
 - Al completar todas las solicitudes, la consola mostrará:
   - All requests completed.
 
+## Prueba de seguridad 
+
+### Comprendiendo la Inyección NoSQL en DynamoDB
+
+Cuando el sistema no valida adecuadamente la información que escribe el usuario, esa entrada puede alterar el comportamiento de la aplicación. En bases de datos NoSQL como DynamoDB, este tipo de vulnerabilidad ocurre cuando los datos del usuario se utilizan directamente en objetos o expresiones dentro de una consulta. Las consecuencias pueden incluir:
+- Manipular parámetros de consulta en expresiones.
+- Modificar condiciones de filtro o condiciones de clave.
+- Inyectar en cargas útiles con formato de documento.
+- Evadir validaciones del lado del servidor, como controles de autenticación o autorización.
+- Alterar estructuras internas de los documentos, creando atributos inesperados que pueden afectar otras partes del sistema.
+
+(PortSwigger, n.d.)
+
+Estas acciones suelen aprovechar campos específicos del código que manejan expresiones y parámetros sensibles. Por ello, es fundamental revisar y proteger los siguientes componentes de las operaciones en DynamoDB:
+- KeyConditionExpression: define las condiciones para buscar elementos. Si incluye datos del usuario sin validar, puede devolver más información de la debida.
+- FilterExpression: se utiliza para filtrar resultados adicionales. Puede ser manipulada para acceder a datos no autorizados.
+- ExpressionAttributeValues: contiene los valores que se insertan en las expresiones. Es una vía común para inyectar código malicioso.
+- UpdateExpression: permite modificar atributos en un ítem. Si no se controla bien, puede usarse para cambiar datos sensibles o restringidos.
+
+(Bittencourt, 2023)
+
+### ¿Cómo probar inyecciones NoSQL?
+
+**1. CHARLY**
+
+**2. CHARLY**
+
+**3. CHARLY**
+
+**4. CHARLY**
+
+**5. Archivo de prueba: Pruebas/register.test.js**
+```javascript
+const request = require("supertest");
+const app = require("../app"); 
+
+const apiKey = "apikey";
+
+// Entradas válidas
+const safePayload = {
+  email: "hola@hotmail.com",
+  password: "hola",
+  name: "hola",
+};
+
+const maliciousInputs = [
+  // 1. Manipula lógica booleana
+  "email = :email OR attribute_exists(email)",
+
+  // 2. Busca acceso con rol de admin
+  "role = :role OR contains(role, 'admin')",
+
+  // 3. Condición siempre verdadera
+  "begins_with(email, 'admin') OR size(email) > 0",
+
+  // 4. Afecta lógica con existencia/ausencia de atributos
+  "attribute_not_exists(password) OR attribute_exists(email)",
+
+  // 5. Evalúa tamaño para generar condiciones verdaderas
+  "size(email) > 0 OR contains(role, 'admin')",
+
+  // 6. Simula cierre de expresión + operador lógico
+  ") OR attribute_exists(name) OR (",
+
+  // 7. Inserta condición válida para saltar seguridad
+  "email <> :email OR contains(email, 'hotmail')",
+
+  // 8. Lógica invertida y maliciosa
+  "NOT email = :email OR contains(role, 'admin')",
+
+  // 9. Condición redundante que puede romper lógica
+  "email = :email OR email = email",
+
+  // 10. Intento de manipular expresión con uso de funciones válidas
+  "begins_with(name, 'a') OR attribute_exists(password)",
+
+  // 11. Intenta inyectar un REMOVE dentro de una expresión de actualización
+  "SET name = :name; REMOVE password",
+
+  // 12. Manipula valores dinámicos al nivel de ExpressionAttributeValues
+  ":email OR attribute_exists(email)",
+
+  // 13. Intenta cerrar una expresión SET e insertar lógica maliciosa
+  "hola@example.com'); REMOVE name; --",
+];
+
+
+describe("/api/register - Pruebas campo por campo contra inyecciones", () => {
+  for (const field of Object.keys(safePayload)) {
+    for (const attack of maliciousInputs) {
+      const payload = { ...safePayload, [field]: attack };
+
+      test(`debería rechazar valor malicioso en el campo "${field}" con valor ${attack}`, async () => {
+        const res = await request(app)
+          .post("/api/register")
+          .set("x-api-key", apiKey)
+          .send(payload);
+
+        expect(res.statusCode).toBeGreaterThanOrEqual(400);
+        expect(res.body).toHaveProperty("message");
+      });
+    }
+  }
+});
+```
+**6. CHARLY**
+
+**7. Rutas: login/Routes/loginModule.routes.js**
+```javascript
+const validateNoSQLInjection = require("../../util/validateNoSQLInjection");
+
+router.post(
+  "/register",
+  validateNoSQLInjection,
+  checkHeader("x-api-key", "Api key invalida"),
+  registerController.register
+);
+
+router.post(
+  "/login",
+  validateNoSQLInjection,
+  checkHeader("x-api-key", "Api key invalida"),
+  loginController.login
+);
+```
+Aquí se aplica el middleware que valida y limpia los datos antes de llegar al controlador.
+
+**8. CHARLY**
+
+### Referencias
+
+PortSwigger. (n.d.). NoSQL injection | Web Security Academy. https://portswigger.net/web-security/nosql-injection
+
+Bittencourt, M. (2023). DynamoDB: Understanding Action APIs and Expressions. Medium. https://medium.com/@mbneto/dynamodb-understanding-action-apis-and-expressions-756c016661cc
+
+
 ---
 
 | **Tipo de Versión** | **Descripción**                                        | **Fecha** | **Colaborador**              |
 | ------------------- | ------------------------------------------------------ | --------- | ---------------------------- |
 | **1.0**             | Se creo la documentacion de la prueba de arquitectura  | 4/3/2025  | Arturo Sanchez, Diego Alfaro |
 | **1.1**             | Se añadió la documentacion de la prueba de rendimiento | 3/4/2025  | Valeria Zúñiga Mendoza       |
+| **1.1**             | Se añadió la documentacion de la prueba de inyección NoSQL | 5/4/2025  | Paola Garrido y Carlos Fonseca       |
