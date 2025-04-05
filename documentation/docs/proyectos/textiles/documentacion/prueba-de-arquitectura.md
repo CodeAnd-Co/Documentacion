@@ -1902,11 +1902,12 @@ makeRequest();
 - Al completar todas las solicitudes, la consola mostrará:
   - All requests completed.
 
-## Prueba de seguridad 
+## Prueba de seguridad
 
 ### Comprendiendo la Inyección NoSQL en DynamoDB
 
 Cuando el sistema no valida adecuadamente la información que escribe el usuario, esa entrada puede alterar el comportamiento de la aplicación. En bases de datos NoSQL como DynamoDB, este tipo de vulnerabilidad ocurre cuando los datos del usuario se utilizan directamente en objetos o expresiones dentro de una consulta. Las consecuencias pueden incluir:
+
 - Manipular parámetros de consulta en expresiones.
 - Modificar condiciones de filtro o condiciones de clave.
 - Inyectar en cargas útiles con formato de documento.
@@ -1916,6 +1917,7 @@ Cuando el sistema no valida adecuadamente la información que escribe el usuario
 (PortSwigger, n.d.)
 
 Estas acciones suelen aprovechar campos específicos del código que manejan expresiones y parámetros sensibles. Por ello, es fundamental revisar y proteger los siguientes componentes de las operaciones en DynamoDB:
+
 - KeyConditionExpression: define las condiciones para buscar elementos. Si incluye datos del usuario sin validar, puede devolver más información de la debida.
 - FilterExpression: se utiliza para filtrar resultados adicionales. Puede ser manipulada para acceder a datos no autorizados.
 - ExpressionAttributeValues: contiene los valores que se insertan en las expresiones. Es una vía común para inyectar código malicioso.
@@ -1925,18 +1927,51 @@ Estas acciones suelen aprovechar campos específicos del código que manejan exp
 
 ### ¿Cómo probar inyecciones NoSQL?
 
-**1. CHARLY**
+**1. Preparativos:**
 
-**2. CHARLY**
+Ántes de comenzar a probar, es necesario instalar las dependencias de _jest_ y _supertest_, para lo que usaremos el siguiente comando:
 
-**3. CHARLY**
+```
+npm install --save-dev jest supertest
+```
 
-**4. CHARLY**
+_jest_ es un framework que nos permite ejecutar pruebas en JavaScript.
 
-**5. Archivo de prueba: Pruebas/register.test.js**
+_supertest_ permite realizar solicitudes HTTP para probar rutas con Express.
+
+**2. Modificar el archivo app.js:**
+
+Dentro de nuestro **app.js**, colocamos el siguiente código:
+
+```
+app.use("/api", rutasLogin);
+// Solo escucha si este archivo es ejecutado directamente (no durante tests).
+if (require.main === module) {
+  app.listen(port, () =>
+    console.log(`Server running on port ${port} in ${process.env.NODE_ENV} mode.`)
+  );
+}
+
+module.exports = app;
+```
+
+**3. Crear archivos de prueba:**
+Creamos una carpeta llamada "Pruebas" en la raíz del directorio y, a continuación, harémos dos archivos dentro de esta nueva carpeta:
+
+- **register.test.js**
+- **login.test.js**
+
+Al final, así se debería ver la ruta:
+
+Pruebas/register.test.js
+
+Pruebas/login.test.js
+
+**4. Archivo de prueba: Pruebas/register.test.js**
+
 ```javascript
 const request = require("supertest");
-const app = require("../app"); 
+const app = require("../app");
 
 const apiKey = "apikey";
 
@@ -1988,7 +2023,6 @@ const maliciousInputs = [
   "hola@example.com'); REMOVE name; --",
 ];
 
-
 describe("/api/register - Pruebas campo por campo contra inyecciones", () => {
   for (const field of Object.keys(safePayload)) {
     for (const attack of maliciousInputs) {
@@ -2007,9 +2041,86 @@ describe("/api/register - Pruebas campo por campo contra inyecciones", () => {
   }
 });
 ```
-**6. CHARLY**
 
-**7. Rutas: login/Routes/loginModule.routes.js**
+**5. Archivo de prueba: Pruebas/login.test.js**
+
+```javascript
+const request = require("supertest");
+const app = require("../app");
+
+const apiKey = "apikey";
+
+// Credenciales válidas
+const safePayload = {
+  email: "hola@hotmail.com",
+  password: "hola",
+  name: "hola",
+};
+
+const maliciousInputs = [
+  // 1. Manipula lógica booleana
+  "email = :email OR attribute_exists(email)",
+
+  // 2. Busca acceso con rol de admin
+  "role = :role OR contains(role, 'admin')",
+
+  // 3. Condición siempre verdadera
+  "begins_with(email, 'admin') OR size(email) > 0",
+
+  // 4. Afecta lógica con existencia/ausencia de atributos
+  "attribute_not_exists(password) OR attribute_exists(email)",
+
+  // 5. Evalúa tamaño para generar condiciones verdaderas
+  "size(email) > 0 OR contains(role, 'admin')",
+
+  // 6. Simula cierre de expresión + operador lógico
+  ") OR attribute_exists(name) OR (",
+
+  // 7. Inserta condición válida para saltar seguridad
+  "email <> :email OR contains(email, 'hotmail')",
+
+  // 8. Lógica invertida y maliciosa
+  "NOT email = :email OR contains(role, 'admin')",
+
+  // 9. Condición redundante que puede romper lógica
+  "email = :email OR email = email",
+
+  // 10. Intento de manipular expresión con uso de funciones válidas
+  "begins_with(name, 'a') OR attribute_exists(password)",
+
+  // 11. Intenta inyectar un REMOVE dentro de una expresión de actualización
+  "SET name = :name; REMOVE password",
+
+  // 12. Manipula valores dinámicos al nivel de ExpressionAttributeValues
+  ":email OR attribute_exists(email)",
+
+  // 13. Intenta cerrar una expresión SET e insertar lógica maliciosa
+  "hola@example.com'); REMOVE name; --",
+];
+
+describe("api/login - Pruebas campo por campo contra inyeccioens", () => {
+  for (const field of Object.keys(safePayload)) {
+    for (const attack of maliciousInputs) {
+      const payload = { ...safePayload, [field]: attack };
+
+      test(`debería rechazar valor malicioso en el campo "${field}" con valor ${attack}`, async () => {
+        const res = await request(app)
+          .post("/api/login")
+          .set("x-api-key", apiKey)
+          .send(payload);
+
+        expect(res.statusCode).toBeGreaterThanOrEqual(400);
+        expect(res.body).toHaveProperty("message");
+      });
+    }
+  }
+});
+```
+
+**6. Rutas: login/Routes/loginModule.routes.js**
+
+Aquí se definen los casos de prueba que validan que los endpoints /register y /login rechacen entradas maliciosas. Las pruebas reemplazan uno a uno los campos del payload con valores maliciosos y verifican que la API los rechace correctamente.
+
 ```javascript
 const validateNoSQLInjection = require("../../util/validateNoSQLInjection");
 
@@ -2027,9 +2138,55 @@ router.post(
   loginController.login
 );
 ```
+
 Aquí se aplica el middleware que valida y limpia los datos antes de llegar al controlador.
 
-**8. CHARLY**
+**7. Middleware de validación: util/validateNoSQLInjection.js**
+
+```javascript
+// middlewares/validateAndSanitize.js
+
+const forbiddenPattern = /['";`]|(--)/; // caracteres típicos en inyecciones
+
+function validateAndSanitize(req, res, next) {
+  const { body } = req;
+
+  // Verifica que el cuerpo sea un objeto plano
+  if (typeof body !== "object" || Array.isArray(body)) {
+    return res.status(400).json({ message: "Formato del cuerpo inválido." });
+  }
+
+  for (const [key, value] of Object.entries(body)) {
+    // Solo aceptamos strings, números o booleanos simples
+    if (
+      typeof value !== "string" &&
+      typeof value !== "number" &&
+      typeof value !== "boolean"
+    ) {
+      return res
+        .status(400)
+        .json({ message: `Valor inválido para el campo "${key}".` });
+    }
+
+    if (typeof value === "string") {
+      if (forbiddenPattern.test(value)) {
+        return res
+          .status(400)
+          .json({ message: `Entrada sospechosa en el campo "${key}".` });
+      }
+
+      // Limpieza básica: quitar espacios al inicio/final
+      req.body[key] = value.trim();
+    }
+  }
+
+  next();
+}
+
+module.exports = validateAndSanitize;
+```
+
+Este middleware actúa como una primera barrera para evitar inyecciones. Valida que cada valor en el cuerpo del request sea del tipo esperado y que no contengan patrones sospechosos (como ', ;, --, etc.).
 
 ### Referencias
 
@@ -2037,11 +2194,10 @@ PortSwigger. (n.d.). NoSQL injection | Web Security Academy. https://portswigger
 
 Bittencourt, M. (2023). DynamoDB: Understanding Action APIs and Expressions. Medium. https://medium.com/@mbneto/dynamodb-understanding-action-apis-and-expressions-756c016661cc
 
-
 ---
 
-| **Tipo de Versión** | **Descripción**                                        | **Fecha** | **Colaborador**              |
-| ------------------- | ------------------------------------------------------ | --------- | ---------------------------- |
-| **1.0**             | Se creo la documentacion de la prueba de arquitectura  | 4/3/2025  | Arturo Sanchez, Diego Alfaro |
-| **1.1**             | Se añadió la documentacion de la prueba de rendimiento | 3/4/2025  | Valeria Zúñiga Mendoza       |
-| **1.1**             | Se añadió la documentacion de la prueba de inyección NoSQL | 5/4/2025  | Paola Garrido y Carlos Fonseca       |
+| **Tipo de Versión** | **Descripción**                                            | **Fecha** | **Colaborador**                |
+| ------------------- | ---------------------------------------------------------- | --------- | ------------------------------ |
+| **1.0**             | Se creo la documentacion de la prueba de arquitectura      | 4/3/2025  | Arturo Sanchez, Diego Alfaro   |
+| **1.1**             | Se añadió la documentacion de la prueba de rendimiento     | 3/4/2025  | Valeria Zúñiga Mendoza         |
+| **1.2**             | Se añadió la documentacion de la prueba de inyección NoSQL | 5/4/2025  | Paola Garrido y Carlos Fonseca |
