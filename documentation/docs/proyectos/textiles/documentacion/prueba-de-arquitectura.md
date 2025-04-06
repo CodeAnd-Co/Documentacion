@@ -1865,25 +1865,25 @@ Debes configurar tu navegador para que use el proxy de Burp Suite:
 
 Ahora, dentro de Burp Suite, dirígete a la pestaña de proxy y selecciona la opción de “Open Browser” o “Abrir Navegador”
 
-![alt text](image.png)
+![alt text](csrf.png)
 
 Después, dentro del navegador, pega la URL de la página para realizar las pruebas. En este caso utilizaremos la dirección http://localhost:5173/login solo que cambiaremos localhost por [::1] para evitar errores de que no cargue la página dentro de Burp: http://[::1]:5173/login
 
 Al abrir la dirección URL dentro de Burp, podemos observar que se abre una pestaña dentro del navegador:
 
-![alt text](image-1.png)
+![alt text](csrf1.png)
 
 Si nos movemos a HTTP history observamos que cuando realizamos una petición dentro del navegador, se registra dentro del historial.
 
-![alt text](image-2.png)
+![alt text](csrf2.png)
 
 Dentro del request se pueden ver los datos que se están enviando mediante el formulario.
 
-![alt text](image-3.png)
+![alt text](csrf3.png)
 
 Haz clic derecho dentro de la petición o request, después selecciona send to repeater.
 
-![alt text](image-4.png)
+![alt text](csrf4.png)
 
 Ahora, abre la pestaña del repeater. Si haces clic en el botón de send o enviar y se realiza la petición de forma exitosa, quiere decir que la aplicación no está protegida contra CSFRF porque no se está generando un token del formulario para validarlo en el backend.
 
@@ -1894,9 +1894,9 @@ Si un atacante crea un sitio malicioso con un formulario oculto y logra que un u
 
 Al implementar la librería de CSURF nos permite proteger las consultas de ataque maliciosos, por lo que al realizar un POST sin un token CSRF, no nos permite realizar una petición hacia nuestra API.
 
-![alt text](image-5.png)
+![alt text](csrf5.png)
 
-![alt text](image-6.png)
+![alt text](csrf6.png)
 
 ## Prueba de rendimiento
 
