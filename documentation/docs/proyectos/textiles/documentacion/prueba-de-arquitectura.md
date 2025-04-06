@@ -1795,9 +1795,684 @@ Crea un componente nuevo en el frontend llamado `BotonPago.jsx`. Este componente
 
 ---
 
+### 5.3 Documentación visual de componentes con Storybook
+
+**1. ¿Qué es Storybook?**
+
+Storybook es una herramienta de desarrollo para construir, probar y documentar componentes de interfaz gráfica de usuario de forma aislada y visual.
+
+**2. ¿Por qué usar Storybook?**
+
+- **Aislamiento**: Permite enfocarte en un solo componente a la vez, sin depender de las rutas o el estado global de tu app.
+- **Catálogo visual**: Todos los componentes están organizados y son navegables desde una interfaz.
+- **Documentación**: Las stories sirven como documentación interactiva de tu UI.
+- **Pruebas**:
+  - Puedes simular props, estados y eventos fácilmente.
+  - Compatible con pruebas visuales y de accesibilidad.
+
+**3. Instalar Storybook**
+
+```bash
+npx sb init
+npm install @storybook/addon-a11y --save-dev
+```
+
+Esto agregará una carpeta llamada _.storybook_ con la configuración central de Storybook que incluye los archivos main.js, preview.js y vitest.js.
+
+- **main.js** define la configuración general de Storybook, incluyendo los addons instalados, las rutas donde se encuentran las historias y el framework que se utilizará (en este caso, React con Vite). Como estaremos utilizando _@storybook/addon-a11y_, debemos asegurarnos de agregarlo dentro del arreglo addons, de la siguiente forma:
+
+```javascript
+"addons": [
+    "@storybook/addon-essentials",
+    "@storybook/addon-onboarding",
+    "@chromatic-com/storybook",
+    "@storybook/experimental-addon-test",
+    "@storybook/addon-a11y"
+  ]
+```
+
+- **preview.js** define cómo se visualizan tus componentes dentro de Storybook. Aquí puedes configurar decoradores globales, temas personalizados y parámetros que afectan a todas las historias, como controles automáticos para props de tipo color o fecha.
+- **vitest.js** y **vitest.workspace.js** conectan Storybook con Vitest, permitiendo ejecutar pruebas automatizadas directamente sobre los componentes definidos en tus historias. Utilizan la configuración de **preview.js** para asegurar coherencia entre el entorno de pruebas y la visualización en Storybook.
+
+**4. Refactorización: src/stories**
+
+Al instalar Storybook, por defecto se incluye una carpeta src/stories con componentes y ejemplos. Vamos a eliminar su contenido y reorganizar el proyecto con una estructura más limpia, modular y escalable.
+
+```bash
+src/
+├── componentes/
+│   └── Button.jsx            # Componente funcional (usando MUI)
+├── estilos/
+│   └── button.css            # Estilos personalizados del componente (si aplica)
+├── stories/
+│   └── Button.stories.js     # Historias del componente para Storybook
+```
+
+**5. Crear un componente: src/components/Button.jsx:**
+
+```javascript
+// Importa React, necesario para definir componentes funcionales
+import React from "react";
+
+// Importa PropTypes para validar las props que recibe el componente
+import PropTypes from "prop-types";
+
+// Importa el componente Button de la librería Material UI
+import MUIButton from "@mui/material/Button";
+
+/** Botón personalizado usando Material UI */
+export const Button = ({
+  primary = false, // Si es true, usará el color 'primary'; si no, 'secondary'
+  backgroundColor = null, // Permite definir un color de fondo personalizado
+  size = "medium", // Tamaño del botón: 'small', 'medium' o 'large'
+  label, // Texto que aparecerá dentro del botón
+  variant = "contained", // Tipo de botón: 'contained', 'outlined', 'text'
+  ...props // Cualquier otra prop adicional (por ejemplo: onClick)
+}) => {
+  // Determina si el botón usará el color 'primary' o 'secondary'
+  const color = primary ? "primary" : "secondary";
+
+  // Devuelve el botón de MUI con las props aplicadas
+  return (
+    <MUIButton
+      variant={variant}
+      color={color}
+      size={size}
+      sx={backgroundColor ? { backgroundColor } : {}}
+      {...props}
+    >
+      {label}
+    </MUIButton>
+  );
+};
+
+// Definición de los tipos de props esperadas y sus validaciones
+Button.propTypes = {
+  /** ¿Es la acción principal en la página? */
+  primary: PropTypes.bool,
+  /** Color de fondo opcional */
+  backgroundColor: PropTypes.string,
+  /** Tamaño del botón */
+  size: PropTypes.oneOf(["small", "medium", "large"]),
+  /** Texto del botón */
+  label: PropTypes.string.isRequired,
+  /** Variante del botón */
+  variant: PropTypes.oneOf(["contained", "outlined", "text"]),
+  /** Manejador de clics */
+  onClick: PropTypes.func,
+};
+```
+
+**6. Crear estilo del componente: src/estilos/button.css:**
+
+```css
+.storybook-button {
+  display: inline-block;
+  cursor: pointer;
+  border: 0;
+  border-radius: 3em;
+  font-weight: 700;
+  line-height: 1;
+  font-family: "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.storybook-button--primary {
+  background-color: #555ab9;
+  color: white;
+}
+.storybook-button--secondary {
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;
+  background-color: transparent;
+  color: #333;
+}
+.storybook-button--small {
+  padding: 10px 16px;
+  font-size: 12px;
+}
+.storybook-button--medium {
+  padding: 11px 20px;
+  font-size: 14px;
+}
+.storybook-button--large {
+  padding: 12px 24px;
+  font-size: 16px;
+}
+```
+
+**7. Crear historia del componente: src/stories/Button.stories.js:**
+
+```javascript
+// Importa la función `action` de Storybook para mostrar clics en el panel de acciones
+import { action } from "@storybook/addon-actions";
+
+// Importa el componente Button que quieres documentar y mostrar en Storybook
+import { Button } from "../components/Button";
+
+// Exporta la configuración principal del Storybook para este componente
+export default {
+  title: "Example/Button",
+  component: Button,
+  parameters: {
+    layout: "centered",
+  },
+  tags: ["autodocs"],
+
+  // Define qué props pueden ser controladas desde la UI de Storybook
+  argTypes: {
+    backgroundColor: { control: "color" },
+    variant: {
+      control: "radio",
+      options: ["contained", "outlined", "text"],
+    },
+    size: {
+      control: "radio",
+      options: ["small", "medium", "large"],
+    },
+    primary: { control: "boolean" },
+  },
+
+  // Valores por defecto para todas las historias (como un template base)
+  args: {
+    onClick: action("clicked"),
+  },
+};
+
+// Define historias específicas (variantes del botón) con diferentes props
+
+export const Primary = {
+  args: {
+    primary: true,
+    label: "Primary Button",
+    variant: "contained",
+  },
+};
+
+export const Secondary = {
+  args: {
+    primary: false,
+    label: "Secondary Button",
+    variant: "contained",
+  },
+};
+
+export const Outlined = {
+  args: {
+    primary: true,
+    label: "Button",
+    variant: "outlined",
+  },
+};
+
+export const Text = {
+  args: {
+    primary: true,
+    label: "Button",
+    variant: "text",
+  },
+};
+
+export const Large = {
+  args: {
+    size: "large",
+    label: "Button",
+  },
+};
+
+export const Small = {
+  args: {
+    size: "small",
+    label: "Button",
+  },
+};
+
+export const CustomColor = {
+  args: {
+    label: "Button",
+    backgroundColor: "#FF5722",
+    primary: true,
+    variant: "contained",
+  },
+};
+```
+
+- **title** : Define cómo se agrupará y mostrará el componente en la interfaz de Storybook. En este caso, 'Example/Button' indica que el componente Button se encontrará dentro del grupo o carpeta virtual llamada Example.
+- **component** : Especifica el componente que se está documentando.
+- **tags**: Al incluir _autodocs_, se habilita la generación automática de documentación.
+- **parameters.docs.description.component**: Proporciona una descripción del componente que aparecerá en la documentación.
+- **argTypes** : Define qué props pueden ser controladas desde la UI de Storybook.
+- Se define una plantilla (**Template**) para reutilizar la estructura del componente con diferentes argumentos (**args**).
+- Se crean historias como **Primary** y **Secondary**, cada una con diferentes argumentos que representan variantes del botón.
+
+**7. Iniciar Storybook**
+
+```bash
+npm run storybook
+```
+
+**8. Pruebas visuales manuales**
+
+- Simulación de props y eventos
+  - Permiten visualizar el componente en diferentes estados cambiando sus props (como color, variante, etc.) desde la interfaz de Storybook.
+  - Puedes simular eventos como onClick y verlos reflejados en el panel Actions.
+
+![alt text](image-1.png)
+
+![alt text](image-2.png)
+
+**9. Pruebas de accesibilidad**
+
+- Al instalar @storybook/addon-a11y, se habilita la pestaña A11y en la interfaz de Storybook.
+- Esta analiza automáticamente los componentes e identifica posibles problemas de accesibilidad, como:
+  - Contraste insuficiente entre texto y fondo.
+  - Ausencia de atributos aria-\*.
+  - Elementos interactivos sin roles definidos.
+  - Estructuras incorrectas como encabezados mal jerarquizados.
+
+![alt text](image.png)
+
+(Coleman & Nguyen, n.d.)
+
 # Pruebas
 
+## Prueba de rendimiento
+
+### Objetivo
+
+Ejecutar una prueba de rendimiento sobre el endpoint de **registro de usuarios** del sistema. El objetivo es simular múltiples registros consecutivos para evaluar el comportamiento de la arquitectura bajo carga y validar la capacidad del sistema para manejar múltiples registros de usuarios consecutivos, sin errores.
+
+### Herramientas necesarias
+
+- [Postman](https://www.postman.com/)
+- Acceso a la colección de pruebas o endpoints del sistema
+
+---
+
+### Paso 1: Obtener CSRF Token
+
+1. Abre Postman y crea una nueva solicitud con la siguiente URL: https://nr8nw243lb.execute-api.us-east-1.amazonaws.com/csrf-token
+2. Cambia el método a `GET`.
+3. Haz clic en **Send**.
+4. Copia el valor del campo `"csrfToken"` de la respuesta.
+
+### Paso 2: Ejecutar el script de carga en el endpoint de registro
+
+1. Crea una nueva solicitud en Postman con la siguiente URL: https://nr8nw243lb.execute-api.us-east-1.amazonaws.com/api/register
+2. Cambia el método a `POST`.
+3. Ve a la pestaña **"Headers"** y añade una key llamada "x-api-key" e introduce un valor como "apiKey".
+4. Ve a la pestaña **"Body"** indicando el tipo de body como raw, JSON.
+
+```javascript
+  {
+    "email": "user@example.com",
+    "password": "Test1234!",
+    "name": "user"
+  }
+```
+
+5. Ve a la pestaña **"Pre-request Script"** y pega el siguiente script, reemplazando el csrfToken donde se indica:
+
+```javascript
+const totalRequests = 1000;
+const delayBetweenRequests = 0; // Ejecutar inmediatamente sin pausas
+
+const url =
+  "https://nr8nw243lb.execute-api.us-east-1.amazonaws.com/api/register";
+const method = "POST";
+const apiKey = "apikey"; // Reemplazar con tu API key real
+const csrfToken = "HpaBZMv9-HNzDqmYsppZ211Le3QuYYYY-X50"; // Reemplazar con el token obtenido en el paso 1
+
+let completedRequests = 0;
+
+function makeRequest() {
+  completedRequests++;
+  console.log(`Sending request ${completedRequests}/${totalRequests}`);
+
+  const requestBody = {
+    email: `user${completedRequests}@example.com`,
+    password: "Test1234!",
+    name: `user${completedRequests}`,
+  };
+
+  pm.sendRequest(
+    {
+      url: url,
+      method: method,
+      header: {
+        "Content-Type": "application/json",
+        "x-api-key": apiKey,
+        "X-CSRF-Token": csrfToken,
+      },
+      body: JSON.stringify(requestBody),
+    },
+    function (err, res) {
+      if (err) {
+        console.error(`Error on request ${completedRequests}:`, err);
+      } else {
+        console.log(`Request ${completedRequests} Status: ${res.status}`);
+        console.log(`Response: ${res.json ? res.json() : res.text()}`);
+      }
+
+      if (completedRequests < totalRequests) {
+        makeRequest(); // Ejecutar inmediatamente la siguiente solicitud
+      } else {
+        console.log("All requests completed.");
+      }
+    }
+  );
+}
+
+makeRequest();
+```
+
+### Paso 3: Ejecutar el script
+
+1. Haz clic en "Send" en la solicitud que contiene el script anterior.
+2. Abre la consola de Postman para ver los resultados en tiempo real.
+
+### Resultados esperados
+
+- Para solicitudes exitosas, deberías ver algo como:
+  - Request 7 Status: Created
+  - Request 8 Status: Created
+- Si alguna solicitud falla, verás un mensaje como:
+  - Error on request 14: ...
+- Al completar todas las solicitudes, la consola mostrará:
+  - All requests completed.
+
 ## Prueba de seguridad
+
+### Comprendiendo la Inyección NoSQL en DynamoDB
+
+Cuando el sistema no valida adecuadamente la información que escribe el usuario, esa entrada puede alterar el comportamiento de la aplicación. En bases de datos NoSQL como DynamoDB, este tipo de vulnerabilidad ocurre cuando los datos del usuario se utilizan directamente en objetos o expresiones dentro de una consulta. Las consecuencias pueden incluir:
+
+- Manipular parámetros de consulta en expresiones.
+- Modificar condiciones de filtro o condiciones de clave.
+- Inyectar en cargas útiles con formato de documento.
+- Evadir validaciones del lado del servidor, como controles de autenticación o autorización.
+- Alterar estructuras internas de los documentos, creando atributos inesperados que pueden afectar otras partes del sistema.
+
+(PortSwigger, n.d.)
+
+Estas acciones suelen aprovechar campos específicos del código que manejan expresiones y parámetros sensibles. Por ello, es fundamental revisar y proteger los siguientes componentes de las operaciones en DynamoDB:
+
+- KeyConditionExpression: define las condiciones para buscar elementos. Si incluye datos del usuario sin validar, puede devolver más información de la debida.
+- FilterExpression: se utiliza para filtrar resultados adicionales. Puede ser manipulada para acceder a datos no autorizados.
+- ExpressionAttributeValues: contiene los valores que se insertan en las expresiones. Es una vía común para inyectar código malicioso.
+- UpdateExpression: permite modificar atributos en un ítem. Si no se controla bien, puede usarse para cambiar datos sensibles o restringidos.
+
+(Bittencourt, 2023)
+
+### ¿Cómo probar inyecciones NoSQL?
+
+**1. Preparativos:**
+
+Ántes de comenzar a probar, es necesario instalar las dependencias de _jest_ y _supertest_, para lo que usaremos el siguiente comando:
+
+```
+npm install --save-dev jest supertest
+```
+
+_jest_ es un framework que nos permite ejecutar pruebas en JavaScript.
+
+_supertest_ permite realizar solicitudes HTTP para probar rutas con Express.
+
+**2. Modificar el archivo app.js:**
+
+Dentro de nuestro **app.js**, colocamos el siguiente código:
+
+```
+app.use("/api", rutasLogin);
+// Solo escucha si este archivo es ejecutado directamente (no durante tests).
+if (require.main === module) {
+  app.listen(port, () =>
+    console.log(`Server running on port ${port} in ${process.env.NODE_ENV} mode.`)
+  );
+}
+
+module.exports = app;
+```
+
+**3. Crear archivos de prueba:**
+Creamos una carpeta llamada "Pruebas" en la raíz del directorio y, a continuación, harémos dos archivos dentro de esta nueva carpeta:
+
+- **register.test.js**
+- **login.test.js**
+
+Al final, así se debería ver la ruta:
+
+Pruebas/register.test.js
+
+Pruebas/login.test.js
+
+**4. Archivo de prueba: Pruebas/register.test.js**
+
+```javascript
+const request = require("supertest");
+const app = require("../app");
+
+const apiKey = "apikey";
+
+// Entradas válidas
+const safePayload = {
+  email: "hola@hotmail.com",
+  password: "hola",
+  name: "hola",
+};
+
+const maliciousInputs = [
+  // 1. Manipula lógica booleana
+  "email = :email OR attribute_exists(email)",
+
+  // 2. Busca acceso con rol de admin
+  "role = :role OR contains(role, 'admin')",
+
+  // 3. Condición siempre verdadera
+  "begins_with(email, 'admin') OR size(email) > 0",
+
+  // 4. Afecta lógica con existencia/ausencia de atributos
+  "attribute_not_exists(password) OR attribute_exists(email)",
+
+  // 5. Evalúa tamaño para generar condiciones verdaderas
+  "size(email) > 0 OR contains(role, 'admin')",
+
+  // 6. Simula cierre de expresión + operador lógico
+  ") OR attribute_exists(name) OR (",
+
+  // 7. Inserta condición válida para saltar seguridad
+  "email <> :email OR contains(email, 'hotmail')",
+
+  // 8. Lógica invertida y maliciosa
+  "NOT email = :email OR contains(role, 'admin')",
+
+  // 9. Condición redundante que puede romper lógica
+  "email = :email OR email = email",
+
+  // 10. Intento de manipular expresión con uso de funciones válidas
+  "begins_with(name, 'a') OR attribute_exists(password)",
+
+  // 11. Intenta inyectar un REMOVE dentro de una expresión de actualización
+  "SET name = :name; REMOVE password",
+
+  // 12. Manipula valores dinámicos al nivel de ExpressionAttributeValues
+  ":email OR attribute_exists(email)",
+
+  // 13. Intenta cerrar una expresión SET e insertar lógica maliciosa
+  "hola@example.com'); REMOVE name; --",
+];
+
+describe("/api/register - Pruebas campo por campo contra inyecciones", () => {
+  for (const field of Object.keys(safePayload)) {
+    for (const attack of maliciousInputs) {
+      const payload = { ...safePayload, [field]: attack };
+
+      test(`debería rechazar valor malicioso en el campo "${field}" con valor ${attack}`, async () => {
+        const res = await request(app)
+          .post("/api/register")
+          .set("x-api-key", apiKey)
+          .send(payload);
+
+        expect(res.statusCode).toBeGreaterThanOrEqual(400);
+        expect(res.body).toHaveProperty("message");
+      });
+    }
+  }
+});
+```
+
+**5. Archivo de prueba: Pruebas/login.test.js**
+
+```javascript
+const request = require("supertest");
+const app = require("../app");
+
+const apiKey = "apikey";
+
+// Credenciales válidas
+const safePayload = {
+  email: "hola@hotmail.com",
+  password: "hola",
+  name: "hola",
+};
+
+const maliciousInputs = [
+  // 1. Manipula lógica booleana
+  "email = :email OR attribute_exists(email)",
+
+  // 2. Busca acceso con rol de admin
+  "role = :role OR contains(role, 'admin')",
+
+  // 3. Condición siempre verdadera
+  "begins_with(email, 'admin') OR size(email) > 0",
+
+  // 4. Afecta lógica con existencia/ausencia de atributos
+  "attribute_not_exists(password) OR attribute_exists(email)",
+
+  // 5. Evalúa tamaño para generar condiciones verdaderas
+  "size(email) > 0 OR contains(role, 'admin')",
+
+  // 6. Simula cierre de expresión + operador lógico
+  ") OR attribute_exists(name) OR (",
+
+  // 7. Inserta condición válida para saltar seguridad
+  "email <> :email OR contains(email, 'hotmail')",
+
+  // 8. Lógica invertida y maliciosa
+  "NOT email = :email OR contains(role, 'admin')",
+
+  // 9. Condición redundante que puede romper lógica
+  "email = :email OR email = email",
+
+  // 10. Intento de manipular expresión con uso de funciones válidas
+  "begins_with(name, 'a') OR attribute_exists(password)",
+
+  // 11. Intenta inyectar un REMOVE dentro de una expresión de actualización
+  "SET name = :name; REMOVE password",
+
+  // 12. Manipula valores dinámicos al nivel de ExpressionAttributeValues
+  ":email OR attribute_exists(email)",
+
+  // 13. Intenta cerrar una expresión SET e insertar lógica maliciosa
+  "hola@example.com'); REMOVE name; --",
+];
+
+describe("api/login - Pruebas campo por campo contra inyeccioens", () => {
+  for (const field of Object.keys(safePayload)) {
+    for (const attack of maliciousInputs) {
+      const payload = { ...safePayload, [field]: attack };
+
+      test(`debería rechazar valor malicioso en el campo "${field}" con valor ${attack}`, async () => {
+        const res = await request(app)
+          .post("/api/login")
+          .set("x-api-key", apiKey)
+          .send(payload);
+
+        expect(res.statusCode).toBeGreaterThanOrEqual(400);
+        expect(res.body).toHaveProperty("message");
+      });
+    }
+  }
+});
+```
+
+**6. Rutas: login/Routes/loginModule.routes.js**
+
+Aquí se definen los casos de prueba que validan que los endpoints /register y /login rechacen entradas maliciosas. Las pruebas reemplazan uno a uno los campos del payload con valores maliciosos y verifican que la API los rechace correctamente.
+
+```javascript
+const validateNoSQLInjection = require("../../util/validateNoSQLInjection");
+
+router.post(
+  "/register",
+  validateNoSQLInjection,
+  checkHeader("x-api-key", "Api key invalida"),
+  registerController.register
+);
+
+router.post(
+  "/login",
+  validateNoSQLInjection,
+  checkHeader("x-api-key", "Api key invalida"),
+  loginController.login
+);
+```
+
+Aquí se aplica el middleware que valida y limpia los datos antes de llegar al controlador.
+
+**7. Middleware de validación: util/validateNoSQLInjection.js**
+
+```javascript
+// middlewares/validateAndSanitize.js
+
+const forbiddenPattern = /['";`]|(--)/; // caracteres típicos en inyecciones
+
+function validateAndSanitize(req, res, next) {
+  const { body } = req;
+
+  // Verifica que el cuerpo sea un objeto plano
+  if (typeof body !== "object" || Array.isArray(body)) {
+    return res.status(400).json({ message: "Formato del cuerpo inválido." });
+  }
+
+  for (const [key, value] of Object.entries(body)) {
+    // Solo aceptamos strings, números o booleanos simples
+    if (
+      typeof value !== "string" &&
+      typeof value !== "number" &&
+      typeof value !== "boolean"
+    ) {
+      return res
+        .status(400)
+        .json({ message: `Valor inválido para el campo "${key}".` });
+    }
+
+    if (typeof value === "string") {
+      if (forbiddenPattern.test(value)) {
+        return res
+          .status(400)
+          .json({ message: `Entrada sospechosa en el campo "${key}".` });
+      }
+
+      // Limpieza básica: quitar espacios al inicio/final
+      req.body[key] = value.trim();
+    }
+  }
+
+  next();
+}
+
+module.exports = validateAndSanitize;
+```
+
+Este middleware actúa como una primera barrera para evitar inyecciones. Valida que cada valor en el cuerpo del request sea del tipo esperado y que no contengan patrones sospechosos (como ', ;, --, etc.).
+
+### Referencias
+
+PortSwigger. (n.d.). NoSQL injection | Web Security Academy. https://portswigger.net/web-security/nosql-injection
+
+Bittencourt, M. (2023). DynamoDB: Understanding Action APIs and Expressions. Medium. https://medium.com/@mbneto/dynamodb-understanding-action-apis-and-expressions-756c016661cc
+
+Coleman, T., & Nguyen, D. (n.d.). Intro to storybook. Storybook Tutorials. https://storybook.js.org/tutorials/intro-to-storybook/
+
+---
 
 ## Ataques CSRF
 
@@ -1898,114 +2573,10 @@ Al implementar la librería de CSURF nos permite proteger las consultas de ataqu
 
 ![alt text](csrf6.png)
 
-## Prueba de rendimiento
-
-### Objetivo
-
-Ejecutar una prueba de rendimiento sobre el endpoint de **registro de usuarios** del sistema. El objetivo es simular múltiples registros consecutivos para evaluar el comportamiento de la arquitectura bajo carga y validar la capacidad del sistema para manejar múltiples registros de usuarios consecutivos, sin errores.
-
-## Herramientas necesarias
-
-- [Postman](https://www.postman.com/)
-- Acceso a la colección de pruebas o endpoints del sistema
-
----
-
-## Paso 1: Obtener CSRF Token
-
-1. Abre Postman y crea una nueva solicitud con la siguiente URL: https://nr8nw243lb.execute-api.us-east-1.amazonaws.com/csrf-token
-2. Cambia el método a `GET`.
-3. Haz clic en **Send**.
-4. Copia el valor del campo `"csrfToken"` de la respuesta.
-
-## Paso 2: Ejecutar el script de carga en el endpoint de registro
-
-1. Crea una nueva solicitud en Postman con la siguiente URL: https://nr8nw243lb.execute-api.us-east-1.amazonaws.com/api/register
-2. Cambia el método a `POST`.
-3. Ve a la pestaña **"Headers"** y añade una key llamada "x-api-key" e introduce un valor como "apiKey".
-4. Ve a la pestaña **"Body"** indicando el tipo de body como raw, JSON.
-
-```javascript
-  {
-    "email": "user@example.com",
-    "password": "Test1234!",
-    "name": "user"
-  }
-```
-
-5. Ve a la pestaña **"Pre-request Script"** y pega el siguiente script, reemplazando el csrfToken donde se indica:
-
-```javascript
-const totalRequests = 2;
-const delayBetweenRequests = 0; // Ejecutar inmediatamente sin pausas
-
-const url =
-  "https://nr8nw243lb.execute-api.us-east-1.amazonaws.com/api/register";
-const method = "POST";
-const apiKey = "apikey"; // Reemplazar con tu API key real
-const csrfToken = "HpaBZMv9-HNzDqmYsppZ211Le3QuYYYY-X50"; // Reemplazar con el token obtenido en el paso 1
-
-let completedRequests = 0;
-
-function makeRequest() {
-  completedRequests++;
-  console.log(`Sending request ${completedRequests}/${totalRequests}`);
-
-  const requestBody = {
-    email: `user${completedRequests}@example.com`,
-    password: "Test1234!",
-    name: `user${completedRequests}`,
-  };
-
-  pm.sendRequest(
-    {
-      url: url,
-      method: method,
-      header: {
-        "Content-Type": "application/json",
-        "x-api-key": apiKey,
-        "X-CSRF-Token": csrfToken,
-      },
-      body: JSON.stringify(requestBody),
-    },
-    function (err, res) {
-      if (err) {
-        console.error(`Error on request ${completedRequests}:`, err);
-      } else {
-        console.log(`Request ${completedRequests} Status: ${res.status}`);
-        console.log(`Response: ${res.json ? res.json() : res.text()}`);
-      }
-
-      if (completedRequests < totalRequests) {
-        makeRequest(); // Ejecutar inmediatamente la siguiente solicitud
-      } else {
-        console.log("All requests completed.");
-      }
-    }
-  );
-}
-
-makeRequest();
-```
-
-## Paso 3: Ejecutar el script
-
-1. Haz clic en "Send" en la solicitud que contiene el script anterior.
-2. Abre la consola de Postman para ver los resultados en tiempo real.
-
-## Resultados esperados
-
-- Para solicitudes exitosas, deberías ver algo como:
-  - Request 7 Status: Created
-  - Request 8 Status: Created
-- Si alguna solicitud falla, verás un mensaje como:
-  - Error on request 14: ...
-- Al completar todas las solicitudes, la consola mostrará:
-  - All requests completed.
-
----
-
-| **Tipo de Versión** | **Descripción**                                        | **Fecha** | **Colaborador**              |
-| ------------------- | ------------------------------------------------------ | --------- | ---------------------------- |
-| **1.0**             | Se creo la documentacion de la prueba de arquitectura  | 4/3/2025  | Arturo Sanchez, Diego Alfaro |
-| **1.1**             | Se añadió la documentacion de la prueba de rendimiento | 3/4/2025  | Valeria Zúñiga Mendoza       |
+| **Tipo de Versión** | **Descripción**                                            | **Fecha** | **Colaborador**                |
+| ------------------- | ---------------------------------------------------------- | --------- | ------------------------------ |
+| **1.0**             | Se creo la documentacion de la prueba de arquitectura      | 4/3/2025  | Arturo Sanchez, Diego Alfaro   |
+| **1.1**             | Se añadió la documentacion de la prueba de rendimiento     | 3/4/2025  | Valeria Zúñiga Mendoza         |
+| **1.2**             | Se añadió la documentacion de la prueba de inyección NoSQL | 5/4/2025  | Paola Garrido y Carlos Fonseca |
+| **1.3**             | Se añadió la documentacion de Storybook                    | 5/4/2025  | Paola Garrido                  |
+| **1.4**             | Se añadió la documentacion de pruebas CSRF                 | 5/4/2025  | Angel Ramírez                  |
