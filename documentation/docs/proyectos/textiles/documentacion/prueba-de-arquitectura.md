@@ -2573,6 +2573,47 @@ Al implementar la librería de CSURF nos permite proteger las consultas de ataqu
 
 ![alt text](csrf6.png)
 
+## Prueba de Usabilidad
+
+### Objetivo
+
+Esta prueba tiene como propósito validar la usabilidad y correcta funcionalidad del sistema en distintos navegadores web modernos. El objetivo es garantizar que los usuarios puedan interactuar con la aplicación de forma fluida y sin errores, independientemente del navegador utilizado.
+
+La prueba consiste en ejecutar una serie de casos funcionales clave (como inicio de sesión, registro de usuario, carga y obtención de imágenes, integración con pasarela de pagos y cierre de sesión) en los navegadores Google Chrome, Microsoft Edge, Mozilla Firefox y Safari.
+
+Aunque el desarrollo y validación oficial de la aplicación se enfoca únicamente en asegurar su correcto funcionamiento en Google Chrome y Microsoft Edge, también se realizan pruebas exploratorias en otros navegadores con el fin de detectar posibles inconsistencias y documentarlas.
+
+Cada funcionalidad se verifica visual y funcionalmente, observando en tiempo real el comportamiento de la interfaz y la respuesta ante distintas interacciones del usuario. Las pruebas incluyen también observaciones sobre errores detectados o diferencias relevantes en la experiencia de uso.
+
+| Caso de Prueba        | Navegador | Versión del Navegador | Resultado Esperado                                | Resultado Observado                               | ¿Funciona correctamente? | Notas/Errores encontrados                     |
+| --------------------- | --------- | --------------------- | ------------------------------------------------- | ------------------------------------------------- | ------------------------ | --------------------------------------------- |
+| Inicio de sesión      | Chrome    | 134.0.6998.179        | Redirección a la aplicación                       | Redirección a la aplicación                       | Sí                       | N/A                                           |
+| Registrar usuario     | Chrome    | 134.0.6998.179        | Registro con éxito y redirección a Iniciar sesión | Registro con éxito y redirección a Iniciar sesión | Sí                       | N/A                                           |
+| Subir imagen          | Chrome    | 134.0.6998.179        | Imagen subida con éxito                           | Imagen subida con éxito                           | Sí                       | N/A                                           |
+| Obtener imagen        | Chrome    | 134.0.6998.179        | Recuperación de imagen subida                     | Recuperación de imagen subida                     | Sí                       | N/A                                           |
+| Mercado Pago Checkout | Chrome    | 134.0.6998.179        | Redirección a Mercado Pago Checkout               | Redirección a Mercado Pago Checkout               | Sí                       | N/A                                           |
+| Cerrar sesión         | Chrome    | 134.0.6998.179        | Redirección a inicio de sesión                    | Redirección a inicio de sesión                    | Sí                       | N/A                                           |
+| Inicio de sesión      | Firefox   | 137.0                 | Redirección a la aplicación                       | Redirección a la aplicación                       | Sí                       | N/A                                           |
+| Registrar usuario     | Firefox   | 137.0                 | Registro con éxito y redirección a Iniciar sesión | Registro con éxito y redirección a Iniciar sesión | Sí                       | N/A                                           |
+| Subir imagen          | Firefox   | 137.0                 | Imagen subida con éxito                           | Imagen subida con éxito                           | Sí                       | N/A                                           |
+| Obtener imagen        | Firefox   | 137.0                 | Recuperación de imagen subida                     | Recuperación de imagen subida                     | Sí                       | N/A                                           |
+| Mercado Pago Checkout | Firefox   | 137.0                 | Redirección a Mercado Pago Checkout               | Redirección a Mercado Pago Checkout               | Sí                       | N/A                                           |
+| Cerrar sesión         | Firefox   | 137.0                 | Redirección a inicio de sesión                    | Redirección a inicio de sesión                    | Sí                       | N/A                                           |
+| Inicio de sesión      | Edge      | 134.0.3124.93         | Redirección a la aplicación                       | Redirección a la aplicación                       | Sí                       | N/A                                           |
+| Registrar usuario     | Edge      | 134.0.3124.93         | Registro con éxito y redirección a Iniciar sesión | Registro con éxito y redirección a Iniciar sesión | Sí                       | N/A                                           |
+| Subir imagen          | Edge      | 134.0.3124.93         | Imagen subida con éxito                           | Imagen subida con éxito                           | Sí                       | N/A                                           |
+| Obtener imagen        | Edge      | 134.0.3124.93         | Recuperación de imagen subida                     | Recuperación de imagen subida                     | Sí                       | N/A                                           |
+| Mercado Pago Checkout | Edge      | 134.0.3124.93         | Redirección a Mercado Pago Checkout               | Redirección a Mercado Pago Checkout               | Sí                       | N/A                                           |
+| Cerrar sesión         | Edge      | 134.0.3124.93         | Redirección a inicio de sesión                    | Redirección a inicio de sesión                    | Sí                       | N/A                                           |
+| Inicio de sesión      | Safari    | 18.4                  | Redirección a la aplicación                       | Inicio de sesión inválido                         | No                       | No se puede iniciar sesión, pero sí registrar |
+| Registrar usuario     | Safari    | 18.4                  | Redirección a la aplicación                       | Inicio de sesión inválido                         | Sí                       | N/A                                           |
+| Subir imagen          | Safari    | 18.4                  | Imagen subida con éxito                           | Inicio de sesión inválido                         | No                       | No se puede iniciar sesión                    |
+| Obtener imagen        | Safari    | 18.4                  | Recuperación de imagen subida                     | Inicio de sesión inválido                         | No                       | No se puede iniciar sesión                    |
+| Mercado Pago Checkout | Safari    | 18.4                  | Redirección a Mercado Pago Checkout               | Inicio de sesión inválido                         | No                       | No se puede iniciar sesión                    |
+| Cerrar sesión         | Safari    | 18.4                  | Redirección a inicio de sesión                    | Inicio de sesión inválido                         | No                       | No se puede iniciar sesión                    |
+
+---
+
 | **Tipo de Versión** | **Descripción**                                            | **Fecha** | **Colaborador**                |
 | ------------------- | ---------------------------------------------------------- | --------- | ------------------------------ |
 | **1.0**             | Se creo la documentacion de la prueba de arquitectura      | 4/3/2025  | Arturo Sanchez, Diego Alfaro   |
@@ -2580,3 +2621,4 @@ Al implementar la librería de CSURF nos permite proteger las consultas de ataqu
 | **1.2**             | Se añadió la documentacion de la prueba de inyección NoSQL | 5/4/2025  | Paola Garrido y Carlos Fonseca |
 | **1.3**             | Se añadió la documentacion de Storybook                    | 5/4/2025  | Paola Garrido                  |
 | **1.4**             | Se añadió la documentacion de pruebas CSRF                 | 5/4/2025  | Angel Ramírez                  |
+| **1.5**             | Se añadió la documentacion de pruebas de Usabilidad        | 6/4/2025  | Nicolas Hood                   |
