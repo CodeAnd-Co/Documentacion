@@ -89,7 +89,7 @@ node app.js
 
 Una vez creados nuestros proyectos, podemos empezar a programar nuestra aplicacion
 
-:::warning Aviso  
+:::warning Aviso
 Es importante leer el archivo de [Estrategia tecnica](/docs/proyectos/textiles/documentacion/estrategia-tecnica-textiles) para conocer la forma en la que se desarrollara el proyecto, y otros aspectos como el diagrama de paquetes y el manejo de ramas
 :::
 
@@ -1796,6 +1796,107 @@ Crea un componente nuevo en el frontend llamado `BotonPago.jsx`. Este componente
 ---
 
 # Pruebas
+
+## Prueba de seguridad
+
+## Ataques CSRF
+
+Un ataque CSRF o Cross-Site Request Forgery, on en español una falsificación de petición en sitios cruzados, es un tipo de ataque en el que el atacante engaña a un usuario autenticado para que realice una acción no deseada en una aplicación web en la que ese usuario ya está autenticado.
+
+Imagina que estás logueado en tu banco desde tu navegador, y sin cerrar la sesión visitas una página maliciosa. Esa página maliciosa **envía una petición al sitio del banco en tu nombre**, aprovechando que tu sesión aún está activa (por ejemplo, usando tus cookies de sesión.
+
+```
+<img src="https://banco.com/transferir?monto=1000&destino=cuentaDelAtacante">
+```
+
+## ¿Cómo se previene?
+
+- Tokens CSRF: Generar un token único en cada formulario y validarlo en el backend.
+- Cabeceras personalizadas: Verificar cabeceras como Origin o Referer.
+- SameSite Cookies: Configurar las cookies como SameSite=Strict o SameSite=Lax para evitar que se envíen en contextos cruzados.
+- Autenticación adicional: Pedir una segunda autenticación para acciones críticas.
+
+## Instalar Burp Suite
+
+Burp Suite es una herramienta utilizada por hackers éticos, testers de seguridad y desarrolladores para analizar, interceptar y probar la seguridad de aplicaciones web. Es muy útil para detectar vulnerabilidades como:
+
+- CSRF (Cross-Site Request Forgery)
+- SQL Injection
+- XSS (Cross-Site Scripting)
+- Inseguridades en APIs
+- Fallas en autenticación y autorización
+
+Burp Suite tiene dos versiones principales:
+
+- Burp Suite Community **(Gratis)**: Incluye herramientas básicas como el interceptor de tráfico HTTP y el escáner manual.
+- Burp Suite Professional **(De pago)**: Incluye herramientas avanzadas como el escáner automático de vulnerabilidades
+
+Ve a la página oficial de PortSwigger y descarga la versión que prefieras:
+(https://portswigger.net/burp/communitydownload)[Link de descarga]
+Elige la versión para tu sistema operativo:
+
+- Windows (.exe)
+- MacOS (.dmg)
+- Linux (.sh)
+
+## Configuración de Burp Suite
+
+Para interceptar tráfico, necesitas configurar Burp Suite como proxy en tu navegador.
+
+### Configurar Proxy en Burp Suite
+
+- Abre Burp Suite y ve a la pestaña Proxy → Options.
+- Asegúrate de que el proxy esté en 127.0.0.1:8080.
+
+### Configurar el navegador
+
+Debes configurar tu navegador para que use el proxy de Burp Suite:
+
+#### En Firefox:
+
+1. Ve a Configuración → General → Configuración de Red.
+2. Selecciona Configuración Manual del Proxy.
+3. Pon en HTTP Proxy: 127.0.0.1 y Puerto: 8080.
+4. Marca Usar este proxy para todos los protocolos.
+
+#### En Chrome
+
+1. Usa la extensión FoxyProxy o configura el proxy manualmente en la configuración de red.
+
+Ahora, dentro de Burp Suite, dirígete a la pestaña de proxy y selecciona la opción de “Open Browser” o “Abrir Navegador”
+
+![alt text](image.png)
+
+Después, dentro del navegador, pega la URL de la página para realizar las pruebas. En este caso utilizaremos la dirección http://localhost:5173/login solo que cambiaremos localhost por [::1] para evitar errores de que no cargue la página dentro de Burp: http://[::1]:5173/login
+
+Al abrir la dirección URL dentro de Burp, podemos observar que se abre una pestaña dentro del navegador:
+
+![alt text](image-1.png)
+
+Si nos movemos a HTTP history observamos que cuando realizamos una petición dentro del navegador, se registra dentro del historial.
+
+![alt text](image-2.png)
+
+Dentro del request se pueden ver los datos que se están enviando mediante el formulario.
+
+![alt text](image-3.png)
+
+Haz clic derecho dentro de la petición o request, después selecciona send to repeater.
+
+![alt text](image-4.png)
+
+Ahora, abre la pestaña del repeater. Si haces clic en el botón de send o enviar y se realiza la petición de forma exitosa, quiere decir que la aplicación no está protegida contra CSFRF porque no se está generando un token del formulario para validarlo en el backend.
+
+1. No hay ningún token CSRF en la solicitud que el backend valide.
+2. La solicitud en Repeater funcionó sin ninguna modificación, lo que implica que no hay protección activa contra CSRF.
+
+Si un atacante crea un sitio malicioso con un formulario oculto y logra que un usuario autenticado lo visite, la API aceptará la solicitud como válida, porque el navegador enviará la cookie de sesión automáticamente.
+
+Al implementar la librería de CSURF nos permite proteger las consultas de ataque maliciosos, por lo que al realizar un POST sin un token CSRF, no nos permite realizar una petición hacia nuestra API.
+
+![alt text](image-5.png)
+
+![alt text](image-6.png)
 
 ## Prueba de rendimiento
 
