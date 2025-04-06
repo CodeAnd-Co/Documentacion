@@ -29,8 +29,55 @@ Como **Super Administrador**, quiero acceder a un listado de usuarios con opcion
 
 > _Descripción_: El diagrama de secuencia muestra la interacción del Super Administrador con el sistema para consultar la lista de usuarios. Incluye los pasos de solicitud, procesamiento y respuesta de los datos obtenidos de la base de datos.
 
+```mermaid
+sequenceDiagram
+participant SuperAdmin as Super Administrador
+participant Frontend
+participant Api_gateway
+participant Backend
+participant rutaUsuarios
+participant controladorUsuarios
+participant repositorioUsuarios
+participant DynamoDB
+
+SuperAdmin -->> Frontend: Selecciona "Lista de Usuarios"
+Frontend -->> Api_gateway: Envía petición GET /api/usuarios con JWT
+Api_gateway -->> Backend: Reenvía GET /api/usuarios con JWT
+Backend -->> rutaUsuarios: Llama a la ruta /api/usuarios
+rutaUsuarios -->> rutaUsuarios: Valida API key y JWT
+
+alt Token inválido o no autorizado
+    rutaUsuarios -->> Backend: Retorna JSON {"message": "No autorizado"}, status 401
+    Backend -->> Api_gateway: Retorna JSON {"message": "No autorizado"}, status 401
+    Api_gateway -->> Frontend: Retorna JSON {"message": "No autorizado"}, status 401
+    Frontend -->> SuperAdmin: Muestra mensaje de error: "No autorizado"
+else Token válido
+    rutaUsuarios -->> controladorUsuarios: Enviar parámetros (filtros, búsqueda, paginación)
+    controladorUsuarios -->> repositorioUsuarios: Solicita usuarios aplicando filtros
+    repositorioUsuarios -->> DynamoDB: Consulta usuarios con filtros
+    DynamoDB -->> repositorioUsuarios: Retorna datos de usuarios
+    repositorioUsuarios -->> controladorUsuarios: Retorna lista de usuarios
+    controladorUsuarios -->> rutaUsuarios: Retorna lista paginada con nombre y rol
+
+    alt Lista vacía
+        rutaUsuarios -->> Backend: JSON {"usuarios": [], "mensaje": "No hay registros"}, status 200
+        Backend -->> Api_gateway: JSON {"usuarios": [], "mensaje": "No hay registros"}, status 200
+        Api_gateway -->> Frontend: JSON {"usuarios": [], "mensaje": "No hay registros"}, status 200
+        Frontend -->> SuperAdmin: Muestra mensaje "No hay registros disponibles"
+    else Lista con usuarios
+        rutaUsuarios -->> Backend: JSON con usuarios y metadata de paginación, status 200
+        Backend -->> Api_gateway: JSON con usuarios y metadata de paginación, status 200
+        Api_gateway -->> Frontend: JSON con usuarios y metadata de paginación, status 200
+        Frontend -->> SuperAdmin: Muestra tabla con nombre, rol, búsqueda y paginación
+    end
+end
+
+```
+
 ---
 
 ## **Mockup**
 
 > _Descripción_: El mockup representa la interfaz de usuario donde el Super Administrador puede ver la lista de usuarios en formato de tabla, con opciones para filtrar, buscar y paginar los resultados.
+
+> ![Interfaz de consultar lista de usuarios](image.png)
