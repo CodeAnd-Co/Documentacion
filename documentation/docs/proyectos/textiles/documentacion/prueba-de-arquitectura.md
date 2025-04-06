@@ -1795,6 +1795,281 @@ Crea un componente nuevo en el frontend llamado `BotonPago.jsx`. Este componente
 
 ---
 
+### 5.3 Documentación visual de componentes con Storybook
+
+**1. ¿Qué es Storybook?**
+
+Storybook es una herramienta de desarrollo para construir, probar y documentar componentes de interfaz gráfica de usuario de forma aislada y visual.
+
+**2. ¿Por qué usar Storybook?**
+
+- **Aislamiento**: Permite enfocarte en un solo componente a la vez, sin depender de las rutas o el estado global de tu app.
+- **Catálogo visual**: Todos los componentes están organizados y son navegables desde una interfaz.
+- **Documentación**: Las stories sirven como documentación interactiva de tu UI.
+- **Pruebas**: 
+    - Puedes simular props, estados y eventos fácilmente.
+    - Compatible con pruebas visuales y de accesibilidad.
+
+**3. Instalar Storybook** 
+
+```bash
+npx sb init
+npm install @storybook/addon-a11y --save-dev 
+```
+Esto agregará una carpeta llamada *.storybook* con la configuración central de Storybook que incluye los archivos main.js, preview.js y vitest.js.
+
+- **main.js** define la configuración general de Storybook, incluyendo los addons instalados, las rutas donde se encuentran las historias y el framework que se utilizará (en este caso, React con Vite). Como estaremos utilizando *@storybook/addon-a11y*, debemos asegurarnos de agregarlo dentro del arreglo addons, de la siguiente forma:
+
+```javascript
+"addons": [
+    "@storybook/addon-essentials",
+    "@storybook/addon-onboarding",
+    "@chromatic-com/storybook",
+    "@storybook/experimental-addon-test",
+    "@storybook/addon-a11y"
+  ]
+```
+- **preview.js** define cómo se visualizan tus componentes dentro de Storybook. Aquí puedes configurar decoradores globales, temas personalizados y parámetros que afectan a todas las historias, como controles automáticos para props de tipo color o fecha.
+- **vitest.js** y **vitest.workspace.js** conectan Storybook con Vitest, permitiendo ejecutar pruebas automatizadas directamente sobre los componentes definidos en tus historias. Utilizan la configuración de **preview.js** para asegurar coherencia entre el entorno de pruebas y la visualización en Storybook.
+
+
+**4. Refactorización: src/stories**
+
+Al instalar Storybook, por defecto se incluye una carpeta src/stories con componentes y ejemplos. Vamos a eliminar su contenido y reorganizar el proyecto con una estructura más limpia, modular y escalable.
+
+```bash
+src/
+├── componentes/
+│   └── Button.jsx            # Componente funcional (usando MUI)
+├── estilos/
+│   └── button.css            # Estilos personalizados del componente (si aplica)
+├── stories/
+│   └── Button.stories.js     # Historias del componente para Storybook
+```
+**5. Crear un componente: src/components/Button.jsx:**
+
+```javascript
+// Importa React, necesario para definir componentes funcionales
+import React from 'react';
+
+// Importa PropTypes para validar las props que recibe el componente
+import PropTypes from 'prop-types';
+
+// Importa el componente Button de la librería Material UI
+import MUIButton from '@mui/material/Button';
+
+/** Botón personalizado usando Material UI */
+export const Button = ({
+  primary = false, // Si es true, usará el color 'primary'; si no, 'secondary'
+  backgroundColor = null, // Permite definir un color de fondo personalizado
+  size = 'medium', // Tamaño del botón: 'small', 'medium' o 'large'
+  label, // Texto que aparecerá dentro del botón
+  variant = 'contained', // Tipo de botón: 'contained', 'outlined', 'text'
+  ...props // Cualquier otra prop adicional (por ejemplo: onClick)
+}) => {
+   // Determina si el botón usará el color 'primary' o 'secondary'
+  const color = primary ? 'primary' : 'secondary';
+
+  // Devuelve el botón de MUI con las props aplicadas
+  return (
+    <MUIButton
+      variant={variant}
+      color={color}
+      size={size}
+      sx={backgroundColor ? { backgroundColor } : {}}
+      {...props}
+    >
+      {label}
+    </MUIButton>
+  );
+};
+
+// Definición de los tipos de props esperadas y sus validaciones
+Button.propTypes = {
+  /** ¿Es la acción principal en la página? */
+  primary: PropTypes.bool,
+  /** Color de fondo opcional */
+  backgroundColor: PropTypes.string,
+  /** Tamaño del botón */
+  size: PropTypes.oneOf(['small', 'medium', 'large']),
+  /** Texto del botón */
+  label: PropTypes.string.isRequired,
+  /** Variante del botón */
+  variant: PropTypes.oneOf(['contained', 'outlined', 'text']),
+  /** Manejador de clics */
+  onClick: PropTypes.func,
+};
+```
+
+**6. Crear estilo del componente: src/estilos/button.css:**
+
+```css
+.storybook-button {
+  display: inline-block;
+  cursor: pointer;
+  border: 0;
+  border-radius: 3em;
+  font-weight: 700;
+  line-height: 1;
+  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+.storybook-button--primary {
+  background-color: #555ab9;
+  color: white;
+}
+.storybook-button--secondary {
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;
+  background-color: transparent;
+  color: #333;
+}
+.storybook-button--small {
+  padding: 10px 16px;
+  font-size: 12px;
+}
+.storybook-button--medium {
+  padding: 11px 20px;
+  font-size: 14px;
+}
+.storybook-button--large {
+  padding: 12px 24px;
+  font-size: 16px;
+}
+```
+
+**7. Crear historia del componente: src/stories/Button.stories.js:**
+
+```javascript
+// Importa la función `action` de Storybook para mostrar clics en el panel de acciones
+import { action } from '@storybook/addon-actions';
+
+// Importa el componente Button que quieres documentar y mostrar en Storybook
+import { Button } from '../components/Button';
+
+// Exporta la configuración principal del Storybook para este componente
+export default {
+  title: 'Example/Button',
+  component: Button,
+  parameters: {
+    layout: 'centered',
+  },
+  tags: ['autodocs'],
+
+  // Define qué props pueden ser controladas desde la UI de Storybook
+  argTypes: {
+    backgroundColor: { control: 'color' },
+    variant: {
+      control: 'radio',
+      options: ['contained', 'outlined', 'text'],
+    },
+    size: {
+      control: 'radio',
+      options: ['small', 'medium', 'large'],
+    },
+    primary: { control: 'boolean' },
+  },
+
+  // Valores por defecto para todas las historias (como un template base)
+  args: {
+    onClick: action('clicked'),
+  },
+};
+
+// Define historias específicas (variantes del botón) con diferentes props
+
+export const Primary = {
+  args: {
+    primary: true,
+    label: 'Primary Button',
+    variant: 'contained',
+  },
+};
+
+export const Secondary = {
+  args: {
+    primary: false,
+    label: 'Secondary Button',
+    variant: 'contained',
+  },
+};
+
+export const Outlined = {
+  args: {
+    primary: true,
+    label: 'Button',
+    variant: 'outlined',
+  },
+};
+
+export const Text = {
+  args: {
+    primary: true,
+    label: 'Button',
+    variant: 'text',
+  },
+};
+
+export const Large = {
+  args: {
+    size: 'large',
+    label: 'Button',
+  },
+};
+
+export const Small = {
+  args: {
+    size: 'small',
+    label: 'Button',
+  },
+};
+
+export const CustomColor = {
+  args: {
+    label: 'Button',
+    backgroundColor: '#FF5722',
+    primary: true,
+    variant: 'contained',
+  },
+};
+```
+
+- **title** : Define cómo se agrupará y mostrará el componente en la interfaz de Storybook. En este caso, 'Example/Button' indica que el componente Button se encontrará dentro del grupo o carpeta virtual llamada Example.
+- **component** : Especifica el componente que se está documentando.
+- **tags**: Al incluir *autodocs*, se habilita la generación automática de documentación.
+- **parameters.docs.description.component**: Proporciona una descripción del componente que aparecerá en la documentación.
+- **argTypes** : Define qué props pueden ser controladas desde la UI de Storybook.
+- Se define una plantilla (**Template**) para reutilizar la estructura del componente con diferentes argumentos (**args**).
+- Se crean historias como **Primary** y **Secondary**, cada una con diferentes argumentos que representan variantes del botón.
+
+**7. Iniciar Storybook**
+
+```bash
+npm run storybook
+```
+
+**8. Pruebas visuales manuales**
+
+- Simulación de props y eventos
+    - Permiten visualizar el componente en diferentes estados cambiando sus props (como color, variante, etc.) desde la interfaz de Storybook.
+    - Puedes simular eventos como onClick y verlos reflejados en el panel Actions.
+
+![alt text](image-1.png)
+
+![alt text](image-2.png)
+
+
+**9. Pruebas de accesibilidad**
+
+- Al instalar @storybook/addon-a11y, se habilita la pestaña A11y en la interfaz de Storybook.
+- Esta analiza automáticamente los componentes e identifica posibles problemas de accesibilidad, como:
+    - Contraste insuficiente entre texto y fondo.
+    - Ausencia de atributos aria-*.
+    - Elementos interactivos sin roles definidos.
+    - Estructuras incorrectas como encabezados mal jerarquizados.
+
+![alt text](image.png)
+
+(Coleman & Nguyen, n.d.)
+
 # Pruebas
 
 ## Prueba de rendimiento
@@ -2194,6 +2469,8 @@ PortSwigger. (n.d.). NoSQL injection | Web Security Academy. https://portswigger
 
 Bittencourt, M. (2023). DynamoDB: Understanding Action APIs and Expressions. Medium. https://medium.com/@mbneto/dynamodb-understanding-action-apis-and-expressions-756c016661cc
 
+Coleman, T., & Nguyen, D. (n.d.). Intro to storybook. Storybook Tutorials. https://storybook.js.org/tutorials/intro-to-storybook/
+
 ---
 
 | **Tipo de Versión** | **Descripción**                                            | **Fecha** | **Colaborador**                |
@@ -2201,3 +2478,4 @@ Bittencourt, M. (2023). DynamoDB: Understanding Action APIs and Expressions. Med
 | **1.0**             | Se creo la documentacion de la prueba de arquitectura      | 4/3/2025  | Arturo Sanchez, Diego Alfaro   |
 | **1.1**             | Se añadió la documentacion de la prueba de rendimiento     | 3/4/2025  | Valeria Zúñiga Mendoza         |
 | **1.2**             | Se añadió la documentacion de la prueba de inyección NoSQL | 5/4/2025  | Paola Garrido y Carlos Fonseca |
+| **1.3**             | Se añadió la documentacion de Storybook | 5/4/2025  | Paola Garrido |
