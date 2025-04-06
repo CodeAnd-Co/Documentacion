@@ -2178,6 +2178,90 @@ makeRequest();
 - Al completar todas las solicitudes, la consola mostrará:
   - All requests completed.
 
+
+# Prueba de Requerimiento - Carga masiva de archivos a S3
+
+El sistema debe permitir la subida eficiente y estable de una gran cantidad de archivos (hasta 3,000) sin fallos o cuellos de botella críticos.
+
+## Objetivo de la prueba
+
+Validar que el endpoint de subida de archivos (`/s3/upload`) puede recibir múltiples archivos consecutivos (3,000) sin errores de red, pérdida de datos o sobrescritura.
+
+## Herramientas utilizadas
+
+- Node.js (v18+)
+- axios – cliente HTTP
+- form-data – para enviar archivos como `multipart/form-data`
+- Archivo de prueba: `cabra.jpeg`
+- Entorno de prueba: local, con conexión a endpoint productivo en AWS API Gateway
+
+## Pasos para realizar la prueba
+
+1. Crear una carpeta de trabajo en el entorno local y colocar el archivo `cabra.jpeg` que se usará para las 3,000 subidas.
+2. Inicializar un proyecto Node.js en la carpeta mediante `npm init -y`.
+3. Instalar las dependencias necesarias con el comando:  
+   `npm install axios form-data`
+4. Crear un archivo llamado `upload.js` con el siguiente contenido:
+
+```javascript
+const axios = require('axios');
+const fs = require('fs');
+const FormData = require('form-data');
+
+const ENDPOINT = 'https://nr8nw243lb.execute-api.us-east-1.amazonaws.com/s3/upload';
+const FILE_PATH = './cabra.jpeg';
+const TOTAL_UPLOADS = 3000;
+const DELAY_MS = 200;
+
+function delay(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+async function uploadFile(iteration) {
+  const form = new FormData();
+  form.append('file', fs.createReadStream(FILE_PATH), `cabra-${iteration}.jpeg`);
+
+  try {
+    const response = await axios.post(ENDPOINT, form, {
+      headers: form.getHeaders(),
+    });
+    console.log(`✅ [${iteration}] Subida exitosa - cabra-${iteration}.jpeg`);
+  } catch (error) {
+    console.error(`❌ [${iteration}] Error:`, error.response?.status || error.message);
+  }
+}
+
+async function startUpload() {
+  for (let i = 1; i <= TOTAL_UPLOADS; i++) {
+    await uploadFile(i);
+    await delay(DELAY_MS);
+  }
+  console.log('Subida masiva completada.');
+}
+
+startUpload();
+```
+
+5. Ejecutar el script con el comando:  
+   `node upload.js`
+6. Verificar en consola que cada archivo fue subido exitosamente.
+7. Comprobar en el bucket de S3 que todos los archivos estén disponibles y nombrados como `cabra-1.jpeg`, `cabra-2.jpeg`, ..., `cabra-3000.jpeg`.
+
+## Resultados esperados
+
+- El sistema debe aceptar 3,000 peticiones consecutivas sin errores de conexión ni pérdida de archivos.
+- El endpoint debe retornar una respuesta HTTP 200 para cada archivo subido.
+- Ningún archivo debe sobrescribirse: cada uno debe tener un nombre único.
+- El tiempo entre peticiones (200ms) debe evitar saturación del endpoint o errores por límite de tasa.
+- Todos los archivos deben estar disponibles en el bucket de S3 al finalizar el proceso.
+
+### Inicio de la prueba:
+![alt text](./Prueba-rendimiento1.png)
+
+### Final de la prueba:
+![alt text](./Prueba-rendimiento2.png)
+
+
 ## Prueba de seguridad
 
 ### Comprendiendo la Inyección NoSQL en DynamoDB
@@ -2622,3 +2706,4 @@ Cada funcionalidad se verifica visual y funcionalmente, observando en tiempo rea
 | **1.3**             | Se añadió la documentacion de Storybook                    | 5/4/2025  | Paola Garrido                  |
 | **1.4**             | Se añadió la documentacion de pruebas CSRF                 | 5/4/2025  | Angel Ramírez                  |
 | **1.5**             | Se añadió la documentacion de pruebas de Usabilidad        | 6/4/2025  | Nicolas Hood                   |
+| **1.6**             | Se añadió la documentacion de pruebas de Rendimiento        | 6/4/2025  | Hiram Mendoza                   |
