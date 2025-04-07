@@ -5,19 +5,7 @@ sidebar_position: 3
 
 # Proceso de Definición de SRS
 
-**Última actualización:** 30 de marzo de 2025
 **Versión:** 4.3
-
-## Autores
-
-| Nombre                  | Rol         |
-| ----------------------- | ----------- |
-| Emiliano Gómez González | Autor       |
-| Juan Pablo Chávez Leal  | Modificador |
-| Angélica Ríos Cuentas   | Modificador |
-| Valeria Zuñiga Mendoza  | Modificador |
-| Angel Mauricio Ramirez  | Modificador |
-| Mariana Juárez Ramírez  | Modificador |
 
 ## Objetivo
 
