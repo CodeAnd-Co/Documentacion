@@ -31,10 +31,56 @@ Como **Super Administrador**, quiero poder registrar nuevos usuarios en el siste
 
 > _Descripción_: El diagrama de secuencia muestra cómo el **Super Administrador** interactúa con el sistema para registrar un nuevo usuario. Inicia con la selección de la opción "Crear Usuario", la validación de los datos ingresados, el almacenamiento en la base de datos y la notificación al nuevo usuario.
 
+```mermaid
+sequenceDiagram
+participant SuperAdmin as Super Administrador
+participant Frontend
+participant Api_gateway
+participant Backend
+participant rutaUsuarios
+participant controladorUsuarios
+participant repositorioUsuarios
+participant DynamoDB
+
+SuperAdmin -->> Frontend: Selecciona "Crear Usuario"
+Frontend -->> Frontend: Muestra formulario con campos obligatorios
+
+SuperAdmin -->> Frontend: Ingresa datos y envía formulario
+Frontend -->> Frontend: Valida campos (nombre, correo, rol, etc.)
+
+alt Formulario inválido
+    Frontend -->> SuperAdmin: Muestra errores de validación (campos vacíos/formato incorrecto)
+else Formulario válido
+    Frontend -->> Api_gateway: POST /api/usuarios con JWT y datos usuario
+    Api_gateway -->> Backend: Reenvía POST /api/usuarios con JWT y payload
+    Backend -->> rutaUsuarios: Llama a la ruta POST /api/usuarios
+    rutaUsuarios -->> rutaUsuarios: Valida API key y JWT
+
+    alt Token inválido o no autorizado
+        rutaUsuarios -->> Backend: Retorna JSON {"message": "No autorizado"}, status 401
+        Backend -->> Api_gateway: Retorna JSON {"message": "No autorizado"}, status 401
+        Api_gateway -->> Frontend: Retorna JSON {"message": "No autorizado"}, status 401
+        Frontend -->> SuperAdmin: Muestra mensaje "No autorizado"
+    else Token válido
+        rutaUsuarios -->> controladorUsuarios: Envía datos del nuevo usuario
+        controladorUsuarios -->> controladorUsuarios: Valida datos y rol, asigna permisos
+        controladorUsuarios -->> repositorioUsuarios: Solicita creación del usuario
+        repositorioUsuarios -->> DynamoDB: Inserta nuevo registro
+        DynamoDB -->> repositorioUsuarios: Confirma inserción
+        repositorioUsuarios -->> controladorUsuarios: Retorna éxito
+        controladorUsuarios -->> rutaUsuarios: Retorna JSON {"mensaje": "Usuario creado"}, status 201
+        rutaUsuarios -->> Backend: Retorna JSON {"mensaje": "Usuario creado"}, status 201
+        Backend -->> Api_gateway: Retorna JSON {"mensaje": "Usuario creado"}, status 201
+        Api_gateway -->> Frontend: Retorna JSON {"mensaje": "Usuario creado"}, status 201
+        Frontend -->> SuperAdmin: Muestra mensaje de éxito
+    end
+end
+```
+
 ---
 
 ## **Mockup**
 
 > _Descripción_: El mockup representa la interfaz del sistema donde el **Super Administrador** completa los datos del nuevo usuario, selecciona su rol y permisos, y confirma la creación del usuario en el sistema.
 
----
+## ![alt text](<Añadir Usuarios.png>)
