@@ -5,45 +5,45 @@ sidebar_position: 3
 
 # Manual paso a paso de prueba de arquitectura
 
-## Creacion de proyectos del frontend y backend
+## Creación de proyectos del frontend y backend
 
-### Prerequisitos
+### Requisitos Previos
 
-Antes de comenzar, hay que instalar la version de node especificadas en el manual de arquitectura
+Antes de comenzar, hay que instalar la versión de node especificada en el manual de arquitectura
 
-#### Creacion del proyecto
+#### Creación del proyecto
 
-Abrir la terminar y moverse al directorio donde se desea crear la aplicacion, una vez ahi, ejecutar el comando
+Abrir la terminal y moverse al directorio donde se desea crear la aplicación, una vez allí, ejecutar el comando.
 
 ```
 npm create vite@latest <nombre-del-proyecto>
 ```
 
-Seguir los pasos que aparacen una vez se corre el comando
+Seguir los pasos que aparecen una vez se corre el comando
 
-Moverse al directorio que se creo
+Moverse al directorio que se creó
 
 ```
 cd <nombre-del-proyecto>
 ```
 
-Ahora hay que instalar las dependencias
+Instala las dependencias.
 
 ```
 npm install
 ```
 
-Una vez se instalaron las dependencias, ya podemos correr el servidor de manera local
+Una vez que se instalaron las dependencias, ya podemos correr el servidor localmente.
 
 ```
 npm run dev
 ```
 
-Ahora ya tienes una aplicacion de react corriendo en tu servidor local
+Ahora ya tienes una aplicación de React corriendo en tu servidor local.
 
 ### Backend
 
-Primero hay que movernos hacia el directorio donde queramos iniciar nuestro proyecto
+Primero, muévete al directorio donde queramos iniciar nuestro proyecto
 
 Una vez en el directorio, hay que correr el comando
 
@@ -51,17 +51,17 @@ Una vez en el directorio, hay que correr el comando
 npm init
 ```
 
-Y seguir los pasos que apareceran en la terminal
+Y seguir los pasos que aparecerán en la terminal
 
-Una vez se termine, se generara el archivo **package.json**
+Una vez se termine, se generará el archivo **package.json**
 
-Despues de esto, hay que instalarr la libreria de express, el cual es el framework que se usara para la creacion de nuestra api
+Después de esto, hay que instalar la librería de Express, que es el framework que se usará para la creación de nuestra API
 
 ```
 npm install express
 ```
 
-Una vez instalado express, pasamos a crear nuestro archivo app.js, y agregarle el codigo inicial para crear una aplicacion basica
+Una vez instalado express, pasamos a crear nuestro archivo app.js, y agregar el código inicial para crear una aplicación básica
 
 ```js
 const express = require("express");
@@ -81,28 +81,28 @@ app.listen(PORT, () => {
 });
 ```
 
-Para ejecutar nuestra aplicacion, debemos correr el comando
+Para ejecutar nuestra aplicación, debemos correr el comando
 
 ```
 node app.js
 ```
 
-Una vez creados nuestros proyectos, podemos empezar a programar nuestra aplicacion
+Una vez creados nuestros proyectos, podemos empezar a programar nuestra aplicación
 
 :::warning Aviso
-Es importante leer el archivo de [Estrategia tecnica](/docs/proyectos/textiles/documentacion/estrategia-tecnica-textiles) para conocer la forma en la que se desarrollara el proyecto, y otros aspectos como el diagrama de paquetes y el manejo de ramas
+Es importante leer el archivo de [Estrategia tecnica](/docs/proyectos/textiles/documentacion/estrategia-tecnica-textiles) para conocer la forma en la que se desarrollará el proyecto, y otros aspectos como el diagrama de paquetes y el manejo de ramas
 :::
 
-## Creacion del Backend del proyecto
+## Creación del Backend del proyecto
 
 :::tip Aviso
 
-En este apartado se mostrara como se crearon los endpoints, de ser necesarios mas detalles revisar el documento [Endpoints prueba de arquitectura](/docs/proyectos/textiles/documentacion/estrategia-tecnica-textiles) o el repositorios del [backend](https://github.com/DiegoAlfaro1/prueba-arquitectura-backend-textiles)
+En este apartado se mostrara como se crearon los endpoints, si se necesitan más detalles, revisar el documento [Endpoints prueba de arquitectura](/docs/proyectos/textiles/documentacion/estrategia-tecnica-textiles) o el repositorios del [backend](https://github.com/DiegoAlfaro1/prueba-arquitectura-backend-textiles)
 :::
 
-Para empezar a crear los endpoints, empezaremos a crear la seguridad para estos mismo, por lo que empezaremos por los middlewares de autenticacion y revision de api key
+Para empezar a crear los endpoints, empezaremos a crear la seguridad para estos mismos, por lo que empezaremos por los middlewares de autenticacion y revision de API key
 
-### Funcion para autentacion del token JWT
+### Función para autentacion del token JWT
 
 Primero tenemos que instalar las dependencias necesarias
 
@@ -118,16 +118,16 @@ const cookieParser = require("cookie-parser");
 app.use(cookieParser());
 ```
 
-Ahora creamos el archivo del middleware en la carpeta `middlewares` donde crearemos nuestra funcion usando este codigo
+Ahora creamos el archivo del middleware en la carpeta `middlewares` donde crearemos nuestra función usando este código
 
 ```js
 /**
- * Middleware para autorizar un usuario utilizando un token JWT almacenado en las cookies.
+ * Middleware para autorizar a un usuario utilizando un token JWT almacenado en las cookies.
  *
  * @param {Object} req - Objeto de solicitud de Express.
  * @param {Object} res - Objeto de respuesta de Express.
  * @param {Function} next - Función para pasar al siguiente middleware.
- * @returns {void} - Devuelve una respuesta JSON en caso de error o llama a `next()` si el token es válido.
+ * @returns {void} - Devuelve una respuesta JSON en caso de error, o continua con `next()` si el token es válido.
  */
 const jwt = require("jsonwebtoken");
 
@@ -154,7 +154,7 @@ module.exports = async (req, res, next) => {
 };
 ```
 
-Este codigo lo que hara, es revisar el token guardado en las cookies, y revisarlo usando las funciones que nos proporciona JWT, lo que nos revisara la validez del token
+Este código verifica el token guardado en las cookies, y revisarlo utilizando las funciones que nos proporciona JWT, para validar el token recibido.
 
 Una vez creado, podemos utilizar este middleware para proteger las rutas a las que no deberia acceder un usuario no autenticado
 
@@ -164,25 +164,25 @@ router.get("/perfil", autorizarToken, (req, res) => {
 });
 ```
 
-De esta manera, cuando se haga una llamada a esa ruta, antes de hacer la logica de la funcion, se llamara a la fucion y si falla no dejara que se complete la llamada
+De esta manera, cuando se haga una llamada a esa ruta, antes de hacer la logica de la función, se llamará a la función y si falla no permitirá completar la solicitud
 
 :::warning Aviso
-Esta funcion solo se uso para la prueba de arquitectura, ya que es necesario checar los roles y permisos que tiene los usuarios
+Esta función solo se usó para la prueba de arquitectura, ya que es necesario revisar los roles y permisos que tienen los usuarios
 
-Tambien se explicara mas adelante como se genera el token que se busca validar
+También se explicará más adelante como se genera el token que se busca validar
 :::
 
-Tambien tenemos que configurar nuestro secreto en nuestro `.env`
+También tenemos que configurar nuestro secreto en nuestro `.env`
 
 ```js
 JWT_SECRET=una clave super secreta
 ```
 
-### Funcion para autenticar el api key
+### Función para autenticar la API key
 
 Primero tenemos que crear nuestro archivo `revisarApiKey.js`
 
-En este archivo usaremos la siguiente funcion
+En este archivo usaremos la siguiente función
 
 ```js
 /**
@@ -205,9 +205,9 @@ module.exports = (headerName, errorMessage = "Api key invalida") => {
 };
 ```
 
-Esta funcion revisa los `headers` de la peticion enviada, y revisara que si se haya enviado el header del api key
+Esta función revisa los `headers` de la petición enviada, y revisará que si se ha enviado el header del API key
 
-Al igual que con el middleware del JWT, lo usaremos en una ruta para darle una capa de proteccion mas
+Al igual que con el middleware del JWT, lo usaremos en una ruta para añadir una capa adicional de protección. 
 
 ```js
 router.get(
@@ -220,33 +220,33 @@ router.get(
 );
 ```
 
-Esto hara que a pesar de que el token sea valido, si no se envia el api key, no se completara la peticion, lo que hara que nuestras rutas tengan mas seguridad
+Esto hará que a pesar de que el token sea válido, si no se envia el API key, no se completara la petición, esto añade una capa adicional de seguridad a las rutas.
 
-Una vez que tenemos nuestras 2 capas de seguridad, podemos pasar a construir los diferentes modulos de la aplicaion
+Una vez que tenemos nuestras 2 capas de seguridad, podemos pasar a construir los diferentes módulos de la aplicación
 
 :::warning Aviso
-En este manual solo se hablara de las integraciones con servicios externos, si se quiere obtener mas informacion de el resto de la aplicacion, consultar el repositorio [backend](https://github.com/DiegoAlfaro1/prueba-arquitectura-backend-textiles)
+En este manual solo se hablará de las integraciones con servicios externos, si se quiere obtener más información del resto de la aplicación, consultar el repositorio [backend](https://github.com/DiegoAlfaro1/prueba-arquitectura-backend-textiles)
 :::
 
-### Integracion con AWS DynamoDB
+### Integración con AWS DynamoDB
 
 #### Envio de datos
 
-Primero tenemos que instalar las librerias necesarias para utilizar DyamoDB
+Primero tenemos que instalar las librerias necesarias para utilizar DynamoDB
 
 ```
 npm install @aws-sdk/lib-dynamodb @aws-sdk/client-dynamodb
 ```
 
-Tambien tenemos que asegurarnos de haber creado la tabla que se usara para crear el usuario. En este caso, la tabla se llama `Users`, y tiene como llave el nombre y el correo electronico del usuario, esto es muy importante tenerlo en cuenta, ya que seran los campos obligatorios que se tienen que enviar a la base de datos
+También tenemos que asegurarnos de haber creado la tabla que se usará para crear el usuario. En este caso, la tabla se llama `Users`, y tiene como llave el nombre y el correo electronico del usuario, es fundamental tener esto en cuenta, ya que serán los campos obligatorios que se tienen que enviar a la base de datos
 
-Tambien es importante haber configurado las credenciales de aws
+También es importante haber configurado las credenciales de AWS
 
-De esta manera ahora podemos utilizar el SDK de aws
+Con esto, ya podemos utilizar el SDK de AWS
 
-Ahora es momento de integrar nuestro primer servicio extrerno, AWS DynamoDB, el cual es una base de datos no relacional similar a MongoDB
+Ahora es momento de integrar nuestro primer servicio externo, AWS DynamoDB, el cual es una base de datos no relacional similar a MongoDB
 
-Para esto vamos a seguir con nuestra pequeña aplicacion. Para poder integrar la subida de datos a DynamoDB, vamos a crear un servicio en nuestro backend para enviar datos.
+Para esto vamos a seguir con nuestra pequeña aplicación. Para poder integrar la envio de datos a DynamoDB, vamos a crear un servicio en nuestro backend para enviar datos.
 
 Primero creamos un nuevo archivo en la carpeta de servicios, y utilizamos el siguiente codigo
 
@@ -274,13 +274,13 @@ module.exports = async (nombreTabla, modelo) => {
 };
 ```
 
-Esta funcion nos crea un cliente de Dynamo, y lo utiliza para enviar el `PutCommand`, que lo que hace es enviar el objeto que se le paso a la funcion hacia la tabla que tambien es parte de los parametros de la funcion.
+Esta función nos crea un cliente de Dynamo, y lo utiliza para enviar el `PutCommand`, que envia el objeto que se le paso a la función hacia la tabla que también es parte de los parametros de la función.
 
-Esta funcion nos ayudara a no tener que crear multiples bloques de codigo iguales y poder reutilizar este mismo cada que se quiera subir algo a dynamo
+Esta función nos ayudará a no tener que crear múltiples bloques de código iguales y poder reutilizar este mismo cada que se quiera subir algo a DynamoDB
 
-Una vez creada esta funcion, podemos pasara a crear nuestra ruta, la cual se encargara de recibir la peticion para crear un nuevo usuario.
+Una vez creada esta funcion, podemos pasará a crear nuestra ruta, la cual se encargará de recibir la petición para crear un nuevo usuario.
 
-La ruta se vera de esta manera
+La ruta se verá de esta manera
 
 ```js
 router.post(
@@ -317,7 +317,7 @@ exports.register = async (req, res) => {
 };
 ```
 
-Este controlador sera el que maneje la logica necesaria para crear el usuario, aqui es donde entra en accion el diagrama de paquetes, como podemos ver, aun no se llama a la funcion que creamos primero, en el controlador podemos ver que se crea una clase `User`, el cual es un modelo que nos ayudara a asegurarnos que se envien los datos correctos
+Este controlador será el que maneje la lógica necesaria para crear el usuario, aquí es donde entra en acción el diagrama de paquetes, como podemos ver, aun no se llama a la función que creamos primero, en el controlador podemos ver que se crea una clase `User`, el cual es un modelo que nos ayudará a asegurarnos que se envíen los datos correctos
 
 ```js
 const bcrypt = require("bcryptjs");
@@ -338,9 +338,9 @@ class User {
 module.exports = User;
 ```
 
-Este modelo User, tambien tiene una funcion para hashear la contraseña
+Este modelo User, incluye una función para cifrar la contraseña.
 
-Ahora que creamos el usuario y hasheamos la contraseña, tenemos que crear la funcion `createUser` en nuestro repositorio
+Ahora que creamos el usuario y hasheamos la contraseña, tenemos que crear la función `createUser` en nuestro repositorio
 
 ```js
 exports.createUser = async (user) => {
@@ -348,13 +348,13 @@ exports.createUser = async (user) => {
 };
 ```
 
-Como podemos ver, es una funcion muy pequeña que llama a la funcion que creamos al principio
+Como podemos ver, es una función muy pequeña que llama a la función que creamos al principio
 
 Y de esta manera es como podemos crear nuestra ruta para crear un usuario en la base de datos
 
 #### Recibo de datos
 
-Para poder recibir datos de AWS, primero creamos una funcion similar a la de enviar datos, seguimos el mismo proceso, pero ahora la funcion sera un poco diferente
+Para poder recibir datos de AWS, primero creamos una función similar a la de enviar datos, seguimos el mismo proceso, pero ahora la función será un poco diferente
 
 ```js
 /**
@@ -465,9 +465,9 @@ exports.login = async (req, res) => {
 };
 ```
 
-Aunque esta funcion es mas extensa, el flujo es parecido a la funcion para registrar un usuario, solo con la diferencia de que esta hace mas verificaciones antes de llamar a la base de datos
+Aunque esta función es más extensa, el flujo es parecido a la función para registrar un usuario, solo con la diferencia de que esta hace más verificaciones antes de llamar a la base de datos
 
-Ahora vamos a crear la funcion del repositorio para obtener los datos
+Ahora vamos a crear la función del repositorio para obtener los datos
 
 ```js
 exports.getUserByEmail = async (email, name) => {
@@ -475,17 +475,17 @@ exports.getUserByEmail = async (email, name) => {
 };
 ```
 
-Al igual que con el registro, esta funcion solo llama al sevicio que obtiene los datos de dynamo
+Al igual que con el registro, esta función solo llama al servicio que obtiene los datos de dynamo
 
-Una vez que la funcion se asegura que las credenciales son correctas, se crea el JWT, y se asigna a una cookie, la misma cookie que se lee en la funcion de mas arriba para autorizar al usuario
+Una vez que la función se asegura que las credenciales son correctas, se crea el JWT, y se asigna a una cookie, la misma cookie que se lee en la función de más arriba para autorizar al usuario
 
-Ahora ya tenemos creado tanto el registro de usuarios como el login de usuarios, pero mas importante, tenemos implementado el recibir y enviar datos a DynamoDB.
+Ahora ya tenemos creado tanto el registro de usuarios como el login de usuarios, pero más importante, tenemos implementado el recibir y enviar datos a DynamoDB.
 
-### Integracion con AWS S3
+### Integración con AWS S3
 
 #### Subida de archivos a S3
 
-Para poder crear la integracion con AWS S3, primero tenemos que instalar las librerias
+Para poder crear la integración con AWS S3, primero tenemos que instalar las librerias
 
 ```
 npm install @aws-sdk/client-s3 @aws-sdk/s3-request-presigner
@@ -508,7 +508,7 @@ const upload = multer({ storage });
 router.post("/upload", upload.single("file"), uploadController.upload);
 ```
 
-Esta ruta como podemos ver es diferente, ya que utilizamos un middleware para poder recibir un archivo
+Esta ruta, como podemos ver, es diferente, ya que utilizamos un middleware para poder recibir un archivo
 
 Ahora creamos el controlador que utilizara esta ruta
 
@@ -574,7 +574,7 @@ exports.upload = async (req, res) => {
 };
 ```
 
-Como se puede notar, en este controlador se utiliza una funcion llamada `generarNombreUnico`, la cual genera un nombre unico para los archivos que se suben
+En este controlador se utiliza una función llamada `generarNombreUnico`, la cual genera un nombre único para los archivos que se suben
 
 ```js
 /**
@@ -592,7 +592,7 @@ module.exports = (originalName) => {
 };
 ```
 
-Al igual que se hizo con dynamo, aqui tambien utilizaremos un servicio para subir objetos a S3
+Al igual que se hizo con dynamo, aqui también utilizaremos un servicio para subir objetos a S3
 
 ```js
 /**
@@ -627,7 +627,7 @@ Con estos bloques de codigo, podemos crear nuestro flujo para subir un archivo a
 
 #### Recibo de archivos de S3
 
-Para recibir los archivos que subimos previamente, es un poco diferente que recibir datos de dynamo, ya que tenemos que utilizar algo llamado `Pre-signed URL`, lo que nos permitira visualizar el contenido de los archivos
+Para recibir los archivos que subimos previamente, es un poco diferente que recibir datos de DynamoDB, ya que tenemos que utilizar algo llamado `Pre-signed URL`, lo que nos permitira visualizar el contenido de los archivos
 
 Primero creamos nuestro servicio para generar estos url prefirmados
 
@@ -681,7 +681,7 @@ module.exports = async (llaveObjeto, expiresIn = URL_EXPIRATION) => {
 };
 ```
 
-Este codigo nos retorna los urls prefirmados que usaremos
+Este código nos retorna los urls prefirmados que usaremos
 
 Ahora podemos crear todo el flujo
 
@@ -755,11 +755,11 @@ exports.getUrl = async (req, res) => {
 };
 ```
 
-Este seria nuestro controlador que nos regresa un ur json con los mensajes de si la peticion fue un exito, el url que nos permite visualizar la imagen, y la expiracion del url
+Este seria nuestro controlador que nos regresa un ur json con los mensajes de si la petición fue un exito, el URL que permite visualizar la imagen, y la expiracion del url
 
-De esta manera, podemos tanto subir y ver archivos de S3
+Esto permite subir y visualizar archivos desde S3.
 
-# Creacion del frontend del proyecto
+# Creación del frontend del proyecto
 
 ## Componente para el formulario de login
 
@@ -771,7 +771,7 @@ npm install axios
 
 Esta libreria nos ayuda a hacer peticiones https, como las peticiones post y get
 
-Tambien tenemos que instalar las librerias para los componentes estilizados de material ui
+También tenemos que instalar las librerias para los componentes estilizados de material ui
 
 ```
 npm install @mui/styled-engine-sc @mui/material @emotion/styled @emotion/react
@@ -779,7 +779,7 @@ npm install @mui/styled-engine-sc @mui/material @emotion/styled @emotion/react
 
 Estas son las librerias necesarias para poder utilizar los componentes de MUI
 
-Ahora creamos nuestor component llamado `LoginForm` adentro del archivo `LoginForm.jsx`
+Ahora creamos nuestro component llamado `LoginForm` adentro del archivo `LoginForm.jsx`
 
 ```js
 
@@ -869,7 +869,7 @@ Ahora creamos nuestor component llamado `LoginForm` adentro del archivo `LoginFo
   );
 ```
 
-En este componente necesitamos la funcion encargada de hacer la logica una vez que se presiona el boton
+En este componente necesitamos la función encargada de hacer la logica una vez que se presiona el boton
 
 ```js
 const handleSubmit = async (event) => {
@@ -901,7 +901,7 @@ const handleSubmit = async (event) => {
 };
 ```
 
-Tambien tenemos que definir las variables de estado
+También tenemos que definir las variables de estado
 
 ```js
 const [email, setEmail] = useState("");
@@ -918,13 +918,13 @@ A diferencia de el backend donde se usaba la linea `process.env.Variable`, en re
 const API_URL = import.meta.env.VITE_API_URL;
 ```
 
-De esta manera podemos recibir el URL de nuestra api
+Así obtenemos la URL de nuestra API
 
-Ahora ya tenemos nuestro componente de login creado
+Con esto, el componente de login está listo.
 
 ## Componente para el formulario de registro
 
-Crear el componente de registro es similar al componente de login, sigue la misma logica, solo que en lugar de mandar una peticion a la ruta de login, se hace a la ruta de registrar
+Crear el componente de registro es similar al componente de login, sigue la misma logica, solo que en lugar de mandar una petición a la ruta de login, se hace a la ruta de registrar
 
 ```js
 import { useState } from "react";
@@ -1098,7 +1098,7 @@ export default function RegisterForm() {
 }
 ```
 
-Con el componente de registro creado, ahora podemos acceder de manera normal sistema, ya que ya podemos hacer el login con nuestras credenciales
+Con el componente de registro creado, ahora podemos acceder de manera normal sistema, porque ahora podemos iniciar sesión con nuestras credenciales
 
 ## Otros componentes
 
@@ -1176,11 +1176,11 @@ function Home() {
 export default Home;
 ```
 
-Este componente es muy sencillo, ya que solamente tenemos 4 botones, uno que nos redirige a la pagina para subir un archiv, un boton que obtiene una imagen de s3 y la despliega, y un boton para hacer logout.
+Este componente es muy sencillo, ya que solamente tenemos 4 botones, uno que nos redirige a la página para subir un archivo, un boton que obtiene una imagen de s3 y la despliega, y un boton para hacer logout.
 
 ### Componente de upload
 
-Para nuestra pagina que nos deja subir un archivo utilizaremos este componente
+Para nuestra página que nos deja subir un archivo utilizaremos este componente
 
 ```js
 import axios from "axios";
@@ -1234,9 +1234,9 @@ Como podemos ver simplemente nos pide escoger un archivo local, y lo envia al en
 
 ### AuthProvider
 
-Este componente es muy importante, ya que es lo que hace que nuestras rutas esten protegidasm y que se tenga que hacer login antes de utilizar las paginas
+Este componente es muy importante, es el componente responsable de proteger nuestras rutas y que se tenga que hacer login antes de utilizar las páginas.
 
-Este componente se divide en 3 partes
+Este componente se divide en tres partes
 
 #### Custom hook useAuth
 
@@ -1298,7 +1298,7 @@ export const AuthProvider = ({ children }) => {
 export const useAuth = () => useContext(AuthContext);
 ```
 
-Este componente es el que hace la peticion al api para poder autorizar nuestro token JWT
+Este componente es el que hace la petición al api para poder autorizar nuestro token JWT
 
 #### Componente de ruta protegida
 
@@ -1316,7 +1316,7 @@ const ProtectedRoute = ({ children }) => {
 export default ProtectedRoute;
 ```
 
-Este componente utiliza el custom hook anterior, para reenviar a la ruta de login en caso de que no se autentifique el token
+Este componente utiliza el custom hook personalizado anterior, para redirigir a la ruta de inicio de sesión en caso de que no se autentifique el token
 
 Estos dos componentes anteriores se utilizan de esta manera
 
@@ -1370,11 +1370,11 @@ function App() {
 export default App;
 ```
 
-Se tiene que colocar el AuthProvider adentro del routeador para que todas las rutas puedan utilizarlo
+Se debe colocar el AuthProvider dentro del routeador para que todas las rutas puedan utilizarlo
 
-Tambien hay que wrappear el componente que se va a rendeerizar en la ruta en el componente de ruta protegida, de esta manera la ruta va a reedirigir al login en caso de que no se este autenticado
+También hay que wrappear el componente que se va a rendeerizar en la ruta en el componente de ruta protegida, de esta manera la ruta va a redirigir al login en caso de que no se este autenticado
 
-# Despliegue de la aplicacion
+# Despliegue de la aplicación
 
 ## Despliegue del backend
 
@@ -1384,15 +1384,15 @@ Tambien hay que wrappear el componente que se va a rendeerizar en la ruta en el 
 
 Para hacer el despliegue del backend utilizamos un servidor de AWS EC2 de tipo `t2.micro`, usando la imagen de `Ubuntu` 22.04
 
-Primero hay que lanzar nuestra instancia de ec2, si no se sabe como lanzar una instancia de ec2, consultar este corto [video](https://www.youtube.com/watch?v=86Tuwtn3zp0)
+Primero hay que lanzar nuestra instancia de ec2, si no se sabe cómo lanzar una instancia de ec2, consultar este corto [video](https://www.youtube.com/watch?v=86Tuwtn3zp0)
 
-Luego de tener nuestra instancia, vamos a acceder a ella por medio de ssh, en el caso para la prueba de arquitectura usamos este comando
+Luego de tener nuestra instancia, vamos a acceder a ella por medio de SSH, en el caso para la prueba de arquitectura usamos este comando
 
 ```
 ssh -i "PruebaArquitectura.pem" ubuntu@ec2-18-206-253-81.compute-1.amazonaws.com
 ```
 
-donde `"PruebaArquitectura.pem"` es la llave privada que creamos, en caso de no tenerla en el mismo directorio a donde se encuentra la terminal, tambien se puede agregar el path del archivo `.pem`
+donde `"PruebaArquitectura.pem"` es la llave privada que creamos, en caso de no tenerla en el mismo directorio a donde se encuentra la terminal, también se puede agregar la ruta del archivo `.pem`
 
 Una vez se haya ingresado a la terminal del servidor, vamos a hacer varios pasos
 
@@ -1417,19 +1417,19 @@ node -v
 npm -v
 ```
 
-Una vez tenemos instalado node, tambien tenemos que instalar pm2 de manera global
+Una vez tenemos instalado node, instala pm2 globalmente
 
 ```
 npm install -g pm2
 ```
 
-Una vez instalado pm2 podemos comenzar a subir nuestra aplicacion
+Una vez instalado pm2 podemos comenzar a subir nuestra aplicación
 
 #### Configurar git
 
-Ahora para poder subir nuestra aplicacion utilizaremos github, asi que clonaremos nuestro repositorio, pero no de la manera usual por http, si no que lo haremos por medio de ssh, lo que nos servira mas adelante
+Ahora para poder subir nuestra aplicación utilizaremos github, asi que clonaremos nuestro repositorio, pero no de la manera usual por http, si no que lo haremos por medio de SSH, estoserá útil más adelante.
 
-Primero tenemos que crear un par de llaves para pode agregar a github
+Primero tenemos que crear un par de llaves para poder agregar a github
 
 ```
 ssh-keygen -t rsa -b 4096 -C "tu-email@example.com"
@@ -1455,27 +1455,27 @@ Hi DiegoAlfaro1! You've successfully authenticated, but GitHub does not provide 
 
 Ahora podemos pasar a clonar nuestro repositorio
 
-Esto se hace de manera similar a como normalmente se clona un repositorio, solo que en lugar de copiar el mismo comando desde github, se tiene que seleccionar SSH, y de esa manera les dara el comando necesario, una vez con ese comando en nuestro servidor copiaremos de esta manera el repositorio
+Esto se hace de manera similar a como normalmente se clona un repositorio, solo que en lugar de copiar el mismo comando desde github, se tiene que seleccionar SSH, y de esa manera le dará el comando necesario, una vez con ese comando, clonaremos el repositorio en el servidor. 
 
 ```
 git clone git@github.com:DiegoAlfaro1/prueba-arquitectura-backend-textiles.git
 ```
 
-Ahora nos moveremos a la carpeta que se creo con nuestro repositorio, e instalaremos las dependencias
+Ahora nos moveremos a la carpeta que se creó con nuestro repositorio, e instalaremos las dependencias
 
-Una vez tenemos las dependencias instaladas, podemos crear nuestros porcesos que son los que mantienen la aplicacion corriendo
+Una vez tenemos las dependencias instaladas, podemos crear nuestros procesos que son los que mantienen la aplicación corriendo
 
-Primero iniciaremos el proceso de produccion, antes de iniciar el proceso, tenemos que asegurarnos que estemos en el directorio que tiene toda nuestra aplicacion, y que hayamos agregado los .env necesarios
+Primero iniciaremos el proceso de producción, antes de iniciar el proceso, tenemos que asegurarnos que estemos en el directorio que tiene toda nuestra aplicación, y que hayamos agregado los .env necesarios
 
-Ahora si podemos correr nuestro comando para crear el proceso de produccion
+Ahora sí podemos correr nuestro comando para crear el proceso de producción
 
 ```
 pm2 start ecosystem.config.js --only app-production
 ```
 
-Esto hace que se ejecute el archivo de `ecosystem.config.js`, el cual nos ayudara a iniciar nuestra app en diferentes puertos dependiendo del nombre de la aplicacion
+Esto hace que se ejecute el archivo `ecosystem.config.js`, el cual nos ayudará a iniciar nuestra app en diferentes puertos dependiendo del nombre de la aplicación
 
-Ahora tambien podemos empezar nuestro proceso de staging, el cual es el mismo comando solo cambiando el nombre de la aplicacion
+Ahora también podemos empezar nuestro proceso de staging, el cual es el mismo comando solo cambiando el nombre de la aplicación
 
 ```
 pm2 start ecosystem.config.js --only app-staging
@@ -1483,21 +1483,21 @@ pm2 start ecosystem.config.js --only app-staging
 
 Ahora ya tenemos nuestras aplicaciones corriendo y podemos consultarlas en los puertos 3000 y 4000 de nuestro servidor
 
-#### Api gateway
+#### API gateway
 
-Para poder utilizar petciones cifradas por medio de https sin tener que configurar un ceritifcado en nuestro de servidor, se utilizo api gateway
+Para poder utilizar petciones cifradas por medio de https sin tener que configurar un ceritifcado en nuestro de servidor, se utilizo API gateway
 
-Para poder configurar api gateway se uso este video, el cual tambien explica como desplegar una aplicacion en ec2 [video](https://www.youtube.com/watch?v=1238WUz0_fk)
+Para poder configurar API gateway se uso este video, el cual también explica como desplegar una aplicación en ec2 [video](https://www.youtube.com/watch?v=1238WUz0_fk)
 
 #### CI/CD
 
-Para el desliegue continuo se utilizo un script de github actions el cual se encuentra en la carpeta .github/workflows, el cual nos ayuda a que no tengas que hacer una actualizacion de los archivos manualmente y no tener que recargar nuestro proceso, para ver mas a fondo el script consultar la [guia de github actions](../../../guias/github/github-actions.md)
+Para el despliegue continuo se utilizo un script de github actions el cual se encuentra en la carpeta .github/workflows, el cual permite automatizar la actualización de los archivos manualmente y no tener que recargar nuestro proceso, para ver más a fondo el script consultar la [guia de github actions](../../../guias/github/github-actions.md)
 
 ## Despliegue del frontend
 
-El despliegue del frontend se hizo con aws apmlify
+El despliegue del frontend se hizo con AWS Amplify
 
-Primero hay que ingresar al apartado de aws amplify, y crear nuestra app, esto nos llevara a diferentes configuraciones donde tendremos que darle acceso al repositorio de github, y automaticamente detectara los comandos necesarios para desplegar la aplicacion, como se puede ver, amplify automaticamente despliega la rama main, esto es muy importante ya que nos ayudara a poder desplegar nuestra rama staging de la misma manera
+Primero hay que ingresar al apartado de AWS amplify, y crear nuestra app, esto nos lleva a una serie de configuraciones donde se debe otorgar acceso al repositorio de github, y automaticamente detectara los comandos necesarios para desplegar la aplicacion, como se puede ver, Amplify automáticamente despliega la rama main, esto es muy importante ya que nos ayudará a poder desplegar nuestra rama staging de la misma manera
 
 Luego de desplegar la rama, simplemente hay que agregar nuestras variables de entorno a este apartado
 
@@ -1575,7 +1575,7 @@ module.exports = mercadopago;
 ```
 
 **¿Qué hace esto?**
-Ahora creamos un archivo llamado `configMercadoPago.js` en el backend. Este archivo se encargará de iniciañizar Mercado Pago con el Access Token. Lo que hará es importar la clase `MercadoPagoConfig` desde el SDK, crea una instancia con el token y se exporta para que pueda ser utilizada en todo el backend,
+Ahora creamos un archivo llamado `configMercadoPago.js` en el backend. Este archivo se encargará de iniciañizar Mercado Pago con el Access Token. Lo que hará es importa la clase `MercadoPagoConfig` desde el SDK, crea una instancia con el token y se exporta para que pueda ser utilizada en todo el backend,
 
 ---
 
@@ -1613,7 +1613,7 @@ module.exports = createPreference;
 ```
 
 **¿Qué hace este archivo?**
-Ahora creamos una funcion que nos permite generar una `preferencia de pago`. Una preferencia es como una orden que le dice a Mercado Pago qué producto se va a pagar, el costo y a donde va a redirigir al usuario según el estado del pago, por lo cual tenemos que crear un archivo llamado `configPreference.js` para reibir una lista de producto.
+Ahora creamos una función que nos permite generar una `preferencia de pago`. Una preferencia es como una orden que le dice a Mercado Pago qué producto se va a pagar, el costo y a donde va a redirigir al usuario según el estado del pago, por lo cual tenemos que crear un archivo llamado `configPreference.js` para recibir una lista de producto.
 
 ---
 
@@ -1664,7 +1664,7 @@ module.exports = router;
 ```
 
 **¿Qué hace esta ruta?**
-Ya con el controlador listo, ocupamos definir una ruta que lo llame. Para eso crearemos un archivo llamado `mercadoPago.routes.js` donde creamos una ruta POST que se encarga de que reciba las solicitudes del frontend.
+Una vez que el controlador está listo, debemos definir una ruta que lo llame. Para eso crearemos un archivo llamado `mercadoPago.routes.js` donde creamos una ruta POST que se encarga de que reciba las solicitudes del frontend.
 
 ---
 
@@ -1698,8 +1698,6 @@ Antes de pasar al frontend, vamos a probar si el endpoint está funcionando corr
   "init_point": "https://www.mercadopago.com/checkout/start?pref_id=...."
 }
 ```
-
-**¿Qué se espera recibir?**
 
 ---
 
@@ -1782,16 +1780,6 @@ export default BotonPago;
 **¿Qué hace este componente?**
 Crea un componente nuevo en el frontend llamado `BotonPago.jsx`. Este componente tendrá un botón que al hacer clic nos enviará la solicitud al backend para generar la preferencia, recibiendo el `preferenceId` podemos mostrar el botón de MercadoPago utilizando el componente `Wallet` del SDK.
 
----
-
-## Flujo completo
-
-1. El usuario hace clic en “Pagar con Mercado Pago”.
-2. El frontend llama al backend para generar una preferencia.
-3. El backend responde con un `init_point`.
-4. El frontend carga el botón de pago.
-5. Se abre el checkout de Mercado Pago.
-6. Al finalizar, el usuario es redirigido a una de las URLs configuradas.
 
 ---
 
@@ -2097,7 +2085,7 @@ Ejecutar una prueba de rendimiento sobre el endpoint de **registro de usuarios**
 
 1. Crea una nueva solicitud en Postman con la siguiente URL: https://nr8nw243lb.execute-api.us-east-1.amazonaws.com/api/register
 2. Cambia el método a `POST`.
-3. Ve a la pestaña **"Headers"** y añade una key llamada "x-api-key" e introduce un valor como "apiKey".
+3. Ve a la pestaña **"Headers"** y añade una key llamada "x-api-key" e introduce un valor como "APIKey".
 4. Ve a la pestaña **"Body"** indicando el tipo de body como raw, JSON.
 
 ```javascript
@@ -2301,7 +2289,7 @@ _supertest_ permite realizar solicitudes HTTP para probar rutas con Express.
 
 **2. Modificar el archivo app.js:**
 
-Dentro de nuestro **app.js**, colocamos el siguiente código:
+Dentro de nuestro **app.js**, agregamos el siguiente código:
 
 ```
 app.use("/api", rutasLogin);
@@ -2626,7 +2614,7 @@ Ahora, dentro de Burp Suite, dirígete a la pestaña de proxy y selecciona la op
 
 ![alt text](csrf.png)
 
-Después, dentro del navegador, pega la URL de la página para realizar las pruebas. En este caso utilizaremos la dirección http://localhost:5173/login solo que cambiaremos localhost por [::1] para evitar errores de que no cargue la página dentro de Burp: http://[::1]:5173/login
+Después, dentro del navegador, pega la URL de la página para realizar las pruebas. En este caso, utilizaremos la dirección http://localhost:5173/login solo que cambiaríamos localhost por [::1] para evitar errores de que no cargue la página dentro de Burp: http://[::1]:5173/login
 
 Al abrir la dirección URL dentro de Burp, podemos observar que se abre una pestaña dentro del navegador:
 
@@ -2676,34 +2664,34 @@ Cada funcionalidad se verifica visual y funcionalmente, observando en tiempo rea
 | Subir imagen          | Chrome    | 134.0.6998.179        | Imagen subida con éxito                           | Imagen subida con éxito                           | Sí                       | N/A                                           |
 | Obtener imagen        | Chrome    | 134.0.6998.179        | Recuperación de imagen subida                     | Recuperación de imagen subida                     | Sí                       | N/A                                           |
 | Mercado Pago Checkout | Chrome    | 134.0.6998.179        | Redirección a Mercado Pago Checkout               | Redirección a Mercado Pago Checkout               | Sí                       | N/A                                           |
-| Cerrar sesión         | Chrome    | 134.0.6998.179        | Redirección a inicio de sesión                    | Redirección a inicio de sesión                    | Sí                       | N/A                                           |
+| Cerrar sesión         | Chrome    | 134.0.6998.179        | Redirección al inicio de sesión                    | Redirección al inicio de sesión                    | Sí                       | N/A                                           |
 | Inicio de sesión      | Firefox   | 137.0                 | Redirección a la aplicación                       | Redirección a la aplicación                       | Sí                       | N/A                                           |
 | Registrar usuario     | Firefox   | 137.0                 | Registro con éxito y redirección a Iniciar sesión | Registro con éxito y redirección a Iniciar sesión | Sí                       | N/A                                           |
 | Subir imagen          | Firefox   | 137.0                 | Imagen subida con éxito                           | Imagen subida con éxito                           | Sí                       | N/A                                           |
 | Obtener imagen        | Firefox   | 137.0                 | Recuperación de imagen subida                     | Recuperación de imagen subida                     | Sí                       | N/A                                           |
 | Mercado Pago Checkout | Firefox   | 137.0                 | Redirección a Mercado Pago Checkout               | Redirección a Mercado Pago Checkout               | Sí                       | N/A                                           |
-| Cerrar sesión         | Firefox   | 137.0                 | Redirección a inicio de sesión                    | Redirección a inicio de sesión                    | Sí                       | N/A                                           |
+| Cerrar sesión         | Firefox   | 137.0                 | Redirección al inicio de sesión                    | Redirección al inicio de sesión                    | Sí                       | N/A                                           |
 | Inicio de sesión      | Edge      | 134.0.3124.93         | Redirección a la aplicación                       | Redirección a la aplicación                       | Sí                       | N/A                                           |
 | Registrar usuario     | Edge      | 134.0.3124.93         | Registro con éxito y redirección a Iniciar sesión | Registro con éxito y redirección a Iniciar sesión | Sí                       | N/A                                           |
 | Subir imagen          | Edge      | 134.0.3124.93         | Imagen subida con éxito                           | Imagen subida con éxito                           | Sí                       | N/A                                           |
 | Obtener imagen        | Edge      | 134.0.3124.93         | Recuperación de imagen subida                     | Recuperación de imagen subida                     | Sí                       | N/A                                           |
 | Mercado Pago Checkout | Edge      | 134.0.3124.93         | Redirección a Mercado Pago Checkout               | Redirección a Mercado Pago Checkout               | Sí                       | N/A                                           |
-| Cerrar sesión         | Edge      | 134.0.3124.93         | Redirección a inicio de sesión                    | Redirección a inicio de sesión                    | Sí                       | N/A                                           |
+| Cerrar sesión         | Edge      | 134.0.3124.93         | Redirección al inicio de sesión                    | Redirección al inicio de sesión                    | Sí                       | N/A                                           |
 | Inicio de sesión      | Safari    | 18.4                  | Redirección a la aplicación                       | Inicio de sesión inválido                         | No                       | No se puede iniciar sesión, pero sí registrar |
 | Registrar usuario     | Safari    | 18.4                  | Redirección a la aplicación                       | Inicio de sesión inválido                         | Sí                       | N/A                                           |
 | Subir imagen          | Safari    | 18.4                  | Imagen subida con éxito                           | Inicio de sesión inválido                         | No                       | No se puede iniciar sesión                    |
 | Obtener imagen        | Safari    | 18.4                  | Recuperación de imagen subida                     | Inicio de sesión inválido                         | No                       | No se puede iniciar sesión                    |
 | Mercado Pago Checkout | Safari    | 18.4                  | Redirección a Mercado Pago Checkout               | Inicio de sesión inválido                         | No                       | No se puede iniciar sesión                    |
-| Cerrar sesión         | Safari    | 18.4                  | Redirección a inicio de sesión                    | Inicio de sesión inválido                         | No                       | No se puede iniciar sesión                    |
+| Cerrar sesión         | Safari    | 18.4                  | Redirección al inicio de sesión                    | Inicio de sesión inválido                         | No                       | No se puede iniciar sesión                    |
 
 ---
 
 | **Tipo de Versión** | **Descripción**                                            | **Fecha** | **Colaborador**                |
 | ------------------- | ---------------------------------------------------------- | --------- | ------------------------------ |
-| **1.0**             | Se creo la documentacion de la prueba de arquitectura      | 4/3/2025  | Arturo Sanchez, Diego Alfaro   |
-| **1.1**             | Se añadió la documentacion de la prueba de rendimiento     | 3/4/2025  | Valeria Zúñiga Mendoza         |
-| **1.2**             | Se añadió la documentacion de la prueba de inyección NoSQL | 5/4/2025  | Paola Garrido y Carlos Fonseca |
-| **1.3**             | Se añadió la documentacion de Storybook                    | 5/4/2025  | Paola Garrido                  |
-| **1.4**             | Se añadió la documentacion de pruebas CSRF                 | 5/4/2025  | Angel Ramírez                  |
-| **1.5**             | Se añadió la documentacion de pruebas de Usabilidad        | 6/4/2025  | Nicolas Hood                   |
-| **1.6**             | Se añadió la documentacion de pruebas de Rendimiento        | 6/4/2025  | Hiram Mendoza                   |
+| **1.0**             | Se creó la documentación de la prueba de arquitectura      | 4/3/2025  | Arturo Sanchez, Diego Alfaro   |
+| **1.1**             | Se añadió la documentación de la prueba de rendimiento     | 3/4/2025  | Valeria Zúñiga Mendoza         |
+| **1.2**             | Se añadió la documentación de la prueba de inyección NoSQL | 5/4/2025  | Paola Garrido y Carlos Fonseca |
+| **1.3**             | Se añadió la documentación de Storybook                    | 5/4/2025  | Paola Garrido                  |
+| **1.4**             | Se añadió la documentación de pruebas CSRF                 | 5/4/2025  | Angel Ramírez                  |
+| **1.5**             | Se añadió la documentación de pruebas de Usabilidad        | 6/4/2025  | Nicolas Hood                   |
+| **1.6**             | Se añadió la documentación de pruebas de Rendimiento        | 6/4/2025  | Hiram Mendoza                   |
