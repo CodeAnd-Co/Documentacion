@@ -19,8 +19,11 @@ Como **Super Administrador**, quiero poder registrar nuevos usuarios en el siste
 2. Se debe mostrar un formulario con los siguientes campos obligatorios:
    - Nombre completo
    - Correo electrónico
+   - Número de telefono
+   - Cliente al que pertenece
    - Rol del usuario (Ejemplo: Administrador, Usuario estándar, Moderador, etc.)
    - Permisos específicos según el rol seleccionado
+   - Contraseña establecida y confirmada
 3. Si los datos ingresados son válidos, el sistema debe registrar al nuevo usuario y mostrar un mensaje de confirmación.
 4. Si algún campo obligatorio está vacío o con formato incorrecto, se debe mostrar un mensaje de error indicando qué corregir.
 5. El usuario recién creado debe poder iniciar sesión con las credenciales proporcionadas.
