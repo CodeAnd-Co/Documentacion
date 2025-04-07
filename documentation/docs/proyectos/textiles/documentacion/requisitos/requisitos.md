@@ -377,18 +377,34 @@ import TabItem from '@theme/TabItem';
 ## Reglas de negocio
 
 #### Descripción General
+
 Las reglas de negocio son un conjunto de condiciones, restricciones y procedimientos que definen cómo debe operar un sistema de acuerdo con los objetivos y necesidades de una organización. Estas reglas dictan el comportamiento del software en aspectos como validaciones, cálculos, flujos de trabajo y permisos de usuario. Su correcta implementación garantiza que el sistema refleje con precisión los procesos y políticas del negocio, asegurando coherencia y cumplimiento con los requisitos establecidos.
 
 ---
 
-- Solo el administrador puede registrar, modificar o eliminar clientes y empleados. 
+- Solo el administrador puede registrar, modificar o eliminar clientes y empleados.
 - Un cliente debe tener al menos un empleado asociado para poder realizar compras.
 - No se pueden registrar empleados sin asignarlos a un cliente específico.
 - Cada cliente puede tener un catálogo de productos personalizados.
-- Solo los administradores pueden asignar y modificar roles. 
+- Solo los administradores pueden asignar y modificar roles.
 - Los permisos de los usuarios están definidos por su rol (administrador, cliente, empleado).
-- Un usuario no puede modificar su propio rol ni asignarse más. 
+- Un usuario no puede modificar su propio rol ni asignarse más.
 - Se debe validar el inventario antes de confirmar una orden.
-- Los pagos pueden realizarse en MXN, USD o puntos acumulados. 
+- Los pagos pueden realizarse en MXN, USD o puntos acumulados.
 - Los empleados solo pueden comprar productos autorizados por su empresa.
-- Se debe verificar el saldo disponible o puntos antes de autorizar una compra. 
+- Se debe verificar el saldo disponible o puntos antes de autorizar una compra.
+
+## Requisitos de Interfaz
+
+### Descripción General
+
+La interfaz de usuario de la aplicación está diseñada para ser **intuitiva, atractiva y fácil de usar**. Se prioriza una **experiencia fluida y accesible**, con una navegación clara que facilite el uso tanto para nuevos usuarios como para los actuales.
+
+- **RI-1:** Incorporación de una barra lateral que permitirá una navegación eficiente dentro del sistema.
+
+![Requisito de Interfaz 1 - Barra lateral](altertexRI1.png)
+
+Para garantizar coherencia visual y funcional, la interfaz estará construida con **componentes reutilizables**, lo que permitirá mantener una estética uniforme y una estructura lógica. Esto contribuirá a **reducir la curva de aprendizaje** y a **optimizar la interacción** del usuario con el sistema.
+
+Los **mockups** de la interfaz están disponibles en el siguiente enlace:  
+[Figma – Intrefaz ALTERTEX](https://www.figma.com/design/Mxut7xu6u7bxGbO68K6SQ0/INTERFAZ-ALTERTEX?node-id=8604-22210&t=GNn8LoDEtX2et6kq-1)
