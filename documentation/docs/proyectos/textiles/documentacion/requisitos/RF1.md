@@ -43,7 +43,7 @@ participant Backend
 participant rutaUsuarios
 participant controladorUsuarios
 participant repositorioUsuarios
-participant DynamoDB
+participant RDS
 
 SuperAdmin -->> Frontend: Selecciona "Crear Usuario"
 Frontend -->> Frontend: Muestra formulario con campos obligatorios
@@ -68,8 +68,8 @@ else Formulario válido
         rutaUsuarios -->> controladorUsuarios: Envía datos del nuevo usuario
         controladorUsuarios -->> controladorUsuarios: Valida datos y rol, asigna permisos
         controladorUsuarios -->> repositorioUsuarios: Solicita creación del usuario
-        repositorioUsuarios -->> DynamoDB: Inserta nuevo registro
-        DynamoDB -->> repositorioUsuarios: Confirma inserción
+        repositorioUsuarios -->> RDS: Inserta nuevo registro
+        RDS -->> repositorioUsuarios: Confirma inserción
         repositorioUsuarios -->> controladorUsuarios: Retorna éxito
         controladorUsuarios -->> rutaUsuarios: Retorna JSON {"mensaje": "Usuario creado"}, status 201
         rutaUsuarios -->> Backend: Retorna JSON {"mensaje": "Usuario creado"}, status 201

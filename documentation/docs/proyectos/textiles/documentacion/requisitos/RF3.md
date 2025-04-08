@@ -43,7 +43,7 @@ participant Backend
 participant rutaUsuarios
 participant controladorUsuarios
 participant repositorioUsuarios
-participant DynamoDB
+participant RDS
 
 SuperAdmin -->> Frontend: Hace clic en un usuario de la lista
 Frontend -->> Api_gateway: GET /api/usuarios/:id con JWT
@@ -59,10 +59,10 @@ alt Token inválido o no autorizado
 else Token válido
     rutaUsuarios -->> controladorUsuarios: Solicita usuario por ID
     controladorUsuarios -->> repositorioUsuarios: Busca usuario por ID
-    repositorioUsuarios -->> DynamoDB: Consulta por ID
+    repositorioUsuarios -->> RDS: Consulta por ID
 
     alt Error al obtener los datos
-        DynamoDB -->> repositorioUsuarios: Retorna error (RequestTimeout, ResourceNotFoundException)
+        RDS -->> repositorioUsuarios: Retorna error (RequestTimeout, ResourceNotFoundException)
         repositorioUsuarios -->> controladorUsuarios: Retorna error
         controladorUsuarios -->> rutaUsuarios: Retorna error
         rutaUsuarios -->> Backend: Retorna 500 {"message": "Error al obtener datos"}
@@ -70,7 +70,7 @@ else Token válido
         Api_gateway -->> Frontend: Retorna 500 {"message": "Error al obtener datos"}
         Frontend -->> SuperAdmin: Muestra mensaje "Error al cargar la información del usuario."
     else Usuario encontrado
-        DynamoDB -->> repositorioUsuarios: Retorna datos del usuario
+        RDS -->> repositorioUsuarios: Retorna datos del usuario
         repositorioUsuarios -->> controladorUsuarios: Retorna datos del usuario
         controladorUsuarios -->> rutaUsuarios: Retorna datos del usuario
         rutaUsuarios -->> Backend: JSON con la información del usuario, status 200
