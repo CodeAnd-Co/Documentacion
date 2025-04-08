@@ -9,7 +9,7 @@ sidebar_position: 3
 
 ### Requisitos Previos
 
-Antes de comenzar, hay que instalar la versión de node especificada en el manual de arquitectura
+Antes de comenzar, hay que instalar la versión de Node especificada en el manual de arquitectura
 
 #### Creación del proyecto
 
@@ -156,7 +156,7 @@ module.exports = async (req, res, next) => {
 
 Este código verifica el token guardado en las cookies, y revisarlo utilizando las funciones que nos proporciona JWT, para validar el token recibido.
 
-Una vez creado, podemos utilizar este middleware para proteger las rutas a las que no deberia acceder un usuario no autenticado
+Una vez creado, podemos utilizar este middleware para proteger las rutas a las que no debería acceder un usuario no autenticado
 
 ```js
 router.get("/perfil", autorizarToken, (req, res) => {
@@ -220,7 +220,7 @@ router.get(
 );
 ```
 
-Esto hará que, a pesar de que el token sea válido, si no se envia el API key, no se completara la petición, esto añade una capa adicional de seguridad a las rutas.
+Esto hará que, a pesar de que el token sea válido, si no se envía el API key, no se completara la petición, esto añade una capa adicional de seguridad a las rutas.
 
 Una vez que tenemos nuestras 2 capas de seguridad, podemos pasar a construir los diferentes módulos de la aplicación
 
@@ -269,7 +269,7 @@ connection.connect((err) => {
 module.exports = connection;
 ```
 
-Este archivo nos ayudara a conectarnos a la base de datos que se encuentra en el EC2
+Este archivo nos ayudará a conectarnos a la base de datos que se encuentra en el EC2
 
 Para esto vamos a seguir con nuestra pequeña aplicación. Para poder integrar la envío de datos a RDS, vamos a crear un servicio en nuestro backend para enviar datos.
 
@@ -301,7 +301,7 @@ module.exports = async (nombreTabla, modelo) => {
 };
 ```
 
-Esta función usa la conexión a la base de datos, hace una preparacion de los datos que utilizara para la query, y crea una query normal de sql para insertar datos en la tabla especificada
+Esta función usa la conexión a la base de datos, hace una preparación de los datos que utilizara para la query, y crea una query normal de sql para insertar datos en la tabla especificada
 
 Esta función nos ayudará a no tener que crear múltiples bloques de código iguales y poder reutilizar este mismo cada que se quiera subir algo a RDS
 
@@ -405,7 +405,7 @@ module.exports = async (nombreTabla, llaves) => {
 };
 ```
 
-Con esta funcion, podremos recibir datos de RDS, en este caso, recibiremos la informacion de un usuario, y haremos el login al sistema
+Con esta función, podremos recibir datos de RDS, en este caso, recibiremos la información de un usuario, y haremos el login al sistema
 
 Primero vamos a crear nuestra ruta
 
@@ -788,7 +788,7 @@ Esto permite subir y visualizar archivos desde S3.
 
 ## Componente para el formulario de login
 
-Primero tenemos que instalar una librería muy importante que se usara en todo el proyecto
+Primero tenemos que instalar una librería muy importante que se usará en todo el proyecto
 
 ```
 npm install axios
@@ -1255,7 +1255,7 @@ export default function Upload() {
 }
 ```
 
-Como podemos ver simplemente nos pide escoger un archivo local, y lo envia al endpoint que creamos para poder subir ese archivo
+Como podemos ver simplemente nos pide escoger un archivo local, y lo envía al endpoint que creamos para poder subir ese archivo
 
 ### AuthProvider
 
@@ -1323,7 +1323,7 @@ export const AuthProvider = ({ children }) => {
 export const useAuth = () => useContext(AuthContext);
 ```
 
-Este componente es el que hace la petición al api para poder autorizar nuestro token JWT
+Este componente es el que hace la petición al API para poder autorizar nuestro token JWT
 
 #### Componente de ruta protegida
 
@@ -1803,7 +1803,7 @@ export default BotonPago;
 ```
 
 **¿Qué hace este componente?**
-Crea un componente nuevo en el frontend llamado `BotonPago.jsx`. Este componente tendrá un botón que al hacer clic nos enviará la solicitud al backend para generar la preferencia, recibiendo el `preferenceId` podemos mostrar el botón de MercadoPago utilizando el componente `Wallet` del SDK.
+Crea un componente nuevo en el frontend llamado `BotonPago.jsx`. Este componente tendrá un botón que al hacer clic nos enviará la solicitud al backend para generar la preferencia, recibiendo el `preferenceId`, podemos mostrar el botón de MercadoPago utilizando el componente `Wallet` del SDK.
 
 ---
 
