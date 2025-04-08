@@ -5,8 +5,6 @@ sidebar_position: 9
 
 # RF8: Eliminar Charola
 
-**Última actualización:** 05 de marzo de 2025
-
 ### Historia de Usuario
 Como usuario del sistema, quiero borrar los datos de una charola en la base de datos, para eliminar registros obsoletos o incorrectos y mantener la base de datos actualizada y ordenada.
 
@@ -21,6 +19,82 @@ Como usuario del sistema, quiero borrar los datos de una charola en la base de d
 ### Diagrama de Secuencia
 
 > *Descripción*: El diagrama de secuencia muestra el flujo de eliminación de un empleado, donde el Super Administrador solicita la eliminación y el sistema confirma la acción antes de proceder.
+
+# Eliminar charola
+
+```mermaid
+sequenceDiagram
+    actor Usuario 
+    participant View as View
+    participant ViewModel as ViewModel
+    participant Domain as Domain
+    participant Repository as Repository
+    participant APIClient as API Client (MVVM)
+    participant APIService as API Service (MVVM)
+    participant Controller as Controller
+    participant Model as Model
+    participant Database as Base de Datos
+
+    alt Conexión disponible
+        Usuario->>View: Presiona "Eliminar Charola"
+        View->>ViewModel: eliminarCharola(id)
+        ViewModel->>Domain: eliminarCharola(id)
+        Domain->>Repository: eliminarCharola(id)
+
+        Repository->>APIClient: eliminarCharola(id)
+        APIClient->>+APIService: DELETE /charolas/{id}
+        APIService->>Controller: Procesar solicitud
+        Controller->>Model: Validar existencia y eliminar
+        Model->>Database: DELETE FROM charolas WHERE id = ?
+
+        Database-->>Model: Confirma eliminación
+        Model-->>Controller: Éxito
+        Controller-->>APIService: 200 OK
+        APIService-->>-APIClient: Eliminación exitosa
+        APIClient-->>Repository: Eliminación exitosa
+        Repository-->>Domain: Resultado de eliminación
+        Domain-->>ViewModel: Notifica éxito
+        ViewModel-->>View: Actualizar UI
+        View-->>Usuario: Mostrar mensaje "Charola eliminada correctamente"
+    else Sin conexión a internet, 101
+        Usuario->>View: Presiona "Eliminar Charola"
+        View->>ViewModel: eliminarCharola(id)
+        ViewModel->>Domain: eliminarCharola(id)
+        Domain->>Repository: eliminarCharola(id)
+
+        Repository->>APIClient: eliminarCharola(id)
+        APIClient->>+APIService: DELETE /charolas/{id}        
+
+        APIService-->>-APIClient: Error 101
+        APIClient-->>Repository: Error 101
+        Repository-->>Domain: Error 101
+        Domain-->>ViewModel: Notifica error
+        ViewModel-->>View: Actualizar UI
+        View-->>Usuario: Mostrar mensaje "Sin conexión a internet"
+    else Error de servidor, 500
+        Usuario->>View: Presiona "Eliminar Charola"
+        View->>ViewModel: eliminarCharola(id)
+        ViewModel->>Domain: eliminarCharola(id)
+        Domain->>Repository: eliminarCharola(id)
+
+        Repository->>APIClient: eliminarCharola(id)
+        APIClient->>+APIService: DELETE /charolas/{id}
+        APIService->>Controller: Procesar solicitud
+        Controller->>Model: Validar existencia y eliminar
+        Model->>Database: DELETE FROM charolas WHERE id = ?
+
+        Database-->>Model: Dato no encontrado
+        Model-->>Controller: Error
+        Controller-->>APIService: Error 500
+        APIService-->>-APIClient: Error 500
+        APIClient-->>Repository: Error 500
+        Repository-->>Domain: Error 500
+        Domain-->>ViewModel: Notifica Error
+        ViewModel-->>View: Actualizar UI
+        View-->>Usuario: Mostrar mensaje "Error de servidor"
+    end
+
+```
 
 ---
 
@@ -37,3 +111,12 @@ Como usuario del sistema, quiero borrar los datos de una charola en la base de d
 | PU-RF8-04  | Verificar que la eliminación se refleje inmediatamente en la base de datos. | La charola eliminada ya no aparece en consultas posteriores. |
 | PU-RF8-05  | Confirmar que la eliminación de una charola no afecta otros registros. | Los demás datos en la base permanecen intactos tras la eliminación. |
 | PU-RF8-06  | Validar que el sistema solicite confirmación antes de eliminar. | Se muestra un mensaje de confirmación antes de ejecutar la acción de eliminación. |
+
+
+## Historial de cambios
+
+| **Tipo de Versión** | **Descripción**                      | **Fecha** | **Colaborador**   |
+| ------------------- | ------------------------------------ | --------- | ----------------- |
+| **1.0**             | Creacion de la historia de usuario   | 8/3/2025  | Armando Mendez    |
+| **1.0**             | Verificación de los cambios          | 8/3/2025  | Miguel Angel      |
+| **1.1**             | Creación del diagrama de secuencia   | 3/4/2025  | Juan Eduardo      |

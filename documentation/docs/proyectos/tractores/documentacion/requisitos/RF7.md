@@ -5,15 +5,19 @@ sidebar_position: 8
 
 # RF7: Usuario consulta los ranchos disponibles.
 
-**Última actualización:** 07 de marzo de 2025
+**Última actualización:** 03 de abril de 2025
 
 ### Historia de Usuario
 
-Yo como usuario quiero ver la lista de ranchos disponibles en el sistema.
+Yo como usuario quiero consultar una lista completa de ranchos disponibles en el sistema, con opciones de búsqueda y organización clara, para poder encontrar rápidamente la información que necesito.
 
   **Criterios de Aceptación:**
-  - El sistema debe de mostrar la lista de ranchos disponibles con su nombre.
-  - El sistema debe de mostrar la lista de los ranchos organizada para que sea fácil de filtrar y buscar.
+  - Mostrar los ranchos disponibles en un formato tabla.
+  - La lista debe cargarse en menos de 2 segundos (bajo condiciones normales de red).
+  - Permitir ordenar la lista por Nombre (A-Z / Z-A).
+  - Barra de búsqueda: Permitir buscar ranchos por nombre (búsqueda parcial, ej.: "San" → "San Miguel").
+  - Si no hay ranchos disponibles, mostrar un mensaje claro (ej.: "No se encontraron ranchos con los filtros seleccionados").
+  - En caso de error de carga, mostrar un mensaje amigable con opción de reintentar.
 
 ---
 

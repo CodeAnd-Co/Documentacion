@@ -5,14 +5,18 @@ sidebar_position: 6
 
 # RF5: Usuario selecciona modo claro/oscuro.
 
-**Última actualización:** 07 de marzo de 2025
+**Última actualización:** 03 de abril de 2025
 
 ### Historia de Usuario
 
-Yo como usuario quiero cambiar entre el modo claro y oscuro del sistema para mejorar la experiencia de cada usuario.
+Yo como usuario quiero cambiar entre el modo claro y oscuro del sistema, y que mi elección se mantenga incluso al reiniciar la aplicación, para tener una experiencia visual consistente y personalizada.
 
   **Criterios de Aceptación:**
-  - El sistema debe de permitir a los usuarios alternar entre el modo claro y oscuro desde la configuración del sistema.
+  - El sistema debe mostrar una opción en la configuración para alternar entre modo claro y modo oscuro.
+  - El cambio debe aplicarse inmediatamente al seleccionar la opción (sin requerir reinicio).
+  - La selección del tema debe guardarse automáticamente en las preferencias del usuario.
+  - Al cerrar y reabrir la aplicación, el sistema debe cargar el último tema seleccionado.
+  - Todos los componentes de la interfaz (botones, textos, fondos) deben adaptarse al tema activo sin errores (ej.: texto ilegible, contraste insuficiente).
 
 ---
 
