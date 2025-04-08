@@ -5,18 +5,6 @@ sidebar_position: 4
 
 # Manual de Arquitectura de Software
 
-**Última actualización** 25 de marzo de 2025 por Juan Pablo Chávez Leal
-
----
-
-### Autores
-| Nombre                            | Rol       |
-| --------------------------------- | --------- |
-| Daniel Contreras                  | Autor     |
-| Diego Alfaro                      | Autor     |
-| Emiliano Gómez                    | Autor     |
-| Diego Fuentes                     | Modificador |
-| Juan Pablo Chávez Leal            | Modificador|
 ---
 
 ## Tipo de arquitectura de software
@@ -150,34 +138,51 @@ Redactar los beneficios de la arquitectura seleccionada.
 ## Diagrama de despliegue
 ``` mermaid 
 graph TD
-    Usuario --> |Accede a| Harvester
-    Administrador --> |Accede a| Harvester
-    subgraph Harvester
-        subgraph Electron
+    Usuario <--> |Accede a| Dispositivo
+    Administrador <--> |Accede a| Dispositivo
+    subgraph Dispositivo
+      subgraph Windows 10
+        subgraph Harvester
         end
+      end
     end
 
-    Harvester -->|Accede a través de| Internet
+    Dispositivo <--> |https| Internet
 
     subgraph InfraestructuraAWS [Infraestructura AWS]
         subgraph VPC ["Virtual Private Cloud - VPC"]
-        subgraph Server ["Servidor: t4g.xlarge"]
             subgraph EC2 ["EC2"]
                 subgraph ServidorUbuntu["Servidor Ubuntu"]
                     subgraph Sistema["Entorno: Node.js"]
-                       ExpressFramework["Framework: Express"] 
+                       ExpressFramework["express"]
+                       APP["app.js"]
                     end
+                    MySQL["Base de datos: MySQL"]
                 end
             end
             end
-            MySQL["Base de datos: MySQL"]
-            
-        end
     end
 
-    Internet --> InfraestructuraAWS
+    Internet <--> |https| InfraestructuraAWS
+    
 ```
 
-| Autor | Descripción del cambio | Versión |
-|---------|-------------------------|---------|
-| Juan Pablo Chávez Leal | Adición del diagrama de despliegue | V2 |
+---
+
+### Autores
+
+| Nombre                            | Rol       |
+| --------------------------------- | --------- |
+| Daniel Contreras                  | Autor     |
+| Diego Alfaro                      | Autor     |
+| Emiliano Gómez                    | Autor     |
+| Diego Fuentes                     | Modificador |
+
+---
+
+## Historial de cambios
+
+| **Tipo de versión** | **Descripción**                    | **Fecha** | **Colaborador**        |
+|---------------------|------------------------------------| --------- | ---------------------- |
+| **2.0**             | Adición del diagrama de despliegue | 25/03/2025  | Juan Pablo Chávez Leal |
+| **2.1**             | Corrección al diagrama de despliegue | 04/04/2025 | Ian Julián Estrada Castro |

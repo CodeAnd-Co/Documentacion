@@ -5,8 +5,6 @@ sidebar_position: 1
 
 # Descripción General del Proyecto
 
-**Última actualización:** 7 de marzo de 2025
-
 **Nombre de la Empresa:** Altertex US
 
 ## Análisis de Necesidades 😑
@@ -187,17 +185,18 @@ import TabItem from '@theme/TabItem';
 
 ### Estructura Organizacional
 
-| Nombre                                 | Rol                                |
-| -------------------------------------- | ---------------------------------- |
-| Rodrigo Antonio Benítez De la Portilla | Team Leader                        |
-| Ángel Mauricio Ramírez Herrera         | QA                                 |
-| Angélica Ríos Cuentas                  | Product Owner                      |
-| Hiram Israel Mendoza López             | Presentation Owner, Team Member    |
-| Nicolás Hood Figueroa                  | Team Member, UX/UI Diseñador       |
-| Max Toscano Díaz                       | SEPG, Team Member, Writing Owner   |
-| Diego Ricardo Alfaro Pinto             | Team Member, Architecture Owner    |
-| Arturo Sánchez Rodríguez               | Team Member, UX/UI Diseñador       |
-| Carlos Iván Fonseca Mondragón          | Team Member, SEPG, Comité de Ética |
+| Nombre                                 | Rol                              |
+| -------------------------------------- | -------------------------------- |
+| Hiram Israel Mendoza López             | Team Leader                      |
+| Ángel Mauricio Ramírez Herrera         | QA, Team Member                  |
+| Angélica Ríos Cuentas                  | Team Member                      |
+| Rodrigo Antonio Benítez De La Portilla | QA, Team Member                  |
+| Nicolás Hood Figueroa                  | Team Member, UX/UI Diseñador     |
+| Paola María Garrido Montes             | Team Member                      |
+| Diego Ricardo Alfaro Pinto             | Team Member, Architecture Owner  |
+| Arturo Sánchez Rodríguez               | Team Member, UX/UI Diseñador, QA |
+| Carlos Iván Fonseca Mondragón          | Product Owner                    |
+| Valeria Zúñiga Mendoza                 | Team Member                      |
 
 ---
 
@@ -205,3 +204,14 @@ import TabItem from '@theme/TabItem';
 
 - [**Manual de arquitectura** ](./documentacion/manual-de-arquitectura-textiles.md).
 - [**Manual de estrategia técnica** ](./documentacion/estrategia-tecnica-textiles.md).
+
+---
+
+### Historial de cambios
+
+| Tipo de Versión | Descripción             | Fecha    | Colaborador                            |
+| --------------- | ----------------------- | -------- | -------------------------------------- |
+| 1.0             | Creación de Descripción | 7/3/2025 | Ángel Mauricio Ramírez Herrera         |
+| 1.1             | Modificación Roles      | 3/4/2025 | Rodrigo Antonio Benítez De La Portilla |
+
+---
