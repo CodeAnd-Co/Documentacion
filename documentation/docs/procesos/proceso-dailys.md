@@ -22,9 +22,9 @@ sidebar_position: 18
 
 | Fase                     | Actividades | Responsables | Meta y práctica específica del CMMI |
 |--------------------------|-------------|--------------|--------------------------------------|
-| **Inicio** |  Preguntar a cada miembro del equipo: ¿Qué hiciste ayer? ¿Tienes algún impedimento?  ¿Qué vas a hacer hoy?  ¿Tomarás nuevas tareas del Work Items List?  **Actualizar el PVG.** | Team Leader del equipo respectivo. PM en caso de Daily departamental. | PMC SP 1.2 - Monitorear compromisos |
-| **Estado del proyecto** |  Un miembro aleatorio responde:  ¿Cómo estamos?  ¿Dónde queremos estar?  ¿Cuánto nos ha costado? Analizar los riesgos presentes en la matriz y verificar su estado actual. | Team Leader del equipo respectivo. PM en caso de Daily departamental. | MA SP 2.1 - Analizar resultados de mediciones. PMC SP 1.1 - Monitorear parámetros del proyecto |
-| **Toma de decisiones** |  Si el proyecto está atrasado o adelantado, determinar la causa raíz y tomar decisiones.  Si un riesgo tiene alta probabilidad próxima, definir acciones preventivas.  Si el riesgo ya está presente, definir acciones correctivas. | Team Leader del equipo respectivo. PM en caso de Daily departamental.Los team members pueden aportar. | PMC SP 1.1 - Monitorear parámetros del proyecto |
+| **Inicio** |  Preguntar a cada miembro del equipo: ¿Qué hiciste ayer? ¿Tienes algún impedimento?  ¿Qué vas a hacer hoy?  ¿Tomarás nuevas tareas del Work Items List?  **Actualizar el PVG.** | Team Leader del equipo respectivo. PM en caso de Daily departamental. | **PMC SP 1.2** (Monitorear compromisos), **MA SP 2.1** (Obtener los datos de medición) |
+| **Estado del proyecto** |  Un miembro aleatorio responde:  ¿Cómo estamos?  ¿Dónde queremos estar?  ¿Cuánto nos ha costado? Analizar los riesgos presentes en la matriz y verificar su estado actual. | Team Leader del equipo respectivo. PM en caso de Daily departamental. | **MA SP 2.1** (Analizar resultados de mediciones), **PMC SP 1.1** (Monitorear parámetros del proyecto) |
+| **Toma de decisiones** |  Si el proyecto está atrasado o adelantado, determinar la causa raíz y tomar decisiones.  Si un riesgo tiene alta probabilidad próxima, definir acciones preventivas.  Si el riesgo ya está presente, definir acciones correctivas. | Team Leader del equipo respectivo. PM en caso de Daily departamental.Los team members pueden aportar. | **PMC SP 1.1** (Monitorear parámetros del proyecto) |
 
 ## Salidas
 
