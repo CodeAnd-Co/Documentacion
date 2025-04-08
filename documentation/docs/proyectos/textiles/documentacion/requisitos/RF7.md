@@ -77,3 +77,19 @@ sequenceDiagram
 > _Descripción_: El mockup muestra la interfaz donde el Super Administrador puede ver la lista de roles disponibles, con opciones de búsqueda y filtrado.
 
 > ![Interfaz de consultar lista de roles](imagenes/Consultar_Roles.png)
+
+## **Pruebas Unitarias**
+
+En caso de que alguna de las pruebas unitarias no sea aprobada, se deberá realizar una nueva iteración del proceso de pruebas.
+Este proceso continuará de forma iterativa hasta que todas las pruebas sean aprobadas satisfactoriamente, garantizando así la estabilidad y el cumplimiento de los requisitos funcionales definidos en la historia de usuario.
+
+**Iteración:** 1
+
+| ID Prueba | Descripción                                      | Valores de entrada                                 | Resultado esperado                                                   | Resultado observado | Aprobado (sí/no) |
+|-----------|--------------------------------------------------|----------------------------------------------------|----------------------------------------------------------------------|---------------------|------------------|
+| CU001     | Obtener todos los roles                          | Sin filtros                                        | Retorna lista completa de roles                                      | pending             | pending          |
+| CU002     | Filtrar roles por nombre exacto                  | nombre = "Empleado"                           | Retorna lista con el rol "Empleado"                             | pending             | pending          |
+| CU003     | Filtrar roles por nombre parcial                 | nombre = "Super"                                   | Retorna lista con roles que contengan "Super" en el nombre          | pending             | pending          |
+| CU004     | Buscar rol inexistente                           | nombre = "NoExiste"                                | Retorna lista vacía                                                  | pending             | pending          |
+| CU005     | Validar respuesta cuando no hay roles registrados| Sin filtros (base de datos vacía)                  | Retorna lista vacía y mensaje “No hay registros disponibles”         | pending             | pending          |
+| CU006     | Validar acceso sin autenticación                 | JWT inválido o ausente                             | Retorna error: “No autorizado”                                       | pending             | pending          |
