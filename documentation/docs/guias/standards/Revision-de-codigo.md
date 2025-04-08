@@ -1,85 +1,76 @@
 ---
-title: Estandar para la revisión de código
+title: Estándar para la revisión de código
 sidebar_position: 6
 ---
+
 # Checklist para la revisión de código
----
 
 ## Objetivo
-Los objetivo de esta checklist son:
 
-- **Mejorar la calidad del código:** Aseguramos la limpieza y legibilidad del mismo.
-- **Mantener consistencia:** Se verifica que se sigan guías de estilo o estándares en el lenguaje que se utilizará.
-- **Ayuda a la documentación:** Buen código suele estar documentado, ayuda a entender el propósito , contexto y funcionamiento de él.
+Los objetivos de esta checklist son:
+
+- **Mejorar la calidad del código:** Asegurar la limpieza y legibilidad del código.
+- **Mantener la consistencia:** Verificar que se sigan las guías de estilo o estándares del lenguaje utilizado.
+- **Facilitar la documentación:** Un buen código está documentado y permite entender su propósito, contexto y funcionamiento.
 
 ## Errores comunes
+
 **Estilo y legibilidad**
 - [ ] Comentarios innecesarios o desactualizados.
 
 **Funcionalidad**
-- [ ] El código no hace lo que se espera.
-- [ ] Se omiten casos límite o entradas no contempladas.
+- [ ] El código no cumple con su propósito.
+- [ ] No se consideran casos límite o entradas inesperadas.
 
 **Pruebas**
-- [ ] No hay pruebas para el código.
-- [ ] Las pruebas no cubren suficientes escenarios.
+- [ ] No existen pruebas para el código.
+- [ ] Las pruebas no cubren escenarios suficientes.
 
 **Complejidad**
-- [ ] Hay código que se duplica.
+- [ ] Código duplicado.
 
 **Seguridad**
 - [ ] Entradas sin validación o sanitización.
-** Buenas prácticas**
+
+**Buenas prácticas**
 - [ ] Código no modular.
+
 **Git y documentación**
-- [ ] Commits no descriptivos o sin mensaje.
+- [ ] Commits poco descriptivos o sin mensaje.
 - [ ] Cambios sin documentar.
 
 ## Checklist
+
 1. **Legibilidad y estilo**
- - [ ] ¿El código sigue el estilo del proyecto (nombres, espacios, indentación)?
-
- - [ ] ¿Los nombres son claros y están en español?
-
- - [ ] ¿Es fácil de entender para alguien más?
-
- - [ ] ¿Los comentarios ayudan a entender partes no obvias?
+   - [ ] ¿El código sigue el estilo del proyecto (nombres, espacios, indentación)?
+   - [ ] ¿Los nombres son claros y están en español?
+   - [ ] ¿El código es fácil de entender para otros?
+   - [ ] ¿Los comentarios explican las partes no obvias?
 
 2. **Lógica y funcionalidad**
-- [ ] ¿El código hace lo que debe?
-
- - [ ] ¿Se consideran casos límite?
-
- - [ ] ¿Hay pruebas relevantes?
+   - [ ] ¿El código hace lo que debe?
+   - [ ] ¿Se consideran casos límite?
+   - [ ] ¿Existen pruebas relevantes?
 
 3. **Seguridad**
- - [ ] ¿Se validan y sanitizan las entradas del usuario?
-
- - [ ] ¿No hay datos sensibles expuestos (claves, contraseñas, tokens)?
-
- - [ ] ¿Se evitan vulnerabilidades comunes (ej. XSS, SQLi, CSRF)?
-
+   - [ ] ¿Se validan y sanitizan las entradas del usuario?
+   - [ ] ¿No se exponen datos sensibles (claves, contraseñas, tokens)?
+   - [ ] ¿Se evitan vulnerabilidades comunes (ej. XSS, SQLi, CSRF)?
 
 4. **Buenas prácticas**
- - [ ] ¿Se aplica el principio de responsabilidad única?
-
- - [ ] ¿El código es modular y reutilizable?
-
- - [ ] ¿Se siguen principios como DRY (Don’t Repeat Yourself), KISS (Keep It Simple, Stupid), YAGNI (You Aren’t Gonna Need It)?
+   - [ ] ¿Se aplica el principio de responsabilidad única?
+   - [ ] ¿El código es modular y reutilizable?
+   - [ ] ¿Se siguen principios como DRY (Don’t Repeat Yourself), KISS (Keep It Simple, Stupid), YAGNI (You Aren’t Gonna Need It)?
 
 5. **Git y documentación**
+   - [ ] ¿Se siguen los estándares definidos en Docusaurus?
+   - [ ] ¿La documentación está actualizada?
+   - [ ] ¿Las funciones públicas o APIs están explicadas?
+   - [ ] ¿El nuevo código está debidamente comentado o documentado?
 
- - [ ] ¿Se sigue el estándar definido en docusaurus?
- - [ ] ¿Se ha actualizado la documentación si es necesario?
- - [ ] ¿Las funciones públicas o APIs están explicadas?
- - [ ] ¿El código nuevo está debidamente comentado o documentado?
+## Historial de cambios
 
- 
-
-
-
- ## Historial de cambios
-
-| **Tipo de Versión** | **Descripción**                               | **Fecha** | **Colaborador**                 |
-| ------------------- | --------------------------------------------- | --------- | ------------------------------- |
-| **1.0**             | Creación de la checklist de revisión   | 7/4/2025  | Juan Pablo Chávez Leal, Diego Alfaro Pinto y Miguel Ángel Uribe |
+| **Versión** | **Descripción**                                       | **Fecha**  | **Colaboradores**                                                 |
+|-------------|--------------------------------------------------------|------------|--------------------------------------------------------------------|
+| **1.0**     | Creación de la checklist de revisión                   | 07/04/2025 | Juan Pablo Chávez Leal, Diego Alfaro Pinto, Miguel Ángel Uribe     |
+| **1.1**     | Correcciones de redacción y ortografía         | 08/04/2025 | Rommel Toledo Crespo                                               |
