@@ -86,4 +86,4 @@ end
 
 > _Descripción_: El mockup representa la interfaz del sistema donde el **Super Administrador** completa los datos del nuevo usuario, selecciona su rol y permisos, y confirma la creación del usuario en el sistema.
 
-## ![alt text](<Añadir Usuarios.png>)
+# ![alt text](<imagenes/Añadir Usuarios.png>)
