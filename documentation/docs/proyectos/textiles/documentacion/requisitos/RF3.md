@@ -81,11 +81,10 @@ else Token válido
 end
 ```
 
-
 ---
 
 ## **Mockup**
 
 > _Descripción_: El mockup representa la interfaz que permite al Super Administrador consultar la información detallada de un usuario. Al seleccionar un usuario en la tabla, se muestra un panel con sus datos completos, incluyendo nombre, cliente, rol, estado, correo electrónico, teléfono, dirección, fecha de nacimiento y género.
 
-> ![Interfaz de leer usuario](mockupLeerUsuario.png)
+> ![Interfaz de leer usuario](imagenes/mockupLeerUsuario.png)
