@@ -5,7 +5,7 @@ sidebar_position: 9
 
 # RF7: Super Administrador Consulta Lista de Roles
 
-**Última actualización:** 07 de abril de 2025
+**Última actualización:** 08 de abril de 2025
 
 ---
 
