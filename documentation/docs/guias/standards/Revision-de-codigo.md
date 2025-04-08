@@ -12,6 +12,29 @@ Los objetivo de esta checklist son:
 - **Mantener consistencia:** Se verifica que se sigan guías de estilo o estándares en el lenguaje que se utilizará.
 - **Ayuda a la documentación:** Buen código suele estar documentado, ayuda a entender el propósito , contexto y funcionamiento de él.
 
+## Errores comunes
+**Estilo y legibilidad**
+- [ ] Comentarios innecesarios o desactualizados.
+
+**Funcionalidad**
+- [ ] El código no hace lo que se espera.
+- [ ] Se omiten casos límite o entradas no contempladas.
+
+**Pruebas**
+- [ ] No hay pruebas para el código.
+- [ ] Las pruebas no cubren suficientes escenarios.
+
+**Complejidad**
+- [ ] Hay código que se duplica.
+
+**Seguridad**
+- [ ] Entradas sin validación o sanitización.
+** Buenas prácticas**
+- [ ] Código no modular.
+**Git y documentación**
+- [ ] Commits no descriptivos o sin mensaje.
+- [ ] Cambios sin documentar.
+
 ## Checklist
 1. **Legibilidad y estilo**
  - [ ] ¿El código sigue el estilo del proyecto (nombres, espacios, indentación)?
