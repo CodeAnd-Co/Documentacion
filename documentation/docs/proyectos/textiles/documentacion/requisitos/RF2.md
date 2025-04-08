@@ -38,7 +38,7 @@ participant Backend
 participant rutaUsuarios
 participant controladorUsuarios
 participant repositorioUsuarios
-participant DynamoDB
+participant RDS
 
 SuperAdmin -->> Frontend: Selecciona "Lista de Usuarios"
 Frontend -->> Api_gateway: Envía petición GET /api/usuarios con JWT
@@ -62,10 +62,10 @@ else API key válida
     else JWT válido
         rutaUsuarios -->> controladorUsuarios: Solicita usuarios
         controladorUsuarios -->> repositorioUsuarios: Solicita usuarios
-        repositorioUsuarios -->> DynamoDB: Consulta usuarios
+        repositorioUsuarios -->> RDS: Consulta usuarios
 
         alt Error en la base de datos
-            DynamoDB -->> repositorioUsuarios: Retorna error
+            RDS -->> repositorioUsuarios: Retorna error
             repositorioUsuarios -->> controladorUsuarios: Retorna error
             controladorUsuarios -->> rutaUsuarios: Retorna JSON {"message": "Error al consultar usuarios"}, status 500
             rutaUsuarios -->> Backend: Retorna JSON {"message": "Error al consultar usuarios"}, status 500
@@ -73,7 +73,7 @@ else API key válida
             Api_gateway -->> Frontend: Retorna JSON {"message": "Error interno"}, status 500
             Frontend -->> SuperAdmin: Muestra mensaje: "Hubo un error al cargar los usuarios"
         else Consulta exitosa
-            DynamoDB -->> repositorioUsuarios: Retorna lista de usuarios
+            RDS -->> repositorioUsuarios: Retorna lista de usuarios
             repositorioUsuarios -->> controladorUsuarios: Retorna lista de usuarios
             controladorUsuarios -->> rutaUsuarios: Retorna lista de usuarios
             rutaUsuarios -->> Backend: Retorna lista de usuarios, status 200

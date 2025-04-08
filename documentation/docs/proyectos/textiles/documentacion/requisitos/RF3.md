@@ -45,6 +45,7 @@ participant controladorUsuarios
 participant repositorioUsuarios
 participant Database
 
+
 SuperAdmin -->> Frontend: Hace clic en un usuario de la lista
 Frontend -->> Api_gateway: GET /api/usuarios/:id con JWT
 Api_gateway -->> Backend: Reenvía GET /api/usuarios/:id con JWT
