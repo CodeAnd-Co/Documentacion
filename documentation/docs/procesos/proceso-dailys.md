@@ -35,15 +35,17 @@ sidebar_position: 18
 ## Métricas
 1. Número de riesgos identificados y su evolución.
 
-## Historial de versiones 
+## Historial de cambios
 
-| Autor                   | Descripción del cambio                            | Versión |
-|-------------------------|---------------------------------------------------|---------|
-| Juan Pablo Chávez Leal  | Actualización de fases y prácticas CMMI según nuevo documento | 1.1     |
-| Daniel Contreras Chávez | Inclusión de análisis de riesgos y toma de decisiones | 1.1     |
-| Hiram Israel Mendoza López  | Actualización de fases y prácticas CMMI según nuevo documento | 1.2     |
-| Mauricio Anguiano Juárez  | Actualización de fases y prácticas CMMI según nuevo documento | 1.2     |
-| Emiliano Valdivia Lara  | Actualización de fases y prácticas CMMI según nuevo documento | 1.2     |
+| **Tipo de Versión** | **Descripción** | **Fecha** | **Colaborador** |
+| ------------------- | --------------- | --------- | --------------- |
+| **1.0** | Primera versión del PR19    |           | Arturo Sánchez Rodríguez |
+| **1.1** | Actualización de fases y prácticas CMMI según nuevo documento | | Juan Pablo Chávez Leal |
+| **1.1** | Inclusión de análisis de riesgos y toma de decisiones | | Daniel Contreras Chávez |
+| **1.2** | Actualización de fases y prácticas CMMI según nuevo documento | 02/04/2025 | Hiram Israel Mendoza López |
+| **1.2** | Actualización de fases y prácticas CMMI según nuevo documento | 02/04/2025 | Mauricio Anguiano Juárez |
+| **1.2** | Actualización de fases y prácticas CMMI según nuevo documento | 02/04/2025 | Emiliano Valdivia Lara |
+| **1.3** | Inlusión de SP 2.1 del área de proceso MA | 08/04/2025 | Ian Julián Estrada Castro |
 
 ## Autores
 
