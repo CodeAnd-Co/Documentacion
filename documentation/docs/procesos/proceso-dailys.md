@@ -5,8 +5,6 @@ sidebar_position: 18
 
 # PR19: Proceso para Dailys
 
-**Última actualización** 2 de Abril de 2025
-
 ## Objetivo
 
 - Establecer un proceso a seguir para la realización de dailies efectivas.
@@ -39,21 +37,10 @@ sidebar_position: 18
 
 | **Tipo de Versión** | **Descripción** | **Fecha** | **Colaborador** |
 | ------------------- | --------------- | --------- | --------------- |
-| **1.0** | Primera versión del PR19    |           | Arturo Sánchez Rodríguez |
-| **1.1** | Actualización de fases y prácticas CMMI según nuevo documento | | Juan Pablo Chávez Leal |
-| **1.1** | Inclusión de análisis de riesgos y toma de decisiones | | Daniel Contreras Chávez |
+| **1.0** | Primera versión del PR19    | 03/03/2025 | Arturo Sánchez Rodríguez |
+| **1.1** | Actualización de fases y prácticas CMMI según nuevo documento | 01/04/2025 | Juan Pablo Chávez Leal |
+| **1.1** | Inclusión de análisis de riesgos y toma de decisiones | 01/04/2025 | Daniel Contreras Chávez |
 | **1.2** | Actualización de fases y prácticas CMMI según nuevo documento | 02/04/2025 | Hiram Israel Mendoza López |
 | **1.2** | Actualización de fases y prácticas CMMI según nuevo documento | 02/04/2025 | Mauricio Anguiano Juárez |
 | **1.2** | Actualización de fases y prácticas CMMI según nuevo documento | 02/04/2025 | Emiliano Valdivia Lara |
 | **1.3** | Inlusión de SP 2.1 del área de proceso MA | 08/04/2025 | Ian Julián Estrada Castro |
-
-## Autores
-
-| Nombre                    | Rol   |
-|---------------------------|-------|
-| Arturo Sánchez Rodríguez | Autor |
-| Juan Pablo Chávez Leal   | Modificador |
-| Daniel Contreras Chávez  | Modificador |
-| Hiram Israel Mendoza López   | Modificador v.1.2 |
-| Mauricio Anguiano Juárez  | Modificador v.1.2  |
-| Emiliano Valdivia Lara    | Modificador v.1.2  |
