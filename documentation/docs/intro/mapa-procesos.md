@@ -5,17 +5,6 @@ sidebar_position: 2
 
 # Mapa de Procesos
 
-**Última actualización:** 07 de marzo de 2025
-
----
-
-### Autores
-
-| Nombre                 | Rol   |
-| ---------------------- | ----- |
-| Valeria Zuñiga Mendoza | Autor |
-| Angel Mauricio Ramirez | Autor |
-
 ---
 
 ```mermaid
@@ -59,6 +48,9 @@ sidebar_position: 2
         %% PR15 Juntas Grupales
         %% PR15_Juntas_Grupales
 
+        %% PR24 Proceso para llevar a cabo métricas y análisis
+        PR24_Realizar_Metricas_Analisis
+
         Proceso
 
         PR1_Guia_SP_Procesos --> Proceso: Practica especifica
@@ -72,6 +64,10 @@ sidebar_position: 2
         PR8_Trazabilidad_Requisitos --> PR9_Gestion_Cambios_Requisitos: Requisitos
         PR7_Revision_Plan_Proyecto --> PR9_Gestion_Cambios_Requisitos: Inconsistencia de requisitos
 
+        PR24_Realizar_Metricas_Analisis --> PR4_Plan_Proyecto: Métricas del proyecto
+        PR24_Realizar_Metricas_Analisis --> PR7_Revision_Plan_Proyecto: Indicadores de revisión
+        PR24_Realizar_Metricas_Analisis --> PR8_Trazabilidad_Requisitos: Criterios de trazabilidad
+        PR24_Realizar_Metricas_Analisis --> PR9_Gestion_Cambios_Requisitos: Impacto medido
 
 
 ```
@@ -134,7 +130,7 @@ PR4_Plan_Proyecto
 
 ## Historial de Cambios
 
-| Autor                  | Descripción del cambio            | Versión |
-| ---------------------- | --------------------------------- | ------- |
-| Valeria Zuñiga Mendoza | Ahora abarca la obtención del SRS | 1.0     |
-| Angel Mauricio Ramirez | Ahora abarca la obtención del SRS | 1.0     |
+| **Tipo de Versión** | **Descripción**                               | **Fecha** | **Colaborador**                 |
+| ------------------- | --------------------------------------------- | --------- | ------------------------------- |
+| **1.0**             | Ahora abarca la obtención del SRS   | 7/3/2025  | Valeria Zuñiga y Angel Ramírez |
+| **1.1**             | Añadir Proceso de Métricas y Análisis al Mapa de Procesos | 3/4/2025  | Rommel Toledo      |

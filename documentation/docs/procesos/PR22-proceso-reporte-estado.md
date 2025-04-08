@@ -7,49 +7,56 @@ sidebar_position: 22
 
 # PR22 Reporte de Estado
 
-## Última actualización: 31 de marzo de 2025
-
-## Autores
-
-| Nombre | Rol |
-|--------|-----|
-| Diego Isaac Fuentes Juvera | Autor |
-
 ## Objetivo
 
 - Hacer reportes de estado que nos sirvan para conocer el estado de salud de los proyectos a todos los miembros del departamento.
 - Garantizar que se muestar contenido de valor para los miembros del departamento.
+- Eficientizar el tiempo que nos toma generar el reporte de estado.
 
 ## Entradas
 
 - Dashboard del estado de salud de los 4 proyectos.
-- Documento de retroalimentación del reporte de estado anterior.
+- Plan de valor ganado y de iteración actualizados.
 
 ## Proceso
 
 ### Fases y Descripción
 
-| Fase | Descripción | Responsables | Meta y práctica específica del CMMI |
-|------|------------|--------------|--------------------------------------|
-| **Revisión de la retroalimentación** | Revisar la [retroalimentación](https://docs.google.com/spreadsheets/d/1AFSCQ3wmXUBa8Cf7gu5VQHqexOzJk0g0RWMgwnUmhLk/edit?usp=sharing) obtenida del reporte de estado anterior para asegurar su seguimiento. | Responsables de la presentación |  |
-| **Revisión de información** | Delimitar toda la información relevante sobre el proyecto que todos los miembros del departamento deben conocer. Ej. Información del dashboard, problemas enfrentados y resueltos, aprendizajes de clase y su aplicación en los proyectos, estado de avance repecto al plan, logros, patrones y antipatrones, estado de los riesgos, métricas, decisiones tomadas, solicitudes específicas de apoyo. | Responsables de la presentación | |
-| **Justificación de la información** | Justificar por qué es importante que todos conozcamos la información seleccionada para asegurar que su conocimeinto aporta valor. La información que no sea de valor para los proyectos no tiene razón para mostrarse. | Responsables de la presentación | |
-| **Actualización de la información** | Asegurar que las fuentes de información y métricas estén actualizadas. Pedir a los miembros del equipo. | | |
-| **Entendimiento de la información** | Estudiar la información que se va a presentar para entender que significa y cómo nos ayuda a tomar decisiones. | Responsables de la presentación | | 
-| **Generación de contenido** | Desarrollar el contenido que se presentará en forma de guión en un documento y pasarlo a flashcards para utilizarlas durante la presentación. | Responsables de la presentación | |
-| **Generación de presentación** | Generar la presentación siguiendo la plantilla acordada y generando todos los apoyos visuales para sustentar la información que se va a presentar. [Seguir el estándar de presentaciones.](../guias/standards/presentaciones)  | Responsables de la presentación | |
+| Fase | Actividad | Responsables | Día de ejecución |
+|------|-----------|--------------|------------------|
+| **Invitación** | Actualizar la fecha de la [invitación](https://www.canva.com/design/DAGjckcb6PU/07croDD71JkA1IXMmCwCJg/edit?utm_content=DAGjckcb6PU&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton). | PM's. | Domingo |
+|  | Enviar la invitación al canal #General del Discord oficial de la clase. | PM's. | Domingo |
+| **Creación** | Crear una copia de la [plantilla](https://www.canva.com/design/DAGjbEDjp00/0OWUTXZrhELqB7nTOjtClA/edit?utm_content=DAGjbEDjp00&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton) | PM's | Domingo |
+| **Desginación** | Designar un responsable de crear el reporte de estado de la semana para cada proyecto | Todos los proyectos. | Domingo |
+| **Actualización de la información** | Actualizar la fecha. | Responsables de la presentación. | Lunes |
+|  | Actualizar el estado de los objetivos del proyecto. | Responsable de cada proyecto. | Lunes |
+|  | Actualizar los logros del proyecto. | Responsable de cada proyecto. | Lunes |
+|  | Actualizar los issues presentes en el proyecto y los issues resueltos. | Responsable de cada proyecto. | Lunes |
+|  | Actualizar el estado de los riesgos en base a las métricas. Actualizar los planes de mitigación aplicados. | Responsable de cada proyecto. | Lunes |
+|  | Actualizar el avance esperado del proyecto. | Responsable de cada proyecto. | Lunes |
+|  | Actualizar las gráficas de valor ganado. | Responsable de cada proyecto. | Martes |
+|  | Actualizar las gráficas de costo. | Responsable de cada proyecto. | Martes |
+| **Validación de la presentación** | Verificar la [checklist](https://docs.google.com/document/d/1skvIHlFhoJjGSoHj_fZ98gRAkRll7O8zY8Facau6crE/edit?usp=sharing) del reporte de estado. | Responsable de cada proyecto. | Martes |
+| | Practicar el reporte de estado en los primeros 45 minutos de la junta departamental para recibir retroalimentación. | Responsable de cada proyecto. | Miércoles |
 
 ---
 
 ### Salidas
 
-1. Guión del reporte de estado.
-2. Presentación del reporte de estado.
+1. Presentación del reporte de estado.
 
 ---
 
 ### Métricas
 
-1. Cantidad de retroalimentación presente y repetida en los reportes de estado anteriores. Si hay retroalimentación repetida significa que no la estamos tomando en cuenta lo suficiente.
+1. Horas invertidas en generar el reporte de estado
 
 ---
+
+
+### Historial de cambios
+
+| **Tipo de Versión** | **Descripción**                               | **Fecha** | **Colaborador**                 |
+| ------------------- | --------------------------------------------- | --------- | ------------------------------- |
+| **1.0**             | Creación del proceso de reporte de estado   | 31/3/2025  | Diego Fuentes|
+| **2.0**             | Corrección completa del proceso de reporte de estado para hacerlo ejecutable en pocas horas.  | 03/04/2025  | Diego Fuentes |
