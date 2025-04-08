@@ -207,7 +207,7 @@ module.exports = (headerName, errorMessage = "Api key invalida") => {
 
 Esta función revisa los `headers` de la petición enviada, y revisará que si se ha enviado el header del API key
 
-Al igual que con el middleware del JWT, lo usaremos en una ruta para añadir una capa adicional de protección. 
+Al igual que con el middleware del JWT, lo usaremos en una ruta para añadir una capa adicional de protección.
 
 ```js
 router.get(
@@ -228,55 +228,82 @@ Una vez que tenemos nuestras 2 capas de seguridad, podemos pasar a construir los
 En este manual solo se hablará de las integraciones con servicios externos, si se quiere obtener más información del resto de la aplicación, consultar el repositorio [backend](https://github.com/DiegoAlfaro1/prueba-arquitectura-backend-textiles)
 :::
 
-### Integración con AWS DynamoDB
+### Integración con AWS RDS
 
 #### Envio de datos
 
-Primero tenemos que instalar las librerias necesarias para utilizar DynamoDB
+Primero tenemos que instalar las librerias necesarias para utilizar RDS
 
 ```
-npm install @aws-sdk/lib-dynamodb @aws-sdk/client-dynamodb
+npm install mysql2
 ```
 
-También tenemos que asegurarnos de haber creado la tabla que se usará para crear el usuario. En este caso, la tabla se llama `Users`, y tiene como llave el nombre y el correo electronico del usuario, es fundamental tener esto en cuenta, ya que serán los campos obligatorios que se tienen que enviar a la base de datos
+También tenemos que asegurarnos de haber creado la tabla que se usará para crear el usuario. En este caso, la tabla se llama `Users` con los atributos de name, email, y password
 
-También es importante haber configurado las credenciales de AWS
+Ahora vamos a crear el archivo de conexion con rds, el cual es una base de datos relacional, que usa MySQL como motor
 
-Con esto, ya podemos utilizar el SDK de AWS
+Primero crearemos nuestro archivo `db.js`
 
-Ahora es momento de integrar nuestro primer servicio externo, AWS DynamoDB, el cual es una base de datos no relacional similar a MongoDB
+```js
+// db.js
 
-Para esto vamos a seguir con nuestra pequeña aplicación. Para poder integrar la envio de datos a DynamoDB, vamos a crear un servicio en nuestro backend para enviar datos.
+const mysql = require("mysql2");
+
+// Configure MySQL connection using environment variables
+const connection = mysql.createConnection({
+  host: process.env.DB_HOST,
+  user: process.env.DB_USER,
+  password: process.env.DB_PASSWORD,
+  database: process.env.DB_NAME,
+});
+
+connection.connect((err) => {
+  if (err) {
+    console.error("Error connecting to MySQL:", err.stack);
+    return;
+  }
+  console.log("Connected to MySQL as id " + connection.threadId);
+});
+
+// Export the connection to use in other files
+module.exports = connection;
+```
+
+Este archivo nos ayudara a conectarnos a la base de datos que se encuentra en el EC2
+
+Para esto vamos a seguir con nuestra pequeña aplicación. Para poder integrar la envio de datos a RDS, vamos a crear un servicio en nuestro backend para enviar datos.
 
 Primero creamos un nuevo archivo en la carpeta de servicios, y utilizamos el siguiente codigo
 
 ```js
-/**
- * Función para insertar un ítem en una tabla de DynamoDB.
- *
- * @param {string} nombreTabla - El nombre de la tabla de DynamoDB donde se insertará el ítem.
- * @param {Object} modelo - El objeto que representa el ítem a insertar en la tabla.
- * @returns {Promise} - Promesa que resuelve con el resultado de la operación de inserción.
- */
-const { DynamoDBClient } = require("@aws-sdk/client-dynamodb");
-const { DynamoDBDocumentClient, PutCommand } = require("@aws-sdk/lib-dynamodb");
-
-const clienteDynamo = new DynamoDBClient({ region: "us-east-1" });
-const db = DynamoDBDocumentClient.from(clienteDynamo);
+// insertItem.js
+const connection = require("./db"); // Import the connection from db.js
 
 module.exports = async (nombreTabla, modelo) => {
-  const comando = new PutCommand({
-    TableName: nombreTabla,
-    Item: modelo,
-  });
+  // Prepare the query for inserting a record into the MySQL table
+  const columns = Object.keys(modelo).join(", ");
+  const values = Object.values(modelo)
+    .map((value) => `'${value}'`)
+    .join(", ");
 
-  return db.send(comando);
+  const query = `INSERT INTO ${nombreTabla} (${columns}) VALUES (${values})`;
+
+  // Execute the query
+  return new Promise((resolve, reject) => {
+    connection.query(query, (err, results) => {
+      if (err) {
+        reject(err);
+      } else {
+        resolve(results);
+      }
+    });
+  });
 };
 ```
 
-Esta función nos crea un cliente de Dynamo, y lo utiliza para enviar el `PutCommand`, que envia el objeto que se le paso a la función hacia la tabla que también es parte de los parametros de la función.
+Esta función usa la conexion a la base de datos, hace una preparacion de los datos que utilizara para la query, y crea una query normal de sql para insertar datos en la tabla especificada
 
-Esta función nos ayudará a no tener que crear múltiples bloques de código iguales y poder reutilizar este mismo cada que se quiera subir algo a DynamoDB
+Esta función nos ayudará a no tener que crear múltiples bloques de código iguales y poder reutilizar este mismo cada que se quiera subir algo a RDS
 
 Una vez creada esta funcion, podemos pasará a crear nuestra ruta, la cual se encargará de recibir la petición para crear un nuevo usuario.
 
@@ -357,30 +384,28 @@ Y de esta manera es como podemos crear nuestra ruta para crear un usuario en la 
 Para poder recibir datos de AWS, primero creamos una función similar a la de enviar datos, seguimos el mismo proceso, pero ahora la función será un poco diferente
 
 ```js
-/**
- * Función para obtener un ítem de una tabla de DynamoDB usando las llaves proporcionadas.
- *
- * @param {string} nombreTabla - El nombre de la tabla de DynamoDB de la cual se va a obtener el ítem.
- * @param {Object} llaves - Un objeto que contiene las llaves para buscar el ítem en la tabla.
- * @returns {Promise<Object|null>} - Un objeto con los datos del ítem si se encuentra, o null si no se encuentra el ítem.
- */
-const { DynamoDBClient } = require("@aws-sdk/client-dynamodb");
-const { DynamoDBDocumentClient, GetCommand } = require("@aws-sdk/lib-dynamodb");
-
-const clienteDynamo = new DynamoDBClient({ region: "us-east-1" });
-const db = DynamoDBDocumentClient.from(clienteDynamo);
+const connection = require("./db");
 
 module.exports = async (nombreTabla, llaves) => {
-  const comando = new GetCommand({
-    TableName: nombreTabla,
-    Key: llaves,
+  const conditions = Object.keys(llaves)
+    .map((key) => `${key} = '${llaves[key]}'`)
+    .join(" AND ");
+
+  const query = `SELECT * FROM ${nombreTabla} WHERE ${conditions}`;
+
+  return new Promise((resolve, reject) => {
+    connection.query(query, (err, results) => {
+      if (err) {
+        reject(err);
+      } else {
+        resolve(results.length > 0 ? results[0] : null);
+      }
+    });
   });
-  const response = await db.send(comando);
-  return response.Item;
 };
 ```
 
-Con esta funcion, podremos recibir datos de dynamoDB, en este caso, recibiremos la informacion de un usuario, y haremos el login al sistema
+Con esta funcion, podremos recibir datos de RDS, en este caso, recibiremos la informacion de un usuario, y haremos el login al sistema
 
 Primero vamos a crear nuestra ruta
 
@@ -475,11 +500,11 @@ exports.getUserByEmail = async (email, name) => {
 };
 ```
 
-Al igual que con el registro, esta función solo llama al servicio que obtiene los datos de dynamo
+Al igual que con el registro, esta función solo llama al servicio que obtiene los datos de RDS
 
 Una vez que la función se asegura que las credenciales son correctas, se crea el JWT, y se asigna a una cookie, la misma cookie que se lee en la función de más arriba para autorizar al usuario
 
-Ahora ya tenemos creado tanto el registro de usuarios como el login de usuarios, pero más importante, tenemos implementado el recibir y enviar datos a DynamoDB.
+Ahora ya tenemos creado tanto el registro de usuarios como el login de usuarios, pero más importante, tenemos implementado el recibir y enviar datos a RDS.
 
 ### Integración con AWS S3
 
@@ -592,7 +617,7 @@ module.exports = (originalName) => {
 };
 ```
 
-Al igual que se hizo con dynamo, aqui también utilizaremos un servicio para subir objetos a S3
+Al igual que se hizo con RDS, aqui también utilizaremos un servicio para subir objetos a S3
 
 ```js
 /**
@@ -627,7 +652,7 @@ Con estos bloques de codigo, podemos crear nuestro flujo para subir un archivo a
 
 #### Recibo de archivos de S3
 
-Para recibir los archivos que subimos previamente, es un poco diferente que recibir datos de DynamoDB, ya que tenemos que utilizar algo llamado `Pre-signed URL`, lo que nos permitira visualizar el contenido de los archivos
+Para recibir los archivos que subimos previamente, es un poco diferente que recibir datos de RDS, ya que tenemos que utilizar algo llamado `Pre-signed URL`, lo que nos permitira visualizar el contenido de los archivos
 
 Primero creamos nuestro servicio para generar estos url prefirmados
 
@@ -980,45 +1005,45 @@ export default function RegisterForm() {
 
   return (
     <Box
-      display="flex"
-      justifyContent="center"
-      alignItems="center"
-      minHeight="90vh"
-      bgcolor="#fffff"
+      display='flex'
+      justifyContent='center'
+      alignItems='center'
+      minHeight='90vh'
+      bgcolor='#fffff'
     >
       <Card sx={{ width: 400, padding: 3, boxShadow: 3 }}>
         <CardHeader
-          title="Create an Account"
-          subheader="Enter your details to sign up"
+          title='Create an Account'
+          subheader='Enter your details to sign up'
           sx={{ textAlign: "center" }}
         />
         <CardContent>
           <form onSubmit={handelSubmit}>
             <TextField
               fullWidth
-              label="Name"
-              variant="outlined"
-              margin="normal"
+              label='Name'
+              variant='outlined'
+              margin='normal'
               value={name}
               onChange={(event) => setName(event.target.value)}
               required
             />
             <TextField
               fullWidth
-              label="Email"
-              type="email"
-              variant="outlined"
-              margin="normal"
+              label='Email'
+              type='email'
+              variant='outlined'
+              margin='normal'
               value={email}
               onChange={(event) => setEmail(event.target.value)}
               required
             />
             <TextField
               fullWidth
-              label="Password"
-              type="password"
-              variant="outlined"
-              margin="normal"
+              label='Password'
+              type='password'
+              variant='outlined'
+              margin='normal'
               value={password}
               onChange={(event) => setPassword(event.target.value)}
               required
@@ -1028,26 +1053,26 @@ export default function RegisterForm() {
                 <Checkbox
                   checked={termsAccepted}
                   onChange={(event) => setTermsAccepted(event.target.checked)}
-                  color="primary"
+                  color='primary'
                   sx={{ "& .MuiSvgIcon-root": { fontSize: 18 } }} // Smaller checkbox
                 />
               }
               label={
-                <Typography variant="body2" sx={{ fontSize: "0.75rem" }}>
+                <Typography variant='body2' sx={{ fontSize: "0.75rem" }}>
                   I agree to the{" "}
                   <a
-                    href="/terms-of-service"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    href='/terms-of-service'
+                    target='_blank'
+                    rel='noopener noreferrer'
                     style={{ fontSize: "0.75rem" }}
                   >
                     Terms of Service
                   </a>{" "}
                   and{" "}
                   <a
-                    href="/privacy-policy"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    href='/privacy-policy'
+                    target='_blank'
+                    rel='noopener noreferrer'
                     style={{ fontSize: "0.75rem" }}
                   >
                     Privacy Policy
@@ -1058,7 +1083,7 @@ export default function RegisterForm() {
             {message && (
               <Typography
                 color={message.includes("successful") ? "green" : "red"}
-                textAlign="center"
+                textAlign='center'
                 mt={2}
               >
                 {message}
@@ -1066,8 +1091,8 @@ export default function RegisterForm() {
             )}
             <CardActions>
               <Button
-                type="submit"
-                variant="contained"
+                type='submit'
+                variant='contained'
                 fullWidth
                 sx={{ mt: 2 }}
               >
@@ -1078,14 +1103,14 @@ export default function RegisterForm() {
         </CardContent>
         <div style={{ textAlign: "center", marginBottom: "16px" }}>
           <Typography
-            variant="body2"
-            color="textSecondary"
+            variant='body2'
+            color='textSecondary'
             sx={{ fontSize: "0.75rem" }}
           >
             Already have an account?{" "}
             <Button
               onClick={() => navigate("/login")}
-              variant="text"
+              variant='text'
               sx={{ fontSize: "0.75rem" }}
             >
               Sign In
@@ -1149,18 +1174,18 @@ function Home() {
     <div>
       <h1>Welcome to My React App</h1>
       <nav>
-        <Button variant="contained">
-          <Link to="/upload">Upload</Link>
+        <Button variant='contained'>
+          <Link to='/upload'>Upload</Link>
         </Button>
       </nav>
 
-      <Button variant="contained" onClick={handleGetImage}>
+      <Button variant='contained' onClick={handleGetImage}>
         Obtener imagen de S3
       </Button>
 
       {imageUrl && (
-        <div className="image-container">
-          <img src={imageUrl} alt="Product" />
+        <div className='image-container'>
+          <img src={imageUrl} alt='Product' />
         </div>
       )}
       <br></br>
@@ -1223,7 +1248,7 @@ export default function Upload() {
 
   return (
     <div>
-      <input type="file" onChange={handleFileChange} />
+      <input type='file' onChange={handleFileChange} />
       <button onClick={handleUpload}>Upload File</button>
     </div>
   );
@@ -1310,7 +1335,7 @@ const ProtectedRoute = ({ children }) => {
   const { user, loading } = useAuth();
 
   if (loading) return <p>Loading...</p>;
-  return user ? children : <Navigate to="/login" />;
+  return user ? children : <Navigate to='/login' />;
 };
 
 export default ProtectedRoute;
@@ -1335,10 +1360,10 @@ function App() {
     <Router>
       <AuthProvider>
         <Routes>
-          <Route path="/login/" element={<LoginForm />} />
-          <Route path="/register/" element={<RegisterForm />} />
+          <Route path='/login/' element={<LoginForm />} />
+          <Route path='/register/' element={<RegisterForm />} />
           <Route
-            path="/home/"
+            path='/home/'
             element={
               <ProtectedRoute>
                 <Home />
@@ -1346,7 +1371,7 @@ function App() {
             }
           />
           <Route
-            path="upload"
+            path='upload'
             element={
               <ProtectedRoute>
                 <Upload />
@@ -1354,7 +1379,7 @@ function App() {
             }
           />
           <Route
-            path="/"
+            path='/'
             element={
               <ProtectedRoute>
                 <Home />
@@ -1455,7 +1480,7 @@ Hi DiegoAlfaro1! You've successfully authenticated, but GitHub does not provide 
 
 Ahora podemos pasar a clonar nuestro repositorio
 
-Esto se hace de manera similar a como normalmente se clona un repositorio, solo que en lugar de copiar el mismo comando desde github, se tiene que seleccionar SSH, y de esa manera le dará el comando necesario, una vez con ese comando, clonaremos el repositorio en el servidor. 
+Esto se hace de manera similar a como normalmente se clona un repositorio, solo que en lugar de copiar el mismo comando desde github, se tiene que seleccionar SSH, y de esa manera le dará el comando necesario, una vez con ese comando, clonaremos el repositorio en el servidor.
 
 ```
 git clone git@github.com:DiegoAlfaro1/prueba-arquitectura-backend-textiles.git
@@ -1762,7 +1787,7 @@ function BotonPago() {
 
   return (
     <div>
-      <Button variant="contained" color="primary" onClick={crearPreferencia}>
+      <Button variant='contained' color='primary' onClick={crearPreferencia}>
         Pagar con Mercado Pago
       </Button>
       {preferenceId && (
@@ -1779,7 +1804,6 @@ export default BotonPago;
 
 **¿Qué hace este componente?**
 Crea un componente nuevo en el frontend llamado `BotonPago.jsx`. Este componente tendrá un botón que al hacer clic nos enviará la solicitud al backend para generar la preferencia, recibiendo el `preferenceId` podemos mostrar el botón de MercadoPago utilizando el componente `Wallet` del SDK.
-
 
 ---
 
@@ -2166,7 +2190,6 @@ makeRequest();
 - Al completar todas las solicitudes, la consola mostrará:
   - All requests completed.
 
-
 # Prueba de Requerimiento - Carga masiva de archivos a S3
 
 El sistema debe permitir la subida eficiente y estable de una gran cantidad de archivos (hasta 3,000) sin fallos o cuellos de botella críticos.
@@ -2192,22 +2215,27 @@ Validar que el endpoint de subida de archivos (`/s3/upload`) puede recibir múlt
 4. Crear un archivo llamado `upload.js` con el siguiente contenido:
 
 ```javascript
-const axios = require('axios');
-const fs = require('fs');
-const FormData = require('form-data');
+const axios = require("axios");
+const fs = require("fs");
+const FormData = require("form-data");
 
-const ENDPOINT = 'https://nr8nw243lb.execute-api.us-east-1.amazonaws.com/s3/upload';
-const FILE_PATH = './cabra.jpeg';
+const ENDPOINT =
+  "https://nr8nw243lb.execute-api.us-east-1.amazonaws.com/s3/upload";
+const FILE_PATH = "./cabra.jpeg";
 const TOTAL_UPLOADS = 3000;
 const DELAY_MS = 200;
 
 function delay(ms) {
-  return new Promise(resolve => setTimeout(resolve, ms));
+  return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
 async function uploadFile(iteration) {
   const form = new FormData();
-  form.append('file', fs.createReadStream(FILE_PATH), `cabra-${iteration}.jpeg`);
+  form.append(
+    "file",
+    fs.createReadStream(FILE_PATH),
+    `cabra-${iteration}.jpeg`
+  );
 
   try {
     const response = await axios.post(ENDPOINT, form, {
@@ -2215,7 +2243,10 @@ async function uploadFile(iteration) {
     });
     console.log(`✅ [${iteration}] Subida exitosa - cabra-${iteration}.jpeg`);
   } catch (error) {
-    console.error(`❌ [${iteration}] Error:`, error.response?.status || error.message);
+    console.error(
+      `❌ [${iteration}] Error:`,
+      error.response?.status || error.message
+    );
   }
 }
 
@@ -2224,7 +2255,7 @@ async function startUpload() {
     await uploadFile(i);
     await delay(DELAY_MS);
   }
-  console.log('Subida masiva completada.');
+  console.log("Subida masiva completada.");
 }
 
 startUpload();
@@ -2244,36 +2275,37 @@ startUpload();
 - Todos los archivos deben estar disponibles en el bucket de S3 al finalizar el proceso.
 
 ### Inicio de la prueba:
+
 ![alt text](./Prueba-rendimiento1.png)
 
 ### Final de la prueba:
-![alt text](./Prueba-rendimiento2.png)
 
+![alt text](./Prueba-rendimiento2.png)
 
 ## Prueba de seguridad
 
-### Comprendiendo la Inyección NoSQL en DynamoDB
+### Comprendiendo la Inyección SQL en RDS
 
-Cuando el sistema no valida adecuadamente la información que escribe el usuario, esa entrada puede alterar el comportamiento de la aplicación. En bases de datos NoSQL como DynamoDB, este tipo de vulnerabilidad ocurre cuando los datos del usuario se utilizan directamente en objetos o expresiones dentro de una consulta. Las consecuencias pueden incluir:
+Cuando el sistema no valida adecuadamente la información que escribe el usuario, esa entrada puede alterar el comportamiento de la aplicación. En bases de datos SQL como MySQL (usado en Amazon RDS), este tipo de vulnerabilidad ocurre cuando los datos del usuario se utilizan directamente en consultas SQL sin la debida validación o saneamiento. Las consecuencias pueden incluir:
 
-- Manipular parámetros de consulta en expresiones.
-- Modificar condiciones de filtro o condiciones de clave.
-- Inyectar en cargas útiles con formato de documento.
+- Manipular parámetros en consultas SQL.
+- Modificar condiciones de filtro o cláusulas `WHERE`.
+- Inyectar valores maliciosos en consultas `INSERT`, `UPDATE` o `DELETE`.
 - Evadir validaciones del lado del servidor, como controles de autenticación o autorización.
-- Alterar estructuras internas de los documentos, creando atributos inesperados que pueden afectar otras partes del sistema.
+- Acceder a datos no autorizados mediante consultas modificadas.
 
-(PortSwigger, n.d.)
+Estas acciones suelen aprovechar las vulnerabilidades en las consultas SQL que no están correctamente parametrizadas. Por ello, es fundamental revisar y proteger los siguientes componentes de las operaciones en bases de datos SQL:
 
-Estas acciones suelen aprovechar campos específicos del código que manejan expresiones y parámetros sensibles. Por ello, es fundamental revisar y proteger los siguientes componentes de las operaciones en DynamoDB:
+- **Consultas `SELECT`**: Si no se validan adecuadamente los parámetros de entrada, un atacante puede manipular las consultas y obtener datos no autorizados.
+- **Consultas `INSERT`, `UPDATE`, `DELETE`**: Al no parametrizar correctamente los valores proporcionados por el usuario, un atacante puede modificar o eliminar datos sensibles.
+- **Procedimientos almacenados**: Aunque son más seguros que las consultas dinámicas, si no se controlan adecuadamente, también pueden ser vulnerables a inyecciones SQL.
+- **Validación de datos en formularios**: Asegúrese de validar y sanitizar todos los datos de entrada del usuario antes de usarlos en las consultas SQL.
 
-- KeyConditionExpression: define las condiciones para buscar elementos. Si incluye datos del usuario sin validar, puede devolver más información de la debida.
-- FilterExpression: se utiliza para filtrar resultados adicionales. Puede ser manipulada para acceder a datos no autorizados.
-- ExpressionAttributeValues: contiene los valores que se insertan en las expresiones. Es una vía común para inyectar código malicioso.
-- UpdateExpression: permite modificar atributos en un ítem. Si no se controla bien, puede usarse para cambiar datos sensibles o restringidos.
+### Prevención
 
-(Bittencourt, 2023)
+La forma más efectiva de prevenir la inyección SQL en RDS es utilizar **consultas parametrizadas** o **procedimientos almacenados**, que aseguran que los datos proporcionados por el usuario se traten de forma segura. Además, es fundamental implementar un sistema adecuado de validación de entradas y controles de acceso.
 
-### ¿Cómo probar inyecciones NoSQL?
+### ¿Cómo probar inyecciones SQL?
 
 **1. Preparativos:**
 
@@ -2332,46 +2364,46 @@ const safePayload = {
 
 const maliciousInputs = [
   // 1. Manipula lógica booleana
-  "email = :email OR attribute_exists(email)",
+  "' OR 1=1 --",
 
   // 2. Busca acceso con rol de admin
-  "role = :role OR contains(role, 'admin')",
+  "' OR role = 'admin' --",
 
   // 3. Condición siempre verdadera
-  "begins_with(email, 'admin') OR size(email) > 0",
+  "' OR 1=1",
 
   // 4. Afecta lógica con existencia/ausencia de atributos
-  "attribute_not_exists(password) OR attribute_exists(email)",
+  "' OR EXISTS(SELECT * FROM users WHERE email = 'admin') --",
 
   // 5. Evalúa tamaño para generar condiciones verdaderas
-  "size(email) > 0 OR contains(role, 'admin')",
+  "' OR LENGTH(email) > 0 --",
 
   // 6. Simula cierre de expresión + operador lógico
-  ") OR attribute_exists(name) OR (",
+  "' OR 1=1) --",
 
   // 7. Inserta condición válida para saltar seguridad
-  "email <> :email OR contains(email, 'hotmail')",
+  "' OR email = 'hola@hotmail.com' --",
 
   // 8. Lógica invertida y maliciosa
-  "NOT email = :email OR contains(role, 'admin')",
+  "' AND email != 'hola@hotmail.com' --",
 
   // 9. Condición redundante que puede romper lógica
-  "email = :email OR email = email",
+  "' OR email = email --",
 
   // 10. Intento de manipular expresión con uso de funciones válidas
-  "begins_with(name, 'a') OR attribute_exists(password)",
+  "' UNION SELECT username, password FROM users --",
 
-  // 11. Intenta inyectar un REMOVE dentro de una expresión de actualización
-  "SET name = :name; REMOVE password",
+  // 11. Intenta inyectar un DROP TABLE dentro de una expresión de actualización
+  "'; DROP TABLE users --",
 
-  // 12. Manipula valores dinámicos al nivel de ExpressionAttributeValues
-  ":email OR attribute_exists(email)",
+  // 12. Manipula valores dinámicos al nivel de parámetros
+  "' OR 1=1 --",
 
-  // 13. Intenta cerrar una expresión SET e insertar lógica maliciosa
-  "hola@example.com'); REMOVE name; --",
+  // 13. Intenta cerrar una expresión SQL y ejecutar código malicioso
+  "'; SELECT * FROM users; --",
 ];
 
-describe("/api/register - Pruebas campo por campo contra inyecciones", () => {
+describe("/api/register - Pruebas campo por campo contra inyecciones SQL", () => {
   for (const field of Object.keys(safePayload)) {
     for (const attack of maliciousInputs) {
       const payload = { ...safePayload, [field]: attack };
@@ -2407,46 +2439,46 @@ const safePayload = {
 
 const maliciousInputs = [
   // 1. Manipula lógica booleana
-  "email = :email OR attribute_exists(email)",
+  "' OR 1=1 --",
 
   // 2. Busca acceso con rol de admin
-  "role = :role OR contains(role, 'admin')",
+  "' OR role = 'admin' --",
 
   // 3. Condición siempre verdadera
-  "begins_with(email, 'admin') OR size(email) > 0",
+  "' OR 1=1",
 
   // 4. Afecta lógica con existencia/ausencia de atributos
-  "attribute_not_exists(password) OR attribute_exists(email)",
+  "' OR EXISTS(SELECT * FROM users WHERE email = 'admin') --",
 
   // 5. Evalúa tamaño para generar condiciones verdaderas
-  "size(email) > 0 OR contains(role, 'admin')",
+  "' OR LENGTH(email) > 0 --",
 
   // 6. Simula cierre de expresión + operador lógico
-  ") OR attribute_exists(name) OR (",
+  "' OR 1=1) --",
 
   // 7. Inserta condición válida para saltar seguridad
-  "email <> :email OR contains(email, 'hotmail')",
+  "' OR email = 'hola@hotmail.com' --",
 
   // 8. Lógica invertida y maliciosa
-  "NOT email = :email OR contains(role, 'admin')",
+  "' AND email != 'hola@hotmail.com' --",
 
   // 9. Condición redundante que puede romper lógica
-  "email = :email OR email = email",
+  "' OR email = email --",
 
   // 10. Intento de manipular expresión con uso de funciones válidas
-  "begins_with(name, 'a') OR attribute_exists(password)",
+  "' UNION SELECT username, password FROM users --",
 
-  // 11. Intenta inyectar un REMOVE dentro de una expresión de actualización
-  "SET name = :name; REMOVE password",
+  // 11. Intenta inyectar un DROP TABLE dentro de una expresión de actualización
+  "'; DROP TABLE users --",
 
-  // 12. Manipula valores dinámicos al nivel de ExpressionAttributeValues
-  ":email OR attribute_exists(email)",
+  // 12. Manipula valores dinámicos al nivel de parámetros
+  "' OR 1=1 --",
 
-  // 13. Intenta cerrar una expresión SET e insertar lógica maliciosa
-  "hola@example.com'); REMOVE name; --",
+  // 13. Intenta cerrar una expresión SQL y ejecutar código malicioso
+  "'; SELECT * FROM users; --",
 ];
 
-describe("api/login - Pruebas campo por campo contra inyeccioens", () => {
+describe("api/login - Pruebas campo por campo contra inyecciones SQL", () => {
   for (const field of Object.keys(safePayload)) {
     for (const attack of maliciousInputs) {
       const payload = { ...safePayload, [field]: attack };
@@ -2539,8 +2571,6 @@ Este middleware actúa como una primera barrera para evitar inyecciones. Valida 
 ### Referencias
 
 PortSwigger. (n.d.). NoSQL injection | Web Security Academy. https://portswigger.net/web-security/nosql-injection
-
-Bittencourt, M. (2023). DynamoDB: Understanding Action APIs and Expressions. Medium. https://medium.com/@mbneto/dynamodb-understanding-action-apis-and-expressions-756c016661cc
 
 Coleman, T., & Nguyen, D. (n.d.). Intro to storybook. Storybook Tutorials. https://storybook.js.org/tutorials/intro-to-storybook/
 
@@ -2664,25 +2694,25 @@ Cada funcionalidad se verifica visual y funcionalmente, observando en tiempo rea
 | Subir imagen          | Chrome    | 134.0.6998.179        | Imagen subida con éxito                           | Imagen subida con éxito                           | Sí                       | N/A                                           |
 | Obtener imagen        | Chrome    | 134.0.6998.179        | Recuperación de imagen subida                     | Recuperación de imagen subida                     | Sí                       | N/A                                           |
 | Mercado Pago Checkout | Chrome    | 134.0.6998.179        | Redirección a Mercado Pago Checkout               | Redirección a Mercado Pago Checkout               | Sí                       | N/A                                           |
-| Cerrar sesión         | Chrome    | 134.0.6998.179        | Redirección al inicio de sesión                    | Redirección al inicio de sesión                    | Sí                       | N/A                                           |
+| Cerrar sesión         | Chrome    | 134.0.6998.179        | Redirección al inicio de sesión                   | Redirección al inicio de sesión                   | Sí                       | N/A                                           |
 | Inicio de sesión      | Firefox   | 137.0                 | Redirección a la aplicación                       | Redirección a la aplicación                       | Sí                       | N/A                                           |
 | Registrar usuario     | Firefox   | 137.0                 | Registro con éxito y redirección a Iniciar sesión | Registro con éxito y redirección a Iniciar sesión | Sí                       | N/A                                           |
 | Subir imagen          | Firefox   | 137.0                 | Imagen subida con éxito                           | Imagen subida con éxito                           | Sí                       | N/A                                           |
 | Obtener imagen        | Firefox   | 137.0                 | Recuperación de imagen subida                     | Recuperación de imagen subida                     | Sí                       | N/A                                           |
 | Mercado Pago Checkout | Firefox   | 137.0                 | Redirección a Mercado Pago Checkout               | Redirección a Mercado Pago Checkout               | Sí                       | N/A                                           |
-| Cerrar sesión         | Firefox   | 137.0                 | Redirección al inicio de sesión                    | Redirección al inicio de sesión                    | Sí                       | N/A                                           |
+| Cerrar sesión         | Firefox   | 137.0                 | Redirección al inicio de sesión                   | Redirección al inicio de sesión                   | Sí                       | N/A                                           |
 | Inicio de sesión      | Edge      | 134.0.3124.93         | Redirección a la aplicación                       | Redirección a la aplicación                       | Sí                       | N/A                                           |
 | Registrar usuario     | Edge      | 134.0.3124.93         | Registro con éxito y redirección a Iniciar sesión | Registro con éxito y redirección a Iniciar sesión | Sí                       | N/A                                           |
 | Subir imagen          | Edge      | 134.0.3124.93         | Imagen subida con éxito                           | Imagen subida con éxito                           | Sí                       | N/A                                           |
 | Obtener imagen        | Edge      | 134.0.3124.93         | Recuperación de imagen subida                     | Recuperación de imagen subida                     | Sí                       | N/A                                           |
 | Mercado Pago Checkout | Edge      | 134.0.3124.93         | Redirección a Mercado Pago Checkout               | Redirección a Mercado Pago Checkout               | Sí                       | N/A                                           |
-| Cerrar sesión         | Edge      | 134.0.3124.93         | Redirección al inicio de sesión                    | Redirección al inicio de sesión                    | Sí                       | N/A                                           |
+| Cerrar sesión         | Edge      | 134.0.3124.93         | Redirección al inicio de sesión                   | Redirección al inicio de sesión                   | Sí                       | N/A                                           |
 | Inicio de sesión      | Safari    | 18.4                  | Redirección a la aplicación                       | Inicio de sesión inválido                         | No                       | No se puede iniciar sesión, pero sí registrar |
 | Registrar usuario     | Safari    | 18.4                  | Redirección a la aplicación                       | Inicio de sesión inválido                         | Sí                       | N/A                                           |
 | Subir imagen          | Safari    | 18.4                  | Imagen subida con éxito                           | Inicio de sesión inválido                         | No                       | No se puede iniciar sesión                    |
 | Obtener imagen        | Safari    | 18.4                  | Recuperación de imagen subida                     | Inicio de sesión inválido                         | No                       | No se puede iniciar sesión                    |
 | Mercado Pago Checkout | Safari    | 18.4                  | Redirección a Mercado Pago Checkout               | Inicio de sesión inválido                         | No                       | No se puede iniciar sesión                    |
-| Cerrar sesión         | Safari    | 18.4                  | Redirección al inicio de sesión                    | Inicio de sesión inválido                         | No                       | No se puede iniciar sesión                    |
+| Cerrar sesión         | Safari    | 18.4                  | Redirección al inicio de sesión                   | Inicio de sesión inválido                         | No                       | No se puede iniciar sesión                    |
 
 ---
 
@@ -2694,4 +2724,4 @@ Cada funcionalidad se verifica visual y funcionalmente, observando en tiempo rea
 | **1.3**             | Se añadió la documentación de Storybook                    | 5/4/2025  | Paola Garrido                  |
 | **1.4**             | Se añadió la documentación de pruebas CSRF                 | 5/4/2025  | Angel Ramírez                  |
 | **1.5**             | Se añadió la documentación de pruebas de Usabilidad        | 6/4/2025  | Nicolas Hood                   |
-| **1.6**             | Se añadió la documentación de pruebas de Rendimiento        | 6/4/2025  | Hiram Mendoza                   |
+| **1.6**             | Se añadió la documentación de pruebas de Rendimiento       | 6/4/2025  | Hiram Mendoza                  |
