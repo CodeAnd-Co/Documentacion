@@ -9,15 +9,7 @@ sidebar_position: 2
 
 ---
 
-### Autores
 
-| Nombre                     | Rol   |
-| -------------------------- | ----- |
-| Diego Isaac Fuentes Juvera | Autor |
-| Daniel Queijeiro Albo      | Autor |
-| Daniel Contreras Chávez    | Modificador |
-| Juan Pablo Chávez Leal     | Modificador |
----
 
 ### Objetivo
 
@@ -82,9 +74,13 @@ El WBS se debe crear al inicio del proceso de planificación, antes de estimar e
 
 1. Número de tareas generadas y estimadas
 
+----
+
 ## Registro de cambios
 
-| Autor                         | Descripción del cambio                 | Versión |
-| ----------------------------- | -------------------------------------- | ------- |
-| Carlos Iván Fonseca Mondragón | Correcciones de ortografía y redacción | 1.1     |
-| Daniel C. y Juan Pablo C.     | Agregar práctica de PMC 1.1            | 1.2     |
+| **Tipo de Versión** | **Descripción**                               | **Fecha** | **Colaborador**                                          |
+| ------------------- | --------------------------------------------- | --------- | -------------------------------------------------------- |
+| **1.1**             | Creacion de la guia de historial de cambios   | 6/3/2025  | Diego Isaac Fuentes Juvera                               |
+| **1.2**             | Eliminar proceso de juntas grupales duplicado | 6/3/2025  | Carlos Iván Fonseca Mondragón|
+| **1.3**             | Agregar práctica de PMC 1.1                   | 1/4/2025  | Daniel Contreras Chávez, Juan Pablo Chávez Leal          |
+| **1.4**             | Agregar descrpción y cambio de nombre         | 7/4/2025  | Galo Alejandro del Rio Viggiano                          |
