@@ -5,7 +5,7 @@ sidebar_position: 4
 
 # RF2: Super Administrador Consulta Lista de Usuarios
 
-**Última actualización:** 06 de abril de 2025
+**Última actualización:** 07 de abril de 2025
 
 ---
 
@@ -44,33 +44,53 @@ SuperAdmin -->> Frontend: Selecciona "Lista de Usuarios"
 Frontend -->> Api_gateway: Envía petición GET /api/usuarios con JWT
 Api_gateway -->> Backend: Reenvía GET /api/usuarios con JWT
 Backend -->> rutaUsuarios: Llama a la ruta /api/usuarios
-rutaUsuarios -->> rutaUsuarios: Valida API key y JWT
+rutaUsuarios -->> rutaUsuarios: Valida API key
 
-alt Token inválido o no autorizado
-    rutaUsuarios -->> Backend: Retorna JSON {"message": "No autorizado"}, status 401
-    Backend -->> Api_gateway: Retorna JSON {"message": "No autorizado"}, status 401
-    Api_gateway -->> Frontend: Retorna JSON {"message": "No autorizado"}, status 401
-    Frontend -->> SuperAdmin: Muestra mensaje de error: "No autorizado"
-else Token válido
-    rutaUsuarios -->> controladorUsuarios: Enviar parámetros (filtros, búsqueda, paginación)
-    controladorUsuarios -->> repositorioUsuarios: Solicita usuarios aplicando filtros
-    repositorioUsuarios -->> DynamoDB: Consulta usuarios con filtros
-    DynamoDB -->> repositorioUsuarios: Retorna datos de usuarios
-    repositorioUsuarios -->> controladorUsuarios: Retorna lista de usuarios
-    controladorUsuarios -->> rutaUsuarios: Retorna lista paginada con nombre y rol
+alt API key inválida
+    rutaUsuarios -->> Backend: Retorna JSON {"message": "API key inválida"}, status 400
+    Backend -->> Api_gateway: Retorna JSON {"message": "API key inválida"}, status 400
+    Api_gateway -->> Frontend: Retorna JSON {"message": "Error de autenticación"}, status 400
+    Frontend -->> SuperAdmin: Muestra mensaje de error: "Acceso no autorizado"
+else API key válida
+    rutaUsuarios -->> rutaUsuarios: Valida JWT
 
-    alt Lista vacía
-        rutaUsuarios -->> Backend: JSON {"usuarios": [], "mensaje": "No hay registros"}, status 200
-        Backend -->> Api_gateway: JSON {"usuarios": [], "mensaje": "No hay registros"}, status 200
-        Api_gateway -->> Frontend: JSON {"usuarios": [], "mensaje": "No hay registros"}, status 200
-        Frontend -->> SuperAdmin: Muestra mensaje "No hay registros disponibles"
-    else Lista con usuarios
-        rutaUsuarios -->> Backend: JSON con usuarios y metadata de paginación, status 200
-        Backend -->> Api_gateway: JSON con usuarios y metadata de paginación, status 200
-        Api_gateway -->> Frontend: JSON con usuarios y metadata de paginación, status 200
-        Frontend -->> SuperAdmin: Muestra tabla con nombre, rol, búsqueda y paginación
+    alt JWT inválido o expirado
+        rutaUsuarios -->> Backend: Retorna JSON {"message": "JWT inválido"}, status 401
+        Backend -->> Api_gateway: Retorna JSON {"message": "JWT inválido"}, status 401
+        Api_gateway -->> Frontend: Retorna JSON {"message": "Error de autenticación"}, status 401
+        Frontend -->> SuperAdmin: Muestra mensaje de error: "Acceso no autorizado"
+    else JWT válido
+        rutaUsuarios -->> controladorUsuarios: Solicita usuarios
+        controladorUsuarios -->> repositorioUsuarios: Solicita usuarios
+        repositorioUsuarios -->> DynamoDB: Consulta usuarios
+
+        alt Error en la base de datos
+            DynamoDB -->> repositorioUsuarios: Retorna error
+            repositorioUsuarios -->> controladorUsuarios: Retorna error
+            controladorUsuarios -->> rutaUsuarios: Retorna JSON {"message": "Error al consultar usuarios"}, status 500
+            rutaUsuarios -->> Backend: Retorna JSON {"message": "Error al consultar usuarios"}, status 500
+            Backend -->> Api_gateway: Retorna JSON {"message": "Error al consultar usuarios"}, status 500
+            Api_gateway -->> Frontend: Retorna JSON {"message": "Error interno"}, status 500
+            Frontend -->> SuperAdmin: Muestra mensaje: "Hubo un error al cargar los usuarios"
+        else Consulta exitosa
+            DynamoDB -->> repositorioUsuarios: Retorna lista de usuarios
+            repositorioUsuarios -->> controladorUsuarios: Retorna lista de usuarios
+            controladorUsuarios -->> rutaUsuarios: Retorna lista de usuarios
+            rutaUsuarios -->> Backend: Retorna lista de usuarios, status 200
+            Backend -->> Api_gateway: Retorna lista de usuarios, status 200
+            Api_gateway -->> Frontend: Retorna lista de usuarios, status 200
+
+            alt Lista vacía
+                Frontend -->> SuperAdmin: Muestra mensaje "No hay registros disponibles"
+            else Lista con usuarios
+                Frontend -->> SuperAdmin: Muestra tabla con ID, nombre, rol, cliente, correo, teléfono, estatus
+            end
+        end
     end
 end
+
+Note right of Frontend: Filtros, búsqueda y paginación realizados en el frontend con Material UI
+
 
 ```
 
