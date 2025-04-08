@@ -9,7 +9,8 @@ sidebar_position: 26
 
 ## Objetivo
 
-- Encontrar los defectos en los componentes a inspeccionar
+- Encontrar los defectos en los componentes a inspeccionar.
+- Asegurar que el componente sigue los estándares definidos.
 
 ---
 
@@ -26,6 +27,7 @@ sidebar_position: 26
 | **Preparación**   | | | |
 | **Inspección**    | | | |
 | **Documentación** | | | |
+| **Corrección**    | | | |
 
 ## Salidas
 
@@ -37,4 +39,4 @@ sidebar_position: 26
 
 | **Tipo de Versión** | **Descripción**                               | **Fecha**  | **Colaborador**           |
 | ------------------- | --------------------------------------------- | ---------- | ------------------------- |
-| **1.0**             | Primera versión del proceso de inspección de código  | 08/04/2025 | Ian Julián Estrada Castro |
+| **1.0**             | Primera versión del PR26                      |  | Ian Julián Estrada Castro |
