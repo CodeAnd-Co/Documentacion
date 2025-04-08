@@ -43,40 +43,50 @@ participant Backend
 participant rutaUsuarios
 participant controladorUsuarios
 participant repositorioUsuarios
-participant RDS
+participant Database
+
 
 SuperAdmin -->> Frontend: Hace clic en un usuario de la lista
 Frontend -->> Api_gateway: GET /api/usuarios/:id con JWT
 Api_gateway -->> Backend: Reenvía GET /api/usuarios/:id con JWT
 Backend -->> rutaUsuarios: Llama a la ruta /api/usuarios/:id
-rutaUsuarios -->> rutaUsuarios: Valida API key y JWT
+rutaUsuarios -->> rutaUsuarios: Valida API key
 
-alt Token inválido o no autorizado
-    rutaUsuarios -->> Backend: Retorna JSON {"message": "No autorizado"}, status 401
-    Backend -->> Api_gateway: Retorna JSON {"message": "No autorizado"}, status 401
-    Api_gateway -->> Frontend: Retorna JSON {"message": "No autorizado"}, status 401
-    Frontend -->> SuperAdmin: Muestra mensaje de error "No autorizado"
-else Token válido
-    rutaUsuarios -->> controladorUsuarios: Solicita usuario por ID
-    controladorUsuarios -->> repositorioUsuarios: Busca usuario por ID
-    repositorioUsuarios -->> RDS: Consulta por ID
+alt API key inválida
+    rutaUsuarios -->> Backend: Retorna JSON {"message": "API key inválida"}, status 400
+    Backend -->> Api_gateway: Retorna JSON {"message": "API key inválida"}, status 400
+    Api_gateway -->> Frontend: Retorna JSON {"message": "Error de autenticación"}, status 400
+    Frontend -->> SuperAdmin: Muestra mensaje de error: "Acceso no autorizado"
+else API key válida
+    rutaUsuarios -->> rutaUsuarios: Valida JWT
 
-    alt Error al obtener los datos
-        RDS -->> repositorioUsuarios: Retorna error (RequestTimeout, ResourceNotFoundException)
-        repositorioUsuarios -->> controladorUsuarios: Retorna error
-        controladorUsuarios -->> rutaUsuarios: Retorna error
-        rutaUsuarios -->> Backend: Retorna 500 {"message": "Error al obtener datos"}
-        Backend -->> Api_gateway: Retorna 500 {"message": "Error al obtener datos"}
-        Api_gateway -->> Frontend: Retorna 500 {"message": "Error al obtener datos"}
-        Frontend -->> SuperAdmin: Muestra mensaje "Error al cargar la información del usuario."
-    else Usuario encontrado
-        RDS -->> repositorioUsuarios: Retorna datos del usuario
-        repositorioUsuarios -->> controladorUsuarios: Retorna datos del usuario
-        controladorUsuarios -->> rutaUsuarios: Retorna datos del usuario
-        rutaUsuarios -->> Backend: JSON con la información del usuario, status 200
-        Backend -->> Api_gateway: JSON con la información del usuario, status 200
-        Api_gateway -->> Frontend: JSON con la información del usuario, status 200
-        Frontend -->> SuperAdmin: Muestra panel con información del usuario
+    alt JWT inválido o expirado
+        rutaUsuarios -->> Backend: Retorna JSON {"message": "No autorizado"}, status 401
+        Backend -->> Api_gateway: Retorna JSON {"message": "No autorizado"}, status 401
+        Api_gateway -->> Frontend: Retorna JSON {"message": "No autorizado"}, status 401
+        Frontend -->> SuperAdmin: Muestra mensaje de error "No autorizado"
+    else JWT válido
+        rutaUsuarios -->> controladorUsuarios: Solicita usuario por ID
+        controladorUsuarios -->> repositorioUsuarios: Busca usuario por ID
+        repositorioUsuarios -->> Database: Consulta por ID
+
+        alt Error al obtener los datos
+            Database -->> repositorioUsuarios: Retorna error (RequestTimeout, ResourceNotFoundException)
+            repositorioUsuarios -->> controladorUsuarios: Retorna error
+            controladorUsuarios -->> rutaUsuarios: Retorna error
+            rutaUsuarios -->> Backend: Retorna 500 {"message": "Error al obtener datos"}
+            Backend -->> Api_gateway: Retorna 500 {"message": "Error al obtener datos"}
+            Api_gateway -->> Frontend: Retorna 500 {"message": "Error al obtener datos"}
+            Frontend -->> SuperAdmin: Muestra mensaje "Error al cargar la información del usuario."
+        else Usuario encontrado
+            Database -->> repositorioUsuarios: Retorna datos del usuario
+            repositorioUsuarios -->> controladorUsuarios: Retorna datos del usuario
+            controladorUsuarios -->> rutaUsuarios: Retorna datos del usuario
+            rutaUsuarios -->> Backend: JSON con la información del usuario, status 200
+            Backend -->> Api_gateway: JSON con la información del usuario, status 200
+            Api_gateway -->> Frontend: JSON con la información del usuario, status 200
+            Frontend -->> SuperAdmin: Muestra panel con información del usuario
+        end
     end
 end
 ```
