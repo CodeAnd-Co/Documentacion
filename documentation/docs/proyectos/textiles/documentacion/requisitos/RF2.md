@@ -5,7 +5,7 @@ sidebar_position: 4
 
 # RF2: Super Administrador Consulta Lista de Usuarios
 
-**Última actualización:** 06 de abril de 2025
+**Última actualización:** 07 de abril de 2025
 
 ---
 
