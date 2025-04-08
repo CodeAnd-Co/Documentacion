@@ -1,9 +1,9 @@
 ---
-title: PR2 Estimación de alcance, esfuerzo y coste del proyecto (WBS)
+title: PR2 Estimación de alcance y coste del proyecto (WBS)
 sidebar_position: 2
 ---
 
-# Estimación de alcance, esfuerzo y coste del proyecto (WBS)
+# Estimación de alcance y coste del proyecto (WBS)
 
 **Última actualización:** 1 de abril de 2025
 
@@ -50,6 +50,31 @@ sidebar_position: 2
 
 1. WBS de alto nivel
 2. Estimación inicial del proyecto.
+
+---
+
+# ¿Qué es el WBS?
+
+El **WBS** (Work Breakdown Structure o *Estructura de Desglose del Trabajo*) es una herramienta fundamental en la gestión de proyectos. Básicamente, es la descomposición jerárquica del trabajo total que debe realizarse en un proyecto. Divide el proyecto en entregables y luego en tareas más pequeñas y manejables.
+
+---
+
+## ¿Para qué sirve?
+
+- Organizar el trabajo del proyecto en partes comprensibles.  
+- Facilitar la estimación de:
+  - **Alcance:** el tamaño de todo el proyecto, con sus segmentación en módulos.
+  - **Costo:** cuánto costará en horas cada elemento.
+- Mejorar el control y monitoreo del avance del proyecto.
+
+---
+
+## ¿Cuándo se debe crear?
+
+El WBS se debe crear al inicio del proceso de planificación, antes de estimar el esfuerzo y el costo. Específicamente:
+
+- Después de definir el **alcance** del proyecto con sus segmentación en módulos (Análisis, Construcción y Transición).
+- Antes de estimar esfuerzo y costos, ya que estas estimaciones se basan en las tareas identificadas en el WBS.
 
 ---
 
