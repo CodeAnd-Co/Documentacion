@@ -5,8 +5,6 @@ sidebar_position: 9
 
 # Gestión de cambios de requisitos
 
-**Última actualización** 1 de Abril de 2025
-
 ---
 
 ### Autores
@@ -106,3 +104,4 @@ Se multiplica el puntaje asignado por el peso del criterio. Por ejemplo, si “F
 | Daniel Contreras Chávez | Criterios de aceptación, gravedad y cronograma | 1.2 |
 | Juan Pablo Chávez Leal  | Adición de prácticas específicas PMC | 1.3 |
 | Daniel Contreras Chávez | Adición de prácticas específicas PMC | 1.3 |
+| Daniel Contreras Chávez | Correciones de PMC SP 1.3 | 1.4 |
