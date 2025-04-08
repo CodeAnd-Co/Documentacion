@@ -5,8 +5,6 @@ sidebar_position: 2
 
 # Estimación de alcance y coste del proyecto (WBS)
 
-**Última actualización:** 1 de abril de 2025
-
 ---
 
 
