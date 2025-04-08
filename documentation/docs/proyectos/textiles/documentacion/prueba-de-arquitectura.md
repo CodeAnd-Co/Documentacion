@@ -13,7 +13,7 @@ Antes de comenzar, hay que instalar la versión de node especificada en el manua
 
 #### Creación del proyecto
 
-Abrir la terminal y moverse al directorio donde se desea crear la aplicación, una vez allí, ejecutar el comando.
+Abrir la terminal y moverse al directorio donde se desea crear la aplicación, una vez allí, ejecuta el comando.
 
 ```
 npm create vite@latest <nombre-del-proyecto>
@@ -27,7 +27,7 @@ Moverse al directorio que se creó
 cd <nombre-del-proyecto>
 ```
 
-Instala las dependencias.
+Instala las dependencias:
 
 ```
 npm install
@@ -45,7 +45,7 @@ Ahora ya tienes una aplicación de React corriendo en tu servidor local.
 
 Primero, muévete al directorio donde queramos iniciar nuestro proyecto
 
-Una vez en el directorio, hay que correr el comando
+Una vez en el directorio, ejecuta el siguiente comando:
 
 ```
 npm init
@@ -110,7 +110,7 @@ Primero tenemos que instalar las dependencias necesarias
 npm install jsonwebtoken cookie-parser dotenv
 ```
 
-Ahora tenemos que configurar la libreria de `cookie-parser` en el archivo `app.js`
+Ahora tenemos que configurar la librería de `cookie-parser` en el archivo `app.js`
 
 ```js
 const cookieParser = require("cookie-parser");
@@ -167,7 +167,7 @@ router.get("/perfil", autorizarToken, (req, res) => {
 De esta manera, cuando se haga una llamada a esa ruta, antes de hacer la logica de la función, se llamará a la función y si falla no permitirá completar la solicitud
 
 :::warning Aviso
-Esta función solo se usó para la prueba de arquitectura, ya que es necesario revisar los roles y permisos que tienen los usuarios
+Esta función solo se utilizó para la prueba de arquitectura, ya que es necesario revisar los roles y permisos que tienen los usuarios
 
 También se explicará más adelante como se genera el token que se busca validar
 :::
@@ -220,7 +220,7 @@ router.get(
 );
 ```
 
-Esto hará que a pesar de que el token sea válido, si no se envia el API key, no se completara la petición, esto añade una capa adicional de seguridad a las rutas.
+Esto hará que, a pesar de que el token sea válido, si no se envia el API key, no se completara la petición, esto añade una capa adicional de seguridad a las rutas.
 
 Una vez que tenemos nuestras 2 capas de seguridad, podemos pasar a construir los diferentes módulos de la aplicación
 
@@ -230,9 +230,9 @@ En este manual solo se hablará de las integraciones con servicios externos, si 
 
 ### Integración con AWS RDS
 
-#### Envio de datos
+#### Envío de datos
 
-Primero tenemos que instalar las librerias necesarias para utilizar RDS
+Primero tenemos que instalar las librerías necesarias para utilizar RDS
 
 ```
 npm install mysql2
@@ -240,7 +240,7 @@ npm install mysql2
 
 También tenemos que asegurarnos de haber creado la tabla que se usará para crear el usuario. En este caso, la tabla se llama `Users` con los atributos de name, email, y password
 
-Ahora vamos a crear el archivo de conexion con rds, el cual es una base de datos relacional, que usa MySQL como motor
+Ahora vamos a crear el archivo de conexión con rds, el cual es una base de datos relacional, que usa MySQL como motor
 
 Primero crearemos nuestro archivo `db.js`
 
@@ -271,9 +271,9 @@ module.exports = connection;
 
 Este archivo nos ayudara a conectarnos a la base de datos que se encuentra en el EC2
 
-Para esto vamos a seguir con nuestra pequeña aplicación. Para poder integrar la envio de datos a RDS, vamos a crear un servicio en nuestro backend para enviar datos.
+Para esto vamos a seguir con nuestra pequeña aplicación. Para poder integrar la envío de datos a RDS, vamos a crear un servicio en nuestro backend para enviar datos.
 
-Primero creamos un nuevo archivo en la carpeta de servicios, y utilizamos el siguiente codigo
+Primero creamos un nuevo archivo en la carpeta de servicios:
 
 ```js
 // insertItem.js
@@ -301,13 +301,13 @@ module.exports = async (nombreTabla, modelo) => {
 };
 ```
 
-Esta función usa la conexion a la base de datos, hace una preparacion de los datos que utilizara para la query, y crea una query normal de sql para insertar datos en la tabla especificada
+Esta función usa la conexión a la base de datos, hace una preparacion de los datos que utilizara para la query, y crea una query normal de sql para insertar datos en la tabla especificada
 
 Esta función nos ayudará a no tener que crear múltiples bloques de código iguales y poder reutilizar este mismo cada que se quiera subir algo a RDS
 
 Una vez creada esta funcion, podemos pasará a crear nuestra ruta, la cual se encargará de recibir la petición para crear un nuevo usuario.
 
-La ruta se verá de esta manera
+La ruta se verá así:
 
 ```js
 router.post(
@@ -379,7 +379,7 @@ Como podemos ver, es una función muy pequeña que llama a la función que cream
 
 Y de esta manera es como podemos crear nuestra ruta para crear un usuario en la base de datos
 
-#### Recibo de datos
+#### Recepción de datos
 
 Para poder recibir datos de AWS, primero creamos una función similar a la de enviar datos, seguimos el mismo proceso, pero ahora la función será un poco diferente
 
@@ -510,7 +510,7 @@ Ahora ya tenemos creado tanto el registro de usuarios como el login de usuarios,
 
 #### Subida de archivos a S3
 
-Para poder crear la integración con AWS S3, primero tenemos que instalar las librerias
+Para poder crear la integración con AWS S3, primero tenemos que instalar las librerías
 
 ```
 npm install @aws-sdk/client-s3 @aws-sdk/s3-request-presigner
@@ -533,7 +533,7 @@ const upload = multer({ storage });
 router.post("/upload", upload.single("file"), uploadController.upload);
 ```
 
-Esta ruta, como podemos ver, es diferente, ya que utilizamos un middleware para poder recibir un archivo
+Esta ruta es diferente, ya que utilizamos un middleware para poder recibir un archivo
 
 Ahora creamos el controlador que utilizara esta ruta
 
@@ -650,7 +650,7 @@ module.exports = async (params) => {
 
 Con estos bloques de codigo, podemos crear nuestro flujo para subir un archivo a S3
 
-#### Recibo de archivos de S3
+#### Recepción de archivos de S3
 
 Para recibir los archivos que subimos previamente, es un poco diferente que recibir datos de RDS, ya que tenemos que utilizar algo llamado `Pre-signed URL`, lo que nos permitira visualizar el contenido de los archivos
 
@@ -725,7 +725,7 @@ Ahora creamos el controlador para la ruta
 
 const generarUrlPrefirmado = require("../../util/generarUrlPresigned");
 
-const FOLDER_NAME = "uploads"; // Nombre de la carpeta donde se guardan los archivos
+const FOLDER_NAME = "uploads"; // Nombre de la carpeta donde se almacenan los archivos
 const URL_EXPIRATION = 3600; // Tiempo de expiración de la URL prefirmada en segundos
 
 /**
@@ -788,21 +788,21 @@ Esto permite subir y visualizar archivos desde S3.
 
 ## Componente para el formulario de login
 
-Primero tenemos que instalar una libreria muy importante que se usara en todo el proyecto
+Primero tenemos que instalar una librería muy importante que se usara en todo el proyecto
 
 ```
 npm install axios
 ```
 
-Esta libreria nos ayuda a hacer peticiones https, como las peticiones post y get
+Esta librería nos ayuda a hacer peticiones https, como las peticiones post y get
 
-También tenemos que instalar las librerias para los componentes estilizados de material ui
+También tenemos que instalar las librerías para los componentes estilizados de material ui
 
 ```
 npm install @mui/styled-engine-sc @mui/material @emotion/styled @emotion/react
 ```
 
-Estas son las librerias necesarias para poder utilizar los componentes de MUI
+Estas son las librerías necesarias para poder utilizar los componentes de MUI
 
 Ahora creamos nuestro component llamado `LoginForm` adentro del archivo `LoginForm.jsx`
 
@@ -926,7 +926,7 @@ const handleSubmit = async (event) => {
 };
 ```
 
-También tenemos que definir las variables de estado
+También debemos definir las variables de estado
 
 ```js
 const [email, setEmail] = useState("");
@@ -1409,9 +1409,9 @@ También hay que wrappear el componente que se va a rendeerizar en la ruta en el
 
 Para hacer el despliegue del backend utilizamos un servidor de AWS EC2 de tipo `t2.micro`, usando la imagen de `Ubuntu` 22.04
 
-Primero hay que lanzar nuestra instancia de ec2, si no se sabe cómo lanzar una instancia de ec2, consultar este corto [video](https://www.youtube.com/watch?v=86Tuwtn3zp0)
+Primero hay que lanzar nuestra instancia de ec2, si no sabes cómo lanzar una instancia de EC2, consultar este corto [video](https://www.youtube.com/watch?v=86Tuwtn3zp0)
 
-Luego de tener nuestra instancia, vamos a acceder a ella por medio de SSH, en el caso para la prueba de arquitectura usamos este comando
+Luego de tener nuestra instancia, vamos a acceder a ella por medio de SSH. En el caso para la prueba de arquitectura usamos este comando
 
 ```
 ssh -i "PruebaArquitectura.pem" ubuntu@ec2-18-206-253-81.compute-1.amazonaws.com
@@ -1435,7 +1435,7 @@ curl -fsSL https://deb.nodesource.com/setup_current.x | sudo -E bash -
 sudo apt install -y nodejs
 ```
 
-y por ultimo verificamos la instalacion
+Y por último, verificamos la instalacion
 
 ```
 node -v
@@ -1452,7 +1452,7 @@ Una vez instalado pm2 podemos comenzar a subir nuestra aplicación
 
 #### Configurar git
 
-Ahora para poder subir nuestra aplicación utilizaremos github, asi que clonaremos nuestro repositorio, pero no de la manera usual por http, si no que lo haremos por medio de SSH, estoserá útil más adelante.
+Ahora para poder subir nuestra aplicación utilizaremos github, asi que clonaremos nuestro repositorio, pero no de la manera usual por HTTP, si no que lo haremos por medio de SSH, esto será útil más adelante.
 
 Primero tenemos que crear un par de llaves para poder agregar a github
 
@@ -1488,17 +1488,17 @@ git clone git@github.com:DiegoAlfaro1/prueba-arquitectura-backend-textiles.git
 
 Ahora nos moveremos a la carpeta que se creó con nuestro repositorio, e instalaremos las dependencias
 
-Una vez tenemos las dependencias instaladas, podemos crear nuestros procesos que son los que mantienen la aplicación corriendo
+Una vez tenemos las dependencias instaladas, podemos crear nuestros procesos que mantienen la aplicación en ejecución
 
 Primero iniciaremos el proceso de producción, antes de iniciar el proceso, tenemos que asegurarnos que estemos en el directorio que tiene toda nuestra aplicación, y que hayamos agregado los .env necesarios
 
-Ahora sí podemos correr nuestro comando para crear el proceso de producción
+Ahora sí podemos ejecutar el siguiente comando para crear el proceso de producción.
 
 ```
 pm2 start ecosystem.config.js --only app-production
 ```
 
-Esto hace que se ejecute el archivo `ecosystem.config.js`, el cual nos ayudará a iniciar nuestra app en diferentes puertos dependiendo del nombre de la aplicación
+Este comando ejecute el archivo `ecosystem.config.js`, el cual nos ayudará a iniciar nuestra app en diferentes puertos dependiendo del nombre de la aplicación
 
 Ahora también podemos empezar nuestro proceso de staging, el cual es el mismo comando solo cambiando el nombre de la aplicación
 
@@ -1510,19 +1510,19 @@ Ahora ya tenemos nuestras aplicaciones corriendo y podemos consultarlas en los p
 
 #### API gateway
 
-Para poder utilizar petciones cifradas por medio de https sin tener que configurar un ceritifcado en nuestro de servidor, se utilizo API gateway
+Para poder utilizar petciones cifradas por medio de HTTPS sin tener que configurar un ceritifcado en nuestro de servidor, se utilizo API gateway
 
 Para poder configurar API gateway se uso este video, el cual también explica como desplegar una aplicación en ec2 [video](https://www.youtube.com/watch?v=1238WUz0_fk)
 
 #### CI/CD
 
-Para el despliegue continuo se utilizo un script de github actions el cual se encuentra en la carpeta .github/workflows, el cual permite automatizar la actualización de los archivos manualmente y no tener que recargar nuestro proceso, para ver más a fondo el script consultar la [guia de github actions](../../../guias/github/github-actions.md)
+Para el despliegue continuo se utilizo un script de github actions el cual se encuentra en la carpeta .github/workflows, el cual permite automatizar la actualización de los archivos manualmente y no tener que recargar nuestro proceso, para consultar el script en detalle [guia de github actions](../../../guias/github/github-actions.md)
 
 ## Despliegue del frontend
 
-El despliegue del frontend se hizo con AWS Amplify
+El despliegue del frontend se realizó con AWS Amplify
 
-Primero hay que ingresar al apartado de AWS amplify, y crear nuestra app, esto nos lleva a una serie de configuraciones donde se debe otorgar acceso al repositorio de github, y automaticamente detectara los comandos necesarios para desplegar la aplicacion, como se puede ver, Amplify automáticamente despliega la rama main, esto es muy importante ya que nos ayudará a poder desplegar nuestra rama staging de la misma manera
+Primero hay que ingresar al apartado de AWS amplify, y crear nuestra app, esto nos lleva a una serie de configuraciones donde se debe otorgar acceso al repositorio de github, y automaticamente detectara los comandos necesarios para desplegar la aplicacion, Amplify automáticamente despliega la rama main, esto es muy importante ya que nos ayudará a poder desplegar nuestra rama staging de la misma manera
 
 Luego de desplegar la rama, simplemente hay que agregar nuestras variables de entorno a este apartado
 
@@ -1600,7 +1600,7 @@ module.exports = mercadopago;
 ```
 
 **¿Qué hace esto?**
-Ahora creamos un archivo llamado `configMercadoPago.js` en el backend. Este archivo se encargará de iniciañizar Mercado Pago con el Access Token. Lo que hará es importa la clase `MercadoPagoConfig` desde el SDK, crea una instancia con el token y se exporta para que pueda ser utilizada en todo el backend,
+Ahora creamos un archivo llamado `configMercadoPago.js` en el backend. Este archivo se encargará de inicializar Mercado Pago con el Access Token. Lo que hará es importa la clase `MercadoPagoConfig` desde el SDK, crea una instancia con el token y se exporta para que pueda ser utilizada en todo el backend,
 
 ---
 
