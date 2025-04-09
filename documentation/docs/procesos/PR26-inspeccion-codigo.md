@@ -20,7 +20,8 @@ Una inspección de código es una revisión manual del código fuente para verif
 
 ## Entradas
 1. Componente listo para su inspección al cual todos tienen acceso.
-2. Lista de revisión de código (Checklist).
+2. Tamaño del componente a inspaeccionar.
+3. Lista de revisión de código (Checklist).
 
 ## Proceso
 
@@ -32,7 +33,8 @@ Una inspección de código es una revisión manual del código fuente para verif
 | **Inspección**    | Se hace la revisión del código usando la checklist. La inspección debe hacerse por separado. | Inspectores | |
 | **Documentación** | Los defectos son documentados en el log de defectos individual. Todo lo que se considere como defecto se registra. | Inspectores | |
 |                   | Los defectos documentados se agrupan en el log de defectos y se evalúan. | Inspectores | |
-|                   | Se calcula el número estimado de defectos en el producto: **(Número de defectos encontrados por Inspector (A) * Número de defectos encontrados por otros inspectores)/Número de defectos en común entre A y B (C)** | Inspectores | |
+|                   | Se calcula el número estimado de defectos en el producto utilizando la técnica Catch-Recatch: **(A*B)/C** | Inspectores | |
+|                   | Se calcula la densidad de los defectos (KLOC) | Inspectores | |
 | **Estimación**    | Se hace una estimación del tiempo para hacer las correciones y se agrega al PVG | Inspectores | |
 | **Corrección**    | Se hacen las correcciones de los defectos con base al log de defectos | Dueño del componente | |
 
