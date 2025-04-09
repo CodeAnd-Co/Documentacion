@@ -5,6 +5,10 @@ sidebar_position: 26
 
 # PR26 Proceso de Inspección de Código
 
+:::warning Importante  
+Una inspección de código es una revisión manual del código fuente para verificar que cumple con las reglas de programación y diseño. Es costosa por lo que no es efectivo hacer una inspección en componentes pequeños. Lo mejor es hacer inspecciones en componentes **críticos** del proyecto. Un componente crítico es aquel que si tiene defectos, afecta los objetivos del proyecto.
+:::
+
 ---
 
 ## Objetivo
