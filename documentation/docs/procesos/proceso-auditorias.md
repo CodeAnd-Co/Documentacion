@@ -10,19 +10,6 @@ sidebar_position: 16
 
 ---
 
-### Autores
-
-| Nombre                      | Rol         |
-| --------------------------- | ----------- |
-| Mauricio Anguiano Juarez    | Autor       |
-| Juan Carlos Calderón García | Autor       |
-| Daniel Contreras Chávez     | Modificador |
-| Juan Pablo Chávez Leal      | Modificador |
-| Nicolas Hood Figueroa       | Modificador |
-| Hiram Mendoza Lopez         | Modificador |
-
----
-
 ### Objetivo
 
 - Asegurar la evaluación sistemática de procesos y productos de trabajo mediante auditorías internas, con el fin de detectar desviaciones, promover la mejora continua y garantizar el cumplimiento con los estándares de calidad y objetivos organizacionales.
@@ -41,7 +28,7 @@ sidebar_position: 16
 | ------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------ | ------------------------------------------- |
 | **Planificación de auditoría** | Identificación de procesos y/o productos de trabajo sujetos a auditoría durante la iteración.                                                                                          | Team Lead / SEPG               | **PPQA SP 1.1**                             |
 | **Ejecución de auditoría**     | Revisión con checklist de auditoría para verificar cumplimiento de criterios establecidos.                                                                                             | Team Lead / SEPG / Team Member | **PPQA SP 1.1** **OPF SP 1.2**              |
-| **Registro de hallazgos**      | Documentación de desviaciones, observaciones y oportunidades de mejora sobre procesos y productos.                                                                                     | Team Lead / SEPG               | **PPQA SP 1.2**, **PMC SP 1.1** **OPF 1.3** |
+| **Registro de hallazgos**      | Documentación de desviaciones, observaciones y oportunidades de mejora sobre procesos y productos.                                                                                     | Team Lead / SEPG               | **PPQA SP 1.2**, **PPQA SP 2.2**, **PMC SP 1.1** **OPF 1.3** |
 | **Revisión de hallazgos**      | Validación y clasificación de hallazgos para determinar su impacto y acciones necesarias.                                                                                              | Team Lead / SEPG               | **PPQA SP 1.2** **OPF SP 1.2**              |
 | **Decisión de acción**         | Determinar si se requieren acciones correctivas o preventivas. En caso necesario, activar el [proceso para acciones correctivas](/docs/procesos/PR18-proceso-acciones-correctivas.md). | Team Lead                      | **PPQA SP 1.1, 1.2**                        |
 
@@ -51,9 +38,10 @@ sidebar_position: 16
 
 ---
 
-| Autor                        | Descripción del cambio                          | Versión |
-| ---------------------------- | ----------------------------------------------- | ------- |
-| Mauricio Anguiano Juarez     | Cambio de proceso a proceso de auditorias       | 2.0     |
-| Juan Carlos Calderón García  | Cambio de proceso a proceso de auditorias       | 2.0     |
-| Daniel C y Juan Pablo C      | Adición de SP 1.1 de PMC                        | 2.1     |
-| Nicolas Hood y Hiram Mendoza | Adición Informe de evaluación con OPF 1.2 y 1.3 | 2.2     |
+## Historial de cambios
+
+| **Tipo de Versión** | **Descripción**                             | **Fecha** | **Colaborador**                 |
+| ------------------- | ------------------------------------------- | --------- | ------------------------------- |
+| **1.0**             | Creación de proceso de auditorias   | 19/3/2025  | Juan Carlos Calderon, Mauricio Anguiano |
+| **1.1**             | Se agregó PPQA 2.2 al proceso     | 8/4/2025  | Juan Carlos Calderon, Mauricio Anguiano  |
+
