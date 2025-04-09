@@ -27,16 +27,16 @@ Una inspección de código es una revisión manual del código fuente para verif
 
 | Fase              | Descripción    | Responsable             | Meta y práctica específica del CMMI    |
 | ----------------- | -------------- | ----------------------- | -------------------------------------- |
-| **Preparación**   | Se informa del componente a inspecccionar. Se designan **inspectores** de código (Lo ideal es de 4 a 6 inspectores) y un **dueño del componente**. | Miembros del equipo | |
-|                   | Se presenta el componente y el código fuente. | Dueño del componente | |
-|                   | Una vez concluida la presentación, se abre un espacio para dudas de los inspectores. | Dueño del componente | |
+| **Preparación**   | Se informa del componente a inspecccionar. Se designan **inspectores** de código (Lo ideal es de 4 a 6 inspectores). | Miembros del equipo | |
+|                   | Se presenta el componente y el código fuente. | Autor del código | |
+|                   | Una vez concluida la presentación, se abre un espacio para dudas de los inspectores. | Autor del código | |
 | **Inspección**    | Se hace la revisión del código usando la checklist. La inspección debe hacerse por separado. | Inspectores | |
 | **Documentación** | Los defectos son documentados en el log de defectos individual. Todo lo que se considere como defecto se registra. | Inspectores | |
 |                   | Los defectos documentados se agrupan en el log de defectos y se evalúan. | Inspectores | |
 |                   | Se calcula el número estimado de defectos en el producto utilizando la técnica Catch-Recatch: **(A*B)/C** | Inspectores | |
 |                   | Se calcula la densidad de los defectos (KLOC) | Inspectores | |
 | **Estimación**    | Se hace una estimación del tiempo para hacer las correciones y se agrega al PVG | Inspectores | |
-| **Corrección**    | Se hacen las correcciones de los defectos con base al log de defectos | Dueño del componente | |
+| **Corrección**    | Se hacen las correcciones de los defectos con base al log de defectos | Autor del código | |
 
 ## Salidas
 
