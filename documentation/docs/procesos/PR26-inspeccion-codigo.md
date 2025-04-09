@@ -26,15 +26,15 @@ sidebar_position: 26
 |                   | Se presenta el componente y el código fuente. | Dueño del componente | |
 |                   | Una vez concluida la presentación, se abre un espacio para dudas de los inspectores. | Dueño del componente | |
 | **Inspección**    | Se hace la revisión del código usando la checklist. La inspección debe hacerse por separado. | Inspectores | |
-| **Documentación** | Los defectos son documentados en el log de defectos individual. Todo lo que consideren como defecto se registra. El formato es: Archivo, línea, descripción. | Inspectores | |
+| **Documentación** | Los defectos son documentados en el log de defectos individual. Todo lo que se considere como defecto se registra. | Inspectores | |
 |                   | Los defectos documentados se agrupan en el log de defectos y se evalúan. | Inspectores | |
 |                   | Se calcula el número estimado de defectos en el producto: **(Número de defectos encontrados por Inspector (A) * Número de defectos encontrados por otros inspectores)/Número de defectos en común entre A y B (C)** | Inspectores | |
-| **Estimación**    | Se hace una estimación del tiempo para hacer las correciones | Inspectores | |
+| **Estimación**    | Se hace una estimación del tiempo para hacer las correciones y se agrega al PVG | Inspectores | |
 | **Corrección**    | Se hacen las correcciones de los defectos con base al log de defectos | Dueño del componente | |
 
 ## Salidas
 
-1. Componente libre de defectos
+1. Componente libre de defectos documentados en el log de defectos
 
 ---
 
