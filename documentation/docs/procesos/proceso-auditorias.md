@@ -10,19 +10,6 @@ sidebar_position: 16
 
 ---
 
-### Autores
-
-| Nombre                      | Rol         |
-| --------------------------- | ----------- |
-| Mauricio Anguiano Juarez    | Autor       |
-| Juan Carlos Calderón García | Autor       |
-| Daniel Contreras Chávez     | Modificador |
-| Juan Pablo Chávez Leal      | Modificador |
-| Nicolas Hood Figueroa       | Modificador |
-| Hiram Mendoza Lopez         | Modificador |
-
----
-
 ### Objetivo
 
 - Asegurar la evaluación sistemática de procesos y productos de trabajo mediante auditorías internas, con el fin de detectar desviaciones, promover la mejora continua y garantizar el cumplimiento con los estándares de calidad y objetivos organizacionales.
@@ -51,9 +38,10 @@ sidebar_position: 16
 
 ---
 
-| Autor                        | Descripción del cambio                          | Versión |
-| ---------------------------- | ----------------------------------------------- | ------- |
-| Mauricio Anguiano Juarez     | Cambio de proceso a proceso de auditorias       | 2.0     |
-| Juan Carlos Calderón García  | Cambio de proceso a proceso de auditorias       | 2.0     |
-| Daniel C y Juan Pablo C      | Adición de SP 1.1 de PMC                        | 2.1     |
-| Nicolas Hood y Hiram Mendoza | Adición Informe de evaluación con OPF 1.2 y 1.3 | 2.2     |
+## Historial de cambios
+
+| **Tipo de Versión** | **Descripción**                             | **Fecha** | **Colaborador**                 |
+| ------------------- | ------------------------------------------- | --------- | ------------------------------- |
+| **1.0**             | Creación de proceso de auditorias   | 19/3/2025  | Juan Carlos Calderon, Mauricio Anguiano |
+| **1.1**             | Se agregó PPQA 2.2 al proceso     | 8/4/2025  | Juan Carlos Calderon, Mauricio Anguiano  |
+
