@@ -5,21 +5,19 @@ sidebar_position: 3
 
 # Planificación
 
-**Última actualización:** 10 de marzo de 2025
-
 _Cronograma, hitos y entregables._
 
 ## Cronograma del Proyecto
 
 | Fase del Proyecto                       | Fecha de Finalización | Estado      |
 | --------------------------------------- | --------------------- | ----------- |
-| Fase de Inicio                          | 12/03/25              | En progreso |
-| Construcción 1 (Prueba de Arquitectura) | 04/04/25              | No empezado |
-| Construcción 2 (MVP)                    | 18/04/25              | No empezado |
-| Transición 1 (MVP)                      | 05/05/25              | No empezado |
-| Construcción 3 (MBI 1)                  | 09/05/25              | No empezado |
-| Transición 2 (MBI 1)                    | 21/05/25              | No empezado |
-| Construcción 4 (MBI 2)                  | 26/05/25              | No empezado |
+| Fase de Inicio                          | 14/03/25              | En progreso |
+| Construcción 1 (Prueba de Arquitectura) | 4/04/25              | No empezado |
+| Construcción 2 (MVP)                    | 28/04/25              | No empezado |
+| Transición 1 (MVP)                      | 04/05/25              | No empezado |
+| Construcción 3 (MBI 1)                  | 11/05/25              | No empezado |
+| Transición 2 (MBI 1)                    | 16/05/25              | No empezado |
+| Construcción 4 (MBI 2)                  | 25/05/25              | No empezado |
 | Transición 3 (MBI 2)                    | 11/06/25              | No empezado |
 
 
@@ -46,3 +44,10 @@ _Cronograma, hitos y entregables._
 4. **Documentación Técnica:** Manuales y guías para el mantenimiento y uso del sistema.
 5. **Informe de Pruebas:** Resultados detallados de las pruebas realizadas y correcciones aplicadas.
 6. **Informe Final:** Resumen del proyecto, incluyendo lecciones aprendidas y recomendaciones.
+
+## Historial de cambios
+
+| **Versión** | **Descripción**                                       | **Fecha**  | **Colaboradores**                                                 |
+|-------------|--------------------------------------------------------|------------|--------------------------------------------------------------------|
+| **1.0**     | Añadir la Planificación de Tractech                   | 10/03/2025 | Pablo Hazael     |
+| **1.1**     | Correcciones de redacción y ortografía         | 09/04/2025 | Rommel Toledo |
