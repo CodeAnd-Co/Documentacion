@@ -5,8 +5,6 @@ sidebar_position: 7
 
 # RF5: Super Administrador Elimina Usuario
 
-**Última actualización:** 08 de marzo de 2025
-
 ---
 
 ## Historia de Usuario
@@ -81,3 +79,10 @@ Este proceso continuará de forma iterativa hasta que todas las pruebas sean apr
 | EU001     | Entrar a la lista de usuarios             | - Super administrador autenticado                                                                                             | - Click en la opción de "Usuarios" en el menú                                             | Pantalla de lista de usuarios                                                                                               | Pendiente           | Pendiente        |
 | EU002     | Seleccionar usuarios y clic en "Eliminar" | - Super administrador autenticado <br /> - Usuario existente en la lista de usuarios                                          | - Click en la casilla de los usuarios a eliminar <br /> - Click en el botón de "Eliminar" | Pantalla para confirmar eliminación, con el nombre o nombres de los usuarios seleccionados                                  | Pendiente           | Pendiente        |
 | EU003     | Eliminar usuario existente                | - Super administrador autenticado <br /> - Usuario existente en la base de datos <br /> - Acceso de super admin en el sistema | ID del usuario a eliminar (a través de un click en el botón de eliminar usuario)          | - Mensaje de éxito y actualización de la lista de usuarios <br /> - Usuarios eliminados no aparecen en la lista actualizada | Pendiente           | Pendiente        |
+
+### Historial de cambios
+
+| **Tipo de Versión** | **Descripción**                                 | **Fecha**  | **Colaborador**               |
+| ------------------- | ----------------------------------------------- | ---------- | ----------------------------- |
+| **1.0**             | Creación del documento                          | 06/03/2025 | Angélica Rios Cuentas         |
+| **1.1**             | Actualización de la documentación del requisito | 08/04/2025 | Carlos Iván Fonseca Mondragón |
