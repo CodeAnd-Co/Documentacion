@@ -121,17 +121,17 @@ Para garantizar el cumplimiento de esta política, se implementarán mecanismos 
    - Cualquier incumplimiento de esta política puede derivar en medidas correctivas o disciplinarias según lo establecido por la organización.
    - Se fomentará la capacitación del equipo en buenas prácticas de gestión de datos.
 
-## **8. Salidas y Entregables**
-
-1. **MER** por equipo, con contenido definidos.
-2. **Plan de privacidad y seguridad de datos**, con procedimientos de acceso y control.
-3. **Mecanismos de almacenamiento y recuperación de datos** documentados.
-4. **Procedimientos de distribución y acceso a datos** establecidos.
-5. **Registro de control de versiones y configuración** actualizado.
-
 ---
 
 ### **Notas Finales**
 
 - Esta política se revisará y actualizará periódicamente conforme a la evolución de los proyectos y los estándares organizacionales.
 - Cualquier modificación en esta política deberá ser aprobada por los responsables de gestión de datos.
+
+---
+
+## Historial de cambios
+
+| **Tipo de Versión** | **Descripción**                               | **Fecha** | **Colaborador**                 |
+| ------------------- | --------------------------------------------- | --------- | ------------------------------- |
+| **1.1**             | Eliminación de salidas de la política   | 08/04/2025  | Daniel Contreras, Eduardo Rosas |

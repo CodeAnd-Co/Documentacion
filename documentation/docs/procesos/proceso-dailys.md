@@ -5,8 +5,6 @@ sidebar_position: 18
 
 # PR19: Proceso para Dailys
 
-**Última actualización** 2 de Abril de 2025
-
 ## Objetivo
 
 - Establecer un proceso a seguir para la realización de dailies efectivas.
@@ -22,9 +20,9 @@ sidebar_position: 18
 
 | Fase                     | Actividades | Responsables | Meta y práctica específica del CMMI |
 |--------------------------|-------------|--------------|--------------------------------------|
-| **Inicio** |  Preguntar a cada miembro del equipo: ¿Qué hiciste ayer? ¿Tienes algún impedimento?  ¿Qué vas a hacer hoy?  ¿Tomarás nuevas tareas del Work Items List?  **Actualizar el PVG.** | Team Leader del equipo respectivo. PM en caso de Daily departamental. | PMC SP 1.2 - Monitorear compromisos |
-| **Estado del proyecto** |  Un miembro aleatorio responde:  ¿Cómo estamos?  ¿Dónde queremos estar?  ¿Cuánto nos ha costado? Analizar los riesgos presentes en la matriz y verificar su estado actual. | Team Leader del equipo respectivo. PM en caso de Daily departamental. | MA SP 2.1 - Analizar resultados de mediciones. PMC SP 1.1 - Monitorear parámetros del proyecto |
-| **Toma de decisiones** |  Si el proyecto está atrasado o adelantado, determinar la causa raíz y tomar decisiones.  Si un riesgo tiene alta probabilidad próxima, definir acciones preventivas.  Si el riesgo ya está presente, definir acciones correctivas. | Team Leader del equipo respectivo. PM en caso de Daily departamental.Los team members pueden aportar. | PMC SP 1.1 - Monitorear parámetros del proyecto |
+| **Inicio** |  Preguntar a cada miembro del equipo: ¿Qué hiciste ayer? ¿Tienes algún impedimento?  ¿Qué vas a hacer hoy?  ¿Tomarás nuevas tareas del Work Items List?  **Actualizar el PVG.** | Team Leader del equipo respectivo. PM en caso de Daily departamental. | **PMC SP 1.2** (Monitorear compromisos), **MA SP 2.1** (Obtener los datos de medición) |
+| **Estado del proyecto** |  Un miembro aleatorio responde:  ¿Cómo estamos?  ¿Dónde queremos estar?  ¿Cuánto nos ha costado? Analizar los riesgos presentes en la matriz y verificar su estado actual. | Team Leader del equipo respectivo. PM en caso de Daily departamental. | **MA SP 2.1** (Analizar resultados de mediciones), **PMC SP 1.1** (Monitorear parámetros del proyecto) |
+| **Toma de decisiones** |  Si el proyecto está atrasado o adelantado, determinar la causa raíz y tomar decisiones.  Si un riesgo tiene alta probabilidad próxima, definir acciones preventivas.  Si el riesgo ya está presente, definir acciones correctivas. | Team Leader del equipo respectivo. PM en caso de Daily departamental.Los team members pueden aportar. | **PMC SP 1.1** (Monitorear parámetros del proyecto) |
 
 ## Salidas
 
@@ -35,23 +33,14 @@ sidebar_position: 18
 ## Métricas
 1. Número de riesgos identificados y su evolución.
 
-## Historial de versiones 
+## Historial de cambios
 
-| Autor                   | Descripción del cambio                            | Versión |
-|-------------------------|---------------------------------------------------|---------|
-| Juan Pablo Chávez Leal  | Actualización de fases y prácticas CMMI según nuevo documento | 1.1     |
-| Daniel Contreras Chávez | Inclusión de análisis de riesgos y toma de decisiones | 1.1     |
-| Hiram Israel Mendoza López  | Actualización de fases y prácticas CMMI según nuevo documento | 1.2     |
-| Mauricio Anguiano Juárez  | Actualización de fases y prácticas CMMI según nuevo documento | 1.2     |
-| Emiliano Valdivia Lara  | Actualización de fases y prácticas CMMI según nuevo documento | 1.2     |
-
-## Autores
-
-| Nombre                    | Rol   |
-|---------------------------|-------|
-| Arturo Sánchez Rodríguez | Autor |
-| Juan Pablo Chávez Leal   | Modificador |
-| Daniel Contreras Chávez  | Modificador |
-| Hiram Israel Mendoza López   | Modificador v.1.2 |
-| Mauricio Anguiano Juárez  | Modificador v.1.2  |
-| Emiliano Valdivia Lara    | Modificador v.1.2  |
+| **Tipo de Versión** | **Descripción** | **Fecha** | **Colaborador** |
+| ------------------- | --------------- | --------- | --------------- |
+| **1.0** | Primera versión del PR19    | 03/03/2025 | Arturo Sánchez Rodríguez |
+| **1.1** | Actualización de fases y prácticas CMMI según nuevo documento | 01/04/2025 | Juan Pablo Chávez Leal |
+| **1.1** | Inclusión de análisis de riesgos y toma de decisiones | 01/04/2025 | Daniel Contreras Chávez |
+| **1.2** | Actualización de fases y prácticas CMMI según nuevo documento | 02/04/2025 | Hiram Israel Mendoza López |
+| **1.2** | Actualización de fases y prácticas CMMI según nuevo documento | 02/04/2025 | Mauricio Anguiano Juárez |
+| **1.2** | Actualización de fases y prácticas CMMI según nuevo documento | 02/04/2025 | Emiliano Valdivia Lara |
+| **1.3** | Inlusión de SP 2.1 del área de proceso MA | 08/04/2025 | Ian Julián Estrada Castro |

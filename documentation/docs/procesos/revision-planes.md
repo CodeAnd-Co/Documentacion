@@ -5,8 +5,8 @@ sidebar_position: 7
 
 # Revisión de Planes de Proyecto
 
-**Última actualización:** 1 de abril de 2025
-**Versión:** 1.3
+**Última actualización:** 8 de abril de 2025
+**Versión:** 1.4
 
 ---
 
@@ -20,6 +20,7 @@ sidebar_position: 7
 | Juan Carlos Calderón García   | Co-Autor |
 | Daniel Contreras Chávez       | Modificador |
 | Juan Pablo Chávez Leal        | Modificador |
+| Mariana Juárez Ramírez        | Modificador |
 
 ---
 
@@ -42,7 +43,7 @@ sidebar_position: 7
 
 | Fase                                       | Descripción                                                                                                                                                                     | Responsables           | Meta y práctica específica del CMMI                                                                                                                                        |
 | ------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Reunión de verificación de planes**      | Evaluar si los planes actuales siguen en línea con la realidad del proyecto.                                                                                                    | Todo el equipo         | **PP, SP 2.6** (Planificar el involucramiento de las partes interesadas).                                                                                                  |
+| **Reunión de verificación de planes**      | Evaluar si los planes actuales siguen en línea con la realidad del proyecto.                                                                                                    | Todo el equipo         | **PP, SP 2.6** (Planificar el involucramiento de las partes interesadas) **PP, SP 3.1** (Revisar los planes que afectan al proyecto).                                                                                                 |
 | **Evaluación de la WBS**                   | Identificar nuevas tareas, eliminar o modificar existentes.                                                                                                                     | Todo el equipo         | **PP, SP 1.2** (Establecer las estimaciones de los atributos de los productos de trabajo y de las tareas). **PMC SP 1.1**                                                                |
 | **Revisión de prioridades**                | Confirmar cambios de instrucciones o prioridades del cliente.                                                                                                                   | Todo el equipo         | **REQM, SP 1.3** (Gestionar cambios en los requisitos).                                                                                                                    |
 | **Ajuste de estimaciones**                 | Validar si los tiempos y asignaciones reflejan la realidad.                                                                                                                     | Todo el equipo         | **PP, SP 1.2** (Establecer las estimaciones de los atributos de los productos de trabajo y de las tareas) **PP, SP 3.2** (Conciliar los niveles de trabajo y de recursos). **PMC SP 1.1** |
@@ -76,3 +77,4 @@ sidebar_position: 7
 | Carlos Iván Fonseca Mondragón | Correcciones de ortografía y redacción | 1.1     |
 | Carlos Iván Fonseca Mondragón | Correcciones de ortografía y redacción | 1.2     |
 | Daniel C y Juan Pablo C       | Añadir SP 1.1 de PMC                   | 1.3     |
+| Mariana Juárez Ramírez        | Añadir SP 3.1 de PP                    | 1.4     |
