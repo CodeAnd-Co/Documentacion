@@ -1,23 +1,19 @@
 # Plan de Pruebas de Software
 
-## Autores
-
-| Nombre               | Rol   |
-|----------------------|-------|
-| Hiram Mendoza   | Autor |
-| Carlos Fonseca   | Autor |
-
 ---
 
 ## Introducción
 
-
 ### Propósito
+
 El propósito de este plan es garantizar la calidad del software, detectando y corrigiendo errores a tiempo para asegurar que el sitio web de ALTERTEX cumpla con los requisitos y expectativas de los usuarios.
 
 <!-- Pendiente -->
+
 ### Alcance
+
 **Funcionalidades Clave:**
+
 - **Gestión:** Permitir al administrador gestionar los pedidos, productos y usuarios.
 - **Visualización:** Transformar datos en gráficos intuitivos para facilitar la identificación de tendencias, patrones y anomalías.
 
@@ -58,18 +54,21 @@ El propósito de este plan es garantizar la calidad del software, detectando y c
 ## Recursos para Pruebas
 
 ### Personal
+
 El ingeniero de QA se asegurará de la correcta aplicación de las pruebas y calidad del código. Los miembros del equipo se encargarán de hacer las pruebas. El autor de la prueba debe ser diferente al autor del caso de uso/historia de usuario.
 
 ### Herramientas
 
 **Herramientas a considerar:**
+
 - React
 - Vite
 - AWS Amplify
-- Node.js 
+- Node.js
 - Express
 
 ### Dispositivos
+
 - Computadoras (Safari, Chrome)
 - Navegadores de dispositivos móviles iOS/Android (Safari, Chrome)
 
@@ -94,12 +93,12 @@ Por cada requisito funcional/historia de usuario que forma parte del MVP y MBI d
 
 ## Riesgos y Mitigación
 
-| Riesgos                                                           | Mitigación                                       |
-|-------------------------------------------------------------------|-------------------------------------------------|
-| Disponibilidad del entorno                                        | Priorizar las funciones que forman parte del MVP |
-| Uso de una nueva tecnología para el desarrollo de la pagina web   | Capacitación en la tecnología                   |
-| Implementación de frameworks de pruebas                           | Capacitación en el uso de los frameworks        |
-| Los usuarios finales no se adaptan a la web                       | Capacitación y retroalimentación de los usuarios |
+| Riesgos                                                         | Mitigación                                       |
+| --------------------------------------------------------------- | ------------------------------------------------ |
+| Disponibilidad del entorno                                      | Priorizar las funciones que forman parte del MVP |
+| Uso de una nueva tecnología para el desarrollo de la pagina web | Capacitación en la tecnología                    |
+| Implementación de frameworks de pruebas                         | Capacitación en el uso de los frameworks         |
+| Los usuarios finales no se adaptan a la web                     | Capacitación y retroalimentación de los usuarios |
 
 ---
 
@@ -129,8 +128,8 @@ Proceso para validar las pruebas:
 
 ---
 
-## Registro de Cambios
+# Historial de cambios
 
-| Autores             | Descripción                 | Versión |
-|------------------|---------------------------|---------|
-| Hiram Mendoza, Carlos Fonseca         | Creación del documento     | 1.0     |
+| **Tipo de Versión** | **Descripción**          | **Fecha** | **Colaborador**               |
+| ------------------- | ------------------------ | --------- | ----------------------------- |
+| **1.0**             | Creacion de el documento | 3/02/2025 | Hiram Mendoza, Carlos Fonseca |
