@@ -1,5 +1,5 @@
 ---
-title: PR25 Análisis de datos recopilados
+title: PR26 Análisis de datos recopilados
 sidebar_position: 25
 ---
 
