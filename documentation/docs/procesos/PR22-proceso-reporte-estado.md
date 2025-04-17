@@ -49,6 +49,7 @@ sidebar_position: 22
 ### Salidas
 
 1. Presentación del reporte de estado.
+2. Retroalimentaciónde las partes interesadas
 
 ---
 
