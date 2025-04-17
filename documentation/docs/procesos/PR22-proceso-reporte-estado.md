@@ -11,12 +11,13 @@ sidebar_position: 22
 
 - Hacer reportes de estado que nos sirvan para conocer el estado de salud de los proyectos a todos los miembros del departamento.
 - Garantizar que se muestar contenido de valor para los miembros del departamento.
-- Eficientizar el tiempo que nos toma generar el reporte de estado.
+- Reducir el tiempo que nos toma generar el reporte de estado.
 
 ## Entradas
 
 - Dashboard del estado de salud de los 4 proyectos.
 - Plan de valor ganado y de iteración actualizados.
+- Matriz de riesgos.
 
 ## Proceso
 
