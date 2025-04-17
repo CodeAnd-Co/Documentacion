@@ -29,7 +29,7 @@ sidebar_position: 22
 | **Creación**  | Crear una copia de la [plantilla](https://www.canva.com/design/DAGjbEDjp00/0OWUTXZrhELqB7nTOjtClA/edit?utm_content=DAGjbEDjp00&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)       | PM's        | Domingo    |
 | **Reunión**  | Asistir a la junta del reporte de estado del lunes junto todos los equipos de los 4 proyectos.       | Todo el departamento.  | Lunes de 12:00 a 14:30  |
 | **Actualización de la información** | Actualizar el estado de los riesgos  | Equipos | Primeros 15 minutos de la junta. |
-|                                    | Revisar milestones del proyecto.  | Equipos | Primeros 15 minutos de la junta. |
+|                                    | Revisar milestones del proyecto.  | Equipos | Primeros 15 minutos de la junta. | **PMC SP 1.7** (Llevar a cabo las revisiones de hitos) |
 | **Actualización de la presentación** | Actualizar la fecha.  | Equipos | Durante la junta.  |
 |                                     | Actualizar el estado de los objetivos del proyecto.  | Equipos    | Durante la junta.  |
 |                                     | Actualizar los logros del proyecto.    | Equipos   | Durante la junta.  |
