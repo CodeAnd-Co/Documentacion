@@ -1,9 +1,9 @@
 ---
-title: Guía de Estándares de Codificación
+title: Estándares de Codificación
 sidebar_position: 1
 ---
 
-# Guía de Estándares de Codificación
+# Estándares de Codificación
 
 **Última actualización:** 5 de marzo de 2025  
 
