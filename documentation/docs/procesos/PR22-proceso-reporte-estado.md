@@ -29,8 +29,9 @@ sidebar_position: 22
 |                                     | Enviar la invitación al canal #General del Discord oficial de la clase. | PM's.                            | Domingo          |
 | **Creación**  | Crear una copia de la [plantilla](https://www.canva.com/design/DAGjbEDjp00/0OWUTXZrhELqB7nTOjtClA/edit?utm_content=DAGjbEDjp00&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)       | PM's        | Domingo    |
 | **Reunión**  | Asistir a la junta del reporte de estado del lunes junto todos los equipos de los 4 proyectos.       | Todo el departamento.  | Lunes de 12:00 a 14:30  |
-| **Actualización de la información** | Actualizar el estado de los riesgos  | Equipos | Primeros 15 minutos de la junta. |
+| **Análisis de la información** | Actualizar el estado de los riesgos  | Equipos | Primeros 15 minutos de la junta. |
 |                                    | Revisar milestones del proyecto.  | Equipos | Primeros 15 minutos de la junta. | **PMC SP 1.7** (Llevar a cabo las revisiones de hitos) |
+|                                    | Analizar los datos obtenidos de las métricas comparándolos con resultados anteriores y observar tendencias. Estos datos nos darán información del progreso y problemas de los proyectos. Se buscan responder las 4 preguntas: ¿Dónde estamos? ¿Dónde deberíamos estar? ¿Cuánto nos ha costado? ¿Cómo está la calidad? | Equipos | Durante la junta | |
 | **Actualización de la presentación** | Actualizar la fecha.  | Equipos | Durante la junta.  |
 |                                     | Actualizar el estado de los objetivos del proyecto.  | Equipos    | Durante la junta.  |
 |                                     | Actualizar los logros del proyecto.    | Equipos   | Durante la junta.  |
@@ -66,3 +67,4 @@ sidebar_position: 22
 | **1.0**             | Creación del proceso de reporte de estado                                                                                               | 31/3/2025  | Diego Fuentes                 |
 | **2.0**             | Corrección completa del proceso de reporte de estado para hacerlo ejecutable en pocas horas.                                            | 03/04/2025 | Diego Fuentes                 |
 | **2.1**             | Adición de columna de "Meta y práctica específica del CMMI" en la tabla de fases. Vinculación con OPF SP 2.4 "Comunicar los resultados" | 08/04/2025 | Carlos Iván Fonseca Mondragón |
+| **2.2**             | Adición de entrada, salida, paso de proceso y práctica de CMMI | 17/04/2025 | Ian Julián Estrada Castro |
