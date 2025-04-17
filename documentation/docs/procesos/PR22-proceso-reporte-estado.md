@@ -45,7 +45,7 @@ sidebar_position: 22
 |                     | Verificar las presentaciones de los otros equipos para aportar retroalimentación de los contenidos.   | Equipos.    | Últimos 30 minutos de la junta.          |  |
 |                                     | Practicar el reporte de estado en los primeros 45 minutos de la junta departamental para recibir retroalimentación. | Responsable de cada proyecto.    | Miércoles |
 | **Presentación**   | Presentar reporte a las partes interesadas y recibir retroalimentación | Presentadores | Miércoles | |
-|    | Documentar la retroalimentación obtenida de las partes interesadas y atenderlas para el siguiente reporte de estado | | Miércoles | |
+|    | Documentar la retroalimentación obtenida de las partes interesadas y atenderlas para el siguiente reporte de estado | PM's | Miércoles | |
 
 ---
 
