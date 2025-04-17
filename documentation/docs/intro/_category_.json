@@ -3,6 +3,7 @@
   "position": 1,
   "link": {
     "type": "generated-index",
-    "description": "Información general del departamento."
+    "description": "Información general del departamento.",
+    "slug": "/category/inicio"
   }
 }

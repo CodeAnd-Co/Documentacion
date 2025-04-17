@@ -90,7 +90,7 @@ const config = {
         },
         items: [
           {
-            to: "/docs/category/inicio-",
+            to: "/docs/category/inicio",
             label: "Inicio 🏡",
             position: "left",
           },
