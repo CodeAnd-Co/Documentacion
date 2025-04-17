@@ -44,6 +44,8 @@ sidebar_position: 22
 | **Validación de la presentación**   | Verificar la [checklist](https://docs.google.com/document/d/1skvIHlFhoJjGSoHj_fZ98gRAkRll7O8zY8Facau6crE/edit?usp=sharing) del reporte de estado.   | Equipos   | Últimos 30 minutos de la junta.          | **MA, SP 2.4**  |
 |                     | Verificar las presentaciones de los otros equipos para aportar retroalimentación de los contenidos.   | Equipos.    | Últimos 30 minutos de la junta.          |  |
 |                                     | Practicar el reporte de estado en los primeros 45 minutos de la junta departamental para recibir retroalimentación. | Responsable de cada proyecto.    | Miércoles |
+| **Presentación**   | Presentar reporte a las partes interesadas y recibir retroalimentación | Presentadores | Miércoles | |
+|    | Documentar la retroalimentación obtenida de las partes interesadas y atenderlas para el siguiente reporte de estado | | Miércoles | |
 
 ---
 
