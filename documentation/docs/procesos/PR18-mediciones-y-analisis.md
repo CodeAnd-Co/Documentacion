@@ -1,25 +1,9 @@
 ---
-title: PR24 Proceso para llevar a cabo métricas y análisis
-sidebar_position: 24
+title: PR18 Llevar a cabo métricas y análisis
+sidebar_position: 18
 ---
 
-# PR24 Proceso para llevar a cabo métricas y análisis
-
-**Última actualización:** 03/04/2025  
-**Versión:** 1.0
-
----
-
-### **Autores**
-
-| **Nombre**                     | **Rol**       |
-|-------------------------------|---------------|
-| Rommel Toledo C.              | Autor         |
-| Daniel Queijeiro Albo         | Colaborador   |
-| Emiliano Valdivia             | Colaborador   |
-| Emiliano Gomez                | Colaborador   |
-| Rodrigo                       | Colaborador   |
-| Paola María Garrido Montes    | Colaborador   |
+# Proceso para llevar a cabo métricas y análisis
 
 ---
 
@@ -70,9 +54,10 @@ sidebar_position: 24
 
 ---
 
-## Historial de Cambios
+## Historial de cambios
 
-| Autor                      | Descripción del cambio                | Versión |
-| -------------------------- | ------------------------------------- | ------- |
-| Rommel Toledo C.     | Definición del proceso | 1.0 |
-| Rommel Toledo C.     | Modificar el estilo y nombre de las prácticas específicas | 1.1 |
+| **Tipo de Versión** | **Descripción**                               | **Fecha** | **Colaborador**                 |
+| ------------------- | --------------------------------------------- | --------- | ------------------------------- |
+| **1.0**             | Definición del proceso    |   | Rommel Toledo C, Daniel Queijeiro, Paola Garrido, Rodrigo Benítez , Emiliano Valdivia, Emiliano Gómez |
+| **1.1**             |  Modificar el estilo y nombre de las prácticas específicas | 3/4/2025  | Rommel Toledo C |
+| **1.2**             | Refactorización | 18/4/2025  | Diego Fuentes |

@@ -1,9 +1,9 @@
 ---
-title: PR19 Proceso para Dailys
-sidebar_position: 18
+title: PR3 Dailys
+sidebar_position: 3
 ---
 
-# PR19: Proceso para Dailys
+# Proceso para Dailys
 
 ## Objetivo
 
@@ -44,3 +44,4 @@ sidebar_position: 18
 | **1.2** | Actualización de fases y prácticas CMMI según nuevo documento | 02/04/2025 | Mauricio Anguiano Juárez |
 | **1.2** | Actualización de fases y prácticas CMMI según nuevo documento | 02/04/2025 | Emiliano Valdivia Lara |
 | **1.3** | Inlusión de SP 2.1 del área de proceso MA | 08/04/2025 | Ian Julián Estrada Castro |
+| **1.4** | Refactorización | 18/04/2025 | Diego Fuentes |

@@ -1,21 +1,9 @@
 ---
-title: PR15 Juntas Grupales
-sidebar_position: 15
+title: PR5 Juntas Grupales
+sidebar_position: 5
 ---
 
-# Juntas Grupales
-
-**Última actualización:** 3 de marzo de 2025
-
----
-
-### Autores
-
-| Nombre                         | Rol   |
-| ------------------------------ | ----- |
-| Daniel Queijeiro Albo          | Autor |
-| Ángel Mauricio Ramírez Herrera | Autor |
-| Valeria Zúñiga Mendoza         | Autor |
+# Proceso de Juntas Grupales
 
 ---
 
@@ -53,6 +41,8 @@ sidebar_position: 15
 |                  | Definir próximos pasos y responsables                                                                                                                             | Presentadores de la junta | **PP, SP 1.5** (Identificación de tareas futuras)                         |
 |                  | Finalizar la junta dentro del tiempo establecido                                                                                                                  | Presentadores de la junta | **PMC, SP 1.6** (Gestión del cumplimiento del cronograma)                 |
 
+---
+
 ### Salidas
 
 1. Minuta de retroalimentación
@@ -66,3 +56,10 @@ sidebar_position: 15
 2. Porcentaje de asistencia
 3. Número de acuerdos alcanzados por junta
 4. Retroalimentación de los asistentes sobre la efectividad de la junta
+
+---
+
+| Versión | Descripción del cambio                | Fecha    | Colaborador                |
+| ------- | ------------------------------------- | -------- | -------------------------- |
+| 1.0     | Creación del proceso | 3/3/2025 | Daniel Queijeiro, Angel Ramírez, Valeria Zúñiga     |
+| 1.1     | Refactorización          | 18/04/2025 | Diego Fuentes |

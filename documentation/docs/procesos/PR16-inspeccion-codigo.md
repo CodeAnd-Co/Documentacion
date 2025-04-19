@@ -1,9 +1,9 @@
 ---
-title: PR26 Inspección de código
-sidebar_position: 26
+title: PR16 Inspección de código
+sidebar_position: 16
 ---
 
-# PR26 Proceso de Inspección de Código
+# Proceso de inspección de código
 
 :::warning Importante  
 Una inspección de código es una revisión manual del código fuente para verificar que cumple con las reglas de programación y diseño. Es costosa por lo que no es efectivo hacer una inspección en componentes pequeños. Lo mejor es hacer inspecciones en componentes **críticos** del proyecto. Un componente crítico es aquel que si tiene defectos, afecta los objetivos del proyecto.
@@ -23,6 +23,8 @@ Una inspección de código es una revisión manual del código fuente para verif
 2. Tamaño del componente a inspeccionar.
 3. Lista de revisión de código (Checklist).
 
+---
+
 ## Proceso
 
 | Fase              | Descripción    | Responsable             | Meta y práctica específica del CMMI    |
@@ -38,6 +40,8 @@ Una inspección de código es una revisión manual del código fuente para verif
 | **Estimación**    | Se hace una estimación del tiempo para hacer las correciones y se agrega al PVG sin asignarle valor | Inspectores | **PP SP 2.4** (Planificar los recursos del proyecto) |
 | **Corrección**    | Se hacen las correcciones de los defectos con base al log de defectos | Autor del código | |
 
+---
+
 ## Salidas
 
 1. Componente libre de defectos documentados en el log de defectos
@@ -49,3 +53,4 @@ Una inspección de código es una revisión manual del código fuente para verif
 | **Tipo de Versión** | **Descripción**                               | **Fecha**  | **Colaborador**           |
 | ------------------- | --------------------------------------------- | ---------- | ------------------------- |
 | **1.0**             | Primera versión del PR26                      | 10/04/2025 | Ian Julián Estrada Castro |
+| **1.2**             | Refactorización                               | 18/4/2025  | Diego Fuentes             |

@@ -1,9 +1,9 @@
 ---
-title: PR16 Gestión de Riesgos
-sidebar_position: 16
+title: PR8 Gestión de Riesgos
+sidebar_position: 8
 ---
 
-# Gestión de Riesgos
+# Proceso de gestión de Riesgos
 
 ---
 
@@ -69,10 +69,13 @@ Esta probabilidad puede ser estimada por el equipo con base en la experiencia y 
 
 ---
 
+## Historial de cambios
+
 | **Tipo de Versión** | **Descripción**                                                                                                                | **Fecha** | **Colaborador**                                   |
 | ------------------- | ------------------------------------------------------------------------------------------------------------------------------ | --------- | ------------------------------------------------- |
 | **1.0**             | Creacion de proceso de gestión de riesgos                                                                                      | 03/3/2025 | Rommel Toledo, Daniel Quejeiro, Mauricio Anguiano |
 | **1.1**             | Se agregó una fase en el proceso para el monitoreo de riesgos e información para la definición de requisitos y su probabilidad | 04/4/2025 | Angélica Ríos, Paola Garrido                      |
 | **1.2**             | Adición e identificacion de PMC 1.6 en los pasos del proceso                                                                   | 17/4/2025 | Nicolas Hood Figueroa                             |
+| **1.3**             | Refactorización                                                                   | 18/4/2025 | Diego Fuentes                             |
 
 ---

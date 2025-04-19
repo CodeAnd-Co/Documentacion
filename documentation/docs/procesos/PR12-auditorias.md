@@ -1,12 +1,9 @@
 ---
-title: PR17 Proceso para auditorías internas
-sidebar_position: 16
+title: PR12 Auditorías internas
+sidebar_position: 12
 ---
 
-# PR19 Proceso para auditorías internas
-
-**Última actualización:** 1 de abril de 2025  
-**Versión:** 2.2
+# Proceso para auditorías internas
 
 ---
 
@@ -44,4 +41,5 @@ sidebar_position: 16
 | ------------------- | ------------------------------------------- | --------- | ------------------------------- |
 | **1.0**             | Creación de proceso de auditorias   | 19/3/2025  | Juan Carlos Calderon, Mauricio Anguiano |
 | **1.1**             | Se agregó PPQA 2.2 al proceso     | 8/4/2025  | Juan Carlos Calderon, Mauricio Anguiano  |
+| **1.2**             | Refactorización                             | 18/4/2025 | Diego Fuentes                    |
 

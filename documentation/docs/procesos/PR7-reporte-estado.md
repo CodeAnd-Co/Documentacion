@@ -1,17 +1,19 @@
 ---
-title: PR22 Reporte de Estado
-sidebar_position: 22
+title: PR7 Reporte de Estado
+sidebar_position: 7
 ---
 
----
+# Proceso de Reporte de Estado
 
-# PR22 Reporte de Estado
+---
 
 ## Objetivo
 
 - Hacer reportes de estado que nos sirvan para conocer el estado de salud de los proyectos a todos los miembros del departamento.
 - Garantizar que se muestar contenido de valor para los miembros del departamento.
 - Reducir el tiempo que nos toma generar el reporte de estado.
+
+---
 
 ## Entradas
 
@@ -20,9 +22,9 @@ sidebar_position: 22
 - Matriz de riesgos.
 - [Plantilla de reporte de estado](https://www.canva.com/design/DAGjbEDjp00/0OWUTXZrhELqB7nTOjtClA/edit?utm_content=DAGjbEDjp00&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 
-## Proceso
+---
 
-### Fases y Descripción
+## Proceso
 
 | Fase                                 | Actividad                                                                                                                                                                                                                                                                                                             | Responsables                  | Día de ejecución                      | Meta y práctica específica del CMMI                                                                           |
 | ------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------- | ------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
@@ -72,3 +74,4 @@ sidebar_position: 22
 | **2.1**             | Adición de columna de "Meta y práctica específica del CMMI" en la tabla de fases. Vinculación con OPF SP 2.4 "Comunicar los resultados" | 08/04/2025 | Carlos Iván Fonseca Mondragón |
 | **2.2**             | Adición de entrada, salida, paso de proceso y práctica de CMMI                                                                          | 17/04/2025 | Ian Julián Estrada Castro     |
 | **2.3**             | Adición e identificacion de PMC 1.6 en los pasos del proceso CMMI                                                                       | 17/04/2025 | Nicolas Hood Figueroa         |
+| **2.4**             | Refactorización,                                                                       | 18/04/2025 | Diego Fuentes         |

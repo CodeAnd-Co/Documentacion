@@ -1,13 +1,11 @@
 ---
-title: PR2 Estimación de alcance y coste del proyecto (WBS)
-sidebar_position: 2
+title: PR26 Estimación de alcance y coste del proyecto.
+sidebar_position: 26
 ---
 
-# Estimación de alcance y coste del proyecto (WBS)
+# Proceso de estimación de alcance y coste del proyecto.
 
 ---
-
-
 
 ### Objetivo
 
@@ -72,7 +70,7 @@ El WBS se debe crear al inicio del proceso de planificación, antes de estimar e
 
 ----
 
-## Registro de cambios
+## Historial de Cambios
 
 | **Tipo de Versión** | **Descripción**                               | **Fecha** | **Colaborador**                                          |
 | ------------------- | --------------------------------------------- | --------- | -------------------------------------------------------- |
@@ -80,3 +78,4 @@ El WBS se debe crear al inicio del proceso de planificación, antes de estimar e
 | **1.2**             | Eliminar proceso de juntas grupales duplicado | 6/3/2025  | Carlos Iván Fonseca Mondragón|
 | **1.3**             | Agregar práctica de PMC 1.1                   | 1/4/2025  | Daniel Contreras Chávez, Juan Pablo Chávez Leal          |
 | **1.4**             | Agregar descrpción y cambio de nombre         | 7/4/2025  | Galo Alejandro del Rio Viggiano                          |
+| **2.0**             | Cambio en la entrada, eliminación del primer paso, refactorización. | 18/4/2025  | Diego Isaac Fuentes Juvera                          |

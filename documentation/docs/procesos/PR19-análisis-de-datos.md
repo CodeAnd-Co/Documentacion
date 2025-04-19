@@ -1,9 +1,9 @@
 ---
-title: PR26 Análisis de datos recopilados
-sidebar_position: 25
+title: PR19 Análisis de Datos Recopilados
+sidebar_position: 19
 ---
 
-# Análisis de datos recopilados
+# Proceso de Análisis de Datos Recopilados
 
 ---
 
@@ -17,6 +17,8 @@ sidebar_position: 25
 ### Entradas
 
 1. Datos recopilados de las métricas establecidas en el repositorio.
+
+---
 
 ### Proceso
 
@@ -36,8 +38,11 @@ sidebar_position: 25
 1. Documentos de análisis de la métrica.
 2. Repositorio de métricas actualizado (Si se hacen cambios).
 
+---
+
 ## Historial de Cambios
 
 | Tipo de versión                   |   Descripción    | Fecha |  Colaborador   |
 | ----------------------- | ----------------------------------- | ------- | --------|
 |  1.0   | Definición de proceso para analizar datos obtenidos| 10/04/2025   | Emiliano Valdivia Lara |
+| **1.1**             | Refactorización | 18/4/2025  | Diego Fuentes |
