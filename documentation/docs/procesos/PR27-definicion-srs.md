@@ -1,15 +1,17 @@
 ---
-title: PR3 Proceso de Definición de SRS
-sidebar_position: 3
+title: PR27 Definición de SRS
+sidebar_position: 27
 ---
 
 # Proceso de Definición de SRS
 
-**Versión:** 4.3
+---
 
 ## Objetivo
 
 Definir, documentar y validar los requisitos del software, asegurando su alineación con las necesidades del cliente y la viabilidad técnica del desarrollo.
+
+---
 
 ## Entradas
 
@@ -17,9 +19,9 @@ Definir, documentar y validar los requisitos del software, asegurando su alineac
 2. Entrevistas con stakeholders
 3. Benchmarking de soluciones similares
 
-## Proceso
+---
 
-### Fases del proceso
+## Proceso
 
 | **Fase**                                        | **Descripción**                                                                                                                                                                                       | **Responsables**   | **Meta y práctica específica del CMMI**                                                                             |
 | ----------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------ | ------------------------------------------------------------------------------------------------------------------- |
@@ -67,6 +69,8 @@ Para garantizar que los requisitos definidos sean viables y valiosos para el pro
 
 1. SRS validado por el socio.
 
+---
+
 ## Historial de cambios
 
 | **Tipo de Versión** | **Descripción**                                              | **Fecha** | **Colaborador**                                |
@@ -76,3 +80,4 @@ Para garantizar que los requisitos definidos sean viables y valiosos para el pro
 | **4.1**             | Eliminación de práctica 3.3                                  | 23/3/2025 | Juan Pablo Chávez Leal                         |
 | **4.2**             | Se mapeó la práctica PP SP 3.3                               | 01/4/2025 | Mariana Juárez Ramírez                         |
 | **4.3**             | Definición de cuándo y cómo decidimos qué requisitos aceptar | 07/4/2025 | Angélica Ríos Cuentas                          |
+| **4.4**             | Refactorización                                              | 18/4/2025 | Diego Fuentes Juvera                           |

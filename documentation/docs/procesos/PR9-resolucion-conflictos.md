@@ -1,21 +1,9 @@
 ---
-title: PR14 Resolución de conflictos
-sidebar_position: 14
+title: PR9 Resolución de conflictos
+sidebar_position: 9
 ---
 
-# Resolución de conflictos
-
-**Última actualización:** 5 de marzo de 2025
-
----
-
-### Autores
-
-| Nombre                     | Rol   |
-| -------------------------- | ----- |
-| Diego Isaac Fuentes Juvera | Autor |
-| Juan Pablo Chávez Leal     | Autor |
-| Mauricio Angiano Juárez    | Autor |
+# Proceso de resolución de conflictos
 
 ---
 
@@ -141,9 +129,13 @@ Reporte de Conflicto que incluye:
 2. La resolución es aceptada por al menos el 80% de las partes involucradas según la encuesta de percepción.
 3. No hay reincidencia del mismo conflicto en un período de 7 días.
 
+---
+
 ## Historial de Cambios
 
-| Autor                       | Descripción del cambio                                                       | Versión |
-| --------------------------- | ---------------------------------------------------------------------------- | ------- |
-| Juan Eduardo Rosas Cerón    | Se añadió tiempo de respuesta máximo y proceso de resolución de conflictos   | 1.1     |
-| Pablo Hazael Hurtado Mireles | Corrección Gramatical y Añadir las 4C's                                       | 1.2     |
+| **Tipo de Versión** | **Descripción**                                                                                                                         | **Fecha**  | **Colaborador**               |
+| ------------------- | --------------------------------------------------------------------------------------------------------------------------------------- | ---------- | ----------------------------- |
+| **1.0**             | Creación del proceso de resolución de conflictos                                                                                        |   | Diego Fuentes, Juan Pablo Chávez, Mauricio Angiano |
+| **2.0**             | Se añadió tiempo de respuesta máximo y proceso de resolución de conflictos                                            | | Juan Eduardo Rosas  |
+| **2.1**             | Corrección Gramatical y Añadir las 4C's                                            | 05/03/2025 | Pablo Hazael Hurtado   |
+| **2.2**             | Refactorización                                                                       | 18/04/2025 | Diego Fuentes         |

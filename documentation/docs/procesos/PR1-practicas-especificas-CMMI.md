@@ -1,22 +1,9 @@
 ---
-title: PR1 Proceso para lograr prácticas específicas del CMMI
+title: PR1 Lograr prácticas específicas del CMMI
 sidebar_position: 1
 ---
 
-# PR1 Proceso para lograr prácticas específicas del CMMI
-
-**Última actualización:** 28 de marzo de 2025
-**Versión:** 2.1
-
----
-
-### Autores
-
-| Nombre                     | Rol         |
-| -------------------------- | ----------- |
-| Valeria Zúñiga Mendoza     | Autor       |
-| Diego Isaac Fuentes Juvera | Modificador |
-| Paola María Garrido Montes | Modificador |
+# Proceso para lograr prácticas específicas del CMMI
 
 ---
 
@@ -29,6 +16,8 @@ sidebar_position: 1
 ### Entradas
 
 1. Práctica específica asignada.
+
+---
 
 ### Proceso
 
@@ -43,15 +32,21 @@ sidebar_position: 1
 | **Actualización**           | Modificar el plan departamental para reflejar la implementación de la práctica <u>_[Plan departamental](https://docs.google.com/spreadsheets/d/1yvqCf1wp_6ic0Xqwd4LDwk_sMfGdgWF-S9FTfnieVZQ/edit?usp=sharing)_</u>.                                                                                                                                     | **PP, SP 1.5** (Asegurar el alineamiento entre el trabajo del proyecto y los requisitos). |
 | **Institucionalización** | Añadir espacio de la duración necesaria en la agenda de la siguiente <u>_[junta departamental](https://drive.google.com/drive/folders/1uW11TAX4Z0pN9h2i6CwmBCDxTntzh1AS?usp=drive_link)_</u> para dar a conocer los nuevos acuerdos. | PP 3.3 |
 
+---
+
 ### Salidas
 
 1. Práctica específica del CMMI definida, documentada e institucionalizada.
 
+---
+
 ## Historial de Cambios
 
-| Autor                      | Descripción del cambio                 | Versión |
-| -------------------------- | -------------------------------------- | ------- |
-| Valeria Zuñiga Mendoza     | Proceso exclusivo para SP de CMMI      | 2.0     |
-| Paola María Garrido Montes | Proceso exclusivo para SP de CMMI      | 2.0     |
-| Valeria Zuñiga Mendoza     | Correcciones y modificaciones de pasos | 2.1     |
-| Diego Isaac Fuentes Juvera | Pasos para institucionalizar el proceso | 3.0 |
+
+| **Tipo de Versión** | **Descripción**                               | **Fecha** | **Colaborador**                 |
+| ------------------- | --------------------------------------------- | --------- | ------------------------------- |
+| **2.0**             | Proceso exclusivo para SP de CMMI   |   | Valeria Zuñiga, Paola Garrido  |
+| **2.1**             | Correcciones y modificaciones de pasos | 28/03/2025  | Valeria Zuñiga |
+| **3.0**             | Pasos para institucionalizar el proceso |   | Diego Fuentes |
+| **3.1**             | Refactorización | 18/4/2025  | Diego Fuentes |
+

@@ -1,33 +1,10 @@
 ---
-title: PR4 Proceso para hacer un plan de proyecto
-sidebar_position: 4
+title: PR24 Hacer un plan de proyecto
+sidebar_position: 24
 ---
 
 # Proceso para hacer un plan de proyecto
 
-**Última actualización:** 8 de abril de 2025.
-
----
-
-### Autores
-
-| Nombre                        | Rol         |
-| ----------------------------- | ----------- |
-| Valeria Zúñiga Mendoza        | Autor       |
-| Max Toscano Díaz              | Colaborador |
-| Carlos Iván Fonseca Mondragón | Colaborador |
-| Mariana Juárez Ramírez        | Colaborador |
-| Sofía Osorio Suárez           | Colaborador |
-| Diego Alfaro Pinto            | Colaborador |
-| Arturo Sánchez Rodríguez      | Colaborador |
-| Juan Eduardo Rosas Cerón      | Colaborador |
-| Pablo Hazael Hurtado Mireles  | Colaborador |
-| Juan Carlos Calderon García   | Colaborador |
-| Juan Pablo Chávez Leal        | Modificador |
-| Rommel Toledo Crespo          | Modificador |
-| Miguel Angel Uribe Esquivel   | Modificador |
-| Daniel Contreras Chávez       | Modificador |
-| Juan Pablo Chávez Leal        | Modificador |
 ---
 
 ### Objetivo
@@ -42,6 +19,8 @@ sidebar_position: 4
 1. Lista de requisitos del proyecto.
 2. Work Items List.
 3. Datos de recursos.
+
+---
 
 ### Proceso
 
@@ -68,6 +47,8 @@ sidebar_position: 4
 | **Monitoreo diario**                              | En las dailys establecer responsables en el plan de proyectos, actualizar el estado de las tareas, según el proyecto x de Daily meetings.                                                                                                                                                                                                                                      | Team Lead, Miembros del equipo               | **PMC SP 1.1** (Monitorizar los parámetros de planificación del proyecto), **PMC, SP 1.2** (Monitorizar los compromisos)                                                                                                              |
 | **Replanificación**                               | Para identificar si vamos atrasados, se calcula el valor de SPI con la fórmula: `SPI = valor real acumulado / valor planeado`Después se calcula la desviación con la fórmula:` (1 - SPI) * 100`. Interpretación de la desviación:- **0-15%**: Aún es factible el plan.- **15-30%**: Se deben tomar decisiones drásticas.- **Más del 30%**: Se necesita un nuevo plan.          | Team Lead                                    | **PP, SP 2.1** (Establecer el presupuesto y el calendario) **PP, SP 3.2** (Conciliar los niveles de trabajo y de recursos)                                 |
 
+---
+
 ### Salidas
 
 1. **Plan de proyecto** documentado y alineado con CMMI.
@@ -77,12 +58,16 @@ sidebar_position: 4
 5. **Documentación de desviaciones y replanificación** en caso de ser necesario.
 6. **Plan de Entrega** con fechas de finalización de las fases y los hitos.
 
-## Registro de cambios
+---
 
-| Autor                         | Descripción del cambio                           | Versión |
-| ----------------------------- | ------------------------------------------------ | ------- |
-| Carlos Iván Fonseca Mondragón | Correcciones de ortografía y redacción           | 1.1     |
-| Juan Pablo Chávez Leal        | Adición del formato de Compromiso con el plan    | 1.2     |
-| Carlos Iván Fonseca Mondragón | Adición de la hoja de Disponibilidad de Recursos | 1.3     |
-| Daniel C. y Juan Pablo C.     | Añadir PMC 1.1 a fases faltantes                 | 1.4     |
-| Mariana Juárez Ramírez        | Agregar SG 3.1 de PP                             | 1.5     |
+## Historial de Cambios
+
+| **Tipo de Versión** | **Descripción**                               | **Fecha** | **Colaborador**                 |
+| ------------------- | --------------------------------------------- | --------- | ------------------------------- |
+| **1.0**             | Creación del proceso   | 4/3/2025 | Valeria Zúñiga, Max Toscano, Carlos Fonseca, Mariana Juárez, Sofía Osorio, Diego Alfaro, Arturo Sánchez, Juan Eduardo Rosas, Pablo Hurtado, Juan Carlos Calderón   |
+| **1.1**             | Correcciones de ortografía y redacción   |  |  Carlos Iván Fonseca Mondragón    |
+| **1.2**             | Adición del formato de Compromiso con el plan   |  | Juan Pablo Chávez Leal, Rommel Toledo Crespo    |
+| **1.3**             | Adición de la hoja de Disponibilidad de Recursos   |  | Carlos Iván Fonseca Mondragó, Miguel Angel Uribe Esquivel    |
+| **1.4**             | Añadir PMC 1.1 a fases faltantes  |  | Daniel C. y Juan Pablo C.   |
+| **1.5**             | Agregar SG 3.1 de PP   | 8/4/2025 | Mariana Juárez Ramírez   |
+| **1.6**             | Refactorización | 18/4/2025  | Diego Fuentes |

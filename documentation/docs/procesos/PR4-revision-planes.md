@@ -1,26 +1,9 @@
 ---
-title: PR7 Revisión de Planes de Proyecto
-sidebar_position: 7
+title: PR4 Revisión de Planes de Proyecto
+sidebar_position: 4
 ---
 
-# Revisión de Planes de Proyecto
-
-**Última actualización:** 8 de abril de 2025
-**Versión:** 1.4
-
----
-
-### Autor
-
-| Nombre                        | Rol      |
-| ----------------------------- | -------- |
-| Carlos Iván Fonseca Mondragón | Autor    |
-| Juan Eduardo Rosas Ceron      | Co-Autor |
-| Pablo Hazael Hurtado Mireles  | Co-Autor |
-| Juan Carlos Calderón García   | Co-Autor |
-| Daniel Contreras Chávez       | Modificador |
-| Juan Pablo Chávez Leal        | Modificador |
-| Mariana Juárez Ramírez        | Modificador |
+# Proceso de Revisión de Planes de Proyecto
 
 ---
 
@@ -70,11 +53,13 @@ sidebar_position: 7
 2. **Variación en estimaciones de tiempo** antes y después de ajustes.
 3. **Impacto de los cambios** medido en efectividad y cumplimiento del cronograma.
 
+---
+
 ## Registro de cambios
 
-| Autor                         | Descripción del cambio                 | Versión |
-| ----------------------------- | -------------------------------------- | ------- |
-| Carlos Iván Fonseca Mondragón | Correcciones de ortografía y redacción | 1.1     |
-| Carlos Iván Fonseca Mondragón | Correcciones de ortografía y redacción | 1.2     |
-| Daniel C y Juan Pablo C       | Añadir SP 1.1 de PMC                   | 1.3     |
-| Mariana Juárez Ramírez        | Añadir SP 3.1 de PP                    | 1.4     |
+| **Tipo de Versión** | **Descripción**                               | **Fecha** | **Colaborador**                 |
+| ------------------- | --------------------------------------------- | --------- | ------------------------------- |
+| **1.1**             | Correcciones de ortografía y redacción   |   | Carlos Iván Fonseca Mondragón |
+| **1.2**             | Añadir SP 1.1 de PMC | | Daniel C y Juan Pablo C |
+| **1.3**             | Añadir SP 3.1 de PP | 8/4/2025  | Mariana Juárez Ramírez  |
+| **1.4**             | Refactorización | 18/4/2025  | Diego Fuentes  |

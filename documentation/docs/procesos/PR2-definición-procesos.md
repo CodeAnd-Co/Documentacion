@@ -1,9 +1,9 @@
 ---
-title: PR0 Proceso de generación de procesos
-sidebar_position: 0
+title: PR2 Definición de procesos
+sidebar_position: 2
 ---
 
-# PR0 Proceso de generación de procesos
+# Proceso de definición de procesos
 
 ---
 
@@ -35,7 +35,7 @@ sidebar_position: 0
 | **Implementación**                     | Comunicar al departamento en Discord (canal “Procesos/Experimentos”), indicando: Categoría: proceso o experimento (Si no está implementado y aún no es un proceso formal, es un experimento). Categoría del CMMI a la que pertenece. Link al documento publicado. | Miembro del equipo | -                                                                                                                          |
 | **Registro y seguimiento**             | Registrar el proceso completando todos los campos definidos en el formato de <u>_[Registro de procesos](https://docs.google.com/spreadsheets/d/18SHmBFPBfMzNBGKS2MCTInfWZjIuCaOdzfeRAsxTqlY/edit?usp=sharing)_</u>.                                               | Miembro del equipo | -                                                                                                                          |
 
-### Salidas
+## Salidas
 
 1. Proceso del departamento estandarizado.
 2. Proceso alineado con las necesidades y objetivos organizacionales.
@@ -48,4 +48,5 @@ sidebar_position: 0
 | 2.0     | Proceso inicial para generar procesos |          | Paola María Garrido Monte  |
 | 2.1     | Añadir la plantilla base de procesos  |          | Valeria Zuñiga Mendoza     |
 | 2.2     | Cambios de lógica para docusaurus     |          | Juan Pablo Chávez Leal     |
-| 2.3     | Cambio al control de cambios          | 4/2/2025 | Miguel Angel, Diego Alfaro |
+| 2.3     | Cambio al control de cambios          | 18/04/2025 | Miguel Angel, Diego Alfaro |
+| 2.4     | Refactorización          | 18/04/2025 | Diego Fuentes |

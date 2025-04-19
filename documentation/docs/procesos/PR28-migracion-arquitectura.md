@@ -1,22 +1,9 @@
 ---
-title: PR11 Cambio y migración de arquitectura
-sidebar_position: 11
+title: PR28 Cambio y migración de arquitectura
+sidebar_position: 28
 ---
 
-# Cambio y migración de arquitectura
-
-**Última actualización** 01 de abril del 2025 por Daniel C y Juan Pablo C
-
----
-
-### Autores
-
-| Nombre                      | Rol      |
-| --------------------------- | -------- |
-| Miguel Angel Uribe Esquivel | Autor    |
-| Emiliano Valdivia Lara      | Co-autor |
-| Daniel Contreras Chávez     | Modificador |
-| Juan Pablo Chávez Leal      | Modificador |
+# Proceso de cambio y migración de arquitectura
 
 ---
 
@@ -54,9 +41,13 @@ sidebar_position: 11
 1. Manual de Arquitectura actualizado.
 2. Sistema Migrado.
 
+---
+
 ## Historial de Cambios
 
-| Autor                   | Descripción del cambio              | Versión |
-| ----------------------- | ----------------------------------- | ------- |
-| Angélica Ríos Cuentas   | Definición de cómo decidimos qué requisitos aceptar| 1.1
-| Daniel C y Juan Pablo C | Añadir SP 1.1 de PMC                | 1.2   |   
+| **Tipo de Versión** | **Descripción**                               | **Fecha** | **Colaborador**                 |
+| ------------------- | --------------------------------------------- | --------- | ------------------------------- |
+| **1.0**             | Creación del proceso   |  | Miguel Uribe, Emiliano Valdivia    |
+| **1.1**             | Definición de cómo decidimos qué requisitos aceptar   | | Angélica Ríos Cuentas    |
+| **1.2**             | Añadir SP 1.1 de PMC   | 1/4/2025 | Juan Pablo C y Daniel C |
+| **1.3**             | Refactorización | 18/4/2025  | Diego Fuentes |

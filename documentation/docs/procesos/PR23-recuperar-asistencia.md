@@ -1,20 +1,9 @@
 ---
-title: PR13 Recuperar Asistencias
-sidebar_position: 13
+title: PR23 Recuperar Asistencias
+sidebar_position: 23
 ---
 
-# Recuperar Asistencia
-
-**Última actualización:** 4 de marzo de 2025 por Nicolas y Hiram.
-
----
-
-### Autores
-
-| Nombre                | Rol   |
-| --------------------- | ----- |
-| Nicolas Hood Figueroa | Autor |
-| Hiram Mendoza Lopez   | Autor |
+# Proceso para Recuperar Asistencias
 
 ---
 
@@ -48,8 +37,19 @@ sidebar_position: 13
 1. Documento con el registro de la recuperación de la asistencia.
 2. Resolución de la recuperación de la asistencia.
 
+---
+
 ### Métricas
 
 1. Número de asistencias recuperadas.
 2. Tiempo de respuesta a la solicitud de recuperación de asistencia.
 3. Porcentaje de solicitudes aprobadas.
+
+---
+
+## Historial de Cambios
+
+| **Tipo de Versión** | **Descripción**                               | **Fecha** | **Colaborador**                 |
+| ------------------- | --------------------------------------------- | --------- | ------------------------------- |
+| **1.0**             | Creación del proceso   | 4/3/2025 | Nicolas Hood, Hiram Mendoza    |
+| **1.1**             | Refactorización | 18/4/2025  | Diego Fuentes |

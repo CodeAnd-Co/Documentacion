@@ -30,8 +30,8 @@ Se utiliza la siguiente convención para enumerar las versiones:
 
 | **Tipo de Versión**     | **Descripción**                                                                                | **Fecha**                           | **Colaborador**                                |
 | ----------------------- | ---------------------------------------------------------------------------------------------- | ----------------------------------- | ---------------------------------------------- |
-| **Versión Mayor (x.0)** | Se asigna cuando se agregan o eliminan secciones completas de la documentación.                | La fecha de modificacion / creacion | Colaborador o colaboradores de la modificacion |
-| **Versión Menor (1.x)** | Se asigna cuando se realizan ajustes menores, como detalles de redacción, ortografía o estilo. | La fecha de modificacion / creacion | Colaborador o colaboradores de la modificacion |
+| **Versión Mayor (x.0)** | Se asigna cuando se agregan o eliminan secciones completas de la documentación.                | La fecha de modificacion / creacion (DD/MM/YYYY) | Colaborador o colaboradores de la modificacion |
+| **Versión Menor (1.x)** | Se asigna cuando se realizan ajustes menores, como detalles de redacción, ortografía o estilo. | La fecha de modificacion / creacion (DD/MM/YYYY) | Colaborador o colaboradores de la modificacion |
 
 ## **3. Ejemplo de Historial de cambios**
 
@@ -40,7 +40,7 @@ Se utiliza la siguiente convención para enumerar las versiones:
 | **Tipo de Versión** | **Descripción**                         | **Fecha** | **Colaborador**                 |
 | ------------------- | --------------------------------------- | --------- | ------------------------------- |
 | **1.0**             | Creacion de plantilla de presentaciones | 1/2/2025  | Daniel Contreras, Rommel Toledo |
-| **1.1**             | Se cambio el color de la diapositiva 1  | 4/2/2025  | Diego Alfaro, Miguel Angel      |
+| **1.1**             | Se cambio el color de la diapositiva 1  | 24/2/2025  | Diego Alfaro, Miguel Angel      |
 
 ---
 
@@ -52,3 +52,5 @@ Siguiendo los pasos mencionados en esta guía, asegurarás una gestión más lim
 | ------------------- | --------------------------------------------- | --------- | ------------------------------- |
 | **1.0**             | Creacion de la guia de historial de cambios   | 3/3/2025  | Daniel Contreras, Rommel Toledo |
 | **2.0**             | Creacion del estandar de historial de cambios | 3/3/2025  | Miguel Angel, Diego Alfaro      |
+| **2.1**             | Cambio en el formato de la fecha              | 18/4/2025  | Diego Fuentes |
+
