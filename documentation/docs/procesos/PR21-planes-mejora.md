@@ -1,22 +1,9 @@
 ---
-title: PR20 Proceso de establecimiento de planes de mejora
-sidebar_position: 20
+title: PR21 Establecimiento de planes de mejora
+sidebar_position: 21
 ---
 
-# PR20 Proceso de establecimiento de planes de mejora
-
-**Última actualización:** 1 de Abril de 2025.
-Versión: 1.2
-
----
-
-### Autores
-
-| Nombre                        | Rol   |
-| ----------------------------- | ----- |
-| Carlos Iván Fonseca Mondragón | Autor |
-| Juan Pablo Chávez Leal        | Modificador |
-| Daniel Contreras Chávez       | Modificador |
+# Proceso de establecimiento de planes de mejora
 
 ---
 
@@ -32,6 +19,8 @@ Versión: 1.2
 2. Necesidades de mejora de procesos.
 3. Estrategias o aproximaciones de mejora de procesos.
 
+---
+
 ### Proceso
 
 | **Fase**                                     | **Descripción**                                                                                                                                                                                                                   | **Responsable**                       | **Meta y práctica específica del CMMI** |
@@ -44,6 +33,8 @@ Versión: 1.2
 | **Publicación y comunicación**               | Publicar el plan en la wiki de Docusaurus y comunicar en Discord (canal "Procesos/Experimentos"), incluyendo: categoría del CMMI y link al documento.                                                                             | Propietarios del proceso              | **OPF, SP 2.1. OPD, SP 1.1**            |
 | **Implementación y seguimiento**             | Llevar a cabo la implementación del plan y realizar un seguimiento continuo de su eficacia.                                                                                                                                       | Profesionales del proceso             | **OPF, SP 2.1**                         |
 
+---
+
 ### Salidas
 
 1. Plan de acción de proceso documentado y aprobado.
@@ -51,10 +42,13 @@ Versión: 1.2
 3. Compromiso de las partes interesadas con el plan de acción.
 4. Registro formal de mejoras de procesos.
 
-## Registro de cambios
+---
 
-| Autor                         | Descripción del cambio              | Versión |
-| ----------------------------- | ----------------------------------- | ------- |
-| Carlos Iván Fonseca Mondragón | Creación del documento              | 1.0     |
-| Carlos Iván Fonseca Mondragón | Cambio de título y de dependencias  | 1.1     |
-| Juan Pablo C. y Daniel C.     | Adición de prácticas específicas PMC| 1.2     |
+## Historial de Cambios
+
+| **Tipo de Versión** | **Descripción**                               | **Fecha** | **Colaborador**                 |
+| ------------------- | --------------------------------------------- | --------- | ------------------------------- |
+| **1.0**             | Creación del proceso   |  | Carlos Iván Fonseca Mondragón |
+| **1.1**             | Cambio de título y de dependencias |   |  Carlos Iván Fonseca Mondragón  |
+| **1.2**             |  Adición de prácticas específicas PMC | 1/4/2025  | Juan Pablo C. y Daniel C. |
+| **1.3**             | Refactorización | 18/4/2025  | Diego Fuentes |

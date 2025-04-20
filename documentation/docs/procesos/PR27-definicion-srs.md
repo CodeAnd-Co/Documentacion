@@ -1,15 +1,17 @@
 ---
-title: PR3 Proceso de Definición de SRS
-sidebar_position: 3
+title: PR27 Definición de SRS
+sidebar_position: 27
 ---
 
 # Proceso de Definición de SRS
 
-**Versión:** 4.3
+---
 
 ## Objetivo
 
 Definir, documentar y validar los requisitos del software, asegurando su alineación con las necesidades del cliente y la viabilidad técnica del desarrollo.
+
+---
 
 ## Entradas
 
@@ -17,9 +19,9 @@ Definir, documentar y validar los requisitos del software, asegurando su alineac
 2. Entrevistas con stakeholders
 3. Benchmarking de soluciones similares
 
-## Proceso
+---
 
-### Fases del proceso
+## Proceso
 
 | **Fase**                                        | **Descripción**                                                                                                                                                                                       | **Responsables**   | **Meta y práctica específica del CMMI**                                                                             |
 | ----------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------ | ------------------------------------------------------------------------------------------------------------------- |
@@ -27,7 +29,7 @@ Definir, documentar y validar los requisitos del software, asegurando su alineac
 |                                                 | Generar una tabla con la información del proveedor, su rol, la autoridad que tiene, el tipo de requisitos que provee, y el método de comunicación que se tiene con él.                                | Product Owner      | **REQM SP 1.1** (Comprender los requisitos), **PP, SP 2.6** (Planificar la involucración de las partes interesadas) |
 |                                                 | Generar un documento que establezca y unifique los compromisos y responsabilidades asumidas por el cliente y por los miembros del proyecto respectivo.                                                | Product Owner      | **PP, SP 3.3** (Identificar el soporte necesario y negociar los compromisos con las partes interesadas relevantes)  |
 |                                                 | Durante las primeras 4 semanas realizar juntas con los provedores de requisitos usando el método de comunicación correspondiente para recopilar la información necesaria para definir requisitos.     | Product Owner      | **REQM SP 1.1** (Comprender los requisitos), **PP, SP 2.6** (Planificar la involucración de las partes interesadas) |
-| **Recopilación y Priorización**                 | En base a la información recopilada definir requisitos del proyecto consulta la sección [_¿Cómo se decide qué requisitos aceptar?_](/docs/procesos/proceso-srs#cómo-se-decide-qué-requisitos-aceptar) | Equipo de producto | **REQM SP 1.1** (Comprender los requisitos)                                                                         |
+| **Recopilación y Priorización**                 | En base a la información recopilada definir requisitos del proyecto consulta la sección [_¿Cómo se decide qué requisitos aceptar?_](/docs/procesos/PR27-definicion-srs#cómo-se-decide-qué-requisitos-aceptar) | Equipo de producto | **REQM SP 1.1** (Comprender los requisitos)                                                                         |
 |                                                 | Revisar y organizar las historias de usuario según su relevancia y viabilidad.                                                                                                                        | Equipo de Producto | **RD, SP 1.1** (Conocer las necesidades de las partes interesadas)                                                  |
 |                                                 | Aplicar la técnica MoSCoW para priorizar.                                                                                                                                                             | Equipo de Producto |                                                                                                                     |
 | **Identificación de Funcionalidades Clave**     | Desglosar las historias de usuario en funcionalidades específicas.                                                                                                                                    | Equipo de Producto | **RD, SP 3.2** (Establecer y mantener una definición de la funcionalidad requerida)                                 |
@@ -67,6 +69,8 @@ Para garantizar que los requisitos definidos sean viables y valiosos para el pro
 
 1. SRS validado por el socio.
 
+---
+
 ## Historial de cambios
 
 | **Tipo de Versión** | **Descripción**                                              | **Fecha** | **Colaborador**                                |
@@ -76,3 +80,4 @@ Para garantizar que los requisitos definidos sean viables y valiosos para el pro
 | **4.1**             | Eliminación de práctica 3.3                                  | 23/3/2025 | Juan Pablo Chávez Leal                         |
 | **4.2**             | Se mapeó la práctica PP SP 3.3                               | 01/4/2025 | Mariana Juárez Ramírez                         |
 | **4.3**             | Definición de cuándo y cómo decidimos qué requisitos aceptar | 07/4/2025 | Angélica Ríos Cuentas                          |
+| **4.4**             | Refactorización                                              | 18/4/2025 | Diego Fuentes Juvera                           |

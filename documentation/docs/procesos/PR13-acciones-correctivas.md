@@ -1,21 +1,9 @@
 ---
-title: PR18 Proceso para acciones correctivas
-sidebar_position: 17
+title: PR13 Acciones correctivas
+sidebar_position: 13
 ---
 
-# PR18 Proceso para acciones correctivas
-
-**Última actualización:** 31 de marzo de 2025
-**Versión:** 1.1
-
----
-
-### Autores
-
-| Nombre                     | Rol   |
-| -------------------------- | ----- |
-| Valeria Zúñiga Mendoza     | Autor |
-| Paola María Garrido Montes | Autor |
+# Proceso para acciones correctivas
 
 ---
 
@@ -32,6 +20,8 @@ sidebar_position: 17
 3. Propuesta de mejora aprobada.
 4. Cambio en las necesidades u objetivos de la empresa.
 
+---
+
 ### Proceso
 
 | Fase                         | Descripción                                                                                                                                                                                                                                                                                         | Responsable                            | Meta y práctica específica del CMMI                                                                                                |
@@ -45,16 +35,20 @@ sidebar_position: 17
 |                              | Se revisa el cambio implementado con una revisión entre pares. Se monitorea su efectividad en la siguiente iteración. Si el problema persiste, se reevalúa el ajuste.                                                                                                                               | SEPG de la meta específica relacionada | -                                                                                                                                  |
 |                              | Se reevalúa el riesgo en la matriz de riesgos.                                                                                                                                                                                                                                                      | SEPG de la meta específica relacionada | **RSKM, SP 3.2** (Implementar los planes de mitigación de riesgos), **RSKM, SP 2.2** (Evaluar, clasificar y priorizar los riesgos) |
 
+---
+
 ### Salidas
 
 1. Proceso actualizado.
 2. Historial de cambios reflejado en la documentación.
 3. Corrección validada y en funcionamiento.
 
-## Historial de Cambios
+---
 
-| Autor                      | Descripción del cambio                    | Versión |
-| -------------------------- | ----------------------------------------- | ------- |
-| Valeria Zuñiga Mendoza     | Proceso inicial para acciones correctivas | 1.0     |
-| Paola María Garrido Montes | Proceso inicial para acciones correctivas | 1.0     |
-| Ian Julián Estrada Castro  | Se agregó enlace y práctica OPD SP 1.3    | 1.1     |
+## Historial de cambios
+
+| **Tipo de Versión** | **Descripción**                             | **Fecha** | **Colaborador**                 |
+| ------------------- | ------------------------------------------- | --------- | ------------------------------- |
+| **1.0**             | Proceso inicial para acciones correctivas   |   | Paola Garrido, Valeria Zúñiga |
+| **1.1**             | Se agregó enlace y práctica OPD SP 1.3     | 31/3/2025  | Ian Julián Estrada Castro  |
+| **1.2**             | Refactorización                             | 18/4/2025 | Diego Fuentes                    |

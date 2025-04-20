@@ -1,14 +1,18 @@
 ---
-title: PR23 Proceso de Mejora de Procesos Existentes
-sidebar_position: 23
+title: PR20 Mejora de Procesos Existentes
+sidebar_position: 20
 ---
 
-# PR23: Proceso de Mejora de Procesos Existentes
+# Proceso de Mejora de Procesos Existentes
+
+---
 
 ## Objetivo
 
 - Establecer procesos para mejorar la eficiencia y calidad de procesos ya existentes.
 - Mejorar el trabajo en el departamento con los procesos establecidos.
+
+---
 
 ## Entradas
 
@@ -16,6 +20,8 @@ sidebar_position: 23
 2. Justificación de mejora a implementar.
 3. Propuesta de cambio realizado.
 4. Retroalimentación de usuarios.
+
+---
 
 ## Proceso
 
@@ -31,6 +37,8 @@ sidebar_position: 23
 | **Explicación** | Capacitar y comunicar al departamento los cambios implementados, asegurando su comprensión y adopción. | SEPG | OPF SP 2.4 - Asegurar la implementación y adopción de mejoras |
 | **Revisión y retroalimentación** | Recolectar retroalimentación del departamento y ajustar en caso de que sea necesario. | SEPG | OPF SP 3.1 - Monitorear y mejorar continuamente los procesos |
 
+---
+
 ## Salidas
 
 1. Proceso mejorado, implementado en Docusaurus.
@@ -39,11 +47,15 @@ sidebar_position: 23
 4. Retroalimentación del departamento.
 5. Plan de monitoreo.
 
+---
+
 ## Métricas
 
 1. Número de procesos mejorados en un periodo de tiempo.
 2. Mediciones de aceptación de los cambios realizados.
 3. Impacto en la reducción de errores después de la mejora.
+
+---
 
 ## Historial de Cambios
 
@@ -51,3 +63,4 @@ sidebar_position: 23
 | ------------------- | --------------------------------------------- | --------- | ------------------------------- |
 | **1.0**             | Creación del proceso   | 30/3/2025  | Arturo Sánchez Rodríguez, Juan Pablo Chávez Leal, Daniel Contreras Chávez |
 | **1.1**             | Corrección del número del proceso | 3/4/2025  | Rommel Toledo Crespo      |
+| **1.2**             | Refactorización | 18/4/2025  | Diego Fuentes |
