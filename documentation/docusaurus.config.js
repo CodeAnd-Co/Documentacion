@@ -22,14 +22,14 @@ const config = {
   },
 
   // Set the production url of your site here
-  url: "https://your-docusaurus-site.example.com",
+  url: "https://codeandco-wiki.netlify.app",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: "/",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: "facebook", // Usually your GitHub org/user name.
+  organizationName: "Code&Co", // Usually your GitHub org/user name.
   projectName: "docusaurus", // Usually your repo name.
 
   onBrokenLinks: "throw",
@@ -91,27 +91,37 @@ const config = {
         items: [
           {
             to: "/docs/category/inicio",
-            label: "Inicio",
-            position: "left",
-          },
-          {
-            to: "/docs/category/guías",
-            label: "Guías",
+            label: "Inicio 🏡",
             position: "left",
           },
           {
             to: "/docs/category/recursos",
-            label: "Recursos",
+            label: "Recursos ⛏️",
             position: "left",
           },
           {
             to: "/docs/category/procesos",
-            label: "Procesos",
+            label: "Procesos ⚙️",
             position: "left",
           },
           {
-            to: "/docs/category/proyectos",
-            label: "Proyectos",
+            to: "/docs/category/guías-",
+            label: "Guías 📖",
+            position: "left",
+          },
+          {
+            to: "/docs/category/politicas",
+            label: "Políticas 👮‍♀️",
+            position: "left",
+          },
+          {
+            to: "/docs/category/estandares",
+            label: "Estándares 📐",
+            position: "left",
+          },
+          {
+            to: "/docs/category/proyectos-",
+            label: "Proyectos 👨‍💻",
             position: "left",
           },
         ],

@@ -1,8 +1,9 @@
 {
-  "label": "Inicio",
+  "label": "Inicio 🏡",
   "position": 1,
   "link": {
     "type": "generated-index",
-    "description": "Presentación de la consultoría, misión, visión, valores y acuerdos."
+    "description": "Información general del departamento.",
+    "slug": "/category/inicio"
   }
 }
