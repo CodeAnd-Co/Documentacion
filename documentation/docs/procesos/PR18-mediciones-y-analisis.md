@@ -62,3 +62,4 @@ sidebar_position: 18
 | **1.0**             | Definición del proceso    |   | Rommel Toledo C, Daniel Queijeiro, Paola Garrido, Rodrigo Benítez , Emiliano Valdivia, Emiliano Gómez |
 | **1.1**             |  Modificar el estilo y nombre de las prácticas específicas | 3/4/2025  | Rommel Toledo C |
 | **1.2**             | Refactorización | 18/4/2025  | Diego Fuentes |
+| **1.3**             | Agregar paso para llenar la columna de interesados en el repositorio | 22/4/2025  | Emiliano Valdivia |
