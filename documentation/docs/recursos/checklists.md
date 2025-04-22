@@ -27,8 +27,8 @@ Poder acceder facilmente a todas las checklists necesarias para auditar todos lo
 
 ### Checklists de productos de trabajo
 
-- Checklist de código.
-- Checklist de pull requests.
+- Checklist de [código](../standards/Revision-de-codigo).
+- Checklist de [pull requests](../guias/github/git-pull).
 - Checklist de [reporte de estado](https://docs.google.com/document/d/1scf3qGohzOAQJdni0R3RMpJ-jExlYWz3j-YD6aYWfJ0/edit?usp=drive_link).
 - Checklist de matrices/exceles.
 - Checklist de análisis.
