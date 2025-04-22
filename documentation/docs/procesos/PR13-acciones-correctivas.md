@@ -26,14 +26,17 @@ sidebar_position: 13
 
 | Fase                         | Descripción                                                                                                                                                                                                                                                                                         | Responsable                            | Meta y práctica específica del CMMI                                                                                                |
 | ---------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
-| **Identificar el problema**  | -Se identifican mejoras en los procesos actuales. -Se detectan problemas que requieren ajustes según la matriz de riesgos. -La magnitud del riesgo es mayor a **establecer número**. -Se aprueban propuestas de mejora para implementación. -Cambian las necesidades o los objetivos de la empresa. | Miembro del equipo                     | **OPD, SP 1.1** (Establecer los procesos estándar), **RSKM, SP 2.1** (Identificar los riesgos)                                     |
-| **Análisis del problema**    | Se evalúa la magnitud del problema, el plan de mitigación y plan de contingencia, se asigna un responsable en la matriz de gestión de riesgos.                                                                                                                                                      | Miembro del equipo                     | **RSKM, SP 2.2** (Evaluar, clasificar y priorizar los riesgos), **RSKM, SP 3.1** (Desarrollar los planes de mitigación de riesgos) |
-|                              | Se hacen los cambios necesarios en el proceso afectado siguiendo el <u>_[estándar de moficicación de procesos](/docs/standards/modificacion-procesos)_</u>.                                                                                                                                                                                                                                             | Miembro del equipo                     | **OPD, SP 1.1** (Establecer los procesos estándar), **OPF, SP 3.2** (Desplegar los procesos estándar), **OPD, SP 1.3** (Establecer los criterios y guías de adaptación)                              |
-|                              | Se comunica la actualización al equipo a través de Discord en el canal de "Procesos/experimentos". Se capacita a los involucrados si es necesario.                                                                                                                                                  | Miembro del equipo                     | -                                                                                                                                  |
-|                              | Se actualiza el historial de cambios, la versión, colaboradores y la fecha de última actualización del proceso.                                                                                                                                                                                     | Miembro del equipo                     | -                                                                                                                                  |
-| **Validación y seguimiento** | Se vuelve a corroborar que se cumpla con la <u>_[checklist de procesos](/docs/recursos/CL1-Checklist-Procesos.md)_</u>.                                                                                                                                                                                | SEPG de la meta específica relacionada | **PPQA, SP 1.1** (Evaluar objetivamente los procesos), **PPQA, SP 1.2** (Evaluar objetivamente los productos de trabajo)           |
-|                              | Se revisa el cambio implementado con una revisión entre pares. Se monitorea su efectividad en la siguiente iteración. Si el problema persiste, se reevalúa el ajuste.                                                                                                                               | SEPG de la meta específica relacionada | -                                                                                                                                  |
-|                              | Se reevalúa el riesgo en la matriz de riesgos.                                                                                                                                                                                                                                                      | SEPG de la meta específica relacionada | **RSKM, SP 3.2** (Implementar los planes de mitigación de riesgos), **RSKM, SP 2.2** (Evaluar, clasificar y priorizar los riesgos) |
+| **Identificar el problema**  | Identifica los problemas considerando que son cualquier desviación de los estándares para productos de trabajo o forma de trabajo definidos  que afectan  negativamente el cumplimiento de los objetivos del proyecto. Para su detección, ten a la mano los documentos mencionados en la sección  de “Entradas”. | Miembro del equipo                     | **OPD, SP 1.1** (Establecer los procesos estándar), **RSKM, SP 2.1** (Identificar los riesgos), PMC, SP 2.1 (Recopilar problemas.) |
+| | Tras identificarlos, documenta los problemas en el [Repositorio de Acciones Correctivas](https://docs.google.com/spreadsheets/d/1bWcGOW0PjlB6ws4VDCAXw4rdlsBL1s1UbFidUgTCvCM/edit?gid=0#gid=0) llenando los siguientes campos: fecha de identificación, nombre, descripción breve y  fuente de origen. | Miembro del equipo. | PMC, SP 2.1 (Recopilar problemas.) |
+| **Análisis del problema**    | Analiza cada problema documentado anteriormente, utiliza la tabla de criterios para decidir si requieren de una acción correctiva y documenta la decisión. | Miembro del equipo | **PMC, SP 2.1** (Recopilar problemas.),  **RSKM, SP 2.2** (Evaluar, clasificar y priorizar los riesgos), **RSKM, SP 3.1** (Desarrollar los planes de mitigación de riesgos), **PMC, SP 2.1** (Recopilar problemas.)  |
+| | Identifica los stakeholders relevantes que se vean afectados por los problemas identificados y regístralos en la columna “Stakeholders relevantes”. | Miembro del equipo | PMC, SP 2.1 (Recopilar problemas.) |
+| **Obtener aprobación de stakeholders** | dentifica los stakeholders relevantes que se vean afectados por los problemas identificados y regístralos en la columna “Stakeholders relevantes”. | Miembro del equipo | **PMC, SP 2.2** (Llevar a cabo las acciones correctivas), **PMC, SP 2.1** (Recopilar problemas.), **OPD, SP 1.1** (Establecer los procesos estándar), **OPF, SP 3.2** (Desplegar los procesos estándar), **OPD, SP 1.3** (Establecer los criterios y guías de adaptación). |
+| **Llevar a cabo las acciones correctivas** | En base a la decisión tomada previamente, añade las tareas necesarias al plan de trabajo para cumplir con las acciones correctivas. Añade un responsable, fecha de realización y costo para cada una. Registra las tareas en la columna “Tareas agregadas al plan de trabajo”. | Miembro del equipo                     | **PMC, SP 2.2** (Llevar a cabo las acciones correctivas) |
+| | Anota la fecha en que se aplican las acciones correctivas en la columna “Fecha de ejecución”. | Miembro del equipo | **PMC, SP 2.2** (Llevar a cabo las acciones correctivas) |
+| | Tras ejecutarse las acciones correctivas, verifica que se hayan cumplido con las tareas agregadas en el tiempo y forma asignados y regístralo en la columna “¿Se cumplieron todas las tareas agregadas en tiempo y forma?”. | Miembro del equipo |  **PMC, SP 2.3** (Gestionar las acciones correctivas) |
+| **Validación y seguimiento** | Agenda una revisión conjunta con el equipo para evaluar las acciones correctivas y sus resultados. Regístrala en la columna “Fecha de revisión”. | Miembro del equipo | **PPQA, SP 1.1** (Evaluar objetivamente los procesos), **PPQA, SP 1.2** (Evaluar objetivamente los productos de trabajo), **PMC, SP 2.3** (Gestionar las acciones correctivas) |
+|          | Durante la revisión evalúa si las acciones correctivas fueron efectivas y regístralo en la columna de “¿Resolvió el problema?”. Las lecciones aprendidas pueden servir en los procesos de planificación y en los procesos de mitigación de riesgos. | Miembro del equipo | PMC, SP 2.3 (Gestionar las acciones correctivas) |
+| | En caso de que el problema no haya sido resuelto, identifica áreas de oportunidad y vuelve a ejecutar el proceso desde la fase “Llevar a cabo las acciones correctivas ”. | Miembro del equipo | **PMC, SP 2.3** (Gestionar las acciones correctivas) |
 
 ---
 
@@ -45,6 +48,26 @@ sidebar_position: 13
 
 ---
 
+## Tabla de criterios
+
+| Criterio | Pregunta guía | ¿Requiere acción correctiva? |
+| -------- | ------------- | ---------------------------- |
+| Impacto en objetivos | ¿Este problema puede afectar el cumplimiento de los objetivos del proyecto (tiempo, calidad, alcance, costo)? | Sí |
+| Compromisos no cumplidos | ¿Existen compromisos (internos o externos) que no se están cumpliendo según lo planeado? | Sí |
+| Repetición del problema | ¿Es una desviación o situación que ya ha ocurrido antes, pero aún no se ha abordado? | Sí |
+| | ¿Es una desviación o situación que ya se abordó anteriormente, pero el problema persiste? | Sí |
+| Gravedad | ¿Es una desviación significativa respecto al plan, métricas o compromisos? | Sí |
+| Riesgo materializado | ¿Corresponde a un riesgo previamente identificado que ahora se ha hecho realidad? | Sí (Atender plan de contingencia) |
+| Interrupción de procesos | ¿Afecta el flujo de trabajo, la disponibilidad de recursos o la continuidad del proyecto? | Sí |
+| Falta de participación de stakeholders | ¿Se observa una baja participación, compromiso o coordinación deficiente entre los interesados? | Sí |
+| Problemas en la gestión y/o seguridad de los datos | ¿Se han identificado errores, accesos no controlados o compromisos en la privacidad, integridad o disponibilidad de los datos o productos? | Sí |
+| Sin impacto aparente | ¿No tiene consecuencias observables ni potenciales si no se atiende? | No (solo registrar) |
+
+
+
+
+---
+
 ## Historial de cambios
 
 | **Tipo de Versión** | **Descripción**                             | **Fecha** | **Colaborador**                 |
@@ -52,3 +75,4 @@ sidebar_position: 13
 | **1.0**             | Proceso inicial para acciones correctivas   |   | Paola Garrido, Valeria Zúñiga |
 | **1.1**             | Se agregó enlace y práctica OPD SP 1.3     | 31/3/2025  | Ian Julián Estrada Castro  |
 | **1.2**             | Refactorización                             | 18/4/2025 | Diego Fuentes                    |
+| **2.0**             | Proceso actualizado para cumplir con la meta 2 de PMC | 21/4/2025 | Diego Fuentes, Max Toscano, Paola Garrido, Rommel Toledo, Daniel Queijeiro. |
