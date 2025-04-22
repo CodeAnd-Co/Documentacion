@@ -86,7 +86,7 @@ Documentar claramente las funcionalidades y código del sistema para lectura en 
 - Se agregaran espacios alrededor de operadores y comas.
 - Se agregan punto y coma al final de definiciones simples.
 - Para documentar el código utilizaremos el estándar de documentación JS docs.
-- Para ver mas informacion de el estandar de codificacion ver el documento: [_Estandar de codificación_](/docs/guias/standards/general.md).
+- Para ver mas informacion de el estandar de codificacion ver el documento: [_Estandar de codificación_](/docs/standards/general).
 - Para la documentacion de los endpoints, usaremos SwaggerUI. Se puede encontrar un manual de su uso [*aqui*](Agregar el link al manual de swagger).
 
 ---

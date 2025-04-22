@@ -205,8 +205,6 @@ import TabItem from '@theme/TabItem';
 - [**Manual de arquitectura** ](./documentacion/manual-de-arquitectura-textiles.md).
 - [**Manual de estrategia técnica** ](./documentacion/estrategia-tecnica-textiles.md).
 
-**Última actualización:** 7 de marzo de 2025
-
 ---
 
 ### Historial de cambios

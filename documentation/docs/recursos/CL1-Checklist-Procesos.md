@@ -23,7 +23,7 @@ sidebar_position: 17
 
 - [ ] El proceso resuelve una necesidad del departamento.
 - [ ] El proceso se alinea con los objetivos organizacionales: <u>_[departamentales](/docs/intro/objetivo)_</u>, <u>_[technebrios](/docs/proyectos/larvas/descripcion#objetivos-del-proyecto-)_</u>, <u>_[text&lines](/docs/proyectos/textiles/descripcion#objetivos-del-proyecto-)_</u>, <u>_[tractTech](/docs/proyectos/tractores/descripcion#objetivos-del-proyecto-)_</u>.
-- [ ] Está conectado con otros procesos dentro de la organización. <u>_[Mapa de procesos](/docs/intro/mapa-procesos)_</u>.
+- [ ] Está conectado con otros procesos dentro de la organización. <u>_[Mapa de procesos](/docs/procesos/mapa-procesos)_</u>.
   - [ ] Coinciden las entradas y salidas con los procesos a los que está conectado en el mapa de procesos.
 - [ ] No genera conflictos ni contradicciones con otro proceso.
 - [ ] No es redundante ni se repite con otro proceso (tiene pasos repetidos o resuelve la misma necesidad).

@@ -3,18 +3,6 @@ title: Manual de arquitectura
 sidebar_position: 3
 ---
 
-### Autores
-
-| Nombre           | Rol   |
-| ---------------- | ----- |
-| Diego Alfaro     | Autor |
-| Daniel Contreras | Autor |
-| Emiliano Gomez   | Autor |
-
-**Última actualización por:** Diego Alfaro, 10 de marzo de 2025
-
----
-
 ## Tipo de arquitectura de software
 
 Arquitectura basada en servicios en la nube con API REST en NodeJS y frontend desacoplado en React
@@ -25,7 +13,7 @@ Arquitectura basada en servicios en la nube con API REST en NodeJS y frontend de
 
 - **Frontend** (React + AWS Amplify)
 - **Backend** (Node.JS + Express + AWS EC2)
-- **Servicios AWS** (DynamoDB, S3, etc.). Todos los servicios de aws seran utilizados en la region us-east-1
+- **Servicios AWS** (RDS MySql, S3, etc.). Todos los servicios de aws seran utilizados en la region us-east-1
 
 ---
 
@@ -75,7 +63,7 @@ Arquitectura basada en servicios en la nube con API REST en NodeJS y frontend de
 ### Tecnologías
 
 - Node.JS 22.14 + Express.JS 4.21.2 para construir la API
-- DynamoDB SDK 3.751.0 para interactuar con la base de datos
+- MySql2 3.14.0 para interactuar con la base de datos
 - AWS S3 SDK 3.750.0 para manejar las imágenes
 - JWT 9.0.2 para manejar la autenticación
 - PM2 para administrar procesos en producción
@@ -114,7 +102,7 @@ Proveer infraestructura escalable y segura para la aplicación.
 ### Servicios
 
 - S3 de Amazon
-- DynamoDB como base de datos
+- RDS MySql como base de datos
 - AWS amplify gen 2 para el despliegue continuo del frontend
 - IAM para la seguridad y gestión de usuarios y roles
 - CloudWatch para el monitoreo de logs del backend en EBS
@@ -131,20 +119,18 @@ Proveer infraestructura escalable y segura para la aplicación.
 
 **Medición:**
 
-- Latencia esperada en DynamoDB: ~single-digit ms por consulta.
 - Tiempo de respuesta con API Gateway + Lambda: ~100-200ms vs EC2 (~300ms en promedio con alta carga).
 
 ### 2. Costos Operativos
 
 - **Amplify Gen 2 reduce costos de hosting** al eliminar la necesidad de servidores para el frontend.
 - **Uso de API Gateway**: Disminuye los costos de exposición de la API en aproximadamente un 30% en comparación con balanceadores de carga y EC2.
-- **DynamoDB con Auto Scaling**: Optimiza costos, ya que solo se paga por las lecturas y escrituras realizadas.
+- **RDS**: Optimiza costos al permitir escalabilidad mediante instancias bajo demanda o "reserved", según las necesidades de tráfico y carga de trabajo. Además, puedes pagar solo por el uso real, con opciones de automatización en respaldos, mantenimiento y monitoreo.
 
 **Medición:**
 
 - EC2 estándar: ~$30-50 USD/mes (t2.medium para tráfico bajo).
 - API Gateway: $5-10 USD/mes con 1M requests/mes.
-- DynamoDB: $10-20 USD/mes con tráfico moderado.
 
 ### 3. Seguridad
 
@@ -185,8 +171,11 @@ flowchart TB
         Produccion
         Staging
   end
+
+  subgraph MercadoPago["MercadoPago"]
+  end
  subgraph Almacenamiento["Almacenamiento"]
-        DynamoDB["Amazon DynamoDB (Base de datos)"]
+        RDS["Amazon RDS (Base de datos)"]
         S3["Amazon S3 (Almacenamiento de\nimágenes)"]
   end
  subgraph AWS["AWS"]
@@ -213,4 +202,20 @@ flowchart TB
 
     NodeJSProd -- CRUD e Imagenes --> Almacenamiento
     NodeJSStaging -- CRUD e Imagenes --> Almacenamiento
+
+    MercadoPago -- Componente de React --> Frontend
+    MercadoPago -- SDK --> EC2
 ```
+
+# Justificacion de cambio
+
+1. Cambio de DynamoDB a RDS
+
+Debido al alto de uso de queries, y a las limitaciones que nos impone DynamoDB mediante el uso de de las "partition key" y "sort key", el cual nos impide hacer queries de manera natural sin el uso de otras tablas que a la larga aumentaran el coste del proyecto, el equipo decidio cambiar el tipo de base de datos, pero no el proveedor, ya que seguiremos utilizando AWS como nuestro proveedor de base de datos, pero ahora nos cambiaremos a una base de datos relacional, en este caso RDS usando el motor MySQL.
+
+# Historial de cambios
+
+| **Tipo de Versión** | **Descripción**                                             | **Fecha** | **Colaborador**            |
+| ------------------- | ----------------------------------------------------------- | --------- | -------------------------- |
+| **1.0**             | Creacion de el manual de aquitectura                        | 3/10/2025 | Diego Alfaro               |
+| **2.0**             | Actualizacion por cambio de base de datos de DynamoDB a RDS | 4/8/2025  | Miguel Angel, Diego Alfaro |

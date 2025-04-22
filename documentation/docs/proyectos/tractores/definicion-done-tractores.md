@@ -31,7 +31,7 @@ Una historia de usuario se considerará completa cuando se cumplan todos los sig
 
 ## **Código**
 
-- El código cumple con el [estándar de codificación](/docs/guias/standards/general/) y está documentado usando [JSDoc](https://medium.com/swlh/creating-better-jsdoc-documentation-8b7a65744dcb).
+- El código cumple con el [estándar de codificación](/docs/standards/general/) y está documentado usando [JSDoc](https://medium.com/swlh/creating-better-jsdoc-documentation-8b7a65744dcb).
 - Se ha realizado una revisión por pares (**peer review**) por parte de otro miembro del equipo antes de hacer *merge*. Cualquier observación relevante ha sido atendida.
 
 ---
