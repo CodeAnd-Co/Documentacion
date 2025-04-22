@@ -23,12 +23,12 @@ sidebar_position: 23
 
 | Fase               | Descripción                                                                                                           | Responsables    | Meta y práctica específica del CMMI                         |
 | ------------------ | --------------------------------------------------------------------------------------------------------------------- | --------------- | ----------------------------------------------------------- |
-| **Solicitud**      | Presentar el formato de recuperación de asistencias debidamente completado en la carpeta Recuperación de asistencias. | Colaborador     | **PMC, SP 1.1** (Planificación de monitoreo y control)      |
-|                    | Informar a un miembro del Comité de Ética de la solicitud.                                                            | Colaborador     | **PMC, SP 1.2** (Definir compromisos con el equipo)         |
+| **Solicitud**      | Presentar el formato de recuperación de asistencias debidamente completado en la carpeta Recuperación de asistencias. | Colaborador     |      |
+|                    | Informar a un miembro del Comité de Ética de la solicitud.                                                            | Colaborador     |        |
 | **Revisión**       | Verificar la solicitud de recuperación presentada.                                                                    | Comité de Ética | **PPQA, SP 1.1** (Evaluación del cumplimiento del proceso)  |
 |                    | Aprobar o rechazar la justificación según criterios.                                                                  | Comité de Ética | **PPQA, SP 1.2** (Evaluación objetiva de los resultados)    |
 | **Registro final** | Documentar en el historial correspondiente.                                                                           | Comité de Ética | **MA, SP 1.1** (Registro de datos para medición y análisis) |
-|                    | Notificar al colaborador sobre la resolución.                                                                         | Comité de Ética | **PMC, SP 1.5** (Evaluación de avances y resultados)        |
+|                    | Notificar al colaborador sobre la resolución.                                                                         | Comité de Ética |     |
 
 ---
 
@@ -53,3 +53,4 @@ sidebar_position: 23
 | ------------------- | --------------------------------------------- | --------- | ------------------------------- |
 | **1.0**             | Creación del proceso   | 4/3/2025 | Nicolas Hood, Hiram Mendoza    |
 | **1.1**             | Refactorización | 18/4/2025  | Diego Fuentes |
+| **1.2** | Correcciones PMC | 22/04/2025 | Juan Pablo Chávez Leal |
