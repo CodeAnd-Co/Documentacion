@@ -28,6 +28,8 @@ sidebar_position: 12
 | **Registro de hallazgos**      | Documentación de desviaciones, observaciones y oportunidades de mejora sobre procesos y productos.                                                                            | Team Lead / SEPG               | **PPQA SP 1.2**, **PPQA SP 2.2**, **PMC SP 1.1** **OPF 1.3** |
 | **Revisión de hallazgos**      | Validación y clasificación de hallazgos para determinar su impacto y acciones necesarias.                                                                                     | Team Lead / SEPG               | **PPQA SP 1.2** **OPF SP 1.2**                               |
 | **Decisión de acción**         | Determinar si se requieren acciones correctivas o preventivas. En caso necesario, activar el [proceso para acciones correctivas](docs\procesos\PR13-acciones-correctivas.md). | Team Lead                      | **PPQA SP 1.1, 1.2**                                         |
+| **Documentación**         | Si se auditó un item de proceso, ingresar a la [bitácora de auditorías](https://docs.google.com/spreadsheets/d/1K9TJz_XcdXFlEZ-Unm_3QbWYkx_QM3oSfe6ZWBpc3fo/edit?usp=sharing) y llenar los campos.  | Team lead | **PPQA SP 2.2** (Establecer los registros) | 
+|         | ID de la auditoría se llena de forma secuencial empezando por: AUD00. Elemento auditado corresponde al item de proceso que se auditó. Llenar la fecha con la fecha en la que se hizo la auditoría. Llenar el resultado con los resultados de la auditoría. El link a la checklist que se utilizó para auditar | Team lead | **PPQA SP 2.2** (Establecer los registros) | 
 
 ### Salidas
 
