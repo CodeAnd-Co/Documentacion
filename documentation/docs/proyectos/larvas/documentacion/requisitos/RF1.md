@@ -5,7 +5,7 @@ sidebar_position: 2
 
 # RF1: Iniciar Sesión
 
-**Última actualización:** 05 de marzo de 2025
+**Última actualización:** 22 de marzo de 2025
 
 ### Historia de Usuario
 Como usuario de la aplicación, quiero autenticarme en el sistema ingresando mi usuario y contraseña, para acceder de forma segura a la aplicación y utilizar sus funcionalidades sin restricciones.
@@ -94,9 +94,9 @@ sequenceDiagram
 
 ### Mockup
 
-![Mockup]
+![alt text](../mockupRF1.png)
 
-> *Descripción*: El mockup representa la interfaz del sistema donde el Super Administrador puede ingresar los datos del nuevo cliente. Muestra los campos requeridos y los botones de acción disponibles.
+> *Descripción*: El mockup representa la interfaz del sistema donde los usuarios pueden iniciar sesión.
 
 ### Pruebas Unitarias 
 | ID Prueba  | Descripción                                             | Resultado Esperado  |
