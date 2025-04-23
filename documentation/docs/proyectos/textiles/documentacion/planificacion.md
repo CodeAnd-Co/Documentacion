@@ -7,7 +7,7 @@ sidebar_position: 3
 
 **Última actualización:** 28 de marzo de 2025
 
-_Cronograma, hitos y entregables._
+_Cronograma, hitos, entregables y ciclo de vida del proyecto._
 
 ## Cronograma del Proyecto
 
@@ -51,3 +51,6 @@ _Cronograma, hitos y entregables._
 5. **Informe de Pruebas:** Resultados detallados de las pruebas realizadas y correcciones aplicadas.
 6. **Informe Final:** Resumen del proyecto, incluyendo lecciones aprendidas y recomendaciones.
 
+## Ciclo de Vida del Proyecto
+
+Como equipo, Text&Lines trabaja con el ciclo de vida: <u>_[DAD Básico  ](https://codeandco-wiki.netlify.app/docs/recursos/ciclo-de-vida/)_</u>
