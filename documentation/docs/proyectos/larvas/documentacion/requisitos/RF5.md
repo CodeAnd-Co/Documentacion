@@ -25,81 +25,154 @@ Como usuario del sistema, quiero ingresar la información de una charola nueva e
 
 ```mermaid
 sequenceDiagram
-      actor Usuario
-      participant View as View
-      participant ViewModel as ViewModel
-      participant Domain as Domain
-      participant Repository as Repository
-      participant APIService as Data
-      participant Controller as Controller
-      participant Model as Model
-      participant Database as Base de Datos
+    actor Usuario
+    participant View as View
+    participant ViewModel as ViewModel
+    participant Domain as Domain
+    participant Repository as Repository
+    participant APIService as Data
+    participant Controller as Controller
+    participant Model as Model
+    participant Database as Base de Datos
 
     alt POST (200)
     Usuario->>+View: (POST) do Registrar Charola
-    View->>-ViewModel: do RegistrarCharola(Datos)
+    activate View
+    View->>+ViewModel: do RegistrarCharola(Datos)
+    deactivate View
+    activate ViewModel
     ViewModel->>+Domain: charolaRequirement.registrar(charola)
-    Domain->>-Repository: repository.registrar(charola)
+    deactivate ViewModel
+    activate Domain
+    Domain->>+Repository: repository.registrar(charola)
+    deactivate Domain
+    activate Repository
     Repository->>+APIService: apiService.registrar(charola)
-    APIService->>-Controller: @POST ("/registrar-charola")
+    deactivate Repository
+    activate APIService
+    APIService->>+Controller: @POST ("/registrar-charola")
+    deactivate APIService
+    activate Controller
     Controller->>+Controller: exports.registrarCharola = async(req, res)
-    Controller->>-Model: charolaModel.registrarCharola(datos)
+    Controller->>+Model: charolaModel.registrarCharola(datos)
+    deactivate Controller
+    activate Model
     Model->>+Database: crearCharola(query)
+    deactivate Model
+    activate Database
     Database-->>-Model: respuesta
+    deactivate Database
+    activate Model
     Model-->>+Controller: respuesta
-    Controller-->>-APIService: respuesta
+    deactivate Model
+    activate Controller
+    Controller-->>+APIService: respuesta
+    deactivate Controller
+    activate APIService
     APIService-->>+Repository: respuesta
-    Repository-->>-Domain: respuesta
+    deactivate APIService
+    activate Repository
+    Repository-->>+Domain: respuesta
+    deactivate Repository
+    activate Domain
     Domain-->>+ViewModel: respuesta
-    ViewModel-->>-View: respuesta
+    deactivate Domain
+    activate ViewModel
+    ViewModel-->>+View: respuesta
+    deactivate ViewModel
+    activate View
     View-->>+Usuario: ¡Charola registrada exitosamente!
+    deactivate View
     end
 
-    alt ERROR (400) - Peticion incorrecta
-    Usuario->>+View: (POST) do Registrar Charola (Datos inválidos)
-    View->>-ViewModel: do RegistrarCharola(Datos inválidos)
-    ViewModel->>+Domain: charolaRequirement.registrar(charola)
-    Domain->>-Repository: repository.registrar(charola)
-    Repository->>+APIService: APIService.registrar(charola)
-    APIService->>-Controller: @POST ("/registrar-charola")
-    Controller->>+Controller: Validar datos
-    Controller-->>-APIService: 400 Peticion incorrecta (Faltan datos o formato incorrecto)
-    APIService-->>+Repository: 400 Peticion incorrecta
-    Repository-->>-Domain: 400 Peticion incorrecta
-    Domain-->>+ViewModel: 400 Peticion incorrecta
-    ViewModel-->>-View: Error: Datos inválidos. Verifica la información.
-    View-->>+Usuario: Los datos ingresados son incorrectos. Por favor, revisa los campos obligatorios.
+    alt ERROR (400) - Petición incorrecta
+    Usuario->>+View: (POST) do Registrar Charola
+    activate View
+    View->>+ViewModel: doRegistrarCharola(charola)
+    deactivate View
+    activate ViewModel
+    ViewModel-->>-View: Error: Datos inválidos
+    deactivate ViewModel
+    activate View
+    View-->>+Usuario: "Los datos ingresados son incorrectos. Por favor, revisa los campos obligatorios."
+    deactivate View
     end
 
     alt ERROR (500) - Error Interno en el Servidor
     Usuario->>+View: (POST) do Registrar Charola
-    View->>-ViewModel: do RegistrarCharola(Datos)
+    activate View
+    View->>+ViewModel: do RegistrarCharola(Datos)
+    deactivate View
+    activate ViewModel
     ViewModel->>+Domain: charolaRequirement.registrar(charola)
-    Domain->>-Repository: repository.registrar(charola)
+    deactivate ViewModel
+    activate Domain
+    Domain->>+Repository: repository.registrar(charola)
+    deactivate Domain
+    activate Repository
     Repository->>+APIService: apiService.registrar(charola)
-    APIService->>-Controller: @POST ("/registrar-charola")
+    deactivate Repository
+    activate APIService
+    APIService->>+Controller: @POST ("/registrar-charola")
+    deactivate APIService
+    activate Controller
     Controller->>Model: charolaModel.registrarCharola(datos)
+    deactivate Controller
+    activate Model
     Model->>+Database: crearCharola(query)
-    Database--X- Model: Error en la consulta
-    Model--X+ Controller: Error inesperado en la base de datos
-    Controller-->>-APIService: 500 Error Interno en el Servidor
+    deactivate Model
+    activate Database
+    Database--X-Model: Error en la consulta
+    deactivate Database
+    activate Model
+    Model--X+Controller: Error inesperado en la base de datos
+    deactivate Model
+    activate Controller
+    Controller-->>+APIService: 500 Error Interno en el Servidor
+    deactivate Controller
+    activate APIService
     APIService-->>+Repository: 500 Error Interno en el Servidor
-    Repository-->>-Domain: 500 Error Interno en el Servidor
+    deactivate APIService
+    activate Repository
+    Repository-->>+Domain: 500 Error Interno en el Servidor
+    deactivate Repository
+    activate Domain
     Domain-->>+ViewModel: 500 Error Interno en el Servidor
-    ViewModel-->>-View: Error interno en el servidor. Intenta más tarde.
+    deactivate Domain
+    activate ViewModel
+    ViewModel-->>+View: Error interno en el servidor. Intenta más tarde.
+    deactivate ViewModel
+    activate View
     View-->>+Usuario: Hubo un problema en el sistema. Intenta de nuevo más tarde.
+    deactivate View
     end
 
     alt ERROR 101 - Sin conexión a Internet
     Usuario->>+View: (POST) do Registrar Charola
-    View->>-ViewModel: do RegistrarCharola(Datos)
+    activate View
+    View->>+ViewModel: do RegistrarCharola(Datos)
+    deactivate View
+    activate ViewModel
     ViewModel->>+Domain: charolaRequirement.registrar(charola)
-    Domain->>-Repository: repository.registrar(charola)
+    deactivate ViewModel
+    activate Domain
+    Domain->>+Repository: repository.registrar(charola)
+    deactivate Domain
+    activate Repository
     Repository->>+APIService: APIService.registrar(charola)
-    APIService--X- ViewModel: 101 Error: No hay conexión a Internet
-    ViewModel-->>+View: No pudo conectar al servidor.
-    View-->>-Usuario: No hay conexión a Internet. Revisa tu red e intenta nuevamente.
+    deactivate Repository
+    activate APIService
+    APIService--X-ViewModel: 101 Error: No hay conexión a Internet
+    deactivate APIService
+    activate ViewModel
+    ViewModel-->>+View: No pudo conectar con el servidor. Revisa tu conexión.
+    deactivate ViewModel
+    activate View
+    View-->>+Usuario: No tienes conexión a Internet.
+    deactivate View
     end
+
+
 
 ```
 
@@ -124,8 +197,9 @@ sequenceDiagram
 
 ## Historial de cambios
 
-| **Tipo de Versión** | **Descripción**                    | **Fecha** | **Colaborador**         |
-| ------------------- | ---------------------------------- | --------- | ----------------------- |
-| **1.0**             | Creacion de la historia de usuario | 8/3/2025  | Armando Mendez          |
-| **1.0**             | Verificación de los cambios        | 8/3/2025  | Miguel Angel            |
-| **1.1**             | Creación del diagrama de secuencia | 3/4/2025  | Emiliano Gomez Gonzalez |
+| **Tipo de Versión** | **Descripción**                            | **Fecha** | **Colaborador**         |
+| ------------------- | ------------------------------------------ | --------- | ----------------------- |
+| **1.0**             | Creacion de la historia de usuario         | 8/3/2025  | Armando Mendez          |
+| **1.0**             | Verificación de los cambios                | 8/3/2025  | Miguel Angel            |
+| **1.1**             | Creación del diagrama de secuencia         | 3/4/2025  | Emiliano Gomez Gonzalez |
+| **1.2**             | Correciones del DS y agregacion del Mockup | 22/4/2025 | Emiliano Gomez Gonzalez |
