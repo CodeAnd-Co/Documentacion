@@ -63,4 +63,4 @@ sidebar_position: 4
 | **1.2**             | Añadir SP 1.1 de PMC | | Daniel C y Juan Pablo C |
 | **1.3**             | Añadir SP 3.1 de PP | 8/4/2025  | Mariana Juárez Ramírez  |
 | **1.4**             | Refactorización | 18/4/2025  | Diego Fuentes  |
-| 1.5 | Correcciones PMC 1.1 | 22/04/2025 | Juan Pablo Chávez Leal |
+| 1.5 | Correcciones PMC 1.1 y REQM 1.5 | 22/04/2025 | Juan Pablo Chávez Leal |

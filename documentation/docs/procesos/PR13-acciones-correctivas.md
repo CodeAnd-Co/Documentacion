@@ -76,3 +76,4 @@ sidebar_position: 13
 | **1.1**             | Se agregó enlace y práctica OPD SP 1.3     | 31/3/2025  | Ian Julián Estrada Castro  |
 | **1.2**             | Refactorización                             | 18/4/2025 | Diego Fuentes                    |
 | **2.0**             | Proceso actualizado para cumplir con la meta 2 de PMC | 21/4/2025 | Diego Fuentes, Max Toscano, Paola Garrido, Rommel Toledo, Daniel Queijeiro. |
+| 2.1 | Correccioines de REQM 1.5 | 22/04/2025 | Juan Pablo Chávez Leal|
