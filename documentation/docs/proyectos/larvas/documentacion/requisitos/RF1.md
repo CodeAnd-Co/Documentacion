@@ -34,7 +34,7 @@ sequenceDiagram
     participant Model as Model
     participant Database as Base de Datos
 
-    alt Inicio de sesión exitoso
+    alt POST: Inicio de sesión exitoso
         Usuario->>View: Presiona "Iniciar Sesión"
         activate View
 
@@ -96,7 +96,7 @@ sequenceDiagram
 
         View-->>Usuario: Mostrar interfaz de menú de charolas
         deactivate View
-    else Sin conexión a internet, 503
+    else POST: Sin conexión a internet, 503
         Usuario->>View: Presiona "Iniciar Sesión"
         activate View
 
@@ -135,7 +135,7 @@ sequenceDiagram
         View-->>Usuario: Mostrar mensaje "Sin conexión a internet"
         deactivate View
         
-    else Usuario o contraseña incorrecto, 404
+    else POST: Usuario o contraseña incorrecto, 404
         Usuario->>View: Presiona "Iniciar Sesión"
         activate View
 
