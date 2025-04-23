@@ -31,7 +31,7 @@ Poder acceder facilmente a todas las checklists necesarias para auditar todos lo
 - Checklist de [pull requests](../guias/github/git-pull).
 - Checklist de [reporte de estado](https://docs.google.com/document/d/1scf3qGohzOAQJdni0R3RMpJ-jExlYWz3j-YD6aYWfJ0/edit?usp=drive_link).
 - Checklist de matrices/exceles.
-- Checklist de análisis.
+- Checklist de [análisis](https://docs.google.com/document/d/1dFEBxS_WGWtgCAAW1Sp57Vlgj06-X-od6HbNy2XnZKk/edit?usp=sharing).
 - Checklist de [diseño](https://docs.google.com/document/d/17iPu9h6KR80SHw6kBhKG3mf926_mbkIipx1Aq1sfD2A/edit?usp=sharing).
 - Checklist de pruebas.
 
