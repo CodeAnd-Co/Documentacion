@@ -5,7 +5,7 @@ sidebar_position: 3
 
 # Planificación
 
-**Última actualización:** 28 de marzo de 2025
+**Última actualización:** 22 de abril de 2025
 
 _Cronograma, hitos, entregables y ciclo de vida del proyecto._
 
