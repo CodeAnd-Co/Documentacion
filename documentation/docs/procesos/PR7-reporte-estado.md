@@ -77,4 +77,4 @@ sidebar_position: 7
 | **2.3**             | Adición e identificacion de PMC 1.6 en los pasos del proceso CMMI                                                                       | 17/04/2025 | Nicolas Hood Figueroa         |
 | **2.4**             | Refactorización,                                                                                                                        | 18/04/2025 | Diego Fuentes                 |
 | **2.5**             | Correcciones PMC 1.1                                                                                                                    | 22/04/2025 |
-| **2.6**             | Adición del paso **Actualización a Socios Formadores ausentes** para complementar PMC 1.6                                               | 17/04/2025 | Nicolas Hood Figueroa         |
+| **2.6**             | Adición del paso **Actualización a Socios Formadores ausentes** para complementar PMC 1.6                                               | 22/04/2025 | Nicolas Hood Figueroa         |
