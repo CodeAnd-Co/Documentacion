@@ -35,7 +35,7 @@ sequenceDiagram
     participant Model as Model
     participant Database as Base de Datos
 
-    alt Conexión disponible
+    alt Conexión disponible | DELETE
         Usuario ->> View: Presiona "Eliminar Charola"
         activate View
 
@@ -59,11 +59,11 @@ sequenceDiagram
         deactivate APIClient
         activate APIService
 
-        APIService ->> Controller: Procesar solicitud
+        APIService ->> Controller: DELETE /charolas/{id}
         deactivate APIService
         activate Controller
 
-        Controller ->> Model: Validar existencia y eliminar
+        Controller ->> Model: Validar()
         deactivate Controller
         activate Model
 
@@ -71,11 +71,11 @@ sequenceDiagram
         deactivate Model
         activate Database
 
-        Database -->> Model: Confirma eliminación
+        Database -->> Model: respuesta: charola eliminada
         activate Model
         deactivate Database
 
-        Model -->> Controller: Éxito
+        Model -->> Controller: respuesta: charola eliminada
         deactivate Model
         activate Controller
 
@@ -105,7 +105,8 @@ sequenceDiagram
 
         View -->> Usuario: Mostrar mensaje "Charola eliminada correctamente"
         deactivate View
-    else Sin conexión a internet, 101
+
+    else Sin conexión a internet, 101 | DELETE
         Usuario ->> View: Presiona "Eliminar Charola"
         activate View
 
@@ -151,7 +152,8 @@ sequenceDiagram
 
         View -->> Usuario: Mostrar mensaje "Sin conexión a internet"
         deactivate View
-    else Error de servidor, 500
+
+    else Error de servidor, 500 | DELETE
         Usuario ->> View: Presiona "Eliminar Charola"
         activate View
 
@@ -175,11 +177,11 @@ sequenceDiagram
         deactivate APIClient
         activate APIService
 
-        APIService ->> Controller: Procesar solicitud
+        APIService ->> Controller: DELETE /charolas/{id}
         deactivate APIService
         activate Controller
 
-        Controller ->> Model: Validar existencia y eliminar
+        Controller ->> Model: Validar()
         deactivate Controller
         activate Model
 
@@ -187,11 +189,11 @@ sequenceDiagram
         deactivate Model
         activate Database
 
-        Database -->> Model: Dato no encontrado
+        Database -->> Model: respuesta: Dato no encontrado
         activate Model
         deactivate Database
 
-        Model -->> Controller: Error
+        Model -->> Controller: respuesta: Dato no encontrado
         deactivate Model
         activate Controller
 
@@ -251,3 +253,4 @@ sequenceDiagram
 | **1.0**             | Creacion de la historia de usuario   | 8/3/2025  | Armando Mendez    |
 | **1.0**             | Verificación de los cambios          | 8/3/2025  | Miguel Angel      |
 | **1.1**             | Creación del diagrama de secuencia   | 3/4/2025  | Juan Eduardo      |
+| **1.2**             | Mockup y correcciones del diagrama   | 3/4/2025  | Juan Eduardo      |
