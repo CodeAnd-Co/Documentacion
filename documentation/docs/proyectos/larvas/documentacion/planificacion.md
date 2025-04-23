@@ -5,9 +5,9 @@ sidebar_position: 3
 
 # Planificación
 
-**Última actualización:** 09 de marzo de 2025
+**Última actualización:** 22 de abril de 2025
 
-_Cronograma, hitos y entregables._
+_Cronograma, hitos, entregables y ciclo de vida del proyecto._
 
 ## Cronograma del Proyecto
 
@@ -46,3 +46,7 @@ _Cronograma, hitos y entregables._
 4. **Documentación Técnica:** Manuales y guías para el mantenimiento y uso del sistema.
 5. **Informe de Pruebas:** Resultados detallados de las pruebas realizadas y correcciones aplicadas.
 6. **Informe Final:** Resumen del proyecto, incluyendo lecciones aprendidas y recomendaciones.
+
+## Ciclo de Vida del Proyecto
+
+Como equipo, TechNebrios trabaja con el ciclo de vida: <u>_[DAD Básico  ](https://codeandco-wiki.netlify.app/docs/recursos/ciclo-de-vida/)_</u>
