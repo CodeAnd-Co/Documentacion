@@ -5,7 +5,7 @@ sidebar_position: 4
 
 # RF2: Super Administrador Consulta Lista de Usuarios
 
-**Última actualización:** 07 de abril de 2025
+**Última actualización:** 10 de abril de 2025
 
 ---
 
@@ -101,3 +101,7 @@ Note right of Frontend: Filtros, búsqueda y paginación realizados en el fronte
 > _Descripción_: El mockup representa la interfaz de usuario donde el Super Administrador puede ver la lista de usuarios en formato de tabla, con opciones para filtrar, buscar y paginar los resultados.
 
 > ![Interfaz de consultar lista de usuarios](imagenes/mockupConsultaListaUsuarios.PNG)
+
+## **Pruebas**
+
+_<u>[Enlace a pruebas RF2 Consultar Lista de Usuarios.](https://docs.google.com/spreadsheets/d/1NLGwGrGA5PVOEzLaqxa8Ts1D_Ng3QzzqNKWJYUzxD-M/edit?gid=1685718554#gid=1685718554)</u>_
