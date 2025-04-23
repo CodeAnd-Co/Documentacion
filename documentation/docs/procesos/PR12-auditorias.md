@@ -50,4 +50,5 @@ sidebar_position: 12
 | **1.2**             | Refactorización                   | 18/4/2025 | Diego Fuentes Juvera                    |
 | **2.0**             | Agregar pasos para bitácora.      | 22/4/2025 | Ian Julián Estrada Castro               |
 | **3.0**             | Agregar pasos para checklists, conexión con acciones correctivas.  | 22/4/2025 | Diego Fuentes Juvera |
+| **4.0**             | Agregar pasos para auditar CM  | 22/4/2025 | Diego Fuentes Juvera |
 
