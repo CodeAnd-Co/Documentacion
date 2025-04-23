@@ -52,4 +52,4 @@ sidebar_position: 12
 | **2.0**             | Agregar pasos para bitácora.      | 22/4/2025 | Ian Julián Estrada Castro               |
 | **3.0**             | Agregar pasos para checklists, conexión con acciones correctivas.  | 22/4/2025 | Diego Fuentes Juvera |
 | **4.0**             | Agregar pasos para auditar CM  | 22/4/2025 | Diego Fuentes Juvera |
-| **4.1**             | Agregar paso para asignar un repsonsable de la auditoría y para especificar cuándo se auditan procesos. | 22/4/2025 | Diego Fuentes Juvera |
+| **4.1**             | Agregar paso para asignar un repsonsable de la auditoría y para especificar cuándo se auditan procesos. | 23/4/2025 | Diego Fuentes Juvera |
