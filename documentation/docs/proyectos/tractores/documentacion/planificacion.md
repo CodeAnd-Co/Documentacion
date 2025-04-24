@@ -49,4 +49,8 @@ _Cronograma, hitos y entregables._
 
 ## Ciclo de Vida del Proyecto
 
-Como equipo, TracTech trabaja con el ciclo de vida: <u>_[DAD Básico  ](https://codeandco-wiki.netlify.app/docs/recursos/ciclo-de-vida/)_</u>
+Como equipo, TracTech trabaja con el ciclo de vida: [DAD Básico  ](https://codeandco-wiki.netlify.app/docs/recursos/ciclo-de-vida/)
+
+| **Versión**         | **Descripción**                 | **Fecha**   | **Colaborador**                 |
+| ------------------- | --------------------------------------------- | --------- | ------------------------------- |
+| **1.1**             | Cambio en el plan de entregas   | 23/04/2025  | Juan Pablo Chávez Leal|
