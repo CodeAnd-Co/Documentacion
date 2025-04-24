@@ -5,10 +5,6 @@ sidebar_position: 2
 
 # Estándar de Presentaciones
 
-**Última actualización:** 4 de marzo de 2025
-
-**Autor:** Juan Eduardo Rosas Cerón - A01710168
-**Contribuidor:** Pablo Hazael Hurtado Mireles - A01710778
 
 ## 1. Objetivo
 
@@ -119,3 +115,9 @@ Antes de cada presentación se deberá asegurar los siguientes alineamientos:
 - El resto del equipo deberá de estar enterado de los temas que se verán en la presentación. 
 
 Siempre se debe procurar cumplir con este estándar
+
+## Historial de Cambios
+
+| **Tipo de Versión** | **Descripción**                                                                                                                | **Fecha** | **Colaborador**                                   |
+| ------------------- | ------------------------------------------------------------------------------------------------------------------------------ | --------- | ------------------------------------------------- |
+| **1.0**             | Creación del estándar  | 04/03/2025 |  Juan Eduardo Rosas Cerón <br/> Pablo Hazael Hurtado Mireles |
