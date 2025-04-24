@@ -7,8 +7,6 @@ sidebar_position: 1
 
 ---
 
-**Última actualización:** 27 de Marzo de 2025
-
 #### ¿Qué debería estar en Google Drive?
 
 En Google Drive solo se debería alojar documentos cuyo formato no puede ser traducido a Markdown (Documentos para el socio, plantillas con el formato de Code&Co, entre otros documentos), además de documentos que sean poco estables como: Spreadsheets, planes de trabajo/proyecto, etcétera.
@@ -99,9 +97,14 @@ Cada carpeta de proyecto debe incluir las siguientes subcarpetas:
   - Matriz de involucramiento
   - _Cualquier otro que aplique_
 
-| Autor                | Descripción del cambio                                | Versión |
-| -------------------- | ----------------------------------------------------- | ------- |
-| Diego Fuentes Juvera | Creación de documento inicial                         | 1.0     |
-| Juan Pablo Chávez    | Completa modificación del documento                   | 2.0     |
-| Max Toscano          | Implementación de la estructura de carpetas           | 2.1     |
-| Max Toscano          | Corrección de formato e implementación de información | 2.2     |
+---
+
+## Historial de cambios
+
+| **Tipo de Versión** | **Descripción** | **Fecha** | **Colaborador** |
+| ------------------- | --------------- | --------- | --------------- |
+| **1.0** | Creación de la guía.   |  | Diego Fuentes Juvera |
+| **2.0** | Completa modificación del documento.  | 24/04/2025 | Juan Pablo Chávez |
+| **3.0** |  Implementación de la estructura de carpetas.  | 27/03/2025 | Max Toscano |
+| **3.1** |  Corrección de formato e implementación de información.  | 28/03/2025 | Max Toscano |
+| **3.2** |  Gestión de configuración.  | 24/04/2025 | Diego Fuentes |
