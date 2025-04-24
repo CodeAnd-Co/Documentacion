@@ -5,6 +5,8 @@ sidebar_position: 3
 
 # Planificación
 
+---
+
 _Cronograma, hitos y entregables._
 
 ## Cronograma del Proyecto
