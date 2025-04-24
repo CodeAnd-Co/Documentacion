@@ -2,12 +2,6 @@
 title: Estrategia técnica TracTech
 ---
 
-**Versión 2.1**
-
-**Última modificación**: 27 de marzo de 2025
-
----
-
 # Plantilla Estrategia tecnica
 
 ## Objetivo
@@ -172,10 +166,10 @@ Se encarga de la integración de la aplicación con ElectronJS
 
 ---
 
-# Registro de cambios
+## Historial de cambios
 
-| Autor                           | Descripción             | Versión |
-|---------------------------------| ----------------------- |---------|
-| Daniel Contreras Chavez       | Primera versión de la estratégia técnica | 1.0     | 
-| Ian Julián Estrada Castro  | Se hizo el cambio del diagrama de paquetes de la aplicación local en electron  | 2.0     | 
-| Ian Julián Estrada Castro  | Se quitó ViewModels del diagrama de paquetes. Se actualizó diagrama de backend desacoplado. Se cambió a español  | 2.1     | 
+| **Tipo de versión** | **Descripción**                    | **Fecha** | **Colaborador**        |
+|---------------------|------------------------------------| --------- | ---------------------- |
+| **1.0**             | Primera versión de la estratégia técnica        | 06/03/2025 | Daniel Contreras Chávez      |
+| **2.0**             | Se hizo el cambio del diagrama de paquetes de la aplicación local en electron | 25/03/2025   | Ian Julián Estrada Castro |
+| **2.1**             | Se quitó ViewModels del diagrama de paquetes. Se actualizó diagrama de backend desacoplado. Se cambió a español | 27/03/2025 | Ian Julián Estrada Castro |
