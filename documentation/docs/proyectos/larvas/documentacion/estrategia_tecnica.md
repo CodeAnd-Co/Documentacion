@@ -151,4 +151,4 @@ Almacena dependencias internas o librerias personalizadas que pueden ser reutili
 | **Tipo de Versión** | **Descripción**                               | **Fecha** | **Colaborador**                 |
 | ------------------- | --------------------------------------------- | --------- | ------------------------------- |
 | **1.0**             | Creación de la  estrategía tecnica   | 08/03/2025  | Juan Eduardo |
-| **1.1**             | Actualización del diagrama de paquetes backend   | 22/04/2025  | Miguel Angel Uribe Esquivel |
+| **2.0**             | Actualización del diagrama de paquetes backend   | 22/04/2025  | Miguel Angel Uribe Esquivel |
