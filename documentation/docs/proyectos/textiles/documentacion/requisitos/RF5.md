@@ -5,7 +5,7 @@ sidebar_position: 7
 
 # RF5: Super Administrador Elimina Usuario
 
----
+**Última actualización:** 24 de abril de 2025
 
 ## Historia de Usuario
 
@@ -35,30 +35,42 @@ participant controladorUsuario
 participant repositorioUsuario
 participant RDS
 
-    SuperAdmin -->> Frontend: Selecciona un usuario
-    Frontend -->> Frontend: Mostrar el menú para el usuario
-    SuperAdmin -->> Frontend: Selecciona "Eliminar Usuario"
-    Frontend -->> Api_gateway: Envía petición DELETE /api/usuarios/{id} con JWT
-    Api_gateway -->> Backend: Envía solicitud de eliminación
-    Backend -->> rutaUsuario: Llama a la ruta DELETE /api/usuarios/{id}
-    rutaUsuario -->> rutaUsuario: Verifica la API key y JWT
-    alt API Key inválida
+SuperAdmin -->> Frontend: Selecciona uno o más usuarios (checkbox)
+
+Frontend -->> Frontend: Verifica si hay usuarios seleccionados
+alt No hay usuarios seleccionados
+    Frontend -->> SuperAdmin: Muestra mensaje "Selecciona al menos un usuario"
+else Hay usuarios seleccionados
+    SuperAdmin -->> Frontend: Presiona botón "Eliminar usuario"
+    Frontend -->> SuperAdmin: Muestra modal de confirmación
+    SuperAdmin -->> Frontend: Confirma eliminación
+
+    Frontend -->> Api_gateway: DELETE /api/usuarios (body: lista_usuarios[]) + JWT
+
+    Api_gateway -->> Backend: Solicitud de eliminación
+
+    Backend -->> rutaUsuario: DELETE /api/usuarios
+
+    rutaUsuario -->> rutaUsuario: Verifica API key y JWT
+
+    alt API Key/JWT inválidas
         rutaUsuario -->> Backend: Retorna JSON {"mensaje": "No autorizado"} con status 401
         Backend -->> Api_gateway: Retorna JSON {"mensaje": "No autorizado"} con status 401
         Api_gateway -->> Frontend: Retorna JSON {"mensaje": "No autorizado"} con status 401
-        Frontend -->> SuperAdmin: Mensaje "Error, acceso no autorizado"
-    else API Key validada
+        Frontend -->> SuperAdmin: Muestra "Error: acceso no autorizado"
+    else Autenticación exitosa
         rutaUsuario -->> controladorUsuario: Llama al controlador de eliminación
-        controladorUsuario -->> repositorioUsuario: Solicita la eliminación del usuario
+        controladorUsuario -->> repositorioUsuario: Llama al controlador de eliminación
         repositorioUsuario -->> RDS: Quita al usuario de la base de datos
         RDS -->> repositorioUsuario: Confirma eliminación del usuario
         repositorioUsuario -->> controladorUsuario: Retorna éxito
         controladorUsuario -->> rutaUsuario: Retorna status 204 sin cuerpo
-        rutaUsuario -->> Backend: Retorna status 204 sin cuerpo
-        Backend -->> Api_gateway: Retorna status 204 sin cuerpo
-        Api_gateway -->> Frontend: Retorna status 204 sin cuerpo
-        Frontend -->> SuperAdmin: Mensaje de éxito y retorno a la vista de usuarios
+        rutaUsuario -->> Backend: Status 204
+        Backend -->> Api_gateway: Status 204
+        Api_gateway -->> Frontend: Status 204
+        Frontend -->> SuperAdmin: Muestra mensaje "Usuarios eliminados con éxito"
     end
+end
 ```
 
 ---
@@ -82,7 +94,8 @@ Este proceso continuará de forma iterativa hasta que todas las pruebas sean apr
 
 ### Historial de cambios
 
-| **Tipo de Versión** | **Descripción**                                 | **Fecha**  | **Colaborador**               |
-| ------------------- | ----------------------------------------------- | ---------- | ----------------------------- |
-| **1.0**             | Creación del documento                          | 06/03/2025 | Angélica Rios Cuentas         |
-| **1.1**             | Actualización de la documentación del requisito | 08/04/2025 | Carlos Iván Fonseca Mondragón |
+| **Tipo de Versión** | **Descripción**                                 | **Fecha** | **Colaborador**               |
+| ------------------- | ----------------------------------------------- | --------- | ----------------------------- |
+| **1.0**             | Creación del documento                          | 06/3/2025 | Angélica Rios Cuentas         |
+| **1.1**             | Actualización de la documentación del requisito | 08/4/2025 | Carlos Iván Fonseca Mondragón |
+| **1.2**             | Actualización al diagrama de secuencia          | 24/4/2025 | Carlos Iván Fonseca Mondragón |
