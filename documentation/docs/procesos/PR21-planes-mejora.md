@@ -50,6 +50,6 @@ sidebar_position: 21
 | ------------------- | ------------------------------------ | --------- | ----------------------------- |
 | **1.0**             | Creación del proceso                 | 27/3/2025 | Carlos Iván Fonseca Mondragón |
 | **1.1**             | Cambio de título y de dependencias   | 27/3/2025 | Carlos Iván Fonseca Mondragón |
-| **1.2**             | Adición de prácticas específicas PMC | 1/4/2025  | Juan Pablo C. y Daniel C.     |
+| **1.2**             | Adición de prácticas específicas PMC | 01/4/2025 | Juan Pablo C. y Daniel C.     |
 | **1.3**             | Refactorización                      | 18/4/2025 | Diego Fuentes                 |
 | **1.4**             | Adición de fechas de modificación    | 24/4/2025 | Carlos Iván Fonseca Mondragón |
