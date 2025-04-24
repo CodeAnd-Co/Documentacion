@@ -5,8 +5,6 @@ sidebar_position: 4
 
 # Guía de Gestión de Issues
 
-**Última actualización:** 16 de febrero de 2025
-
 _Establece un sistema organizado para la creación, seguimiento y resolución de issues, facilitando la comunicación y priorización de tareas dentro del equipo._
 
 ## Plantillas para la Creación de Nuevos Issues
@@ -36,3 +34,12 @@ _Establece un sistema organizado para la creación, seguimiento y resolución de
 4. **Documentación de Resoluciones**: Una vez resuelto un issue, documenta la solución implementada y cierra el issue, proporcionando información útil para futuras referencias.
 
 Implementar estas prácticas contribuirá a una gestión de issues más eficiente, mejorando la comunicación y la productividad del equipo de desarrollo.
+
+---
+
+## Historial de cambios
+
+| **Tipo de Versión** | **Descripción** | **Fecha**  | **Colaborador** |
+| ------------------- | --------------- | ---------- | --------------- |
+| **1.0** |  Creación de la guía | 16/02/2025 | Ángel Ramírez, Ian Estrada |
+| **1.1** |  Gestión de configuración.  | 24/04/2025 | Diego Fuentes |

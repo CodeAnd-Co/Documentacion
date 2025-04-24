@@ -1,11 +1,11 @@
 ---
-title: Guía de Formato 
+title: Guía de Formato para Documentos
 sidebar_position: 10
 ---
 
 
-# Formato para Documentos
-**Última actualización:** 7 de marzo de 2025  
+# Guía de Formato para Documentos
+**Última actualización:** 
 ## Code & Co.
 
 ---
@@ -145,11 +145,9 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 **Tabla 1: Tabla de ejemplo**
 
+## Historial de cambios
 
-
-## Registro de cambios:
-
-| Nombre                                | Descripción                      | Versión  |
-|---------------------------------------|----------------------------------|---------|
-| Rodrigo Antonio Benítez De La Portilla | Guía de formato para .docx      | 1.0     |
-
+| **Tipo de Versión** | **Descripción** | **Fecha**  | **Colaborador** |
+| ------------------- | --------------- | ---------- | --------------- |
+| **1.0** | Guía de formato para .docx  | 07/03/2025 | Rodrigo Antonio Benítez De La Portilla |
+| **1.1** |  Gestión de configuración.  | 24/04/2025 | Diego Fuentes |

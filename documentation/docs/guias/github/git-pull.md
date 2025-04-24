@@ -122,19 +122,16 @@ En la parte inferior de los documentos Markdown debe haber una tabla como la sig
  -->
 ```
 
-## Registro de cambios
+---
 
-:::tip Guía  
-Seguir la guía para mantener un control de versiones en la documentación. ['Guía'](https://codeandco-wiki.netlify.app/docs/guias/documentacion/trazabilidad)
-:::
+## Historial de cambios
 
-| Autor | Descripción del cambio | Versión |
-|---------|-------------------------|---------|
-| Ángel Mauricio Ramírez | Primera versión de guía de solicitudes de extracción | 1.0 |
-| Ian Julián Estrada Castro | Agregué la plantilla para pull request | 1.1 |
-| Ian Julián Estrada Castro | Agregué un campo en el checklist del evaluador | 1.2 |
-| Ian Julián Estrada Castro | Eliminé apartado de lista de archivos, cambié un elemento de la lista del evaluador y comenté el apartado de registro de cambios en plantilla. Hice referencia de la guía para mantener un control de versiones en la documentación | 2.0 |
-| Ian Julián Estrada Castro | Corregí error ortográfico. Agregué enlace a guía para mantener un control de versiones en la documentación  | 2.1 |
-| Juan Eduardo Rosas Cerón     | Solicitudes de extracción -> Pull Request      | 2.2     |
-| Juan Carlos Calderón García  | Solicitudes de extracción -> Pull Request      | 2.2     |
-| Pablo Hazael Hurtado Mireles | Solicitudes de extracción -> Pull Request      | 2.2     |
+| **Tipo de Versión** | **Descripción** | **Fecha**  | **Colaborador** |
+| ------------------- | --------------- | ---------- | --------------- |
+| **1.0** |  Creación de la guía | 16/02/2025 | Ángel Ramírez, Ian Estrada |
+| **1.1** |  Agregué la plantilla para pull request. | 16/02/2025 |  Ian Julián Estrada Castro |
+| **1.2** |  Agregué un campo en el checklist del evaluador. | 24/04/2025 |  Ian Julián Estrada Castro |
+| **2.0** | Eliminé apartado de lista de archivos, cambié un elemento de la lista del evaluador y comenté el apartado de registro de cambios en plantilla. Hice referencia de la guía para mantener un control de versiones en la documentación.  | 24/04/2025 |  Ian Julián Estrada Castro |
+| **2.1** |  Corregí error ortográfico. Agregué enlace a guía para mantener un control de versiones en la documentación.  | 24/04/2025 | Ian Julián Estrada Castro |
+| **2.2** |  Solicitudes de extracción -> Pull Request.  | 24/04/2025 | Juan Eduardo Rosas Cerón, Juan Carlos Calderón García, Pablo Hazael Hurtado Mireles |
+| **2.3** |  Gestión de configuración.  | 24/04/2025 | Diego Fuentes |
