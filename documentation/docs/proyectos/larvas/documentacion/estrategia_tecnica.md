@@ -3,14 +3,6 @@ title: Estrategia tecnica
 sidebar_position: 5
 ---
 
-### Autores
-
-| Nombre       | Rol   |
-| ------------ | ----- |
-| Juan Eduardo | Autor |
-
----
-
 # Estrategia tecnica
 
 ## Objetivo
@@ -90,37 +82,24 @@ Documentar claramente las funcionalidades y código del sistema para lectura en 
 
 ### Backend
 
-![alt text](/img/plantilla-diagrama-de-paquetes.png)
+![alt text](./Diagrama_paquetes_backend.png)
 
 Este diagrama de paquetes representa la organización de un backend. Se divide en varias secciones principales:
 
-### 1. Módulos
+- **Routes**: Definición de las rutas por cada modulo.
+- **Controllers**: Implementación de la lógica de negocio.
+- **Models**: Interacción con la base de datos.
+- **Utils**:
+  - **Middlewares**: Funciones intermedias para procesar solicitudes.
+  - **Services**: Lógica reutilizable independiente de los controladores.
+- **Views**: Sección opcional para manejar vistas en caso de ser necesario.
+- **Public**: Archivos o recursos publicos utilizados en varios modulos (no deben de comprometer la seguridad de la información).
 
-Cada módulo contiene:
-
-- **Data**: Gestión de la base de datos, incluyendo modelos y repositorios.
-- **Controllers**: Manejo de solicitudes HTTP, estructurado en:
-  - `RoutesIndexes`: Punto de entrada de las rutas.
-  - `Routes`: Definición de rutas.
-  - `Controllers`: Implementación de la lógica de negocio.
-
-### 2. Util
-
-- **Middlewares**: Funciones intermedias para procesar solicitudes.
-- **Services**: Lógica reutilizable independiente de los controladores.
-
-### 3. Views
-
-Sección opcional para manejar vistas en caso de ser necesario.
-
-### 4. Pruebas Unitarias
-
-Cada módulo puede incluir pruebas unitarias para garantizar su correcto funcionamiento.
-
-### 5. Archivos Principales
-
-- app.js: Punto de entrada del servidor.
-- node_modules: Dependencias del proyecto.
+- **Archivos principales**:
+  - app.js: Punto de entrada del servidor.
+  - .env: Archivo con cuentas, llaves y contraseñas importantes, sensibles y secretas.
+  - package.json: Declaración de las dependencias y su versionamiento.
+  - node_modules: Dependencias del proyecto.
 
 ## Aplicación en Flutter
 
@@ -164,3 +143,12 @@ Contiene todas las pruebas unitarias.
 ### 6. Librerias
 
 Almacena dependencias internas o librerias personalizadas que pueden ser reutilizadas en distintos módulos
+
+---
+
+### Historial de cambios
+
+| **Tipo de Versión** | **Descripción**                               | **Fecha** | **Colaborador**                 |
+| ------------------- | --------------------------------------------- | --------- | ------------------------------- |
+| **1.0**             | Creación de la  estrategía tecnica   | 08/03/2025  | Juan Eduardo |
+| **2.0**             | Actualización del diagrama de paquetes backend   | 22/04/2025  | Miguel Angel Uribe Esquivel |
