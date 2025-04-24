@@ -4,14 +4,6 @@ sidebar_position: 3
 ---
 
 # **Política de Gestión de Procesos**
-**Última actualización** 27 de marzo de 2025
-
-### Autores
-
-| Nombre                     | Rol   |
-| -------------------------- | ----- |
-| Sofía Osorio Suárez        | Autor |
-| Mariana Juárez Ramírez     | Autor |
 
 ---
 
@@ -60,3 +52,13 @@ Los objetivos se revisan semanalmente durante los reportes de estado. Una vez re
 
 - Esta política se revisará y actualizará periódicamente conforme a la evolución de los proyectos y los estándares organizacionales.
 - Cualquier modificación en esta política deberá ser aprobada por los responsables de gestión de datos.
+
+
+---
+
+## Historial de cambios
+
+| **Tipo de Versión** | **Descripción**                               | **Fecha** | **Colaborador**                 |
+| ------------------- | --------------------------------------------- | --------- | ------------------------------- |
+| **1.0**             | Creación de la política                       | 27/03/2025 | Sofía Osorio, Mariana Juárez   |
+| **1.1**             | Añadir historial de cambios                   | 23/04/2025 | Diego Fuentes   |
