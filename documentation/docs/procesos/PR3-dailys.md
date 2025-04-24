@@ -33,6 +33,8 @@ sidebar_position: 3
 ## Métricas
 1. Número de riesgos identificados y su evolución.
 
+---
+
 ## Historial de cambios
 
 | **Tipo de Versión** | **Descripción** | **Fecha** | **Colaborador** |
