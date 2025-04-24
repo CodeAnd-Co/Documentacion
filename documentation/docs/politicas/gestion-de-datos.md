@@ -134,4 +134,5 @@ Para garantizar el cumplimiento de esta política, se implementarán mecanismos 
 
 | **Tipo de Versión** | **Descripción**                               | **Fecha** | **Colaborador**                 |
 | ------------------- | --------------------------------------------- | --------- | ------------------------------- |
+| **1.0**             | Creación de la política  |   | Diego Alfaro, Arturo Sánchez |
 | **1.1**             | Eliminación de salidas de la política   | 08/04/2025  | Daniel Contreras, Eduardo Rosas |
