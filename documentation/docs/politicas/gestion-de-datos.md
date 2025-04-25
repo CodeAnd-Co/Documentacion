@@ -5,13 +5,6 @@ sidebar_position: 2
 
 # **Política de Gestión de Datos del Proyecto**
 
-### Autores
-
-| Nombre                     | Rol   |
-| -------------------------- | ----- |
-| Diego Ricardo Alfaro Pinto | Autor |
-| Arturo Sánchez Rodríguez   | Autor |
-
 ---
 
 ## **1. Objetivo**
@@ -39,12 +32,18 @@ Los datos utilizados en los proyectos se dividen en dos categorías principales:
 
 ### **4.1 Datos Sensibles**
 
-Son aquellos cuya divulgación podría comprometer la integridad del proyecto o de sus participantes. Incluyen, pero no se limitan a:
+Se refiere a aquellos datos cuya divulgación podría comprometer la integridad del proyecto o de sus participantes. Estos incluyen, entre otros:
 
-- Información personal o identificativa de stakeholders.
-- Credenciales de acceso o autenticación.
-- Datos financieros, estratégicos o confidenciales.
-- Claves de API y configuraciones privadas.
+- Información personal o identificativa de los interesados (datos personales, direcciones físicas, etc.).
+- Credenciales de acceso o autenticación (cuentas, contraseñas, claves de acceso, etc.).
+- Datos financieros, estratégicos o confidenciales (cuentas bancarias, métodos de pago, información financiera, etc.).
+- Claves de API y configuraciones privadas (.env, .pem, cadenas de conexión, etc.).
+
+Estos datos se almacenarán en sus archivos originales (en caso de ser .env, .pem o similares) o, en caso de ser cuentas y contraseñas, se almacenarán en un archivo Excel donde se coloque dicha información. Dichos archivos se guardarán en una carpeta dentro del resto de recursos de cada proyecto con el nombre de “Credenciales”.
+
+Para salvaguardar la integridad, seguridad y confianza depositada en los datos, el acceso será restringido únicamente al Team Lider y Architecture Owner de cada proyecto. Ambos roles de liderazgo tienen la obligación de colocar dichos accesos dentro de las carpetas y delegar su acceso en caso de cambiar de rol.
+
+Para evitar cualquier filtración de informacion, **queda estrictamente prohibido la distribución de los accesos a traves de cualquier  medio digital externo al uso de las carpetas privadas.**
 
 ### **4.2 Datos Generales**
 
@@ -136,3 +135,4 @@ Para garantizar el cumplimiento de esta política, se implementarán mecanismos 
 | ------------------- | --------------------------------------------- | --------- | ------------------------------- |
 | **1.0**             | Creación de la política  |   | Diego Alfaro, Arturo Sánchez |
 | **1.1**             | Eliminación de salidas de la política   | 08/04/2025  | Daniel Contreras, Eduardo Rosas |
+| **1.2**             | Modificacion datos sensibles  | 25/04/2025  | Miguel Angel Uribe |
