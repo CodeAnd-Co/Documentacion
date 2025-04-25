@@ -61,6 +61,6 @@ sidebar_position: 5
 
 | Versión | Descripción del cambio                | Fecha    | Colaborador                |
 | ------- | ------------------------------------- | -------- | -------------------------- |
-| 1.0     | Creación del proceso | 3/3/2025 | Daniel Queijeiro Albo <br/> Ángel Mauricio Ramírez Herrera <br/> Valeria Zúñiga Mendoza |
-| 1.1     | Refactorización          | 18/04/2025 | Diego Fuentes |
-| 1.2 | Correcciones PMC 1.1 | 22/04/2025 | Juan Pablo Chávez Leal |
+| **1.0**     | Creación del proceso | 3/3/2025 | Daniel Queijeiro Albo <br/> Ángel Mauricio Ramírez Herrera <br/> Valeria Zúñiga Mendoza |
+| **1.1**     | Refactorización          | 18/04/2025 | Diego Fuentes |
+| **1.2** | Correcciones PMC 1.1 | 22/04/2025 | Juan Pablo Chávez Leal |
