@@ -26,10 +26,10 @@ sidebar_position: 5
 | Fase             | Descripción                                                                                                                                                       | Responsables              | Meta y práctica específica del CMMI                                       |
 | ---------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------- | ------------------------------------------------------------------------- |
 | **Preparación**  | Enviar encuesta para consultar los temas de la junta.                                                                                                             | Presentadores de la junta | **RD, SP 1.1** (Recopilación de necesidades y expectativas)               |
-|                  | Llenar la plantilla de juntas efectivas:<u>_[Plantilla](https://docs.google.com/document/d/1kQ_WNJF6ZAqBEqnu3a1I7ls6aLCqXvPdEHlpKwQGfEM/edit?usp=drive_link)_</u> | Presentadores de la junta | **OPD, SP 1.3** (Implementación de procesos organizacionales)             |
+|                  | Llenar la plantilla de juntas efectivas:<u>_[Plantilla](https://docs.google.com/document/d/1kQ_WNJF6ZAqBEqnu3a1I7ls6aLCqXvPdEHlpKwQGfEM/edit?usp=drive_link)_</u>. | Presentadores de la junta | **OPD, SP 1.3** (Implementación de procesos organizacionales)             |
 |                  | Definir el objetivo y la agenda de la junta.                                                                                                                       | Presentadores de la junta |                     |
 |                  | Enviar la convocatoria con al menos 12 horas de anticipación, indicando horario y lugar.                                                                           | Presentadores de la junta | **PMC, SP 1.2** (Definir compromisos con el equipo)                       |
-|                  | Llegar o conectarse al espacio asignado                                                                                                                           | Todos                     | **OPD, SP 1.5** (Garantizar el cumplimiento de procesos organizacionales) |
+|                  | Llegar o conectarse al espacio asignado.                                                                                                                           | Todos                     | **OPD, SP 1.5** (Garantizar el cumplimiento de procesos organizacionales) |
 |                  | Esperar 5 minutos de tolerancia para iniciar.                                                                                                                      | Todos                     | **PMC, SP 1.2** (Seguimiento de compromisos del equipo)                   |
 |                  | 15 minutos después del horario definido, registrar la asistencia de los presentes.                                                                                 | Presentadores de la junta | **MA, SP 1.1** (Registro de datos para medición y análisis)               |
 |                  | Establecer un temporizador con el tiempo acordado.                                                                                                                 | Presentadores de la junta | **PMC, SP 1.3** (Monitoreo del progreso y desempeño)                      |
@@ -61,6 +61,6 @@ sidebar_position: 5
 
 | Versión | Descripción del cambio                | Fecha    | Colaborador                |
 | ------- | ------------------------------------- | -------- | -------------------------- |
-| 1.0     | Creación del proceso | 3/3/2025 | Daniel Queijeiro, Angel Ramírez, Valeria Zúñiga     |
+| 1.0     | Creación del proceso | 3/3/2025 | Daniel Queijeiro Albo <br/> Ángel Mauricio Ramírez Herrera <br/> Valeria Zúñiga Mendoza |
 | 1.1     | Refactorización          | 18/04/2025 | Diego Fuentes |
 | 1.2 | Correcciones PMC 1.1 | 22/04/2025 | Juan Pablo Chávez Leal |
