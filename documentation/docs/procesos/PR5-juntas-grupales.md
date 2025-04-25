@@ -17,7 +17,8 @@ sidebar_position: 5
 
 1. Fecha de la junta.
 2. Motivo de la junta.
-3. ~Reportes de estado~ (Pendiente).
+3. Retroalimentación de reportes de estado.
+4. Práctica específica del CMMI definida.
 
 ---
 
