@@ -19,11 +19,26 @@ sidebar_position: 13
 2. Problema detectado en un proceso existente.
 3. Propuesta de mejora aprobada.
 4. Cambio en las necesidades u objetivos de la empresa.
-5. incumplimiento de estándares de codificación
+5. Incumplimiento de estándares de codificación
 6. Código no testeable
-7. Requisitos mal identicados
+7. Requisitos mal identificados
 
 ---
+
+### No conformidad
+
+Situación en la que el producto o acuerdo de trabajo no cumple con los requisitos establecidos:
+- Estándares.
+- Especificaciones.
+- Políticas.
+- Criterios de calidad.
+
+#### Ejemplos
+
+- Código que no sigue estándares.
+- Funcionalidades que no cumple con lo especificado en los requisitos.
+- Pruebas no ejecutables o con resultados ignorados.
+- Documentación no completa o ausente.
 
 ### Proceso
 
@@ -79,11 +94,11 @@ sidebar_position: 13
 
 ## Historial de cambios
 
-| **Tipo de Versión**             | **Descripción**                                       | **Fecha**  | **Colaborador**                                                             |
-| ------------------------------- | ----------------------------------------------------- | ---------- | --------------------------------------------------------------------------- |
-| **1.0**                         | Proceso inicial para acciones correctivas             |            | Paola Garrido, Valeria Zúñiga                                               |
-| **1.1**                         | Se agregó enlace y práctica OPD SP 1.3                | 31/3/2025  | Ian Julián Estrada Castro                                                   |
-| **1.2**                         | Refactorización                                       | 18/4/2025  | Diego Fuentes                                                               |
-| **2.0**                         | Proceso actualizado para cumplir con la meta 2 de PMC | 21/4/2025  | Diego Fuentes, Max Toscano, Paola Garrido, Rommel Toledo, Daniel Queijeiro. |
-| **2.1**                         | Correccioines de REQM 1.5                             | 22/04/2025 | Juan Pablo Chávez Leal                                                      |
-| **2.2**                         | Incorporación de PPQA 2.1                             | 24/04/2025 | Juan Eduardo Rosas Cerón                                                    |
+| **Tipo de Versión**             | **Descripción**                                             | **Fecha**  | **Colaborador**                                                             |
+| ------------------------------- | ----------------------------------------------------------- | ---------- | --------------------------------------------------------------------------- |
+| **1.0**                         | Proceso inicial para acciones correctivas                   |            | Paola Garrido, Valeria Zúñiga                                               |
+| **1.1**                         | Se agregó enlace y práctica OPD SP 1.3                      | 31/3/2025  | Ian Julián Estrada Castro                                                   |
+| **1.2**                         | Refactorización                                             | 18/4/2025  | Diego Fuentes                                                               |
+| **2.0**                         | Proceso actualizado para cumplir con la meta 2 de PMC       | 21/4/2025  | Diego Fuentes, Max Toscano, Paola Garrido, Rommel Toledo, Daniel Queijeiro. |
+| **2.1**                         | Correcciones de REQM 1.5                                    | 22/04/2025 | Juan Pablo Chávez Leal                                                      |
+| **2.2**                         | Incorporación de PPQA 2.1 (no conformidades y notificación) | 24/04/2025 | Juan Eduardo Rosas Cerón                                                    |
