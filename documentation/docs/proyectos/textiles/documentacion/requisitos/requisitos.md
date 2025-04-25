@@ -404,6 +404,10 @@ La interfaz de usuario de la aplicación está diseñada para ser **intuitiva, a
 
 ![Requisito de Interfaz 1 - Barra lateral](imagenes/altertexRI1.png)
 
+#### Pruebas
+
+_<u>[Enlace a pruebas RI1 Barra Lateral.](https://docs.google.com/spreadsheets/d/1NLGwGrGA5PVOEzLaqxa8Ts1D_Ng3QzzqNKWJYUzxD-M/edit?gid=470694613#gid=470694613)</u>_
+
 Para garantizar coherencia visual y funcional, la interfaz estará construida con **componentes reutilizables**, lo que permitirá mantener una estética uniforme y una estructura lógica. Esto contribuirá a **reducir la curva de aprendizaje** y a **optimizar la interacción** del usuario con el sistema.
 
 Los **mockups** de la interfaz están disponibles en el siguiente enlace:  
