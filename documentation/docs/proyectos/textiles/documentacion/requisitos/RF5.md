@@ -83,14 +83,7 @@ end
 
 ## **Pruebas Unitarias**
 
-En caso de que alguna de las pruebas unitarias no sea aprobada, se deberá realizar una nueva iteración del proceso de pruebas.
-Este proceso continuará de forma iterativa hasta que todas las pruebas sean aprobadas satisfactoriamente, garantizando así la estabilidad y el cumplimiento de los requisitos funcionales definidos en la historia de usuario.
-
-| ID Prueba | Descripción                               | Precondiciones                                                                                                                | Valores de entrada                                                                        | Resultado esperado                                                                                                          | Resultado observado | Aprobado (sí/no) |
-| --------- | ----------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- | ------------------- | ---------------- |
-| EU001     | Entrar a la lista de usuarios             | - Super administrador autenticado                                                                                             | - Click en la opción de "Usuarios" en el menú                                             | Pantalla de lista de usuarios                                                                                               | Pendiente           | Pendiente        |
-| EU002     | Seleccionar usuarios y clic en "Eliminar" | - Super administrador autenticado <br /> - Usuario existente en la lista de usuarios                                          | - Click en la casilla de los usuarios a eliminar <br /> - Click en el botón de "Eliminar" | Pantalla para confirmar eliminación, con el nombre o nombres de los usuarios seleccionados                                  | Pendiente           | Pendiente        |
-| EU003     | Eliminar usuario existente                | - Super administrador autenticado <br /> - Usuario existente en la base de datos <br /> - Acceso de super admin en el sistema | ID del usuario a eliminar (a través de un click en el botón de eliminar usuario)          | - Mensaje de éxito y actualización de la lista de usuarios <br /> - Usuarios eliminados no aparecen en la lista actualizada | Pendiente           | Pendiente        |
+_<u>[Enlace a pruebas RF5 Elimina Usuario](https://docs.google.com/spreadsheets/d/1NLGwGrGA5PVOEzLaqxa8Ts1D_Ng3QzzqNKWJYUzxD-M/edit?usp=sharing)</u>_
 
 ### Historial de cambios
 
@@ -99,3 +92,4 @@ Este proceso continuará de forma iterativa hasta que todas las pruebas sean apr
 | **1.0**             | Creación del documento                          | 06/3/2025 | Angélica Rios Cuentas         |
 | **1.1**             | Actualización de la documentación del requisito | 08/4/2025 | Carlos Iván Fonseca Mondragón |
 | **1.2**             | Actualización al diagrama de secuencia          | 24/4/2025 | Carlos Iván Fonseca Mondragón |
+| **1.3**             | Actualización de la documentación del requisito | 24/4/2025 | Carlos Iván Fonseca Mondragón |
