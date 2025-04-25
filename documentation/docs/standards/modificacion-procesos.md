@@ -5,15 +5,6 @@ sidebar_position: 3
 
 # Estándar para la Modificación o Creación de Procesos
 
-**Última actualización:** 26 de marzo de 2025
-
-## **Autores**  
-
-| **Nombre**              | **Rol**  |
-|-------------------------|----------|
-| Galo Alejandro del Río Vigiano | Autor    |
-| Ian Julián Estrada Castro      | Coautor    |
-
 ---
 
 ## 1. Propósito
@@ -93,9 +84,8 @@ Esto se hace en la documentación del pull request.
 
 ---
 
-## Registro de cambios
+## Historial de Cambios
 
-| Autor                          | Descripción del cambio                 | Versión |
-| ------------------------------ | -------------------------------------- | ------- |
-| Galo Alejandro del Río Vigiano | Primera versión del estándar           | 1.0     |
-| Ian Julián Estrada Castro      | Primera versión del estándar           | 1.0     |
+| **Tipo de Versión** | **Descripción**                                                                                                                | **Fecha** | **Colaborador**                                   |
+| ------------------- | ------------------------------------------------------------------------------------------------------------------------------ | --------- | ------------------------------------------------- |
+| **1.0**             | Creación del estándar  | 23/03/2025 | Galo Alejandro del Río Viggiano <br/> Ian Julián Estrada Castro | 

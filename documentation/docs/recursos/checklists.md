@@ -23,14 +23,14 @@ Poder acceder facilmente a todas las checklists necesarias para auditar todos lo
 - Checklist de [guías](https://docs.google.com/document/d/1-7cD2Y_AVJ_Klb_5bfKvUj9KmOLkCPwOHaIj03rOw9w/edit?usp=drive_link).
 - Checklist de [políticas](https://docs.google.com/document/d/1ERCpYx65aIs0ZGLQLMu61Y-uaWip-bDhXB4Rzx8ofEg/edit?usp=drive_link).
 - Checklist de [estándares](https://docs.google.com/document/d/1qJW2hkkKnlmiSmVm8C54ae2yCWrdGK7haKh3AdN-H7E/edit?usp=drive_link).
+- Checklist de [revisión de items de trabajo para línea base de wiki](https://docs.google.com/document/d/1vV5UML4CTtQPXyDy3yU17yNy56k59rVBGTGP7uurY3g/edit?usp=sharing).
 - Checklist de plantillas.
 
 ### Checklists de productos de trabajo
 
-- Checklist de [código](../standards/Revision-de-codigo).
+- Checklist de [código](https://docs.google.com/document/d/1ItP965B7cFppIUX3RPXg_ZuUiYZzSuGs1b5bMw2-ZpQ/edit?tab=t.0#heading=h.fhau7kjl46pa).
 - Checklist de [pull requests](../guias/github/git-pull).
 - Checklist de [reporte de estado](https://docs.google.com/document/d/1scf3qGohzOAQJdni0R3RMpJ-jExlYWz3j-YD6aYWfJ0/edit?usp=drive_link).
-- Checklist de matrices/exceles.
 - Checklist de [análisis](https://docs.google.com/document/d/1dFEBxS_WGWtgCAAW1Sp57Vlgj06-X-od6HbNy2XnZKk/edit?usp=sharing).
 - Checklist de [diseño](https://docs.google.com/document/d/17iPu9h6KR80SHw6kBhKG3mf926_mbkIipx1Aq1sfD2A/edit?usp=sharing).
 - Checklist de pruebas.

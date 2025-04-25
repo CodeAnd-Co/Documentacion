@@ -5,7 +5,6 @@ sidebar_position: 1
 
 # Guía para Fusiones de Ramas
 
-**Última actualización:** 16 de febrero de 2025
 
 _Proporciona directrices sobre cómo realizar fusiones de ramas de manera efectiva, minimizando conflictos y asegurando la integridad del código._
 
@@ -81,3 +80,13 @@ Para una comprensión más profunda de las diferencias entre `merge` y `rebase`,
 - [Merging vs. Rebasing | Atlassian Git Tutorial](https://www.atlassian.com/git/tutorials/merging-vs-rebasing)
 
 Implementar estas prácticas garantizará fusiones de ramas efectivas, minimizando conflictos y manteniendo la integridad del código en tus proyectos.
+
+
+---
+
+## Historial de cambios
+
+| **Tipo de Versión** | **Descripción** | **Fecha**  | **Colaborador** |
+| ------------------- | --------------- | ---------- | --------------- |
+| **1.0** |  Creación de la guía | 16/02/2025 | Ángel Ramírez, Ian Estrada |
+| **1.1** |  Gestión de configuración.  | 24/04/2025 | Diego Fuentes |

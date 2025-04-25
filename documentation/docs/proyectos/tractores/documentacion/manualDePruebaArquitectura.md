@@ -4,6 +4,8 @@ title: Manual de prueba de arquitectura
 
 # Manual de la prueba de arquitectura
 
+---
+
 Al probar las librerías y posibles funcionalidades que tendría el proyecto “Harvester”, decidimos dividir la prueba de arquitectura en dos; una relacionada más con el framework que es Electron y otra que añade profundidad a las funcionalidades que intentaremos implementar.
 
 ### **Electron**
@@ -1258,7 +1260,11 @@ function saveExcelFile(hfInstance, filePath) {
 saveExcelFile(Prueba, 'resultado.xlsx');
 ```
 
-| Tipo de Versión | Descripción | Fecha | Colaborador |
-| ----- | ----- | ----- | ----- |
-| 1.0 | Se creó la documentación | 14/04/2025 | Juan Pablo Chávez Leal Daniel Queijeiro Albo |
+---
+
+## Historial de cambios
+
+| **Tipo de Versión** | **Descripción** | **Fecha**  | **Colaborador** |
+| ------------------- | --------------- | ---------- | --------------- |
+| **1.0** | Se creó la documentación    | 14/04/2025 | Juan Pablo Chávez Leal <br/> Daniel Queijeiro Albo |
 

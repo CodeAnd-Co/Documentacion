@@ -5,8 +5,6 @@ sidebar_position: 7
 
 # Guía para la Creación de Archivos README
 
-**Última actualización:** 16 de febrero de 2025
-
 _Proporciona pautas para elaborar archivos README informativos y bien estructurados, ofreciendo una visión general clara del proyecto a colaboradores y usuarios._
 
 ## Elementos Esenciales que Debe Contener un README
@@ -46,3 +44,12 @@ _Proporciona pautas para elaborar archivos README informativos y bien estructura
 - **Consistencia**: Asegura un formato y estilo consistentes en todo el documento.
 
 Implementar estas prácticas garantizará que tu archivo README sea una herramienta efectiva para comunicar la esencia y el uso de tu proyecto a la comunidad.
+
+---
+
+## Historial de cambios
+
+| **Tipo de Versión** | **Descripción** | **Fecha**  | **Colaborador** |
+| ------------------- | --------------- | ---------- | --------------- |
+| **1.0** |  Creación de la guía | 16/02/2025 | Ángel Ramírez, Ian Estrada |
+| **1.1** |  Gestión de configuración.  | 24/04/2025 | Diego Fuentes |

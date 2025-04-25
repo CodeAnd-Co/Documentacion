@@ -5,7 +5,7 @@ sidebar_position: 3
 
 # Planificación
 
-**Última actualización:** 10 de marzo de 2025
+---
 
 _Cronograma, hitos y entregables._
 
@@ -48,9 +48,14 @@ _Cronograma, hitos y entregables._
 6. **Informe Final:** Resumen del proyecto, incluyendo lecciones aprendidas y recomendaciones.
 
 ## Ciclo de Vida del Proyecto
+Como equipo, TracTech trabaja con el ciclo de vida: <u>_[DAD Básico  ](https://codeandco-wiki.netlify.app/docs/recursos/ciclo-de-vida/)_</u>
 
-Como equipo, TracTech trabaja con el ciclo de vida: [DAD Básico  ](https://codeandco-wiki.netlify.app/docs/recursos/ciclo-de-vida/)
+---
 
-| **Versión**         | **Descripción**                 | **Fecha**   | **Colaborador**                 |
-| ------------------- | --------------------------------------------- | --------- | ------------------------------- |
+## Historial de cambios
+
+| **Tipo de versión** | **Descripción**                    | **Fecha**  | **Colaborador**        |
+|---------------------|------------------------------------| ---------- | ---------------------- |
+| **1.0**             | Primera versión de la planificación        | 10/03/2025 | Diego Isaac Fuentes Juvera |
 | **1.1**             | Cambio en el plan de entregas   | 23/04/2025  | Juan Pablo Chávez Leal|
+

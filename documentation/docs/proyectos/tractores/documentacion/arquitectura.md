@@ -169,20 +169,10 @@ graph TD
 
 ---
 
-### Autores
-
-| Nombre                            | Rol       |
-| --------------------------------- | --------- |
-| Daniel Contreras                  | Autor     |
-| Diego Alfaro                      | Autor     |
-| Emiliano Gómez                    | Autor     |
-| Diego Fuentes                     | Modificador |
-
----
-
 ## Historial de cambios
 
 | **Tipo de versión** | **Descripción**                    | **Fecha** | **Colaborador**        |
 |---------------------|------------------------------------| --------- | ---------------------- |
-| **2.0**             | Adición del diagrama de despliegue | 25/03/2025  | Juan Pablo Chávez Leal |
+| **1.0**             | Primera versión del manual de arquitectura        | 06/03/2025 | Daniel Contreras Chávez      |
+| **2.0**             | Adición del diagrama de despliegue | 25/03/2025   | Juan Pablo Chávez Leal |
 | **2.1**             | Corrección al diagrama de despliegue | 04/04/2025 | Ian Julián Estrada Castro |

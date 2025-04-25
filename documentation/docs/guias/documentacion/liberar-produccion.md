@@ -1,5 +1,5 @@
 ---
-title: Guia para liberar a produccion
+title: Guía para liberar a producción
 ---
 
 ---
@@ -67,10 +67,12 @@ Esta guía describe los pasos y consideraciones necesarios para liberar una lín
 
 Esta guía forma parte de la documentación oficial del departamento.
 
+
 ---
 
-## Registro de cambios
+## Historial de cambios
 
-| Autor                 | Descripción del cambio | Versión |
-| --------------------- | ---------------------- | ------- |
-| Armando Méndez Castro | Primera versión guía   | 1.0     |
+| **Tipo de Versión** | **Descripción** | **Fecha**  | **Colaborador** |
+| ------------------- | --------------- | ---------- | --------------- |
+| **1.0**             | Primera versión de la guía. | 07/04/2025 | Armando Méndez Castro  |
+| **1.1**             |  Gestión de configuración.  | 24/04/2025 | Diego Fuentes |

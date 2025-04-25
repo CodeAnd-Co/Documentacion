@@ -3,19 +3,8 @@ title: Estándares de Codificación
 sidebar_position: 1
 ---
 
-# Estándares de Codificación
+# Estándares de Codificación 
 
-**Última actualización:** 5 de marzo de 2025  
-
-## **Autores**  
-
-| **Nombre**              | **Rol**  |
-|-------------------------|----------|
-| Diego  Alfaro           | Autor    |
-| Daniel Contreras        | Autor    |
-| Emilano Gómez           | Autor    |
-
----
 
 ## Objetos
 
@@ -989,3 +978,10 @@ const good = new User({
   name: 'yup',
 });
 ```
+
+## Historial de Cambios
+
+| **Tipo de Versión** | **Descripción**                                                                                                                | **Fecha** | **Colaborador**                                   |
+| ------------------- | ------------------------------------------------------------------------------------------------------------------------------ | --------- | ------------------------------------------------- |
+| **1.0**             | Creación de proceso de gestión de cambios en los requisitos.  | 05/03/2025 | Diego Alfaro <br/> Daniel Contreras <br/> Emiliano Gómez | 
+| **1.1**             | Gestión de la configuración                                                                            | 24/04/2024 | Max Toscano                      |
