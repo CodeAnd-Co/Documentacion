@@ -41,12 +41,3 @@ Yo como usuario quiero cambiar el rancho seleccionado para poder analizar los di
 |PU-RF9-01|Cambiar el rancho seleccionado.|Se actualizan los tractores asignados al nuevo rancho seleccionado|
 |PU-RF-02|Verificar actualización.|La información se refresca sin necesidad de recargar la aplicación|
 |PU-RF-03|Comprobar persistencia.|Al navegar entre secciones se mantiene el nuevo rancho seleccionado.|
-
----
-
-## Historial de cambios
-
-| **Tipo de Versión** | **Descripción** | **Fecha** | **Colaborador** |
-| ------------------- | --------------- | --------- | --------------- |
-| **1.0** | Primera versión de del RF9 | 7/03/2025 | Daniel Contreras Chavez |
-| **1.1** | Se agregaron precondiciones | 3/04/2025 | Ian Julián Estrada Castro |
