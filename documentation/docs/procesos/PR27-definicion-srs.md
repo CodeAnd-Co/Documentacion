@@ -71,7 +71,7 @@ Para garantizar que los requisitos definidos sean viables y valiosos para el pro
 
 ---
 
-## Historial de cambios
+## Historial de Cambios
 
 | **Tipo de Versión** | **Descripción**                                              | **Fecha** | **Colaborador**                                |
 | ------------------- | ------------------------------------------------------------ | --------- | ---------------------------------------------- |
