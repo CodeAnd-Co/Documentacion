@@ -2,15 +2,7 @@
 title: Estrategia tecnica
 ---
 
-### Autores
-
-| Nombre           | Rol   |
-| ---------------- | ----- |
-| Diego Alfaro     | Autor |
-| Daniel Contreras | Autor |
-| Emiliano Gomez   | Autor |
-
-**Última actualización por:** Diego Alfaro, 11 de marzo de 2025
+**Última actualización por:** Hiram Mendoza , 24 de abril de 2025
 
 ---
 
@@ -282,3 +274,10 @@ Describe berevemente cómo se probó esta funcionalidad. Ejemplo:
 ### CD
 
 Para el despliegue continuo del backend utilizaremos un script de [_github actions_](/docs/guias/github/github-actions.md) paa hacer pull automaticamente y desplegar las ramas de produccion (main) y pruebas (staging), por lo que no tendremos que manejar estas acciones manualmente.
+
+# Historial de cambios
+
+| **Tipo de Versión** | **Descripción**                                             | **Fecha** | **Colaborador**            |
+| ------------------- | ----------------------------------------------------------- | --------- | -------------------------- |
+| **1.0**             | Creacion de la estrategia tecnica textiles                     | 6/03/2025 | Diego Alfaro,  Daniel Contreras, Emiliano Gomez               |
+
