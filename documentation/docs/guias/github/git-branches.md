@@ -5,8 +5,6 @@ sidebar_position: 2
 
 # Guía de Estrategia de Ramas
 
-**Última actualización:** 16 de febrero de 2025
-
 _Establece una estructura clara para la creación y gestión de ramas en los proyectos, definiendo cuándo y cómo crear ramas para nuevas funcionalidades, correcciones de errores y versiones de producción._
 
 ## Convenciones de Nomenclatura para las Ramas
@@ -77,3 +75,12 @@ Implementar estas prácticas contribuirá a una gestión eficiente de las ramas 
 - **Resolución de Conflictos**: En caso de conflictos durante la fusión, resolverlos en la rama correspondiente antes de completar la integración.
 
 Implementar estas prácticas contribuirá a una gestión eficiente de las ramas y facilitará la colaboración dentro del equipo de desarrollo.
+
+---
+
+## Historial de cambios
+
+| **Tipo de Versión** | **Descripción** | **Fecha**  | **Colaborador** |
+| ------------------- | --------------- | ---------- | --------------- |
+| **1.0** |  Creación de la guía | 16/02/2025 | Ángel Ramírez, Ian Estrada |
+| **1.1** |  Gestión de configuración.  | 24/04/2025 | Diego Fuentes |

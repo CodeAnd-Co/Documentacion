@@ -5,8 +5,6 @@ sidebar_position: 6
 
 # Guía de Buenas Prácticas para Commits
 
-**Última actualización:** 16 de febrero de 2025
-
 _Define estándares para la realización de commits claros y coherentes, facilitando el seguimiento de cambios y la colaboración entre desarrolladores._
 
 ## Frecuencia y Tamaño de los Commits
@@ -57,3 +55,12 @@ Relacionado con el issue #123.
 - **Evitar Commits de Prueba**: Evita realizar commits que solo sirvan para probar algo. Si es necesario, utiliza ramas temporales y elimínalas después de realizar las pruebas.
 
 Implementar estas prácticas contribuirá a un historial de commits más limpio y comprensible, facilitando la colaboración y el mantenimiento del proyecto a largo plazo.
+
+---
+
+## Historial de cambios
+
+| **Tipo de Versión** | **Descripción** | **Fecha**  | **Colaborador** |
+| ------------------- | --------------- | ---------- | --------------- |
+| **1.0** |  Creación de la guía | 16/02/2025 | Ángel Ramírez, Ian Estrada |
+| **1.1** |  Gestión de configuración.  | 24/04/2025 | Diego Fuentes |

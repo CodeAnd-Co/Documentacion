@@ -5,15 +5,6 @@ sidebar_position: 3
 
 # Guía para la especificación de requerimientos de software
 
-**Última actualización:** 6 de marzo de 2025  
-
-## **Autores**  
-
-| **Nombre**              | **Rol**  |
-|-------------------------|----------|
-| Juan Pablo Chávez Leal  | Autor    |
-| Daniel Queijeiro Albo   | Autor    |
-
 ---
 
 
@@ -87,3 +78,12 @@ Referencias
 - C.Robinson. 4.0 My Introduction to requirements. (s.f.). Google Docs. [https://docs.google.com/presentation/d/16Tuxvln_nG6cld5UQ2s_7mVBUNBOYC-t9RzfXkbYJK8/edit#slide=id.g11958c48d67_1_5](https://docs.google.com/presentation/d/16Tuxvln_nG6cld5UQ2s_7mVBUNBOYC-t9RzfXkbYJK8/edit#slide=id.g11958c48d67_1_5)
 
 - C.Robinson. 4.0_REQ.pptx. (s.f.). Google Docs. [https://docs.google.com/presentation/d/1uVHB2n_HSG597TdDv5CO3j9NHtgl-XH0/edit#slide=id.p20](https://docs.google.com/presentation/d/1uVHB2n_HSG597TdDv5CO3j9NHtgl-XH0/edit#slide=id.p20)
+
+---
+
+## Historial de cambios
+
+| **Tipo de Versión** | **Descripción** | **Fecha**  | **Colaborador** |
+| ------------------- | --------------- | ---------- | --------------- |
+| **1.0** | Guía de SRS | 06/03/2025 | Juan Pablo Chávez, Daniel Queijeiro |
+| **1.1** |  Gestión de configuración.  | 24/04/2025 | Diego Fuentes |
