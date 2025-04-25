@@ -58,3 +58,4 @@ sidebar_position: 12
 | **5.0**                 | Corregir el proceso completo                                                                            | 23/4/2025 | Angel Ramírez, Valeria Zúñiga           |
 | **5.1**                 | Corregir sintaxis y ortografía                                                                             | 23/4/2025 | Max Toscano           |
 | **5.2**                 | Cambiar nombre de la copia del informe de evaluación, hacer más claros los pasos para llenar la bitácora de auditorías                                                                            | 24/4/2025 | Max Toscano           |
+| **5.3** | Correccioines de no conformidades. | 24/04/2025 | Diego Fuentes |
