@@ -19,61 +19,71 @@ sidebar_position: 13
 2. Problema detectado en un proceso existente.
 3. Propuesta de mejora aprobada.
 4. Cambio en las necesidades u objetivos de la empresa.
+5. incumplimiento de estándares de codificación
+6. Código no testeable
+7. Requisitos mal identicados
 
 ---
 
 ### Proceso
 
-| Fase                         | Descripción                                                                                                                                                                                                                                                                                         | Responsable                            | Meta y práctica específica del CMMI                                                                                                |
-| ---------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
-| **Identificar el problema**  | Identifica los problemas considerando que son cualquier desviación de los estándares para productos de trabajo o forma de trabajo definidos  que afectan  negativamente el cumplimiento de los objetivos del proyecto. Para su detección, ten a la mano los documentos mencionados en la sección  de “Entradas”. | Miembro del equipo                     | **OPD, SP 1.1** (Establecer los procesos estándar), **RSKM, SP 2.1** (Identificar los riesgos), PMC, SP 2.1 (Recopilar problemas.) |
-| | Tras identificarlos, documenta los problemas en el [Repositorio de Acciones Correctivas](https://docs.google.com/spreadsheets/d/1bWcGOW0PjlB6ws4VDCAXw4rdlsBL1s1UbFidUgTCvCM/edit?gid=0#gid=0) llenando los siguientes campos: fecha de identificación, nombre, descripción breve y  fuente de origen. | Miembro del equipo. | PMC, SP 2.1 (Recopilar problemas.), **REQM SP 1.5**, Asegurar el alineamiento entre el trabajo del proyecto y los requisitos |
-| **Análisis del problema**    | Analiza cada problema documentado anteriormente, utiliza la tabla de criterios para decidir si requieren de una acción correctiva y documenta la decisión. | Miembro del equipo | **PMC, SP 2.1** (Recopilar problemas.),  **RSKM, SP 2.2** (Evaluar, clasificar y priorizar los riesgos), **RSKM, SP 3.1** (Desarrollar los planes de mitigación de riesgos), **REQM SP 1.5**, Asegurar el alineamiento entre el trabajo del proyecto y los requisitos |
-| | Identifica los stakeholders relevantes que se vean afectados por los problemas identificados y regístralos en la columna “Stakeholders relevantes”. | Miembro del equipo | PMC, SP 2.1 (Recopilar problemas.) |
-| **Obtener aprobación de stakeholders** | dentifica los stakeholders relevantes que se vean afectados por los problemas identificados y regístralos en la columna “Stakeholders relevantes”. | Miembro del equipo | **PMC, SP 2.2** (Llevar a cabo las acciones correctivas), **PMC, SP 2.1** (Recopilar problemas.), **OPD, SP 1.1** (Establecer los procesos estándar), **OPF, SP 3.2** (Desplegar los procesos estándar), **OPD, SP 1.3** (Establecer los criterios y guías de adaptación). |
-| **Llevar a cabo las acciones correctivas** | En base a la decisión tomada previamente, añade las tareas necesarias al plan de trabajo para cumplir con las acciones correctivas. Añade un responsable, fecha de realización y costo para cada una. Registra las tareas en la columna “Tareas agregadas al plan de trabajo”. | Miembro del equipo                     | **PMC, SP 2.2** (Llevar a cabo las acciones correctivas), **REQM SP 1.5**, Asegurar el alineamiento entre el trabajo del proyecto y los requisitos |
-| | Anota la fecha en que se aplican las acciones correctivas en la columna “Fecha de ejecución”. | Miembro del equipo | **PMC, SP 2.2** (Llevar a cabo las acciones correctivas), **REQM SP 1.5**, Asegurar el alineamiento entre el trabajo del proyecto y los requisitos |
-| | Tras ejecutarse las acciones correctivas, verifica que se hayan cumplido con las tareas agregadas en el tiempo y forma asignados y regístralo en la columna “¿Se cumplieron todas las tareas agregadas en tiempo y forma?”. | Miembro del equipo |  **PMC, SP 2.3** (Gestionar las acciones correctivas), **REQM SP 1.5**, Asegurar el alineamiento entre el trabajo del proyecto y los requisitos |
-| **Validación y seguimiento** | Agenda una revisión conjunta con el equipo para evaluar las acciones correctivas y sus resultados. Regístrala en la columna “Fecha de revisión”. | Miembro del equipo | **PPQA, SP 1.1** (Evaluar objetivamente los procesos), **PPQA, SP 1.2** (Evaluar objetivamente los productos de trabajo), **PMC, SP 2.3** (Gestionar las acciones correctivas), **REQM SP 1.5**, Asegurar el alineamiento entre el trabajo del proyecto y los requisitos |
-|          | Durante la revisión evalúa si las acciones correctivas fueron efectivas y regístralo en la columna de “¿Resolvió el problema?”. Las lecciones aprendidas pueden servir en los procesos de planificación y en los procesos de mitigación de riesgos. | Miembro del equipo | PMC, SP 2.3 (Gestionar las acciones correctivas),  |
-| | En caso de que el problema no haya sido resuelto, identifica áreas de oportunidad y vuelve a ejecutar el proceso desde la fase “Llevar a cabo las acciones correctivas ”. | Miembro del equipo | **PMC, SP 2.3** (Gestionar las acciones correctivas) |
+| Fase                                       | Descripción                                                                                                                                                                                                                                                                                                      | Responsable             | Meta y práctica específica del CMMI                                                            |
+| ------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- | ---------------------------------------------------------------------------------------------- |
+| **Identificar la no conformidad**          | Identifica cualquier desviación de los estándares para productos de trabajo o procesos que afecte el cumplimiento de los objetivos del proyecto. Ten a la mano los documentos de la sección de "Entradas".                                                                                                       | Miembro del equipo      | **OPD, SP 1.1**, **RSKM, SP 2.1**, **PMC, SP 2.1**                                             |
+|                                            | Documenta las no conformidades en el [Repositorio de Acciones Correctivas](https://docs.google.com/spreadsheets/d/1bWcGOW0PjlB6ws4VDCAXw4rdlsBL1s1UbFidUgTCvCM/edit?gid=0#gid=0), llenando los campos correspondientes.                                                                                          | Miembro del equipo      | **PMC, SP 2.1**, **REQM SP 1.5**                                                               |
+| **Análisis del problema**                  | Analiza los problemas documentados, utilizando los criterios establecidos para decidir si se requiere acción correctiva.                                                                                                                                                                                         | Miembro del equipo      | **PMC, SP 2.1**, **RSKM, SP 2.2**, **RSKM, SP 3.1**, **REQM SP 1.5**                           |
+|                                            | Identifica y documenta los stakeholders relevantes en la columna correspondiente.                                                                                                                                                                                                                                | Miembro del equipo      | **PMC, SP 2.1**                                                                                |
+| **Notificar no conformidad**               | Notifícala formalmente a los stakeholders y responsables, por correo, mensaje o reunión. Registra la fecha y responsables en el [Repositorio de Acciones Correctivas](https://docs.google.com/spreadsheets/d/1bWcGOW0PjlB6ws4VDCAXw4rdlsBL1s1UbFidUgTCvCM/edit?gid=0#gid=0).                                     | QA / Líder de equipo    | **PPQA, SP 2.1**                                                                               |
+| **Registrar en el reporte**                | Documenta todas las no conformidades y acciones correctivas en el [Repositorio de Acciones Correctivas](https://docs.google.com/spreadsheets/d/1bWcGOW0PjlB6ws4VDCAXw4rdlsBL1s1UbFidUgTCvCM/edit?gid=0#gid=0), llenando los campos correspondientes.                                                             | QA / Miembro del equipo | **PPQA, SP 2.1**                                                                               |
+| **Obtener aprobación de stakeholders**     | Revisa el problema y las acciones propuestas con los stakeholders afectados. Registra su aprobación en el [Repositorio de Acciones Correctivas](https://docs.google.com/spreadsheets/d/1bWcGOW0PjlB6ws4VDCAXw4rdlsBL1s1UbFidUgTCvCM/edit?gid=0#gid=0).                                                           | Miembro del equipo      | **PMC, SP 2.2**, **OPF, SP 3.2**, **OPD, SP 1.3**                                              |
+| **Llevar a cabo las acciones correctivas** | Agrega las tareas correspondientes al plan de trabajo, incluyendo responsable, fecha de realización y costo. Regístralo en la columna “Tareas agregadas al plan de trabajo”.                                                                                                                                     | Miembro del equipo      | **PMC, SP 2.2**, **REQM SP 1.5**                                                               |
+|                                            | Anota la fecha en que se aplican las acciones correctivas en la columna “Fecha de ejecución”.                                                                                                                                                                                                                    | Miembro del equipo      | **PMC, SP 2.2**, **REQM SP 1.5**                                                               |
+|                                            | Verifica que las tareas se hayan cumplido conforme a lo planeado. Registra el cumplimiento en la columna “¿Se cumplieron todas las tareas agregadas en tiempo y forma?”.                                                                                                                                         | Miembro del equipo      | **PMC, SP 2.3**, **REQM SP 1.5**                                                               |
+| **Validación y seguimiento**               | Agenda una revisión de los resultados. Registra en la columna “Fecha de revisión”. Evalúa si las acciones correctivas fueron efectivas y regístralo en “¿Resolvió el problema?”.                                                                                                                                 | QA / Miembro del equipo | **PPQA, SP 1.1**, **PPQA, SP 1.2**, **PPQA, SP 2.1**, **PMC, SP 2.3**, **REQM SP 1.5**         |
+|                                            | Si no se resolvió el problema, documenta áreas de oportunidad y repite el proceso desde la fase correspondiente.                                                                                                                                                                                                 | Miembro del equipo      | **PMC, SP 2.3**                                                                                |
+| **Escalar si no se resuelve**              | Si la no conformidad persiste sin solución, escálala volviendo a aplicar este proceso.                                                                                                                                                                                                                           | QA / Gerente            | **PPQA, SP 2.1**                                                                               |
 
 ---
 
 ### Salidas
 
-1. Proceso actualizado.
-2. Historial de cambios reflejado en la documentación.
+1. Resolución de la no conformidad.
+2. Historial de cambios.
 3. Corrección validada y en funcionamiento.
+4. Comunicación formal de la no conformidad.
+5. Repositorio de acciones correctivas y no conformidades actualizado.
 
 ---
 
 ## Tabla de criterios
 
-| Criterio | Pregunta guía | ¿Requiere acción correctiva? |
-| -------- | ------------- | ---------------------------- |
-| Impacto en objetivos | ¿Este problema puede afectar el cumplimiento de los objetivos del proyecto (tiempo, calidad, alcance, costo)? | Sí |
-| Compromisos no cumplidos | ¿Existen compromisos (internos o externos) que no se están cumpliendo según lo planeado? | Sí |
-| Repetición del problema | ¿Es una desviación o situación que ya ha ocurrido antes, pero aún no se ha abordado? | Sí |
-| | ¿Es una desviación o situación que ya se abordó anteriormente, pero el problema persiste? | Sí |
-| Gravedad | ¿Es una desviación significativa respecto al plan, métricas o compromisos? | Sí |
-| Riesgo materializado | ¿Corresponde a un riesgo previamente identificado que ahora se ha hecho realidad? | Sí (Atender plan de contingencia) |
-| Interrupción de procesos | ¿Afecta el flujo de trabajo, la disponibilidad de recursos o la continuidad del proyecto? | Sí |
-| Falta de participación de stakeholders | ¿Se observa una baja participación, compromiso o coordinación deficiente entre los interesados? | Sí |
-| Problemas en la gestión y/o seguridad de los datos | ¿Se han identificado errores, accesos no controlados o compromisos en la privacidad, integridad o disponibilidad de los datos o productos? | Sí |
-| Sin impacto aparente | ¿No tiene consecuencias observables ni potenciales si no se atiende? | No (solo registrar) |
-
-
+| Criterio                                           | Pregunta guía                                                                                                                              | ¿Requiere acción correctiva?      |
+| -------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------- |
+| Impacto en objetivos                               | ¿Este problema puede afectar el cumplimiento de los objetivos del proyecto (tiempo, calidad, alcance, costo)?                              | Sí                                |
+| Compromisos no cumplidos                           | ¿Existen compromisos (internos o externos) que no se están cumpliendo según lo planeado?                                                   | Sí                                |
+| Repetición del problema                            | ¿Es una desviación o situación que ya ha ocurrido antes y aún no ha sido atendida?                                                         | Sí                                |
+| Acción previa fallida                              | ¿Es una desviación o situación que ya se abordó anteriormente, pero el problema persiste?                                                  | Sí                                |
+| Gravedad                                           | ¿Es una desviación significativa respecto al plan, métricas o compromisos?                                                                 | Sí                                |
+| Riesgo materializado                               | ¿Corresponde a un riesgo previamente identificado que ahora se ha hecho realidad?                                                          | Sí (Atender plan de contingencia) |
+| Interrupción de procesos                           | ¿Afecta el flujo de trabajo, la disponibilidad de recursos o la continuidad del proyecto?                                                  | Sí                                |
+| Falta de participación de stakeholders             | ¿Se observa una baja participación, compromiso o coordinación deficiente entre los interesados?                                            | Sí                                |
+| Gestión o seguridad de datos comprometida          | ¿Se han detectado accesos no autorizados o fallos en la privacidad, integridad o disponibilidad de los datos o productos de trabajo?       | Sí                                |
+| Desviación de los estándares de codificación       | ¿El código presenta inconsistencias, malas prácticas o no cumple con los estándares definidos por el equipo o la organización?             | Sí                                |
+| Problemas en pruebas o validación                  | ¿Se han detectado errores no capturados por pruebas, falta de cobertura o ejecución inadecuada de pruebas?                                 | Sí                                |
+| Problemas en la gestión y/o seguridad de los datos | ¿Se han identificado errores, accesos no controlados o compromisos en la privacidad, integridad o disponibilidad de los datos o productos? | Sí                                |
+| Fallas en la identificación de requisitos          | ¿Se han omitido, malinterpretado o identificado incorrectamente requisitos funcionales o no funcionales?                                   | Sí                                |
+| Sin impacto aparente                               | ¿No tiene consecuencias observables ni potenciales si no se atiende?                                                                       | No (solo registrar)               |
 
 
 ---
 
 ## Historial de cambios
 
-| **Tipo de Versión** | **Descripción**                             | **Fecha** | **Colaborador**                 |
-| ------------------- | ------------------------------------------- | --------- | ------------------------------- |
-| **1.0**             | Proceso inicial para acciones correctivas   |   | Paola Garrido, Valeria Zúñiga |
-| **1.1**             | Se agregó enlace y práctica OPD SP 1.3     | 31/3/2025  | Ian Julián Estrada Castro  |
-| **1.2**             | Refactorización                             | 18/4/2025 | Diego Fuentes                    |
-| **2.0**             | Proceso actualizado para cumplir con la meta 2 de PMC | 21/4/2025 | Diego Fuentes, Max Toscano, Paola Garrido, Rommel Toledo, Daniel Queijeiro. |
-| 2.1 | Correccioines de REQM 1.5 | 22/04/2025 | Juan Pablo Chávez Leal|
+| **Tipo de Versión**             | **Descripción**                                       | **Fecha**  | **Colaborador**                                                             |
+| ------------------------------- | ----------------------------------------------------- | ---------- | --------------------------------------------------------------------------- |
+| **1.0**                         | Proceso inicial para acciones correctivas             |            | Paola Garrido, Valeria Zúñiga                                               |
+| **1.1**                         | Se agregó enlace y práctica OPD SP 1.3                | 31/3/2025  | Ian Julián Estrada Castro                                                   |
+| **1.2**                         | Refactorización                                       | 18/4/2025  | Diego Fuentes                                                               |
+| **2.0**                         | Proceso actualizado para cumplir con la meta 2 de PMC | 21/4/2025  | Diego Fuentes, Max Toscano, Paola Garrido, Rommel Toledo, Daniel Queijeiro. |
+| **2.1**                         | Correccioines de REQM 1.5                             | 22/04/2025 | Juan Pablo Chávez Leal                                                      |
+| **2.2**                         | Incorporación de PPQA 2.1                             | 24/04/2025 | Juan Eduardo Rosas Cerón                                                    |
