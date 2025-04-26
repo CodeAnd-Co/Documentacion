@@ -13,7 +13,7 @@ _Detalla el proceso para crear, revisar y aprobar pull requests, fomentando una 
 
 1. Hacer pull origin (main/develop) para asegurar que tu rama local este al corriente.
 
-    - Si al hacer el pull origin surgen conflictos es necesario que los resuelvas antes de que puedas hacer el pull request 
+    - Si al hacer el pull origin surgen conflictos es necesario resolverlos antes de hacer el pull request.
 
 2. Hacer push origin (tu rama) con tus cambios de la rama local.
 
@@ -25,9 +25,9 @@ _Detalla el proceso para crear, revisar y aprobar pull requests, fomentando una 
 
 6. Seleccionar el botón de "Nuevo pull request".
 
-7. Modificar el orden de las ramas que vas a mergear.
+7. Asegurar el orden correcto de las ramas a mergear. (Ej. main ← tu rama)
 
-8. Escribir el título, y basándote en la plantilla del pull request la descripción.
+8. Escribir el título. Basándote en la plantilla del pull request escribir la descripción.
 
 9. En el costado derecho asignar cómo evaluador al QA del proyecto correspondiente.
 
@@ -49,7 +49,7 @@ _Detalla el proceso para crear, revisar y aprobar pull requests, fomentando una 
 
 7. En caso de que haya errores, dejar comentario con las correcciones necesarias y solicitar cambios al autor del pull request.
 
-8. Si no hay errores y paso la checklist, aceptar el pull request y borrar la rama.
+8. Si no hay errores y pasó la checklist, aceptar el pull request y borrar la rama.
 
 ## Criterios para la Creación de pull requests
 
@@ -173,4 +173,5 @@ En la parte inferior de los documentos Markdown debe haber una tabla como la sig
 | **2.2** |  Solicitudes de extracción -> pull request.  | 24/04/2025 | Juan Eduardo Rosas Cerón, Juan Carlos Calderón García, Pablo Hazael Hurtado Mireles |
 | **2.3** |  Gestión de configuración.  | 24/04/2025 | Diego Fuentes |
 | **2.4** |  Gestión de configuración como check.  | 25/04/2025 | Diego Fuentes |
-| **2.5** |  Agregué como realizar un PR y aprobarlo en Github  | 26/04/2025 | Daniel Queijeiro |
+| **3.0** |  Agregué como realizar un PR y aprobarlo en Github  | 26/04/2025 | Daniel Queijeiro |
+| **3.1** |  Correcciones de gramática | 26/04/2025 | Daniel Queijeiro, Diego Fuentes |
