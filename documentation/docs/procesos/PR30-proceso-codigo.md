@@ -58,4 +58,4 @@ sidebar_position: 30
 
 | **Tipo de Versión**     | **Descripción**                                                                                | **Fecha**                           | **Colaborador**                                |
 | ----------------------- | ---------------------------------------------------------------------------------------------- | ----------------------------------- | ---------------------------------------------- |
-    | **Versión 1.o** | Creación del proceso | 25/04/2025 | Daniel Queijeiro, Daniel Contreras |
+    | **Versión 1.0** | Creación del proceso | 25/04/2025 | Daniel Queijeiro, Daniel Contreras |
