@@ -349,7 +349,7 @@ import TabItem from '@theme/TabItem';
 | Nombre                            | Rol       |
 | --------------------------------- | --------- |
 | Emiliano Valdívia Lara            | Team Leader      |
-| Miguel Angel Uribe Esquivel   | Architecture Owner      |
+| Miguel Ángel Uribe Esquivel   | Architecture Owner      |
 | Armando Méndez Castro  | Product Owner     |
 | Mariana Juárez Ramírez  | Team Member, UX/UI Diseñador   |
 | Emiliano Gómez González | Q/A       |
@@ -369,7 +369,7 @@ import TabItem from '@theme/TabItem';
 
 | **Tipo de Versión** | **Descripción**                      | **Fecha** | **Colaborador**   |
 | ------------------- | ------------------------------------ | --------- | ----------------- |
-| **1.0**             | Adición y definición del contenido   | 8/3/2025  | Armando Mendez    |
-| **1.1**             | Correciones del contenido            | 20/3/2025 | Armando Mendez    |
+| **1.0**             | Adición y definición del contenido   | 8/3/2025  | Armando Méndez    |
+| **1.1**             | Correciones del contenido            | 20/3/2025 | Armando Méndez    |
 | **1.2**             | Agregar misión y visión              | 25/4/2025 | Sofía Osorio      |
 
