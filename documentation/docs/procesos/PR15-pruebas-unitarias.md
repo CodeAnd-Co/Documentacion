@@ -15,7 +15,7 @@ Garantizar la calidad de cada release.
 
 ## Entradas
 
-1. Historia de usaurio/caso de uso
+1. Historia de usuario/caso de uso
 
 ---
 
@@ -35,7 +35,7 @@ Garantizar la calidad de cada release.
 ## Salida
 
 1. Matriz de prueba
-2. Código de la prueba
+2. Código fuente de la prueba
 3. Capturas de los resultados obtenidos
 
 ---
