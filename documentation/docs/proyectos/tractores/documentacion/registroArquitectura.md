@@ -4,15 +4,6 @@ title: Registro de decisiones arquitectónicas
 
 # Registro de decisiones arquitectónicas
 
-**Última actualización** 10 de marzo de 2025 por Daniel Queijeiro
-
----
-
-### Autores
-| Nombre                            | Rol       |
-| --------------------------------- | --------- |
-| Daniel Contreras                  | Autor     |
-| Daniel Queijeiro                  | Autor     |
 ---
 
 ### Seleccionar que tecnología vamos a usar
@@ -68,3 +59,11 @@ Seleccionamos ElectronJS debido a su capacidad de tener el backend integrado, pa
 ***Lista de recursos relevantes para aprender de cada opción***  
 [Sitio oficial de NeutralinoJS](https://neutralino.js.org/)  
 [Sitio oficial de ElectronJS](https://www.electronjs.org/)
+
+---
+
+## Historial de cambios
+
+| **Tipo de Versión** | **Descripción** | **Fecha**  | **Colaborador** |
+| ------------------- | --------------- | ---------- | --------------- |
+| **1.0** | Primer registro de desiciones arquitectónicas | 10/03/2025 | Daniel Contreras Chávez <br/> Daniel Queijeiro Albo |

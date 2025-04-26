@@ -4,19 +4,12 @@ sidebar_position: 6
 ---
 # Work Breakdown Structure
 
-| Nombre                          | Rol     |
-|---------------------------------|---------|
-| Ian Julián Estrada Castro       | Autor   | 
-| Galo Alejandro del Río Vigiano  | Autor   | 
-| Daniel Contreras Chavez         | Coautor |
-
-**Última actualización**: 9 de marzo de 2025
-
 ![alt text](./WBSTractores.png)
 
-# Registro de cambios
+---
 
-| Autor                           | Descripción             | Versión |
-|---------------------------------| ----------------------- |---------|
-| Ian Julián Estrada Castro       | Primera versión del WBS | 1.0     | 
-| Galo Alejandro del Río Vigiano  | Primera versión del WBS | 1.0     | 
+## Historial de cambios
+
+| **Tipo de versión** | **Descripción**                    | **Fecha**  | **Colaborador**        |
+|---------------------|------------------------------------| ---------- | ---------------------- |
+| **1.0**             | Primera versión de WBS             | 09/03/2025 | Ian Julián Estrada Castro <br/> Galo Alejandro del Río Vigiano |

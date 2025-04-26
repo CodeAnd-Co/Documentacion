@@ -36,3 +36,11 @@ El equipo de Tractech utilizó una escala diferente para calcular el tamaño de 
   - Si es una historia de **5 o más puntos**, se debe incluir un **diagrama de secuencia**.
   - Si es una historia de **5 o más puntos** y el usuario interactúa con la interfaz, se debe incluir un **diagrama de secuencia**.
 - La historia debe contar con su **wireframe o mockup** de interfaz.
+
+---
+
+## Historial de cambios
+
+| **Tipo de versión** | **Descripción**                    | **Fecha**  | **Colaborador**        |
+|---------------------|------------------------------------| ---------- | ---------------------- |
+| **1.0**             | Primera versión de definición de Ready para TracTech | 08/03/2025 | Diego Ricardo Alfaro Pinto <br/> Juan Pablo Chávez Leal |
