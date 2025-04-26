@@ -102,3 +102,4 @@ Situación en la que el producto o acuerdo de trabajo no cumple con los requisit
 | **2.0**                         | Proceso actualizado para cumplir con la meta 2 de PMC       | 21/04/2025  | Diego Fuentes, Max Toscano, Paola Garrido, Rommel Toledo, Daniel Queijeiro. |
 | **2.1**                         | Correcciones de REQM 1.5                                    | 22/04/2025 | Juan Pablo Chávez Leal                                                      |
 | **2.2**                         | Incorporación de PPQA 2.1 (no conformidades y notificación) | 24/04/2025 | Juan Eduardo Rosas Cerón                                                    |
+| **2.3**                         | Errores ortográficos | 25/04/2025 | Hiram Mendoza                                                   |
