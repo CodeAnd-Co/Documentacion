@@ -82,3 +82,4 @@ Para garantizar que los requisitos definidos sean viables y valiosos para el pro
 | **2.3**             | Definición de cuándo y cómo decidimos qué requisitos aceptar | 07/4/2025 | Angélica Ríos Cuentas                          |
 | **2.4**             | Refactorización                                              | 18/4/2025 | Diego Fuentes Juvera                           |
 | **2.5**             | Se identificó PP SP 3.3 en el penúltimo paso                 | 22/4/2025 | Mariana Juárez                                 |
+| **2.6**             | Errores ortográficos                | 25/4/2025 | Hiram Mendoza                               |
