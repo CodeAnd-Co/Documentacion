@@ -16,7 +16,7 @@ sidebar_position: 1
 
 <div style={{ width: "48%" }}>
 <h3>Visión</h3>
-<p>Crecer como equipo de desarrollo para brindar una solución que aporte valor y resuelva la necesidad de nuestro cliente; a través del seguimiento de las prácticas del CMMI y la colaboración efectiva.</p>
+<p>Crecer como equipo de desarrollo para brindar una solución que aporte valor y resuelva la necesidad de nuestro cliente a través del seguimiento de las prácticas del CMMI y la colaboración efectiva.</p>
 </div>
 </div>
 
@@ -348,16 +348,14 @@ import TabItem from '@theme/TabItem';
 
 | Nombre                            | Rol       |
 | --------------------------------- | --------- |
-| Mariana Juárez Ramírez            | Team Leader      |
-| Emiliano Gómez González   | Architecture Owner      |
-| Sofía Osorio Suárez   | Product Owner     |
-| Juan Eduardo Rosas Cerón  | Presentation Owner      |
-| Galo Alejandro del Rio Viggiano  | Team Member, UX/UI Diseñador   |
-| Emiliano Valdívia Lara | Q/A       |
-| Juan Carlos Calderón García | Team Member |      |
-| Ian Julián Estrada Castro   | Juntas Owner   |
-| Armando Méndez Castro   | Team Member   |
-| Miguel Angel Uribe Esquivel  | Team Member   |
+| Emiliano Valdívia Lara            | Team Leader      |
+| Miguel Angel Uribe Esquivel   | Architecture Owner      |
+| Armando Méndez Castro  | Product Owner     |
+| Mariana Juárez Ramírez  | Team Member, UX/UI Diseñador   |
+| Emiliano Gómez González | Q/A       |
+| Sofía Osorio Suárez | Team Member |      |
+| Juan Eduardo Rosas Cerón   | Team Member   |
+| Juan Antonio Landeros Velázquez  | Team Member   |
 
 ### Recursos Necesarios
 
