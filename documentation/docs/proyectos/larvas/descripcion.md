@@ -16,7 +16,7 @@ sidebar_position: 1
 
 <div style={{ width: "48%" }}>
 <h3>Visión</h3>
-<p>Crecer como equipo de desarrollo, brindar una solución que aporte valor y resuelva la necesidad de nuestro cliente; a través del seguimiento de las prácticas del CMMI y la colaboración efectiva.</p>
+<p>Crecer como equipo de desarrollo para brindar una solución que aporte valor y resuelva la necesidad de nuestro cliente; a través del seguimiento de las prácticas del CMMI y la colaboración efectiva.</p>
 </div>
 </div>
 
