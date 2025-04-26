@@ -11,8 +11,11 @@ sidebar_position: 3
 
 ## Entradas
 
-1. Plan de valor ganado 
-2. Matriz de riesgos del proyecto
+1. Plan de iteración del proyecto.
+2. Plan de valor ganado del proyecto.
+3. Dashboard del proyecto.
+4. Matriz de riesgos del proyecto.
+5. [Documento de juntas efectivas](https://docs.google.com/document/d/1kQ_WNJF6ZAqBEqnu3a1I7ls6aLCqXvPdEHlpKwQGfEM/edit?usp=drive_link).
 
 
 
@@ -20,9 +23,12 @@ sidebar_position: 3
 
 | Fase                     | Actividades | Responsables | Meta y práctica específica del CMMI |
 |--------------------------|-------------|--------------|--------------------------------------|
-| **Inicio** |  Preguntar a cada miembro del equipo: ¿Qué hiciste ayer? ¿Tienes algún impedimento?  ¿Qué vas a hacer hoy?  ¿Tomarás nuevas tareas del Work Items List?  **Actualizar el PVG.** | Team Leader del equipo respectivo. PM en caso de Daily departamental. | **PMC SP 1.2** (Monitorear compromisos), **MA SP 2.1** (Obtener los datos de medición), **PMC SP 1.1** (Monitorear parámetros del proyecto)|
-| **Estado del proyecto** |  Un miembro aleatorio responde:  ¿Cómo estamos?  ¿Dónde queremos estar?  ¿Cuánto nos ha costado? Analizar los riesgos presentes en la matriz y verificar su estado actual. | Team Leader del equipo respectivo. PM en caso de Daily departamental. | **MA SP 2.1** (Analizar resultados de mediciones) |
-| **Toma de decisiones** |  Si el proyecto está atrasado o adelantado, determinar la causa raíz y tomar decisiones.  Si un riesgo tiene alta probabilidad próxima, definir acciones preventivas.  Si el riesgo ya está presente, definir acciones correctivas. | Team Leader del equipo respectivo. PM en caso de Daily departamental.Los team members pueden aportar. | **PMC SP 1.1** (Monitorear parámetros del proyecto) |
+|   **Preparación**    | Preparar y **tener a la mano todos los documentos** de apoyo relevantes para la daily: Plan de iteración, plan de valor ganado, dashboard, matriz de riesgos, documento de la junta. | Team Leader / PM |  |
+| **Ejecución** | Con el plan de iteración en mano **verificar las tareas** que deberían estar cumplidas hasta el momento preguntando a cada responsable si pudieron terminarla ese día. <br/> - **Si la tarea no pudo ser finalizada**, preguntar cuál fue el impedimento. Anotar el impedimento en las notas del documento de la junta para resolverlo de manera posterior. Establecer un nuevo compromiso público con la tarea/cambiar de responsable si no se puede establecer el compromiso/Buscar quién puede ayudar. <br/> - **Si la tarea fue finalizada** asignar una nueva tarea al responsable estableciendo un compromiso público de cumplimiento y verificando que la fecha y costo real estén llenos. | Team Leader / PM | **PMC SP 1.2** (Monitorear compromisos), **MA SP 2.1** (Obtener los datos de medición), **PMC SP 1.1** (Monitorear parámetros del proyecto) |
+| | Con el plan de iteración en mano, **verificar el estado de las tareas en progreso** que no deberían estar terminadas aún preguntando si se ha tenido algún impedimento o si se necesita ayuda de otro integrante.  | Team Leader / PM | **PMC SP 1.1** (Monitorear parámetros del proyecto) |
+| **Estado del proyecto** |  Con el **dashboard** en mano un miembro aleatorio responde:  ¿Cómo estamos?  ¿Dónde queremos estar?  ¿Cuánto nos ha costado? ¿Cómo esta la calidad? Analizar los riesgos presentes en la matriz y verificar su estado actual. | Team Leader / PM / Team Member | **MA SP 2.1** (Analizar resultados de mediciones) |
+|  |  Con la **matriz de riesgos** en mano analizar los riesgos presentes en la matriz y verificar su estado actual. | Team Leader / PM / Team Member | **PMC SP 1.3** (Monitorear riesgos.) |
+| **Toma de decisiones** |  Si el proyecto está atrasado o adelantado, determinar la causa raíz y tomar decisiones.  Si un riesgo tiene alta probabilidad próxima, definir acciones preventivas. Si el riesgo ya está presente, definir acciones correctivas. Registrar decisiones en el **Documento de juntas efectivas**. | Team Leader / PM / Team Member | **PMC SP 1.1** (Monitorear parámetros del proyecto) |
 
 ## Salidas
 
