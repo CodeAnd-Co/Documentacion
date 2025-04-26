@@ -54,3 +54,4 @@ sidebar_position: 3
 | **1.3** | Inclusión de SP 2.1 del área de proceso MA | 08/04/2025 | Ian Julián Estrada Castro |
 | **1.4** | Refactorización | 18/04/2025 | Diego Fuentes |
 | **1.5** | Corrección PMC 1.1 | 22/04/2025 | Juan Pablo Chávez |
+| **2.0** | Cambio de todo el proceso para coincidir con cómo hacemos uan daily efectiva. | 25/04/2025 | Juan Pablo Chávez |
