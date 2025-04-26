@@ -23,7 +23,7 @@ _Detalla el proceso para crear, revisar y aprobar Pull Requests, fomentando una 
 
 7. Seleccionar el botón de "Nuevo Pull Request".
 
-8. Modificar el orden de las ramas que vas a mergear. Ej. develop <-- "tu rama".
+8. Modificar el orden de las ramas que vas a mergear. Ej. develop <== "tu rama".
 
 9. Escribir el título, y basandote en la plantilla del Pull Request la descripción.
 
