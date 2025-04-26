@@ -99,6 +99,7 @@ Implementar estas prácticas garantizará una gestión efectiva de las Pull Requ
 - [ ] Contenido actualizado y relevante
 - [ ] Fecha y versión actualizados (si aplica)
 - [ ] Alguien más está asignado como evaluador (tester/reviewer)
+- [ ] Actualicé la información del repositorio de configuración.
 
 ## Checklist del evaluador:
 
