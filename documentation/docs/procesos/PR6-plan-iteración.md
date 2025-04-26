@@ -45,6 +45,7 @@ sidebar_position: 6
 ### Salidas
 
 1. Plan de iteración con tareas gestionables y entendibles.
+2. Plan de valor ganado actualizado.
 
 ---
 
