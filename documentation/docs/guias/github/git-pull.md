@@ -1,57 +1,59 @@
 ---
-title: Guía de Pull Request
+title: Guía de pull request
 sidebar_position: 3
 ---
 
-# Guía de Pull Request
+# Guía de pull request
 
 
-_Detalla el proceso para crear, revisar y aprobar Pull Requests, fomentando una colaboración efectiva y asegurando la calidad del código antes de su integración._
+_Detalla el proceso para crear, revisar y aprobar pull requests, fomentando una colaboración efectiva y asegurando la calidad del código antes de su integración._
 
 
-## ¿Cómo hacer un Pull Request?
+## ¿Cómo hacer un pull request?
 
 1. Hacer pull origin (main/develop) para asegurar que tu rama local este al corriente.
 
-2. Hacer push origin con tus cambios de la rama local.
+    - Si al hacer el pull origin surgen conflictos es necesario que los resuelvas antes de que puedas hacer el pull request 
+
+2. Hacer push origin (tu rama) con tus cambios de la rama local.
 
 3. Entrar a la página de la organización Code&Co.
 
 4. Seleccionar el repositorio donde realizaste cambios.
 
-5. En la barra superior seleccionar la ventana de Pull Request.
+5. En la barra superior seleccionar la ventana de pull request.
 
-6. Seleccionar el botón de "Nuevo Pull Request".
+6. Seleccionar el botón de "Nuevo pull request".
 
 7. Modificar el orden de las ramas que vas a mergear.
 
-8. Escribir el título, y basándote en la plantilla del Pull Request la descripción.
+8. Escribir el título, y basándote en la plantilla del pull request la descripción.
 
 9. En el costado derecho asignar cómo evaluador al QA del proyecto correspondiente.
 
-10. Crear el Pull Request.
+10. Crear el pull request.
 
-## ¿Cómo aprobar un Pull Request?
+## ¿Cómo aprobar un pull request?
 
 1. Entrar a la página de la organización Code&Co.
 
 2. Seleccionar el repositorio donde solicitaron la revisión.
 
-3. En la barra superior seleccionar la ventana de Pull Request.
+3. En la barra superior seleccionar la ventana de pull request.
 
-4. Seleccionar el Pull Request donde solicitaron la revisión.
+4. Seleccionar el pull request donde solicitaron la revisión.
 
 5. Verificar que todas las pruebas automáticas hayan pasado.
 
 6. Completar la checklist del evaluador verificando cada archivo.
 
-7. En caso de que haya errores, dejar comentario con las correcciones necesarias y solicitar cambios al autor del Pull Request.
+7. En caso de que haya errores, dejar comentario con las correcciones necesarias y solicitar cambios al autor del pull request.
 
-8. Si no hay errores y paso la checklist, aceptar el Pull Request y borrar la rama.
+8. Si no hay errores y paso la checklist, aceptar el pull request y borrar la rama.
 
-## Criterios para la Creación de Pull Requests
+## Criterios para la Creación de pull requests
 
-1. **Tamaño y Enfoque**: Limita las Pull Requests a cambios pequeños y enfocados. Esto facilita una revisión más rápida y reduce la posibilidad de introducir errores.
+1. **Tamaño y Enfoque**: Limita las pull requests a cambios pequeños y enfocados. Esto facilita una revisión más rápida y reduce la posibilidad de introducir errores.
 
 2. **Descripciones Claras**: Proporciona títulos y descripciones detalladas que expliquen el propósito de los cambios, los archivos modificados y cualquier contexto relevante.
 
@@ -61,7 +63,7 @@ _Detalla el proceso para crear, revisar y aprobar Pull Requests, fomentando una 
 
 ## Checklist para Revisores (Code Review)
 
-1. **Comprensión del Propósito**: Verifica que el propósito de la Pull Request esté claramente definido y que los cambios sean coherentes con los objetivos del proyecto
+1. **Comprensión del Propósito**: Verifica que el propósito de la pull request esté claramente definido y que los cambios sean coherentes con los objetivos del proyecto
 
 2. **Calidad del Código**: Evalúa la legibilidad, estructura y adherencia a las convenciones de estilo del código.
 
@@ -82,7 +84,7 @@ _Detalla el proceso para crear, revisar y aprobar Pull Requests, fomentando una 
 5. **Aprobación Formal**: Una vez que todas las pruebas hayan pasado y la revisión haya sido completada, obtén la aprobación formal de los revisores antes de proceder con la fusión.
 
 :::tip Beneficio  
-Implementar estas prácticas garantizará una gestión efectiva de las Pull Request, promoviendo una colaboración eficiente y manteniendo la calidad del código en el proyecto.
+Implementar estas prácticas garantizará una gestión efectiva de las pull request, promoviendo una colaboración eficiente y manteniendo la calidad del código en el proyecto.
 :::
 
 6. **Eliminación de la rama**: Una vez que se haya hecho la fusión, elimina la rama. 
@@ -96,8 +98,8 @@ Implementar estas prácticas garantizará una gestión efectiva de las Pull Requ
 ```
 <!--- Plantilla de PR para docusaurus -->
 <!--- Autor: Ian Julián Estrada Castro -->
-<!--- Versión 2.0 -->
-<!--- Última actualización: 24 de marzo de 2025 -->
+<!--- Versión 2.1 -->
+<!--- Última actualización: 26 de abril de 2025 -->
 
 # Solicitud de cambio (PR)
 
@@ -139,7 +141,7 @@ Implementar estas prácticas garantizará una gestión efectiva de las Pull Requ
 
 <!--- Repasa los puntos siguientes, y pon una `x` en todas las cajas que aplican -->
 
-- [ ] El registro de cambios coincide con la descripción del Pull Request
+- [ ] El registro de cambios coincide con la descripción del pull request
 - [ ] Los cambios no afectan negativamente la documentación o generan inconsistencias
 - [ ] Ortografía y gramática correctas
 - [ ] He notificado al autor del PR en caso de dudas o ajustes necesarios
@@ -164,11 +166,11 @@ En la parte inferior de los documentos Markdown debe haber una tabla como la sig
 | **Tipo de Versión** | **Descripción** | **Fecha**  | **Colaborador** |
 | ------------------- | --------------- | ---------- | --------------- |
 | **1.0** |  Creación de la guía | 16/02/2025 | Ángel Ramírez, Ian Estrada |
-| **1.1** |  Agregué la plantilla para Pull Request. | 16/02/2025 |  Ian Julián Estrada Castro |
+| **1.1** |  Agregué la plantilla para pull request. | 16/02/2025 |  Ian Julián Estrada Castro |
 | **1.2** |  Agregué un campo en el checklist del evaluador. | 24/04/2025 |  Ian Julián Estrada Castro |
 | **2.0** | Eliminé apartado de lista de archivos, cambié un elemento de la lista del evaluador y comenté el apartado de registro de cambios en plantilla. Hice referencia de la guía para mantener un control de versiones en la documentación.  | 24/04/2025 |  Ian Julián Estrada Castro |
 | **2.1** |  Corregí error ortográfico. Agregué enlace a guía para mantener un control de versiones en la documentación.  | 24/04/2025 | Ian Julián Estrada Castro |
-| **2.2** |  Solicitudes de extracción -> Pull Request.  | 24/04/2025 | Juan Eduardo Rosas Cerón, Juan Carlos Calderón García, Pablo Hazael Hurtado Mireles |
+| **2.2** |  Solicitudes de extracción -> pull request.  | 24/04/2025 | Juan Eduardo Rosas Cerón, Juan Carlos Calderón García, Pablo Hazael Hurtado Mireles |
 | **2.3** |  Gestión de configuración.  | 24/04/2025 | Diego Fuentes |
 | **2.4** |  Gestión de configuración como check.  | 25/04/2025 | Diego Fuentes |
 | **2.5** |  Agregué como realizar un PR y aprobarlo en Github  | 26/04/2025 | Daniel Queijeiro |
