@@ -15,11 +15,16 @@ Como **Super Administrador**, quiero acceder a un listado de usuarios con opcion
 
 ## **Criterios de Aceptación:**
 
-1. El Super Administrador debe poder acceder a la opción **"Lista de Usuarios"** desde el panel de administración.
+1. El Super Administrador debe poder acceder a la opción **"Usuarios"** desde el panel de administración.
 2. Se debe mostrar una tabla con la siguiente información de cada usuario:
+   - ID
    - Nombre completo
    - Rol
-3. Debe existir una barra de búsqueda para filtrar usuarios por nombre o correo electrónico.
+   - Cliente
+   - Estatus
+   - Correo
+   - Teléfono
+3. Se deben poder hacer búsquedas y filtros para ubicar usuarios.
 4. Debe permitir paginación si hay muchos usuarios registrados.
 5. Si no hay usuarios en la base de datos, se debe mostrar un mensaje indicando que no hay registros disponibles.
 
@@ -31,67 +36,80 @@ Como **Super Administrador**, quiero acceder a un listado de usuarios con opcion
 
 ```mermaid
 sequenceDiagram
-participant SuperAdmin as Super Administrador
-participant Frontend
-participant Api_gateway
-participant Backend
-participant rutaUsuarios
-participant controladorUsuarios
-participant repositorioUsuarios
-participant RDS
+    actor SuperAdministrador as Super Administrador
 
-SuperAdmin -->> Frontend: Selecciona "Lista de Usuarios"
-Frontend -->> Api_gateway: Envía petición GET /api/usuarios con JWT
-Api_gateway -->> Backend: Reenvía GET /api/usuarios con JWT
-Backend -->> rutaUsuarios: Llama a la ruta /api/usuarios
-rutaUsuarios -->> rutaUsuarios: Valida API key
 
-alt API key inválida
-    rutaUsuarios -->> Backend: Retorna JSON {"message": "API key inválida"}, status 400
-    Backend -->> Api_gateway: Retorna JSON {"message": "API key inválida"}, status 400
-    Api_gateway -->> Frontend: Retorna JSON {"message": "Error de autenticación"}, status 400
-    Frontend -->> SuperAdmin: Muestra mensaje de error: "Acceso no autorizado"
-else API key válida
-    rutaUsuarios -->> rutaUsuarios: Valida JWT
-
-    alt JWT inválido o expirado
-        rutaUsuarios -->> Backend: Retorna JSON {"message": "JWT inválido"}, status 401
-        Backend -->> Api_gateway: Retorna JSON {"message": "JWT inválido"}, status 401
-        Api_gateway -->> Frontend: Retorna JSON {"message": "Error de autenticación"}, status 401
-        Frontend -->> SuperAdmin: Muestra mensaje de error: "Acceso no autorizado"
-    else JWT válido
-        rutaUsuarios -->> controladorUsuarios: Solicita usuarios
-        controladorUsuarios -->> repositorioUsuarios: Solicita usuarios
-        repositorioUsuarios -->> RDS: Consulta usuarios
-
-        alt Error en la base de datos
-            RDS -->> repositorioUsuarios: Retorna error
-            repositorioUsuarios -->> controladorUsuarios: Retorna error
-            controladorUsuarios -->> rutaUsuarios: Retorna JSON {"message": "Error al consultar usuarios"}, status 500
-            rutaUsuarios -->> Backend: Retorna JSON {"message": "Error al consultar usuarios"}, status 500
-            Backend -->> Api_gateway: Retorna JSON {"message": "Error al consultar usuarios"}, status 500
-            Api_gateway -->> Frontend: Retorna JSON {"message": "Error interno"}, status 500
-            Frontend -->> SuperAdmin: Muestra mensaje: "Hubo un error al cargar los usuarios"
-        else Consulta exitosa
-            RDS -->> repositorioUsuarios: Retorna lista de usuarios
-            repositorioUsuarios -->> controladorUsuarios: Retorna lista de usuarios
-            controladorUsuarios -->> rutaUsuarios: Retorna lista de usuarios
-            rutaUsuarios -->> Backend: Retorna lista de usuarios, status 200
-            Backend -->> Api_gateway: Retorna lista de usuarios, status 200
-            Api_gateway -->> Frontend: Retorna lista de usuarios, status 200
-
-            alt Lista vacía
-                Frontend -->> SuperAdmin: Muestra mensaje "No hay registros disponibles"
-            else Lista con usuarios
-                Frontend -->> SuperAdmin: Muestra tabla con ID, nombre, rol, cliente, correo, teléfono, estatus
-            end
-        end
+    %% Bloque FRONTEND
+    box Frontend
+    participant ListaUsuarios as Página: ListaUsuarios.jsx
+    participant useConsultarListaUsuarios as Hook: useConsultarListaUsuarios
+    participant RepoFront as RepositorioConsultarListaUsuarios (Front)
     end
-end
-
-Note right of Frontend: Filtros, búsqueda y paginación realizados en el frontend con Material UI
 
 
+    %% Bloque API / RUTA
+    box API/Router/Middlewares
+    participant API as API Backend (consultar-lista-usuarios)
+    participant ExpressRouter as Router (consultarListaUsuarios.routes.js)
+    participant Middleware as Middlewares (revisarApiKey, autorizarToken, verificarPermisos)
+    end
+
+
+    %% Bloque BACKEND
+    box Backend
+    participant Controller as Controller (consultarListaUsuarios.controller.js)
+    participant RepoBack as RepositorioConsultarListaUsuarios (Back)
+    end
+
+
+    %% Bloque BASE DE DATOS
+    box Base de Datos
+    participant Database as Base de Datos
+    end
+
+
+    %% Flujo principal
+    SuperAdministrador ->> ListaUsuarios: Accede a la página ListaUsuarios
+    ListaUsuarios ->> useConsultarListaUsuarios: useEffect inicializa
+    useConsultarListaUsuarios ->> RepoFront: obtenerLista()
+    RepoFront ->> API: POST /api/usuarios/consultar-lista-usuarios
+
+
+    API ->> ExpressRouter: POST /usuarios/consultar-lista-usuarios
+    ExpressRouter ->> Middleware: revisarApiKey(), autorizarToken(), verificarPermisos()
+    Middleware ->> Controller: controlador.consultarListaUsuarios(req, res)
+    Controller ->> RepoBack: consultarListaUsuarios()
+    RepoBack ->> Database: ejecutar query CONSULTAS_USUARIOS.OBTENER_LISTA
+    Database -->> RepoBack: devuelve lista de usuarios
+    RepoBack -->> Controller: retorna lista de usuarios
+
+
+    %% Alternativas en el Controller
+    alt Lista de usuarios encontrada
+        Controller -->> API: 200 OK, listaUsuarios
+        API -->> RepoFront: 200 OK, listaUsuarios
+        RepoFront -->> useConsultarListaUsuarios: retorna lista de usuarios
+        useConsultarListaUsuarios -->> ListaUsuarios: actualiza estados (usuarios)
+        ListaUsuarios -->> ListaUsuarios: renderiza tabla con usuarios
+        ListaUsuarios -->> SuperAdministrador: muestra tabla de usuarios
+    else No hay usuarios
+        Controller -->> API: 200 OK, mensaje "No se encontraron usuarios"
+        API -->> RepoFront: 200 OK, mensaje "No se encontraron usuarios"
+        RepoFront -->> useConsultarListaUsuarios: retorna mensaje vacío
+        useConsultarListaUsuarios -->> ListaUsuarios: actualiza estado mensaje
+        ListaUsuarios -->> ListaUsuarios: muestra mensaje "No hay usuarios registrados"
+        ListaUsuarios -->> SuperAdministrador: muestra mensaje "No hay usuarios registrados"
+    else Error en consulta
+        Controller -->> API: 500 Error, mensaje "Error al obtener usuarios"
+        API -->> RepoFront: 500 Error, mensaje "Error al obtener usuarios"
+        RepoFront -->> useConsultarListaUsuarios: retorna error
+        useConsultarListaUsuarios -->> ListaUsuarios: actualiza estado error
+        ListaUsuarios -->> ListaUsuarios: muestra mensaje de error
+        ListaUsuarios -->> SuperAdministrador: muestra mensaje de error
+    end
+
+
+    Note right of ListaUsuarios: Filtros, búsqueda y paginación realizados en el frontend con Material UI
 ```
 
 ---
