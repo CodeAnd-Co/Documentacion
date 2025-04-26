@@ -7,6 +7,7 @@ sidebar_position: 3
 
 ---
 
+Esta guía tiene como propósito estandarizar la documentación de requisitos funcionales y no funcionales en proyectos de software, asegurando que sean claros, verificables y rastreables. Su alcance abarca la creación de documentos de requerimientos siguiendo buenas prácticas, aplicable a cualquier proyecto dentro de la organización, y establece las bases para un desarrollo exitoso.
 
 
 ### Requisito funcional
@@ -87,3 +88,4 @@ Referencias
 | ------------------- | --------------- | ---------- | --------------- |
 | **1.0** | Guía de SRS | 06/03/2025 | Juan Pablo Chávez, Daniel Queijeiro |
 | **1.1** |  Gestión de configuración.  | 24/04/2025 | Diego Fuentes |
+| **1.2** |  Introducción, propósito y alcance | 25/04/2025 | Hiram Mendoza |

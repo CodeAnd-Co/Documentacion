@@ -117,6 +117,7 @@ Implementar estas prácticas garantizará una gestión efectiva de las Pull Requ
 - [ ] Contenido actualizado y relevante
 - [ ] Fecha y versión actualizados (si aplica)
 - [ ] Alguien más está asignado como evaluador (tester/reviewer)
+- [ ] Actualicé la información del repositorio de configuración.
 
 ## Checklist del evaluador:
 
@@ -153,4 +154,5 @@ En la parte inferior de los documentos Markdown debe haber una tabla como la sig
 | **2.1** |  Corregí error ortográfico. Agregué enlace a guía para mantener un control de versiones en la documentación.  | 24/04/2025 | Ian Julián Estrada Castro |
 | **2.2** |  Solicitudes de extracción -> Pull Request.  | 24/04/2025 | Juan Eduardo Rosas Cerón, Juan Carlos Calderón García, Pablo Hazael Hurtado Mireles |
 | **2.3** |  Gestión de configuración.  | 24/04/2025 | Diego Fuentes |
-| **2.4** |  Agregué como realizar un PR y aprobarlo en Github  | 25/05/2025 | Daniel Queijeiro |
+| **2.4** |  Gestión de configuración como check.  | 25/04/2025 | Diego Fuentes |
+| **2.5** |  Agregué como realizar un PR y aprobarlo en Github  | 25/04/2025 | Daniel Queijeiro |

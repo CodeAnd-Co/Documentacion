@@ -362,10 +362,6 @@ import TabItem from '@theme/TabItem';
 - [**Manual de arquitectura** ](./documentacion/manual-arquitectura.md)
 - [**Estrategía técnica**](https://docs.google.com/spreadsheets/d/1E5J6ugtuWdjWGQqJeEW1vYByL9mUm9-9wHdZaO0a2zE/edit?gid=946746748#gid=946746748) 
 
-| Autor | Descripción del cambio | Versión |
-|---------|-------------------------|---------|
-| Armando Méndez Castro | Adición y definición del contenido | 1.0 |
-| Armando Méndez Castro | correciones del contenido | 1.1 |
 
 | **Tipo de Versión** | **Descripción**                      | **Fecha** | **Colaborador**   |
 | ------------------- | ------------------------------------ | --------- | ----------------- |
