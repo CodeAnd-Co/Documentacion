@@ -21,33 +21,33 @@ _Detalla el proceso para crear, revisar y aprobar Pull Requests, fomentando una 
 
 5. En la barra superior seleccionar la ventana de Pull Request.
 
-7. Seleccionar el botón de "Nuevo Pull Request".
+6. Seleccionar el botón de "Nuevo Pull Request".
 
-8. Modificar el orden de las ramas que vas a mergear.
+7. Modificar el orden de las ramas que vas a mergear.
 
-9. Escribir el título, y basandote en la plantilla del Pull Request la descripción.
+8. Escribir el título, y basándote en la plantilla del Pull Request la descripción.
 
-10. En el costado derecho asignar cómo evaluador al QA del proyecto correspondiente.
+9. En el costado derecho asignar cómo evaluador al QA del proyecto correspondiente.
 
-11. Crear el Pull Request.
+10. Crear el Pull Request.
 
 ## ¿Cómo aprobar un Pull Request?
 
 1. Entrar a la página de la organización Code&Co.
 
-3. Seleccionar el repositorio donde solicitaron la revisión.
+2. Seleccionar el repositorio donde solicitaron la revisión.
 
-4. En la barra superior seleccionar la ventana de Pull Request.
+3. En la barra superior seleccionar la ventana de Pull Request.
 
-5. Seleccionar el Pull Request donde solicitaron la revisión.
+4. Seleccionar el Pull Request donde solicitaron la revisión.
 
-6. Verificar que todas las pruebas automáticas hayan pasado.
+5. Verificar que todas las pruebas automáticas hayan pasado.
 
-7. Completar la checklist del evaluador verificando cada archivo.
+6. Completar la checklist del evaluador verificando cada archivo.
 
-8. En caso de que haya errores, dejar comentario con las correcciones necesarias y solicitar cambios al autor del Pull Request.
+7. En caso de que haya errores, dejar comentario con las correcciones necesarias y solicitar cambios al autor del Pull Request.
 
-9. Si no hay errores y paso la checklist, aceptar el Pull Request y borrar la rama.
+8. Si no hay errores y paso la checklist, aceptar el Pull Request y borrar la rama.
 
 ## Criterios para la Creación de Pull Requests
 
@@ -171,4 +171,4 @@ En la parte inferior de los documentos Markdown debe haber una tabla como la sig
 | **2.2** |  Solicitudes de extracción -> Pull Request.  | 24/04/2025 | Juan Eduardo Rosas Cerón, Juan Carlos Calderón García, Pablo Hazael Hurtado Mireles |
 | **2.3** |  Gestión de configuración.  | 24/04/2025 | Diego Fuentes |
 | **2.4** |  Gestión de configuración como check.  | 25/04/2025 | Diego Fuentes |
-| **2.5** |  Agregué como realizar un PR y aprobarlo en Github  | 25/04/2025 | Daniel Queijeiro |
+| **2.5** |  Agregué como realizar un PR y aprobarlo en Github  | 26/04/2025 | Daniel Queijeiro |
