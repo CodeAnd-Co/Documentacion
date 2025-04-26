@@ -348,7 +348,7 @@ import TabItem from '@theme/TabItem';
 
 | Nombre                            | Rol       |
 | --------------------------------- | --------- |
-| Emiliano Valdívia Lara            | Team Leader      |
+| Emiliano Valdivia Lara            | Team Leader      |
 | Miguel Ángel Uribe Esquivel   | Architecture Owner      |
 | Armando Méndez Castro  | Product Owner     |
 | Mariana Juárez Ramírez  | Team Member, UX/UI Diseñador   |
