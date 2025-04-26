@@ -11,27 +11,43 @@ _Detalla el proceso para crear, revisar y aprobar Pull Requests, fomentando una 
 
 ## ¿Cómo hacer un Pull Request?
 
-1. Hacer push origin con tus cambios a tu rama local.
+1. Hacer pull origin (main/develop) para asegurar que tu rama local este al corriente.
 
-2. Entrar a la página de la organización Code&Co.
+2. Hacer push origin con tus cambios de la rama local.
 
-3. Seleccionar el repositorio donde realizaste cambios.
+3. Entrar a la página de la organización Code&Co.
 
-4. En la barra superior seleccionar la ventana de Pull Request.
+4. Seleccionar el repositorio donde realizaste cambios.
 
-5. Seleccionar el botón de "Nuevo Pull Request".
+5. En la barra superior seleccionar la ventana de Pull Request.
 
-6. Modificar el orden de las ramas que vas a mergear. Ej. develop <-- "tu rama".
+7. Seleccionar el botón de "Nuevo Pull Request".
 
-7. Escribir el titulo y descripción usando la plantilla del Pull Request.
+8. Modificar el orden de las ramas que vas a mergear. Ej. develop <-- "tu rama".
 
-8. En el costado derecho asignar cómo inspector al QA del proyecto correspondiente.
+9. Escribir el título, y basandote en la plantilla del Pull Request la descripción.
 
-9. Publicar el Pull Request.
+10. En el costado derecho asignar cómo evaluador al QA del proyecto correspondiente.
+
+11. Crear el Pull Request.
 
 ## ¿Cómo aprobar un Pull Request?
 
-1. 
+1. Entrar a la página de la organización Code&Co.
+
+3. Seleccionar el repositorio donde solicitaron la revisión.
+
+4. En la barra superior seleccionar la ventana de Pull Request.
+
+5. Seleccionar el Pull Request donde solicitaron la revisión.
+
+6. Verificar que todas las pruebas automáticas hayan pasado.
+
+7. Completar la checklist del evaluador verificando cada archivo.
+
+8. En caso de que haya errores, dejar comentario con las correcciones necesarias y solicitar cambios al autor del Pull Request.
+
+9. Si no hay errores y paso la checklist, aceptar el Pull Request y borrar la rama.
 
 ## Criterios para la Creación de Pull Requests
 
