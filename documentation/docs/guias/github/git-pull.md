@@ -5,19 +5,37 @@ sidebar_position: 3
 
 # Guía de Pull Request
 
-**Última actualización:** 24 de marzo de 2025
 
-### Autores
+_Detalla el proceso para crear, revisar y aprobar Pull Requests, fomentando una colaboración efectiva y asegurando la calidad del código antes de su integración._
 
-| Nombre                          | Rol      |
-| ------------------------------- | -------- |
-| Ángel Mauricio Ramírez         | Autor    |
 
-_Detalla el proceso para crear, revisar y aprobar pull requests, fomentando una colaboración efectiva y asegurando la calidad del código antes de su integración._
+## ¿Cómo hacer un Pull Request?
+
+1. Hacer push origin con tus cambios a tu rama local.
+
+2. Entrar a la página de la organización Code&Co.
+
+3. Seleccionar el repositorio donde realizaste cambios.
+
+4. En la barra superior seleccionar la ventana de Pull Request.
+
+5. Seleccionar el botón de "Nuevo Pull Request".
+
+6. Modificar el orden de las ramas que vas a mergear. Ej. develop <-- "tu rama".
+
+7. Escribir el titulo y descripción usando la plantilla del Pull Request.
+
+8. En el costado derecho asignar cómo inspector al QA del proyecto correspondiente.
+
+9. Publicar el Pull Request.
+
+## ¿Cómo aprobar un Pull Request?
+
+1. 
 
 ## Criterios para la Creación de Pull Requests
 
-1. **Tamaño y Enfoque**: Limita las pull requests a cambios pequeños y enfocados. Esto facilita una revisión más rápida y reduce la posibilidad de introducir errores.
+1. **Tamaño y Enfoque**: Limita las Pull Requests a cambios pequeños y enfocados. Esto facilita una revisión más rápida y reduce la posibilidad de introducir errores.
 
 2. **Descripciones Claras**: Proporciona títulos y descripciones detalladas que expliquen el propósito de los cambios, los archivos modificados y cualquier contexto relevante.
 
@@ -27,7 +45,7 @@ _Detalla el proceso para crear, revisar y aprobar pull requests, fomentando una 
 
 ## Checklist para Revisores (Code Review)
 
-1. **Comprensión del Propósito**: Verifica que el propósito de la pull request esté claramente definido y que los cambios sean coherentes con los objetivos del proyecto
+1. **Comprensión del Propósito**: Verifica que el propósito de la Pull Request esté claramente definido y que los cambios sean coherentes con los objetivos del proyecto
 
 2. **Calidad del Código**: Evalúa la legibilidad, estructura y adherencia a las convenciones de estilo del código.
 
@@ -104,7 +122,7 @@ Implementar estas prácticas garantizará una gestión efectiva de las Pull Requ
 
 <!--- Repasa los puntos siguientes, y pon una `x` en todas las cajas que aplican -->
 
-- [ ] El registro de cambios coincide con la descripción del pull request
+- [ ] El registro de cambios coincide con la descripción del Pull Request
 - [ ] Los cambios no afectan negativamente la documentación o generan inconsistencias
 - [ ] Ortografía y gramática correctas
 - [ ] He notificado al autor del PR en caso de dudas o ajustes necesarios
@@ -129,9 +147,10 @@ En la parte inferior de los documentos Markdown debe haber una tabla como la sig
 | **Tipo de Versión** | **Descripción** | **Fecha**  | **Colaborador** |
 | ------------------- | --------------- | ---------- | --------------- |
 | **1.0** |  Creación de la guía | 16/02/2025 | Ángel Ramírez, Ian Estrada |
-| **1.1** |  Agregué la plantilla para pull request. | 16/02/2025 |  Ian Julián Estrada Castro |
+| **1.1** |  Agregué la plantilla para Pull Request. | 16/02/2025 |  Ian Julián Estrada Castro |
 | **1.2** |  Agregué un campo en el checklist del evaluador. | 24/04/2025 |  Ian Julián Estrada Castro |
 | **2.0** | Eliminé apartado de lista de archivos, cambié un elemento de la lista del evaluador y comenté el apartado de registro de cambios en plantilla. Hice referencia de la guía para mantener un control de versiones en la documentación.  | 24/04/2025 |  Ian Julián Estrada Castro |
 | **2.1** |  Corregí error ortográfico. Agregué enlace a guía para mantener un control de versiones en la documentación.  | 24/04/2025 | Ian Julián Estrada Castro |
 | **2.2** |  Solicitudes de extracción -> Pull Request.  | 24/04/2025 | Juan Eduardo Rosas Cerón, Juan Carlos Calderón García, Pablo Hazael Hurtado Mireles |
 | **2.3** |  Gestión de configuración.  | 24/04/2025 | Diego Fuentes |
+| **2.4** |  Agregué como realizar un PR y aprobarlo en Github  | 25/05/2025 | Daniel Queijeiro |
