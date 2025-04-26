@@ -1,21 +1,57 @@
 ---
-title: Guía de Pull Request
+title: Guía de pull request
 sidebar_position: 3
 ---
 
-# Guía de Pull Request
+# Guía de pull request
 
-**Última actualización:** 24 de marzo de 2025
-
-### Autores
-
-| Nombre                          | Rol      |
-| ------------------------------- | -------- |
-| Ángel Mauricio Ramírez         | Autor    |
 
 _Detalla el proceso para crear, revisar y aprobar pull requests, fomentando una colaboración efectiva y asegurando la calidad del código antes de su integración._
 
-## Criterios para la Creación de Pull Requests
+
+## ¿Cómo hacer un pull request?
+
+1. Hacer pull origin (main/develop) para asegurar que tu rama local este al corriente.
+
+    - Si al hacer el pull origin surgen conflictos es necesario que los resuelvas antes de que puedas hacer el pull request 
+
+2. Hacer push origin (tu rama) con tus cambios de la rama local.
+
+3. Entrar a la página de la organización Code&Co.
+
+4. Seleccionar el repositorio donde realizaste cambios.
+
+5. En la barra superior seleccionar la ventana de pull request.
+
+6. Seleccionar el botón de "Nuevo pull request".
+
+7. Modificar el orden de las ramas que vas a mergear.
+
+8. Escribir el título, y basándote en la plantilla del pull request la descripción.
+
+9. En el costado derecho asignar cómo evaluador al QA del proyecto correspondiente.
+
+10. Crear el pull request.
+
+## ¿Cómo aprobar un pull request?
+
+1. Entrar a la página de la organización Code&Co.
+
+2. Seleccionar el repositorio donde solicitaron la revisión.
+
+3. En la barra superior seleccionar la ventana de pull request.
+
+4. Seleccionar el pull request donde solicitaron la revisión.
+
+5. Verificar que todas las pruebas automáticas hayan pasado.
+
+6. Completar la checklist del evaluador verificando cada archivo.
+
+7. En caso de que haya errores, dejar comentario con las correcciones necesarias y solicitar cambios al autor del pull request.
+
+8. Si no hay errores y paso la checklist, aceptar el pull request y borrar la rama.
+
+## Criterios para la Creación de pull requests
 
 1. **Tamaño y Enfoque**: Limita las pull requests a cambios pequeños y enfocados. Esto facilita una revisión más rápida y reduce la posibilidad de introducir errores.
 
@@ -48,7 +84,7 @@ _Detalla el proceso para crear, revisar y aprobar pull requests, fomentando una 
 5. **Aprobación Formal**: Una vez que todas las pruebas hayan pasado y la revisión haya sido completada, obtén la aprobación formal de los revisores antes de proceder con la fusión.
 
 :::tip Beneficio  
-Implementar estas prácticas garantizará una gestión efectiva de las Pull Request, promoviendo una colaboración eficiente y manteniendo la calidad del código en el proyecto.
+Implementar estas prácticas garantizará una gestión efectiva de las pull request, promoviendo una colaboración eficiente y manteniendo la calidad del código en el proyecto.
 :::
 
 6. **Eliminación de la rama**: Una vez que se haya hecho la fusión, elimina la rama. 
@@ -62,8 +98,8 @@ Implementar estas prácticas garantizará una gestión efectiva de las Pull Requ
 ```
 <!--- Plantilla de PR para docusaurus -->
 <!--- Autor: Ian Julián Estrada Castro -->
-<!--- Versión 2.0 -->
-<!--- Última actualización: 24 de marzo de 2025 -->
+<!--- Versión 2.1 -->
+<!--- Última actualización: 26 de abril de 2025 -->
 
 # Solicitud de cambio (PR)
 
@@ -134,6 +170,7 @@ En la parte inferior de los documentos Markdown debe haber una tabla como la sig
 | **1.2** |  Agregué un campo en el checklist del evaluador. | 24/04/2025 |  Ian Julián Estrada Castro |
 | **2.0** | Eliminé apartado de lista de archivos, cambié un elemento de la lista del evaluador y comenté el apartado de registro de cambios en plantilla. Hice referencia de la guía para mantener un control de versiones en la documentación.  | 24/04/2025 |  Ian Julián Estrada Castro |
 | **2.1** |  Corregí error ortográfico. Agregué enlace a guía para mantener un control de versiones en la documentación.  | 24/04/2025 | Ian Julián Estrada Castro |
-| **2.2** |  Solicitudes de extracción -> Pull Request.  | 24/04/2025 | Juan Eduardo Rosas Cerón, Juan Carlos Calderón García, Pablo Hazael Hurtado Mireles |
+| **2.2** |  Solicitudes de extracción -> pull request.  | 24/04/2025 | Juan Eduardo Rosas Cerón, Juan Carlos Calderón García, Pablo Hazael Hurtado Mireles |
 | **2.3** |  Gestión de configuración.  | 24/04/2025 | Diego Fuentes |
-| **2.3** |  Gestión de configuración como check.  | 25/04/2025 | Diego Fuentes |
+| **2.4** |  Gestión de configuración como check.  | 25/04/2025 | Diego Fuentes |
+| **2.5** |  Agregué como realizar un PR y aprobarlo en Github  | 26/04/2025 | Daniel Queijeiro |

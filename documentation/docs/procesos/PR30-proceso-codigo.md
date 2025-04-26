@@ -27,7 +27,9 @@ sidebar_position: 30
 
 | Fase     |Descripción                                                    | Responsable             | Meta y práctica específica del CMMI                                        |
 | -------- | -------------------------------------------------------------- | ----------------------- | -------------------------------------------------------------------------- |
-| **Desarrollo** | Crear la rama de trabajo para el requisito o historia asignado siguiendo la estrategia de ramas del equipo. | Desarollador. | **CM, SP 2.2** (Controlar los elementos de configuración). |
+| **Desarrollo** | Entrar a la rama de desarrollo del repositorio segun la estrategia de ramas del equipo o departamento. | Desarrollador | **CM, SP 2.2** (Controlar los elementos de configuración). |
+| | Ejecutar git pull origin para asegurar que se tiene la versión más actualizada. | Desarrollador | **CM, SP 2.2** (Controlar los elementos de configuración). |
+| | Crear la rama de trabajo para el requisito o historia asignado siguiendo la estrategia de ramas del equipo. | Desarollador. | **CM, SP 2.2** (Controlar los elementos de configuración). |
 |  | Verificar si el requisito o historia tiene diagrama de flujo. | Desarollador. | **CM, SP 2.1** (Seguimiento de solicitudes de cambio). |
 |  | Si tiene diagrama, usarlo para desarrollar el requisito o historia. | Desarollador. | **CM, SP 2.1** (Seguimiento de solicitudes de cambio). |
 |  | Si no tiene diagrama, verificar la prioridad del requisito para saber si amerita uno. En caso de que sí, diseñarlo. | Desarollador. | **CM, SP 2.1** (Seguimiento de solicitudes de cambio). |
