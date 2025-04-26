@@ -55,3 +55,4 @@ Garantizar la calidad de cada release.
 | **1.0**             | Propuesta inicial sobre preparar un caso de prueba.   | 24/2/2025  | Ian Julián Estrada Castro, Emiliano Gómez González |
 | **1.1**             | Integración de las áreas y prácticas específicas de CMMI correspondientes al proceso. |  | Emiliano Gómez González  |
 | **1.2**             | Refactorización                             | 18/4/2025 | Diego Fuentes                    |
+| **1.3**             | Errores ortográficos                             | 25/4/2025 | Hiram Mendoza                    |
