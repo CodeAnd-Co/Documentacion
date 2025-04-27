@@ -984,4 +984,4 @@ const good = new User({
 | **Tipo de Versión** | **Descripción**                                                                                                                | **Fecha** | **Colaborador**                                   |
 | ------------------- | ------------------------------------------------------------------------------------------------------------------------------ | --------- | ------------------------------------------------- |
 | **1.0**             | Creación de proceso de gestión de cambios en los requisitos.  | 05/03/2025 | Diego Alfaro <br/> Daniel Contreras <br/> Emiliano Gómez | 
-| **1.1**             | Gestión de la configuración                                                                            | 24/04/2024 | Max Toscano                      |
+| **1.1**             | Gestión de la configuración                                                                            | 24/04/2025 | Max Toscano                      |

@@ -24,7 +24,7 @@ Se puede crear un checklist cuando:
 
 ## 3. Creación de la checklist
 
-Todas las checklist deben ser creadas en esta [carpeta](https://drive.google.com/drive/folders/1eIQ7qaIrcMYo33gO1DZDrzQbI1eFqWY9?usp=drive_link) de drive haciendo una copia de esta [plantilla](https://docs.google.com/document/d/1gMoe2nDp1NO8dUzA8_xshXpxizbQhYylR47UP3oT4P4/edit?usp=drive_link) con el objetivo de que se puedan hacer copias y se puedan rellenar los contenidos al hacer auditorías.
+Todas las checklist deben ser creadas en esta [carpeta](https://drive.google.com/drive/folders/1eIQ7qaIrcMYo33gO1DZDrzQbI1eFqWY9?usp=drive_link) de Drive, haciendo una copia de esta [plantilla](https://docs.google.com/document/d/1gMoe2nDp1NO8dUzA8_xshXpxizbQhYylR47UP3oT4P4/edit?usp=drive_link), con el objetivo de rellenar el contenido al hacer auditorías.
 
 ## 4. Estructura Recomendada de un Checklist
 
@@ -47,7 +47,7 @@ Todo checklist debe contener:
 
 - Deben estar disponibles en un lugar accesible para su uso y revisión.
 
-- A cada checklist se le asignará un rol responsable para el cumplimiento de esta.
+- A cada checklist se le asignará un rol responsable para su cumplimiento.
 
 - Se deben mantener actualizados conforme a cambios en procesos.
 
@@ -79,7 +79,7 @@ Cualquier modificación debe documentarse con la tabla de historial de cambios c
 
 ## 8. Registro de la checklist en el índice
 
-Las checklist deben estar registradas en el [índice de checklists](/docs/recursos/checklists.md). Las checklist para items de la wiki deben ir en la sección de items de proceso. Las checklists para productos de trabajo de los proyectos deben ir en la sección de productos de trabajo.
+Las checklist deben estar registradas en el [índice de checklists](/docs/recursos/checklists.md). Las checklist para ítems de la wiki deben ir en la sección de items de proceso. Las checklists para productos de trabajo de los proyectos deben ir en la sección de productos de trabajo.
 
 ---
 
@@ -89,4 +89,4 @@ Las checklist deben estar registradas en el [índice de checklists](/docs/recurs
 | ------------------- | --------------------------------------------- | --------- | ------------------------------- |
 | **1.0**             | Primera versión del estándar.   | 28/3/2025  | Mariana Juárez Ramírez |
 | **2.0**             | Agregar historial de cambios, paso de creación en google drive, paso de índice de checklists. | 22/4/2025  | Diego Fuentes |
-
+| **2.1**             |  Implementar acciones correctivas |      26/04/2025        |  Max Toscano 
