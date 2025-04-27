@@ -30,7 +30,7 @@ Se utiliza la siguiente convención para enumerar las versiones:
 
 | **Tipo de Versión**     | **Descripción**                                                                                | **Fecha**                           | **Colaborador**                                |
 | ----------------------- | ---------------------------------------------------------------------------------------------- | ----------------------------------- | ---------------------------------------------- |
-| **Versión Mayor (x.0)** | Se asigna cuando se agregan o eliminan secciones completas de la documentación.                | La fecha de modificación / creacion (DD/MM/YYYY) | Colaborador o colaboradores de la modificación |
+| **Versión Mayor (x.0)** | Se asigna cuando se agregan o eliminan secciones completas de la documentación.                | La fecha de modificación/creación (DD/MM/YYYY) | Colaborador o colaboradores de la modificación |
 | **Versión Menor (1.x)** | Se asigna cuando se realizan ajustes menores, como detalles de redacción, ortografía o estilo. | La fecha de modificación/creación (DD/MM/YYYY) | Colaborador o colaboradores de la modificación |
 
 ## **3. Ejemplo de Historial de cambios**
@@ -50,8 +50,8 @@ Siguiendo los pasos mencionados en esta guía, asegurarás una gestión más lim
 
 | **Tipo de Versión** | **Descripción**                               | **Fecha** | **Colaborador**                 |
 | ------------------- | --------------------------------------------- | --------- | ------------------------------- |
-| **1.0**             | Creacion de la guia de historial de cambios   | 3/3/2025  | Daniel Contreras, Rommel Toledo |
-| **2.0**             | Creacion del estandar de historial de cambios | 3/3/2025  | Miguel Angel, Diego Alfaro      |
+| **1.0**             | Creación de la guía de historial de cambios   | 3/3/2025  | Daniel Contreras, Rommel Toledo |
+| **2.0**             | Creación del estándar de historial de cambios | 3/3/2025  | Miguel Angel, Diego Alfaro      |
 | **2.1**             | Cambio en el formato de la fecha              | 18/4/2025  | Diego Fuentes |
 | **2.2**             |  Implementar acciones correctivas |      26/04/2025        |  Max Toscano 
 
