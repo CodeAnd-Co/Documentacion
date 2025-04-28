@@ -15,7 +15,7 @@ Garantizar la calidad de cada release.
 
 ## Entradas
 
-1. Historia de usaurio/caso de uso
+1. Historia de usuario/caso de uso
 
 ---
 
@@ -35,7 +35,7 @@ Garantizar la calidad de cada release.
 ## Salida
 
 1. Matriz de prueba
-2. Código de la prueba
+2. Código fuente de la prueba
 3. Capturas de los resultados obtenidos
 
 ---
@@ -55,3 +55,4 @@ Garantizar la calidad de cada release.
 | **1.0**             | Propuesta inicial sobre preparar un caso de prueba.   | 24/2/2025  | Ian Julián Estrada Castro, Emiliano Gómez González |
 | **1.1**             | Integración de las áreas y prácticas específicas de CMMI correspondientes al proceso. |  | Emiliano Gómez González  |
 | **1.2**             | Refactorización                             | 18/4/2025 | Diego Fuentes                    |
+| **1.3**             | Errores ortográficos                             | 25/4/2025 | Hiram Mendoza                    |

@@ -24,16 +24,17 @@ Poder acceder facilmente a todas las checklists necesarias para auditar todos lo
 - Checklist de [políticas](https://docs.google.com/document/d/1ERCpYx65aIs0ZGLQLMu61Y-uaWip-bDhXB4Rzx8ofEg/edit?usp=drive_link).
 - Checklist de [estándares](https://docs.google.com/document/d/1qJW2hkkKnlmiSmVm8C54ae2yCWrdGK7haKh3AdN-H7E/edit?usp=drive_link).
 - Checklist de [revisión de items de trabajo para línea base de wiki](https://docs.google.com/document/d/1vV5UML4CTtQPXyDy3yU17yNy56k59rVBGTGP7uurY3g/edit?usp=sharing).
-- Checklist de plantillas.
+- Checklist de [plantillas](https://docs.google.com/document/d/1b-QEWLl4lZYBZc_SUCdvRGzckdmoNuUUH-7pQ9ha0M4/edit?usp=sharing).
 
 ### Checklists de productos de trabajo
 
 - Checklist de [código](https://docs.google.com/document/d/1ItP965B7cFppIUX3RPXg_ZuUiYZzSuGs1b5bMw2-ZpQ/edit?tab=t.0#heading=h.fhau7kjl46pa).
 - Checklist de [pull requests](../guias/github/git-pull).
+- Checklist de [pull requests TracTech](https://docs.google.com/document/d/1FiDso0qIhChmioqsl7Z2rNbXKp1-WW3oH_80Bj4aDV8/edit?tab=t.0).
 - Checklist de [reporte de estado](https://docs.google.com/document/d/1scf3qGohzOAQJdni0R3RMpJ-jExlYWz3j-YD6aYWfJ0/edit?usp=drive_link).
 - Checklist de [análisis](https://docs.google.com/document/d/1dFEBxS_WGWtgCAAW1Sp57Vlgj06-X-od6HbNy2XnZKk/edit?usp=sharing).
 - Checklist de [diseño](https://docs.google.com/document/d/17iPu9h6KR80SHw6kBhKG3mf926_mbkIipx1Aq1sfD2A/edit?usp=sharing).
-- Checklist de pruebas.
+- Checklist de [pruebas](https://docs.google.com/document/d/1vgbiGV0X7-2gam2kI9x5Da3l594kb4XKfE4BtnfEJ-8/edit?usp=sharing).
 
 ---
 

@@ -139,4 +139,4 @@ Reporte de Conflicto que incluye:
 | **2.0**             | Se añadió tiempo de respuesta máximo y proceso de resolución de conflictos |            | Juan Eduardo Rosas                                 |
 | **2.1**             | Corrección Gramatical y Añadir las 4Cs                                    | 05/03/2025 | Pablo Hazael Hurtado                               |
 | **2.2**             | Refactorización                                                            | 18/04/2025 | Diego Fuentes                                      |
-| **2.3**             |  Correcciones hallazgos de auditoría |      24/04/2025        |  Max Toscano 
+| **2.3**             |  Implementar acciones correctivas |      24/04/2025        |  Max Toscano 
