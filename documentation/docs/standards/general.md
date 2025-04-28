@@ -5,8 +5,10 @@ sidebar_position: 1
 
 # Estándares de Codificación 
 
+## Propósito
+Establecer un conjunto de reglas y convenciones que guíen cómo debe escribirse el código dentro de nuestro departamento para facilitar su legibilidad y mantenimiento, reducir errores y aumentar la calidad del software. 
 
-## Objetos
+## 1. Objetos
 
 Usar la sintaxis literal para la creación de objetos.
 
@@ -18,7 +20,7 @@ const item = new Object();
 const item = {};
 ```
 
-Usar nombres de propiedades computadas cuando se crea un objeto con nombres de propiedades dinámicas. Esto hace que podamos definir todas las propiedades del objeto en un mismo lugar.
+Se deben usar nombres de propiedades computadas cuando se crea un objeto con nombres de propiedades dinámicas. Esto hace que podamos definir todas las propiedades del objeto en un mismo lugar.
 
 ```javascript
 function getKey(k) {
@@ -40,7 +42,7 @@ const obj = {
 };
 ```
 
-Si se crea una variable y se quiere agregar a un objeto, y se quiere usar el mismo nombre que la variable para el nombre de la propiedad, se debe usar la variable solamente.
+Si se crea una variable que se quiere agregar a un objeto, y se desea usar el mismo nombre que la variable para el nombre de la propiedad, se debe usar la variable solamente.
 
 ```javascript
 const lukeSkywalker = 'Luke Skywalker';
@@ -83,7 +85,7 @@ const obj = {
 };
 ```
 
-## Funciones
+## 2. Funciones
 
 Siempre poner los parámetros con valor por defecto al final.
 
@@ -141,7 +143,7 @@ console.log(
 );
 ```
 
-## Módulos
+## 3. Módulos
 
 Siempre usar los módulos de la manera estandarizada.
 
@@ -220,7 +222,7 @@ import {
 } from 'path';
 ```
 
-## Strings
+## 4. Strings
 
 Usar comillas simples para strings ‘ ’.
 
@@ -235,7 +237,7 @@ const name = `Capt. Janeway`;
 const name = 'Capt. Janeway';
 ```
 
-Strings que pasan de los 100 caracteres no deberían escribirse en varias líneas usando concatenación de strings.
+Strings que superan los 100 caracteres no deberían escribirse en varias líneas usando concatenación de strings.
 
 ```javascript
 // malo
@@ -279,9 +281,9 @@ function sayHi(name) {
 
 Nunca usar eval() en un string, deja abiertas muchas vulnerabilidades.
 
-## Arrays
+## 5. Arrays
 
-Usa la sintaxis literal para la creación de los arrays.
+Usar la sintaxis literal para la creación de los *arrays*.
 
 ```javascript
 // malo
@@ -291,7 +293,7 @@ const items = new Array();
 const items = [];
 ```
 
-Para añadir items a un array una el método push().
+Para añadir ítems a un *array*, usar el método *push()*.
 
 ```javascript
 const someStack = [];
@@ -303,7 +305,7 @@ someStack[someStack.length] = 'abracadabra';
 someStack.push('abracadabra');
 ```
 
-Usa el operador de propagación (...) para copiar arrays.
+Usar el operador de propagación (...) para copiar *arrays*.
 
 ```javascript
 // malo
@@ -319,7 +321,8 @@ for (i = 0; i < len; i += 1) {
 const itemsCopy = [...items];
 ```
 
-Antes de los corchetes de cierre si el array tiene múltiples líneas, usa saltos de línea después de los corchetes de apertura.
+Si el *array* tiene múltiples líneas, usar saltos de línea después de los corchetes de apertura. 
+
 
 ```javascript
 // malo
@@ -355,9 +358,9 @@ const numberInArray = [
 ];
 ```
 
-## Clases y constructores
+## 6. Clases y constructores
 
-Siempre usar class. Evitar manipular prototype directamente.
+Siempre usar *class*. Evitar manipular prototype directamente.
 
 ```javascript
 // malo
@@ -534,7 +537,7 @@ class Foo {
 }
 ```
 
-## Variables
+## 7. Variables
 
 Siempre usar const o let para declarar variables.
 
@@ -658,7 +661,7 @@ const foo = (
 const foo = 'superLongLongLongLongLongLongLongLongString';
 ```
 
-## Propiedades
+## 8. Propiedades
 
 Usar notación de punto al acceder a propiedades.
 
@@ -700,7 +703,7 @@ const binary = Math.pow(2, 10);
 const binary = 2 ** 10;
 ```
 
-## Estructuras de control
+## 9. Estructuras de control
 
 Si tu estructura de control (if, while, etc. ) se hace muy larga y excede la longitud máxima de línea, cada condición debe ser puesta en una nueva línea. El operador lógico empieza la línea.
 
@@ -765,7 +768,7 @@ if (!isRunning) {
 }
 ```
 
-## Arrow functions
+## 10. Función de flecha
 
 Cuando debas utilizar una función anónima (como una callback) utiliza la función de flecha.
 
@@ -802,7 +805,7 @@ En caso de que la expresión se extienda a lo largo de varias líneas, en ciérr
 ));
 ```
 
-## Commas
+## 11. Comas
 
 No usar “leading commas”.
 
@@ -838,7 +841,7 @@ const hero = {
 };
 ```
 
-## Iteradores
+## 12. Iteradores
 
 No utilice iteradores. Usa las funciones de orden superior de JavaScript en lugar de bucles como for-in o for-of. Ejemplos: map() / every() / filter() / find() / findIndex() / reduce() / some().
 
@@ -879,7 +882,7 @@ numbers.forEach((num) => {
 const increasedByOne = numbers.map((num) => num + 1);
 ```
 
-## Blocks
+## 13. Bloques
 
 Utiliza llaves con todos los bloques multilínea.
 
@@ -926,7 +929,7 @@ if (test) {
 }
 ```
 
-## Combinaciones de nombre
+## 14. Combinaciones de nombre
 
 Evita los nombres de una sola letra. Sé descriptivo con su nombre.
 
@@ -984,4 +987,5 @@ const good = new User({
 | **Tipo de Versión** | **Descripción**                                                                                                                | **Fecha** | **Colaborador**                                   |
 | ------------------- | ------------------------------------------------------------------------------------------------------------------------------ | --------- | ------------------------------------------------- |
 | **1.0**             | Creación de proceso de gestión de cambios en los requisitos.  | 05/03/2025 | Diego Alfaro <br/> Daniel Contreras <br/> Emiliano Gómez | 
-| **1.1**             | Gestión de la configuración                                                                            | 24/04/2025 | Max Toscano                      |
+| **1.1**             | Gestión de la configuración                                                                            | 24/04/2025 | Max Toscano           |
+| **1.2** |  Implementar acciones correctivas  |   27/04/2025  |  Max Toscano  | 
