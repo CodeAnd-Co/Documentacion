@@ -57,9 +57,9 @@ Son aquellos que pueden ser compartidos dentro del equipo de trabajo sin represe
 
 De acuerdo con el modelo **CMMI PP SP 2.3 (Gestión de Datos del Proyecto)**, se establecen las siguientes directrices:
 
-1. **Identificación y documentación de datos (PP SP 2.3)**
+1. **Identificación y documentación de datos (PP SP 2.3, PMC SP 1.4)**
 
-   - Cada dato manejado en el proyecto debe ser identificado y registrado en un repositorio centralizado.
+   - Cada dato manejado en el proyecto debe ser identificado y registrado en el plan de datos.
    - Se utilizará el **Diccionario de Datos** para definir nombres, formatos y estructuras de los datos.
    - Se definirá un **Modelo Entidad-Relación (MER)** para estructurar la base de datos y sus relaciones.
 
@@ -136,3 +136,4 @@ Para garantizar el cumplimiento de esta política, se implementarán mecanismos 
 | **1.0**             | Creación de la política  |   | Diego Alfaro, Arturo Sánchez |
 | **1.1**             | Eliminación de salidas de la política   | 08/04/2025  | Daniel Contreras, Eduardo Rosas |
 | **1.2**             | Modificacion datos sensibles  | 25/04/2025  | Miguel Angel Uribe |
+| **1.3**             | Plan de Datos  | 28/04/2025  | Pablo Hurtado |
