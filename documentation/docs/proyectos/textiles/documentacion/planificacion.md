@@ -5,7 +5,6 @@ sidebar_position: 3
 
 # Planificación
 
-**Última actualización:** 22 de abril de 2025
 
 _Cronograma, hitos, entregables y ciclo de vida del proyecto._
 
@@ -54,3 +53,11 @@ _Cronograma, hitos, entregables y ciclo de vida del proyecto._
 ## Ciclo de Vida del Proyecto
 
 Como equipo, Text&Lines trabaja con el ciclo de vida: <u>_[DAD Básico  ](https://codeandco-wiki.netlify.app/docs/recursos/ciclo-de-vida/)_</u>
+
+
+
+### Historial de cambios
+
+| **Tipo de Versión** | **Descripción**                        | **Fecha** | **Colaborador**               |
+| ------------------- | -------------------------------------- | --------- | ----------------------------- |
+| **1.0**             | Actualización de Fechas y Cronograma del Proyecto | 22/4/2025 | Hiram Mendoza López|
