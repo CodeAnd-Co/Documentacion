@@ -20,7 +20,7 @@ sidebar_position: 7
 - Dashboard del estado de salud de los 4 proyectos.
 - Plan de valor ganado y de iteración actualizados.
 - Matriz de riesgos.
-- [Plantilla de reporte de estado](https://www.canva.com/design/DAGjbEDjp00/0OWUTXZrhELqB7nTOjtClA/edit?utm_content=DAGjbEDjp00&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+- [Plantilla de reporte de estado](https://www.canva.com/design/DAGlUTh9Oq4/0XsVylB-A_zIOFwqtDuA6A/edit?utm_content=DAGlUTh9Oq4&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 
 ---
 
@@ -81,3 +81,4 @@ sidebar_position: 7
 | **2.5**             | Correcciones PMC 1.1                                                                                                                    | 22/04/2025 |
 | **2.6**             | Adición del paso **Actualización a Socios Formadores ausentes** para complementar PMC 1.6                                               | 22/04/2025 | Nicolas Hood Figueroa         |
 | **2.7**             | Identificación de MA 2.2 | 24/04/2025 | Diego Fuentes |
+| **2.8**             | Actualización de link de plantilla | 28/04/2025 | Arturo Sánchez |
