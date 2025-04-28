@@ -59,7 +59,7 @@ De acuerdo con el modelo **CMMI PP SP 2.3 (Gestión de Datos del Proyecto)**, se
 
 1. **Identificación y documentación de datos (PP SP 2.3, PMC SP 1.4)**
 
-   - Cada dato manejado en el proyecto debe ser identificado y registrado en el plan de datos.
+   - Cada dato manejado en el proyecto debe ser identificado y registrado en el [plan de gestión de datos](https://docs.google.com/spreadsheets/d/17af-k-gFvmqhUVZggVDDZ3HWGfbBG-TjpaLGUKcnITk/edit?usp=sharing).
    - Se utilizará el **Diccionario de Datos** para definir nombres, formatos y estructuras de los datos.
    - Se definirá un **Modelo Entidad-Relación (MER)** para estructurar la base de datos y sus relaciones.
 
