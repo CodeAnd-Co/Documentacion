@@ -3,16 +3,6 @@ title: Plan STP
 sidebar_position: 6
 ---
 
-### Autores
-
-| Nombre                      | Rol   |
-| --------------------------- | ----- |
-| Miguel Angel Uribe Esquivel | Autor |
-| Ian Julián Estrada Castro   | Autor |
-| Juan Eduardo Rosas Cerón    | Autor |
-
----
-
 # Introducción
 
 ### Propósito
@@ -168,10 +158,10 @@ Proceso para validar las pruebas
 
 - [Guía para hacer casos prueba a partir de casos de uso](https://www.fing.edu.uy/inco/cursos/ingsoft/iis/files/3172_0958_usecase.pdf)
 
-# Registro de cambios
+# Historial de cambios
 
-| Autor                       | Descripción                                | Versión |
-| --------------------------- | ------------------------------------------ | ------- |
-| Miguel Angel Uribe Esquivel | Primera versión                            | 1.0     |
-| Ian Julián Estrada Castro   | Agregar frameworks, dispositivos y riesgos | 1.1     |
-| Juan Eduardo Rosas Ceron    | Manejo de pruebas y Aprobacion y firma     | 1.2     |
+| **Tipo de Versión** | **Descripción**                                             | **Fecha** | **Colaborador**            |
+| ------------------- | ----------------------------------------------------------- | --------- | -------------------------- |
+| **1.0**             | Primera versión                | 8/03/2025 | Miguel Angel Uribe Esquivel  |
+| **1.1**             | Agregar frameworks, dispositivos y riesgos                 | 8/03/2025 | Ian Julián Estrada Castro  |
+| **1.2**             | Manejo de pruebas y Aprobacion y firma             | 11/03/2025 | Juan Eduardo Rosas Ceron  |
