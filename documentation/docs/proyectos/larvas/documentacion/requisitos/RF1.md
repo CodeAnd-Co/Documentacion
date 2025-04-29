@@ -116,7 +116,7 @@ sequenceDiagram
         deactivate Repository
         activate APIService
 
-        APIService-->>Repository: Error 503
+        APIService-->>Repository: TIMEOUT
         deactivate APIService
         activate Repository
 
