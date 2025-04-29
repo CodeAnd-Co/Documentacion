@@ -5,7 +5,7 @@ sidebar_position: 1
 
 # Requisitos
 
-**Última actualización:** 06 de marzo de 2025
+**Última actualización:** 28 de abril de 2025
 
 ### **Proveedores de Requisitos**
 
