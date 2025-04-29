@@ -5,8 +5,8 @@ sidebar_position: 3
 
 # Planificación
 
-**Última actualización:** 28 de abril de 2025
 
+**Última actualización:** 28 de abril de 2025
 _Cronograma, hitos, entregables y ciclo de vida del proyecto._
 
 ## Cronograma del Proyecto
@@ -51,3 +51,9 @@ _Cronograma, hitos, entregables y ciclo de vida del proyecto._
 ## Ciclo de Vida del Proyecto
 
 Como equipo, TechNebrios trabaja con el ciclo de vida: <u>_[DAD Básico  ](https://codeandco-wiki.netlify.app/docs/recursos/ciclo-de-vida/)_</u>
+
+### Historial de cambios
+
+| **Tipo de Versión** | **Descripción**                        | **Fecha** | **Colaborador**               |
+| ------------------- | -------------------------------------- | --------- | ----------------------------- |
+| **1.0**             | Creación del plan de entrega | 22/04/2025 | Armando Méndez Castro   |

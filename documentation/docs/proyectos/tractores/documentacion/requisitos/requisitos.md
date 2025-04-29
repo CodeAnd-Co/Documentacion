@@ -32,44 +32,44 @@ Los requisitos funcionales del sistema describen una variedad de acciones que lo
 
 ### Requisitos Específicos del sistema y del módulo de reportes.
 
-[**RF1**](RF1.md): Usuario consulta página de inicio de sesión.\
-[**RF2**](RF2.md): Usuario registrado inicia sesión.\
-[**RF3**](RF3.md): Usuario cierra sesión\
-[**RF4**](RF4.md): Usuario consulta módulo de análisis.\
-[**RF5**](RF5.md): Usuario consulta los ranchos disponibles.\
+[**RF1**](RF1.md): Usuario consulta página de inicio de sesión.\ `Ready`
+[**RF2**](RF2.md): Usuario registrado inicia sesión.\ `Ready`
+[**RF3**](RF3.md): Usuario cierra sesión\ 
+[**RF4**](RF4.md): Usuario consulta módulo de análisis.\ `Ready`
+[**RF5**](RF5.md): Usuario consulta los ranchos disponibles.\ 
 [**RF6**](RF6.md): Usuario selecciona el rancho a analizar.\
 [**RF7**](RF7.md): Usuario modifica selección de rancho a analizar\
 [**RF8**](RF8.md): Usuario consulta los tractores disponibles.\
 [**RF9**](RF9.md): Usuario selecciona tractores a analizar.\
 [**RF10**](RF10.md): Usuario modifica selección de tractor a analizar.\
-[**RF11**](RF11.md): Usuario consulta datos disponibles.\
+[**RF11**](RF11.md): Usuario consulta datos disponibles.\ `Ready`
 [**RF12**](RF12.md): Usuario selecciona datos a comparar.\
 [**RF13**](RF13.md): Usuario consulta filtros disponibles.\
-[**RF14**](RF14.md): Usuario selecciona filtros a aplicar.\
-[**RF15**](RF15.md): Usuario añade cuadro de texto al reporte.\
-[**RF16**](RF16.md): Usuario edita cuadro de texto del reporte.\
-[**RF17**](RF17.md): Usuario elimina cuadro de texto del reporte.\
-[**RF18**](RF18.md): Usuario genera plantilla de reporte.\
-[**RF19**](RF19.md): Usuario elimina plantilla de reporte.\
-[**RF20**](RF20.md):Usuario guarda plantilla de reporte.\
-[**RF21**](RF21.md):Usuario consulta plantillas de reporte.\
-[**RF22**](RF22.md):Usuario selecciona plantilla de reporte.\
-[**RF23**](RF23.md):Usuario descarga PDF del reporte.\
-[**RF24**](RF24.md):Usuario define frecuencia de envío automático del reporte.\
+[**RF14**](RF14.md): Usuario selecciona filtros a aplicar.\ 
+[**RF15**](RF15.md): Usuario añade cuadro de texto al reporte.\ `Ready`
+[**RF16**](RF16.md): Usuario edita cuadro de texto del reporte.\ `Ready`
+[**RF17**](RF17.md): Usuario elimina cuadro de texto del reporte.\ `Ready`
+[**RF18**](RF18.md): Usuario genera plantilla de reporte.\ `Ready`
+[**RF19**](RF19.md): Usuario elimina plantilla de reporte.\ `Ready`
+[**RF20**](RF20.md):Usuario guarda plantilla de reporte.\ `Ready`
+[**RF21**](RF21.md):Usuario consulta plantillas de reporte.\ `Ready`
+[**RF22**](RF22.md):Usuario selecciona plantilla de reporte.\ `Ready`
+[**RF23**](RF23.md):Usuario descarga PDF del reporte.\ `Ready`
+[**RF24**](RF24.md):Usuario define frecuencia de envío automático del reporte.\ 
 [**RF25**](RF25.md):Usuario define correos de destinatarios.\
 [**RF26**](RF26.md):Usuario modifica correo de destinatario.\
 [**RF27**](RF27.md):Usuario elimina correo de destinatario.\
-[**RF28**](RF28.md):Usuario es notificado si se carga algún archivo incorrecto.\
-[**RF29**](RF29.md):Usuario añade gráfica a reporte.\
-[**RF30**](RF30.md):Usuario modifica tipo de gráfica en reporte.\
-[**RF31**](RF31.md):Usuario elimina gráfica en reporte.\
+[**RF28**](RF28.md):Usuario es notificado si se carga algún archivo incorrecto.\ `Ready`
+[**RF29**](RF29.md):Usuario añade gráfica a reporte.\ `Ready`
+[**RF30**](RF30.md):Usuario modifica tipo de gráfica en reporte.\ `Ready`
+[**RF31**](RF31.md):Usuario elimina gráfica en reporte.\ `Ready`
 [**RF32**](RF32.md):Administrador crea usuario.\
-[**RF33**](RF33.md):Administrador consulta usuario.\
+[**RF33**](RF33.md):Administrador consulta usuario.\ `Ready`
 [**RF34**](RF34.md):Administrador modifica usuario.\
 [**RF35**](RF35.md):Administrador elimina usuario.\
-[**RF36**](RF36.md):Usuario carga Excel a la plataforma.\
-[**RF37**](RF37.md):Usuario elimina el Excel cargado.\
-[**RF38**](RF38.md):Usuario sustituye el Excel cargado.\
+[**RF36**](RF36.md):Usuario carga Excel a la plataforma.\ `Ready`
+[**RF37**](RF37.md):Usuario elimina el Excel cargado.\ `Ready`
+[**RF38**](RF38.md):Usuario sustituye el Excel cargado.\ `Ready`
 [**RF39**](RF39.md):Usuario inicia sesión con Microsoft.\
 
 
