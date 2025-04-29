@@ -36,17 +36,17 @@ Los requisitos funcionales del sistema describen una variedad de acciones que lo
 
 ### Requisitos Específicos
 
-- [**RF1**](RF1.md): Iniciar Sesión  
+- [**RF1**](RF1.md): Iniciar Sesión - `Ready` 
 - [**RF2**](RF2.md): Consultar Gráficas 
-- [**RF3**](RF3.md): Consultar historial de ancestros de una charola
+- [**RF3**](RF3.md): Consultar historial de ancestros de una charola - `Ready`
 - [**RF4**](RF4.md): Splashscreen 
-- [**RF5**](RF5.md): Registrar Charola
+- [**RF5**](RF5.md): Registrar Charola - `Ready`
 - [**RF6**](RF6.md): Buscar charola 
 - [**RF7**](RF7.md): Modificar datos generales Charola
 - [**RF8**](RF8.md): Eliminar Charola  
 - [**RF9**](RF9.md): Cerrar sesión
-- [**RF10**](RF10.md): Consultar información detallada de una charola 
-- [**RF11**](RF11.md): Descargar reportes
+- [**RF10**](RF10.md): Consultar información detallada de una charola - `Ready`
+- [**RF11**](RF11.md): Descargar reportes - `Ready`
 - [**RF12**](RF12.md): Alertas
 - [**RF13**](RF13.md): Registrar usuario  
 - [**RF14**](RF14.md): Borrar usuario 
@@ -58,8 +58,8 @@ Los requisitos funcionales del sistema describen una variedad de acciones que lo
 - [**RF20**](RF20.md): Registrar Tamizado
 - [**RF21**](RF21.md): Consultar charolas de cambios pasados
 - [**RF22**](RF22.md): Consultar charolas de cambios pasados
-- [**RF23**](RF23.md): Registrar un nuevo tipo de comida en el sistema 
-- [**RF24**](RF24.md): Editar un tipo de comida en el sistema 
+- [**RF23**](RF23.md): Registrar un nuevo tipo de comida en el sistema - `Ready`
+- [**RF24**](RF24.md): Editar un tipo de comida en el sistema - `Ready`
 - [**RF25**](RF25.md): Eliminar un tipo de comida
 - [**RF26**](RF26.md): Registrar un nuevo tipo de comida en el sistema
 - [**RF27**](RF27.md): Editar la alimentación de la charola
