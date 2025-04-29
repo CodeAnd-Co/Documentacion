@@ -15,7 +15,7 @@ Poder acceder facilmente a todas las checklists necesarias para auditar todos lo
 
 ## Índice
 
--[Plantilla](https://docs.google.com/document/d/1gMoe2nDp1NO8dUzA8_xshXpxizbQhYylR47UP3oT4P4/edit?tab=t.0) para checklists
+ - [Plantilla](https://docs.google.com/document/d/1gMoe2nDp1NO8dUzA8_xshXpxizbQhYylR47UP3oT4P4/edit?tab=t.0) para checklists
 
 ### Checklists de items de proceso
 
@@ -31,6 +31,9 @@ Poder acceder facilmente a todas las checklists necesarias para auditar todos lo
 - Checklist de [código](https://docs.google.com/document/d/1ItP965B7cFppIUX3RPXg_ZuUiYZzSuGs1b5bMw2-ZpQ/edit?tab=t.0#heading=h.fhau7kjl46pa).
 - Checklist de [pull requests](../guias/github/git-pull).
 - Checklist de [pull requests TracTech](https://docs.google.com/document/d/1FiDso0qIhChmioqsl7Z2rNbXKp1-WW3oH_80Bj4aDV8/edit?tab=t.0).
+- Checklist de [pull requests Larvas FrontEnd](/docs/proyectos/larvas/documentacion/estrategia_tecnica/#plantilla-pull-requests-frontend).
+- Checklist de [pull requests Larvas BackEnd](/docs/proyectos/larvas/documentacion/estrategia_tecnica/#plantilla-pull-requests-backend).
+- Checklist de [pull requests Text&Lines](/docs/proyectos/textiles/documentacion/estrategia-tecnica-textiles/#plantilla-pull-requests-equipo-textiles).
 - Checklist de [reporte de estado](https://docs.google.com/document/d/1scf3qGohzOAQJdni0R3RMpJ-jExlYWz3j-YD6aYWfJ0/edit?usp=drive_link).
 - Checklist de [análisis](https://docs.google.com/document/d/1dFEBxS_WGWtgCAAW1Sp57Vlgj06-X-od6HbNy2XnZKk/edit?usp=sharing).
 - Checklist de [diseño](https://docs.google.com/document/d/17iPu9h6KR80SHw6kBhKG3mf926_mbkIipx1Aq1sfD2A/edit?usp=sharing).
@@ -43,3 +46,4 @@ Poder acceder facilmente a todas las checklists necesarias para auditar todos lo
 | **Tipo de Versión** | **Descripción**                               | **Fecha**  | **Colaborador**                    |
 | ------------------- | --------------------------------------------- | ---------- | ---------------------------------- |
 | **1.0**             | Creación del índice                           | 22/04/2025 | Diego Isaac Fuentes Juvera         |
+| **2.0**             | Checklists de Pull Requests                   | 22/04/2025 | Diego Isaac Fuentes Juvera         |
