@@ -21,6 +21,7 @@ sidebar_position: 6
 - Plan de recursos del equipo.
 - Matriz de trazabilidad de los requisitos a trabajar durante la iteración.
 - Pruebas a ejecutar durante la iteración.
+- Matriz de riesgos.
 
 ---
 
@@ -56,3 +57,4 @@ sidebar_position: 6
 | **1.0**             | Creación del proceso de iteración   | 03/04/2025  | Diego Fuentes|
 | **2.0**             | Refactorización. Cambio en las entradas. Cambio en el proceso. Cambio en las salidas.   | 03/04/2025  | Diego Fuentes|
 | **2.1** | Corrección PMC 1.1 | 22/04/2025 | Juan Pablo Chávez Leal|
+| **2.2** | Modificación en las entradas | 27/04/2025 | Hiram Mendoza|
