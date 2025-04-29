@@ -5,8 +5,9 @@ sidebar_position: 8
 # Diagrama de stack tecnológico
 
 
-<iframe frameborder="0" style={{ borderRadius: '1em' }} width="100%" height="800em" src="https://drive.google.com/file/d/10ZTcTof5jwKh6m500KxdXYzgF8L7zTGi/view?usp=sharing"></iframe>
+![alt_text](./Diagrama_stack_larvas.png)
 
+# Historial de cambios
 | **Tipo de Versión** | **Descripción**                                             | **Fecha** | **Colaborador**            |
 | ------------------- | ----------------------------------------------------------- | --------- | -------------------------- |
 | **1.0**             | Agregar Diagrama de stack tecnológico       | 9/03/2025 | Juan Carlos Calderón García  |
