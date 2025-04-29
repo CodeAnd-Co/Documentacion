@@ -5,7 +5,7 @@ sidebar_position: 3
 
 # Planificación
 
-**Última actualización:** 22 de abril de 2025
+**Última actualización:** 28 de abril de 2025
 
 _Cronograma, hitos, entregables y ciclo de vida del proyecto._
 
@@ -14,28 +14,29 @@ _Cronograma, hitos, entregables y ciclo de vida del proyecto._
 
 | Fase del Proyecto                       | Fecha de Finalización | Estado      |
 | --------------------------------------- | --------------------- | ----------- |
-| Fase de Inicio                          | 12/03/25              | En progreso |
-| Construcción 1 (Prueba de Arquitectura) | 11/04/25              | No empezado |
-| Construcción 2 (MVP)                    | 25/04/25              | No empezado |
-| Transición 1 (MVP)                      | 05/05/25              | No empezado |
-| Construcción 3 (MBI 1)                  | 09/05/25              | No empezado |
-| Transición 2 (MBI 1)                    | 21/05/25              | No empezado |
-| Construcción 4 (MBI 2)                  | 26/05/25              | No empezado |
-| Transición 3 (MBI 2)                    | 11/06/25              | No empezado |
+| Fase de Inicio                          | 12/03/25              | Terminada   |
+| Construcción 1 (Prueba de Arquitectura) | 24/04/25              | Terminado   |
+| Construcción 2 (MVP)                    | 9/05/25               | En progreso |
+| Transición 1 (MVP)                      | 16/05/25              | No empezado |
+| Construcción 3 (MBI 1)                  | 22/05/25              | No empezado |
+| Transición 2 (MBI 1)                    | 30/06/25              | No empezado |
+| Construcción 4 (MBI 2)                  | 30/05/25              | No empezado |
+| Transición 3 (MBI 2)                    | 4/06/25               | No empezado |
 
 
 ## Hitos del Proyecto
 
 
-| Hito                     | Descripción                             | Fecha Estimada | Estado      |
-| ------------------------ | --------------------------------------- | -------------- | ----------- |
-| Inicio del Proyecto      | Inicio formal del proyecto              | 14/02/25       | Terminado   |
-| Aprobación de Requisitos | Aprobación final de los requisitos      | 01/03/25       | Terminado   |
-| Finalización del Diseño  | Finalización de diseño del sistema      | 08/04/25       | En progreso |
-| Desarrollo Completo      | Finalización del desarrollo del sistema | 26/05/25       | No empezado |
-| Pruebas Completas        | Finalización de las pruebas             | 27/05/25       | No empezado |
-| Implementación Exitosa   | Implementación exitosa en producción    | 06/06/25       | No empezado |
-| Cierre del Proyecto      | Cierre formal del proyecto              | 11/06/25       | No empezado |
+| Hito                        | Descripción                                  | Fecha Estimada | Estado      |
+| --------------------------  | ---------------------------------------      | -------------- | ----------- |
+| Visión del stakeholder      | Inicio formal del proyecto                   | 14/02/25       | Terminado   |
+| Arquitectura Probada        | Pruebas para evaluar el sistema              | 28/03/25       | Terminado   |
+| Viabilidad del proyecto     | Revisar todos los requerimientos funcionales | 30/04/25       | En progreso |
+| Funcionalidad suficiente    | Finalización del MVP                         | 30/04/25       | En progreso |
+| Listo para producción       | Transición 1                                 | 01/05/25       | No empezado |
+| Deleitar a los stakeholders | Presentarlo a los socios formadores          | 05/05/25       | No empezado |
+| Viabilidad del proyecto     | Contrucción del MBI 1                        | 11/05/25       | No empezado |
+| Funcionalidad suficiente    | Contrucción del MBI 1                        | 13/05/25       | No empezado |
 
 
 ## Entregables del Proyecto
