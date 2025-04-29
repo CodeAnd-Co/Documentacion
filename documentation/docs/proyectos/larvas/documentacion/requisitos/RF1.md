@@ -160,19 +160,15 @@ sequenceDiagram
         activate Controller
 
         Controller->>Model: iniciarSesion
-        deactivate Controller
         activate Model
 
         Model->>Database: SELECT FROM usuarios WHERE user = usuario && contrasena = contraseña
-        deactivate Model
         activate Database
 
         Database-->>Model: Error
         deactivate Database
-        activate Model
 
         Model-->>Controller: Error 500
-        deactivate Model
         activate Controller
 
         Controller-->>APIService: Error 500
