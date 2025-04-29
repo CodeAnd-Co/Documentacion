@@ -3,17 +3,6 @@ title: Manual de Arquitectura
 sidebar_position: 5
 ---
 
-### Autores
-| Nombre           | Rol   |
-| ---------------- | ----- |
-| Emiliano Gomez   | Autor |
-
-Version: 1.1
-
-Última actualización: 08 de marzo de 2025
-
----
-
 ## Tipo de arquitectura de software
 
 **Arquitectura elegida**: Arquitectura multiserver
@@ -247,8 +236,9 @@ Organiza las funcionalidades de una aplicación en servicios independientes y re
 ### Desventajas
 - **Complejidad en la implementación**: La adopción de SOA puede ser costosa y requerir una gestión adecuada de los servicios.
 
+ # Historial de cambios
 
-| Autor | Descripción del cambio | Versión |
-|---------|-------------------------|---------|
-| Emiliano Gomez Gonzalez | Documento inicial | 1.0 |
-| Emiliano Gomez Gonzalez | Agrega Diagrama de Despliegue| 1.1 |
+| **Tipo de Versión** | **Descripción**                                             | **Fecha** | **Colaborador**            |
+| ------------------- | ----------------------------------------------------------- | --------- | -------------------------- |
+| **1.0**             | Documento inicial                   | 6/03/2025 | Emiliano Gomez Gonzalez  |
+| **1.1**             | Agrega Diagrama de Despliegue                  | 8/03/2025 | Emiliano Gomez Gonzalez  |

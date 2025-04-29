@@ -118,3 +118,11 @@ git checkout -b respaldo-antes-del-rollback
 
 ```
 - Automatizaciones: Si tienes GitHub Actions configurados para desplegar automáticamente en push, el rollback puede disparar un despliegue automático. Verifica si es necesario desactivar temporalmente los workflows.
+
+---
+
+## Historial de cambios
+
+| **Tipo de versión** | **Descripción**                    | **Fecha** | **Colaborador**        |
+|---------------------|------------------------------------| --------- | ---------------------- |
+| 1.0 | Se creó la primera versión de la guía | 28/04/2025 | Daniel Contreras Chávez |
