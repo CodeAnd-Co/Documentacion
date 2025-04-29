@@ -169,7 +169,7 @@ sequenceDiagram
         deactivate Database
 
         Model-->>Controller: Error 500
-        activate Controller
+        deactivate Model
 
         Controller-->>APIService: Error 500
         deactivate Controller
