@@ -3,16 +3,6 @@ title: Plantilla Manual de Arquitectura
 sidebar_position: 14
 ---
 
-### Autores
-
-| Nombre           | Rol   |
-| ---------------- | ----- |
-| Diego Alfaro     | Autor |
-| Daniel Contreras | Autor |
-| Emiliano Gomez   | Autor |
-
----
-
 ## Tipo de arquitectura de software
 
 Escribir el tipo de arquitectura que maneja su proyecto.
@@ -157,3 +147,14 @@ Redactar los beneficios de la arquitectura seleccionada.
 - Flexible
 - Fácil implementación
 - Conocimiento previo de la mayoría de tecnologías
+
+
+---
+
+### Historial de cambios
+
+| **Tipo de Versión** | **Descripción**                               | **Fecha** | **Colaborador**                 |
+| ------------------- | --------------------------------------------- | --------- | ------------------------------- |
+| **1.0**             | Creación del plantilla   | 05/03/2025  | Diego Ricardo Alfaro Pinto|
+| **1.1**             | agregar plantilla de estrategia tecnica, modificacion de plantilla de manual de arquitectura.   | 06/03/2025  | Emiliano Valdivia |
+| **1.3**             | Resolucion de conclicto| 06/03/2025  | Emiliano Valdivia Lara	 |
