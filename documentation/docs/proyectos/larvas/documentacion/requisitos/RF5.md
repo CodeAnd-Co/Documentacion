@@ -36,139 +36,152 @@ sequenceDiagram
     participant Database as Base de Datos
 
     alt POST (200)
-    Usuario->>+View: (POST) do Registrar Charola
+    Usuario->>View: (POST) do Registrar Charola
     activate View
-    View->>+ViewModel: do RegistrarCharola(Datos)
+    View->>ViewModel: do RegistrarCharola(Datos)
     deactivate View
     activate ViewModel
-    ViewModel->>+Domain: charolaRequirement.registrar(charola)
+    ViewModel->>Domain: charolaRequirement.registrar(charola)
     deactivate ViewModel
     activate Domain
-    Domain->>+Repository: repository.registrar(charola)
+    Domain->>Repository: repository.registrar(charola)
     deactivate Domain
     activate Repository
-    Repository->>+APIService: apiService.registrar(charola)
+    Repository->>APIService: apiService.registrar(charola)
     deactivate Repository
     activate APIService
-    APIService->>+Controller: @POST ("/registrar-charola")
+    APIService->>Controller: @POST ("/registrar-charola")
     deactivate APIService
     activate Controller
-    Controller->>+Controller: exports.registrarCharola = async(req, res)
-    Controller->>+Model: charolaModel.registrarCharola(datos)
+    Controller->>Controller: exports.registrarCharola = async(req, res)
+    Controller->>Model: charolaModel.registrarCharola(datos)
     deactivate Controller
     activate Model
-    Model->>+Database: crearCharola(query)
+    Model->>Database: crearCharola(query)
     deactivate Model
     activate Database
-    Database-->>-Model: respuesta
+    Database-->>Model: respuesta
     deactivate Database
     activate Model
-    Model-->>+Controller: respuesta
+    Model-->>Controller: respuesta
     deactivate Model
     activate Controller
-    Controller-->>+APIService: respuesta
+    Controller-->>APIService: respuesta
     deactivate Controller
     activate APIService
-    APIService-->>+Repository: respuesta
+    APIService-->>Repository: respuesta
     deactivate APIService
     activate Repository
-    Repository-->>+Domain: respuesta
+    Repository-->>Domain: respuesta
     deactivate Repository
     activate Domain
-    Domain-->>+ViewModel: respuesta
+    Domain-->>ViewModel: respuesta
     deactivate Domain
     activate ViewModel
-    ViewModel-->>+View: respuesta
+    ViewModel-->>View: respuesta
     deactivate ViewModel
     activate View
-    View-->>+Usuario: ¡Charola registrada exitosamente!
+    View-->>Usuario: ¡Charola registrada exitosamente!
     deactivate View
     end
 
     alt ERROR (400) - Petición incorrecta
-    Usuario->>+View: (POST) do Registrar Charola
+    Usuario->>View: (POST) do Registrar Charola
     activate View
-    View->>+ViewModel: doRegistrarCharola(charola)
+    View->>ViewModel: doRegistrarCharola(charola)
     deactivate View
     activate ViewModel
-    ViewModel-->>-View: Error: Datos inválidos
+    ViewModel-->>View: Error: Datos inválidos
     deactivate ViewModel
     activate View
-    View-->>+Usuario: "Los datos ingresados son incorrectos. Por favor, revisa los campos obligatorios."
+    View-->>Usuario: "Los datos ingresados son incorrectos. Por favor, revisa los campos obligatorios."
+    deactivate View
+    end
+
+    alt ERROR (401) - Usuario no autenticado
+    Usuario->>View: (POST) do Registrar Charola
+    activate View
+    View->>ViewModel: doRegistrarCharola(charola)
+    deactivate View
+    activate ViewModel
+    ViewModel-->>View: Error: Usuario no autenticado
+    deactivate ViewModel
+    activate View
+    View-->>Usuario: "Por favor, inicia sesión para continuar."
     deactivate View
     end
 
     alt ERROR (500) - Error Interno en el Servidor
     Usuario->>+View: (POST) do Registrar Charola
     activate View
-    View->>+ViewModel: do RegistrarCharola(Datos)
+    View->>ViewModel: do RegistrarCharola(Datos)
     deactivate View
     activate ViewModel
-    ViewModel->>+Domain: charolaRequirement.registrar(charola)
+    ViewModel->>Domain: charolaRequirement.registrar(charola)
     deactivate ViewModel
     activate Domain
-    Domain->>+Repository: repository.registrar(charola)
+    Domain->>Repository: repository.registrar(charola)
     deactivate Domain
     activate Repository
-    Repository->>+APIService: apiService.registrar(charola)
+    Repository->>APIService: apiService.registrar(charola)
     deactivate Repository
     activate APIService
-    APIService->>+Controller: @POST ("/registrar-charola")
+    APIService->>Controller: @POST ("/registrar-charola")
     deactivate APIService
     activate Controller
     Controller->>Model: charolaModel.registrarCharola(datos)
     deactivate Controller
     activate Model
-    Model->>+Database: crearCharola(query)
+    Model->>Database: crearCharola(query)
     deactivate Model
     activate Database
-    Database--X-Model: Error en la consulta
+    Database--XModel: Error en la consulta
     deactivate Database
     activate Model
-    Model--X+Controller: Error inesperado en la base de datos
+    Model--XController: Error inesperado en la base de datos
     deactivate Model
     activate Controller
-    Controller-->>+APIService: 500 Error Interno en el Servidor
+    Controller-->>APIService: 500 Error Interno en el Servidor
     deactivate Controller
     activate APIService
-    APIService-->>+Repository: 500 Error Interno en el Servidor
+    APIService-->>Repository: 500 Error Interno en el Servidor
     deactivate APIService
     activate Repository
-    Repository-->>+Domain: 500 Error Interno en el Servidor
+    Repository-->>Domain: 500 Error Interno en el Servidor
     deactivate Repository
     activate Domain
-    Domain-->>+ViewModel: 500 Error Interno en el Servidor
+    Domain-->>ViewModel: 500 Error Interno en el Servidor
     deactivate Domain
     activate ViewModel
-    ViewModel-->>+View: Error interno en el servidor. Intenta más tarde.
+    ViewModel-->>View: Error interno en el servidor. Intenta más tarde.
     deactivate ViewModel
     activate View
-    View-->>+Usuario: Hubo un problema en el sistema. Intenta de nuevo más tarde.
+    View-->>Usuario: Hubo un problema en el sistema. Intenta de nuevo más tarde.
     deactivate View
     end
 
     alt ERROR 101 - Sin conexión a Internet
-    Usuario->>+View: (POST) do Registrar Charola
+    Usuario->>View: (POST) do Registrar Charola
     activate View
     View->>+ViewModel: do RegistrarCharola(Datos)
     deactivate View
     activate ViewModel
-    ViewModel->>+Domain: charolaRequirement.registrar(charola)
+    ViewModel->>Domain: charolaRequirement.registrar(charola)
     deactivate ViewModel
     activate Domain
-    Domain->>+Repository: repository.registrar(charola)
+    Domain->>Repository: repository.registrar(charola)
     deactivate Domain
     activate Repository
-    Repository->>+APIService: APIService.registrar(charola)
+    Repository->>APIService: APIService.registrar(charola)
     deactivate Repository
     activate APIService
-    APIService--X-ViewModel: 101 Error: No hay conexión a Internet
+    APIService--XViewModel: 101 Error: No hay conexión a Internet
     deactivate APIService
     activate ViewModel
-    ViewModel-->>+View: No pudo conectar con el servidor. Revisa tu conexión.
+    ViewModel-->>View: No pudo conectar con el servidor. Revisa tu conexión.
     deactivate ViewModel
     activate View
-    View-->>+Usuario: No tienes conexión a Internet.
+    View-->>Usuario: No tienes conexión a Internet.
     deactivate View
     end
 
@@ -182,7 +195,7 @@ sequenceDiagram
 
 > _Descripción_: El mockup presenta la interfaz donde el Super Administrador puede ingresar los datos de un nuevo empleado, con campos requeridos y botones de acción para crear al empleado.
 
-![Mockup: Registrar Charola](image.png)
+![Mockup: Registrar Charola](image-1.png)
 
 ### Pruebas Unitarias
 
