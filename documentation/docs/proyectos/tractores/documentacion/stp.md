@@ -2,10 +2,6 @@
 title: Software Test Plan TracTech
 ---
 
-**Última modificación**: 7 de marzo del 2025 por Daniel Contreras Chávez
-
----
-
 # Introducción
 
 ### Propósito
@@ -141,3 +137,11 @@ de su resutado para que se puedan tomar decisiones informadas sobre el siguiente
 # Apéndices
 
 - Carpeta con los casos de prueba diseñados: [Diseño de casos de prueba](https://drive.google.com/drive/folders/1dsrEs-Q9aMTufagqpBs5FZsyYb-ybw8-?usp=drive_link)
+
+---
+
+## Historial de cambios
+
+| **Tipo de versión** | **Descripción**                    | **Fecha**  | **Colaborador**        |
+|---------------------|------------------------------------| ---------- | ---------------------- |
+| **1.0**             | Primera versión de plan STP        | 07/03/2025 | Daniel Contreras Chávez |

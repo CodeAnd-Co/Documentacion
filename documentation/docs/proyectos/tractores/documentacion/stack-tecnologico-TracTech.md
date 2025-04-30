@@ -4,8 +4,6 @@ title: Diagrama de Stack Tecnológico TracTech
 
 # Diagrama Stack Tecnológico TracTech
 
-**Última modificación:** 8 de marzo de 2025 por Daniel Contreras Chávez
-
 ```mermaid
 
 graph TD
@@ -40,3 +38,11 @@ graph TD
     F -->|Tipo de API| F1[REST]
 
 ```
+
+---
+
+## Historial de cambios
+
+| **Tipo de versión** | **Descripción**                    | **Fecha** | **Colaborador**        |
+|---------------------|------------------------------------| --------- | ---------------------- |
+| **1.0**             | Primera versión de diagrama de stack tecnológico | 08/03/2025 | Daniel Contreras Chávez |

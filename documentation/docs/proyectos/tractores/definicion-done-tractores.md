@@ -7,14 +7,6 @@ sidebar_position: 4
 
 ---
 
-### Autores
-
-| Nombre       | Rol   |
-| ------------ | ----- |
-| Rommel Toledo Crespo | Autor|
-
----
-
 # ✅ Definición de Done
 
 Una historia de usuario se considerará completa cuando se cumplan todos los siguientes criterios:
@@ -82,3 +74,11 @@ Una historia de usuario se considerará completa cuando se cumplan todos los sig
 ## **Validación del cliente**
 
 - El cliente ha revisado y validado la historia de usuario, confirmando que cumple con los requerimientos funcionales y de negocio establecidos.
+
+---
+
+## Historial de cambios
+
+| **Tipo de versión** | **Descripción**                    | **Fecha**  | **Colaborador**        |
+|---------------------|------------------------------------| ---------- | ---------------------- |
+| **1.0**             | Primera versión de definición de Done para TracTech | 21/03/2025 | Rommel Toledo Crespo |

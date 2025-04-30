@@ -57,6 +57,7 @@ sidebar_position: 22
 
 | **Tipo de Versión** | **Descripción**                               | **Fecha** | **Colaborador**                 |
 | ------------------- | --------------------------------------------- | --------- | ------------------------------- |
-| **1.0**             | Creación del proceso   |  | Nicolas Hood, Daniel Queijeiro, Ángel Ramírez, Diego Fuentes    |
-| **1.1**             |    | 3/3/2025 | Nicolas Hood   |
+| **1.0**             | Creación del proceso   | 23/02/2025 | Nicolas Hood, Daniel Queijeiro, Ángel Ramírez, Diego Fuentes    |
+| **1.1**             |  Agregar plantilla al proceso de justificacion de faltas  | 3/3/2025 | Nicolas Hood   |
 | **1.2**             | Refactorización | 18/4/2025  | Diego Fuentes |
+| **1.3**                 | Implementar acciones correctivas          | 28/4/2025 | Max Toscano          
