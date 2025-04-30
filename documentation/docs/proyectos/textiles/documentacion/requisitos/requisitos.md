@@ -34,7 +34,7 @@ Los requisitos funcionales del sistema describen una variedad de acciones que lo
 
 - [**RF1**](RF1.md): Super Administrador Crea Usuario - `Done`
 - [**RF2**](RF2.md): Super Administrador Consulta Lista de Usuarios - `Done`
-- [**RF3**](RF3.md): Super Administrador Lee Usuario - `Ready`
+- [**RF3**](RF3.md): Super Administrador Lee Usuario - `Done`
 - [**RF4**](RF4.md): Super Administrador Actualiza Usuario - `Ready`
 - [**RF5**](RF5.md): Super Administrador Elimina Usuario - `Ready`
 - [**RF6**](RF6.md): Super Administrador Crea Rol - `Ready`
@@ -43,7 +43,7 @@ Los requisitos funcionales del sistema describen una variedad de acciones que lo
 - [**RF11**](RF11.md): Super Administrador Crea Cliente
 - [**RF12**](RF12.md): Super Administrador Consulta Lista de Clientes - `Done`
 - [**RF13**](RF13.md): Super Administrador, Lee Cliente
-- [**RF15**](RF15.md): Super Administrador Elimina Cliente
+- [**RF15**](RF15.md): Super Administrador Elimina Cliente `Done`
 - [**RF16**](RF16.md): Super Administrador Crea Empleado
 - [**RF17**](RF17.md): Super Administrador Consulta Lista de Empleados - `Ready`
 - [**RF18**](RF18.md): Super Administrador Lee Empleado
