@@ -30,12 +30,112 @@ sequenceDiagram
     participant ViewModel as ViewModel
     participant Domain as Domain
     participant Repository as Repository
-    participant APIService as Data
+    participant APIService as APIService
     participant Controller as Controller
     participant Model as Model
     participant Database as Base de Datos
 
-    alt POST (200)
+    alt GET Comida (200)
+    Usuario->>View: (GET) do Obtener Comida
+    activate View
+    View->>ViewModel: cargarAlimentos()
+    deactivate View
+    activate ViewModel
+    ViewModel->>Domain: charolaRequirement.getAlimentos()
+    deactivate ViewModel
+    activate Domain
+    Domain->>Repository: repository.getAlimentos()
+    deactivate Domain
+    activate Repository
+    Repository->>APIService: apiService.getAlimentos()
+    deactivate Repository
+    activate APIService
+    APIService->>Controller: @GET("/comida/obtener-comida")
+    deactivate APIService
+    activate Controller
+    Controller->>Controller: exports.obtenerComida = async(req, res)
+    Controller->>Model: charolaModel.obtenerComida()
+    deactivate Controller
+    activate Model
+    Model->>Database: obtenerComidas(query)
+    deactivate Model
+    activate Database
+    Database-->>Model: listaComidas
+    deactivate Database
+    activate Model
+    Model-->>Controller: listaComidas
+    deactivate Model
+    activate Controller
+    Controller-->>APIService: listaComidas
+    deactivate Controller
+    activate APIService
+    APIService-->>Repository: listaComidas
+    deactivate APIService
+    activate Repository
+    Repository-->>Domain: listaComidas
+    deactivate Repository
+    activate Domain
+    Domain-->>ViewModel: listaComidas
+    deactivate Domain
+    activate ViewModel
+    ViewModel-->>View: listaComidas
+    deactivate ViewModel
+    activate View
+    View-->>Usuario: Mostrar lista de comidas
+    deactivate View
+    end
+
+    alt GET Hidratacion (200)
+    Usuario->>View: (GET) do Obtener Hidratación
+    activate View
+    View->>ViewModel: cargarHidratacion()
+    deactivate View
+    activate ViewModel
+    ViewModel->>Domain: charolaRequirement.getHidratacion()
+    deactivate ViewModel
+    activate Domain
+    Domain->>Repository: repository.getHidratacion()
+    deactivate Domain
+    activate Repository
+    Repository->>APIService: apiService.getHidratacion()
+    deactivate Repository
+    activate APIService
+    APIService->>Controller: @GET("/hidratacion/obtener-hidratacion")
+    deactivate APIService
+    activate Controller
+    Controller->>Controller: exports.obtenerHidratacion = async(req, res)
+    Controller->>Model: charolaModel.obtenerHidratacion()
+    deactivate Controller
+    activate Model
+    Model->>Database: obtenerHidrataciones(query)
+    deactivate Model
+    activate Database
+    Database-->>Model: listaHidratacion
+    deactivate Database
+    activate Model
+    Model-->>Controller: listaHidratacion
+    deactivate Model
+    activate Controller
+    Controller-->>APIService: listaHidratacion
+    deactivate Controller
+    activate APIService
+    APIService-->>Repository: listaHidratacion
+    deactivate APIService
+    activate Repository
+    Repository-->>Domain: listaHidratacion
+    deactivate Repository
+    activate Domain
+    Domain-->>ViewModel: listaHidratacion
+    deactivate Domain
+    activate ViewModel
+    ViewModel-->>View: listaHidratacion
+    deactivate ViewModel
+    activate View
+    View-->>Usuario: Mostrar lista de hidrataciones
+    deactivate View
+    end
+
+    alt POST Registrar Charola(200)
     Usuario->>View: (POST) do Registrar Charola
     activate View
     View->>ViewModel: do RegistrarCharola(Datos)
@@ -50,7 +150,7 @@ sequenceDiagram
     Repository->>APIService: apiService.registrar(charola)
     deactivate Repository
     activate APIService
-    APIService->>Controller: @POST ("/registrar-charola")
+    APIService->>Controller: @POST ("/charola/registrarCharola")
     deactivate APIService
     activate Controller
     Controller->>Controller: exports.registrarCharola = async(req, res)
@@ -99,16 +199,39 @@ sequenceDiagram
     end
 
     alt ERROR (401) - Usuario no autenticado
-    Usuario->>View: (POST) do Registrar Charola
-    activate View
-    View->>ViewModel: doRegistrarCharola(charola)
-    deactivate View
-    activate ViewModel
-    ViewModel-->>View: Error: Usuario no autenticado
-    deactivate ViewModel
-    activate View
-    View-->>Usuario: "Por favor, inicia sesión para continuar."
-    deactivate View
+    Usuario->>+View: Entra a la interfaz
+        View->>-ViewModel: registrarCharola()
+        activate ViewModel
+        ViewModel->>Domain: registrarCharola()
+        deactivate ViewModel
+        activate Domain
+        Domain->>Repository: registrarCharola()
+        deactivate Domain
+        activate Repository
+        Repository->>APIService: registrarCharola()
+        deactivate Repository
+        activate APIService
+        APIService->>Controller: POST /charola/registrarCharola
+        deactivate APIService
+        activate Controller
+
+        Controller-->>APIService: 401 No Autorizado
+        deactivate Controller
+        activate APIService
+        APIService-->>Repository: 401 No Autorizado
+        deactivate APIService
+        activate Repository
+        Repository-->>Domain: 401 No Autorizado
+        deactivate Repository
+        activate Domain
+        Domain-->>ViewModel: 401 No Autorizado
+        deactivate Domain
+        activate ViewModel
+        ViewModel-->>View: Notificar falta de Inicio de sesión
+        deactivate ViewModel
+        activate View
+        View-->>Usuario: Regresar al View de Inicio de sesión
+        deactivate View
     end
 
     alt ERROR (500) - Error Interno en el Servidor
@@ -126,7 +249,7 @@ sequenceDiagram
     Repository->>APIService: apiService.registrar(charola)
     deactivate Repository
     activate APIService
-    APIService->>Controller: @POST ("/registrar-charola")
+    APIService->>Controller: @POST ("/charola/registrarCharola")
     deactivate APIService
     activate Controller
     Controller->>Model: charolaModel.registrarCharola(datos)
