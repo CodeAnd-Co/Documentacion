@@ -158,3 +158,13 @@ Además, para una comprensión más visual y práctica, te recomiendo el siguien
 [![Construye un sitio de documentación con Docusaurus](https://img.youtube.com/vi/2R53Y7eP45k/0.jpg)](https://www.youtube.com/watch?v=2R53Y7eP45k)
 
 Este video ofrece una explicación paso a paso sobre cómo utilizar Docusaurus para crear sitios de documentación efectivos.
+
+
+---
+
+## Historial de cambios
+
+| **Tipo de Versión** | **Descripción** | **Fecha**  | **Colaborador** |
+| ------------------- | --------------- | ---------- | --------------- |
+| **1.0**             | Primera versión de la guía. | 16/02/2025 |   |
+| **1.1**             |  Gestión de configuración.  | 24/04/2025 | Diego Fuentes |

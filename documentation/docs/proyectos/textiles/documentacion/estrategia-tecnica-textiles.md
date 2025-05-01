@@ -2,15 +2,7 @@
 title: Estrategia tecnica
 ---
 
-### Autores
-
-| Nombre           | Rol   |
-| ---------------- | ----- |
-| Diego Alfaro     | Autor |
-| Daniel Contreras | Autor |
-| Emiliano Gomez   | Autor |
-
-**Última actualización por:** Diego Alfaro, 11 de marzo de 2025
+**Última actualización por:** Hiram Mendoza , 24 de abril de 2025
 
 ---
 
@@ -86,7 +78,7 @@ Documentar claramente las funcionalidades y código del sistema para lectura en 
 - Se agregaran espacios alrededor de operadores y comas.
 - Se agregan punto y coma al final de definiciones simples.
 - Para documentar el código utilizaremos el estándar de documentación JS docs.
-- Para ver mas informacion de el estandar de codificacion ver el documento: [_Estandar de codificación_](/docs/guias/standards/general.md).
+- Para ver mas informacion de el estandar de codificacion ver el documento: [_Estandar de codificación_](/docs/standards/general).
 - Para la documentacion de los endpoints, usaremos SwaggerUI. Se puede encontrar un manual de su uso [*aqui*](Agregar el link al manual de swagger).
 
 ---
@@ -282,3 +274,10 @@ Describe berevemente cómo se probó esta funcionalidad. Ejemplo:
 ### CD
 
 Para el despliegue continuo del backend utilizaremos un script de [_github actions_](/docs/guias/github/github-actions.md) paa hacer pull automaticamente y desplegar las ramas de produccion (main) y pruebas (staging), por lo que no tendremos que manejar estas acciones manualmente.
+
+# Historial de cambios
+
+| **Tipo de Versión** | **Descripción**                                             | **Fecha** | **Colaborador**            |
+| ------------------- | ----------------------------------------------------------- | --------- | -------------------------- |
+| **1.0**             | Creacion de la estrategia tecnica textiles                     | 6/03/2025 | Diego Alfaro,  Daniel Contreras, Emiliano Gomez               |
+

@@ -1,8 +1,9 @@
 {
-  "label": "Recursos",
-  "position": 3,
+  "label": "Recursos ⛏️",
+  "position": 2,
   "link": {
     "type": "generated-index",
-    "description": "Recursos base de la organización, incluyendo CMMI-DEV v1.3 y DAD."
+    "description": "Recursos base de la organización, incluyendo CMMI-DEV v1.3 y DAD.",
+    "slug": "/category/recursos"
   }
 }

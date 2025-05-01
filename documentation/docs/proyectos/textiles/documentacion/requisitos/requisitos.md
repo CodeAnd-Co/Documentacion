@@ -5,7 +5,7 @@ sidebar_position: 1
 
 # Requisitos
 
-**Última actualización:** 06 de marzo de 2025
+**Última actualización:** 28 de abril de 2025
 
 ### **Proveedores de Requisitos**
 
@@ -32,44 +32,44 @@ Los requisitos funcionales del sistema describen una variedad de acciones que lo
 
 ### Requisitos Específicos MVP
 
-- [**RF1**](RF1.md): Super Administrador Crea Usuario
-- [**RF2**](RF2.md): Super Administrador Consulta Lista de Usuarios
-- [**RF3**](RF3.md): Super Administrador Lee Usuario
-- [**RF4**](RF4.md): Super Administrador Actualiza Usuario
-- [**RF5**](RF5.md): Super Administrador Elimina Usuario
-- [**RF6**](RF6.md): Super Administrador Crea Rol
-- [**RF7**](RF7.md): Super Administrador Consulta Lista de Roles
+- [**RF1**](RF1.md): Super Administrador Crea Usuario - `Done`
+- [**RF2**](RF2.md): Super Administrador Consulta Lista de Usuarios - `Done`
+- [**RF3**](RF3.md): Super Administrador Lee Usuario - `Done`
+- [**RF4**](RF4.md): Super Administrador Actualiza Usuario - `Ready`
+- [**RF5**](RF5.md): Super Administrador Elimina Usuario - `Ready`
+- [**RF6**](RF6.md): Super Administrador Crea Rol - `Ready`
+- [**RF7**](RF7.md): Super Administrador Consulta Lista de Roles - `Done`
 - [**RF10**](RF10.md): Super Administrador Elimina Rol
 - [**RF11**](RF11.md): Super Administrador Crea Cliente
-- [**RF12**](RF12.md): Super Administrador Consulta Lista de Clientes
+- [**RF12**](RF12.md): Super Administrador Consulta Lista de Clientes - `Done`
 - [**RF13**](RF13.md): Super Administrador, Lee Cliente
-- [**RF15**](RF15.md): Super Administrador Elimina Cliente
+- [**RF15**](RF15.md): Super Administrador Elimina Cliente `Done`
 - [**RF16**](RF16.md): Super Administrador Crea Empleado
-- [**RF17**](RF17.md): Super Administrador Consulta Lista de Empleados
+- [**RF17**](RF17.md): Super Administrador Consulta Lista de Empleados - `Ready`
 - [**RF18**](RF18.md): Super Administrador Lee Empleado
 - [**RF20**](RF20.md): Super Administrador Elimina Empleado
 - [**RF21**](RF21.md): Super Administrador Crea Grupo de Empleados
-- [**RF22**](RF22.md): Super Administrador Consulta Lista de Grupos de Empleados
+- [**RF22**](RF22.md): Super Administrador Consulta Lista de Grupos de Empleados - `Done`
 - [**RF23**](RF23.md): Super Administrador Lee Grupo de Empleados
-- [**RF25**](RF25.md): Super Administrador Elimina Grupo de Empleados.
-- [**RF26**](RF26.md): Super Administrador Crea Producto
-- [**RF27**](RF27.md): Super Administrador, Cliente Consulta Lista de Productos
-- [**RF30**](RF30.md): Super Administrador Elimina Producto
+- [**RF25**](RF25.md): Super Administrador Elimina Grupo de Empleados. - `Ready`
+- [**RF26**](RF26.md): Super Administrador Crea Producto - `Ready`
+- [**RF27**](RF27.md): Super Administrador, Cliente Consulta Lista de Productos - `Done`
+- [**RF30**](RF30.md): Super Administrador Elimina Producto - `Ready`
 - [**RF31**](RF31.md): Super Administrador Crea Set de Cuotas
-- [**RF32**](RF32.md): Super Administrador, Cliente Consulta Lista de Set de Cuotas
+- [**RF32**](RF32.md): Super Administrador, Cliente Consulta Lista de Set de Cuotas - `Done`
 - [**RF33**](RF33.md): Super Administrador, Cliente Lee Set de Cuotas
-- [**RF35**](RF35.md): Super Administrador Elimina Set de Cuotas
+- [**RF35**](RF35.md): Super Administrador Elimina Set de Cuotas - `Ready`
 - [**RF36**](RF36.md): Super Administrador Crea Evento
-- [**RF37**](RF37.md): Super Administrador, Cliente Consulta Lista de Eventos
-- [**RF38**](RF38.md): Super Administrador, Cliente Lee Evento
-- [**RF40**](RF40.md): Super Administrador, Cliente Elimina Evento
+- [**RF37**](RF37.md): Super Administrador, Cliente Consulta Lista de Eventos - `Ready`
+- [**RF38**](RF38.md): Super Administrador, Cliente Lee Evento - `Ready`
+- [**RF40**](RF40.md): Super Administrador, Cliente Elimina Evento - `Ready`
 - [**RF41**](RF41.md): Super Administrador Crea Set de Productos
-- [**RF42**](RF42.md): Super Administrador, Cliente Consulta Lista de Sets de Productos
+- [**RF42**](RF42.md): Super Administrador, Cliente Consulta Lista de Sets de Productos - `Done`
 - [**RF43**](RF43.md): Super Administrador, Cliente Lee Set de Productos
 - [**RF45**](RF45.md): Super Administrador Elimina Set de Productos
-- [**RF46**](RF46.md): Super Administrador Crea Categoria de Productos
-- [**RF47**](RF47.md): Super Administrador Consulta Lista de Categorias de Productos
-- [**RF50**](RF50.md): Elimina Categoria de Productos
+- [**RF46**](RF46.md): Super Administrador Crea Categoria de Productos - `Done`
+- [**RF47**](RF47.md): Super Administrador Consulta Lista de Categorias de Productos - `Done`
+- [**RF50**](RF50.md): Elimina Categoria de Productos - `Done`
 - [**RF51**](RF51.md): Super Administrador Crea Tipo de Pago
 - [**RF52**](RF52.md): Super Administrador, Cliente Consulta Lista de Tipos de Pago
 - [**RF53**](RF53.md): Super Administrador, Cliente Lee Tipo de Pago
@@ -81,6 +81,7 @@ Los requisitos funcionales del sistema describen una variedad de acciones que lo
 - [**RF60**](RF60.md): Super Administrador, Cliente Consulta Lista de Pedidos
 - [**RF61**](RF61.md): Super Administrador, Cliente Lee Pedido
 - [**RF63**](RF63.md): Super Administrador Elimina Pedido
+- [**RF78**](RF78.md): Iniciar Sesión `Done`
 
 ### Requisitos Específicos MBI (Parte 1)
 
@@ -403,6 +404,10 @@ La interfaz de usuario de la aplicación está diseñada para ser **intuitiva, a
 - **RI-1:** Incorporación de una barra lateral que permitirá una navegación eficiente dentro del sistema.
 
 ![Requisito de Interfaz 1 - Barra lateral](imagenes/altertexRI1.png)
+
+#### Pruebas
+
+_<u>[Enlace a pruebas RI1 Barra Lateral.](https://docs.google.com/spreadsheets/d/1NLGwGrGA5PVOEzLaqxa8Ts1D_Ng3QzzqNKWJYUzxD-M/edit?gid=470694613#gid=470694613)</u>_
 
 Para garantizar coherencia visual y funcional, la interfaz estará construida con **componentes reutilizables**, lo que permitirá mantener una estética uniforme y una estructura lógica. Esto contribuirá a **reducir la curva de aprendizaje** y a **optimizar la interacción** del usuario con el sistema.
 

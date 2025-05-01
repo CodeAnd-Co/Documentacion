@@ -5,8 +5,6 @@ sidebar_position: 1
 
 # Misión y Visión de Code & Co
 
-**Última actualización:** 15 de febrero de 2025
-
 ## Misión 🎯
 
 En Code & Co, nos dedicamos a generar soluciones de software innovadoras y personalizadas que permiten a las empresas alcanzar sus objetivos de manera eficiente y efectivas. Nos comprometemos a entender las necesidades específicas de cada cliente, ofreciendo productos y servicios que se adaptan a sus requerimientos y desafíos particulares. Nuestra misión es ser un aliado estratégico en el crecimiento y éxito de nuestros clientes, brindando herramientas tecnológicas que optimicen sus procesos y potencien su competitividad en el mercado.
@@ -26,3 +24,12 @@ Aspiramos a ser reconocidos como líderes en la optimización del proceso de ing
 Optimizar el proceso de ingeniería de software con un enfoque ágil y disciplinado, adaptándonos a las necesidades de cada empresa, teniendo una visión integral de las problemáticas que enfrentan.
 
 :::
+
+---
+
+## Historial de cambios
+
+| **Tipo de Versión** | **Descripción**                               | **Fecha** | **Colaborador**                 |
+| ------------------- | --------------------------------------------- | --------- | ------------------------------- |
+| **1.0**             | Creacion de la misión y visión   | 15/2/2025  | Ángel Ramírez |
+| **1.1**             | Creacion del historial de cambios   | 23/4/2025  | Diego Fuentes |

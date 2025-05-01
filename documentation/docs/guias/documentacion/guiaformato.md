@@ -1,20 +1,22 @@
 ---
-title: Guía de Formato 
+title: Guía de Formato para Documentos
 sidebar_position: 10
 ---
 
+# Guía de Formato para Documentos
+**Última actualización:** 
 
-# Formato para Documentos
-**Última actualización:** 7 de marzo de 2025  
 ## Code & Co.
 
 ---
 
 ### Versión 1.0
 
-## Portada
+Esta guía establece las normas de formato para la creación de documentos oficiales de Code & Co., asegurando uniformidad, claridad y profesionalismo en cada entrega. Su propósito es facilitar la lectura y la presentación visual de los contenidos, independientemente del autor o del área responsable. El alcance de este documento abarca portadas, índices, encabezados, contenido, listas, tablas y elementos visuales, sirviendo como referencia obligatoria para cualquier documento formal generado dentro de la organización.
 
-### Título
+## 1. Portada
+
+### 1.1 Título
 
 - Utilizar el formato de título*
 - **Fuente**: Montserrat (negritas)
@@ -24,7 +26,7 @@ sidebar_position: 10
 - Alineado a la izquierda
 - Incluir un salto de línea después del título
 
-### Nombre del equipo o departamento
+### 1.2 Nombre del equipo o departamento
 
 - **Fuente**: Montserrat (negritas)
 - **Tamaño**: 18
@@ -32,7 +34,7 @@ sidebar_position: 10
 - Debajo del título
 - Alineado a la izquierda
 
-### Versión
+### 1.3 Versión
 
 - **Fuente**: Montserrat (seminegritas)
 - **Tamaño**: 15
@@ -42,7 +44,7 @@ sidebar_position: 10
 
 ---
 
-## Índice (si aplica)
+## 2. Índice (si aplica)
 
 - Utilizar el formato de índice
 - **Fuente**: Helvetica (negrita)
@@ -50,7 +52,7 @@ sidebar_position: 10
 
 ---
 
-## Subtítulos y encabezados
+## 3. Subtítulos y encabezados
 
 - Utilizar el formato de subtítulo y encabezado*
 - **Fuente**: Helvetica (normal)
@@ -59,7 +61,7 @@ sidebar_position: 10
 
 ---
 
-## Contenido
+## 4. Contenido
 
 - **Fuente**: Helvetica Neue (clara)
 - **Tamaño de fuente**: 12
@@ -67,14 +69,14 @@ sidebar_position: 10
 
 ---
 
-## Listas
+## 5. Listas
 
 - Utilizar formato de contenido
 - Viñetas con círculos o listas numeradas
 
 ---
 
-## Pie de foto o tabla
+## 6. Pie de foto o tabla
 
 - Debajo de la imagen, figura, foto o tabla
 - La numeración inicia nuevamente en cada capítulo o sección
@@ -94,38 +96,38 @@ sidebar_position: 10
 
 ---
 
-## Tablas
+## 7. Tablas
 
-### Encabezados
+### 7.1 Encabezados
 
 - **Fuente**: Helvética (normal)
 - **Tamaño**: 12
 - Sombrear la celda con gris claro 1 (séptima opción)
 
-### Contenido
+### 7.2 Contenido
 
 - **Fuente**: Helvética (clara)
 - **Tamaño**: 12
 
 ---
 
-# Ejemplo de Formato
+# 8. Ejemplo de Formato
 
-## Esto es un TÍTULO
+## 8.1 Esto es un TÍTULO
 
-### Esto es un índice
+### 8.1.1 Esto es un índice
 
 Índice | Página
 --- | ---
 Esto es un índice | 4
 
-### Esto es un subtítulo
+### 8.1.2 Esto es un subtítulo
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...
 
-### Esto es un encabezado
+### 8.1.3 Esto es un encabezado
 
-#### Esto es una lista:
+#### 8.1.3.1 Esto es una lista:
 
 - Ítem 1
   - Ítem 1.1
@@ -145,11 +147,12 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 **Tabla 1: Tabla de ejemplo**
 
+---
 
+##  Historial de cambios
 
-## Registro de cambios:
-
-| Nombre                                | Descripción                      | Versión  |
-|---------------------------------------|----------------------------------|---------|
-| Rodrigo Antonio Benítez De La Portilla | Guía de formato para .docx      | 1.0     |
-
+| **Tipo de Versión** | **Descripción** | **Fecha**  | **Colaborador** |
+| ------------------- | --------------- | ---------- | --------------- |
+| **1.0** | Guía de formato para .docx  | 07/03/2025 | Rodrigo Antonio Benítez De La Portilla |
+| **1.1** | Gestión de configuración  | 24/04/2025 | Diego Fuentes |
+| **1.2** | Introducción y numerología | 25/04/2025 | Hiram Mendoza |
