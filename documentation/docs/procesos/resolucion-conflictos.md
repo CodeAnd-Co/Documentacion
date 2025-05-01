@@ -89,7 +89,7 @@ sidebar_position: 9
 
 > **Notas**:  
 > - Las **4 C's**: **Calma**, **Claridad**, **Curiosidad**, **Compromiso**.  
-> - Siempre usar el [formulario de denuncias](https://docs.google.com/...) para reportar conflictos.  
+> - Siempre usar el [formulario de denuncias](https://docs.google.com/forms/d/19Df5kc_mCu_4mvd6VVm3ruveyjp7qQSKUlPtaVSVjMc/viewform?edit_requested=true) para reportar conflictos.  
 
 ---
 
