@@ -34,11 +34,12 @@ Poder acceder facilmente a todas las checklists necesarias para auditar todos lo
 - Checklist de [análisis](https://docs.google.com/document/d/1dFEBxS_WGWtgCAAW1Sp57Vlgj06-X-od6HbNy2XnZKk/edit?usp=sharing).
 - Checklist de [diseño](https://docs.google.com/document/d/17iPu9h6KR80SHw6kBhKG3mf926_mbkIipx1Aq1sfD2A/edit?usp=sharing).
 - Checklist de [pruebas](https://docs.google.com/document/d/1vgbiGV0X7-2gam2kI9x5Da3l594kb4XKfE4BtnfEJ-8/edit?usp=sharing).
+- Checklist de [validación de procesos](https://docs.google.com/document/d/1Gt8ePyZqPN-WkaZb_RbabIfAwQcsUDdp6Y4VqAS9xco/edit?usp=sharing)
 
 ---
 
 ## Historial de Cambios
 
-| **Tipo de Versión** | **Descripción**                               | **Fecha**  | **Colaborador**                    |
-| ------------------- | --------------------------------------------- | ---------- | ---------------------------------- |
-| **1.0**             | Creación del índice                           | 22/04/2025 | Diego Isaac Fuentes Juvera         |
+| **Tipo de Versión** | **Descripción**     | **Fecha**  | **Colaborador**            |
+| ------------------- | ------------------- | ---------- | -------------------------- |
+| **1.0**             | Creación del índice | 22/04/2025 | Diego Isaac Fuentes Juvera |
