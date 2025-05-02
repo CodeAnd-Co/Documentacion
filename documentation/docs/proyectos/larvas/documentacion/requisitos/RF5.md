@@ -85,6 +85,104 @@ sequenceDiagram
     deactivate View
     end
 
+    alt ERROR al obtener comida (500)
+    Usuario->>View: (GET) do Obtener Comida
+    activate View
+    View->>ViewModel: cargarAlimentos()
+    deactivate View
+    activate ViewModel
+    ViewModel->>Domain: charolaRequirement.getAlimentos()
+    deactivate ViewModel
+    activate Domain
+    Domain->>Repository: repository.getAlimentos()
+    deactivate Domain
+    activate Repository
+    Repository->>APIService: apiService.getAlimentos()
+    deactivate Repository
+    activate APIService
+    APIService->>Controller: @GET("/comida/obtener-comida")
+    deactivate APIService
+    activate Controller
+    Controller->>Model: charolaModel.obtenerComida()
+    deactivate Controller
+    activate Model
+    Model->>Database: obtenerComidas(query)
+    deactivate Model
+    activate Database
+    Database--XModel: Error al consultar comidas
+    deactivate Database
+    activate Model
+    Model--XController: Error inesperado en DB de comidas
+    deactivate Model
+    activate Controller
+    Controller-->>APIService: 500 Error obteniendo comida
+    deactivate Controller
+    activate APIService
+    APIService-->>Repository: 500 Error obteniendo comida
+    deactivate APIService
+    activate Repository
+    Repository-->>Domain: 500 Error obteniendo comida
+    deactivate Repository
+    activate Domain
+    Domain-->>ViewModel: Error al obtener comida
+    deactivate Domain
+    activate ViewModel
+    ViewModel-->>View: No se pudo cargar la comida. Intenta más tarde.
+    deactivate ViewModel
+    activate View
+    View-->>Usuario: Error al obtener la lista de comidas.
+    deactivate View
+    end
+
+    alt ERROR al obtener hidratación (500)
+    Usuario->>View: (GET) do Obtener Hidratación
+    activate View
+    View->>ViewModel: cargarHidratacion()
+    deactivate View
+    activate ViewModel
+    ViewModel->>Domain: charolaRequirement.getHidratacion()
+    deactivate ViewModel
+    activate Domain
+    Domain->>Repository: repository.getHidratacion()
+    deactivate Domain
+    activate Repository
+    Repository->>APIService: apiService.getHidratacion()
+    deactivate Repository
+    activate APIService
+    APIService->>Controller: @GET("/hidratacion/obtener-hidratacion")
+    deactivate APIService
+    activate Controller
+    Controller->>Model: charolaModel.obtenerHidratacion()
+    deactivate Controller
+    activate Model
+    Model->>Database: obtenerHidrataciones(query)
+    deactivate Model
+    activate Database
+    Database--XModel: Error al consultar hidratación
+    deactivate Database
+    activate Model
+    Model--XController: Error inesperado en DB de hidratación
+    deactivate Model
+    activate Controller
+    Controller-->>APIService: 500 Error obteniendo hidratación
+    deactivate Controller
+    activate APIService
+    APIService-->>Repository: 500 Error obteniendo hidratación
+    deactivate APIService
+    activate Repository
+    Repository-->>Domain: 500 Error obteniendo hidratación
+    deactivate Repository
+    activate Domain
+    Domain-->>ViewModel: Error al obtener hidratación
+    deactivate Domain
+    activate ViewModel
+    ViewModel-->>View: No se pudo cargar la hidratación. Intenta más tarde.
+    deactivate ViewModel
+    activate View
+    View-->>Usuario: Error al obtener la lista de hidrataciones.
+    deactivate View
+    end
+
     alt GET Hidratacion (200)
     Usuario->>View: (GET) do Obtener Hidratación
     activate View
