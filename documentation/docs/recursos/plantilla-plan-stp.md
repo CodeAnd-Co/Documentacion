@@ -2,14 +2,6 @@
 title: Plantila Plan STP
 ---
 
-### Autores
-
-| Nombre           | Rol   |
-| ---------------- | ----- |
-| Daniel Contreras | Autor |
-| Emiliano Gomez   | Autor |
-
----
 
 # Introducción
 
@@ -148,3 +140,12 @@ Espacio para incluir referencias adicionales o documentación complementaria, co
 - Enlaces a carpetas con casos de prueba detallados.
 - Documentos relacionados con normativas de calidad o metodologías de prueba utilizadas.
 - Información adicional que ayude a la comprensión del plan de pruebas.
+
+---
+
+### Historial de cambios
+
+| **Tipo de Versión** | **Descripción**                               | **Fecha** | **Colaborador**                 |
+| ------------------- | --------------------------------------------- | --------- | ------------------------------- |
+| **1.0**             | Agregar plantill de plan STP   | 06/03/2025  | Diego Ricardo Alfaro Pinto|
+| **1.1**             | Añade descripcion del disgrama de paquetes  | 06/03/2025  | Emiliano Valdivia |

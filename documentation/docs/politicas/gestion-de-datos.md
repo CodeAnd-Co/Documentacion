@@ -13,16 +13,16 @@ Esta política establece los lineamientos para la gestión de datos dentro de lo
 
 ## **2. Alcance**
 
-Esta política aplica a todos los proyectos en los que se utilicen datos relevantes para la operación, análisis y toma de decisiones dentro de la organización. Involucra a todas las áreas responsables de la recopilación, almacenamiento, distribución y protección de datos.
+Esta política aplica a todos los proyectos en los que se utilicen datos relevantes para la operación, análisis y toma de decisiones dentro de la organización. Involucra a todas las áreas responsables de la recopilación, almacenamiento, distribución y protección de datos. 
 
-Se excluyen las métricas derivadas del análisis de desempeño del proyecto, ya que estas pertenecen a procesos de evaluación específicos.
+Se excluyen las métricas derivadas del análisis de desempeño del proyecto, pues pertenecen a procesos de evaluación específicos.
 
 ## **3. Principios**
 
 1. **Precisión y consistencia**: Los datos deben mantenerse actualizados y evitar duplicaciones o inconsistencias.
-2. **Seguridad y confidencialidad**: Deben aplicarse controles de acceso para proteger la información sensible.
+2. **Seguridad y confidencialidad**: Deben aplicarse controles de acceso para proteger la información sensible. 
 3. **Trazabilidad**: Toda modificación en los datos debe documentarse de manera que se pueda verificar su historial.
-4. **Accesibilidad controlada**: Se debe garantizar el acceso a los datos solo a usuarios autorizados y conforme a su rol.
+4. **Accesibilidad controlada**: Se debe garantizar el acceso a los datos sólo a usuarios autorizados y conforme a su rol. 
 5. **Cumplimiento normativo**: La gestión de datos debe ajustarse a regulaciones internas y externas aplicables.
 6. **Control de versiones y cambios**: Todo dato clave debe estar sujeto a una estrategia de control de versiones, asegurando su integridad y evolución documentada.
 
@@ -39,11 +39,11 @@ Se refiere a aquellos datos cuya divulgación podría comprometer la integridad 
 - Datos financieros, estratégicos o confidenciales (cuentas bancarias, métodos de pago, información financiera, etc.).
 - Claves de API y configuraciones privadas (.env, .pem, cadenas de conexión, etc.).
 
-Estos datos se almacenarán en sus archivos originales (en caso de ser .env, .pem o similares) o, en caso de ser cuentas y contraseñas, se almacenarán en un archivo Excel donde se coloque dicha información. Dichos archivos se guardarán en una carpeta dentro del resto de recursos de cada proyecto con el nombre de “Credenciales”.
+Estos datos se almacenarán en sus archivos originales (en caso de ser .env, .pem o similares) o, en caso de ser cuentas y contraseñas, se almacenarán en un archivo Excel. Dichos archivos se guardarán en una carpeta dentro del resto de recursos de cada proyecto con el nombre de “Credenciales”.
 
 Para salvaguardar la integridad, seguridad y confianza depositada en los datos, el acceso será restringido únicamente al Team Lider y Architecture Owner de cada proyecto. Ambos roles de liderazgo tienen la obligación de colocar dichos accesos dentro de las carpetas y delegar su acceso en caso de cambiar de rol.
 
-Para evitar cualquier filtración de informacion, **queda estrictamente prohibido la distribución de los accesos a traves de cualquier  medio digital externo al uso de las carpetas privadas.**
+Para evitar cualquier filtración de información, **queda estrictamente prohibida la distribución de los accesos a través de cualquier medio digital distinto a los canales oficiales.** 
 
 ### **4.2 Datos Generales**
 
@@ -57,9 +57,9 @@ Son aquellos que pueden ser compartidos dentro del equipo de trabajo sin represe
 
 De acuerdo con el modelo **CMMI PP SP 2.3 (Gestión de Datos del Proyecto)**, se establecen las siguientes directrices:
 
-1. **Identificación y documentación de datos (PP SP 2.3)**
+1. **Identificación y documentación de datos (PP SP 2.3, PMC SP 1.4)**
 
-   - Cada dato manejado en el proyecto debe ser identificado y registrado en un repositorio centralizado.
+   - Cada dato manejado en el proyecto debe ser identificado y registrado en el [plan de gestión de datos](https://docs.google.com/spreadsheets/d/17af-k-gFvmqhUVZggVDDZ3HWGfbBG-TjpaLGUKcnITk/edit?usp=sharing).
    - Se utilizará el **Diccionario de Datos** para definir nombres, formatos y estructuras de los datos.
    - Se definirá un **Modelo Entidad-Relación (MER)** para estructurar la base de datos y sus relaciones.
 
@@ -107,7 +107,7 @@ Para garantizar el cumplimiento de esta política, se implementarán mecanismos 
 
 1. **Seguimiento del estado y calidad de los datos**:
 
-   - Se realizarán revisiones posteriormente a publicar a la implementacion.
+   - Se realizarán revisiones posteriormente a publicar a la implementación.
    - Se verificará que los datos cumplan con los estándares y regulaciones aplicables.
 
 2. **Gestión de configuración de datos (CM SP 1.1, CM SP 3.2)**:
@@ -135,4 +135,6 @@ Para garantizar el cumplimiento de esta política, se implementarán mecanismos 
 | ------------------- | --------------------------------------------- | --------- | ------------------------------- |
 | **1.0**             | Creación de la política  |   | Diego Alfaro, Arturo Sánchez |
 | **1.1**             | Eliminación de salidas de la política   | 08/04/2025  | Daniel Contreras, Eduardo Rosas |
-| **1.2**             | Modificacion datos sensibles  | 25/04/2025  | Miguel Angel Uribe |
+| **1.2**             | Modificación datos sensibles  | 25/04/2025  | Miguel Angel Uribe |
+| **1.3**             |  Implementar acciones correctivas |      26/04/2025        |  Max Toscano 
+| **1.4**             | Plan de Datos  | 28/04/2025  | Pablo Hurtado |

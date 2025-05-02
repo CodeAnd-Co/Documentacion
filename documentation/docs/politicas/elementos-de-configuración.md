@@ -7,7 +7,7 @@ sidebar_position: 4
 
 ## **1. Objetivo**
 
-Esta política establece los lineamientos para identificar que elementos son seleccionados para la gestión de configuración basándose en las prácticas específicas del área de CM del *CMMI*.
+Esta política establece los lineamientos para identificar los elementos que serán seleccionados para la gestión de configuración, basándose en las prácticas específicas del área de *CM* del *CMMI*.
 
 ---
 
@@ -15,9 +15,7 @@ Esta política establece los lineamientos para identificar que elementos son sel
 
 **Producto de trabajo:** Cualquier entidad generada como resultado del esfuerzo de los equipos que trabajan para los proyectos del departamento.
 
-**Elemento de configuración:** Entidades seleccionadas para la gestión de configuración que puede consistir en varios
-productos de trabajo relacionados que forman una línea base. Pueden incluir el hardware, el
-equipamiento, los activos tangibles, el software, la documentación, resultados de pruebas, etc.
+**Elemento de configuración:** Entidades seleccionadas para la gestión de configuración que puede consistir en varios productos de trabajo relacionados que forman una línea base. Pueden incluir el hardware, el equipamiento, los activos tangibles, el software, la documentación, resultados de pruebas, etc.
 
 ---
 
@@ -51,7 +49,7 @@ La **Matriz de Identificación de Elementos de Configuración** constituye el in
 3. **Formato del EC:**  
    - Indicar si es un documento (PDF, Word), un repositorio de GitHub, un diagrama, etc.
 4. **Categoría:**  
-   - Clasificación del elemento (Arquitectura, Acuernos, etc.).
+   - Clasificación del elemento (Arquitectura, Acuerdos, etc.).
 5. **Método de Control:**  
    - Especificar la herramienta o práctica con la que se gestiona.
 6. **Propietario:**  
@@ -110,3 +108,4 @@ Adicionalmente, se pueden incluir enlaces de herramientas colaborativas (Trac, J
 | **Tipo de Versión** | **Descripción**                               | **Fecha** | **Colaborador**                 |
 | ------------------- | --------------------------------------------- | --------- | ------------------------------- |
 | **1.0**             | Creación de la política   | 06/04/2025  | Diego Fuentes|
+| **1.1**             |  Implementar acciones correctivas |      26/04/2025        |  Max Toscano 

@@ -100,6 +100,64 @@ Este diagrama de paquetes representa la organización de un backend. Se divide e
   - .env: Archivo con cuentas, llaves y contraseñas importantes, sensibles y secretas.
   - package.json: Declaración de las dependencias y su versionamiento.
   - node_modules: Dependencias del proyecto.
+---
+  ## Plantilla Pull Requests FrontEnd
+
+```
+
+## Plantilla PR FrontEnd
+
+Última actualización 28/04/25
+
+---
+
+# Descripción
+
+---
+
+## Tipo de cambio
+
+- [ ] Corrección de error (cambio no disruptivo que soluciona un problema)
+- [ ] Nueva función (cambio no disruptivo que agrega funcionalidad)
+- [ ] Cambio disruptivo (corrección o función que afecta la compatibilidad existente)
+- [ ] Este cambio requiere una actualización en la documentación
+- [ ] Camio mínimo (Visual o de bajo impacto, sin afectcar lógica )
+
+---
+
+# ¿Qué archivo fue el que modifiqué?
+
+Ejemplo:
+
+- charola_view.dart
+
+---
+
+# ¿Cómo se ha probado?
+
+Describe resumidamente cómo lo probaste y funciona. Ejemplo:
+
+- "Se probó manualmente. Se validó que el botón 'Guardar' guarda correctamente la información y se muestra una alerta de éxito."
+  _En caso de cambio mínimo:_
+- "El cambio fue visualmente unicamente (color del boton). Se validó en los navegadores principales. No se requirieron pruebas funcionales."
+
+---
+
+### Cambios menores
+
+- [ ] Este PR realiza un cambio mínimo que no afecta la lógica del sistema
+- [ ] Se validó visualmente el componente afectado
+- [ ] No se realizaron pruebas unitarias porque no aplica
+
+---
+
+Versión: V1
+### Autores
+
+| Nombre                         | Rol   |
+| ------------------------------ | ----- |
+| Juan Antonio Landeros Velázquez          | Autor |
+```
 
 ## Aplicación en Flutter
 
@@ -145,6 +203,89 @@ Contiene todas las pruebas unitarias.
 Almacena dependencias internas o librerias personalizadas que pueden ser reutilizadas en distintos módulos
 
 ---
+  ## Plantilla Pull Requests Backend
+
+```
+## Plantilla PR BackEnd
+Última actualización 28/04/25
+
+---
+
+# Descripción
+
+Incluye un resumen del cambio y el problema que se ha solucionado. También proporciona el contexto relevante y la motivación para este cambio. Lista cualquier dependencia requerida para esta modificación.
+
+---
+
+## Tipo de cambio
+
+- [ ] Corrección de error (fix sin romper funcionalidades existentes)
+- [ ] Nueva funcionalidad (feature sin romper funcionalidades existentes)
+- [ ] Cambio disruptivo (rompe compatibilidad o modifica comportamiento actual )
+- [ ] Actualización de documentación requerida
+- [ ] Cambio mínimo (cambio visual o estructural que no afecta la lógica del sistema)
+
+---
+
+# ¿Qué archivo fue el que modifique?
+Ejemplo:
+- UserController.js
+- api.js
+
+---
+
+# ¿Cómo se ha probado?
+Describe berevemente cómo se probó esta funcionalidad. Ejemplo:
+- "Se probaron los endpoints '/api/login' y '/api/profile' con Postman. Las respuestas fueron correctas y sin errores en consola."
+- "Se realizaron pruebas visuales/manuales. No se detectaron impactos en lógica ni funcionalidad."
+
+---
+
+# Notas para cambios menores
+- [ ] Este PR realiza un cambio mínimo que no afecta la lógica del sistema.
+- [ ] Se validó el comportamiento básico y no se detectaron efectos colaterales.
+- [ ] No se realizaron pruebas automatizadas porque no aplica
+
+---
+
+# Lista de verificación del autor
+
+- [ ] El código sigue las normas de estilo del proyecto
+- [ ] He realizado una autoevaluación del código
+- [ ] El código esta comentado en las secciones complejas o no obvias
+- [ ] Documentación actualizada aplica
+- [ ] El código no genera nuevas advertencias o errores
+- [ ] Se añadieron pruebas relevantes
+
+---
+
+# Lista de Verificación de Pruebas
+- [ ] Las pruebas unitarias nuevas y existentes pasan correctamente con mis cambios
+- [ ] Las pruebas de seguridad nuevas y existentes pasan correctamente con mis cambios
+- [ ] Las pruebas de regresión nuevas y existentes pasan correctamente con mis cambios
+- [ ] Las pruebas de integración nuevas y existentes pasan correctamente con mis cambios
+- [ ] Las pruebas heurísticas nuevas y existentes pasan correctamente con mis cambios
+
+---
+
+## Checklist del evaluador:
+
+- [ ] La descripción del Pull Request es clara y específica
+- [ ] No se introducen errores ni inconsistencias
+- [ ] Ortografía y gramática correctas en documentación
+- [ ] El código es entendible y cumple con los estándares
+- [ ] Notifiqué al autor del PR si encontré errores, dudas o sugerencias
+- [ ] (Si se aprueba) Procedo a eliminar la rama correspondiente
+
+---
+
+# Versión: V1
+### Autores
+
+| Nombre                         | Rol   |
+| ------------------------------ | ----- |
+| Juan Antonio Landeros Velázquez          | Autor |
+```
 
 ### Historial de cambios
 
@@ -152,3 +293,4 @@ Almacena dependencias internas o librerias personalizadas que pueden ser reutili
 | ------------------- | --------------------------------------------- | --------- | ------------------------------- |
 | **1.0**             | Creación de la  estrategía tecnica   | 08/03/2025  | Juan Eduardo |
 | **2.0**             | Actualización del diagrama de paquetes backend   | 22/04/2025  | Miguel Angel Uribe Esquivel |
+| **3.0**             | Agregar plantilla de PR de technebrios   | 28/04/2025  | Juan Antonio Landeros Velázquez |

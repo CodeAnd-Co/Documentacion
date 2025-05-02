@@ -54,11 +54,11 @@ sequenceDiagram
         deactivate Repository
         activate APIService
 
-        APIService->>Controller: Procesar solicitud
+        APIService->>Controller: POST /iniciarSesion
         deactivate APIService
         activate Controller
 
-        Controller->>Model: Validar existencia y dar acceso
+        Controller->>Model: iniciarSesion
         deactivate Controller
         activate Model
 
@@ -116,7 +116,7 @@ sequenceDiagram
         deactivate Repository
         activate APIService
 
-        APIService-->>Repository: Error 503
+        APIService-->>Repository: TIMEOUT
         deactivate APIService
         activate Repository
 
@@ -135,7 +135,7 @@ sequenceDiagram
         View-->>Usuario: Mostrar mensaje "Sin conexión a internet"
         deactivate View
         
-    else POST: Usuario o contraseña incorrecto, 404
+    else POST: Error de Servidor, 500
         Usuario->>View: Presiona "Iniciar Sesión"
         activate View
 
@@ -155,11 +155,70 @@ sequenceDiagram
         deactivate Repository
         activate APIService
 
-        APIService->>Controller: Procesar solicitud
+        APIService->>Controller: POST /iniciarSesion
         deactivate APIService
         activate Controller
 
-        Controller->>Model: Validar existencia y dar acceso
+        Controller->>Model: iniciarSesion
+        activate Model
+
+        Model->>Database: SELECT FROM usuarios WHERE user = usuario && contrasena = contraseña
+        activate Database
+
+        Database-->>Model: Error
+        deactivate Database
+
+        Model-->>Controller: Error 500
+        deactivate Model
+
+        Controller-->>APIService: Error 500
+        deactivate Controller
+        activate APIService
+
+        APIService-->>Repository: Error 500
+        deactivate APIService
+        activate Repository
+
+        Repository-->>Domain: Error 500
+        deactivate Repository
+        activate Domain
+
+        Domain-->>ViewModel: Notifica Error
+        deactivate Domain
+        activate ViewModel
+
+        ViewModel-->>View: Actualizar UI
+        deactivate ViewModel
+        activate View
+
+        View-->>Usuario: Mostrar mensaje "Error de servidor"
+        deactivate View
+
+        else POST: Usuario o contraseña incorrecto, 404
+        Usuario->>View: Presiona "Iniciar Sesión"
+        activate View
+
+        View->>ViewModel: iniciarSesion(usuario, contraseña)
+        deactivate View
+        activate ViewModel
+
+        ViewModel->>Domain: iniciarSesion(usuario, contraseña)
+        deactivate ViewModel
+        activate Domain
+
+        Domain->>Repository: iniciarSesion(usuario, contraseña)
+        deactivate Domain
+        activate Repository
+
+        Repository->>APIService: iniciarSesion(usuario, contraseña)
+        deactivate Repository
+        activate APIService
+
+        APIService->>Controller: POST /iniciarSesion
+        deactivate APIService
+        activate Controller
+
+        Controller->>Model: iniciarSesion
         deactivate Controller
         activate Model
 
@@ -218,6 +277,8 @@ sequenceDiagram
 | PU-RF1-04  | Inicio de sesión con campos vacíos.                     | Se muestra un mensaje de error solicitando completar los campos. |
 | PU-RF1-05  | Tiempo de sesión expira por inactividad.                | La sesión es invalidada y el usuario es redirigido a la pantalla de inicio de sesión. |
 
+
+# Historial de cambios
 | **Tipo de Versión** | **Descripción**                      | **Fecha** | **Colaborador**   |
 | ------------------- | ------------------------------------ | --------- | ----------------- |
 | **1.0**             | Creacion de la historia de usuario   | 8/3/2025  | Armando Mendez    |
