@@ -42,7 +42,7 @@ No tenemos restricciones en cuanto a presupuesto o recursos; sin embargo, sí en
 #### Objetivo 1: 
 - Con la entrega de nuestro MVP, reducir el tiempo de registro de datos en un 30% en un plazo 1 mes
 #### Objetivo 2: 
-- Sigue en proceso de edición
+- Agilizar el proceso de toma de decisiones en la fase de  experimentación a un 50% comparado a años anteriores
 
 ## Alcance del Proyecto ➡️
 
