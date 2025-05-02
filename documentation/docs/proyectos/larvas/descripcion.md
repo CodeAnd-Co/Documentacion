@@ -362,10 +362,11 @@ import TabItem from '@theme/TabItem';
 - [**Manual de arquitectura** ](./documentacion/manual-arquitectura.md)
 - [**Estrategía técnica**](https://docs.google.com/spreadsheets/d/1E5J6ugtuWdjWGQqJeEW1vYByL9mUm9-9wHdZaO0a2zE/edit?gid=946746748#gid=946746748) 
 
+## Historial de cambios
 
 | **Tipo de Versión** | **Descripción**                      | **Fecha** | **Colaborador**   |
 | ------------------- | ------------------------------------ | --------- | ----------------- |
 | **1.0**             | Adición y definición del contenido   | 8/3/2025  | Armando Méndez    |
 | **1.1**             | Correciones del contenido            | 20/3/2025 | Armando Méndez    |
 | **1.2**             | Agregar misión y visión              | 25/4/2025 | Sofía Osorio      |
-
+| **1.3**             | Actualizar 2do objetivo del equipo   | 25/4/2025 | Sofía Osorio      |
