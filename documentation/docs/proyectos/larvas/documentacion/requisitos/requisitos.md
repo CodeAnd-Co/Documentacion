@@ -3,14 +3,6 @@ title: Requisitos
 sidebar_position: 1
 ---
 
-# Requisitos
-
-| Nombre | Rol |
-|---------|-------------------------|
-| Armando Méndez Castro | Autor | 
-
-**Última actualización:** 06 de marzo de 2025
-
 ### **Proveedores de Requisitos**  
    - **Internos**: Personas dentro de Code & Co.  
    - **Externos**: Cliente.  
@@ -111,10 +103,10 @@ Los requisitos no funcionales establecen las expectativas en términos de tiempo
 - El sistema debe ser capaz de integrarse con servicios de almacenamiento en la nube AWS debido a que el cliente cuenta con este servicio.
 - El sistema debe ser capaz de intercambiar datos con aplicaciones de terceros mediante APIs RESTful, utilizando el estándar JSON para el formato de intercambio.
 
-### Registro de cambios 
-| Autor | Descripción del cambio | Versión |
-|---------|-------------------------|---------|
-| Armando Méndez Castro | Historias de usuario y requisitos no funcionales | 1.0 |
-| Miguel Angel Uribe Esquivel  | Reviewer y autorizador | 1.0 |
-| Armando Méndez Castro | Descripción de pruebas unitarias del MVP | 1.1 |
-
+### Historial de cambios 
+| Autor | Descripción del cambio | Versión | Fecha |
+|---------|-------------------------|---------|---------|
+| Armando Méndez Castro | Historias de usuario y requisitos no funcionales | 1.0 | 6/03/2025 |
+| Miguel Angel Uribe Esquivel  | Reviewer y autorizador | 1.0 | 6/03/2025 |
+| Armando Méndez Castro | Descripción de pruebas unitarias del MVP | 1.1 | 6/03/2025 |
+| Miguel Angel Uribe | Actualizacion de las historias en Ready | 2.0 | 28/04/2025 |
