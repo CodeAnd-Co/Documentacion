@@ -3,7 +3,7 @@ title: PR9 Resolución de conflictos
 sidebar_position: 9
 ---
 
-# Proceso de Resolución de Conflictos  
+# Proceso de resolución de Conflictos  
 
 ## Objetivo  
 1. Identificar el conflicto.  
@@ -23,7 +23,7 @@ sidebar_position: 9
 | **1: Malentendido** | Discusión constructiva entre miembros.                                          | *"Creo que hay un malentendido, porque tú mencionaste..."*                  |
 | **2: Conflicto**    | Discusión defensiva.                                                            | *"Sí, rompí la aplicación, pero hay problemas más graves."*                 |
 | **3: Contienda**    | Lenguaje tergiversado; el problema principal se pierde.                         | *"Es obvio que tu idea no funciona."*                                       |
-| **4: Crusada**      | Lenguaje ideológico o polarizado.                                               | *"No entienden, así que no vale la pena hablarles."*                        |
+| **4: Cruzada**      | Lenguaje ideológico o polarizado.                                               | *"No entienden, así que no vale la pena hablarles."*                        |
 | **5: Guerra**       | Dinámica "ellos vs. nosotros"; posible violencia.                               | *"Están advertidos, esto no volverá a pasar."*                              |
 
 ### Proceso  
