@@ -104,9 +104,9 @@ Los requisitos no funcionales establecen las expectativas en términos de tiempo
 - El sistema debe ser capaz de intercambiar datos con aplicaciones de terceros mediante APIs RESTful, utilizando el estándar JSON para el formato de intercambio.
 
 ### Historial de cambios 
-| Autor | Descripción del cambio | Versión | Fecha |
+| **Versión** | **Descripción del cambio** | **Fecha** | **Colaborador** |
 |---------|-------------------------|---------|---------|
-| Armando Méndez Castro | Historias de usuario y requisitos no funcionales | 1.0 | 6/03/2025 |
-| Miguel Angel Uribe Esquivel  | Reviewer y autorizador | 1.0 | 6/03/2025 |
-| Armando Méndez Castro | Descripción de pruebas unitarias del MVP | 1.1 | 6/03/2025 |
-| Miguel Angel Uribe | Actualizacion de las historias en Ready | 2.0 | 28/04/2025 |
+| **1.0** | Historias de usuario y requisitos no funcionales | 6/03/2025 | Armando Méndez Castro |
+| **1.0** |  Reviewer y autorizador  | 6/03/2025 | Miguel Angel Uribe Esquivel  |
+| **1.1** |  Descripción de pruebas unitarias del MVP  | 6/03/2025 | Armando Méndez Castro |
+| **2.0** |  Actualizacion de las historias en Ready  | 28/04/2025 | Miguel Angel Uribe |
