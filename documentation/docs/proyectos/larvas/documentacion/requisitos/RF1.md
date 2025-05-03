@@ -20,8 +20,6 @@ Como usuario de la aplicación, quiero autenticarme en el sistema ingresando mi 
 
 ### Diagrama de Secuencia
 
-> *Descripción*: El diagrama de secuencia muestra cómo el Super Administrador interactúa con el sistema para crear un cliente, detallando los pasos de solicitud de datos, validación y confirmación.
-
 ```mermaid
 sequenceDiagram
     actor Usuario 
