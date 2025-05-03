@@ -87,6 +87,6 @@ Las checklist deben estar registradas en el [índice de checklists](/docs/recurs
 
 | **Tipo de Versión** | **Descripción**                               | **Fecha** | **Colaborador**                 |
 | ------------------- | --------------------------------------------- | --------- | ------------------------------- |
-| **1.0**             | Primera versión del estándar.   | 28/3/2025  | Mariana Juárez Ramírez |
+| **1.0**             | Primera versión del estándar.   | 28/3/2025  | Mariana Juárez, Sofía Osorio |
 | **2.0**             | Agregar historial de cambios, paso de creación en google drive, paso de índice de checklists. | 22/4/2025  | Diego Fuentes |
 | **2.1**             |  Implementar acciones correctivas |      26/04/2025        |  Max Toscano 
