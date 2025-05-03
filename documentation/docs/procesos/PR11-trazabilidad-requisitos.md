@@ -50,4 +50,4 @@ sidebar_position: 11
 | ------------------- | ------------------------------------------------------------------------------------------------------------------------------ | --------- | ------------------------------------------------- |
 | **1.0**             | Creacion de proceso de gestión de riesgos                                                                                      | 9/3/2025 | Angélica Ríos Cuentas |
 | **2.0**             | Refactorización y cambio para especificar dónde se crean los documentos.                                                       | 18/4/2025 | Diego Fuentes                             |
-| **2.1**             | Pasos para actualizar estado del requisito en la RTM | 28/4/2025 | Diego Fuentes                             |
+| **2.1**             | Pasos para actualizar estado del requisito en la RTM | 28/4/2025 | Diego Fuentes y Max Toscano |
