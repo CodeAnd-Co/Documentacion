@@ -21,8 +21,6 @@ Como usuario del sistema, quiero ingresar la información de una charola nueva e
 
 ### Diagrama de Secuencia
 
-> _Descripción_: El diagrama de secuencia muestra el flujo del proceso de creación de un nuevo empleado, con la interacción entre el Super Administrador, el formulario de ingreso y la base de datos.
-
 ```mermaid
 sequenceDiagram
     actor Usuario
