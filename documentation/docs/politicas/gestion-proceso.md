@@ -21,7 +21,7 @@ Un proceso se considerará activo si cumple con los criterios definidos dentro d
 
 ## **4. Estándares**
 
-Para cada proceso, se debe documentar si cuenta o no con un estándar. Si un proceso tiene un estándar aplicable, se debe referenciar explícitamente el documento o checklist correspondiente. En aquellos procesos donde no se haya definido un estándar formal, se debe indicar de forma explícita que por el momento, no se requiere un estándar formal. Para revisar los estándares definidos en el departamento, hacer click [aquí](https://codeandco-wiki.netlify.app/docs/category/estándares).
+Para cada proceso, se debe documentar si cuenta o no con un estándar. Si un proceso tiene un estándar aplicable, se debe referenciar explícitamente el documento o checklist correspondiente. En aquellos procesos donde no se haya definido un estándar formal, se debe indicar de forma explícita que por el momento, no se requiere un estándar formal. Para revisar los estándares definidos en el departamento, hacer click [aquí](https://codeandco-wiki.netlify.app/docs/category/estandares).
 
 ## **5. Necesidades**
 
@@ -66,4 +66,5 @@ Los objetivos se revisan semanalmente durante los reportes de estado. Una vez re
 | ------------------- | --------------------------------------------- | --------- | ------------------------------- |
 | **1.0**             | Creación de la política                       | 27/03/2025 | Sofía Osorio, Mariana Juárez   |
 | **1.1**             | Añadir historial de cambios                   | 23/04/2025 | Diego Fuentes   |
-| **1.2**             |  Implementar acciones correctivas |      26/04/2025        |  Max Toscano 
+| **1.2**             |  Implementar acciones correctivas |      26/04/2025        |  Max Toscano    |
+| **1.3**             | Corregir link de estándares                   | 02/05/2025 | Sofía Osorio    |
