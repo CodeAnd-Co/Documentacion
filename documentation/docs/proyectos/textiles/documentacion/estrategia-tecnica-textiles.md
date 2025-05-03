@@ -123,6 +123,54 @@ Cada módulo puede incluir pruebas unitarias para garantizar su correcto funcion
 - app.js: Punto de entrada del servidor.
 - node_modules: Dependencias del proyecto.
 
+### Frontend
+
+![alt text](DiagramaPaquetesFront.png)
+
+Este diagrama de paquetes representa la organización de un frontend. Se divide en varias secciones principales:
+
+### 1. estilos
+
+Contiene los archivos de estilos globales del proyecto.
+
+### 2. hooks
+
+Incluye hooks personalizados de React que encapsulan lógica para ser utilizada en distintos componentes de la aplicación.
+
+### 3. Rutas
+
+Contiene la configuración de rutas del proyecto, para definir la navegación entre páginas y componentes.
+
+### 4. Utilidades
+
+Incluye utilidades generales que no pertenecen a una parte específica del dominio o la interfaz, como validaciones, constantes, etc.
+
+- **Constantes**: Conjunto de componentes organizados por nivel de complejidad:
+
+### 5. Vistas
+
+La carpeta de vistas contiene:
+
+- **Componentes**: Conjunto de componentes organizados por nivel de complejidad:
+
+  - `Atomos` : Componentes más pequeños e indivisibles como botones, iconos, etiquetas.
+  - `Moleculas` : Combinación de átomos que forman unidades funcionales simples, como formularios, inputs con etiqueta, etc.
+  - `Organismos` : Combinaciones de moléculas y/o átomos que conforman secciones completas reutilizables, como encabezados o tarjetas de usuario.
+
+- **Paginas**: Vistas completas que representan pantallas enteras del sistema, construidas a partir de los organismos y otros componentes.
+
+### 6. dominio
+
+El dominio contiene:
+
+- **modelos**: Definiciones de los modelos de datos utilizados en el frontend, como clases o interfaces que representan la estructura de la información.
+
+- **repositorios**: Encapsulan la lógica de acceso a datos, conectándose con APIs u otras fuentes para obtener o enviar información.
+
+- **servicios**: Contienen funciones que implementan la lógica de negocio relacionada con el dominio, trabajando con los repositorios y modelos para realizar operaciones más complejas como la obtención de permisos.
+
+---
+
 ## Plantilla Pull Requests equipo textiles
 
 ```
@@ -277,7 +325,7 @@ Para el despliegue continuo del backend utilizaremos un script de [_github actio
 
 # Historial de cambios
 
-| **Tipo de Versión** | **Descripción**                                             | **Fecha** | **Colaborador**            |
-| ------------------- | ----------------------------------------------------------- | --------- | -------------------------- |
-| **1.0**             | Creacion de la estrategia tecnica textiles                     | 6/03/2025 | Diego Alfaro,  Daniel Contreras, Emiliano Gomez               |
-
+| **Tipo de Versión** | **Descripción**                            | **Fecha**  | **Colaborador**                                |
+| ------------------- | ------------------------------------------ | ---------- | ---------------------------------------------- |
+| **1.0**             | Creacion de la estrategia tecnica textiles | 6/03/2025  | Diego Alfaro, Daniel Contreras, Emiliano Gomez |
+| **1.1**             | Documentación de la estructura de frontend | 01/05/2025 | Angélica Ríos                                  |
