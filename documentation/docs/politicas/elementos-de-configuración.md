@@ -107,5 +107,5 @@ Adicionalmente, se pueden incluir enlaces de herramientas colaborativas (Trac, J
 
 | **Tipo de Versión** | **Descripción**                               | **Fecha** | **Colaborador**                 |
 | ------------------- | --------------------------------------------- | --------- | ------------------------------- |
-| **1.0**             | Creación de la política   | 06/04/2025  | Diego Fuentes|
+| **1.0**             | Creación de la política   | 06/04/2025  | Max Toscano y Diego Fuentes |
 | **1.1**             |  Implementar acciones correctivas |      26/04/2025        |  Max Toscano 
