@@ -5,7 +5,6 @@ sidebar_position: 9
 
 # RF7: Super Administrador Consulta Lista de Roles
 
-**Última actualización:** 08 de abril de 2025
 
 ---
 
@@ -81,3 +80,8 @@ sequenceDiagram
 ## **Pruebas**
 
 _<u>[Enlace a pruebas RF7 Consultar lista de roles.](https://docs.google.com/spreadsheets/d/1NLGwGrGA5PVOEzLaqxa8Ts1D_Ng3QzzqNKWJYUzxD-M/edit?pli=1&gid=1274458259#gid=1274458259)</u>_
+
+| **Tipo de Versión** | **Descripción**                  | **Fecha**  | **Colaborador** |
+| ------------------- | -------------------------------- | ---------- | --------------- |
+| **1.0**             | Creación de documentación        | 06/04/2025 | Hiram Mendoza  |
+| **1.1**             | Agregar pruebas | 06/05/2025 | Hiram Mendoza   |
