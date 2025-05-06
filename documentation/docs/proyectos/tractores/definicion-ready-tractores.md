@@ -35,4 +35,4 @@ El equipo de Tractech utilizó una escala diferente para calcular el tamaño de 
 | **Tipo de versión** | **Descripción**                    | **Fecha**  | **Colaborador**        |
 |---------------------|------------------------------------| ---------- | ---------------------- |
 | **1.0**             | Primera versión de definición de Ready para TracTech | 08/03/2025 | Diego Ricardo Alfaro Pinto <br/> Juan Pablo Chávez Leal |
-| **1.0**             | Eliminación de responsable para cada historia de usuario y adicción de Mapa de Dependencias | 05/05/2025 | Rommel Toledo Crespo |
+| **1.1**             | Eliminación de responsable para cada historia de usuario y adicción de Mapa de Dependencias | 05/05/2025 | Rommel Toledo Crespo |
