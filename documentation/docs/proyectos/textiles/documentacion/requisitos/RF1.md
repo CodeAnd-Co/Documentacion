@@ -108,3 +108,8 @@ sequenceDiagram
 ## **Pruebas**
 
 _<u>[Enlace a pruebas RF2 Consultar Lista de Usuarios.](https://docs.google.com/spreadsheets/d/1NLGwGrGA5PVOEzLaqxa8Ts1D_Ng3QzzqNKWJYUzxD-M/edit?gid=336266899#gid=336266899)</u>_
+
+| **Tipo de Versión** | **Descripción**                               | **Fecha** | **Colaborador**                 |
+| ------------------- | --------------------------------------------- | --------- | ------------------------------- |
+| **1.0**             | Creación del requisito   | 6/3/2025  | Angélica Rios |
+| **1.1**             | Cambio de estado de historia | 6/5/2025  | Nicolas Hood   |
