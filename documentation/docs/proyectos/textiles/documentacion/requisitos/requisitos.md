@@ -40,7 +40,7 @@ Los requisitos funcionales del sistema describen una variedad de acciones que lo
 - [**RF6**](RF6.md): Super Administrador Crea Rol - `Ready`
 - [**RF7**](RF7.md): Super Administrador Consulta Lista de Roles - `Done`
 - [**RF10**](RF10.md): Super Administrador Elimina Rol
-- [**RF11**](RF11.md): Super Administrador Crea Cliente
+- [**RF11**](RF11.md): Super Administrador Crea Cliente - `Ready`
 - [**RF12**](RF12.md): Super Administrador Consulta Lista de Clientes - `Done`
 - [**RF13**](RF13.md): Super Administrador, Lee Cliente
 - [**RF15**](RF15.md): Super Administrador Elimina Cliente `Done`

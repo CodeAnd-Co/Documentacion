@@ -31,5 +31,5 @@ Optimizar el proceso de ingeniería de software con un enfoque ágil y disciplin
 
 | **Tipo de Versión** | **Descripción**                               | **Fecha** | **Colaborador**                 |
 | ------------------- | --------------------------------------------- | --------- | ------------------------------- |
-| **1.0**             | Creacion de la misión y visión   | 15/2/2025  | Ángel Ramírez |
+| **1.0**             | Creacion de la misión y visión   | 15/2/2025  | Valeria Zúñiga |
 | **1.1**             | Creacion del historial de cambios   | 23/4/2025  | Diego Fuentes |
