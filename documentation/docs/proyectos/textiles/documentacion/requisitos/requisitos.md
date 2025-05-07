@@ -39,14 +39,14 @@ Los requisitos funcionales del sistema describen una variedad de acciones que lo
 - [**RF5**](RF5.md): Super Administrador Elimina Usuario - `Ready`
 - [**RF6**](RF6.md): Super Administrador Crea Rol - `Ready`
 - [**RF7**](RF7.md): Super Administrador Consulta Lista de Roles - `Done`
-- [**RF10**](RF10.md): Super Administrador Elimina Rol
+- [**RF10**](RF10.md): Super Administrador Elimina Rol - `Done`
 - [**RF11**](RF11.md): Super Administrador Crea Cliente - `Ready`
 - [**RF12**](RF12.md): Super Administrador Consulta Lista de Clientes - `Done`
 - [**RF13**](RF13.md): Super Administrador, Lee Cliente
 - [**RF15**](RF15.md): Super Administrador Elimina Cliente `Done`
 - [**RF16**](RF16.md): Super Administrador Crea Empleado
 - [**RF17**](RF17.md): Super Administrador Consulta Lista de Empleados - `Ready`
-- [**RF18**](RF18.md): Super Administrador Lee Empleado
+- [**RF18**](RF18.md): Super Administrador Lee Empleado - `Done`
 - [**RF20**](RF20.md): Super Administrador Elimina Empleado - `Done`
 - [**RF21**](RF21.md): Super Administrador Crea Grupo de Empleados
 - [**RF22**](RF22.md): Super Administrador Consulta Lista de Grupos de Empleados - `Done`
@@ -55,7 +55,7 @@ Los requisitos funcionales del sistema describen una variedad de acciones que lo
 - [**RF26**](RF26.md): Super Administrador Crea Producto - `Ready`
 - [**RF27**](RF27.md): Super Administrador, Cliente Consulta Lista de Productos - `Done`
 - [**RF30**](RF30.md): Super Administrador Elimina Producto - `Done`
-- [**RF31**](RF31.md): Super Administrador Crea Set de Cuotas
+- [**RF31**](RF31.md): Super Administrador Crea Set de Cuotas - `Done`
 - [**RF32**](RF32.md): Super Administrador, Cliente Consulta Lista de Set de Cuotas - `Done`
 - [**RF33**](RF33.md): Super Administrador, Cliente Lee Set de Cuotas
 - [**RF35**](RF35.md): Super Administrador Elimina Set de Cuotas - `Ready`
@@ -78,7 +78,7 @@ Los requisitos funcionales del sistema describen una variedad de acciones que lo
 - [**RF57**](RF57.md): Super Administrador Importa Empleados
 - [**RF58**](RF58.md): Super Administrador Exporta Productos
 - [**RF59**](RF59.md): Super Administrador Exportar Empleados
-- [**RF60**](RF60.md): Super Administrador, Cliente Consulta Lista de Pedidos
+- [**RF60**](RF60.md): Super Administrador, Cliente Consulta Lista de Pedidos - `Done`
 - [**RF61**](RF61.md): Super Administrador, Cliente Lee Pedido
 - [**RF63**](RF63.md): Super Administrador Elimina Pedido
 - [**RF78**](RF78.md): Iniciar Sesión `Done`
