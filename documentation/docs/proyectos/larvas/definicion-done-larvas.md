@@ -18,7 +18,10 @@ Para considerar completa una historia de usuario, debe cumplir con todos estos c
 - Haber documentado el manual de usuario
 
 ## Interfaz de usuario
-- La interfaz relacionada a la historia de usuario cumple con los criterios de aceptación establecidos.
+- La interfaz relacionada a la historia de usuario es entendible y tiene un diseño adecuado.
+
+## Criterios de aceptación
+- La funcionalidad cumple con los criterios de aceptación definidos.
 
 ## Pull Request
 - La plantilla de pull request de front ha sido llenada correctamente [-> plantilla pull request front](/docs/proyectos/larvas/documentacion/estrategia_tecnica#plantilla-pull-requests-frontend)
