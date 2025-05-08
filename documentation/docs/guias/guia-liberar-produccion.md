@@ -67,12 +67,12 @@ Esta guía describe los pasos y consideraciones necesarios para liberar una lín
 
 Esta guía forma parte de la documentación oficial del departamento.
 
-
 ---
 
 ## Historial de cambios
 
-| **Tipo de Versión** | **Descripción** | **Fecha**  | **Colaborador** |
-| ------------------- | --------------- | ---------- | --------------- |
-| **1.0**             | Primera versión de la guía. | 07/04/2025 | Armando Méndez Castro  |
-| **1.1**             |  Gestión de configuración.  | 24/04/2025 | Diego Fuentes |
+| **Tipo de Versión** | **Descripción**             | **Fecha**  | **Colaborador**                        |
+| ------------------- | --------------------------- | ---------- | -------------------------------------- |
+| **1.0**             | Primera versión de la guía. | 07/04/2025 | Armando Méndez Castro                  |
+| **1.1**             | Gestión de configuración.   | 24/04/2025 | Diego Fuentes                          |
+| **1.2**             | Mover el archivo a gías.    | 08/05/2025 | Rodrigo Antonio Benítez De La Portilla |
