@@ -45,8 +45,9 @@ sidebar_position: 19
 
 ### Historial de cambios
 
-| **Tipo de Versión** | **Descripción**                               | **Fecha** | **Colaborador**                 |
-| ------------------- | --------------------------------------------- | --------- | ------------------------------- |
-| **1.0**             | Refactorización completa de la wiki   | 19/04/2025  |Valeria Zúñiga Mendoza|
-| **1.1**             | Se actualizo la plantilla de procesos siguiendo el estandar de versionamiento  | 06/03/2025  | Diego Ricardo Alfaro Pinto |
-| **2.0**             | Se actualizo la plantilla de procesos siguiendo el estandar de versionamiento  | 06/03/2025  | Diego Ricardo Alfaro Pinto |
+| **Tipo de Versión** | **Descripción**                                                               | **Fecha**  | **Colaborador**            |
+| ------------------- | ----------------------------------------------------------------------------- | ---------- | -------------------------- |
+| **1.0**             | Refactorización completa de la wiki                                           | 19/04/2025 | Valeria Zúñiga Mendoza     |
+| **1.1**             | Se actualizó la plantilla de procesos siguiendo el estándar de versionamiento | 06/03/2025 | Diego Ricardo Alfaro Pinto |
+| **2.0**             | Se actualizó la plantilla de procesos siguiendo el estándar de versionamiento | 06/03/2025 | Diego Ricardo Alfaro Pinto |
+| **2.1**             | Se corrigieron errores de ortografía                                          | 8/05/2025  | Diego Ricardo Alfaro Pinto |

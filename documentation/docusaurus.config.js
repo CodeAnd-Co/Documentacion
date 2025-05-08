@@ -124,6 +124,11 @@ const config = {
             label: "Proyectos 👨‍💻",
             position: "left",
           },
+          {
+            to: "/docs/category/plantillas",
+            label: "Plantillas 📄",
+            position: "left",
+          },
         ],
       },
       footer: {
