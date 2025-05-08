@@ -5,10 +5,6 @@ sidebar_position: 3
 
 # RF1: Super Administrador Crea Usuario
 
-**Última actualización:** 28 de abril de 2025
-
-Estado de la US: **DONE**
-
 ---
 
 ## Historia de Usuario
@@ -108,6 +104,8 @@ sequenceDiagram
 ## **Pruebas**
 
 _<u>[Enlace a pruebas RF2 Consultar Lista de Usuarios.](https://docs.google.com/spreadsheets/d/1NLGwGrGA5PVOEzLaqxa8Ts1D_Ng3QzzqNKWJYUzxD-M/edit?gid=336266899#gid=336266899)</u>_
+
+---
 
 | **Tipo de Versión** | **Descripción**                               | **Fecha** | **Colaborador**                 |
 | ------------------- | --------------------------------------------- | --------- | ------------------------------- |
