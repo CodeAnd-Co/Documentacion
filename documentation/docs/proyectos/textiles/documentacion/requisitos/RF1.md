@@ -109,6 +109,8 @@ sequenceDiagram
 
 _<u>[Enlace a pruebas RF2 Consultar Lista de Usuarios.](https://docs.google.com/spreadsheets/d/1NLGwGrGA5PVOEzLaqxa8Ts1D_Ng3QzzqNKWJYUzxD-M/edit?gid=336266899#gid=336266899)</u>_
 
+---
+
 | **Tipo de Versión** | **Descripción**                               | **Fecha** | **Colaborador**                 |
 | ------------------- | --------------------------------------------- | --------- | ------------------------------- |
 | **1.0**             | Creación del requisito   | 6/3/2025  | Angélica Rios |
