@@ -32,3 +32,10 @@ El patrón de arquitectura que se utiliza en el backend es MVC, donde la estruct
 Utilizamos una aquitectura cliente servidor con un solo servidor alojado en AWS, el servidor es un t4g.medium, que cuenta con dos núcleos de procesamiento y 4 Gb de RAM.
 
 Estamos utilizando MySQL como administrador de bases de datos, en el que intentamos guardar lo menos posible del usuario para respetar la confidencialidad del socio formador. 
+
+### Historial de Cambios
+
+
+| **Tipo de Versión** | **Descripción**                               | **Fecha** | **Colaborador**                 |
+| ------------------- | --------------------------------------------- | --------- | ------------------------------- |
+| **1.0**             | Creación del documento   | 8/5/25  | Juan Pablo Chávez Leal y Daniel Queijeiro Albo  |
