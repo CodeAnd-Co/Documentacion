@@ -51,3 +51,4 @@ sidebar_position: 2
 | 2.2     | Cambios de lógica para docusaurus     |          | Juan Pablo Chávez Leal     |
 | 2.3     | Cambio al control de cambios          | 18/04/2025 | Miguel Angel, Diego Alfaro |
 | 2.4     | Refactorización          | 18/04/2025 | Diego Fuentes |
+| 2.5     | Implementar política de gestión de procesos          | 08/05/2025 | Mariana Juárez|
