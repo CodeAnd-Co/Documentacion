@@ -5,15 +5,22 @@ sidebar_position: 1
 
 # Descripción General del Proyecto
 
-| Nombre | Rol |
-|---------|-------------------------|
-| Armando Méndez Castro | Autor | 
+**Nombre de la Empresa:** Zuustento
 
-**Última actualización:** 09 de marzo de 2025
+<div style={{ display: "flex", justifyContent: "space-between" }}>
 
-**Nombre de la Empresa:** Tech-nebrios
+<div style={{ width: "48%" }}>
+<h3>Misión</h3>
+<p>Impulsar la optimización de procesos de Zuustento, para desarrollar soluciones innovadoras que potencien su éxito.</p>
+</div>
 
-## Análisis de Necesidades 😑
+<div style={{ width: "48%" }}>
+<h3>Visión</h3>
+<p>Crecer como equipo de desarrollo para brindar una solución que aporte valor y resuelva la necesidad de nuestro cliente a través del seguimiento de las prácticas del CMMI y la colaboración efectiva.</p>
+</div>
+</div>
+
+### Análisis de Necesidades 😑
 #### Primera necesidad identificada  
 - Pérdidas de tiempo en el registro de datos, generando gastos innecesarios
 #### Segunda necesidad identificada  
@@ -35,7 +42,7 @@ No tenemos restricciones en cuanto a presupuesto o recursos; sin embargo, sí en
 #### Objetivo 1: 
 - Con la entrega de nuestro MVP, reducir el tiempo de registro de datos en un 30% en un plazo 1 mes
 #### Objetivo 2: 
-- Proporcionar datos clave para respaldar su toma de decisiones y disminuir su incetidumbre en un plazo de 3 meses.
+- Agilizar el proceso de toma de decisiones en la fase de  experimentación a un 50% comparado a años anteriores
 
 ## Alcance del Proyecto ➡️
 
@@ -341,23 +348,25 @@ import TabItem from '@theme/TabItem';
 
 | Nombre                            | Rol       |
 | --------------------------------- | --------- |
-| Mariana Juárez Ramírez            | Team Leader      |
-| Emiliano Gómez González   | Architecture Owner      |
-| Sofía Osorio Suárez   | Product Owner     |
-| Juan Eduardo Rosas Cerón  | Presentation Owner      |
-| Galo Alejandro del Rio Viggiano  | Team Member, UX/UI Diseñador   |
-| Emiliano Valdívia Lara | Q/A       |
-| Juan Carlos Calderón García | Team Member |      |
-| Ian Julián Estrada Castro   | Juntas Owner   |
-| Armando Méndez Castro   | Team Member   |
-| Miguel Angel Uribe Esquivel  | Team Member   |
+| Emiliano Valdivia Lara            | Team Leader      |
+| Miguel Ángel Uribe Esquivel   | Architecture Owner      |
+| Armando Méndez Castro  | Product Owner     |
+| Mariana Juárez Ramírez  | Team Member, UX/UI Diseñador   |
+| Emiliano Gómez González | Q/A       |
+| Sofía Osorio Suárez | Team Member |      |
+| Juan Eduardo Rosas Cerón   | Team Member   |
+| Juan Antonio Landeros Velázquez  | Team Member   |
 
 ### Recursos Necesarios
 
 - [**Manual de arquitectura** ](./documentacion/manual-arquitectura.md)
 - [**Estrategía técnica**](https://docs.google.com/spreadsheets/d/1E5J6ugtuWdjWGQqJeEW1vYByL9mUm9-9wHdZaO0a2zE/edit?gid=946746748#gid=946746748) 
 
-| Autor | Descripción del cambio | Versión |
-|---------|-------------------------|---------|
-| Armando Méndez Castro | Adición y definición del contenido | 1.0 |
-| Armando Méndez Castro | correciones del contenido | 1.1 |
+## Historial de cambios
+
+| **Tipo de Versión** | **Descripción**                      | **Fecha** | **Colaborador**   |
+| ------------------- | ------------------------------------ | --------- | ----------------- |
+| **1.0**             | Adición y definición del contenido   | 8/3/2025  | Armando Méndez    |
+| **1.1**             | Correciones del contenido            | 20/3/2025 | Armando Méndez    |
+| **1.2**             | Agregar misión y visión              | 25/4/2025 | Sofía Osorio      |
+| **1.3**             | Actualizar 2do objetivo del equipo   | 25/4/2025 | Sofía Osorio      |

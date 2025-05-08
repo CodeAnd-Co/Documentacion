@@ -5,7 +5,6 @@ sidebar_position: 9
 
 # RF7: Super Administrador Consulta Lista de Roles
 
-**Última actualización:** 08 de abril de 2025
 
 ---
 
@@ -78,18 +77,11 @@ sequenceDiagram
 
 > ![Interfaz de consultar lista de roles](imagenes/Consultar_Roles.png)
 
-## **Pruebas Unitarias**
+## **Pruebas**
 
-En caso de que alguna de las pruebas unitarias no sea aprobada, se deberá realizar una nueva iteración del proceso de pruebas.
-Este proceso continuará de forma iterativa hasta que todas las pruebas sean aprobadas satisfactoriamente, garantizando así la estabilidad y el cumplimiento de los requisitos funcionales definidos en la historia de usuario.
+_<u>[Enlace a pruebas RF7 Consultar lista de roles.](https://docs.google.com/spreadsheets/d/1NLGwGrGA5PVOEzLaqxa8Ts1D_Ng3QzzqNKWJYUzxD-M/edit?pli=1&gid=1274458259#gid=1274458259)</u>_
 
-**Iteración:** 1
-
-| ID Prueba | Descripción                                      | Valores de entrada                                 | Resultado esperado                                                   | Resultado observado | Aprobado (sí/no) |
-|-----------|--------------------------------------------------|----------------------------------------------------|----------------------------------------------------------------------|---------------------|------------------|
-| CU001     | Obtener todos los roles                          | Sin filtros                                        | Retorna lista completa de roles                                      | pending             | pending          |
-| CU002     | Filtrar roles por nombre exacto                  | nombre = "Empleado"                           | Retorna lista con el rol "Empleado"                             | pending             | pending          |
-| CU003     | Filtrar roles por nombre parcial                 | nombre = "Super"                                   | Retorna lista con roles que contengan "Super" en el nombre          | pending             | pending          |
-| CU004     | Buscar rol inexistente                           | nombre = "NoExiste"                                | Retorna lista vacía                                                  | pending             | pending          |
-| CU005     | Validar respuesta cuando no hay roles registrados| Sin filtros (base de datos vacía)                  | Retorna lista vacía y mensaje “No hay registros disponibles”         | pending             | pending          |
-| CU006     | Validar acceso sin autenticación                 | JWT inválido o ausente                             | Retorna error: “No autorizado”                                       | pending             | pending          |
+| **Tipo de Versión** | **Descripción**                  | **Fecha**  | **Colaborador** |
+| ------------------- | -------------------------------- | ---------- | --------------- |
+| **1.0**             | Creación de documentación        | 06/04/2025 | Hiram Mendoza  |
+| **1.1**             | Agregar pruebas | 06/05/2025 | Hiram Mendoza   |

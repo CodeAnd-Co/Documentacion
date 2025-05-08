@@ -7,14 +7,6 @@ sidebar_position: 4
 
 ---
 
-### Autores
-
-| Nombre       | Rol   |
-| ------------ | ----- |
-| Rommel Toledo Crespo | Autor|
-
----
-
 # ✅ Definición de Done
 
 Una historia de usuario se considerará completa cuando se cumplan todos los siguientes criterios:
@@ -23,7 +15,6 @@ Una historia de usuario se considerará completa cuando se cumplan todos los sig
 
 ## **Pruebas**
 
-- Las pruebas unitarias manuales han sido creadas y ejecutadas en escenarios de verificación de datos.
 - Las pruebas deben ser realizadas por un miembro distinto al que desarrolló la funcionalidad y deben arrojar los resultados esperados.
 - Se han ejecutado las pruebas necesarias (arquitectura, estrés, volumen, heurísticas, integración, rendimiento y unitarias) según corresponda.
 
@@ -31,7 +22,7 @@ Una historia de usuario se considerará completa cuando se cumplan todos los sig
 
 ## **Código**
 
-- El código cumple con el [estándar de codificación](/docs/guias/standards/general/) y está documentado usando [JSDoc](https://medium.com/swlh/creating-better-jsdoc-documentation-8b7a65744dcb).
+- El código cumple con el [estándar de codificación](/docs/standards/general/) y está documentado usando [JSDoc](https://medium.com/swlh/creating-better-jsdoc-documentation-8b7a65744dcb).
 - Se ha realizado una revisión por pares (**peer review**) por parte de otro miembro del equipo antes de hacer *merge*. Cualquier observación relevante ha sido atendida.
 
 ---
@@ -45,7 +36,7 @@ Una historia de usuario se considerará completa cuando se cumplan todos los sig
 
 ## **Trazabilidad**
 
-- La historia de usuario está correctamente enlazada a su documentación, código fuente, pruebas y evidencias para mantener la trazabilidad. Esta debe ser bidireccional.
+- La historia de usuario está correctamente enlazada a su documentación, código fuente, pruebas y evidencias para mantener la trazabilidad, la cual debe ser bidireccional.
 
 ---
 
@@ -75,10 +66,13 @@ Una historia de usuario se considerará completa cuando se cumplan todos los sig
 
 ## **Pull Request**
 
-- La plantilla de pull request ha sido completada correctamente conforme a los lineamientos del departamento.
+- La plantilla de [pull request](/docs/proyectos/tractores/documentacion/plantillaPR) ha sido completada correctamente conforme a los lineamientos del departamento.
 
 ---
 
-## **Validación del cliente**
+## Historial de cambios
 
-- El cliente ha revisado y validado la historia de usuario, confirmando que cumple con los requerimientos funcionales y de negocio establecidos.
+| **Tipo de versión** | **Descripción**                    | **Fecha**  | **Colaborador**        |
+|---------------------|------------------------------------| ---------- | ---------------------- |
+| **1.0**             | Primera versión de definición de Done para TracTech | 21/03/2025 | Rommel Toledo Crespo |
+| **2.0**             | Eliminación de validación con cliente y adición de enlaces | 05/05/2025 | Rommel Toledo Crespo |

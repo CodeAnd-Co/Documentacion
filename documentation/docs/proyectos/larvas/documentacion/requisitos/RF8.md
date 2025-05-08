@@ -35,63 +35,194 @@ sequenceDiagram
     participant Model as Model
     participant Database as Base de Datos
 
-    alt Conexión disponible
-        Usuario->>View: Presiona "Eliminar Charola"
-        View->>ViewModel: eliminarCharola(id)
-        ViewModel->>Domain: eliminarCharola(id)
-        Domain->>Repository: eliminarCharola(id)
+    alt Conexión disponible | DELETE
+        Usuario ->> View: Presiona "Eliminar Charola"
+        activate View
 
-        Repository->>APIClient: eliminarCharola(id)
-        APIClient->>+APIService: DELETE /charolas/{id}
-        APIService->>Controller: Procesar solicitud
-        Controller->>Model: Validar existencia y eliminar
-        Model->>Database: DELETE FROM charolas WHERE id = ?
+        View ->> ViewModel: eliminarCharola(id)
+        deactivate View
+        activate ViewModel
 
-        Database-->>Model: Confirma eliminación
-        Model-->>Controller: Éxito
-        Controller-->>APIService: 200 OK
-        APIService-->>-APIClient: Eliminación exitosa
-        APIClient-->>Repository: Eliminación exitosa
-        Repository-->>Domain: Resultado de eliminación
-        Domain-->>ViewModel: Notifica éxito
-        ViewModel-->>View: Actualizar UI
-        View-->>Usuario: Mostrar mensaje "Charola eliminada correctamente"
-    else Sin conexión a internet, 101
-        Usuario->>View: Presiona "Eliminar Charola"
-        View->>ViewModel: eliminarCharola(id)
-        ViewModel->>Domain: eliminarCharola(id)
-        Domain->>Repository: eliminarCharola(id)
+        ViewModel ->> Domain: eliminarCharola(id)
+        deactivate ViewModel
+        activate Domain
 
-        Repository->>APIClient: eliminarCharola(id)
-        APIClient->>+APIService: DELETE /charolas/{id}        
+        Domain ->> Repository: eliminarCharola(id)
+        deactivate Domain
+        activate Repository
 
-        APIService-->>-APIClient: Error 101
-        APIClient-->>Repository: Error 101
-        Repository-->>Domain: Error 101
-        Domain-->>ViewModel: Notifica error
-        ViewModel-->>View: Actualizar UI
-        View-->>Usuario: Mostrar mensaje "Sin conexión a internet"
-    else Error de servidor, 500
-        Usuario->>View: Presiona "Eliminar Charola"
-        View->>ViewModel: eliminarCharola(id)
-        ViewModel->>Domain: eliminarCharola(id)
-        Domain->>Repository: eliminarCharola(id)
+        Repository ->> APIClient: eliminarCharola(id)
+        deactivate Repository
+        activate APIClient
 
-        Repository->>APIClient: eliminarCharola(id)
-        APIClient->>+APIService: DELETE /charolas/{id}
-        APIService->>Controller: Procesar solicitud
-        Controller->>Model: Validar existencia y eliminar
-        Model->>Database: DELETE FROM charolas WHERE id = ?
+        APIClient ->> APIService: DELETE /charolas/{id}
+        deactivate APIClient
+        activate APIService
 
-        Database-->>Model: Dato no encontrado
-        Model-->>Controller: Error
-        Controller-->>APIService: Error 500
-        APIService-->>-APIClient: Error 500
-        APIClient-->>Repository: Error 500
-        Repository-->>Domain: Error 500
-        Domain-->>ViewModel: Notifica Error
-        ViewModel-->>View: Actualizar UI
-        View-->>Usuario: Mostrar mensaje "Error de servidor"
+        APIService ->> Controller: DELETE /charolas/{id}
+        deactivate APIService
+        activate Controller
+
+        Controller ->> Model: Validar()
+        deactivate Controller
+        activate Model
+
+        Model ->> Database: DELETE FROM charolas WHERE id = ?
+        deactivate Model
+        activate Database
+
+        Database -->> Model: respuesta: charola eliminada
+        activate Model
+        deactivate Database
+
+        Model -->> Controller: respuesta: charola eliminada
+        deactivate Model
+        activate Controller
+
+        Controller -->> APIService: 200 OK
+        deactivate Controller
+        activate APIService
+
+        APIService -->> APIClient: Eliminación exitosa
+        deactivate APIService
+        activate APIClient
+
+        APIClient -->> Repository: Eliminación exitosa
+        deactivate APIClient
+        activate Repository
+
+        Repository -->> Domain: Resultado de eliminación
+        deactivate Repository
+        activate Domain
+
+        Domain -->> ViewModel: Notifica éxito
+        deactivate Domain
+        activate ViewModel
+
+        ViewModel -->> View: Actualizar UI
+        deactivate ViewModel
+        activate View
+
+        View -->> Usuario: Mostrar mensaje "Charola eliminada correctamente"
+        deactivate View
+
+    else Sin conexión a internet, 101 | DELETE
+        Usuario ->> View: Presiona "Eliminar Charola"
+        activate View
+
+        View ->> ViewModel: eliminarCharola(id)
+        deactivate View
+        activate ViewModel
+
+        ViewModel ->> Domain: eliminarCharola(id)
+        deactivate ViewModel
+        activate Domain
+
+        Domain ->> Repository: eliminarCharola(id)
+        deactivate Domain
+        activate Repository
+
+        Repository ->> APIClient: eliminarCharola(id)
+        deactivate Repository
+        activate APIClient
+
+        APIClient ->> APIService: DELETE /charolas/{id}
+        deactivate APIClient
+        activate APIService
+
+        APIService -->> APIClient: Error 101
+        deactivate APIService
+        activate APIClient
+
+        APIClient -->> Repository: Error 101
+        deactivate APIClient
+        activate Repository
+
+        Repository -->> Domain: Error 101
+        deactivate Repository
+        activate Domain
+
+        Domain -->> ViewModel: Notifica error
+        deactivate Domain
+        activate ViewModel
+
+        ViewModel -->> View: Actualizar UI
+        deactivate ViewModel
+        activate View
+
+        View -->> Usuario: Mostrar mensaje "Sin conexión a internet"
+        deactivate View
+
+    else Error de servidor, 500 | DELETE
+        Usuario ->> View: Presiona "Eliminar Charola"
+        activate View
+
+        View ->> ViewModel: eliminarCharola(id)
+        deactivate View
+        activate ViewModel
+
+        ViewModel ->> Domain: eliminarCharola(id)
+        deactivate ViewModel
+        activate Domain
+
+        Domain ->> Repository: eliminarCharola(id)
+        deactivate Domain
+        activate Repository
+
+        Repository ->> APIClient: eliminarCharola(id)
+        deactivate Repository
+        activate APIClient
+
+        APIClient ->> APIService: DELETE /charolas/{id}
+        deactivate APIClient
+        activate APIService
+
+        APIService ->> Controller: DELETE /charolas/{id}
+        deactivate APIService
+        activate Controller
+
+        Controller ->> Model: Validar()
+        deactivate Controller
+        activate Model
+
+        Model ->> Database: DELETE FROM charolas WHERE id = ?
+        deactivate Model
+        activate Database
+
+        Database -->> Model: respuesta: Dato no encontrado
+        activate Model
+        deactivate Database
+
+        Model -->> Controller: respuesta: Dato no encontrado
+        deactivate Model
+        activate Controller
+
+        Controller -->> APIService: Error 500
+        deactivate Controller
+        activate APIService
+
+        APIService -->> APIClient: Error 500
+        deactivate APIService
+        activate APIClient
+
+        APIClient -->> Repository: Error 500
+        deactivate APIClient
+        activate Repository
+
+        Repository -->> Domain: Error 500
+        deactivate Repository
+        activate Domain
+
+        Domain -->> ViewModel: Notifica Error
+        deactivate Domain
+        activate ViewModel
+
+        ViewModel -->> View: Actualizar UI
+        deactivate ViewModel
+        activate View
+
+        View -->> Usuario: Mostrar mensaje "Error de servidor"
+        deactivate View
     end
 
 ```
@@ -101,6 +232,8 @@ sequenceDiagram
 ### Mockup
 
 > *Descripción*: El mockup muestra la interfaz donde el Super Administrador puede eliminar un empleado, con un botón de confirmación para realizar la eliminación.
+
+![Mockup](../mockupRF8.jpg)
 
 ### Pruebas Unitarias 
 | ID Prueba  | Descripción                                               | Resultado Esperado  |
@@ -120,3 +253,4 @@ sequenceDiagram
 | **1.0**             | Creacion de la historia de usuario   | 8/3/2025  | Armando Mendez    |
 | **1.0**             | Verificación de los cambios          | 8/3/2025  | Miguel Angel      |
 | **1.1**             | Creación del diagrama de secuencia   | 3/4/2025  | Juan Eduardo      |
+| **1.2**             | Mockup y correcciones del diagrama   | 3/4/2025  | Juan Eduardo      |

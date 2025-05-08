@@ -107,3 +107,4 @@ http://localhost:3000/api-docs
 | **Tipo de Versión** | **Descripción**                               | **Fecha** | **Colaborador**                 |
 | ------------------- | --------------------------------------------- | --------- | ------------------------------- |
 | **1.0**             | Creacion del manual de uso de swagger UI      | 06/04/2025 | Daniel Contreras |
+| **1.1**             |  Gestión de configuración.  | 24/04/2025 | Diego Fuentes |

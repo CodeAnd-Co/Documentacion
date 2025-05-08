@@ -5,7 +5,7 @@ sidebar_position: 2
 
 # Guía de Documentación en Docusaurus
 
-**Última actualización:** 16 de febrero de 2025
+---
 
 ## Crear una Nueva Rama
 
@@ -116,3 +116,12 @@ Después de realizar los cambios en el proyecto, es fundamental confirmar los ca
 4. **Crear un Pull Request**: Accede a la plataforma de gestión de código (como GitHub) y crea un pull request desde tu rama hacia la rama principal del proyecto.
 
 Siguiendo estos pasos y consultando las guías mencionadas, asegurarás una colaboración eficiente y una gestión clara de las modificaciones en el proyecto.
+
+---
+
+## Historial de cambios
+
+| **Tipo de Versión** | **Descripción** | **Fecha** | **Colaborador** |
+| ------------------- | --------------- | --------- | --------------- |
+| **1.0** | Creación de la guía   | 16/02/2025 | Ángel Ramirez |
+| **1.1** | Gestión de configuración   | 24/04/2025 | Diego Fuentes |
