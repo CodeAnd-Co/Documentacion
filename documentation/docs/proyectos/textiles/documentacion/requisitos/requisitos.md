@@ -51,7 +51,7 @@ Los requisitos funcionales del sistema describen una variedad de acciones que lo
 - [**RF21**](RF21.md): Super Administrador Crea Grupo de Empleados
 - [**RF22**](RF22.md): Super Administrador Consulta Lista de Grupos de Empleados - `Done`
 - [**RF23**](RF23.md): Super Administrador Lee Grupo de Empleados
-- [**RF25**](RF25.md): Super Administrador Elimina Grupo de Empleados. - `Ready`
+- [**RF25**](RF25.md): Super Administrador Elimina Grupo de Empleados. - `Done`
 - [**RF26**](RF26.md): Super Administrador Crea Producto - `Ready`
 - [**RF27**](RF27.md): Super Administrador, Cliente Consulta Lista de Productos - `Done`
 - [**RF30**](RF30.md): Super Administrador Elimina Producto - `Done`
@@ -75,7 +75,7 @@ Los requisitos funcionales del sistema describen una variedad de acciones que lo
 - [**RF53**](RF53.md): Super Administrador, Cliente Lee Tipo de Pago
 - [**RF55**](RF55.md): Super Administrador Elimina Tipo de Pago
 - [**RF56**](RF56.md): Super Administrador Importa Productos
-- [**RF57**](RF57.md): Super Administrador Importa Empleados
+- [**RF57**](RF57.md): Super Administrador Importa Empleados - `Ready`
 - [**RF58**](RF58.md): Super Administrador Exporta Productos
 - [**RF59**](RF59.md): Super Administrador Exportar Empleados
 - [**RF60**](RF60.md): Super Administrador, Cliente Consulta Lista de Pedidos - `Done`

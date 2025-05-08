@@ -5,10 +5,6 @@ sidebar_position: 3
 
 # RF1: Super Administrador Crea Usuario
 
-**Última actualización:** 28 de abril de 2025
-
-Estado de la US: **DONE**
-
 ---
 
 ## Historia de Usuario
