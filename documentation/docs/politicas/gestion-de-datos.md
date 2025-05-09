@@ -17,20 +17,11 @@ Esta política aplica a todos los proyectos en los que se utilicen datos relevan
 
 Se excluyen las métricas derivadas del análisis de desempeño del proyecto, pues pertenecen a procesos de evaluación específicos.
 
-## **3. Principios**
-
-1. **Precisión y consistencia**: Los datos deben mantenerse actualizados y evitar duplicaciones o inconsistencias.
-2. **Seguridad y confidencialidad**: Deben aplicarse controles de acceso para proteger la información sensible. 
-3. **Trazabilidad**: Toda modificación en los datos debe documentarse de manera que se pueda verificar su historial.
-4. **Accesibilidad controlada**: Se debe garantizar el acceso a los datos sólo a usuarios autorizados y conforme a su rol. 
-5. **Cumplimiento normativo**: La gestión de datos debe ajustarse a regulaciones internas y externas aplicables.
-6. **Control de versiones y cambios**: Todo dato clave debe estar sujeto a una estrategia de control de versiones, asegurando su integridad y evolución documentada.
-
-## **4. Clasificación de Datos**
+## **3. Clasificación de Datos**
 
 Los datos utilizados en los proyectos se dividen en dos categorías principales:
 
-### **4.1 Datos Sensibles**
+### **3.1 Datos Sensibles**
 
 Se refiere a aquellos datos cuya divulgación podría comprometer la integridad del proyecto o de sus participantes. Estos incluyen, entre otros:
 
@@ -45,7 +36,7 @@ Para salvaguardar la integridad, seguridad y confianza depositada en los datos, 
 
 Para evitar cualquier filtración de información, **queda estrictamente prohibida la distribución de los accesos a través de cualquier medio digital distinto a los canales oficiales.** 
 
-### **4.2 Datos Generales**
+### **3.2 Datos Generales**
 
 Son aquellos que pueden ser compartidos dentro del equipo de trabajo sin representar un riesgo para la organización. Algunos ejemplos son:
 
@@ -53,7 +44,7 @@ Son aquellos que pueden ser compartidos dentro del equipo de trabajo sin represe
 - Documentación técnica, materiales de referencia y guías de usuario.
 - Registros de pruebas y reportes sin información confidencial.
 
-## **5. Directrices para la Gestión de Datos**
+## **4. Directrices para la Gestión de Datos**
 
 De acuerdo con el modelo **CMMI PP SP 2.3 (Gestión de Datos del Proyecto)**, se establecen las siguientes directrices:
 
@@ -93,7 +84,7 @@ De acuerdo con el modelo **CMMI PP SP 2.3 (Gestión de Datos del Proyecto)**, se
 
    - Se evaluará la información recopilada para garantizar que cumpla con los objetivos del proyecto.
 
-## **6. Mecanismos de Protección y Seguridad**
+## **5. Mecanismos de Protección y Seguridad**
 
 Siguiendo las mejores prácticas de CMMI en seguridad y control de datos, se implementarán los siguientes mecanismos:
 
@@ -101,7 +92,7 @@ Siguiendo las mejores prácticas de CMMI en seguridad y control de datos, se imp
 - Implementación de **autenticación y autorización** en sistemas de acceso.
 - Aplicación de **controles contra accesos no autorizados** o manipulación indebida.
 
-## **7. Monitoreo y Cumplimiento (PMC SP 1.4)**
+## **6. Monitoreo y Cumplimiento (PMC SP 1.4)**
 
 Para garantizar el cumplimiento de esta política, se implementarán mecanismos de monitoreo continuo:
 
