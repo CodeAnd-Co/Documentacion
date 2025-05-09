@@ -30,7 +30,7 @@ Objetivo: Interfaz de usuario para la sección de analíticas, reportes y planti
 ### Tecnologías
 
 - Framework de Electron
-- CSS, HTML, JavaScfript
+- CSS, HTML, JavaScript
 
 ### Características
 
