@@ -47,19 +47,19 @@ Los requisitos funcionales del sistema describen una variedad de acciones que lo
 - [**RF17**](RF17.md): Multiselección para eliminar historial  
 - [**RF18**](RF18.md): Historial de actividad de charola 
 - [**RF19**](RF19.md): Editar Usuario
-- [**RF20**](RF20.md): Registrar Tamizado
 - [**RF21**](RF21.md): Consultar charolas de cambios pasados
 - [**RF22**](RF22.md): Consultar charolas de cambios pasados
 - [**RF23**](RF23.md): Registrar un nuevo tipo de comida en el sistema - `Ready`
 - [**RF24**](RF24.md): Editar un tipo de comida en el sistema - `Ready`
 - [**RF25**](RF25.md): Eliminar un tipo de comida
 - [**RF26**](RF26.md): Registrar un nuevo tipo de comida en el sistema
-- [**RF27**](RF27.md): Editar la alimentación de la charola
-- [**RF28**](RF28.md): Eliminar la alimentación de la charola 
 - [**RF29**](RF29.md): Registar la información del Frass obtenido 
 - [**RF30**](RF30.md): Editar la información del Frass obtenido  
-- [**RF31**](RF31.md): Eliminar la información del Frass obtenido 
-- [**RF32**](RF32.md): Archivar datos visuales de charolas
+- [**RF34**](RF34.md): Sidebar
+- [**RF35**](RF35.md): Recuperar contraseña
+- [**RF36**](RF36.md): Registrar un nuevo tipo de hidratación al sistema
+- [**RF37**](RF37.md): Seleccionar charolas para tamizar y registrar sus datos
+- [**RF38**](RF38.md): Registrar nuevas charolas del tamizado
 
 ---
 
@@ -110,3 +110,4 @@ Los requisitos no funcionales establecen las expectativas en términos de tiempo
 | **1.0** |  Reviewer y autorizador  | 6/03/2025 | Miguel Angel Uribe Esquivel  |
 | **1.1** |  Descripción de pruebas unitarias del MVP  | 6/03/2025 | Armando Méndez Castro |
 | **2.0** |  Actualizacion de las historias en Ready  | 28/04/2025 | Miguel Angel Uribe |
+| **2.1** |  Se agregaron y eliminaron historias       | 09/05/2025 | Juan Eduardo Rosas |
