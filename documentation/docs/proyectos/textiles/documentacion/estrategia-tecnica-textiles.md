@@ -321,7 +321,7 @@ Describe berevemente cómo se probó esta funcionalidad. Ejemplo:
 
 ### CD
 
-Para el despliegue continuo del backend utilizaremos un script de [_github actions_](/docs/guias/github/github-actions.md) paa hacer pull automaticamente y desplegar las ramas de produccion (main) y pruebas (staging), por lo que no tendremos que manejar estas acciones manualmente.
+Para el despliegue continuo del backend utilizaremos un script de [_github actions_](../../../plantillas/plantilla-github-actions.md) paa hacer pull automaticamente y desplegar las ramas de produccion (main) y pruebas (staging), por lo que no tendremos que manejar estas acciones manualmente.
 
 # Historial de cambios
 
