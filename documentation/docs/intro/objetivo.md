@@ -38,3 +38,4 @@ sidebar_position: 3
 | ------------------- | --------------------------------------------- | --------- | ------------------------------- |
 | **1.0**             | Creacion de los objetivos   | 6/3/2025  | Paola Garrido |
 | **1.1**             | Creacion del historial de cambios y actualizción  | 23/4/2025  | Diego Fuentes |
+| **1.2**             | Actualizción de narración del objetivo | 08/05/2025  | Paola Garrido |
