@@ -5,17 +5,13 @@ sidebar_position: 2
 
 # Primeros Pasos
 
-**Última actualización:** 15 de marzo de 2025
-
-**Autores:** Angel Mauricio Ramírez Herrera
-
 ## Pensando en React
 
-Si leiste la [documentación oficial de React](https://react.dev/learn), te habrás dado cuenta de que existe un apartado que se llama [pensando en React](https://react.dev/learn/thinking-in-react) en donde se menciona la importancia de separar la interfaz estática en diversos componentes para comprender cómo es que fluye la información en la jerarquía.
+Si leíste la [documentación oficial de React](https://react.dev/learn), te habrás dado cuenta de que existe un apartado que se llama [pensando en React](https://react.dev/learn/thinking-in-react) en donde se menciona la importancia de separar la interfaz estática en diversos componentes para comprender cómo es que fluye la información en la jerarquía.
 
 Separar las cosas por componentes, es una buena práctica para mantener un código limpio. En React se aplica el [principio de la responsabilidad única](https://es.wikipedia.org/wiki/Principio_de_responsabilidad_%C3%BAnica), que es ideal para que un componente sólo se encargue de hacer una cosa. Si termina creciendo, debería de descomponerse en subcomponentes. Esta práctica es muy común en la programación y va muy relacionada con el código limpio, así como se menciona en la parte de [refactorización](https://refactoring.guru/refactoring/smells) en el blog refactoring guru.
 
-En esta laboratorio, se desarrollará un e-commerce, por lo que el primer paso para empezar a desarrollar el proyecto, es definir el alcance.
+En este laboratorio, se desarrollará un e-commerce, por lo que el primer paso para empezar a desarrollar el proyecto, es definir el alcance.
 
 Utilizaremos el siguiente API para obtener los datos de los productos:
 
@@ -39,9 +35,9 @@ Como podemos observar, al ingresar a la URL y realizar la consulta, obtenemos lo
 }
 ```
 
-Analizando la documentación, podemos realizar una aplicación sencilla que administre el CRUD de los productos. Ahora, la pregunta es, ¿qué interfaz vamos a utilizar para empezar a trabajar?. Utilizaremos el siguiente [template de figma](https://www.figma.com/community/file/1271751279140741643/clicon-ecommerce-marketplace-website-figma-template-community) y nos guiaremos de el para crear los componentes necesarios junto con sus estilos.
+Analizando la documentación, podemos realizar una aplicación sencilla que administre el CRUD de los productos. Ahora, la pregunta es, ¿qué interfaz vamos a utilizar para empezar a trabajar?. Utilizaremos el siguiente [template de figma](https://www.figma.com/community/file/1271751279140741643/clicon-ecommerce-marketplace-website-figma-template-community) y nos guiaremos deel para crear los componentes necesarios junto con sus estilos.
 
-Debido a que este laboratorio es sencillo, no se van a desarrollar todas las funcionalidades que plantea la interfaz, por lo que solo nos enfocaremos en crear un componente enfocado a los productos. Como podemos observar, nuestro componente de producto tiene varios sucomponentes que lo integran, por lo que ahora nos toca separar cada subcomponente para mantener una funcionalidad adecuada.
+Debido a que este laboratorio es sencillo, no se van a desarrollar todas las funcionalidades que plantea la interfaz, por lo que solo nos enfocaremos en crear un componente enfocado a los productos. Como podemos observar, nuestro componente de producto tiene varios subcomponentes que lo integran, por lo que ahora nos toca separar cada subcomponente para mantener una funcionalidad adecuada.
 
 Explicación de la separación de los subcomponentes:
 
@@ -55,7 +51,7 @@ Explicación de la separación de los subcomponentes:
 
 ## Construyendo las Bases
 
-Ahora que ya tenemos separados los componentes, es hora de empezar a construirlos ¿no?, la respuesta es que es mala idea empezar a construir los componentes sin antes tener diseñado el layout de manera estática. Entonces, empezaremos construyendo un diseño estático de la página, teniendo en cuenta que después se separará en componentes.
+Ahora que ya tenemos separados los componentes, es hora de empezar a construirlos ¿no? La respuesta es que es mala idea empezar a construir los componentes sin antes tener diseñado el layout de manera estática. Entonces, empezaremos construyendo un diseño estático de la página, teniendo en cuenta que después se separará en componentes.
 
 Utilizaremos el siguiente stack tecnológico:
 
@@ -336,3 +332,10 @@ function App() {
 
 export default App;
 ```
+
+### Historial de cambios
+
+| **Tipo de Versión** | **Descripción**                       | **Fecha** | **Colaborador**                |
+| ------------------- | ------------------------------------- | --------- | ------------------------------ |
+| **1.0**             | Creación del documento                | 15/3/2025 | Angel Mauricio Ramírez Herrera |
+| **1.1**             | Agregar tabla de historial de cambios | 08/5/2025 | Carlos Iván Fonseca Mondragón  |

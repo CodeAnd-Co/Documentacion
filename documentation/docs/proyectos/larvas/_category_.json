@@ -2,7 +2,6 @@
   "label": "Larvas 🪱",
   "position": 1,
   "link": {
-    "type": "generated-index",
-    "description": "Proyecto de larvas, cambiar descripción."
+    "type": "generated-index"
   }
 }

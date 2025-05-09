@@ -48,7 +48,6 @@
 - [ ] He notificado al autor del PR en caso de dudas o ajustes necesarios
 - [ ] Una vez que acepte el PR, eliminaré la rama
 
-
 <!-- ## Registro de cambios
 
 Seguir la guía para mantener un control de versiones en la documentación: https://codeandco-wiki.netlify.app/docs/guias/documentacion/trazabilidad

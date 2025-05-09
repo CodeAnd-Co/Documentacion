@@ -2,7 +2,6 @@
 title: Plantila Plan STP
 ---
 
-
 # Introducción
 
 ### Propósito
@@ -145,7 +144,8 @@ Espacio para incluir referencias adicionales o documentación complementaria, co
 
 ### Historial de cambios
 
-| **Tipo de Versión** | **Descripción**                               | **Fecha** | **Colaborador**                 |
-| ------------------- | --------------------------------------------- | --------- | ------------------------------- |
-| **1.0**             | Agregar plantill de plan STP   | 06/03/2025  | Diego Ricardo Alfaro Pinto|
-| **1.1**             | Añade descripcion del disgrama de paquetes  | 06/03/2025  | Emiliano Valdivia |
+| **Tipo de Versión** | **Descripción**                            | **Fecha**  | **Colaborador**               |
+| ------------------- | ------------------------------------------ | ---------- | ----------------------------- |
+| **1.0**             | Agregar plantilla de plan STP              | 06/03/2025 | Diego Ricardo Alfaro Pinto    |
+| **1.1**             | Añade descripcion del disgrama de paquetes | 06/03/2025 | Emiliano Valdivia             |
+| **1.2**             | Corrección de error ortográfico            | 08/05/2025 | Carlos Iván Fonseca Mondragón |

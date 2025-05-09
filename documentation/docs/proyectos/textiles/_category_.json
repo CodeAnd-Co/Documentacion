@@ -2,7 +2,6 @@
   "label": "Textiles 👕",
   "position": 2,
   "link": {
-    "type": "generated-index",
-    "description": "Proyecto de textiles, cambiar descripción."
+    "type": "generated-index"
   }
 }
