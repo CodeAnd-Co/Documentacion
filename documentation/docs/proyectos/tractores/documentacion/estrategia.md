@@ -47,7 +47,7 @@ La priorización de requerimientos se puede encontrar aquí:
 
 [Priorización de requerimientos](https://docs.google.com/spreadsheets/d/14zEYm84Y-QQ2gP_btGMyOinaKZQsw_wrYQQwqiqdSLY/edit?gid=1792238005#gid=1792238005)
 
-La especificación de historias de usuario se llevarán a cabo teniendo en cuenta la definición de [**Done**](../definicion-done-tractores.md) y [**Ready**](../definicion-ready-tractores.md) que se encuentran en este archivo:
+La especificación de historias de usuario se llevarán a cabo teniendo en cuenta la definición de [**Done**](../definicion-done-tractores.md) y [**Ready**](../definicion-ready-tractores.md).
 
 ---
 
