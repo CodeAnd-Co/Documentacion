@@ -9,7 +9,7 @@ sidebar_position: 2
 
 ## **1. Objetivo**
 
-Esta política establece los lineamientos para la gestión de datos dentro de los proyectos, garantizando su seguridad, privacidad, trazabilidad y correcto uso. Se busca asegurar que los datos sean utilizados de manera estructurada y protegida, cumpliendo con los estándares internos y normativas aplicables. Asimismo, se alinea con las prácticas específicas del modelo **CMMI**, asegurando un enfoque de mejora continua en la gestión de datos.
+Establecer lineamientos para gestionar los datos del proyecto de forma estructurada, segura y conforme a estándares, asegurando su uso correcto y alineación con las prácticas del modelo **CMMI**.
 
 ## **2. Alcance**
 
@@ -129,3 +129,4 @@ Para garantizar el cumplimiento de esta política, se implementarán mecanismos 
 | **1.2**             | Modificación datos sensibles  | 25/04/2025  | Miguel Angel Uribe |
 | **1.3**             |  Implementar acciones correctivas |      26/04/2025        |  Max Toscano 
 | **1.4**             | Plan de Datos  | 28/04/2025  | Pablo Hurtado |
+| **1.5** | Eliminar principios y resumir objetivo | 08/05/2025 | Daniel Contreras
