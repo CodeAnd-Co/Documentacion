@@ -1,9 +1,9 @@
 ---
-title: Política de Gestión de Procesos
+title: Política de gestión de procesos
 sidebar_position: 3
 ---
 
-# **Política de Gestión de Procesos**
+# **Política de gestión de procesos**
 
 ---
 
@@ -15,7 +15,7 @@ Establecer los lineamientos y directrices para la definición, implementación, 
 
 Esta política aplica a todos los procesos del departamento. 
 
-## **3. Características de la gestión de Procesos**
+## **3. Características de la gestión de procesos**
 
 Un proceso se considerará activo si cumple con los criterios definidos dentro del checklist. Todos los procesos deben estar registrados en la Matriz de Configuración y contar con su checklist de verificación correspondiente. En caso de no cumplir con la checklist, se cambiará el estado y se deberán proponer mejoras para el proceso.
 
@@ -52,7 +52,7 @@ Los objetivos se revisan semanalmente durante los reportes de estado. Una vez re
 
 - J.E.D.I. Software
 
-### **Notas Finales**
+### **Notas finales**
 
 - Esta política se revisará y actualizará periódicamente conforme a la evolución de los proyectos y los estándares organizacionales.
 - Cualquier modificación en esta política deberá ser aprobada por los responsables de gestión de datos.
@@ -62,9 +62,9 @@ Los objetivos se revisan semanalmente durante los reportes de estado. Una vez re
 
 ## Historial de cambios
 
-| **Tipo de Versión** | **Descripción**                               | **Fecha** | **Colaborador**                 |
+| **Tipo de versión** | **Descripción**                               | **Fecha** | **Colaborador**                 |
 | ------------------- | --------------------------------------------- | --------- | ------------------------------- |
-| **1.0**             | Creación de la política                       | 27/03/2025 | Sofía Osorio, Mariana Juárez   |
-| **1.1**             | Añadir historial de cambios                   | 23/04/2025 | Diego Fuentes   |
-| **1.2**             |  Implementar acciones correctivas |      26/04/2025        |  Max Toscano    |
-| **1.3**             | Corregir link de estándares                   | 02/05/2025 | Sofía Osorio    |
+| **1.0**             | Creación de la política.                       | 27/03/2025 | Sofía Osorio, Mariana Juárez   |
+| **1.1**             | Añadir historial de cambios.                   | 23/04/2025 | Diego Fuentes   |
+| **1.2**             |  Implementar acciones correctivas. |      26/04/2025        |  Max Toscano    |
+| **1.3**             | Corregir link de estándares.                   | 02/05/2025 | Sofía Osorio    |

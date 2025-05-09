@@ -1,9 +1,9 @@
 ---
-title: Guía de Uso de Markdown
+title: Guía de uso de Markdown
 sidebar_position: 3
 ---
 
-# Guía de Uso de Markdown
+# Guía de uso de Markdown
 
 **Última actualización:** 16 de febrero de 2025
 
@@ -54,7 +54,7 @@ import { Tabs, TabItem } from '@docusaurus/theme-common';
 </Tabs>
 ```
 
-**3. Bloques de Código con Resaltado de Sintaxis**
+**3. Bloques de código con resaltado de sintaxis**
 
 Docusaurus soporta bloques de código con resaltado de sintaxis. Puedes especificar el lenguaje de programación para obtener el resaltado adecuado.
 
@@ -95,7 +95,7 @@ _Sintaxis:_
 | Dato 3       | Dato 4       |
 ```
 
-**6. Enlaces y Referencias**
+**6. Enlaces y referencias**
 
 Para crear enlaces internos o externos, utiliza la siguiente sintaxis:
 
@@ -164,7 +164,7 @@ Este video ofrece una explicación paso a paso sobre cómo utilizar Docusaurus p
 
 ## Historial de cambios
 
-| **Tipo de Versión** | **Descripción** | **Fecha**  | **Colaborador** |
+| **Tipo de versión** | **Descripción** | **Fecha**  | **Colaborador** |
 | ------------------- | --------------- | ---------- | --------------- |
 | **1.0**             | Primera versión de la guía. | 16/02/2025 |   |
 | **1.1**             |  Gestión de configuración.  | 24/04/2025 | Diego Fuentes |

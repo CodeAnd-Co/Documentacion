@@ -74,7 +74,7 @@ Escogimos el ciclo de vida **DAD Básico** porque se alinea con nuestro objetivo
 
 ### Historial de cambios
 
-| **Tipo de Versión** | **Descripción**                       | **Fecha** | **Colaborador**               |
+| **Tipo de versión** | **Descripción**                       | **Fecha** | **Colaborador**               |
 | ------------------- | ------------------------------------- | --------- | ----------------------------- |
-| **1.0**             | Creación del documento                | 05/3/2025 | Nicolas Hood Figueroa         |
-| **1.1**             | Agregar tabla de historial de cambios | 08/4/2025 | Carlos Iván Fonseca Mondragón |
+| **1.0**             | Creación del documento.                | 05/3/2025 | Nicolas Hood Figueroa         |
+| **1.1**             | Agregar tabla de historial de cambios. | 08/4/2025 | Carlos Iván Fonseca Mondragón |

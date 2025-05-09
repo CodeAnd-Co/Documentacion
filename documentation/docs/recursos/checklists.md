@@ -17,6 +17,8 @@ Poder acceder facilmente a todas las checklists necesarias para auditar todos lo
 
  - [Plantilla](https://docs.google.com/document/d/1gMoe2nDp1NO8dUzA8_xshXpxizbQhYylR47UP3oT4P4/edit?tab=t.0) para checklists
 
+ **NOTA:** Para más detalles, consulte el [Estándar para la definición de checklists](../standards/checklist.md).
+
 ### Checklists de items de proceso
 
 - Checklist de [procesos](https://docs.google.com/document/d/1liN92VIwwWS9bq-obzOMFH6qC1ZKm_KUy4ci9LhZJOQ/edit?usp=drive_link).

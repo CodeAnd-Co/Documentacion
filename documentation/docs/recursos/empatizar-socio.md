@@ -35,7 +35,7 @@ Al utilizar las herramientas y técnicas anteriores, no solo se define el proble
 
 ### Historial de cambios
 
-| **Tipo de Versión** | **Descripción**                       | **Fecha**  | **Colaborador**               |
+| **Tipo de versión** | **Descripción**                       | **Fecha**  | **Colaborador**               |
 | ------------------- | ------------------------------------- | ---------- | ----------------------------- |
-| **1.0**             | Creación del documento                | 06/03/2025 | Paola María Garrido Montes    |
-| **1.1**             | Agregar tabla de historial de cambios | 08/04/2025 | Carlos Iván Fonseca Mondragón |
+| **1.0**             | Creación del documento.                | 06/03/2025 | Paola María Garrido Montes    |
+| **1.1**             | Agregar tabla de historial de cambios. | 08/04/2025 | Carlos Iván Fonseca Mondragón |
