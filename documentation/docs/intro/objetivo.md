@@ -14,8 +14,8 @@ sidebar_position: 3
 
 :::tip Meta SMART
 
-"Alcanzar un 90 % en las encuestas de satisfacción NPS de clientes y equipo en todos los proyectos antes del 6 de junio."
-"Alcanzar el nivel 2.6 del CMMI antes del 6 de junio"
+"Alcanzar un nivel de satisfacción del 90% en las encuestas NPS, tanto departamentales como de clientes, antes del 6 de junio."
+"Alcanzar el nivel 2.6 del CMMI antes del 6 de junio."
 
 :::
 
