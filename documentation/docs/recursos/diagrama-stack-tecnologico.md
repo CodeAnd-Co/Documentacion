@@ -5,8 +5,6 @@ sidebar_position: 13
 
 # Diagrama Stack Tecnológico
 
-**Autores:** Daniel Contreras Chávez y Diego Ricardo Alfaro Pinto
-
 ```mermaid
 
 graph TD
@@ -27,7 +25,7 @@ graph TD
 
     %% Base de Datos
     D -->|Tipo de DB| D1[SQL: PostgreSQL, MySQL / NoSQL: MongoDB, Firebase]
-    
+
     %% Infraestructura y DevOps
     E -->|Hosting| E2[AWS / GCP / Azure / Vercel / Netlify]
     E -->|CI/CD| E3[GitHub Actions / Jenkins / GitLab CI]
@@ -37,3 +35,10 @@ graph TD
     F -->|Servicios externos| F2[Stripe / Firebase / Twilio]
 
 ```
+
+### Historial de cambios
+
+| **Tipo de Versión** | **Descripción**                       | **Fecha** | **Colaborador**                                      |
+| ------------------- | ------------------------------------- | --------- | ---------------------------------------------------- |
+| **1.0**             | Creación del documento                | 02/3/2025 | Daniel Contreras Chávez y Diego Ricardo Alfaro Pinto |
+| **1.1**             | Agregar tabla de historial de cambios | 08/4/2025 | Carlos Iván Fonseca Mondragón                        |
