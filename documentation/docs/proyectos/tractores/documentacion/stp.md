@@ -23,7 +23,7 @@ El plan abarca las pruebas de todas las funcionalidades principales e historias 
 # Objetivos de las Pruebas
 
 - Verificar la funcionalidad completa de la aplicación según los requisitos especificados.
-- Validar el rendimiento y la escalabildiad de la aplicación.
+- Validar el rendimiento y la escalabilidad de la aplicación.
 - Comprobar la seguridad de los datos de los usuarios y la implementación correcta del RBAC.
 
 # Alcance de las Pruebas
@@ -145,3 +145,4 @@ de su resutado para que se puedan tomar decisiones informadas sobre el siguiente
 | **Tipo de versión** | **Descripción**                    | **Fecha**  | **Colaborador**        |
 |---------------------|------------------------------------| ---------- | ---------------------- |
 | **1.0**             | Primera versión de plan STP        | 07/03/2025 | Daniel Contreras Chávez |
+| **1.1**             | Corrección de una palabra | 08/05/2025 | Rommel Toledo C. |

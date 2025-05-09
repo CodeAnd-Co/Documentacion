@@ -30,7 +30,7 @@ Objetivo: Interfaz de usuario para la sección de analíticas, reportes y planti
 ### Tecnologías
 
 - Framework de Electron
-- CSS, HTML, JavaScfript
+- CSS, HTML, JavaScript
 
 ### Características
 
@@ -176,3 +176,4 @@ graph TD
 | **1.0**             | Primera versión del manual de arquitectura        | 06/03/2025 | Daniel Contreras Chávez      |
 | **2.0**             | Adición del diagrama de despliegue | 25/03/2025   | Juan Pablo Chávez Leal |
 | **2.1**             | Corrección al diagrama de despliegue | 04/04/2025 | Ian Julián Estrada Castro |
+| **2.2**             | Corrección de una palabra | 08/05/2025 | Rommel Toledo C. |
