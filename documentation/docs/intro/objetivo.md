@@ -14,8 +14,8 @@ sidebar_position: 3
 
 :::tip Meta SMART
 
-"Alcanzar un 90 % en las encuestas de satisfacción NPS de clientes y equipo en todos los proyectos antes del 6 de junio."
-"Alcanzar el nivel 2.6 del CMMI antes del 6 de junio"
+"Alcanzar un nivel de satisfacción del 90% en las encuestas NPS, tanto departamentales como de clientes, antes del 6 de junio."
+"Alcanzar el nivel 2.6 del CMMI antes del 6 de junio."
 
 :::
 
@@ -38,3 +38,4 @@ sidebar_position: 3
 | ------------------- | --------------------------------------------- | --------- | ------------------------------- |
 | **1.0**             | Creacion de los objetivos   | 6/3/2025  | Paola Garrido |
 | **1.1**             | Creacion del historial de cambios y actualizción  | 23/4/2025  | Diego Fuentes |
+| **1.2**             | Actualizción de narración del objetivo | 08/05/2025  | Paola Garrido |
