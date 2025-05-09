@@ -145,3 +145,4 @@ de su resutado para que se puedan tomar decisiones informadas sobre el siguiente
 | **Tipo de versión** | **Descripción**                    | **Fecha**  | **Colaborador**        |
 |---------------------|------------------------------------| ---------- | ---------------------- |
 | **1.0**             | Primera versión de plan STP        | 07/03/2025 | Daniel Contreras Chávez |
+| **1.1**             | Corrección de una palabra | 08/05/2025 | Rommel Toledo C. |
