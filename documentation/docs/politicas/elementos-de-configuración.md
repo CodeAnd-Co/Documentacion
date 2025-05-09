@@ -1,5 +1,5 @@
 ---
-title: Política de identificación de elementos de Configuración
+title: Política de identificación de elementos de configuración
 sidebar_position: 4
 ---
 
@@ -75,12 +75,12 @@ Adicionalmente, se pueden incluir enlaces de herramientas colaborativas (Trac, J
 - **Responsabilidad:**  
   El propietario de cada elemento es el responsable de mantener la información actualizada.
 
-## 7. Comunicación y Difusión
+## 6. Comunicación y Difusión
 
 1. **Notificación Formal:**  
    - Cada  actualización o incorporación de un elemento a la matriz se comunicará a los equipos afectados a través de canales oficiales.
 
-## 8. Mantenimiento y Actualización de la Política
+## 7. Mantenimiento y Actualización de la Política
 
 - **Revisión Periódica:**  
   Esta política se revisará al menos una vez por todos los integrantes del departamento o tras eventos significativos (como auditorías o cambios normativos).
@@ -108,4 +108,5 @@ Adicionalmente, se pueden incluir enlaces de herramientas colaborativas (Trac, J
 | **Tipo de Versión** | **Descripción**                               | **Fecha** | **Colaborador**                 |
 | ------------------- | --------------------------------------------- | --------- | ------------------------------- |
 | **1.0**             | Creación de la política   | 06/04/2025  | Max Toscano y Diego Fuentes |
-| **1.1**             |  Implementar acciones correctivas |      26/04/2025        |  Max Toscano 
+| **1.1**             |  Implementar acciones correctivas |      26/04/2025        |  Max Toscano |
+| **1.2**             |  Implementar acciones correctivas   |      08/05/2025        |  Armando Méndez Castro |

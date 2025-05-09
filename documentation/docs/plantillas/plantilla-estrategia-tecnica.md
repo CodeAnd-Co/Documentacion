@@ -2,7 +2,6 @@
 title: Plantilla estrategia tecnica
 ---
 
-
 # Plantilla Estrategia tecnica
 
 ## Objetivo
@@ -117,10 +116,10 @@ Cada módulo puede incluir pruebas unitarias para garantizar su correcto funcion
 
 ### Historial de cambios
 
-| **Tipo de Versión** | **Descripción**                               | **Fecha** | **Colaborador**                 |
-| ------------------- | --------------------------------------------- | --------- | ------------------------------- |
-| **1.0**             | Creación del plantilla   | 06/03/2025  | Diego Ricardo Alfaro Pinto|
-| **1.1**             | Refactorización. Cambio en las entradas. Cambio en el proceso. Cambio en las salidas.   | 06/03/2025  | Emiliano Valdivia Lara	 |
- **1.2**      | Actualizar localidad de imagenes y links a esas imagenes para evitar errores en docusaurus | 07/03/2025  |  Diego Ricardo Alfaro Pinto |
-| **1.3**             |  Arreglar links rotos  | 10/03/2025  | Ángel Mauricio Ramírez Herrera |
-| **1.4**             | Fix de links  | 16/03/2025  | Diego Fuentes |
+| **Tipo de Versión** | **Descripción**                                                                            | **Fecha**  | **Colaborador**                |
+| ------------------- | ------------------------------------------------------------------------------------------ | ---------- | ------------------------------ |
+| **1.0**             | Creación del plantilla                                                                     | 06/03/2025 | Diego Ricardo Alfaro Pinto     |
+| **1.1**             | Refactorización. Cambio en las entradas. Cambio en el proceso. Cambio en las salidas.      | 06/03/2025 | Emiliano Valdivia Lara         |
+| **1.2**             | Actualizar localidad de imagenes y links a esas imagenes para evitar errores en docusaurus | 07/03/2025 | Diego Ricardo Alfaro Pinto     |
+| **1.3**             | Arreglar links rotos                                                                       | 10/03/2025 | Ángel Mauricio Ramírez Herrera |
+| **1.4**             | Fix de links                                                                               | 16/03/2025 | Diego Fuentes                  |

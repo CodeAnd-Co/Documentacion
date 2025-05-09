@@ -49,5 +49,4 @@ sidebar_position: 19
 | ------------------- | ----------------------------------------------------------------------------- | ---------- | -------------------------- |
 | **1.0**             | Refactorización completa de la wiki                                           | 19/04/2025 | Valeria Zúñiga Mendoza     |
 | **1.1**             | Se actualizó la plantilla de procesos siguiendo el estándar de versionamiento | 06/03/2025 | Diego Ricardo Alfaro Pinto |
-| **2.0**             | Se actualizó la plantilla de procesos siguiendo el estándar de versionamiento | 06/03/2025 | Diego Ricardo Alfaro Pinto |
-| **2.1**             | Se corrigieron errores de ortografía                                          | 8/05/2025  | Diego Ricardo Alfaro Pinto |
+| **1.2**             | Se corrigieron errores de ortografía                                          | 8/05/2025  | Diego Ricardo Alfaro Pinto |
