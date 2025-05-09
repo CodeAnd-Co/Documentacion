@@ -1,9 +1,9 @@
 ---
-title: Misión y Visión
+title: Misión y visión
 sidebar_position: 1
 ---
 
-# Misión y Visión de Code & Co
+# Misión y visión de Code & Co
 
 ## Misión 🎯
 
@@ -29,7 +29,7 @@ Optimizar el proceso de ingeniería de software con un enfoque ágil y disciplin
 
 ## Historial de cambios
 
-| **Tipo de Versión** | **Descripción**                               | **Fecha** | **Colaborador**                 |
+| **Tipo de versión** | **Descripción**                               | **Fecha** | **Colaborador**                 |
 | ------------------- | --------------------------------------------- | --------- | ------------------------------- |
-| **1.0**             | Creacion de la misión y visión   | 15/2/2025  | Valeria Zúñiga |
-| **1.1**             | Creacion del historial de cambios   | 23/4/2025  | Diego Fuentes |
+| **1.0**             | Creacion de la misión y visión.   | 15/2/2025  | Valeria Zúñiga |
+| **1.1**             | Creacion del historial de cambios.   | 23/4/2025  | Diego Fuentes |

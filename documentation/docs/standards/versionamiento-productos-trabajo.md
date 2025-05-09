@@ -1,5 +1,5 @@
 ---
-title: Estandar para Mantener un historial de cambios en la Documentación
+title: Estandar para mantener un historial de cambios en la documentación
 sidebar_position: 5
 ---
 

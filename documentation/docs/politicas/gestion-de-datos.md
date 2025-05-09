@@ -1,9 +1,9 @@
 ---
-title: Política de Gestión de Datos del Proyecto
+title: Política de gestión de gatos del proyecto
 sidebar_position: 2
 ---
 
-# **Política de Gestión de Datos del Proyecto**
+# **Política de gestión de datos del proyecto**
 
 ---
 
@@ -17,11 +17,11 @@ Esta política aplica a todos los proyectos en los que se utilicen datos relevan
 
 Se excluyen las métricas derivadas del análisis de desempeño del proyecto, pues pertenecen a procesos de evaluación específicos.
 
-## **3. Clasificación de Datos**
+## **3. Clasificación de datos**
 
 Los datos utilizados en los proyectos se dividen en dos categorías principales:
 
-### **3.1 Datos Sensibles**
+### **3.1 Datos sensibles**
 
 Se refiere a aquellos datos cuya divulgación podría comprometer la integridad del proyecto o de sus participantes. Estos incluyen, entre otros:
 
@@ -36,7 +36,7 @@ Para salvaguardar la integridad, seguridad y confianza depositada en los datos, 
 
 Para evitar cualquier filtración de información, **queda estrictamente prohibida la distribución de los accesos a través de cualquier medio digital distinto a los canales oficiales.** 
 
-### **3.2 Datos Generales**
+### **3.2 Datos generales**
 
 Son aquellos que pueden ser compartidos dentro del equipo de trabajo sin representar un riesgo para la organización. Algunos ejemplos son:
 
@@ -44,7 +44,7 @@ Son aquellos que pueden ser compartidos dentro del equipo de trabajo sin represe
 - Documentación técnica, materiales de referencia y guías de usuario.
 - Registros de pruebas y reportes sin información confidencial.
 
-## **4. Directrices para la Gestión de Datos**
+## **4. Directrices para la gestión de datos**
 
 De acuerdo con el modelo **CMMI PP SP 2.3 (Gestión de Datos del Proyecto)**, se establecen las siguientes directrices:
 
@@ -84,7 +84,7 @@ De acuerdo con el modelo **CMMI PP SP 2.3 (Gestión de Datos del Proyecto)**, se
 
    - Se evaluará la información recopilada para garantizar que cumpla con los objetivos del proyecto.
 
-## **5. Mecanismos de Protección y Seguridad**
+## **5. Mecanismos de protección y seguridad**
 
 Siguiendo las mejores prácticas de CMMI en seguridad y control de datos, se implementarán los siguientes mecanismos:
 
@@ -92,7 +92,7 @@ Siguiendo las mejores prácticas de CMMI en seguridad y control de datos, se imp
 - Implementación de **autenticación y autorización** en sistemas de acceso.
 - Aplicación de **controles contra accesos no autorizados** o manipulación indebida.
 
-## **6. Monitoreo y Cumplimiento (PMC SP 1.4)**
+## **6. Monitoreo y cumplimiento (PMC SP 1.4)**
 
 Para garantizar el cumplimiento de esta política, se implementarán mecanismos de monitoreo continuo:
 
@@ -113,7 +113,7 @@ Para garantizar el cumplimiento de esta política, se implementarán mecanismos 
 
 ---
 
-### **Notas Finales**
+### **Notas finales**
 
 - Esta política se revisará y actualizará periódicamente conforme a la evolución de los proyectos y los estándares organizacionales.
 - Cualquier modificación en esta política deberá ser aprobada por los responsables de gestión de datos.
@@ -122,11 +122,11 @@ Para garantizar el cumplimiento de esta política, se implementarán mecanismos 
 
 ## Historial de cambios
 
-| **Tipo de Versión** | **Descripción**                               | **Fecha** | **Colaborador**                 |
+| **Tipo de versión** | **Descripción**                               | **Fecha** | **Colaborador**                 |
 | ------------------- | --------------------------------------------- | --------- | ------------------------------- |
-| **1.0**             | Creación de la política  |   | Diego Alfaro, Arturo Sánchez |
-| **1.1**             | Eliminación de salidas de la política   | 08/04/2025  | Daniel Contreras, Eduardo Rosas |
-| **1.2**             | Modificación datos sensibles  | 25/04/2025  | Miguel Angel Uribe |
-| **1.3**             |  Implementar acciones correctivas |      26/04/2025        |  Max Toscano 
-| **1.4**             | Plan de Datos  | 28/04/2025  | Pablo Hurtado |
-| **1.5** | Eliminar principios y resumir objetivo | 08/05/2025 | Daniel Contreras
+| **1.0**             | Creación de la política.  |   | Diego Alfaro, Arturo Sánchez |
+| **1.1**             | Eliminación de salidas de la política.   | 08/04/2025  | Daniel Contreras, Eduardo Rosas |
+| **1.2**             | Modificación datos sensibles.  | 25/04/2025  | Miguel Angel Uribe |
+| **1.3**             |  Implementar acciones correctivas. |      26/04/2025        |  Max Toscano 
+| **1.4**             | Plan de Datos.  | 28/04/2025  | Pablo Hurtado |
+| **1.5** | Eliminar principios y resumir objetivo. | 08/05/2025 | Daniel Contreras
