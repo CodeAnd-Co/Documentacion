@@ -63,7 +63,7 @@ Los requisitos funcionales del sistema describen una variedad de acciones que lo
 - [**RF38**](RF38.md): Super Administrador, Cliente Lee Evento - `Ready`
 - [**RF40**](RF40.md): Super Administrador, Cliente Elimina Evento - `Ready`
 - [**RF42**](RF42.md): Super Administrador, Cliente Consulta Lista de Sets de Productos - `Done`
-- [**RF43**](RF43.md): Super Administrador, Cliente Lee Set de Productos
+- [**RF43**](RF43.md): Super Administrador, Cliente Lee Set de Productos - `Done`
 - [**RF45**](RF45.md): Super Administrador Elimina Set de Productos
 - [**RF46**](RF46.md): Super Administrador Crea Categoria de Productos - `Done`
 - [**RF47**](RF47.md): Super Administrador Consulta Lista de Categorias de Productos - `Done`
@@ -78,8 +78,6 @@ Los requisitos funcionales del sistema describen una variedad de acciones que lo
 - [**RF24**](RF24.md): Super Administrador Actualiza Grupo de Empleados
 - [**RF34**](RF34.md): Super Administrador Actualiza Set de Cuotas
 - [**RF54**](RF54.md): Super Administrador Actualiza Tipo de Pago
-
-
 
 ### Requisitos Específicos MBI (Parte 1)
 
@@ -97,8 +95,6 @@ Los requisitos funcionales del sistema describen una variedad de acciones que lo
 - [**RF58**](RF58.md): Super Administrador Exportar Productos
 - [**RF59**](RF59.md): Super Administrador Exportar Empleados
 - [**RF62**](RF62.md): Super Administrador, Cliente Actualiza Pedido
-
-
 
 ### Requisitos Específicos MBI (Parte 2)
 
