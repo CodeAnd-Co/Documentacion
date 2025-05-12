@@ -57,6 +57,7 @@ sidebar_position: 5
 
 ---
 
+<<<<<<< HEAD
 | Versión | Descripción del cambio                | Fecha    | Colaborador                |
 | ------- | ------------------------------------- | -------- | -------------------------- |
 | **1.0**     | Creación del proceso.| 03/03/2025 | Daniel Queijeiro Albo <br/> Ángel Mauricio Ramírez Herrera <br/> Valeria Zúñiga Mendoza |
@@ -64,3 +65,11 @@ sidebar_position: 5
 | **1.2** | Correcciones PMC 1.1.| 22/04/2025 | Juan Pablo Chávez Leal |
 | **1.3** | Agregar entradas y referenciar a los procesos PR22 y PR23.| 25/04/2025 | Ian Julián Estrada Castro | 
 | **1.4** | Actualizar proceso.| 11/05/2025 | Paola María Garrido Montes | 
+=======
+| Versión | Descripción del cambio                                    | Fecha      | Colaborador                                                                             |
+| ------- | --------------------------------------------------------- | ---------- | --------------------------------------------------------------------------------------- |
+| **1.0** | Creación del proceso                                      | 03/03/2025 | Daniel Queijeiro Albo <br/> Ángel Mauricio Ramírez Herrera <br/> Valeria Zúñiga Mendoza |
+| **1.1** | Refactorización                                           | 18/04/2025 | Diego Fuentes                                                                           |
+| **1.2** | Correcciones PMC 1.1                                      | 22/04/2025 | Juan Pablo Chávez Leal                                                                  |
+| **1.3** | Agregar entradas y referenciar a los procesos PR22 y PR23 | 25/04/2025 | Ian Julián Estrada Castro                                                               |
+>>>>>>> 013a0e88c4bd2aae5103fcd92dfa42e4058729ec
