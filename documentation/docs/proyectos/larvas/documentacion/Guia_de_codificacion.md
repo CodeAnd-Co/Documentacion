@@ -64,9 +64,36 @@ Adicional a esto usamos la meta arquitectura CLEAN, que nos ayuda a organizar el
 
 * **Data:** Como el nombre lo indica, esta es la capa que maneja todos los datos de la aplicación. Contiene los modelos de datos y los repositories responsables de la comunicación con el exterior.
 
+Si realizaste los laboratorios sugeridos, te habrás dado cuenta de que hay más de ellos. Te recomendamos por completo realizarlos para que tengas un buen entendimiento de cómo construir una historia de usuario en flutter. En los siguientes laboratorios se cubren pasos que van desde la conexión con APIs, hasta la implementación de navegación dentro de la app, a través de la construcción de una Pokedex como se hizo el semestre anterior. [Puedes encontrar el link aquí](https://meeplab2015.github.io/tc3004b-agodic24-101/docs/labs/mobile/flutter/tutorials/intro_flutter/)
 
 
 ---
+
+## Backend
+
+Para el backend de nuestra aplicación utilizamos Node.js junto con Express, y seguimos el patrón de arquitectura MVC (Modelo - Vista - Controlador). A continuación, te explicamos brevemente cada uno de estos conceptos para asegurarnos de que todos estamos en la misma página. 
+
+* **Node.js:** Es un entorno de ejecución para JavaScript del lado del servidor. Nos permite crear aplicaciones rápidas y escalables con JavaScript.
+
+* **Express:** Es un framework minimalista y flexible para Node.js. Nos ayuda a definir rutas, manejar peticiones HTTP, middleware y organizar nuestro código de forma eficiente.
+
+## Patrón de Arquitectura
+
+* **Modelo (Model):** Aquí definimos la estructura de los datos, utilizamos consultas SQL a MariaDB. 
+
+* **Vista (View):** En nuestro caso, como estamos construyendo una API, esta parte se omite o se reduce a las respuestas JSON que se envían al cliente. No usamos HTML o plantillas del lado del servidor.
+
+* **Controlador (Controller):** Contiene la lógica principal de cada funcionalidad. Los controladores reciben las peticiones del cliente, interactúan con los modelos y devuelven una respuesta adecuada.
+
+### Pruebas Unitarias
+
+Con el fin de verificar que cada parte del código funciona como se espera, realizamos pruebas unitarias utilizando el framework Jest y definimos que se debe tener un 80% de cobertura de código.
+
+Si no estás familiarizado con Jest, no te preocupes, contamos con un [documento de apoyo](https://docs.google.com/document/d/1808QLRqBniT8i_6Jt113K7b38NHDM5bDEzDPTVA3_Ok/edit?tab=t.0#heading=h.2gfkk8xjjpat) para apoyarte a entender lo que debes hacer.
+
+---
+
+Esperamos que esta guía te sea de mucha utilidad para tu tiempo en nuestro equipo. No dudes preguntarle a cualquiera de nuestros miembros si te llega a surgir alguna duda. ¡Bienvenido al equipo Tech-nebrios! 🪱
 
 # Historial de cambios
 | **Tipo de Versión** | **Descripción**                                             | **Fecha** | **Colaborador**            |
