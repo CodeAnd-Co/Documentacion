@@ -17,7 +17,7 @@ Como se presenta en el ejemplo, en ambos casos se sigue el proceso de acompañar
 
 #### ¿Cómo se adapta un proceso?
 1. Identifica el proceso que vas a daptar (¿Qué voy a adaptar?)
-2. Identifica el porqué se definira la adaptación (¿Por qué lo voy a adaptar?)
+2. Identifica el porqué se definirá la adaptación (¿Por qué lo voy a adaptar?)
 3. Identifica quienes van a tener que seguir la adaptación del nuevo proceso (¿Quién va a ser afectado por esta adaptación?)
 4. Identifica la duración de esta adaptación(¿Cuanto tiempo se seguira esta adaptación?)
 5. Una vez se hayan identificado las secciones anteriores, registralos en la hoja de calculo titulada 
