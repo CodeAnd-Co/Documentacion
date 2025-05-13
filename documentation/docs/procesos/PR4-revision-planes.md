@@ -92,3 +92,4 @@ sidebar_position: 4
 | **2.0**             | Añadir entradas de plan de comunicación, matriz de riesgos, repositorio de acciones correctivas, plan de recursos, matriz de retroalimentación. Agregadas fases y actividades de revisión de planes y de revisión de tareas. Cambio en la actividad de ajuste de estimaciones.    | 22/04/2025  | Diego Fuentes Juvera |
 | **2.1**             | Implementar acciones correctivas | 25/04/2025  | Max Toscano |
 | **2.2**             | Plan de datos  | 28/04/2025  | Pablo Hurtado |
+| **2.3**             | Mapeada práctica PP 2.1 en el proceso | 13/05/2025 | Emiliano Valdivia Lara |
