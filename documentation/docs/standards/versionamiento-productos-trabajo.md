@@ -33,6 +33,9 @@ Se utiliza la siguiente convención para enumerar las versiones:
 | **Versión Mayor (x.0)** | Se asigna cuando se agregan o eliminan secciones completas de la documentación.                | La fecha de modificación/creación (DD/MM/YYYY) | Colaborador o colaboradores de la modificación |
 | **Versión Menor (1.x)** | Se asigna cuando se realizan ajustes menores, como detalles de redacción, ortografía o estilo. | La fecha de modificación/creación (DD/MM/YYYY) | Colaborador o colaboradores de la modificación |
 
+### Nota:
+El historial de versiones se llena siempre que se haga un cambio a cualquier ítem de la wiki
+
 ## **3. Ejemplo de historial de cambios**
 
 ## Historial de cambios
@@ -54,3 +57,4 @@ Siguiendo los pasos mencionados en esta guía, asegurarás una gestión más lim
 | **2.0**             | Creación del estándar de historial de cambios. | 3/3/2025  | Miguel Angel, Diego Alfaro      |
 | **2.1**             | Cambio en el formato de la fecha.              | 18/4/2025  | Diego Fuentes |
 | **2.2**             |  Implementar acciones correctivas. |      26/04/2025        |  Max Toscano 
+| **2.3**             |  Clarificar cuándo se hace el versionamiento |      13/05/2025        |  Daniel Contreras Chávez
