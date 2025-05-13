@@ -47,7 +47,8 @@ sidebar_position: 11
 
 ## Historial de cambios
 
-| **Tipo de Versión** | **Descripción**                                                          | **Fecha** | **Colaborador**       |
-| ------------------- | ------------------------------------------------------------------------ | --------- | --------------------- |
-| **1.0**             | Creacion de proceso de comprensión y trazabilidad de requisitos          | 9/3/2025  | Angélica Ríos Cuentas |
-| **2.0**             | Refactorización y cambio para especificar dónde se crean los documentos. | 18/4/2025 | Diego Fuentes         |
+| **Tipo de Versión** | **Descripción**                                                          | **Fecha** | **Colaborador**         |
+| ------------------- | ------------------------------------------------------------------------ | --------- | ----------------------- |
+| **1.0**             | Creacion de proceso de comprensión y trazabilidad de requisitos          | 9/3/2025  | Angélica Ríos Cuentas   |
+| **2.0**             | Refactorización y cambio para especificar dónde se crean los documentos. | 18/4/2025 | Diego Fuentes           |
+| **2.1**             | Modificación del proceso para añadir links a los PR de cada US           | 12/5/2025 | Rodrigo Antonio Benítez |
