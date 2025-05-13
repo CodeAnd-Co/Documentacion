@@ -56,3 +56,4 @@ Garantizar la calidad de cada release.
 | **1.1**             | Integración de las áreas y prácticas específicas de CMMI correspondientes al proceso. |  | Emiliano Gómez González  |
 | **1.2**             | Refactorización                             | 18/4/2025 | Diego Fuentes                    |
 | **1.3**             | Errores ortográficos                             | 25/4/2025 | Hiram Mendoza                    |
+| **1.4**             | Añadir PPQA 1.2                             | 13/5/2025 | Juan Carlos Calderón García                    |
