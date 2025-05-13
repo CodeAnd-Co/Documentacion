@@ -30,6 +30,9 @@ sidebar_position: 11
 | **Documentación de requisitos funcionales** | Al terminar de diseñar el requisito incluir la etiqueta `Ready` abajo del título.                                                                                                                                                                                                                                                                                                                | Equipo de producto   | **REQM SP1.4** (Mantener la trazabilidad bidireccional de los requisitos). |
 | **Referencia en el código**                 | Durante el desarrollo, cada implementación debe incluir un comentario dentro del código indicando el requisito al que corresponde. El comentario debe seguir el formato:`RF[num] Nombre del Requisito - [Link]`, donde el enlace dirigirá al diagrama de secuencia o mockup según corresponda (front, back).                                                                                     | Equipo de desarrollo | **REQM SP1.4** (Mantener la trazabilidad bidireccional de los requisitos). |
 |                                             | Al terminar de codificar el requisito reemplazar la etiqueta `Ready` por `Done` abajo del título.                                                                                                                                                                                                                                                                                                | Equipo de producto   | **REQM SP1.4** (Mantener la trazabilidad bidireccional de los requisitos). |
+| **Vincular Pull Request (front y back)**    | Cuando se acepten los Pull request, arriba de la tabla de Hisotrial de cambios poner el link de los Pull request (tanto back-end como front-end) El link debe seguir el formato:`_<u>Enlace del Pull request front-end US40 Eliminar Evento](aquí va el link del PR)</u>_`.                                                                                                                      | Equipo de desarrollo | **REQM SP1.4** (Mantener la trazabilidad bidireccional de los requisitos). |
+
+|
 
 ---
 
@@ -44,7 +47,8 @@ sidebar_position: 11
 
 ## Historial de cambios
 
-| **Tipo de Versión** | **Descripción**                                                          | **Fecha** | **Colaborador**       |
-| ------------------- | ------------------------------------------------------------------------ | --------- | --------------------- |
-| **1.0**             | Creacion de proceso de comprensión y trazabilidad de requisitos          | 9/3/2025  | Angélica Ríos Cuentas |
-| **2.0**             | Refactorización y cambio para especificar dónde se crean los documentos. | 18/4/2025 | Diego Fuentes         |
+| **Tipo de Versión** | **Descripción**                                                          | **Fecha** | **Colaborador**         |
+| ------------------- | ------------------------------------------------------------------------ | --------- | ----------------------- |
+| **1.0**             | Creacion de proceso de comprensión y trazabilidad de requisitos          | 9/3/2025  | Angélica Ríos Cuentas   |
+| **2.0**             | Refactorización y cambio para especificar dónde se crean los documentos. | 18/4/2025 | Diego Fuentes           |
+| **2.1**             | Modificación para poner links de PR                                      | 13/5/2025 | Rodrigo Antonio Benítez |
