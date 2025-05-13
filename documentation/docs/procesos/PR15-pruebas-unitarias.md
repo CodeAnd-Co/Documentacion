@@ -23,12 +23,12 @@ Garantizar la calidad de cada release.
 
 | **Fase**                         | **Descripción**                                                                                                              | **Responsables**      | **Meta y práctica específica del CMMI**                                         |
 | -------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- | --------------------- | ------------------------------------------------------------------------------- |
-| **Preparación**                  | Identificar el flujo alterno de la función o método a probar.                                                                | Autor del caso de uso | **VER, SP 1.3** (Establecer los procedimientos y los criterios de verificación) |
-|                                  | Determinar los casos de prueba clave (datos de entrada, salida esperada, salida recibida).                                   | Autor del caso de uso | **VER, SP 1.3** (Establecer los procedimientos y los criterios de verificación) |
-|                                  | Realizar una matriz de casos de prueba con los datos del paso anterior.                                                      | Autor del caso de uso | **VER, SP 1.3** (Establecer los procedimientos y los criterios de verificación) |
-| **Construcción**                 | Codificar los casos de prueba definidos en la matriz, utilizando los frameworks establecidos.                                | Autor de la prueba    | **VER, SP 3.1** (Realizar la verificación)                                      |
+| **Preparación**                  | Identificar el flujo alterno de la función o método a probar.                                                                | Autor del caso de uso | **VER, SP 1.3** (Establecer los procedimientos y los criterios de verificación), **PPQA SP 1.2** (Evaluar objetivamente los productos de trabajo) |
+|                                  | Determinar los casos de prueba clave (datos de entrada, salida esperada, salida recibida).                                   | Autor del caso de uso | **VER, SP 1.3** (Establecer los procedimientos y los criterios de verificación), **PPQA SP 1.2** (Evaluar objetivamente los productos de trabajo) |
+|                                  | Realizar una matriz de casos de prueba con los datos del paso anterior.                                                      | Autor del caso de uso | **VER, SP 1.3** (Establecer los procedimientos y los criterios de verificación), **PPQA SP 1.2** (Evaluar objetivamente los productos de trabajo) |
+| **Construcción**                 | Codificar los casos de prueba definidos en la matriz, utilizando los frameworks establecidos.                                | Autor de la prueba    | **VER, SP 3.1** (Realizar la verificación), **PPQA SP 1.2** (Evaluar objetivamente los productos de trabajo)                                      |
 | **Ejecución**                    | Ejecutar las pruebas localmente.                                                                                             | Autor de la prueba    | **VER, SP 3.1** (Realizar la verificación)                                      |
-| **Revisión y Retroalimentación** | Analizar los resultados, revisando las pruebas exitosas y no exitosas; en caso de fallos, informar al autor del caso de uso. | Autor de la prueba    | **VER, SP 3.2** (Analizar los resultados de la verificación)                    |
+| **Revisión y Retroalimentación** | Analizar los resultados, revisando las pruebas exitosas y no exitosas; en caso de fallos, informar al autor del caso de uso. | Autor de la prueba    | **VER, SP 3.2** (Analizar los resultados de la verificación), **PPQA SP 1.2** (Evaluar objetivamente los productos de trabajo)                    |
 
 ---
 
@@ -56,3 +56,4 @@ Garantizar la calidad de cada release.
 | **1.1**             | Integración de las áreas y prácticas específicas de CMMI correspondientes al proceso. |  | Emiliano Gómez González  |
 | **1.2**             | Refactorización                             | 18/4/2025 | Diego Fuentes                    |
 | **1.3**             | Errores ortográficos                             | 25/4/2025 | Hiram Mendoza                    |
+| **1.4**             | Añadir PPQA 1.2                             | 13/5/2025 | Juan Carlos Calderón García                    |
