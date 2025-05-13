@@ -62,4 +62,4 @@ sidebar_position: 18
 | **1.2**             | Refactorización | 18/4/2025  | Diego Fuentes |
 | **1.3**             | Agregar paso para llenar la columna de interesados en el repositorio | 22/4/2025  | Emiliano Valdivia |
 | **1.4**             | Corregido error ortográfico y agregada fecha de creación al proceso | 25/4/2025  | Emiliano Valdivia |
-| **1.5**             | Correción de legibilidad del proceso y agregar sección de análisis | 13/05/2025  | Paola María Garrido y Rommel Toledo |
+| **1.5**             | Corrección de legibilidad del proceso y agregar sección de análisis | 13/05/2025  | Paola María Garrido y Rommel Toledo |
