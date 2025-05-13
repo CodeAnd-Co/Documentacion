@@ -57,3 +57,4 @@ Siguiendo los pasos mencionados en esta guía, asegurarás una gestión más lim
 | **2.0**             | Creación del estándar de historial de cambios. | 3/3/2025  | Miguel Angel, Diego Alfaro      |
 | **2.1**             | Cambio en el formato de la fecha.              | 18/4/2025  | Diego Fuentes |
 | **2.2**             |  Implementar acciones correctivas. |      26/04/2025        |  Max Toscano 
+| **2.3**             |  Clarificar cuándo se hace el versionamiento |      13/05/2025        |  Daniel Contreras Chávez

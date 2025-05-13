@@ -142,3 +142,4 @@ Ejemplo: `rollback/DC_guia-de-rollback_v1.0`
 | **Tipo de versión** | **Descripción**                    | **Fecha** | **Colaborador**        |
 |---------------------|------------------------------------| --------- | ---------------------- |
 | 1.0 | Se creó la primera versión de la guía. | 28/04/2025 | Daniel Contreras Chávez |
+| 1.1 | Se agregaron pasos para hacer rollback de ítems de la wiki. | 13/05/2025 | Daniel Contreras Chávez |
