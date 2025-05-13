@@ -126,7 +126,7 @@ git checkout -b respaldo-antes-del-rollback
 Ejemplo: `rollback/DC_guia-de-rollback_v1.0`
 
 2. Identificar el ítem del que harás rollback
-3. Moverse hasta la parte de abajo del ítem, dónde se encuentra la tabla de versionamiento e identificar la fecha de la versión a la que se quiere regresar.
+3. Moverse hasta la parte de abajo del ítem, donde se encuentra la tabla de versionamiento e identificar la fecha de la versión a la que se quiere regresar.
 4. Entrar a las Pull Request Cerradas del repositorio de Github.
 5. Filtrar las Pull Request por fecha e introducir la fecha de la versión a la que se quiere regresar.
 6. Buscar la Pull Request específica del ítem. La puedes identificar por el nombre de la rama.
