@@ -27,6 +27,6 @@ Como se presenta en el ejemplo, en ambos casos se sigue el proceso de acompañar
 
 ## Historial de cambios
 
-| **Tipo de awversión** | **Descripción** | **Fecha**  | **Colaborador** |
+| **Tipo de versión** | **Descripción** | **Fecha**  | **Colaborador** |
 | ------------------- | --------------- | ---------- | --------------- |
 | **1.0** | Creación de la guia de procesos adaptables | 13/05/2025 | Ethan Luna Cadó|
