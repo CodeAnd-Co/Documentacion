@@ -64,139 +64,215 @@ import TabItem from '@theme/TabItem';
 ---
 
 <Tabs className="unique-tabs">
-  <TabItem value="po" label="Product Owner">
 
-    1. Enlace con Stakeholders
+<TabItem value="po" label="Product Owner">
 
-        - Coordinar y atender juntas virtuales con el Socio Formador.
-            - Llenar el formato de juntas efectivas, compartiendo a los socios la agenda de antemano.
+1. **Enlace con Stakeholders**
 
-        - Comunicar las necesidades de los stakeholders al equipo.
+   - Coordinar y liderar juntas virtuales y presenciales con el **Socio Formador**.
+     - Preparar y compartir la agenda anticipadamente mediante el formato de juntas efectivas.
+     - Gestionar la logística para el acceso al campus en reuniones presenciales.
+   - Garantizar una comunicación bidireccional efectiva:
+     - Transmitir las necesidades de los stakeholders al equipo de desarrollo.
+     - Informar al Socio Formador sobre inquietudes y avances del equipo.
+   - Documentar acuerdos:
+     - Elaborar un documento formal de compromisos entre el Socio Formador y el equipo, asegurando claridad en expectativas y objetivos.
 
-        - Comunicar las necesidades del equipo a los stakeholders.
-            - Resolver dudas.
-            - Crear documento de acuerdos para que sea firmado por el
-            - Socio Formador.
+2. **Definición de la Visión del Producto**
 
-        - Coordinar el ingreso del Socio Formador al campus para juntas
-        presenciales.
+   - Establecer y comunicar una visión clara del producto para alinear a todos los involucrados en una meta común.
+   - Asegurar que la visión refleje tanto las necesidades del negocio como los objetivos del proyecto.
 
+3. **Gestión y Priorización del Work Items List**
 
-    2. Definir la visión del producto.*
+   - Identificar y organizar los requisitos del producto en el Work Items List.
+   - Revisar y ajustar prioridades antes de cada **Planeación de Iteración**, considerando cambios y nuevas necesidades.
+   - Mantener el enfoque en maximizar el valor entregado al negocio.
 
+4. **Gestión del Alcance y Definición de MVPs**
+   - Tomar decisiones claras sobre el alcance de cada sprint, alineando expectativas con las capacidades del equipo.
+   - Definir los **Mínimos Productos Viables (MVPs)** para permitir entregas incrementales y validación constante del producto.
 
-    3. Gestionar y priorizar los requisitos en el Work Items List.
+</TabItem>
 
-        Antes de la reunión de planeación de la iteración se vuelve a
-        asegurar que los requisitos estén priorizadas, considerando
-        cualquier cambio.
+<TabItem value="tl" label="Team Leader">
 
+1. **Gestión de conflictos y facilitación del entorno de trabajo**
 
-    4. Tomar decisiones sobre el alcance en cada sprint.
+   - Identificar y resolver conflictos internos para mantener un ambiente productivo y colaborativo.
+   - Eliminar obstáculos que bloqueen el avance del equipo, asegurando la continuidad de las tareas.
 
-        Define los Mínimos Productos Viables
+2. **Gestión de tareas y priorización**
 
-  </TabItem>
+   - Actualizar y organizar el Work Items List, alineando las prioridades con los objetivos del proyecto.
 
-  <TabItem value="tl" label="Team lead">
-  
-    1. Resolver conflictos y asegurar un ambiente de trabajo productivo.
+3. **Monitoreo del progreso del proyecto**
 
-        - Eliminar obstáculos que bloquean el progreso del equipo.
+   - Supervisar el avance del plan de proyecto para garantizar el cumplimiento de entregables.
+   - Implementar herramientas de monitoreo:
+     - **Burndown Chart**: Visualización del progreso respecto al tiempo.
+     - **Plan de Valor Ganado**: Medición del rendimiento y valor entregado en cada iteración.
 
+4. **Implementación de marcos ágiles (DAD y CMMI)**
 
-    2. Actualizar y priorizar las tareas del Work Items List.
+   - Aplicar los principios de **Disciplined Agile Delivery (DAD)** para optimizar el desarrollo ágil.
+   - Asegurar la implementación correcta de prácticas y procesos definidos por **CMMI (Capability Maturity Model Integration)**.
 
+5. **Facilitación de reuniones clave**
+   - **Daily**: Seguimiento diario del estado del proyecto.
+   - **Planeación de Iteración**: Definición de metas y planificación de actividades.
+   - **Review de Iteración**: Evaluación de entregables y retroalimentación.
+   - **Retrospective de Iteración**: Identificación de mejoras continuas para el equipo.
 
-    3. Monitorear el progreso del plan de proyecto. Monitorear el avance y
-    asegurar que se cumplan los entregables.
+</TabItem>
 
-        - Burndown Chart
-        - Plan de valor ganado.
+<TabItem value="ao" label="Architecture Owner">
 
+1. **Diseño y Validación de la Arquitectura**
 
-    4. Comprender la metodología de DAD y ayuda a implementarla.
+   - Definir la arquitectura del sistema y los estándares técnicos del proyecto.
+   - Asegurar la viabilidad del proyecto y su alineación con los objetivos del negocio.
+   - Validar que las decisiones arquitectónicas soporten la escalabilidad, seguridad y eficiencia del sistema.
 
+2. **Selección de Tecnologías**
 
-    5. Facilitar reuniones y coordinar al equipo
+   - Investigar y evaluar diversas opciones tecnológicas considerando ventajas y desventajas.
+   - Seleccionar las tecnologías más adecuadas, justificando cada decisión ante el equipo y stakeholders.
+   - Garantizar que las tecnologías elegidas se alineen con los principios de arquitectura definidos.
 
-        - DAILY
-        - PLANEACIÓN DE ITERACIÓN
-        - REVIEW de la iteración
-        - RETROSPECTIVE de la iteración
+3. **Desarrollo y Mantenimiento del Manual de Arquitectura**
 
+   - Crear, actualizar y documentar el manual de arquitectura del proyecto.
+   - Asegurarse de que todo el equipo siga las pautas definidas en el manual para mantener la coherencia técnica.
 
-    6. Supervisar la implementación de procesos del CMMI.
+4. **Asesoría Técnica**
 
-  </TabItem>
+   - Guiar al equipo en la toma de decisiones técnicas y resolver dudas relacionadas con la arquitectura y las tecnologías.
+   - Proporcionar soluciones efectivas ante problemas técnicos que puedan surgir en el desarrollo.
 
-  <TabItem value="ao" label="Architecture owner">
-  
-    1. Diseñar y validar la arquitectura del sistema y estándares
-    del proyecto.
+5. **Garantizar la Calidad del Sistema**
 
-    2. Definir las tecnologías a utilizar en el proyecto:
+   - Velar por la escalabilidad, seguridad y mantenibilidad de la solución desarrollada.
+   - Supervisar que las prácticas de desarrollo se ajusten a los principios de arquitectura establecidos.
 
-        - Investigar de diferentes opciones, elegir una y añadir.
-        - justificación.
+</TabItem>
 
-    3. Desarrollar, actualizar y seguir el manual de arquitectura:
+<TabItem value="tm" label="Team Member">
 
-        - Asegurarse que los demás lo sigan también.
+1. **Desarrollo de Funcionalidades del Producto**
 
-    4. Guiar al equipo en decisiones técnicas y resolver sus
-    dudas.
+   - Preparar los requisitos del producto y dejarlos en estado **READY**.
+   - Estimar el esfuerzo necesario para completar las Historias de Usuario.
+   - Diseñar, desarrollar y realizar pruebas de las funcionalidades del producto.
+   - Completar todas las tareas necesarias para que las Historias de Usuario lleguen al estado **DONE**.
 
-    5. Asegurar que el sistema sea escalable, seguro y
-    mantenible.
+2. **Gestión y Actualización del Work Items List**
 
-  </TabItem>
-  <TabItem value="tm" label="Team member">
-    **AUTO-ORGANIZADOS**
+   - Mantener el Work Items List actualizado para asegurar la trazabilidad y el seguimiento adecuado del proyecto.
 
-    1. Funcionalidades del producto :
+3. **Documentación del Proyecto**
 
-        - Deja los requerimientos en READY
-        - Hace estimación de Historias
-        - Diseñan
-        - Desarrollan
-        - Pruebas
-        - Dejan la historia en DONE
+   - Crear y mantener la documentación del proyecto, asegurando que sea clara, actualizada y accesible para todo el equipo.
 
-    2. Actualizar el work items list.
+4. **Compromiso y Colaboración Activa**
 
-    3. Crear y mantener la documentación del proyecto.
+   - Participar activamente en las **Daily Stand-ups**, reuniones de planificación y revisiones del proyecto.
+   - Comunicar de manera efectiva ideas, propuestas de mejora y cualquier impedimento detectado.
 
-    4. Compromisos:
+5. **Definición y Seguimiento de Procesos (CMMI)**
+   - Colaborar en la definición de procesos alineados con las prácticas de **CMMI (Capability Maturity Model Integration)**.
+   - Seguir los procesos establecidos para garantizar la calidad y consistencia del trabajo.
+   - Asegurar la mejora continua mediante propuestas de optimización en los procesos y prácticas del equipo.
 
-        - Participa en las Dailys.
-        - Juntas y reuniones.
-        - Comunicar cualquier idea que tengan de cómo mejorar cualquier cosa.
+</TabItem>
 
-    5. Definir procesos acorde a las prácticas del CMMI.
+<TabItem value="uxui" label="UX/UI Owner">
 
-        - Sigue los procesos una vez definidos
-        - Asegurar la mejora continua de los procesos.
+1. **Diseño de Experiencia de Usuario (UX) e Interfaz de Usuario (UI)**
 
-  </TabItem>
+   - Responsable de la experiencia de usuario (**UX**) y la interfaz de usuario (**UI**) del producto o proyecto.
+   - Garantizar un diseño intuitivo, usable y visualmente atractivo, optimizando la interacción entre el usuario y la aplicación.
+
+2. **Investigación de Usuario**
+
+   - Identificar necesidades, comportamientos y expectativas de los usuarios.
+   - Validar conceptos y prototipos con usuarios finales para recopilar retroalimentación temprana.
+
+3. **Diseño de Interfaz y Prototipos**
+
+   - Crear wireframes, mockups y prototipos que definan la estructura, navegación y apariencia del producto.
+   - Validar los prototipos con el **Product Owner** y el equipo de desarrollo antes de proceder a implementaciones detalladas.
+
+4. **Pruebas de Usabilidad**
+
+   - Planificar y ejecutar pruebas de usabilidad para identificar problemas y oportunidades de mejora.
+   - Recopilar datos y retroalimentación para iterar sobre el diseño.
+
+5. **Colaboración con Desarrollo**
+
+   - Trabajar estrechamente con los desarrolladores para asegurar que los diseños se implementen correctamente y se mantenga la consistencia visual.
+   - Resolver dudas técnicas y realizar ajustes necesarios durante el proceso de construcción del producto.
+
+6. **Documentación y Actualización de Diseño**
+   - Mantener actualizada la documentación de diseño y estilo, asegurando su accesibilidad para el equipo.
+
+</TabItem>
+
+<TabItem value="qa" label="Quality Assurance">
+
+1. **Estrategia de Pruebas**
+
+   - Definir el plan de pruebas, especificando tipos de pruebas, ambiente, herramientas y cronograma.
+   - Alinear la estrategia de pruebas con los objetivos del proyecto y los requisitos definidos.
+
+2. **Ejecución de Pruebas**
+
+   - Realizar pruebas funcionales, de integración, de rendimiento, de seguridad y de usabilidad.
+   - Identificar defectos y evaluar el comportamiento del sistema bajo diferentes escenarios.
+
+3. **Reporte y Seguimiento de Bugs**
+
+   - Documentar de manera clara y detallada los errores encontrados, incluyendo evidencia y pasos para reproducirlos.
+   - Dar seguimiento a la corrección de errores hasta su resolución final.
+
+4. **Mejora Continua**
+
+   - Retroalimentar al equipo de desarrollo sobre los hallazgos, proponiendo mejoras en procesos y estándares de calidad.
+   - Promover prácticas de prevención de defectos y optimización de código.
+
+5. **Plan de Calidad y Auditoría**
+
+   - Definir métricas y criterios de aceptación para asegurar el cumplimiento de los requisitos.
+   - Establecer procesos de revisión y auditoría interna para validar la calidad del producto.
+
+6. **Identificación y Gestión de Riesgos**
+
+   - Evaluar riesgos técnicos y de negocio que puedan comprometer la calidad del producto.
+   - Definir planes de pruebas específicas para mitigar problemas asociados a esos riesgos.
+
+7. **Validación de Reglas de Negocio y Requisitos**
+   - Asegurarse de que los casos de prueba contemplen escenarios que verifiquen correctamente las reglas de negocio definidas.
+   - Validar el cumplimiento de los requisitos en cada iteración del proyecto.
+
+</TabItem>
+
 </Tabs>
 
 ---
 
 ### Estructura Organizacional
 
-| Nombre                                 | Rol                              |
-| -------------------------------------- | -------------------------------- |
-| Hiram Israel Mendoza López             | Team Leader                      |
-| Ángel Mauricio Ramírez Herrera         | QA, Team Member                  |
-| Angélica Ríos Cuentas                  | Team Member                      |
-| Rodrigo Antonio Benítez De La Portilla | QA, Team Member                  |
-| Nicolás Hood Figueroa                  | Team Member, UX/UI Diseñador     |
-| Paola María Garrido Montes             | Team Member                      |
-| Diego Ricardo Alfaro Pinto             | Team Member, Architecture Owner  |
-| Arturo Sánchez Rodríguez               | Team Member, UX/UI Diseñador, QA |
-| Carlos Iván Fonseca Mondragón          | Product Owner                    |
-| Valeria Zúñiga Mendoza                 | Team Member                      |
+| Nombre                                 | Rol                                 |
+| -------------------------------------- | ----------------------------------- |
+| Angélica Ríos Cuentas                  | Team Leader                         |
+| Arturo Sánchez Rodríguez               | Architecture Owner, UX/UI Diseñador |
+| Nicolás Hood Figueroa                  | Product Owner, UX/UI Diseñador      |
+| Diego Ricardo Alfaro Pinto             | QA, Team Member                     |
+| Paola María Garrido Montes             | Team Member, UX/UI Diseñador        |
+| Hiram Israel Mendoza López             | QA, Team Member                     |
+| Rodrigo Antonio Benítez De La Portilla | Team Member                         |
+| Carlos Iván Fonseca Mondragón          | Team Member                         |
+| Valeria Zúñiga Mendoza                 | Team Member                         |
 
 ---
 
@@ -209,9 +285,10 @@ import TabItem from '@theme/TabItem';
 
 ### Historial de cambios
 
-| Tipo de Versión | Descripción             | Fecha    | Colaborador                            |
-| --------------- | ----------------------- | -------- | -------------------------------------- |
-| 1.0             | Creación de Descripción | 7/3/2025 | Ángel Mauricio Ramírez Herrera         |
-| 1.1             | Modificación Roles      | 3/4/2025 | Rodrigo Antonio Benítez De La Portilla |
+| Tipo de Versión | Descripción                                                      | Fecha     | Colaborador                            |
+| --------------- | ---------------------------------------------------------------- | --------- | -------------------------------------- |
+| 1.0             | Creación de Descripción                                          | 7/3/2025  | Ángel Mauricio Ramírez Herrera         |
+| 1.1             | Modificación Roles                                               | 3/4/2025  | Rodrigo Antonio Benítez De La Portilla |
+| 1.2             | Modificación defeinición Roles, actualización de roles asignados | 13/5/2025 | Angélica Ríos Cuentas                  |
 
 ---
