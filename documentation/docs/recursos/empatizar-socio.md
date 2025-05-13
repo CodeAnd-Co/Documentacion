@@ -5,19 +5,12 @@ sidebar_position: 15
 
 # Empatizar con el socio formador: Clave para el éxito del proyecto
 
----
-**Compartido por Discord:** 11 de febrero de 2025  
-**Última actualización:** 6 de marzo de 2025
-
-| Nombre                            | Rol       |
-| --------------------------------- | --------- |
-| Paola María Garrido Montes         | Autor     |
----
-
 ### ¿Qué significa realmente empatizar con el socio formador?
+
 Empatizar con el socio formador va más allá de escuchar sus expectativas y desafíos actuales. El objetivo de esta etapa inicial es comprender profundamente sus necesidades, ya que esto es fundamental para diseñar soluciones efectivas y centradas en el usuario final.
 
 ### Herramientas y técnicas para empatizar
+
 - **Mapa de actores:**  
   Representa visualmente todas las partes interesadas en el proyecto, identificando quiénes son los actores clave, sus roles y cómo interactúan dentro del sistema. Esto es esencial para alinear las expectativas y definir relaciones de colaboración efectivas.
 
@@ -37,4 +30,12 @@ Empatizar con el socio formador va más allá de escuchar sus expectativas y des
   Ayudan a visualizar la evolución de un producto o servicio, identificando patrones y tendencias que guiarán el diseño hacia soluciones más innovadoras.
 
 ### De la empatía a las soluciones
+
 Al utilizar las herramientas y técnicas anteriores, no solo se define el problema del cliente y del usuario final, sino que se construyen soluciones con un enfoque de valor. En última instancia, empatizar con el socio asegura que cada acción tomada esté alineada con sus objetivos y se traduzca en un impacto positivo de manera tangible.
+
+### Historial de cambios
+
+| **Tipo de versión** | **Descripción**                       | **Fecha**  | **Colaborador**               |
+| ------------------- | ------------------------------------- | ---------- | ----------------------------- |
+| **1.0**             | Creación del documento.                | 06/03/2025 | Paola María Garrido Montes    |
+| **1.1**             | Agregar tabla de historial de cambios. | 08/04/2025 | Carlos Iván Fonseca Mondragón |

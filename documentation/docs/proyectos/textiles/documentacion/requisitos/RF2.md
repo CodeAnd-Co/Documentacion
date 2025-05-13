@@ -123,3 +123,9 @@ sequenceDiagram
 ## **Pruebas**
 
 _<u>[Enlace a pruebas RF2 Consultar Lista de Usuarios.](https://docs.google.com/spreadsheets/d/1NLGwGrGA5PVOEzLaqxa8Ts1D_Ng3QzzqNKWJYUzxD-M/edit?gid=1685718554#gid=1685718554)</u>_
+
+### Historial de cambios
+
+| **Tipo de Versión** | **Descripción**                                  | **Fecha** | **Colaborador** |
+| ------------------- | ------------------------------------------------ | --------- | --------------- |
+| **1.0**             | Actualización de la documentación del requisito. | 10/4/2025 | Valeria Zúñiga  |

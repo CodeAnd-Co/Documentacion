@@ -51,8 +51,6 @@ La priorización de requerimientos se puede encontrar aquí:
 
 [_Priorizacion de requisitos_](https://docs.google.com/spreadsheets/d/1ToxcYLMjoZ0dPXlb2eTesLf_YXg8q86tE7bredXapYk/edit?gid=1686427669#gid=1686427669)
 
-La especificación de historias de usuario se llevarán a cabo teniendo en cuenta la definición de [_Done_](/docs/intro/definicion-de-done/) y [_Ready_](/docs/intro/definicion-de-ready/) que se encuentran en este archivo:
-
 ---
 
 ## Gestión de Calidad y Pruebas
@@ -321,7 +319,7 @@ Describe berevemente cómo se probó esta funcionalidad. Ejemplo:
 
 ### CD
 
-Para el despliegue continuo del backend utilizaremos un script de [_github actions_](/docs/guias/github/github-actions.md) paa hacer pull automaticamente y desplegar las ramas de produccion (main) y pruebas (staging), por lo que no tendremos que manejar estas acciones manualmente.
+Para el despliegue continuo del backend utilizaremos un script de [_github actions_](../../../plantillas/plantilla-github-actions.md) paa hacer pull automaticamente y desplegar las ramas de produccion (main) y pruebas (staging), por lo que no tendremos que manejar estas acciones manualmente.
 
 # Historial de cambios
 

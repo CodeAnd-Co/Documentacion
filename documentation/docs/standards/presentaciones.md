@@ -1,16 +1,16 @@
 ---
-title: Estándar de Presentaciones
+title: Estándar de presentaciones
 sidebar_position: 2
 ---
 
-# Estándar de Presentaciones
+# Estándar de presentaciones
 
 
 ## 1. Objetivo
 
-Definir buenas prácticas y lineamientos para la elaboración y ejecución de presentaciones en nuestro departamento, con el fin de asegurar claridad, profesionalismo y efectividad en la comunicación con los Stakeholders.
+Definir buenas prácticas para la elaboración y ejecución de presentaciones en nuestro departamento, con el fin de asegurar claridad, profesionalismo y efectividad en la comunicación con los stakeholders.
 
-## 2. Formato de Presentaciones
+## 2. Formato de presentaciones
 
 ### 2.1. Herramientas recomendadas
 - PowerPoint
@@ -22,36 +22,35 @@ Definir buenas prácticas y lineamientos para la elaboración y ejecución de pr
 Cada presentación debe seguir la siguiente estructura:
 
 1. **Portada**
-   - Título de la presentación
-   - Nombre del o los presentadores
-   - Fecha en que se va a presentar
-   - Nombre del equipo de trabajo
-   - Logo del departamento
+   - Título de la presentación.
+   - Fecha de la presentación.
+   - Nombre del equipo de trabajo.
+   - Logo del departamento.
 
-2. **Índice**
-   - Puntos clave que se tratarán en la presentación
-
-3. **Introducción**
-   - Contexto y objetivo de la presentación
-   - Justificación del tema a tratar
+2. **Introducción**
+   - Contexto y objetivo de la presentación.
+   - Justificación del tema a tratar.
+   - Presentación breve de los expositores.
 
 4. **Desarrollo**
-   - Diapositivas con puntos clave
-   - Información concisa
+   - Diapositivas con puntos clave (máximo 5-7 ideas principales por sección).
+   - Información concisa y enfocada en soluciones o hallazgos relevantes.
    - Imágenes representativas o relevantes
-   - Uso de gráficos, diagramas y tablas si es necesario
-   - Evitar bloques largos de texto (más de 30 palabras)
-   - Evitar usar más de 8 cuadros de texto por diapositiva
+   - Uso de imágenes, gráficos y tablas para reforzar la información.
+   - Máximo 30 palabras por diapositiva y evitar más de 8 cuadros de texto.
+   - Utilizar datos y ejemplos concretos que respalden los argumentos.
 
 5. **Conclusiones**
-   - Resumen de los puntos clave
+   - Resumen breve de los puntos clave (considerar usar bullets o frases de impacto).
+   - Señalar próximos pasos o recomendaciones si aplica.
 
 6. **Dudas**
-   - Espacio para resolver dudas de la audiencia
+   - Preparar respuestas para preguntas frecuentes.
+   - Confirmar que las dudas fueron aclaradas antes de cerrar la sesión.
 
-## 3. Estilo Visual
+## 3. Estilo visual
 
-### 3.1. Uso de Colores
+### 3.1. Uso de colores
 - Respetar la psicología del color según la intención
   - **Rojo:** peligro, energía, urgencia
   - **Azul:** seguridad, calma, profesionalismo
@@ -64,60 +63,57 @@ Cada presentación debe seguir la siguiente estructura:
   - **Rosa:** feminidad, dulzura, juventud
 
 ### 3.2. Tipografía
-- Usar Arial o Times New Roman
-- Tamaño mínimo de 30 pts para texto y 40 pts para títulos
-- Evitar uso excesivo de negritas, cursivas y subrayados
-- Usar un color de letra que contraste con el fondo
+- Tamaño mínimo de 30 pts para texto y 40 pts para títulos.
+- Evitar uso excesivo de negritas, cursivas y subrayados.
+- Usar un color de letra que contraste con el fondo.
+- No exceder de tres tipos de tipografías .
 
 ### 3.3. Imágenes
-- Preferir imágenes PNG con fondo transparente
+- Preferir imágenes PNG con fondo transparente.
 
-## 4. Prácticas de Presentación
+## 4. Prácticas de presentación
 
-- Modificar el lenguaje según la audiencia
-- No leer directamente las diapositivas
-- Respetar los tiempos asignados
-- Evitar muletillas
-- Mantener contacto visual con la audiencia
+- Modificar el lenguaje según la audiencia.
+- No leer directamente las diapositivas.
+- Respetar los tiempos asignados.
+- Evitar muletillas.
+- Mantener contacto visual con la audiencia.
 
-## 5. Evaluación y Retroalimentación
+## 5. Evaluación y retroalimentación
 
 Cada presentación deberá ser evaluada por el Presentation Owner correspondiente con base en:
-- Claridad del contenido
-- Calidad visual
-- Estructura coherente
-- Habilidad del presentador al presentar
-- Cumplimiento en los tiempos
+- Claridad del contenido.
+- Calidad visual.
+- Estructura coherente.
+- Habilidad del presentador al presentar.
+- Cumplimiento en los tiempos.
 
-## 6. Duración de la Presentación
+La retroalimentación debe ser:
+- Solicitada y oportuna, brindada en un momento adecuado para su recepción.
+- Empática y reflexiva, enfocándose en el crecimiento del presentador.
+- Descriptiva y específica, basada en observaciones concretas, evitando juicios personales.
+- Equilibrada y constructiva, resaltando tanto fortalezas como áreas de mejora, y proponiendo acciones claras para futuras presentaciones.
+
+## 6. Duración de la presentación
 
 Cada presentación deberá tener una duración dependiendo del tipo de información mostrada con base en:
-- Presentación informativa: ~5-10 minutos
+- Presentación informativa: ~5-15 minutos
 - Propuestas para el proyecto: ~10 -20 minutos
-- Reportes de avances: ~5 - 15 minutos
+- Reportes de avances: ~5 - 10 minutos
 - Capacitaciones: ~20 - 45 minutos
 
-## 7. Uso de Fuentes y Citados
+## 7. Uso de fuentes y citados
 
 Cada presentación que use o cite algún material ajeno o que no sea de su autoría, deberá seguir los siguientes alineamientos:
 
-- Citar en formato APA 7
-- Usar fuentes de información verídicas y variadas
-- Incluir las citas en una diapositiva al final de la presentación
+- Citar en formato APA 7.
+- Usar fuentes de información verídicas y variadas.
+- Incluir las citas en una diapositiva al final de la presentación.
 
-## 8. Preparación Previa a una presentación
 
-Antes de cada presentación se deberá asegurar los siguientes alineamientos:
+## Historial de cambios
 
-- Verificar la legibilidad de la presentación
-- Verificar si se entiende el audio (si aplica)
-- Los encargados de presentar deberán ensayar
-- El resto del equipo deberá de estar enterado de los temas que se verán en la presentación. 
-
-Siempre se debe procurar cumplir con este estándar
-
-## Historial de Cambios
-
-| **Tipo de Versión** | **Descripción**                                                                                                                | **Fecha** | **Colaborador**                                   |
+| **Tipo de versión** | **Descripción**                                                                                                                | **Fecha** | **Colaborador**                                   |
 | ------------------- | ------------------------------------------------------------------------------------------------------------------------------ | --------- | ------------------------------------------------- |
-| **1.0**             | Creación del estándar  | 04/03/2025 |  Juan Eduardo Rosas Cerón <br/> Pablo Hazael Hurtado Mireles |
+| **1.0**             | Creación del estándar.  | 04/03/2025 |  Juan Eduardo Rosas Cerón <br/> Pablo Hazael Hurtado Mireles |
+| **1.1**             | Actualización del estándar.  | 09/05/2025 | Paola María Garrido |

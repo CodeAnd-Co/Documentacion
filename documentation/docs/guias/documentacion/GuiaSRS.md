@@ -84,8 +84,8 @@ Referencias
 
 ## Historial de cambios
 
-| **Tipo de Versión** | **Descripción** | **Fecha**  | **Colaborador** |
+| **Tipo de versión** | **Descripción** | **Fecha**  | **Colaborador** |
 | ------------------- | --------------- | ---------- | --------------- |
-| **1.0** | Guía de SRS | 06/03/2025 | Juan Pablo Chávez, Daniel Queijeiro |
+| **1.0** | Guía de SRS. | 06/03/2025 | Juan Pablo Chávez, Daniel Queijeiro |
 | **1.1** |  Gestión de configuración.  | 24/04/2025 | Diego Fuentes |
 | **1.2** |  Introducción, propósito y alcance. | 25/04/2025 | Hiram Mendoza |

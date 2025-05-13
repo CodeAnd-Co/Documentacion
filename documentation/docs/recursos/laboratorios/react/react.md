@@ -5,10 +5,6 @@ sidebar_position: 1
 
 # ¿Qué es React?
 
-**Última actualización:** 15 de marzo de 2025
-
-**Autores:** Angel Mauricio Ramírez Herrera
-
 React es una **biblioteca de JavaScript** enfocada en la construcción de interfaces de usuario reutilizables basadas en componentes. Utiliza un enfoque declarativo y eficiente para actualizar la interfaz de manera óptima, lo que lo hace ideal para aplicaciones de alto rendimiento.
 
 ## ¿Por qué aprender React?
@@ -22,3 +18,10 @@ React es una **biblioteca de JavaScript** enfocada en la construcción de interf
 ## Para Terminar...
 
 Es importante leer la siguiente [documentación oficial de React](https://react.dev/learn), ya que nos ayuda a comprender el 80% de las bases de los conceptos que se usarán durante el laboratorio. **Tiempo de Lectura: 1hr**
+
+### Historial de cambios
+
+| **Tipo de Versión** | **Descripción**                       | **Fecha** | **Colaborador**                |
+| ------------------- | ------------------------------------- | --------- | ------------------------------ |
+| **1.0**             | Creación del documento                | 15/3/2025 | Angel Mauricio Ramírez Herrera |
+| **1.1**             | Agregar tabla de historial de cambios | 08/5/2025 | Carlos Iván Fonseca Mondragón  |
