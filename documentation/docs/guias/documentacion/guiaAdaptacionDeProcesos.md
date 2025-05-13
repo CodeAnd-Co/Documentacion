@@ -16,7 +16,7 @@ La organización McDonald's establece que todos los alimentos que se sirvan en e
 Como se presenta en el ejemplo, en ambos casos se sigue el proceso de acompañar el combo de hamburguesa con alguna botana; lo que cambia es el contexto en el que se presenta, pues en el Oriente es más común acompañar los alimentos con arroz.
 
 #### ¿Cómo se adapta un proceso?
-1. Identifica el proceso que vas a daptar (¿Qué voy a adaptar?)
+1. Identifica el proceso que vas a adaptar (¿Qué voy a adaptar?)
 2. Identifica el porqué se definirá la adaptación (¿Por qué lo voy a adaptar?)
 3. Identifica quienes van a tener que seguir la adaptación del nuevo proceso (¿Quién va a ser afectado por esta adaptación?)
 4. Identifica la duración de esta adaptación(¿Cuanto tiempo se seguira esta adaptación?)
