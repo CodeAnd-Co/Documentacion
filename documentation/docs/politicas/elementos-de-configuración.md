@@ -1,5 +1,5 @@
 ---
-title: Política de identificación de elementos de Configuración
+title: Política de identificación de elementos de configuración
 sidebar_position: 4
 ---
 
@@ -38,9 +38,9 @@ Una entidad o entidades estarán sujetas a la gestión de la configuración si c
 
 ---
 
-## 5. Matriz de Identificación de Elementos de Configuración
+## 5. Matriz de identificación de elementos de configuración
 
-La **Matriz de Identificación de Elementos de Configuración** constituye el instrumento central para registrar y controlar la información de cada ítem. La estructura recomendada (o ejemplo de columnas) es la siguiente:
+La **Matriz de identificación de elementos de configuración** constituye el instrumento central para registrar y controlar la información de cada ítem. La estructura recomendada (o ejemplo de columnas) es la siguiente:
 
 1. **Identificador (ID):**  
    - Código único que permite rastrear el elemento de configuración de manera ágil.
@@ -67,25 +67,25 @@ La **Matriz de Identificación de Elementos de Configuración** constituye el in
 
 Adicionalmente, se pueden incluir enlaces de herramientas colaborativas (Trac, JIRA, Confluence, etc.) para mejorar la trazabilidad.
 
-### 5.1 Actualización y Mantenimiento de la Matriz
+### 5.1 Actualización y mantenimiento de la matriz
 
-- **Periodicidad de Actualización:**  
+- **Periodicidad de actualización:**  
   Se recomienda actualizar la matriz de manera inmediata cuando se añada, modifique o elimine un elemento. 
   
 - **Responsabilidad:**  
   El propietario de cada elemento es el responsable de mantener la información actualizada.
 
-## 7. Comunicación y Difusión
+## 6. Comunicación y difusión
 
-1. **Notificación Formal:**  
+1. **Notificación formal:**  
    - Cada  actualización o incorporación de un elemento a la matriz se comunicará a los equipos afectados a través de canales oficiales.
 
-## 8. Mantenimiento y Actualización de la Política
+## 7. Mantenimiento y actualización de la política
 
-- **Revisión Periódica:**  
+- **Revisión periódica:**  
   Esta política se revisará al menos una vez por todos los integrantes del departamento o tras eventos significativos (como auditorías o cambios normativos).
 
-- **Responsable de la Revisión:**  
+- **Responsable de la revisión:**  
   El equipo de Aseguramiento de Calidad o el responsable designado se encargará de actualizar y validar la política, garantizando que se mantenga alineada con las mejores prácticas, las herramientas implementadas y las necesidades del departamento.
 
 ---
@@ -95,7 +95,7 @@ Adicionalmente, se pueden incluir enlaces de herramientas colaborativas (Trac, J
 ---
 
 
-### **Notas Finales**
+### **Notas finales**
 
 - Esta política se revisará y actualizará periódicamente conforme a la evolución de los proyectos y los estándares organizacionales.
 - Cualquier modificación en esta política deberá ser aprobada por los responsables de gestión de configuración.
@@ -105,7 +105,9 @@ Adicionalmente, se pueden incluir enlaces de herramientas colaborativas (Trac, J
 
 ### Historial de cambios
 
-| **Tipo de Versión** | **Descripción**                               | **Fecha** | **Colaborador**                 |
+| **Tipo de versión** | **Descripción**                               | **Fecha** | **Colaborador**                 |
 | ------------------- | --------------------------------------------- | --------- | ------------------------------- |
-| **1.0**             | Creación de la política   | 06/04/2025  | Max Toscano y Diego Fuentes |
-| **1.1**             |  Implementar acciones correctivas |      26/04/2025        |  Max Toscano 
+| **1.0**             | Creación de la política.   | 06/04/2025  | Max Toscano y Diego Fuentes |
+| **1.1**             |  Implementar acciones correctivas. |      26/04/2025        |  Max Toscano |
+| **1.2**             |  Implementar acciones correctivas.   |      08/05/2025        |  Armando Méndez Castro |
+| **1.3**             |  Corregir ortografía.   |      08/05/2025        |  Paola Garrido |

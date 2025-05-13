@@ -142,3 +142,12 @@ jobs:
             pm2 reload ecosystem.config.js --only $PM2_PROCESS
           "
 ```
+
+---
+
+## Historial de cambios
+
+| **Tipo de versión** | **Descripción**                        | **Fecha** | **Colaborador**            |
+| ------------------- | -------------------------------------- | --------- | -------------------------- |
+| **1.0**             | Se creó la plantilla de GitHub Actions. |           | Diego Ricardo Alfaro Pinto |
+| **1.1**             | Se agregó la tabla de versionamiento.   |  08/05/2025  | Diego Ricardo Alfaro Pinto |

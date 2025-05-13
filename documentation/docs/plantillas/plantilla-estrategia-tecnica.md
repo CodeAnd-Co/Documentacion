@@ -2,8 +2,7 @@
 title: Plantilla estrategia tecnica
 ---
 
-
-# Plantilla Estrategia tecnica
+# Plantilla estrategia tecnica
 
 ## Objetivo
 
@@ -15,7 +14,7 @@ Establecer lineamientos claros para el desarrollo, asegurando calidad y consiste
 
 Utilizaremos 2 repositorios separados, tanto para el backend como para el frontend de la aplicación, de esta manera nuestro sistema puede ser modular.
 
-## Estrategia de Ramas
+## Estrategia de ramas
 
 ![alt text](/img/manejo-de-ramas.png)
 
@@ -30,7 +29,7 @@ Utilizaremos 3 ramas principales:
 
 ---
 
-## Gestión de Requerimientos
+## Gestión de requerimientos
 
 ### Objetivo
 
@@ -42,11 +41,11 @@ La priorización de requerimientos se puede encontrar aquí:
 
 [Insertar documento con la priorización de sus requerimientos]
 
-La especificación de historias de usuario se llevarán a cabo teniendo en cuenta la definición de [**Done**](/docs/intro/definicion-de-done/) y [**Ready**](/docs/intro/definicion-de-ready/) que se encuentran en este archivo:
+La especificación de historias de usuario se llevarán a cabo teniendo en cuenta la definición de Done (inserte enlace aquí) y Ready (inserte enlace aquí).
 
 ---
 
-## Gestión de Calidad y Pruebas
+## Gestión de calidad y pruebas
 
 ### Objetivo
 
@@ -54,7 +53,7 @@ Garantizar un software confiable a través de buenas prácticas de aseguramiento
 
 ---
 
-### Estrategia de Pruebas
+### Estrategia de pruebas
 
 La estrategia que se seguirá para las pruebas será la siguiente:
 
@@ -104,11 +103,11 @@ Cada módulo contiene:
 
 Sección opcional para manejar vistas en caso de ser necesario.
 
-### 4. Pruebas Unitarias
+### 4. Pruebas unitarias
 
 Cada módulo puede incluir pruebas unitarias para garantizar su correcto funcionamiento.
 
-### 5. Archivos Principales
+### 5. Archivos principales
 
 - app.js: Punto de entrada del servidor.
 - node_modules: Dependencias del proyecto.
@@ -117,10 +116,11 @@ Cada módulo puede incluir pruebas unitarias para garantizar su correcto funcion
 
 ### Historial de cambios
 
-| **Tipo de Versión** | **Descripción**                               | **Fecha** | **Colaborador**                 |
-| ------------------- | --------------------------------------------- | --------- | ------------------------------- |
-| **1.0**             | Creación del plantilla   | 06/03/2025  | Diego Ricardo Alfaro Pinto|
-| **1.1**             | Refactorización. Cambio en las entradas. Cambio en el proceso. Cambio en las salidas.   | 06/03/2025  | Emiliano Valdivia Lara	 |
- **1.2**      | Actualizar localidad de imagenes y links a esas imagenes para evitar errores en docusaurus | 07/03/2025  |  Diego Ricardo Alfaro Pinto |
-| **1.3**             |  Arreglar links rotos  | 10/03/2025  | Ángel Mauricio Ramírez Herrera |
-| **1.4**             | Fix de links  | 16/03/2025  | Diego Fuentes |
+| **Tipo de versión** | **Descripción**                                                                            | **Fecha**  | **Colaborador**                |
+| ------------------- | ------------------------------------------------------------------------------------------ | ---------- | ------------------------------ |
+| **1.0**             | Creación del plantilla.                                                                     | 06/03/2025 | Diego Ricardo Alfaro Pinto     |
+| **1.1**             | Refactorización. Cambio en las entradas. Cambio en el proceso. Cambio en las salidas.      | 06/03/2025 | Emiliano Valdivia Lara         |
+| **1.2**             | Actualizar localidad de imagenes y links a esas imagenes para evitar errores en docusaurus. | 07/03/2025 | Diego Ricardo Alfaro Pinto     |
+| **1.3**             | Arreglar links rotos.                                                                       | 10/03/2025 | Ángel Mauricio Ramírez Herrera |
+| **1.4**             | Fix de links.                                                                               | 16/03/2025 | Diego Fuentes                  |
+| **1.5**             | Corregir ortografía.                                                                               | 08/05/2025 | Paola Garrido                  |

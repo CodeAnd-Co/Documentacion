@@ -1,7 +1,6 @@
 ---
-title: Plantila Plan STP
+title: Plantila plan STP
 ---
-
 
 # Introducción
 
@@ -9,7 +8,7 @@ title: Plantila Plan STP
 
 ### Alcance
 
-### Definiciones, Acrónimos y Abreviaciones
+### Definiciones, acrónimos y abreviaciones
 
 Ejemplos:
 
@@ -19,30 +18,30 @@ Ejemplos:
 - **MVP**: Producto Mínimo Viable (Minimum Viable Product).
 - **MBI**: Incremento Mínimo de Negocio (Minimum Business Increment).
 
-# Objetivos de las Pruebas
+# Objetivos de las pruebas
 
 Ejemplos:
 
 - Verificar la funcionalidad completa de la aplicación según los requisitos especificados.
 - Comprobar la seguridad de los datos de los usuarios y la implementación correcta del RBAC.
 
-# Alcance de las Pruebas
+# Alcance de las pruebas
 
-### Dentro del Alcance
-
-- Ejemplo 1
-- Ejemplo 2
-
-### Fuera del Alcance
+### Dentro del alcance
 
 - Ejemplo 1
 - Ejemplo 2
 
-# Aproximación a las Pruebas
+### Fuera del alcance
 
-### Estrategia de Pruebas
+- Ejemplo 1
+- Ejemplo 2
 
-### Tipos de Pruebas
+# Aproximación a las pruebas
+
+### Estrategia de pruebas
+
+### Tipos de pruebas
 
 Ejemplos:
 
@@ -51,7 +50,7 @@ Ejemplos:
 - Pruebas de Rendimiento.
 - Pruebas de Seguridad.
 
-### Niveles de Pruebas
+### Niveles de pruebas
 
 Ejemplos:
 
@@ -59,9 +58,9 @@ Ejemplos:
 - Pruebas de Integración.
 - Pruebas del Sistema.
 
-# Criterios de las Pruebas
+# Criterios de las pruebas
 
-### Criterios de Aceptación
+### Criterios de aceptación
 
 Ejemplos:
 
@@ -70,12 +69,12 @@ Ejemplos:
 - La aplicación debe manejar eficientemente hasta 1,000 usuarios simultáneos.
 - El 80% de los usuarios deben calificar la usabilidad como satisfactoria o mejor.
 
-### Criterios de Suspensión
+### Criterios de suspensión
 
 - Fallos críticos que impidan el funcionamiento básico de la aplicación.
 - Problemas de seguridad que comprometan los datos de los usuarios.
 
-# Entregables de las Pruebas
+# Entregables de las pruebas
 
 Ejemplos:
 
@@ -83,7 +82,7 @@ Ejemplos:
 - Scripts de pruebas automatizadas.
 - Datos de prueba.
 
-# Recursos para Pruebas
+# Recursos para pruebas
 
 Ejemplos:
 
@@ -93,7 +92,7 @@ Ejemplos:
 
 **Dispositivos**:
 
-# Ambientes de Prueba
+# Ambientes de prueba
 
 En esta sección se deben describir los entornos en los que se llevarán a cabo las pruebas. Es importante incluir:
 
@@ -101,7 +100,7 @@ En esta sección se deben describir los entornos en los que se llevarán a cabo 
 - Configuración de los entornos, como bases de datos de prueba y servidores.
 - Dispositivos o plataformas en las que se ejecutarán las pruebas (iOS, Android, navegadores, etc.).
 
-# Casos de Prueba
+# Casos de prueba
 
 Aquí se documentan los casos de prueba diseñados para validar la funcionalidad del software. Se debe incluir:
 
@@ -109,7 +108,7 @@ Aquí se documentan los casos de prueba diseñados para validar la funcionalidad
 - Criterios para seleccionar los casos de prueba según el alcance del sistema.
 - Ubicación o referencia donde se pueden consultar los casos de prueba detallados.
 
-# Riesgos y Mitigación
+# Riesgos y mitigación
 
 Identificación de posibles riesgos que podrían afectar las pruebas y sus estrategias de mitigación. Se deben considerar:
 
@@ -117,7 +116,7 @@ Identificación de posibles riesgos que podrían afectar las pruebas y sus estra
 - Problemas de compatibilidad entre dispositivos o plataformas.
 - Estrategias para minimizar los riesgos, como priorizar pruebas críticas o realizar pruebas tempranas.
 
-# Manejo de las Pruebas
+# Manejo de las pruebas
 
 Explicación de cómo se gestionarán los defectos y los resultados de las pruebas. Se debe detallar:
 
@@ -125,7 +124,7 @@ Explicación de cómo se gestionarán los defectos y los resultados de las prueb
 - Procedimientos para informar a los desarrolladores y diseñadores sobre los resultados de las pruebas.
 - Herramientas utilizadas para registrar y dar seguimiento a los defectos.
 
-# Aprobación y Firma
+# Aprobación y firma
 
 Proceso de validación del plan de pruebas. Se debe incluir:
 
@@ -145,7 +144,9 @@ Espacio para incluir referencias adicionales o documentación complementaria, co
 
 ### Historial de cambios
 
-| **Tipo de Versión** | **Descripción**                               | **Fecha** | **Colaborador**                 |
-| ------------------- | --------------------------------------------- | --------- | ------------------------------- |
-| **1.0**             | Agregar plantill de plan STP   | 06/03/2025  | Diego Ricardo Alfaro Pinto|
-| **1.1**             | Añade descripcion del disgrama de paquetes  | 06/03/2025  | Emiliano Valdivia |
+| **Tipo de versión** | **Descripción**                            | **Fecha**  | **Colaborador**               |
+| ------------------- | ------------------------------------------ | ---------- | ----------------------------- |
+| **1.0**             | Agregar plantilla de plan STP.              | 06/03/2025 | Diego Ricardo Alfaro Pinto    |
+| **1.1**             | Añade descripcion del disgrama de paquetes. | 06/03/2025 | Emiliano Valdivia             |
+| **1.2**             | Corrección de error ortográfico.            | 08/05/2025 | Carlos Iván Fonseca Mondragón |
+| **1.2**             | Corrección de  ortografía.            | 08/05/2025 | Paola María Garrido Montes |

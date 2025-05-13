@@ -1516,7 +1516,7 @@ Para poder configurar API gateway se uso este video, el cual también explica co
 
 #### CI/CD
 
-Para el despliegue continuo se utilizo un script de github actions el cual se encuentra en la carpeta .github/workflows, el cual permite automatizar la actualización de los archivos manualmente y no tener que recargar nuestro proceso, para consultar el script en detalle [guia de github actions](../../../guias/github/github-actions.md)
+Para el despliegue continuo se utilizo un script de github actions el cual se encuentra en la carpeta .github/workflows, el cual permite automatizar la actualización de los archivos manualmente y no tener que recargar nuestro proceso, para consultar el script en detalle [plantilla de github actions](../../../plantillas/plantilla-github-actions.md)
 
 ## Despliegue del frontend
 

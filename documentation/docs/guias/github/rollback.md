@@ -19,7 +19,7 @@ Esta es una guía para realizar un rollback de manera correcta en GitHub, útil 
 
 Dependiendo de la situación, puedes optar por distintas formas de hacer rollback:
 
-### Opción 1: Revertir un Commit
+### Opción 1: Revertir un commit
 
 Ideal si deseas "deshacer" cambios pero mantener el historial de commits limpio.
 
@@ -125,4 +125,4 @@ git checkout -b respaldo-antes-del-rollback
 
 | **Tipo de versión** | **Descripción**                    | **Fecha** | **Colaborador**        |
 |---------------------|------------------------------------| --------- | ---------------------- |
-| 1.0 | Se creó la primera versión de la guía | 28/04/2025 | Daniel Contreras Chávez |
+| 1.0 | Se creó la primera versión de la guía. | 28/04/2025 | Daniel Contreras Chávez |

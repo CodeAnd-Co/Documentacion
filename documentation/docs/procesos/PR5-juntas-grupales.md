@@ -15,39 +15,36 @@ sidebar_position: 5
 
 ### Entradas
 
-1. Fecha de la junta.
-2. Motivo de la junta.
-3. Presentación de reportes de estado.
-4. Necesidad de institucionalizar una práctica específica del CMMI.
+1. Presentación de reportes de estado.
+2. Capacitación en CMMI.
 
 ---
 
 ### Proceso
 
-| Fase             | Descripción                                                                                                                                                       | Responsables              | Meta y práctica específica del CMMI                                       |
-| ---------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------- | ------------------------------------------------------------------------- |
-| **Preparación**  | Enviar encuesta para consultar los temas de la junta.                                                                                                             | Presentadores de la junta | **RD, SP 1.1** (Recopilación de necesidades y expectativas)               |
-|                  | Llenar la plantilla de juntas efectivas:<u>_[Plantilla](https://docs.google.com/document/d/1kQ_WNJF6ZAqBEqnu3a1I7ls6aLCqXvPdEHlpKwQGfEM/edit?usp=drive_link)_</u>. | Presentadores de la junta | **OPD, SP 1.3** (Implementación de procesos organizacionales)             |
-|                  | Definir el objetivo y la agenda de la junta.                                                                                                                       | Presentadores de la junta |                     |
-|                  | Enviar la convocatoria con al menos 12 horas de anticipación, indicando horario y lugar.                                                                           | Presentadores de la junta | **PMC, SP 1.2** (Definir compromisos con el equipo)                       |
-|                  | Llegar o conectarse al espacio asignado. De no ser posible, seguir el [Proceso de Justificación de Faltas](docs/procesos/PR22-justificar-falta.md). En caso de no haber justificado la falta, está la opción de seguir el [Proceso para Recuperar asistencias](/docs/procesos/PR23-recuperar-asistencia.md) | Todos                     | **OPD, SP 1.5** (Garantizar el cumplimiento de procesos organizacionales) |
-|                  | Esperar 5 minutos de tolerancia para iniciar.                                                                                                                      | Todos                     | **PMC, SP 1.2** (Seguimiento de compromisos del equipo)                   |
-|                  | 15 minutos después del horario definido, registrar la asistencia de los presentes.                                                                                 | Presentadores de la junta | **MA, SP 1.1** (Registro de datos para medición y análisis)               |
-|                  | Establecer un temporizador con el tiempo acordado.                                                                                                                 | Presentadores de la junta | **PMC, SP 1.3** (Monitoreo del progreso y desempeño)                      |
-| **Presentación** | Comunicar el objetivo de la junta.                                                                                                                                 | Presentadores de la junta | **PP, SP 1.1** (Establecimiento de objetivos del proyecto)                |
-|                  | Abordar los temas establecidos en la agenda.                                                                                                                       | Presentadores de la junta | **PMC, SP 1.3** (Monitoreo del estado del proyecto)                       |
-| **Diálogo**      | Brindar espacio a los miembros para expresar ideas y dudas.                                                                                                        | Presentadores de la junta | **RD, SP 1.1** (Recopilación de necesidades y expectativas)               |
-|                  | Tomar nota de la retroalimentación recibida en una minuta.                                                                                                         | Presentadores de la junta | **VER, SP 1.3** (Registro y análisis de revisiones)                       |
-| **Cierre**       | Resumir los acuerdos alcanzados.                                                                                                                                   | Presentadores de la junta | **PMC, SP 1.5** (Evaluación de avances y resultados)                      |
-|                  | Definir próximos pasos y responsables.                                                                                                                             | Presentadores de la junta | **PP, SP 1.5** (Identificación de tareas futuras)                         |
-|                  | Finalizar la junta dentro del tiempo establecido.                                                                                                                  | Presentadores de la junta | **PMC, SP 1.6** (Gestión del cumplimiento del cronograma)                 |
+| Fase              | Descripción                                                                                                                                                                                            | Responsables              | Meta y práctica específica del CMMI                                       |
+| ----------------  | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------|---------------------------------------------- |
+| **Planificación** | Copiar la <u>_[ plantilla de juntas efectivas](https://docs.google.com/document/d/1kQ_WNJF6ZAqBEqnu3a1I7ls6aLCqXvPdEHlpKwQGfEM/edit?usp=drive_link)_</u> en la carpeta de juntas del proyecto en Drive.| Moderador(es) | **PMC SP 1.2** (Monitorear compromisos contra el plan del proyecto)  |
+|                   | Definir fecha, horario, objetivo, moderador(es), apuntador, encargado del timer y los temas a tratar.                                                                                                  | Moderador(es) | |
+|                   | Crear y compartir en Mentimeter un formulario para recabar temas adicionales.                                                                                                                          | Moderador(es) | |
+|                   | Completar la agenda con actividades derivadas de los temas a tratar y sus tiempos asignados.                                                                                                           | Moderador(es) | | 
+|                   | Enviar la convocatoria con al menos 12 horas de anticipación, especificando hora y lugar.                                                                                                              | Moderador(es) | | 
+|  **Asistencia**   | Asistir o conectarse al espacio asignado. Si no es posible, seguir el [Proceso de justificación y recuperación de asistencia](../procesos/PR22-justificar-recuperar-asistencia.md).| Todos   |  **PMC SP 1.5** (Monitorear la participación de los interesados)  | 
+|                   | Esperar 5 minutos de tolerancia antes de iniciar la junta.                                                                                                                                             | Todos                     | | 
+|                   | Registrar la asistencia de los presentes 15 minutos después del horario programado.                                                                                                                    | Comité de ética | | 
+| **Presentación**  | Anunciar el inicio de la junta, activar el temporizador y abordar los temas establecidos en la agenda con los integrantes.                                                                             | Moderador(es) y encargado del timer | **PMC SP 1.6** (Revisar progreso, desempeño y problemas del proyecto)  |
+|                   | Registrar un resumen de los temas tratados, las decisiones tomadas y el porcentaje de participación IPA.                                                                                               | Apuntador         | **PMC SP 1.6** (Revisar progreso, desempeño y problemas del proyecto) **PMC SP 1.5** (Monitorear la participación de los interesados)   |
+| **Cierre**        | Registrar las conclusiones en la plantilla, indicando si se cumplió el objetivo, las tareas asignadas y los temas pendientes.                                                                          |  Apuntador        | **PMC SP 1.7** (Revisar resultados del proyecto en los hitos definidos)  | 
 
 ---
 
+
 ### Salidas
 
-1. Minuta de retroalimentación.
-2. Acuerdos establecidos y responsables asignados.
+1. Documento de minutas "Juntas efectivas".
+2. Repositorio de asistencias.
+3. Formato de recuperación de asistencias.
+4. Formato de justificación de faltas.
 
 ---
 
@@ -55,14 +52,15 @@ sidebar_position: 5
 
 1. Tiempo de ejecución de la junta vs. tiempo planeado.
 2. Porcentaje de asistencia.
-3. Número de acuerdos alcanzados por junta.
-4. Retroalimentación de los asistentes sobre la efectividad de la junta.
+3. Porcentaje de participación IPA.
+
 
 ---
 
 | Versión | Descripción del cambio                | Fecha    | Colaborador                |
 | ------- | ------------------------------------- | -------- | -------------------------- |
-| **1.0**     | Creación del proceso | 03/03/2025 | Daniel Queijeiro Albo <br/> Ángel Mauricio Ramírez Herrera <br/> Valeria Zúñiga Mendoza |
-| **1.1**     | Refactorización          | 18/04/2025 | Diego Fuentes |
-| **1.2** | Correcciones PMC 1.1 | 22/04/2025 | Juan Pablo Chávez Leal |
-| **1.3** | Agregar entradas y referenciar a los procesos PR22 y PR23 | 25/04/2025 | Ian Julián Estrada Castro | 
+| **1.0**     | Creación del proceso.| 03/03/2025 | Daniel Queijeiro Albo <br/> Ángel Mauricio Ramírez Herrera <br/> Valeria Zúñiga Mendoza |
+| **1.1**     | Refactorización.         | 18/04/2025 | Diego Fuentes |
+| **1.2** | Correcciones PMC 1.1.| 22/04/2025 | Juan Pablo Chávez Leal |
+| **1.3** | Agregar entradas y referenciar a los procesos PR22 y PR23.| 25/04/2025 | Ian Julián Estrada Castro | 
+| **1.4** | Actualizar proceso.| 11/05/2025 | Paola María Garrido Montes | 

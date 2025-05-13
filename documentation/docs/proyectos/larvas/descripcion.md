@@ -1,6 +1,6 @@
 ---
 title: Descripción General
-sidebar_position: 1
+sidebar_position: 2
 ---
 
 # Descripción General del Proyecto
