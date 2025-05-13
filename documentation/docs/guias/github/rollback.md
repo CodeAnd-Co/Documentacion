@@ -119,6 +119,22 @@ git checkout -b respaldo-antes-del-rollback
 ```
 - Automatizaciones: Si tienes GitHub Actions configurados para desplegar automáticamente en push, el rollback puede disparar un despliegue automático. Verifica si es necesario desactivar temporalmente los workflows.
 
+## Cómo hacer rollback de un ítem de la wiki
+
+1. Crear una nueva rama que se identificará de la siguiente manera: `rollback/<iniciales del que hace rollback>_<item al que se le hará rollback>_<version a la que se regresará>`
+
+Ejemplo: `rollback/DC_guia-de-rollback_v1.0`
+
+2. Identificar el ítem del que harás rollback
+3. Moverse hasta la parte de abajo del ítem, dónde se encuentra la tabla de versionamiento e identificar la fecha de la versión a la que se quiere regresar.
+4. Entrar a las Pull Request Cerradas del repositorio de Github.
+5. Filtrar las Pull Request por fecha e introducir la fecha de la versión a la que se quiere regresar.
+6. Buscar la Pull Request específica del ítem. La puedes identificar por el nombre de la rama.
+7. Entrar a la Pull request y buscar el ítem en los archivos.
+8. Copiar el contenido del ítem antiguo y pegarlo en el nuevo.
+9. Borrar los registros posteriores a los de la versión a la que se le hizo rollback.
+10. Guardar los cambios, hacer el commit y el push
+
 ---
 
 ## Historial de cambios
