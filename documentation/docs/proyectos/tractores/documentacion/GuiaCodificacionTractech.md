@@ -8,7 +8,7 @@ sidebar_position: 0
 ---
 
 ### Objetivo
-El proósito de la guía es documentar la forma de trabajo de TracTech, además de clarificar las tecnologías que se utilizan y como el equipo desempeña sus tareas.
+El propósito de la guía es documentar la forma de trabajo de TracTech, además de clarificar las tecnologías que se utilizan y como el equipo desempeña sus tareas.
 
 ### Estructura
 El proyecto cuenta actualmente con dos repositorios, **App-Local-TracTech** y el repositorio **Backend-Desacoplado-TracTech**.
