@@ -3,8 +3,7 @@ title: Guía para adaptación de procesos
 sidebar_position: 3
 ---
 
-# Guía para la adaptación de procesos
-
+## Objetivo
 Esta guía tiene como propósito plantear qué son los procesos adaptables y cómo adaptar un proceso dentro del departamento Code&Co.
 
 ### ¿Qué es un proceso adaptable?
@@ -22,13 +21,20 @@ Durante los recesos entre clases (por ejemplo, de 9:50 a 10:10 a.m. y de 12:50 a
 
     * Se promueven combos prearmados (ej. café + panecillo) con preparación rápida para disminuir tiempos de atención.
 
-#### ¿Cómo se adapta un proceso?
-1. Identifica el proceso que vas a daptar (¿Qué voy a adaptar?)
-2. Identifica el porqué se definira la adaptación (¿Por qué lo voy a adaptar?)
-3. Identifica quienes van a tener que seguir la adaptación del nuevo proceso (¿Quién va a ser afectado por esta adaptación?)
-4. Identifica la duración de esta adaptación(¿Cuanto tiempo se seguira esta adaptación?)
-5. ¿Cómo lo vas a adaptar?
-6. Una vez se hayan identificado las secciones anteriores, registralos en la hoja de calculo titulada 
+
+## Procedimiento
+### Paso 1
+Identifica el proceso que vas a daptar (¿Qué voy a adaptar?)
+### Paso 2 
+Identifica el porqué se definira la adaptación (¿Por qué lo voy a adaptar?)
+### Paso 3. 
+Identifica quienes van a tener que seguir la adaptación del nuevo proceso (¿Quién va a ser afectado por esta adaptación?)
+### Paso 4 
+Identifica la duración de esta adaptación(¿Cuanto tiempo se seguira esta adaptación?)
+### Paso 5 
+¿Cómo lo vas a adaptar?
+### Paso 6
+Una vez se hayan identificado las secciones anteriores, registralos en la hoja de calculo titulada 
 * Procesos adaptados:(Nombre del proyecto)
 
 ---
