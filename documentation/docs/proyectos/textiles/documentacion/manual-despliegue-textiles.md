@@ -212,3 +212,10 @@ pm2 stop <id|nombre>
 ## Anexos
 
 - Documentación de endpoints: ver Swagger accediendo al URL del backend + `/api-docs`.
+
+---
+
+Historial
+| **Tipo de Versión** | **Descripción** | **Fecha** | **Colaborador** |
+| ------------------- | --------------| ---------- | --------------- |
+| **1.0** | Crear manual de despliegue | 13/05/2025 | Diego Alfaro |
