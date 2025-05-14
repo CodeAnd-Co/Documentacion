@@ -24,7 +24,7 @@ Durante los recesos entre clases (por ejemplo, de 9:50 a 10:10 a.m. y de 12:50 a
 
 ## Procedimiento
 ### Paso 1
-Identifica el proceso que vas a daptar (¿Qué voy a adaptar?)
+Identifica el proceso que vas a adaptar (¿Qué voy a adaptar?)
 ### Paso 2 
 Identifica el porqué se definira la adaptación (¿Por qué lo voy a adaptar?)
 ### Paso 3. 
