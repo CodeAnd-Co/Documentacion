@@ -9,24 +9,32 @@ Esta guía tiene como propósito plantear qué son los procesos adaptables y có
 
 ### ¿Qué es un proceso adaptable?
 
-Un proceso adaptable es aquel que se puede modificar para ajustarse al contexto actual de las ramas de la organización. Para mayor claridad, presento el siguiente ejemplo:
+☕ Proceso: Venta de café durante recesos entre clases
+Proceso estándar:
+    * Los estudiantes llegan, hacen fila, ordenan en caja, pagan y esperan su bebida.
+    * Un barista prepara las bebidas y otro atiende en caja.
 
-La organización McDonald's establece que todos los alimentos que se sirvan en el Occidente deben acompañar sus combos de hamburguesa con papas fritas. Sin embargo, en el Oriente se ofrece la opción de acompañar los combos de hamburguesa con arroz.
+Proceso adaptable:
 
-Como se presenta en el ejemplo, en ambos casos se sigue el proceso de acompañar el combo de hamburguesa con alguna botana; lo que cambia es el contexto en el que se presenta, pues en el Oriente es más común acompañar los alimentos con arroz.
+Durante los recesos entre clases (por ejemplo, de 9:50 a 10:10 a.m. y de 12:50 a 1:10 p.m.), la cafetería adapta el proceso de la siguiente manera:
+
+    * Se habilita un punto adicional de pago solo para bebidas básicas (americano, latte, espresso).
+
+    * Se promueven combos prearmados (ej. café + panecillo) con preparación rápida para disminuir tiempos de atención.
 
 #### ¿Cómo se adapta un proceso?
-1. Identifica el proceso que vas a adaptar (¿Qué voy a adaptar?)
-2. Identifica el porqué se definirá la adaptación (¿Por qué lo voy a adaptar?)
+1. Identifica el proceso que vas a daptar (¿Qué voy a adaptar?)
+2. Identifica el porqué se definira la adaptación (¿Por qué lo voy a adaptar?)
 3. Identifica quienes van a tener que seguir la adaptación del nuevo proceso (¿Quién va a ser afectado por esta adaptación?)
-4. Identifica la duración de esta adaptación (¿Cuánto tiempo se seguirá esta adaptación?)
-5. Una vez se hayan identificado las secciones anteriores, registralos en la hoja de calculo titulada 
+4. Identifica la duración de esta adaptación(¿Cuanto tiempo se seguira esta adaptación?)
+5. ¿Cómo lo vas a adaptar?
+6. Una vez se hayan identificado las secciones anteriores, registralos en la hoja de calculo titulada 
 * Procesos adaptados:(Nombre del proyecto)
 
 ---
 
 ## Historial de cambios
 
-| **Tipo de versión** | **Descripción** | **Fecha**  | **Colaborador** |
+| **Tipo de awversión** | **Descripción** | **Fecha**  | **Colaborador** |
 | ------------------- | --------------- | ---------- | --------------- |
 | **1.0** | Creación de la guia de procesos adaptables | 13/05/2025 | Ethan Luna Cadó|
