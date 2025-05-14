@@ -33,7 +33,7 @@
 
 ## Entornos de Despliegue
 
-Una vez configurada el api gateway y amplify, se podran obtener los URLs de cada ambiente
+Una vez configurada el API gateway y Amplify, se podran obtener los URL's de cada ambiente
 
 | Entorno    | URL Backend                                               | URL Frontend                                     | Rama GitHub | Puerto en EC2 |
 | ---------- | --------------------------------------------------------- | ------------------------------------------------ | ----------- | ------------- |
@@ -161,8 +161,33 @@ pm2 ls
 
 **Ver logs en vivo:**
 
+Esto sirve para saber si la aplicacion se desplego correctamente.
+
 ```bash
 pm2 logs
+```
+
+Este es un mensaje de ejemplo cuando esta corriendo correctamente.
+
+```bash
+/home/ubuntu/.pm2/logs/app-production-out-0.log last 15 lines:
+0|app-prod | Server running on port 3000 3000 in production mode.
+0|app-prod | Server running on port 3000 3000 in production mode.
+0|app-prod | Server running on port 3000 3000 in production mode.
+0|app-prod | Server running on port 3000 3000 in production mode.
+0|app-prod | Server running on port 3000 3000 in production mode.
+0|app-prod | Server corriendo en puerto: 3000 3000 en ambiente de production.
+0|app-prod | Server corriendo en puerto: 3000 3000 en ambiente de production.
+
+/home/ubuntu/.pm2/logs/app-staging-out-1.log last 15 lines:
+1|app-stag | Server running on port 4000 4000 in staging mode.
+1|app-stag | Server running on port 4000 4000 in staging mode.
+1|app-stag | Server running on port 4000 4000 in staging mode.
+1|app-stag | Server running on port 4000 4000 in staging mode.
+1|app-stag | Server running on port 4000 4000 in staging mode.
+1|app-stag | Server corriendo en puerto: 4000 4000 en ambiente de staging.
+1|app-stag | Server corriendo en puerto: 4000 4000 en ambiente de staging.
+1|app-stag | Server corriendo en puerto: 4000 4000 en ambiente de staging.
 ```
 
 **Reiniciar proceso:**
