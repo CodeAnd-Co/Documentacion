@@ -26,7 +26,7 @@ Durante los recesos entre clases (por ejemplo, de 9:50 a 10:10 a.m. y de 12:50 a
 ### Paso 1
 Identifica el proceso que vas a adaptar (¿Qué voy a adaptar?)
 ### Paso 2 
-Identifica el porqué se definira la adaptación (¿Por qué lo voy a adaptar?)
+Identifica el porqué se definirá la adaptación (¿Por qué lo voy a adaptar?)
 ### Paso 3. 
 Identifica quienes van a tener que seguir la adaptación del nuevo proceso (¿Quién va a ser afectado por esta adaptación?)
 ### Paso 4 
