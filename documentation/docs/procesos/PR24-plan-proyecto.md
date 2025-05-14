@@ -1,28 +1,30 @@
 ---
-title: PR24 Hacer un plan de proyecto
+title: PR24 Proceso para planear y mantener un proyecto
 sidebar_position: 24
 ---
 
-# Proceso para hacer un plan de proyecto
+# Proceso para planear y mantener un proyecto
 
 ---
 
 ### Objetivo
 
-- Llegar a la milestones "Stakeholder consensus"
-  donde planteas toda la estrategia y ves si el stakeholder está de acuerdo.
-  O sea que en este proceso debes definir toda la estrategia del proyecto.
-- ademas considera el monitoreo y que cada plan aporte al mismo objetivo y tenga el mismo alcance.
+- Definir la estrategia del proyecto, asegurando el alineamiento y monitoreo de todos los planes, la comprensión común del alcance y la validación de la estrategia con el stakeholder mediante la milestone “Stakeholder consensus”.
 
 ---
 
 ### Entradas
 
-1. ??
+1. Proyecto inicial con un cliente
+2. Plantilla del Plan de Proyecto
+3. Plantillas de: SRS, Plan de Gestión de Datos, Plan de Pruebas, Plan de Comunicación, Plan de Recursos, Plan de Capacitación
+4. Política de gestión de datos y estándar de arquitectura
+5. Documento de ciclos de vida
+6. Riesgos iniciales
 
 ---
 
-### Proceso para planear proyecto /Proceso de la fase de Inception del Ciclo de Vida DAD Básico
+### Proceso
 
 | **Fase**                                 | **Descripción**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     | **Responsable**                | **Meta y práctica específica del CMMI**                                                                                                                                                                                                                                                                                                                        |
 | ---------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -49,18 +51,17 @@ sidebar_position: 24
 
 ### Salidas
 
-1. **Plan de valor ganado** con presupuesto y cronograma definidos y ajustables.
-2. **Lista de tareas priorizadas y estimadas**, con su asignación de fechas.
-3. **Plan de Entrega** con fechas de finalización de las fases y los hitos.
-4. WBS del proyecto
-5. Ciclo de vida definido
-6. Documento de involucramiento de los stakeholders
-7. Plan de comunicación
-8. Plan de pruebas
-9. Plan de gestión de datos
-10. Planes de capacitación
-11. Plan de recursos
-12. Acta de compromiso con el plan
+1. **Plan de valor ganado** con lista de tareas priorizadas, estimadas y con fechas.
+2. **Plan de Entrega** con fechas de finalización de las fases y los hitos.
+3. WBS del proyecto
+4. Ciclo de vida definido
+5. Documento de involucramiento de los stakeholders
+6. Plan de comunicación
+7. Plan de pruebas
+8. Plan de gestión de datos
+9. Planes de capacitación
+10. Plan de recursos
+11. Acta de compromiso con el plan firmada
 
 ---
 
