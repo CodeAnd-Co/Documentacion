@@ -35,17 +35,17 @@ Los requisitos funcionales del sistema describen una variedad de acciones que lo
 - [**RF1**](RF1.md): Super Administrador Crea Usuario - `Done`
 - [**RF2**](RF2.md): Super Administrador Consulta Lista de Usuarios - `Done`
 - [**RF3**](RF3.md): Super Administrador Lee Usuario - `Done`
-- [**RF5**](RF5.md): Super Administrador Elimina Usuario - `Ready`
-- [**RF6**](RF6.md): Super Administrador Crea Rol - `Ready`
+- [**RF5**](RF5.md): Super Administrador Elimina Usuario - `Done`
+- [**RF6**](RF6.md): Super Administrador Crea Rol - `Done`
 - [**RF7**](RF7.md): Super Administrador Consulta Lista de Roles - `Done`
 - [**RF10**](RF10.md): Super Administrador Elimina Rol - `Done`
 - [**RF11**](RF11.md): Super Administrador Crea Cliente - `Ready`
 - [**RF12**](RF12.md): Super Administrador Consulta Lista de Clientes - `Done`
 - [**RF13**](RF13.md): Super Administrador, Lee Cliente - `Done`
-- [**RF14**](RF14.md): Super Administrador Actualiza Cliente
+- [**RF14**](RF14.md): Super Administrador Actualiza Cliente - `Done`
 - [**RF15**](RF15.md): Super Administrador Elimina Cliente `Done`
 - [**RF16**](RF16.md): Super Administrador Crea Empleado
-- [**RF17**](RF17.md): Super Administrador Consulta Lista de Empleados - `Ready`
+- [**RF17**](RF17.md): Super Administrador Consulta Lista de Empleados - `Done`
 - [**RF18**](RF18.md): Super Administrador Lee Empleado - `Done`
 - [**RF19**](RF19.md): Super Administrador Actualiza Empleado
 - [**RF20**](RF20.md): Super Administrador Elimina Empleado - `Done`
@@ -61,19 +61,19 @@ Los requisitos funcionales del sistema describen una variedad de acciones que lo
 - [**RF32**](RF32.md): Super Administrador, Cliente Consulta Lista de Set de Cuotas - `Done`
 - [**RF33**](RF33.md): Super Administrador, Cliente Lee Set de Cuotas
 - [**RF34**](RF34.md): Super Administrador Actualiza Set de Cuotas
-- [**RF35**](RF35.md): Super Administrador Elimina Set de Cuotas - `Ready`
+- [**RF35**](RF35.md): Super Administrador Elimina Set de Cuotas - `Done`
 - [**RF36**](RF36.md): Super Administrador Crea Evento
-- [**RF37**](RF37.md): Super Administrador, Cliente Consulta Lista de Eventos - `Ready`
-- [**RF38**](RF38.md): Super Administrador, Cliente Lee Evento - `Ready`
-- [**RF40**](RF40.md): Super Administrador, Cliente Elimina Evento - `Ready`
+- [**RF37**](RF37.md): Super Administrador, Cliente Consulta Lista de Eventos - `Done`
+- [**RF38**](RF38.md): Super Administrador, Cliente Lee Evento - `Done`
+- [**RF40**](RF40.md): Super Administrador, Cliente Elimina Evento - `Done`
 - [**RF42**](RF42.md): Super Administrador, Cliente Consulta Lista de Sets de Productos - `Done`
 - [**RF43**](RF43.md): Super Administrador, Cliente Lee Set de Productos - `Done`
 - [**RF45**](RF45.md): Super Administrador Elimina Set de Productos -`Done`
 - [**RF46**](RF46.md): Super Administrador Crea Categoria de Productos - `Done`
 - [**RF47**](RF47.md): Super Administrador Consulta Lista de Categorias de Productos - `Done`
 - [**RF50**](RF50.md): Elimina Categoria de Productos - `Done`
-- [**RF52**](RF52.md): Super Administrador, Cliente Consulta Lista de Tipos de Pago
-- [**RF54**](RF54.md): Super Administrador Actualiza Tipo de Pago
+- [**RF52**](RF52.md): Super Administrador, Cliente Consulta Lista de Tipos de Pago - `Done`
+- [**RF54**](RF54.md): Super Administrador Actualiza Tipo de Pago - `Done`
 - [**RF57**](RF57.md): Super Administrador Importa Empleados - `Ready`
 - [**RF60**](RF60.md): Super Administrador, Cliente Consulta Lista de Pedidos - `Done`
 - [**RF63**](RF63.md): Super Administrador Elimina Pedido - `Done`
