@@ -30,7 +30,7 @@ Identifica el porqué se definirá la adaptación (¿Por qué lo voy a adaptar?)
 ### Paso 3. 
 Identifica quienes van a tener que seguir la adaptación del nuevo proceso (¿Quién va a ser afectado por esta adaptación?)
 ### Paso 4 
-Identifica la duración de esta adaptación(¿Cuanto tiempo se seguira esta adaptación?)
+Identifica la duración de esta adaptación(¿Cuánto tiempo se seguirá esta adaptación?)
 ### Paso 5 
 ¿Cómo lo vas a adaptar?
 ### Paso 6
