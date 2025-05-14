@@ -1,6 +1,6 @@
 ---
 title: Guía para identificar recursos y establecer capacitaciones
-sidebar_position: 5
+sidebar_position: 6
 ---
 
 # Guía para identificar recursos y establecer capacitaciones
