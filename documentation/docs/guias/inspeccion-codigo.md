@@ -37,3 +37,26 @@ Una inspección de código es una revisión manual del código fuente para verif
     - Menor significa que son defectos de estilo, legibilidad, Git y documentación.
     - Mayor significa que son defectos de lógica y complejidad.
     - Critico significa que son defectos de seguridad y funcionalidad. Además de afectar a los requerimientos no funcionales. 
+
+## 4. Pasar los defectos al log
+
+- Una vez concluido el tiempo para la inspeccion individual se elije al inspector A. Este es el que encontró más defectos durante la inspección, este tambien sera el inspector 1
+- Este pasa todos sus error directamente a la pestaña de "Log"
+- Los demás inspectotres se tienen que asignar un numero (entre el numero de inspectores totales), el cual representa en que orden van a registrar sus errores.
+- Despues los inspectores tambien pasan sus defectos al "Log", pero si se encuantran coincidencias con los errores que ya estaban en "Log" estos ponen un uno en su columna correspondiente de inspector
+- Asi se tienen que pasar por todos los inspectores 
+
+## 5. Resumen de inspección
+
+- Se hace la suma de todos los defectos encontrados por inspector y el total de todos los defectos. Esto se hace en la parte superior de la hoja de log.
+- Se hace la suma de defectos únicos del inspector 1
+- Se hace la suma de defectos en común entre inspector 1 y el resto de inspectores
+- Se hace la suma de defectos mayores y menores
+
+## 5.1. Estimación de defectos
+
+- Para la estimación de defectos se utiliza la técnica Catch-Recatch representada por la siguiente fórmula: (A*B)/C
+- A es el inspector que encontró más defectos 
+- B son los defectos encontrados por el resto de inspectores
+- C son los defectos en común entre A y B
+- Estos datos se colocan en la hoja de *Resumen*
