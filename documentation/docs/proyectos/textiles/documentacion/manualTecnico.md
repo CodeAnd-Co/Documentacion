@@ -219,16 +219,21 @@ Resultado: Rol guardado en RDS y mensaje de éxito
 
 ---
 
+
+
 ## 9. Referencias
 
-* [Manual de despliegue AWS Amplify y EC2](/Documentacion/documentation/docs/proyectos/textiles/documentacion/manual-despliegue-textiles.md)
-* [Diagrama MER y Diccionario de datos](/Documentacion/documentation/docs/proyectos/textiles/documentacion/diagrama-mer.md)
-* [Estrategia tecnica](/Documentacion/documentation/docs/proyectos/textiles/documentacion/estrategia-tecnica-textiles.md)
-* [Manual de prueba de arquitectura](/Documentacion/documentation/docs/proyectos/textiles/documentacion/prueba-de-arquitectura.md)
-* [Plan de Pruebas de Software](/Documentacion/documentation/docs/proyectos/textiles/documentacion/plan-stp.md)
-* [Plan de Pruebas de Volumen](/Documentacion/documentation/docs/proyectos/textiles/documentacion/pruebas-vol.md)
-* [Plan de Pruebas de Estrés](/Documentacion/documentation/docs/proyectos/textiles/documentacion/pruebas-est.md)
-* [Endpoints usados para la prueba de arquitectura](/Documentacion/documentation/docs/proyectos/textiles/documentacion/endpoints-prueba-arquitectura.md)
+* [Manual de despliegue AWS Amplify y EC2](manual-despliegue-textiles.md)
+* [Diagrama MER y Diccionario de datos](diagrama-mer.md)
+* [Estrategia técnica](estrategia-tecnica-textiles.md)
+* [Manual de prueba de arquitectura](prueba-de-arquitectura.md)
+* [Plan de Pruebas de Software](plan-stp.md)
+* [Plan de Pruebas de Volumen](pruebas-vol.md)
+* [Plan de Pruebas de Estrés](pruebas-est.md)
+* [Endpoints usados para la prueba de arquitectura](endpoints-prueba-arquitectura.md)
+
+
+
 
 ---
 
