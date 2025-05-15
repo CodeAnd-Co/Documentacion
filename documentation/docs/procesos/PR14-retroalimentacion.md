@@ -9,36 +9,32 @@ sidebar_position: 14
 
 ## Objetivo
 
-- Definir el proceso para gestionar y atender la retroalimentación obtenida, asegurando que se analice, registre y ejecute de manera estructurada.
-- Garantizar que las mejoras derivadas de la retroalimentación se implementen de manera eficiente y controlada.
+- Asegurar el análisis y registro de la retroalimentación.
+- Garantizar la correcta implementación de las mejoras derivadas de la retroalimentación.
 
 ---
 
 ## Entradas
 
-- Documentos, notas o videos de las retroalimentaciones
+- Retroalimentación recibida.
 
 ---
 
 ## Proceso
 
-| Fase | Descripción | Responsables | Meta y práctica específica del CMMI |
+| Fase | Actividades | Responsables | Meta y práctica específica del CMMI |
 |------|------------|--------------|--------------------------------------|
-| **Registro de retroalimentación** | Unificar la retroalimentación obtenida de distintas fuentes en un mismo dia | Responsable de documentación | **OPS SP 2.2** Evaluar la efectividad de los procesos |
-| **Clasificación y registro en bitácora** | Leer detenidamente las instrucciones y registrar toda la retroalimentación en <u>_[Bitácora de Retroalimentación"](https://docs.google.com/spreadsheets/d/1AFSCQ3wmXUBa8Cf7gu5VQHqexOzJk0g0RWMgwnUmhLk/edit?usp=sharing)_</u>. | Responsable de documentación | **OPD SP 1.5** Establecer la biblioteca de activos de proceso de la organización |
-| **Creación de las acciones correctivas** | Seguir el [proceso de acciones correctivas](PR13-acciones-correctivas.md) | Responsable de documentación |  **PMC SP 2.2** Llevar a cabo las acciones correctivas |
-| **Análisis de mejoras inmediatas** | Identificar mejoras ejecutables en una sola tarea y registrarlas en el [*Plan de Valor Ganado y el plan de iteración más próximo"*](https://docs.google.com/spreadsheets/d/1yvqCf1wp_6ic0Xqwd4LDwk_sMfGdgWF-S9FTfnieVZQ/edit?usp=sharing).  | Responsable de documentación | **REQM SP 1.1** Entender los requisitos; **PP SP 1.2** Definir el alcance del proyecto, **PMC SP 2.2*** Llevar a cabo las acciones correctivas  , **PMC SP 1.1** |
-| **Análisis de mejoras con paquetes de trabajo** | Identificar mejoras que requieran descomposición en múltiples tareas, generar un paquete de trabajo y registrar las tareas en el Plan de Valor Ganado y el plan de iteración. | Responsable de documentación | **PP SP 1.1** Establecer estimaciones; **PMC SP 1.5** Analizar datos de desempeño, **PMC 1.1** (Monitorear parámetros del proyecto), **PMC SP 2.2*** Llevar a cabo las acciones correctivas |
-| **Supervisión de implementación** | Verificar la correcta implementación de las mejoras y documentar resultados en el Plan de Valor Ganado. | Responsable del proceso | **OPS SP 2.2** Evaluar la efectividad de los procesos, **PMC 1.1** (Monitorear parámetros del proyecto), **PMC SP 2.3** Gestionar las acciones correctivas|
+| **Registro de retroalimentación** | Tras recibir retroalimentación, registrala en una línea dentro de el [Repositorio de Retroalimentación](https://docs.google.com/spreadsheets/d/1AFSCQ3wmXUBa8Cf7gu5VQHqexOzJk0g0RWMgwnUmhLk/edit?usp=sharing). | Responsable de documentación | |
+| | Añade la fuente y fecha de obtención, y el responsable de que se definan acciones correctivas. | Responsable de documentación | |
+| **Creación de las acciones correctivas** | Asegura el seguimiento del [proceso de acciones correctivas](PR13-acciones-correctivas.md). | Responsable de aplicar la retroalimentación |  **PMC, SP 2.2** Llevar a cabo las acciones correctivas |
+| | **Nota:** Determina con los miembros de tú equipo que retroalimentación requiere tener cambios en la forma de trabajo. | Responsable de aplicar la retroalimentación | |
 
 ---
 
 ## Salidas
 
-- Máximo valor obtenido de la retroalimentación.
-- Mejoras registradas en la bitácora.
-- Mejoras implementadas en el Plan de Valor Ganado y el plan de iteración.
-- Supervisión documentada de la ejecución de mejoras.
+- Registro en el Repositorio de Retroalimentación.
+- Acciones Correctivas para atender la retroalimentación.
 
 ---
 
@@ -50,6 +46,6 @@ sidebar_position: 14
 | **1.1**             | Adición de SP 1.1 de PMC                    | 1/4/2025  | Daniel C y Juan Pablo C  |
 | **1.2**             | Refactorización                             | 18/4/2025 | Diego Fuentes                    |
 |**1.3**| Correciones PMC 1.1 | 22/04/2025 | Juan Pablo Chávez Leal |
-|**1.4**| Correciones PMC 2.2 y 2.3 | 13/05/2025 | Juan Pablo Chávez Leal |
-|**1.4**| Correciones PMC 2.2 y 2.3 | 13/05/2025 | Daniel Queijeiro Albo |
- 
+|**1.4**| Correciones PMC 2.2 y 2.3 | 13/05/2025 | Juan Pablo Chávez Leal y Daniel Queijeiro Albo |
+|**2.0**| Simplificación del proceso | 14/05/2025 | Rommel Toledo Crespo |
+
