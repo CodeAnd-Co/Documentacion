@@ -12,7 +12,11 @@ sidebar_position: 2
 - Garantizar consistencia en los procesos, cumpliendo con estándares predefinidos.
 - Asegurar un resultado exitoso y repetible.
 - Facilitar la mejora continua.
+---
 
+### Consideraciones antes de seguir este proceso
+
+- Si el proceso que deseas realizar es muy similar a uno ya existente y solo requiere cambios mínimos, utiliza la [Guía de adaptación de procesos](https://codeandco-wiki.netlify.app/docs/guias/documentacion/guiaAdaptacionDeProcesos) para adaptarlo en lugar de crear uno nuevo desde cero.
 ---
 
 ### Entradas
@@ -52,3 +56,5 @@ sidebar_position: 2
 | 2.3     | Cambio al control de cambios          | 18/04/2025 | Miguel Angel, Diego Alfaro |
 | 2.4     | Refactorización          | 18/04/2025 | Diego Fuentes |
 | 2.5     | Implementar política de gestión de procesos          | 08/05/2025 | Mariana Juárez|
+| 2.6     | Agregar la redirección a la guia de adaptación de procesos| 14/05/2025 | Ethan Luna|
+

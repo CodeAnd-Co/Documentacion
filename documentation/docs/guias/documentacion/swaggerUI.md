@@ -1,6 +1,6 @@
 ---
 title: Guía de uso de Swagger UI
-sidebar_position: 3
+sidebar_position: 6
 ---
 
 # Manual de uso de Swagger UI para documentar APIs

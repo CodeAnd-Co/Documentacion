@@ -1,6 +1,6 @@
 ---
 title: Guía de documentación en Docusaurus
-sidebar_position: 2
+sidebar_position: 1
 ---
 
 # Guía de documentación en Docusaurus

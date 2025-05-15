@@ -16,8 +16,7 @@ Arquitectura basada en servicios en la nube con API REST en NodeJS y frontend ba
 La arquitectura se compone de capas principales:
 
 - **Frontend** (Electron + HTML, CSS, JavaScript)
-- **Backend** (Node.JS + Express + AWS EC2)
-- **Servicios AWS** (DynamoDB)
+- **Backend** (Node.JS + Express + AWS EC2 + MySQL)
 
 ---
 
@@ -47,8 +46,8 @@ Agregar las características del frontend de su proyecto.
   - Interpretación de datos
   - Control de acceso según el rol del usuario
   - Carga de gráficas
-- **Selección de ranchos y tractores**
-  - Panel para la selección de ranchos y tractores a analizar
+- **Selección de distribuidores y tractores**
+  - Panel para la selección de distribuidores y tractores a analizar
   - Opciones múltiples para tractores
 - **Selección de plantillas**
   - Panel para la selección de plantillas
@@ -58,7 +57,6 @@ Agregar las características del frontend de su proyecto.
   - Definición de frecuencia de envío
   - Definición de cantidad envíos
 - **Perfil de usuario**
-  - Foto del usuario
   - Nombre
   - Cerrar sesión
 - **Gestión de usuarios**
@@ -177,3 +175,4 @@ graph TD
 | **2.0**             | Adición del diagrama de despliegue | 25/03/2025   | Juan Pablo Chávez Leal |
 | **2.1**             | Corrección al diagrama de despliegue | 04/04/2025 | Ian Julián Estrada Castro |
 | **2.2**             | Corrección de una palabra | 08/05/2025 | Rommel Toledo C. |
+| **3.0**             | Eliminar servicios de AWS | 13/05/2025 | Daniel Queijeiro |

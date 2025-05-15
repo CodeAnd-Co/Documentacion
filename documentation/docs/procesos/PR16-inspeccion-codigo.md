@@ -1,5 +1,5 @@
 ---
-title: PR16 Inspección de código
+title: PR Inspección de código
 sidebar_position: 16
 ---
 
