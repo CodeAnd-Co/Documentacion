@@ -66,15 +66,6 @@ Una inspección de código es una revisión manual del código fuente para verif
 ### 5.2 Calcular la densidad de los defectos.
 - Una vez aplicada la técnica del paso anterior, se calcula automáticamente la densidad de defectos por cada mil líneas de código (KLOC) en la pestaña de resumen.
 
-### 5.3 Estimación de costos para corrección de defectos  
-- Una vez que se encuentran todos los errores, se agregan al defect log de cada proyecto 
-- Se estima el tiempo que se necesitará para corregir todos esos errores determinado por el tamaño del proyecto.
-- Se agregan estas correcciones al PVG de cada proyecto. No se le asigna valor a estas tareas.
-
-## Correcciones
-- Corregir todos los defectos encontrados y llenar la información del defect log de manera acorde a cuándo se arreglaron los defectos y por quién.
-- Una vez que se han corregido, se marca la tarea creada en el PVG como completada.
-
 ---
 
 
