@@ -47,5 +47,5 @@ sidebar_position: 16
 | **Tipo de Versión** | **Descripción**                | **Fecha**  | **Colaborador**           |
 | ------------------- | ------------------------------ | ---------- | ------------------------- |
 | **1.0**             | Primera versión del PR26       | 10/04/2025 | Ian Julián Estrada Castro |
-| **1.2**             | Refactorización                | 18/4/2025  | Diego Fuentes             |
-| 1.3                 | El proceso se hizo más conciso | 15/05/2025 | Angel Ramírez             |
+| **1.1**             | Refactorización                | 18/4/2025  | Diego Fuentes             |
+| **1.2**             | El proceso se hizo más conciso | 15/05/2025 | Angel Ramírez             |
