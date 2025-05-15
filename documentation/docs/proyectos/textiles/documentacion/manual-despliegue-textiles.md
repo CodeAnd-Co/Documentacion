@@ -46,9 +46,14 @@ Una vez configurada el API gateway y Amplify, se podran obtener los URL's de cad
 
 ### 1. Clonar o actualizar el repositorio
 
+Para poder tener dos entornos reales de produccion y staging debemos clonar el repositorio 2 veces con el nombre `staging` y `production`
+
+Una vez clonados debemos pasarnos a las ramas respectivas para cada directorio
+
 ```bash
-cd Backend-textiles/
-git pull
+cd staging # o production
+git checkout staging # o production
+git pull # solo necesario la primera vez
 ```
 
 ## 2. Instalar dependencias
@@ -64,13 +69,15 @@ Crea un archivo `.env.staging` y `.env.production` en el root del proyecto (ver 
 ## 4. Ejecutar o reiniciar procesos con PM2
 
 ```bash
-pm2 start ecosystem.config.js
+pm2 start ecosystem-staging.config.js # o ecosystem-production.config.js
 # o si ya está corriendo
-pm2 reload ecosystem.config.js
+pm2 reload ecosystem.config.js # o ecosystem-production.config.js
 ```
 
+### Archivo de ecosistema para produccion y staging
+
 ```js
-// ecosystem.config.js
+// ecosystem-production.config.js
 module.exports = {
   apps: [
     {
@@ -84,6 +91,14 @@ module.exports = {
         PORT: 3000,
       },
     },
+  ],
+};
+```
+
+```js
+// ecosystem-staging.config.js
+module.exports = {
+  apps: [
     {
       name: "app-staging",
       script: "./app.js",
@@ -98,6 +113,8 @@ module.exports = {
   ],
 };
 ```
+
+Para no tener que hacer estos pasos manualmente, usaremos un script de github actions que se puede encontrar en el apartado CI / CD de la [estrategia tecnica](./estrategia-tecnica-textiles.md)
 
 ## 5. Verificar logs
 
@@ -219,3 +236,4 @@ Historial
 | **Tipo de Versión** | **Descripción** | **Fecha** | **Colaborador** |
 | ------------------- | --------------| ---------- | --------------- |
 | **1.0** | Crear manual de despliegue | 13/05/2025 | Diego Alfaro |
+| **2.0** | Actualizacion de estrategia de despliegue | 14/05/2025 | Diego Alfaro |
