@@ -69,4 +69,4 @@ sidebar_position: 31
 | ------------------- | --------------- | ---------- | --------------- |
 | **1.0** | Creación del proceso | 25/04/2025 | Daniel Queijeiro, Daniel Contreras |
 | **1.1** | Cambios a pasos de integración y trazabilidad| 26/04/2025 | Daniel Queijeiro, Diego Fuentes |
-| **1.2** | Agregar ver, pasos de verificación con checklist de diseño, análisis y PR | 15/05/2025 | Emiliano Valdivia y Daniel Contreras | 
+| **2.0** | Agregar ver, pasos de verificación con checklist de diseño, análisis y PR | 15/05/2025 | Emiliano Valdivia y Daniel Contreras | 
