@@ -21,7 +21,7 @@ sidebar_position: 16
 
 ## Proceso
 
-| **Fase**       | **Descripción**                                                                                                            | **Responsable**     | **Meta y práctica específica del CMMI (VER)**                             |
+| **Fase**       | **Descripción**                                                                                                            | **Responsable**     | **Meta y práctica específica del CMMI**                                   |
 | -------------- | -------------------------------------------------------------------------------------------------------------------------- | ------------------- | ------------------------------------------------------------------------- |
 | Preparación    | En caso de no haber realizado una inspección antes, leer la[guía para inspección de código](/docs/guias/inspeccion-codigo) | Miembros del equipo | **VER SP 2.1**(Preparar las revisiones entre pares)                       |
 |                | Identificar el componente a inspeccionar.                                                                                  | Miembros del equipo | **VER SP 1.1**(Seleccionar los productos de trabajo para la verificación) |
