@@ -1,56 +1,51 @@
 ---
-title: PR Inspección de código
+title: PR16 Inspección de código
 sidebar_position: 16
 ---
 
 # Proceso de inspección de código
 
-:::warning Importante  
-Una inspección de código es una revisión manual del código fuente para verificar que cumple con las reglas de programación y diseño. Es costosa por lo que no es efectivo hacer una inspección en componentes pequeños. Lo mejor es hacer inspecciones en componentes **críticos** del proyecto. Un componente crítico es aquel que si tiene defectos, afecta los objetivos del proyecto.
-:::
-
----
-
 ## Objetivo
 
-- Encontrar los defectos en los componentes a inspeccionar.
-- Asegurar que el componente sigue los estándares definidos.
+- Identificar defectos en los componentes mediante inspecciones estructuradas, con el fin de asegurar su conformidad con los requisitos especificados y contribuir a la mejora continua de los estándares de calidad.
+- Las **entradas** del proceso incluyen el componente a inspeccionar y la plantilla de revisión (checklist). La **salida principal** es el registro consolidado de defectos documentado en el _defect log_ del proyecto.
 
 ---
 
 ## Entradas
-1. Componente listo para su inspección al cual todos tienen acceso.
-2. Tamaño del componente a inspeccionar.
-3. Lista de revisión de código (Checklist).
+
+1. Componente listo para su inspección.
+2. Plantilla de revisión (Checklist)
 
 ---
 
 ## Proceso
 
-| Fase              | Descripción    | Responsable             | Meta y práctica específica del CMMI    |
-| ----------------- | -------------- | ----------------------- | -------------------------------------- |
-| **Preparación**   | Se informa del componente a inspecccionar. Se designan **inspectores** de código (Lo ideal es de 4 a 6 inspectores). | Miembros del equipo | **VER SP 1.1** (Seleccionar los productos de trabajo para la verificación) |
-|                   | Se presenta el componente y el código fuente. | Autor del código | **VER SP 1.2** (Establecer el entorno de verificación) |
-|                   | Una vez concluida la presentación, se abre un espacio para dudas de los inspectores. | Autor del código | **VER SP 1.2** (Establecer el entorno de verificación) |
-| **Inspección**    | Se hace la revisión del código usando la <u>_[checklist de código](../recursos/checklists.md)_</u>. La inspección debe hacerse por separado. Se hace una lectura del código por cada apartado de la checklist. | Inspectores | **VER SP 2.1** (Preparar las revisiones entre pares), **PPQA SP 1.2** (Evaluar objetivamente los productos de trabajo) |
-| **Documentación** | Los defectos son documentados en el log de defectos individual. Todo lo que se considere como defecto se registra. | Inspectores | **VER SP 2.2** (Realizar las revisiones entre pares) |
-|                   | Los defectos documentados por cada inspector se agrupan en el log de defectos y se evalúan. | Inspectores | **VER SP 2.2** (Realizar las revisiones entre pares) |
-|                   | Se calcula el número estimado de defectos en el producto utilizando la técnica Catch-Recatch: **(A*B)/C** | Inspectores | **MA SP 2.1** (Obtener los datos de la medición) |
-|                   | Se calcula la densidad de los defectos (KLOC) | Inspectores |  **MA SP 2.2** (Alalizar los datos de la medición) |
-| **Estimación**    | Se hace una estimación del tiempo para hacer las correciones y se agrega al PVG sin asignarle valor | Inspectores | **PP SP 2.4** (Planificar los recursos del proyecto) |
-| **Corrección**    | Se hacen las correcciones de los defectos con base al log de defectos | Autor del código | |
+| **Fase**        | **Descripción**                                                                                                             | **Responsable**     | **Meta y práctica específica del CMMI**                                   |
+| --------------- | --------------------------------------------------------------------------------------------------------------------------- | ------------------- | ------------------------------------------------------------------------- |
+| **Preparación** | En caso de no haber realizado una inspección antes, leer la [guía para inspección de código](/docs/guias/inspeccion-codigo) | Miembros del equipo | **VER SP 2.1**(Preparar las revisiones entre pares)                       |
+|                 | Identificar el componente a inspeccionar.                                                                                   | Miembros del equipo | **VER SP 1.1**(Seleccionar los productos de trabajo para la verificación) |
+|                 | Informar y seleccionar a los inspectores (idealmente de 4 a 6 personas).                                                    | QA/Facilitador      | **VER SP 2.1**(Preparar las revisiones entre pares)                       |
+| **Inspección**  | Se define el tiempo de inspección y se inicia un cronómetro.                                                                | QA/Facilitador      |                                                                           |
+|                 | El responsable del componente presenta y explica la funcionalidad del mismo.                                                | Autor del código    |                                                                           |
+|                 | Se realiza la revisión de código utilizando la [checklist de código](../recursos/checklists.md).                            | Inspectores         | **VER SP 3.1**(Realizar la verificación)                                  |
+|                 | Los inspectores registran los defectos en su defect log personal.                                                           | Inspectores         | **VER SP 2.2** (Realizar las revisiones entre pares)                      |
+|                 | Los defectos detectados por todos los inspectores se consolidan en el defect log del proyecto.                              | Inspectores         |                                                                           |
+|                 | Se detiene el cronómetro cuando todos los inspectores terminan de evaluar el componente.                                    | Inspectores         |                                                                           |
+| **Análisis**    | Se evalúan los datos obtenidos y se toman decisiones para implementar estrategias de mejora.                                | Miembros del equipo | **VER SP 2.3**(Analizar los datos de las revisiones entre pares)          |
 
 ---
 
 ## Salidas
 
-1. Componente libre de defectos documentados en el log de defectos
+1. Defect Log Actualizado
 
 ---
 
 ## Historial de Cambios
 
-| **Tipo de Versión** | **Descripción**                               | **Fecha**  | **Colaborador**           |
-| ------------------- | --------------------------------------------- | ---------- | ------------------------- |
-| **1.0**             | Primera versión del PR26                      | 10/04/2025 | Ian Julián Estrada Castro |
-| **1.2**             | Refactorización                               | 18/4/2025  | Diego Fuentes             |
+| **Tipo de Versión** | **Descripción**                | **Fecha**  | **Colaborador**           |
+| ------------------- | ------------------------------ | ---------- | ------------------------- |
+| **1.0**             | Primera versión del PR26       | 10/04/2025 | Ian Julián Estrada Castro |
+| **1.1**             | Refactorización                | 18/4/2025  | Diego Fuentes             |
+| **1.2**             | El proceso se hizo más conciso | 15/05/2025 | Angel Ramírez             |
