@@ -25,6 +25,15 @@ Preparar de manera efectiva todos los elementos necesarios para llevar a cabo la
 | **Definir el entorno de validación** | Definir y utilizar el entorno de validación con el stakeholder, es decir, el conjunto de condiciones, herramientas, equipos, configuraciones y recursos necesarios para ejecutar correctamente la validación. | Product Owner | VAL, SP 1.2 |
 | **Validación** | Agendar cita con el stakeholder para llevar a cabo la validación. | Product Owner | VAL, SP 2.1 |
 |  | Realizar la validación siguiendo lo establecido en la matriz. | Todo el equipo | VAL, SP 2.1 |
+| **Documentación de los resultados** | Documentar las desviaciones y observaciones de los resultados obtenidos | Todo el equipo | VAL, SP 2.1 |
+| **Análisis de Resultados** | Cambiar el estado del resultado a aprobado o rechazado según corresponda | Todo el equipo | VAL, SP 2.2 |
+|  | Definir las acciones correctivas | Todo el equipo | VAL, SP 2.2 |
+
+
+## Salidas
+
+
+* Matriz de validación actualizada
 
 
 ### Historial de cambios
@@ -34,3 +43,4 @@ Preparar de manera efectiva todos los elementos necesarios para llevar a cabo la
 | **1.0**             | Creación del proceso de validación de entregables | 15/05/2025 | Arturo Sánchez          |
 | **1.1**             | Identificación de Fases y actualización           | 15/05/2025 | Rodrigo Antonio Benítez |
 | **1.2**             | Definir el entorno de validación y validación     | 15/05/2025 | Mariana Juárez Ramírez  |
+| **1.2**             | Documentación     | 15/05/2025 | Juan Pablo Chávez Leal  |
