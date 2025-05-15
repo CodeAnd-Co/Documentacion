@@ -22,6 +22,10 @@ Preparar de manera efectiva todos los elementos necesarios para llevar a cabo la
 | **Identificar el método de validación**                  | Establecer los métodos de validación.                                                                                                                                                                                                                                                                      | Product Owner  | VAL, SP 1.1                         |
 | **Proponer los criterios de aceptación y restricciones** | Definir parámetros que determinan si cumple con los requisitos y expectativas del stakeholder. Al igual que limitaciones que pueden afectar la validación del producto.                                                                                                                                    | Product Owner  | VAL, SP 1.3                         |
 | **Establecer la necesidad del usuario final.**           | La validación no es solamente de la funcionalidad, sino que incluso de: Operativa, Mantenimiento, Formación y Soporte. Detalla con qué criterios cumple.                                                                                                                                                   | Todo el equipo | VAL, SP 1.1                         |
+| **Definir el entorno de validación** | Definir y utilizar el entorno de validación con el stakeholder, es decir, el conjunto de condiciones, herramientas, equipos, configuraciones y recursos necesarios para ejecutar correctamente la validación. | Product Owner | VAL, SP 1.2 |
+| **Validación** | Agendar cita con el stakeholder para llevar a cabo la validación. | Product Owner | VAL, SP 2.1 |
+|  | Realizar la validación siguiendo lo establecido en la matriz. | Todo el equipo | VAL, SP 2.1 |
+
 
 ### Historial de cambios
 
@@ -29,3 +33,4 @@ Preparar de manera efectiva todos los elementos necesarios para llevar a cabo la
 | ------------------- | ------------------------------------------------- | ---------- | ----------------------- |
 | **1.0**             | Creación del proceso de validación de entregables | 15/05/2025 | Arturo Sánchez          |
 | **1.1**             | Identificación de Fases y actualización           | 15/05/2025 | Rodrigo Antonio Benítez |
+| **1.2**             | Definir el entorno de validación y validación     | 15/05/2025 | Mariana Juárez Ramírez  |
