@@ -60,3 +60,6 @@ Una inspección de código es una revisión manual del código fuente para verif
 - B son los defectos encontrados por el resto de inspectores
 - C son los defectos en común entre A y B
 - Estos datos se colocan en la hoja de *Resumen*
+
+## 5.2 Calcular la densidad de los defectos.
+- Una vez aplicada la técnica del paso anterior, se calcula automáticamente la densidad de defectos por cada mil líneas de código (KLOC) en la pestaña de resumen.
