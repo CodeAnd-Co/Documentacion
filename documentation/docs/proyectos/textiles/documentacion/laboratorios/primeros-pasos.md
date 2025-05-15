@@ -47,7 +47,7 @@ Explicación de la separación de los subcomponentes:
 - **Reseña**: El componente de reseñas se utiliza en varias partes del sistema, por lo que debe separarse del producto y mantener independencia para garantizar su reutilización a lo largo del tiempo.
 - **Descripción**: La descripción del producto contiene texto con distintos estilos, lo que sugiere la necesidad de crear otro subcomponente específico para el texto. La descripción es un subcomponente, ya que se le pasará la información básica del producto.
 
-![1742139744372](images/primeros-pasos/1742139744372.png)
+![1742139744372](./imagenes/primeros-pasos/1742139744372.png)
 
 ## Construyendo las Bases
 
