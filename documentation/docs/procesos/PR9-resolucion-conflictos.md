@@ -19,6 +19,7 @@ sidebar_position: 9
 
 
 ### Entradas  
+- Incumplimiento de Acuerdos de trabajo. 
 - Conflicto identificado entre 2 o más miembros.  
 - Reporte de conflicto que incluye: 
   - Nombres de involucrados.  
@@ -27,8 +28,6 @@ sidebar_position: 9
   - Impacto y conclusiones.  
   - Medidas tomadas.  
  
-### Proceso  
-
 ### Proceso  
 
 | **Fase**          | **Descripción**                                                                                                  | **Responsables**          | **Meta y práctica específica del CMMI** |
@@ -49,7 +48,7 @@ sidebar_position: 9
 |                   | **Empatía:** Describir la situación y los sentimientos generados (*aplicando las 4 C’s*). | | |
 |                   | **Petición:** Solicitar acciones concretas a la otra parte. | | |
 |                   | **Compromiso:** Acordar acciones recíprocas y responsabilizarse de las peticiones. | | |
-|                   | **Escalamiento:** Si no hay acuerdo, escalar según la [tabla de escalamiento](#tabla-de-escalamiento-del-conflicto). | | |
+|                   | **Escalamiento:** Si no hay acuerdo, escalar según la [tabla de escalamiento](#tabla-de-escalamiento-del-conflicto). | | **PPQA 2.1** (Comunicar y resolver las no conformidades.)|
 | **Cierre de escalamiento** | Documentar la solución en el formato ético. | Comité de Ética | **DAR SP 1.6** |
 | **Criterio de éxito** | Niveles 1 y 2: El conflicto debe disminuir al menos un nivel y no haber reincidencias en los siguientes 7 días hábiles. | Comité de Ética | **IPM SP 2.3** |
 |                      | Niveles 3 a 5: Hay un acuerdo firmado por las partes y no hay reincidencias en 7 días hábiles. | Comité de Ética | **DAR SP 1.6** |
@@ -65,6 +64,8 @@ sidebar_position: 9
 | **Segunda resolución**   | PMs proponen solución al Comité.                                                                                 | PMs + Comité              | 1 día hábil       |
 | **Escalamiento a profesor** | Si persiste, consultar opinión de profesor(es).                                                               | Comité + Profesor(es)     | 1 día hábil       |
 
+### Salidas
+- Documento de resolución del conflicto (Procedimiento de evaluación del comité de ética). 
 ---
 
 ## Historial de Cambios
