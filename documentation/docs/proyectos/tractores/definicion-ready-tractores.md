@@ -24,8 +24,8 @@ El equipo de Tractech utilizó una escala diferente para calcular el tamaño de 
 - Las dependencias de la historia de usuario deben estar registradas en el **Mapa de Dependencias** (por añadir).
 - La historia no debe estar bloqueada por una dependencia o por otra historia de usuario que no se haya realizado aún.
 - La historia debe contar con diagramas si aplica:
-  - Si es una historia de **5 o más puntos**, se debe incluir un **diagrama de secuencia**.
-  - Si es una historia de **5 o más puntos** y el usuario interactúa con la interfaz, se debe incluir un **diagrama de secuencia**.
+  - Si es una historia de **8 o más puntos**, se debe incluir un **diagrama de secuencia**.
+  - Si es una historia de **8 o más puntos** y el usuario interactúa con la interfaz, se debe incluir un **diagrama de secuencia**.
 - La historia debe contar con su **wireframe o mockup** de interfaz.
 
 ---
@@ -36,3 +36,5 @@ El equipo de Tractech utilizó una escala diferente para calcular el tamaño de 
 |---------------------|------------------------------------| ---------- | ---------------------- |
 | **1.0**             | Primera versión de definición de Ready para TracTech | 08/03/2025 | Diego Ricardo Alfaro Pinto <br/> Juan Pablo Chávez Leal |
 | **1.1**             | Eliminación de responsable para cada historia de usuario y adicción de Mapa de Dependencias | 05/05/2025 | Rommel Toledo Crespo |
+| **1.1**             | Eliminación de responsable para cada historia de usuario y adicción de Mapa de Dependencias | 05/05/2025 | Rommel Toledo Crespo |
+| **1.2**             | Arreglar cantidad de puntos para tener diagrama de secuencia | 13/05/2025 | Daniel Queijeiro |

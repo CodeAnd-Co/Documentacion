@@ -42,7 +42,7 @@ La priorización de requerimientos se puede encontrar aquí:
 
 [**_Priorización de requerimientos_**](https://docs.google.com/spreadsheets/d/1E5J6ugtuWdjWGQqJeEW1vYByL9mUm9-9wHdZaO0a2zE/edit?gid=0#gid=0)
 
-La especificación de historias de usuario se llevarán a cabo teniendo en cuenta la definición de [**Done**](/docs/intro/definicion-de-done/) y [**Ready**](/docs/intro/definicion-de-ready/) que se encuentran en este archivo:
+La especificación de historias de usuario se llevarán a cabo teniendo en cuenta la definición de [**Done**](../definicion-done-larvas.md) y [**Ready**](../definicion-ready-larvas.md).
 
 ---
 

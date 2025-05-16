@@ -118,7 +118,8 @@ erDiagram
         String textoAlternativo "Descripción corta de la imagen"
     }
     PROVEEDOR {
-        NumberInt idProveedor "Identificador del proveedot"
+        NumberInt idProveedor "Identificador del proveedor"
+        NumberInt idCliente "Identificador del cliente"
         String nombre "Nombre del proveedor"
         String nombreCompania "Nombre de la compañia"
         String telefonoContacto "Teléfono de contacto"
@@ -144,7 +145,7 @@ erDiagram
         String nombre "Nombre del set de cuotas"
         NumberInt periodoRenovacion "Periodo de renovación del set de cuotas"
         Boolean renovacionHabilitada "Estado del set de cuotas"
-        NumberInt limiteProductos "Limite de compra de productos"
+        String descripcion "Descripcion del set de cuotas"
     }
     CUOTA_SET_GRUPO {
         NumberInt idCuotaSetGrupo "Identificador del grupo de set de cuotas"
@@ -277,6 +278,8 @@ erDiagram
     CUOTA_SET_PRODUCTO {
         NumberInt idCuotaSet "Identificador del set de cuotas"
         NumberInt idProducto "Identificador del producto"
+        NumberInt limite "Limite de compra de productos"
+        NumberInt limite_actual "Limite de compra de productos actual"
     }
     CARRITO_OPCION {
         NumberInt idCarrito "Identificador del carrito"
@@ -299,6 +302,7 @@ erDiagram
     CLIENTE ||--o{ EMPLEADO : "emplea"
     CLIENTE ||--o{ TIPO_PAGO : "define"
     CLIENTE ||--o{ PRODUCTO : "ofrece"
+    CLIENTE ||--o{ PROVEEDOR: "solicita"
     CLIENTE ||--o{ PEDIDO : "consulta"
     CLIENTE ||--o{ GRUPO_EMPLEADO : "organiza"
     CLIENTE ||--o{ CUOTA_SET_PRODUCTO : "asigna"
@@ -608,6 +612,7 @@ Relaciona carritos de compra con opciones específicas de productos, registrando
 | Campo            | Tipo         | Descripción                          | Restricciones              |
 | ---------------- | ------------ | ------------------------------------ | -------------------------- |
 | idProveedor      | INT          | Identificador único del proveedor    | Llave primaria             |
+| idCliente        | INT          | Identificador del cliente            |                            |
 | nombre           | VARCHAR(100) | Nombre del proveedor                 | No nulo                    |
 | nombreCompania   | VARCHAR(150) | Nombre de la compañía proveedora     | Opcional                   |
 | telefonoContacto | VARCHAR(20)  | Teléfono de contacto                 | Opcional                   |
@@ -712,7 +717,7 @@ Relaciona carritos de compra con opciones específicas de productos, registrando
 | nombre               | VARCHAR(100) | Nombre de la cuota                      | No nulo                    |
 | periodoRenovacion    | INT          | Periodo de renovación en días           | Opcional                   |
 | renovacionHabilitada | BOOLEAN      | Indica si la renovación está habilitada | Valor predeterminado: TRUE |
-| limiteProductos      | INT          | Límite de productos permitidos          | Opcional                   |
+| descripcion          | VARCHAR(100) | Descripción de la cuota                 | Opcional                   |
 
 ### CUOTA_SET_GRUPO
 
@@ -906,10 +911,12 @@ Relaciona carritos de compra con opciones específicas de productos, registrando
 
 ### CUOTA_SET_PRODUCTO
 
-| Campo      | Tipo | Descripción                | Restricciones                          |
-| ---------- | ---- | -------------------------- | -------------------------------------- |
-| idCuotaSet | INT  | Identificador de la cuota  | Parte de llave primaria, llave foránea |
-| idProducto | INT  | Identificador del producto | Parte de llave primaria, llave foránea |
+| Campo         | Tipo | Descripción                          | Restricciones                          |
+| ------------- | ---- | ------------------------------------ | -------------------------------------- |
+| idCuotaSet    | INT  | Identificador de la cuota            | Parte de llave primaria, llave foránea |
+| idProducto    | INT  | Identificador del producto           | Parte de llave primaria, llave foránea |
+| limite        | INT  | Límite de compra del producto        | No nulo                                |
+| limite_actual | INT  | Límite actual de compra del producto | No nulo                                |
 
 ### CARRITO_OPCION
 
@@ -920,7 +927,8 @@ Relaciona carritos de compra con opciones específicas de productos, registrando
 
 # Historial de cambios
 
-| **Tipo de Versión** | **Descripción**                      | **Fecha** | **Colaborador** |
-| ------------------- | ------------------------------------ | --------- | --------------- |
-| **1.0**             | Creacion de la documentación del MER | 8/04/2025 | Angel Mauricio  |
-| **2.0**             | Mejora de la documentación del MER   | 8/04/2025 | Angel Mauricio  |
+| **Tipo de Versión** | **Descripción**                      | **Fecha**  | **Colaborador** |
+| ------------------- | ------------------------------------ | ---------- | --------------- |
+| **1.0**             | Creacion de la documentación del MER | 8/04/2025  | Angel Mauricio  |
+| **2.0**             | Mejora de la documentación del MER   | 8/04/2025  | Angel Mauricio  |
+| 2.1                 | Correción de defectos                | 13/05/2025 | Angel Mauricio  |

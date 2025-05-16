@@ -1,14 +1,14 @@
 ---
-title: Guía para Fusiones de Ramas
+title: Guía para fusiones de ramas
 sidebar_position: 1
 ---
 
-# Guía para Fusiones de Ramas
+# Guía para fusiones de ramas
 
 
 _Proporciona directrices sobre cómo realizar fusiones de ramas de manera efectiva, minimizando conflictos y asegurando la integridad del código._
 
-## Diferencias entre `merge` y `rebase` y Cuándo Utilizar Cada Uno
+## Diferencias entre `merge` y `rebase` y cuándo utilizar cada uno
 
 En Git, `merge` y `rebase` son dos estrategias principales para integrar cambios de una rama a otra, cada una con sus particularidades:
 
@@ -16,13 +16,13 @@ En Git, `merge` y `rebase` son dos estrategias principales para integrar cambios
 
 - **`rebase`**: Reaplica los commits de una rama sobre otra, creando un historial lineal. Esto puede hacer que el historial sea más limpio y fácil de seguir, pero reescribe la historia, lo que puede ser problemático en ramas compartidas.
 
-**Cuándo Utilizar Cada Uno**:
+**Cuándo utilizar cada uno**:
 
 - Utiliza `merge` cuando desees preservar el historial completo de las ramas y las integraciones.
 
 - Opta por `rebase` para mantener un historial lineal y limpio, especialmente en ramas de características locales antes de integrarlas a la rama principal.
 
-## Pasos para Realizar una Fusión Exitosa
+## Pasos para realizar una fusión exitosa
 
 1. **Preparación**: Antes de fusionar, asegúrate de que la rama de destino esté actualizada con los últimos cambios remotos.
 
@@ -31,45 +31,45 @@ En Git, `merge` y `rebase` son dos estrategias principales para integrar cambios
    git pull origin main
    ```
 
-2. **Iniciar la Fusión**: Fusiona la rama de características o la rama que deseas integrar.
+2. **Iniciar la fusión**: Fusiona la rama de características o la rama que deseas integrar.
 
    ```bash
    git merge nombre-de-la-rama
    ```
 
-3. **Resolver Conflictos**: Si se presentan conflictos, Git te notificará. Abre los archivos conflictivos, resuelve los conflictos y marca los archivos como resueltos.
+3. **Resolver conflictos**: Si se presentan conflictos, Git te notificará. Abre los archivos conflictivos, resuelve los conflictos y marca los archivos como resueltos.
 
    ```bash
    git add archivo-resuelto
    ```
 
-4. **Finalizar la Fusión**: Una vez resueltos todos los conflictos, completa la fusión con un commit.
+4. **Finalizar la fusión**: Una vez resueltos todos los conflictos, completa la fusión con un commit.
 
    ```bash
    git commit -m "Mensaje de fusión"
    ```
 
-5. **Actualizar el Repositorio Remoto**: Sube los cambios al repositorio remoto.
+5. **Actualizar el repositorio remoto**: Sube los cambios al repositorio remoto.
 
    ```bash
    git push origin main
    ```
 
-## Resolución de Conflictos Durante la Fusión
+## Resolución de conflictos durante la fusión
 
 Los conflictos ocurren cuando Git no puede reconciliar diferencias entre ramas. Para resolverlos:
 
-1. **Identificar Archivos en Conflicto**: Git marcará los archivos conflictivos.
+1. **Identificar archivos en conflicto**: Git marcará los archivos conflictivos.
 
-2. **Editar Archivos Conflictivos**: Abre cada archivo y decide cómo combinar los cambios.
+2. **Editar archivos conflictivos**: Abre cada archivo y decide cómo combinar los cambios.
 
-3. **Marcar Archivos como Resueltos**: Después de editar, agrega los archivos resueltos al área de preparación.
+3. **Marcar archivos como resueltos**: Después de editar, agrega los archivos resueltos al área de preparación.
 
    ```bash
    git add archivo-resuelto
    ```
 
-4. **Completar la Fusión**: Finaliza la fusión con un commit.
+4. **Completar la fusión**: Finaliza la fusión con un commit.
 
    ```bash
    git commit -m "Mensaje de resolución de conflictos"
@@ -86,7 +86,7 @@ Implementar estas prácticas garantizará fusiones de ramas efectivas, minimizan
 
 ## Historial de cambios
 
-| **Tipo de Versión** | **Descripción** | **Fecha**  | **Colaborador** |
+| **Tipo de versión** | **Descripción** | **Fecha**  | **Colaborador** |
 | ------------------- | --------------- | ---------- | --------------- |
-| **1.0** |  Creación de la guía | 16/02/2025 | Ángel Ramírez, Ian Estrada |
+| **1.0** |  Creación de la guía. | 16/02/2025 | Ángel Ramírez, Ian Estrada |
 | **1.1** |  Gestión de configuración.  | 24/04/2025 | Diego Fuentes |

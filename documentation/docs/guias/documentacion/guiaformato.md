@@ -1,9 +1,9 @@
 ---
-title: Guía de Formato para Documentos
-sidebar_position: 10
+title: Guía de formato para documentos
+sidebar_position: 3
 ---
 
-# Guía de Formato para Documentos
+# Guía de formato para documentos
 **Última actualización:** 
 
 ## Code & Co.
@@ -153,6 +153,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 | **Tipo de Versión** | **Descripción** | **Fecha**  | **Colaborador** |
 | ------------------- | --------------- | ---------- | --------------- |
-| **1.0** | Guía de formato para .docx  | 07/03/2025 | Rodrigo Antonio Benítez De La Portilla |
-| **1.1** | Gestión de configuración  | 24/04/2025 | Diego Fuentes |
-| **1.2** | Introducción y numerología | 25/04/2025 | Hiram Mendoza |
+| **1.0** | Guía de formato para ".docx".  | 07/03/2025 | Rodrigo Antonio Benítez De La Portilla |
+| **1.1** | Gestión de configuración.  | 24/04/2025 | Diego Fuentes |
+| **1.2** | Introducción y numerología. | 25/04/2025 | Hiram Mendoza |

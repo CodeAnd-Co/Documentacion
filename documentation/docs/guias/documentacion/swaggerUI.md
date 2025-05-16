@@ -1,15 +1,15 @@
 ---
-title: Guía de Uso de Swagger UI
-sidebar_position: 3
+title: Guía de uso de Swagger UI
+sidebar_position: 6
 ---
 
-# Manual de Uso de Swagger UI para Documentar APIs
+# Manual de uso de Swagger UI para documentar APIs
 
 Este documento explica cómo configurar Swagger UI en un proyecto Node.js con Express para documentar tus endpoints de manera clara y accesible desde un navegador.
 
 ---
 
-## Requisitos Previos
+## Requisitos previos
 
 Asegúrate de tener instalados los siguientes paquetes:
 
@@ -86,7 +86,7 @@ router.get("/users/:id", async (req, res) => {
 
 Este bloque de comentario permite que Swagger genere automáticamente una entrada en la documentación para ese endpoint.
 
-## Acceder a swagger UI
+## Acceder a Swagger UI
 
 Una vez que el servidor esté corriendo, puedes acceder a la documentación generada visitando:
 
@@ -104,7 +104,7 @@ http://localhost:3000/api-docs
 
 ## Historial de cambios
 
-| **Tipo de Versión** | **Descripción**                               | **Fecha** | **Colaborador**                 |
+| **Tipo de versión** | **Descripción**                               | **Fecha** | **Colaborador**                 |
 | ------------------- | --------------------------------------------- | --------- | ------------------------------- |
-| **1.0**             | Creacion del manual de uso de swagger UI      | 06/04/2025 | Daniel Contreras |
+| **1.0**             | Creacion del manual de uso de swagger UI.      | 06/04/2025 | Daniel Contreras |
 | **1.1**             |  Gestión de configuración.  | 24/04/2025 | Diego Fuentes |

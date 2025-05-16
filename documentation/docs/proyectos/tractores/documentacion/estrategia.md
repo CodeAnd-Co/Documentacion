@@ -47,7 +47,7 @@ La priorización de requerimientos se puede encontrar aquí:
 
 [Priorización de requerimientos](https://docs.google.com/spreadsheets/d/14zEYm84Y-QQ2gP_btGMyOinaKZQsw_wrYQQwqiqdSLY/edit?gid=1792238005#gid=1792238005)
 
-La especificación de historias de usuario se llevarán a cabo teniendo en cuenta la definición de [**Done**](/docs/intro/definicion-de-done/) y [**Ready**](/docs/intro/definicion-de-ready/) que se encuentran en este archivo:
+La especificación de historias de usuario se llevarán a cabo teniendo en cuenta la definición de [**Done**](../definicion-done-tractores.md) y [**Ready**](../definicion-ready-tractores.md).
 
 ---
 
@@ -63,7 +63,7 @@ Garantizar un software confiable a través de buenas prácticas de aseguramiento
 
 La estrategia que se seguirá para las pruebas será la siguiente:
 
-- **STP**: [Llenar la plantilla con el plan de pruebas de su proyecto]
+- **STP**: [Software Test Plan TracTech](/docs/proyectos/tractores/documentacion/stp)
 
 ---
 
@@ -136,9 +136,6 @@ Esta carpeta sigue una arquitectura basada en CLEAN.
 
 - **Servicios**: Que contendrán scripts y clases reutilizables a lo largo del proyecto
 
-- **Archivo principal**:
-
-  - **app.js**: Punto de entrada principal del backend. Su función es inicializar y configurar el servidor local de la aplicación.
 
 ### 2. Framework
 
@@ -146,8 +143,6 @@ Esta carpeta se encarga de la interfaz de usuario y la interacción con el usuar
 
 - **Vistas**: Son las interfaces que el usuario ve y con las que interactúa.
 - **Utils**: Funciones auxiliares para el comportamiento de las vistas.
-- **Archivo principal**:
-  - **index.js**: Punto de entrada de Electron.
 
 ### 3. Pruebas Unitarias
 
@@ -158,7 +153,6 @@ Cada módulo puede incluir pruebas unitarias para garantizar su correcto funcion
 Se encarga de la integración de la aplicación con ElectronJS
 
 - **main.js**: Archivo principal de Electron. Crea la ventana, gestiona eventos del sistema. Inicia Electron y conecta frontend con backend local.
-- **preload.js**: Script que se ejecuta antes de la carga de la página de electron, permitiendo la comunicación entre el frontend y el backend de manera segura.
 
 ---
 
@@ -170,3 +164,4 @@ Se encarga de la integración de la aplicación con ElectronJS
 | **2.0**             | Se hizo el cambio del diagrama de paquetes de la aplicación local en electron | 25/03/2025   | Ian Julián Estrada Castro |
 | **2.1**             | Se quitó ViewModels del diagrama de paquetes. Se actualizó diagrama de backend desacoplado. Se cambió a español | 27/03/2025 | Ian Julián Estrada Castro |
 | **2.2** | Se actualizó el diagrama de paquetes de electron y su explicación | 25/04/2025 | Daniel Contreras |
+| **2.3** | Se actualizó el diagrama de paquetes de electron y componentes | 13/05/2025 | Daniel Queijeiro |

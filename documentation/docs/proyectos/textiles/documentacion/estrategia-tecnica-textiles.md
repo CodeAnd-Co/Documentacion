@@ -51,8 +51,6 @@ La priorización de requerimientos se puede encontrar aquí:
 
 [_Priorizacion de requisitos_](https://docs.google.com/spreadsheets/d/1ToxcYLMjoZ0dPXlb2eTesLf_YXg8q86tE7bredXapYk/edit?gid=1686427669#gid=1686427669)
 
-La especificación de historias de usuario se llevarán a cabo teniendo en cuenta la definición de [_Done_](/docs/intro/definicion-de-done/) y [_Ready_](/docs/intro/definicion-de-ready/) que se encuentran en este archivo:
-
 ---
 
 ## Gestión de Calidad y Pruebas
@@ -223,7 +221,7 @@ Describe resumidamente cómo lo probaste y funciona. Ejemplo:
 ---
 
 Versión: V1
-Rodrigo Antonio Benítez De La Portilla
+Rodrigo Antonio Benítez De La Portilla
 Arutro Sanchez Rodriguez
 
 ```
@@ -238,7 +236,7 @@ Arutro Sanchez Rodriguez
 
 | Nombre                         | Rol   |
 | ------------------------------ | ----- |
-| Rodrigo Antonio Benítez De La Portilla          | Autor |
+| Rodrigo Antonio Benítez De La Portilla          | Autor |
 | Arturo Sánchez Rodríguez | Autor |
 
 ---
@@ -314,14 +312,85 @@ Describe berevemente cómo se probó esta funcionalidad. Ejemplo:
 
 ---
 
-# Versión: V1
+# Versión: V1
 ```
 
 ## CI / CD
 
 ### CD
 
-Para el despliegue continuo del backend utilizaremos un script de [_github actions_](../../../plantillas/plantilla-github-actions.md) paa hacer pull automaticamente y desplegar las ramas de produccion (main) y pruebas (staging), por lo que no tendremos que manejar estas acciones manualmente.
+Para el despliegue continuo del backend utilizaremos un script de github actions para hacer pull automaticamente y desplegar las ramas de produccion (main) y pruebas (staging), por lo que no tendremos que manejar estas acciones manualmente.
+
+```yaml
+name: Node.js CI/CD
+
+on:
+  push:
+    branches:
+      - main
+      - staging
+
+jobs:
+  deploy-production:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Setup SSH
+        env:
+          DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
+          SERVER_IP: ${{ secrets.SERVER_IP }}
+        run: |
+          mkdir -p ~/.ssh
+          echo "$DEPLOY_KEY" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan -H $SERVER_IP >> ~/.ssh/known_hosts
+          ssh-keyscan -H github.com >> ~/.ssh/known_hosts
+
+      - name: Deploy to Production
+        env:
+          SERVER_IP: ${{ secrets.SERVER_IP }}
+          PROJECT_PATH: ${{ secrets.PROJECT_PATH_PRODUCTION }}
+          GIT_REPO: ${{ secrets.GIT_REPO }}
+          PM2_PROCESS: ${{ secrets.PM2_PROCESS_PRODUCTION }}
+        run: |
+          ssh -i ~/.ssh/id_rsa -o StrictHostKeyChecking=no ubuntu@$SERVER_IP "
+            cd $PROJECT_PATH &&
+            git checkout main &&
+            git pull origin main &&
+            npm install &&
+            pm2 reload ecosystem-production.config.js --only $PM2_PROCESS
+          "
+
+  deploy-staging:
+    if: github.ref == 'refs/heads/staging'
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Setup SSH
+        env:
+          DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
+          SERVER_IP: ${{ secrets.SERVER_IP }}
+        run: |
+          mkdir -p ~/.ssh
+          echo "$DEPLOY_KEY" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan -H $SERVER_IP >> ~/.ssh/known_hosts
+          ssh-keyscan -H github.com >> ~/.ssh/known_hosts
+
+      - name: Deploy to Staging
+        env:
+          SERVER_IP: ${{ secrets.SERVER_IP }}
+          PROJECT_PATH: ${{ secrets.PROJECT_PATH_STAGING }}
+          GIT_REPO: ${{ secrets.GIT_REPO }}
+          PM2_PROCESS: ${{ secrets.PM2_PROCESS_STAGING }}
+        run: |
+          ssh -i ~/.ssh/id_rsa -o StrictHostKeyChecking=no ubuntu@$SERVER_IP "
+            cd $PROJECT_PATH &&
+            git checkout staging &&
+            git pull origin staging &&
+            npm install &&
+            pm2 reload ecosystem-staging.config.js --only $PM2_PROCESS
+          "
+```
 
 # Historial de cambios
 

@@ -1,16 +1,16 @@
 ---
-title: Estándar para la Modificación o Creación de Procesos
+title: Estándar para la modificación o creación de procesos
 sidebar_position: 3
 ---
 
-# Estándar para la Modificación o Creación de Procesos
+# Estándar para la modificación o creación de procesos
 
 ---
 
 ## 1. Propósito
 Este documento establece los criterios que determinan si un cambio en un proceso existente es suficiente o si es necesario crear un nuevo proceso. Además, define los límites de modificaciones permitidas en un proceso antes de requerir su reemplazo.
 
-## 2. Identificación de Necesidad
+## 2. Identificación de necesidad
 Para determinar si se debe modificar un proceso existente o crear uno nuevo, responde las siguientes preguntas:
 
 - **¿El proceso actual cumple parcialmente con los nuevos requerimientos?**
@@ -33,7 +33,7 @@ Para determinar si se debe modificar un proceso existente o crear uno nuevo, res
   - **Sí** → Se debe crear un nuevo proceso que contemple los nuevos requerimientos del stakeholder.
   - **No** → Se puede modificar el proceso actual sin necesidad de generar uno nuevo.
 
-## 3. Criterios para Modificar un Proceso Existente
+## 3. Criterios para modificar un proceso existente
 Un proceso existente debe modificarse cuando:
 
 - Los cambios propuestos no alteran la estructura fundamental del proceso.
@@ -42,7 +42,7 @@ Un proceso existente debe modificarse cuando:
 - La documentación sigue siendo válida con ajustes menores.
 - No se introducen nuevos actores o sistemas que requieran una reformulación completa.
 
-### Cambios Mínimos Permitidos
+### Cambios mínimos permitidos
 Se consideran cambios mínimos aquellos que:
 
 - Ajustan descripciones sin modificar la lógica del proceso.
@@ -50,7 +50,7 @@ Se consideran cambios mínimos aquellos que:
 - Agregan pasos opcionales sin afectar la secuencia principal.
 - Mejoran la claridad o simplifican la documentación.
 
-### Cambios Máximos Permitidos
+### Cambios máximos permitidos
 Se consideran cambios máximos en un proceso antes de requerir la creación de uno nuevo cuando:
 
 - Se agregan o eliminan más del 50% de las actividades.
@@ -58,7 +58,7 @@ Se consideran cambios máximos en un proceso antes de requerir la creación de u
 - Se modifican significativamente los roles o responsabilidades de los actores clave.
 - Se introducen tecnologías o herramientas que alteran la ejecución original del proceso.
 
-## 4. Criterios para Crear un Nuevo Proceso
+## 4. Criterios para crear un nuevo proceso
 Debe crearse un nuevo proceso cuando:
 
 - El cambio propuesto transforma por completo el flujo de trabajo.
@@ -67,13 +67,13 @@ Debe crearse un nuevo proceso cuando:
 - Se fusionan varios procesos en uno nuevo.
 - Existen diferencias regulatorias o de cumplimiento que lo justifican.
 
-## 5. Proceso de Decisión
+## 5. Proceso de decisión
 1. **Análisis de impacto:** Evaluar el proceso actual y los cambios propuestos.
 2. **Comparación con los criterios:** Determinar si se cumplen los criterios de modificación o de creación de un nuevo proceso.
 3. **Revisión y validación:** Someter la decisión al Comité de Revisión.
 4. **Implementación:** Aplicar la modificación o desarrollar el nuevo proceso según las políticas establecidas.
 
-## 6. Registro de Cambios
+## 6. Registro de cambios
 Cualquier modificación o nuevo proceso debe documentarse con:
 
 - Autor del cambio.
@@ -84,8 +84,8 @@ Esto se hace en la documentación del pull request.
 
 ---
 
-## Historial de Cambios
+## Historial de cambios
 
-| **Tipo de Versión** | **Descripción**                                                                                                                | **Fecha** | **Colaborador**                                   |
+| **Tipo de versión** | **Descripción**                                                                                                                | **Fecha** | **Colaborador**                                   |
 | ------------------- | ------------------------------------------------------------------------------------------------------------------------------ | --------- | ------------------------------------------------- |
-| **1.0**             | Creación del estándar  | 23/03/2025 | Galo Alejandro del Río Viggiano <br/> Ian Julián Estrada Castro | 
+| **1.0**             | Creación del estándar.  | 23/03/2025 | Galo Alejandro del Río Viggiano <br/> Ian Julián Estrada Castro | 

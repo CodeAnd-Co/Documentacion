@@ -1,12 +1,16 @@
 ---
-title: Guía para realizar rollback en GitHub
+title: Guía para realizar rollbacks
+sidebar_position: 6
 ---
 
-Esta es una guía para realizar un rollback de manera correcta en GitHub, útil para regresar un repositorio a una versión estable anterior cuando es necesario.
+# Guía para realizar Rollbacks
+Esta es una guía para realizar un rollback de manera correcta de ítems de la wiki y en GitHub, útil para regresar un repositorio a una versión estable anterior cuando es necesario.
 
 ---
 
-## Prerequisitos para realizar un rollback en GitHub
+## Rollback en Github
+
+### Prerequisitos para realizar un rollback en GitHub
 
 1. Asegurarse de tener acceso de escritura al repositorio y permisos para hacer push en la rama objetivo.
 2. Tener configurado Git en tu computadora con las credenciales correctas.
@@ -15,11 +19,11 @@ Esta es una guía para realizar un rollback de manera correcta en GitHub, útil 
 
 ---
 
-## Opciones para hacer rollback
+### Opciones para hacer rollback
 
 Dependiendo de la situación, puedes optar por distintas formas de hacer rollback:
 
-### Opción 1: Revertir un Commit
+#### Opción 1: Revertir un commit
 
 Ideal si deseas "deshacer" cambios pero mantener el historial de commits limpio.
 
@@ -76,7 +80,7 @@ git push -f origin feature/**
 
 ```
 
-### Opción 2: Reset duro a un commit anterior
+#### Opción 2: Reset duro a un commit anterior
 
 Usar solo si necesitas que el historial de la rama cambie. Es destructivo si ya has compartido la rama.
 
@@ -93,7 +97,7 @@ git push origin Master --force
 
 ```
 
-### Cómo encontrar el hash de un commit
+#### Cómo encontrar el hash de un commit
 El hash del commit es el identificador único de un commit dentro de un proyecto.
 
 Para encontrar el hash del commit al que quieres hacer rollback:
@@ -108,7 +112,7 @@ Este comando te mostrará la lista de commits recientes, por ejemplo:
 
 ![alt text](./ejemplo-git-log.png)
 
-### Consideraciones adicionales
+#### Consideraciones adicionales
 - Comunicación: Antes de hacer rollback, informa a tu equipo para evitar conflictos.
 - Backup: Si no estás seguro, crea una nueva rama antes de hacer cambios destructivos.
 
@@ -119,10 +123,28 @@ git checkout -b respaldo-antes-del-rollback
 ```
 - Automatizaciones: Si tienes GitHub Actions configurados para desplegar automáticamente en push, el rollback puede disparar un despliegue automático. Verifica si es necesario desactivar temporalmente los workflows.
 
+## Rollback de ítem de la wiki
+
+1. Crear una nueva rama que se identificará de la siguiente manera: `rollback/<iniciales del que hace rollback>_<item al que se le hará rollback>_<version a la que se regresará>`
+
+Ejemplo: `rollback/DC_guia-de-rollback_v1.0`
+
+2. Identificar el ítem del que harás rollback
+3. Moverse hasta la parte de abajo del ítem, donde se encuentra la tabla de versionamiento e identificar la fecha de la versión a la que se quiere regresar.
+4. Entrar a las Pull Request Cerradas del repositorio de Github.
+5. Filtrar las Pull Request por fecha e introducir la fecha de la versión a la que se quiere regresar.
+6. Buscar la Pull Request específica del ítem. La puedes identificar por el nombre de la rama.
+7. Entrar a la Pull request y buscar el ítem en los archivos.
+8. Copiar el contenido del ítem antiguo y pegarlo en el nuevo.
+9. Borrar los registros posteriores a los de la versión a la que se le hizo rollback.
+10. Guardar los cambios, hacer el commit y el push
+
 ---
 
 ## Historial de cambios
 
 | **Tipo de versión** | **Descripción**                    | **Fecha** | **Colaborador**        |
 |---------------------|------------------------------------| --------- | ---------------------- |
-| 1.0 | Se creó la primera versión de la guía | 28/04/2025 | Daniel Contreras Chávez |
+| 1.0 | Se creó la primera versión de la guía. | 28/04/2025 | Daniel Contreras Chávez |
+| 1.1 | Se agregaron pasos para hacer rollback de ítems de la wiki. | 13/05/2025 | Daniel Contreras Chávez |
+| 1.2 | Se cambiaron los headers para ser más acordes. | 16/05/2025 | Daniel Contreras Chávez |
