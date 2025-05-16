@@ -1,9 +1,11 @@
 ---
-title: PR00 Plantilla de procesos
-sidebar_position: 19
+title: Plantilla para procesos
+sidebar_position: 1
 ---
 
-# Plantilla de procesos
+# Plantilla para procesos
+
+Esta plantilla proporciona una estructura estandarizada para crear procesos dentro de la organización. Siguiendo este formato, se asegura que todos los procesos sean consistentes, claros y efectivos para guiar el comportamiento y la toma de decisiones en la organización.
 
 ---
 
@@ -51,3 +53,5 @@ sidebar_position: 19
 | **1.1**             | Se actualizó la plantilla de procesos siguiendo el estándar de versionamiento. | 06/03/2025 | Diego Ricardo Alfaro Pinto |
 | **1.2**             | Se corrigieron errores de ortografía.                                          | 8/05/2025  | Diego Ricardo Alfaro Pinto |
 | **1.3**             | Se corrigieron errores de ortografía.                                          | 8/05/2025  | Paola María Garrido Montes |
+| **1.4**             | Agregar descripción                                          | 15/05/2025  | Diego Antonio García Padilla |
+
