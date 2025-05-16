@@ -217,6 +217,102 @@ import TabItem from '@theme/TabItem';
 
 
   </TabItem>
+  <TabItem value="uxui" label="UX/UI Owner">
+
+    1. **Diseño de Experiencia de Usuario (UX) e Interfaz de Usuario (UI)**
+
+    - Responsable de la experiencia de usuario (**UX**) y la interfaz de usuario (**UI**) del producto o proyecto.
+    - Garantizar un diseño intuitivo, usable y visualmente atractivo, optimizando la interacción entre el usuario y la aplicación.
+
+    2. **Investigación de Usuario**
+
+    - Identificar necesidades, comportamientos y expectativas de los usuarios.
+    - Validar conceptos y prototipos con usuarios finales para recopilar retroalimentación temprana.
+
+    3. **Diseño de Interfaz y Prototipos**
+
+    - Crear wireframes, mockups y prototipos que definan la estructura, navegación y apariencia del producto.
+    - Validar los prototipos con el **Product Owner** y el equipo de desarrollo antes de proceder a implementaciones detalladas.
+
+    4. **Pruebas de Usabilidad**
+
+    - Planificar y ejecutar pruebas de usabilidad para identificar problemas y oportunidades de mejora.
+    - Recopilar datos y retroalimentación para iterar sobre el diseño.
+
+    5. **Colaboración con Desarrollo**
+
+    - Trabajar estrechamente con los desarrolladores para asegurar que los diseños se implementen correctamente y se mantenga la consistencia visual.
+    - Resolver dudas técnicas y realizar ajustes necesarios durante el proceso de construcción del producto.
+
+    6. **Documentación y Actualización de Diseño**
+    - Mantener actualizada la documentación de diseño y estilo, asegurando su accesibilidad para el equipo.
+
+</TabItem>
+<TabItem value="qa" label="Quality Assurance">
+
+    1. **Estrategia de Pruebas**
+
+    - Definir el plan de pruebas, especificando tipos de pruebas, ambiente, herramientas y cronograma.
+    - Alinear la estrategia de pruebas con los objetivos del proyecto y los requisitos definidos.
+
+    2. **Ejecución de Pruebas**
+
+    - Realizar pruebas funcionales, de integración, de rendimiento, de seguridad y de usabilidad.
+    - Identificar defectos y evaluar el comportamiento del sistema bajo diferentes escenarios.
+
+    3. **Reporte y Seguimiento de Bugs**
+
+    - Documentar de manera clara y detallada los errores encontrados, incluyendo evidencia y pasos para reproducirlos.
+    - Dar seguimiento a la corrección de errores hasta su resolución final.
+
+    4. **Mejora Continua**
+
+    - Retroalimentar al equipo de desarrollo sobre los hallazgos, proponiendo mejoras en procesos y estándares de calidad.
+    - Promover prácticas de prevención de defectos y optimización de código.
+
+    5. **Plan de Calidad y Auditoría**
+
+    - Definir métricas y criterios de aceptación para asegurar el cumplimiento de los requisitos.
+    - Establecer procesos de revisión y auditoría interna para validar la calidad del producto.
+
+    6. **Identificación y Gestión de Riesgos**
+
+    - Evaluar riesgos técnicos y de negocio que puedan comprometer la calidad del producto.
+    - Definir planes de pruebas específicas para mitigar problemas asociados a esos riesgos.
+
+    7. **Validación de Reglas de Negocio y Requisitos**
+    - Asegurarse de que los casos de prueba contemplen escenarios que verifiquen correctamente las reglas de negocio definidas.
+    - Validar el cumplimiento de los requisitos en cada iteración del proyecto.
+</TabItem>
+<TabItem value="preo" label="Presentaciones Owner">
+        ## Presentaciones Owner
+
+        ### 📌 Descripción General
+        - Encargado de preparar y coordinar las presentaciones del proyecto, ya sean internas o externas.
+        - Se asegura de que las presentaciones comuniquen claramente el estado, los logros y los planes del proyecto.
+        - Diseña materiales atractivos y facilita la comprensión de la información.
+
+        ---
+
+        ### 🏆 Responsabilidades Clave
+        1. **Diseño de Presentaciones:** Crear las diapositivas o materiales necesarios para comunicar el progreso, hitos y metas.
+        2. **Coordinación de Información:** Recopilar datos del equipo (avances, métricas, planes) y sintetizarlos de forma clara y concisa.
+        3. **Ejecución de Presentaciones:** Planificar el flujo de la presentación y, en muchos casos, presentarla frente a la audiencia correspondiente.
+        4. **Feedback:** Recoger retroalimentación de las partes interesadas y transmitirla al equipo.
+
+        ---
+
+        ### 🚀 Responsabilidades Adicionales
+
+        #### 🔹 1. Crear y Coordinar la Presentación de Kick-Off
+         Explicar objetivos, alcance, roles y responsabilidades a todos los involucrados.
+
+        #### 🔹 2. Preparar Materiales para Otras Reuniones Clave
+        - Diseñar las presentaciones necesarias en las distintas etapas (avances, demostraciones, retrospectivas).
+        - Garantizar que la información sea clara y atractiva para la audiencia.
+
+  </TabItem>
+
 </Tabs>
 
 ---
@@ -225,15 +321,14 @@ import TabItem from '@theme/TabItem';
 
 | Nombre                  | Rol         | Objetivo |
 | ----------------------- | ----------- | ---------- |
-| Juan Pablo Chávez Leal          | Arquitectural Owner, QA, Presentation Owner | |
+| Juan Pablo Chávez Leal          | Team member, QA, Presentation Owner | |
 | Rommel Toledo Crespo            | Team Member | |
 | Pablo Hazael Hurtado Mireles    | Team Member, UX/UI, Writing Owner | |
-| Daniel Contreras Chávez         | QA, Team Member, Presentation Owner | |
-| Daniel Queijeiro Albo           | Product Owner, SEPG, Comité de ética | |
-| Mauricio Anguiano Juárez        | Team Lead, UX/UI | |
-| Juan Antonio Landeros Velázquez | Writing Owner, Team Member, QA | |
-| Juan Carlos Calderón García     | Team Member | |
-| Ian Julián Estrada Castro       | Team Member | |
+| Diego Isaac Fuentes Juvera         | Team Member | |
+| Daniel Queijeiro Albo           | Architecture Owner | |
+| Mauricio Anguiano Juárez        | Team member, UX/UI | |
+| Juan Carlos Calderón García     | Product Owner | |
+| Ian Julián Estrada Castro       | Team Leader | |
 | Galo Alejandro del Rio Viggiano | Team Member | |
 
 ### Recursos Necesarios
@@ -252,3 +347,4 @@ import TabItem from '@theme/TabItem';
 | **1.1**             | Adición de todo exceptuando "Roles y Responsabilidades" | 08/03/2025 | Juan Pablo Chávez Leal |
 | **1.2**             | Agregar Mision y Vision del proyecto | 25/04/2025 | Galo Alejandro del Rio Viggiano |
 | **1.3**             | Corrección de una palabra | 08/05/2025 | Rommel Toledo C. |
+| **1.4**             | Actualización del contenido | 15/05/2025 | Juan Pablo Chávez |
