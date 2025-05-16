@@ -80,3 +80,4 @@ Situación en la que el producto o acuerdo de trabajo no cumple con los requisit
 | **2.2**                         | Incorporación de PPQA 2.1 (no conformidades y notificación) | 24/04/2025 | Juan Eduardo Rosas Cerón                                                    |
 | **2.3**                         | Errores ortográficos | 25/04/2025 | Hiram Mendoza                                                   |
 | **3.0**                         | Simplifación del proceso y corrección acorde al CMMI.       | 15/05/2025 | Paola María Garrido, Valeria Zúñiga                                                   |
+| **3.1**                         | Agregar paso para introducir VER 3.2       | 16/05/2025 | Daniel Contreras Chávez                                                   |
