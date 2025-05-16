@@ -46,6 +46,7 @@ Situación en la que el producto o acuerdo de trabajo no cumple con los requisit
 ### Salidas
 
 1. Repositorio de acciones correctivas y no conformidades actualizado.
+2. Plantillas, guías, estándares y procesos corregidos.
 
 
 ---

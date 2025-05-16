@@ -15,7 +15,7 @@ sidebar_position: 10
 
 ### Entradas
 
-1. Historia de usuario a modificar, eliminar o añadir.
+1. Historia de usuario a modificar, eliminar o añadir de la iteración correspondiente (junta con stakeholders).
 
 ---
 
@@ -34,7 +34,7 @@ sidebar_position: 10
 | **Actualización**                   | Asignar a una persona responsable de implementar el cambio y actualizar, según sea necesario, cualquiera de los siguientes elementos:  <br/> **-Dependendencias <br/> -Entregables <br/> -Funciones clave <br/> -Cronograma y/o presupuesto <br/> -Plan de riesgos  <br/> -SRS (Requerimientos de especificación de software)  <br/>-Plan de valor ganado**                                                                                                   | Encargado de cambios                                    | **REQM SP 1.3** (Administrar cambios a los requisitos), **REQM SP 1.4** (Mantener la trazabilidad de los requisitos), **REQM SP 1.5** (SP 1.5 Asegurar el alineamiento entre el trabajo del proyecto y los requisitos)|
 |                                     | Añadir fecha de cambio en el apartado de *Resolución* en la hoja de "Solicitud de cambio".                                                                                                                                                            | Encargado de cambios                                   | **REQM SP 1.3** (Administrar cambios a los requisitos)                                                                                                                                                                                                                                          |
 |                                     | Actualizar la base de datos de requisitos, añadiendo la tabla de la nueva versión con los requisitos actualizados.                                                                                                                                      | Encargado de cambios                                     | **REQM SP 1.5** (Asegurar el alineamiento entre el trabajo del proyecto y los requisitos).                                                                                                                |
-|                                     | Registrar la firma de todos los colaboradores en la hoja de *Compromiso*, donde cada integrante confirma su conocimiento y compromiso con los cambios realizados. | Colaborador                                    | **SP 1.2** (Obtener el compromiso sobre los requisitos).                                                                                                                                                                                                                                                                                           |
+|                                     | Registrar la firma de todos los colaboradores en la hoja de *Compromiso*, donde cada integrante confirma su conocimiento y compromiso con los cambios realizados. | Colaborador                                    | **REQM SP 1.2** (Obtener el compromiso sobre los requisitos).                                                                                                                                                                                                                                                                                           |
 ---
 
 ### Salidas

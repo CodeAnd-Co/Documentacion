@@ -33,7 +33,7 @@ sidebar_position: 2
 
 ## Salidas
 
-1. Proceso del departamento estandarizado.
+1. Plantillas, guías, estándares y procesos del departamento estandarizado.
 2. Proceso alineado con las necesidades y objetivos organizacionales.
 
 ## Historial de Cambios
