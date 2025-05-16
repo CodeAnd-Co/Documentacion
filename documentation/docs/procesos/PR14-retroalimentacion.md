@@ -53,5 +53,5 @@ sidebar_position: 14
 | **1.2**             | Refactorización                             | 18/4/2025 | Diego Fuentes                    |
 |**1.3**| Correciones PMC 1.1 | 22/04/2025 | Juan Pablo Chávez Leal |
 |**1.4**| Correciones PMC 2.2 y 2.3 | 13/05/2025 | Juan Pablo Chávez Leal y Daniel Queijeiro Albo |
-|**2.0**| Simplificación del proceso | 14/05/2025 | Rommel Toledo Crespo |
+|**2.0**| Simplificación del proceso | 15/05/2025 | Rommel Toledo Crespo, Daniel Contreras Chávez |
 
