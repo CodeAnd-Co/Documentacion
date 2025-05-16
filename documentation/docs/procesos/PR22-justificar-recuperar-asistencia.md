@@ -15,8 +15,9 @@ sidebar_position: 22
 
 ### Entradas
 
-1. [Formato de Justificación de faltas](https://docs.google.com/document/d/1iaZjdpeGxCJ-D3fAqPj4vEzI2uxdseNqC2Qj9vblE5I/edit?usp=sharing)
-2. [Formato de Recuperación de asistencias](https://docs.google.com/document/d/1ITy1mSxYEbpZlgPr5B6GFSGERKHlTQCQpj8v0V6gz6g/edit?usp=sharing)
+1. Juntas efectivas
+2. [Formato de Justificación de faltas](https://docs.google.com/document/d/1iaZjdpeGxCJ-D3fAqPj4vEzI2uxdseNqC2Qj9vblE5I/edit?usp=sharing)
+3. [Formato de Recuperación de asistencias](https://docs.google.com/document/d/1ITy1mSxYEbpZlgPr5B6GFSGERKHlTQCQpj8v0V6gz6g/edit?usp=sharing)
 
 ---
 

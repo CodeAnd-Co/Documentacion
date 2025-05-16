@@ -17,8 +17,7 @@ sidebar_position: 7
 
 ## Entradas
 
-- Dashboard del estado de salud de los 4 proyectos.
-- Plan de valor ganado y de iteración actualizados.
+- Plan de valor ganado y de iteración actualizados (Dashboard del estado de salud de los 4 proyectos.).
 - Matriz de riesgos.
 - [Plantilla de guión de reporte estado](https://docs.google.com/document/d/180gkMwJGRrlqJ7Fj7H4BttP6-YzA1Cpwne2Qz_jhpYE/edit?tab=t.0#heading=h.d66jm9qd1q5i)
 - [Plantilla de presentación de reporte de estado](https://www.canva.com/design/DAGmnm4Wfsk/osAcd06hIavhOKI8cY30UA/edit)
@@ -40,7 +39,7 @@ sidebar_position: 7
 | **Validación de la presentación** | Verificar la [checklist](https://docs.google.com/document/d/1skvIHlFhoJjGSoHj_fZ98gRAkRll7O8zY8Facau6crE/edit?tab=t.0) del reporte de estado. | Equipos. | Últimos 30 minutos de la junta del martes. | **MA SP 2.4** (Informar de los resultados de las actividades de medición y análisis a todas las partes interesadas). |
 | | Ensayo de 45 minutos y recibir retroalimentación. | Responsable de cada proyecto. | Junta del Miércoles de 12:00 a 14:00. | |
 | **Presentación** | Presentar reporte a las partes interesadas y recibir retroalimentación. | Presentadores. | Miércoles. | **PMC SP 1.6** (Llevar a cabo revisiones del progreso), **MA SP 2.4** (Reportar resultados a los stakeholders) |
-| | Documentar la retroalimentación obtenida de las partes interesadas y atenderlas para el siguiente reporte de estado. Seguir [toma de retro](https://codeandco-wiki.netlify.app/docs/procesos/PR14-retroalimentacion) y [acciones correctivas](https://codeandco-wiki.netlify.app/docs/procesos/PR13-acciones-correctivas). | PM's. | Miércoles. | **PMC SP 1.6** (Llevar a cabo revisiones del progreso) |
+| | Documentar la retroalimentación obtenida de las partes interesadas y atenderlas para el siguiente reporte de estado. Seguir el proceso de [toma de retro](https://codeandco-wiki.netlify.app/docs/procesos/PR14-retroalimentacion). | PM's. | Miércoles. | **PMC SP 1.6** (Llevar a cabo revisiones del progreso) |
 
 ---
 
@@ -48,7 +47,6 @@ sidebar_position: 7
 
 1. Presentación del reporte de estado.
 2. Retroalimentación de las partes interesadas.
-3. Acciones correctivas.
 
 ---
 

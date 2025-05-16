@@ -15,7 +15,7 @@ sidebar_position: 1
 
 ### Entradas
 
-1. <u>_[Plan departamental](https://docs.google.com/spreadsheets/d/1yvqCf1wp_6ic0Xqwd4LDwk_sMfGdgWF-S9FTfnieVZQ/edit?usp=sharing)_</u>.
+1. <u>_[Plan de iteración departamental](https://docs.google.com/spreadsheets/d/1yvqCf1wp_6ic0Xqwd4LDwk_sMfGdgWF-S9FTfnieVZQ/edit?usp=sharing)_</u>.
 2. <u>_[CMMI® para Desarrollo, Versión 1.3](https://insights.sei.cmu.edu/documents/87/2010_019_001_28782.pdf)_</u>
 
 ---
@@ -38,7 +38,8 @@ sidebar_position: 1
 
 ### Salidas
 
-1. Plantillas, guías, procesos o procesos modificados acorde a un área del CMMI.
+1. Plantillas, guías, estándares, procesos o procesos modificados acorde a un área del CMMI.
+2. Junta departamental para internalizar el CMMI.
 
 ---
 
