@@ -1,5 +1,5 @@
 ---
-title: PR6 Plan de iteración.
+title: PR6 Plan de iteración
 sidebar_position: 6
 ---
 
