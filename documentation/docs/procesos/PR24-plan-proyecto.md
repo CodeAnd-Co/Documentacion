@@ -61,6 +61,7 @@ sidebar_position: 24
 9. Planes de capacitación
 10. Plan de recursos
 11. Acta de compromiso con el plan firmada
+12. Matriz de riesgos 
 
 ---
 
