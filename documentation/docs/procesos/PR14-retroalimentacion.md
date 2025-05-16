@@ -16,7 +16,10 @@ sidebar_position: 14
 
 ## Entradas
 
-- Retroalimentación recibida.
+- [Miro de retroalimentación](https://miro.com/app/board/uXjVLiydTAs=/) de reporte de estado
+- Respuestas de encuestas de satisfacción
+- Sprint retrospective
+- Minuta de juntas
 
 ---
 
@@ -24,10 +27,13 @@ sidebar_position: 14
 
 | Fase | Actividades | Responsables | Meta y práctica específica del CMMI |
 |------|------------|--------------|--------------------------------------|
-| **Registro de retroalimentación** | Tras recibir retroalimentación, registrala en una línea dentro de el [Repositorio de Retroalimentación](https://docs.google.com/spreadsheets/d/1AFSCQ3wmXUBa8Cf7gu5VQHqexOzJk0g0RWMgwnUmhLk/edit?usp=sharing). | Responsable de documentación | |
-| | Añade la fuente y fecha de obtención, y el responsable de que se definan acciones correctivas. | Responsable de documentación | |
-| **Creación de las acciones correctivas** | Asegura el seguimiento del [proceso de acciones correctivas](PR13-acciones-correctivas.md). | Responsable de aplicar la retroalimentación |  **PMC, SP 2.2** Llevar a cabo las acciones correctivas |
-| | **Nota:** Determina con los miembros de tú equipo que retroalimentación requiere tener cambios en la forma de trabajo. | Responsable de aplicar la retroalimentación | |
+| **Registro de retroalimentación** | Tras recibir retroalimentación (Reporte de estado, juntas departamentales, encuestas de satisfacción), registrarla en el [Repositorio de Retroalimentación](https://docs.google.com/spreadsheets/d/1u3bg9GsFHI2haALBqlX3uZALFF3LYtiW8fwFS25-nss/edit?gid=1105647119#gid=1105647119). | Responsable de documentación. | |
+| | Añade la fuente y fecha de obtención, y el responsable de que se definan acciones correctivas. | Responsable de documentación. | |
+| **Creación de las soluciones** | Redacta la solución conforme a la guía del documento. <br></br> **Nota:** Determina con los miembros de tu equipo que retroalimentación requiere tener cambios en la forma de trabajo. | Responsable de aplicar la retroalimentación. | Responsable de aplicar la retroalimentación. |   |
+| | Añadir la solución al plan de iteración correspondiente, poner fecha estimada y costo estimado. | Responsable de aplicar la retroalimentación. | |
+| **Seguimiento de la solución** | Asegura el seguimiento de la solución. | Responsable de aplicar la retroalimentación. | **PMC, SP 2.2** Llevar a cabo las acciones correctivas. |
+| | Si la retroalimentación no se repitió y se observa la resolución, añadir evidencia de la resolución al repositorio de retroalimentación. | Responsable de aplicar la retroalimentación. | |
+| | Una vez implementada la solución, verificar que no se repita. | Responsable de la retroalimentación. | |
 
 ---
 
