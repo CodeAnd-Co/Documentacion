@@ -40,7 +40,8 @@ Poder acceder facilmente a todas las checklists necesarias para auditar todos lo
 - Checklist de [análisis](https://docs.google.com/document/d/1dFEBxS_WGWtgCAAW1Sp57Vlgj06-X-od6HbNy2XnZKk/edit?usp=sharing).
 - Checklist de [diseño](https://docs.google.com/document/d/17iPu9h6KR80SHw6kBhKG3mf926_mbkIipx1Aq1sfD2A/edit?usp=sharing).
 - Checklist de [pruebas](https://docs.google.com/document/d/1vgbiGV0X7-2gam2kI9x5Da3l594kb4XKfE4BtnfEJ-8/edit?usp=sharing).
-
+- Checklist de [verificación de código](https://docs.google.com/document/d/1FCQ774wdJnV0i3PfMt8KX_YHJbVFp-rs1cVEQgGIMRA/edit?usp=sharing).
+- Checklist de [verificación de despliegue](https://docs.google.com/document/d/1EG-ZbfHgw4n80yBjMSuXoVeoflwsJaIqhdJFRF0B8Z8/edit?usp=sharing).
 ---
 
 ## Historial de Cambios
@@ -49,3 +50,4 @@ Poder acceder facilmente a todas las checklists necesarias para auditar todos lo
 | ------------------- | --------------------------------------------- | ---------- | ---------------------------------- |
 | **1.0**             | Creación del índice                           | 22/04/2025 | Diego Isaac Fuentes Juvera         |
 | **2.0**             | Checklists de Pull Requests                   | 22/04/2025 | Diego Isaac Fuentes Juvera         |
+| **3.0**             | Checklists de verificación                    | 15/05/2025 | Rommel Pacheco Hernández           |
