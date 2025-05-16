@@ -78,7 +78,7 @@ sidebar_position: 1
 ---
 
 ## Acuerdos de trabajo:
-- Agarramos las tareas que nadie quiere, hacemos 2 tareas malas a una tarea buena.
+- Agarramos las tareas que nadie quiere, hacemos 2 tareas malas por una tarea buena.
 - No nos paramos hasta terminar el trabajo actual.
 - Nos damos recordatorios de seguir trabajando cuando notamos que alguien no trabaja.
 - No interrumpimos a las personas que están trabajando en el CMMI.
