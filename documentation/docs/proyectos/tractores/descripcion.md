@@ -18,9 +18,11 @@ CNH busca mejorar su conexión con los clientes después de la compra, ofreciend
 ### Misión del proyecto
 Aumentar la conexión que CNHMx tiene con sus clientes finales creando soluciones que cumplan con los estándares de calidad basándonos en buenas prácticas de desarrollo de software.
 
-### Visión del proyecto
+### Visión del producto
 Optimizar procesos de CNH para asegurar una conexión efectiva y confiable con sus clientes.
 
+### Visión del equipo:
+Ser un equipo disciplinado, que aprenda de los errores, y que retrabaje lo mínimo posible para su proceso de aprendizaje.
 
 ### Restricciones
 - Existen 10 semanas para desarrollar la solución.
