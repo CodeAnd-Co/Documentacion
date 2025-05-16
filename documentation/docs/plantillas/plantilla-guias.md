@@ -1,5 +1,6 @@
 ---
 title: Plantilla para guías
+sidebar_position: 3
 ---
 
 # Plantilla para guías

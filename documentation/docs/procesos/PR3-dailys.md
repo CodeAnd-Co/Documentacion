@@ -14,7 +14,6 @@ sidebar_position: 3
 1. Plan de iteración del proyecto.
 2. Plan de valor ganado del proyecto.
 3. Dashboard del proyecto.
-4. Matriz de riesgos del proyecto.
 
 ## Proceso
 
@@ -29,7 +28,6 @@ sidebar_position: 3
 ## Salidas
 
 1. Plan de Valor Ganado actualizado.
-2. Riesgos monitoreados y medidas propuestas o ejecutadas.
 
 ---
 
