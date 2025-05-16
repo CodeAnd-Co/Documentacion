@@ -19,7 +19,7 @@ sidebar_position: 24
 2. Plantilla del Plan de Proyecto
 3. Plantillas de: SRS, Plan de Gestión de Datos, Plan de Pruebas, Plan de Comunicación, Plan de Recursos, Plan de Capacitación
 4. Política de gestión de datos y estándar de arquitectura
-5. Documento de ciclos de vida
+5. Documento de ciclos de vida de proyecto
 
 ---
 
@@ -50,18 +50,18 @@ sidebar_position: 24
 
 ### Salidas
 
-1. **Plan de valor ganado** con lista de tareas priorizadas, estimadas y con fechas.
-2. **Plan de Entrega** con fechas de finalización de las fases y los hitos.
-3. WBS del proyecto
-4. Ciclo de vida definido
-5. Documento de involucramiento de los stakeholders
-6. Plan de comunicación
+1. Plan de valor ganado con lista de tareas priorizadas, estimadas y con fechas
+2. Plan de entregas con fechas de finalización por fase e hitos
+3. Estructura de descomposición del trabajo (WBS) del proyecto
+4. Ciclo de vida del proyecto definido
+5. Documento de involucramiento de stakeholders
+6. Plan de comunicación con stakeholders
 7. Plan de pruebas
 8. Plan de gestión de datos
-9. Planes de capacitación
-10. Plan de recursos
-11. Acta de compromiso con el plan firmada
-12. Matriz de riesgos 
+9. Plan de recursos y capacitaciones
+10. Acta de compromiso con el plan firmada
+11. Matriz de riesgos actualizada
+12. Activación del proceso de definición del SRS como insumo clave para la ejecución
 
 ---
 
