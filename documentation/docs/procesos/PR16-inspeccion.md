@@ -23,7 +23,7 @@ sidebar_position: 16
 
 | **Fase**        | **Descripción**                                                                                                             | **Responsable**     | **Meta y práctica específica del CMMI**                                   |
 | --------------- | --------------------------------------------------------------------------------------------------------------------------- | ------------------- | ------------------------------------------------------------------------- |
-| **Preparación** | En caso de no haber realizado una inspección antes, leer la [guía para inspección de código](/docs/guias/inspeccion-codigo) | Miembros del equipo | **VER SP 2.1**(Preparar las revisiones entre pares)                       |
+| **Preparación** | En caso de que el ítem a inspeccionar sea código, leer la [guía para inspección de código](/docs/guias/inspeccion-codigo) | Miembros del equipo | **VER SP 2.1**(Preparar las revisiones entre pares)                       |
 |                 | Identificar el componente a inspeccionar.                                                                                   | Miembros del equipo | **VER SP 1.1**(Seleccionar los productos de trabajo para la verificación) |
 |                 | Informar y seleccionar a los inspectores (idealmente de 4 a 6 personas).                                                    | QA/Facilitador      | **VER SP 2.1**(Preparar las revisiones entre pares)                       |
 | **Inspección**  | Se define el tiempo de inspección y se inicia un cronómetro.                                                                | QA/Facilitador      |                                                                           |
