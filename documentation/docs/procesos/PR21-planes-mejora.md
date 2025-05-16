@@ -15,11 +15,17 @@ sidebar_position: 21
 ## Entradas
 
 1. Repositorio de métricas. 
+2. Minuta de cierre de iteración completa.
+3. Repositorio de retroalimentación. 
 
 # Proceso de mejora continua
 | Fase | Descripción | Responsables | Meta y práctica específica del CMMI |
 |------|------------|--------------|--------------------------------------|
-| **Identifición** | Identifica el principio de mejora continua <br/> 1. Aumentar el flujo de valor (Con lo mismo, puedo producir más o puedo producir lo mismo con menos). <br/> 2. Reducir tiempo de los ciclos de vida de retroalimentación <br/> 3. Aprendizaje continuo y experimentación. (Hacer que se hagan experimentos más y más rápido). | Integrante del departamento | ?|
+||Identifica un área de oportunidad en la forma de trabajo. |||
+||Ingresa a la [bitacora de experimentos](https://docs.google.com/spreadsheets/d/1ZUskMYliQ5rVRFKRUb73bi6RmcTdEz7id3t4mOOw-ZI/edit?usp=sharing) y verifica si tu propuesta de mejora aún no se encuentra registrada. |||
+||Completa los siguientes campos: <br/>-Fecha de registro <br/>-Autor  <br/>-Hipótesis con la siguiente estructura: `Si [cambio en el Wow]. Entonces [resultado esperado con la medición inicial]` <br/>-Fecha de evaluación |||
+| **Identifición** | Identifica el principio de mejora continua: <br/> 1. **Aumentar el flujo de valor** (Con lo mismo, puedo producir más o puedo producir lo mismo con menos). <br/> 2. **Reducir tiempo de los ciclos de vida de retroalimentación** <br/> 3. **Aprendizaje continuo y experimentación** (Hacer que se hagan experimentos más y más rápido). | Integrante del departamento | ?|
+||Cuando llegue el día de la evaluación registrar el resultado y actualizar el estado. |||
 
 ## Salidas
 
