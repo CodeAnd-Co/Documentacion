@@ -1,6 +1,6 @@
 ---
 title: Plantilla para estándares
-sidebar_position: 1
+sidebar_position: 2
 ---
 
 # Plantilla para estándares
