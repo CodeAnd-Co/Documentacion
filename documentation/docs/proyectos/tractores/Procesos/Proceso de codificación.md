@@ -20,6 +20,7 @@ sidebar_position: 1
 1. Requerimientos o historias de usuario asignadas en READY.
 2. [Estándar de codificación](/docs/standards/general).
 3. [Checklist de verificación de código](https://docs.google.com/document/d/1ItP965B7cFppIUX3RPXg_ZuUiYZzSuGs1b5bMw2-ZpQ/edit?tab=t.0#heading=h.fhau7kjl46pa).
+4. Checklist individual de código (con los defectos propios más comunes).
 
 ---
 
@@ -69,6 +70,10 @@ sidebar_position: 1
     - Conectar el controlador a la vista del usuario a través de este archivo.
     - Englobar las funciones del DOM en una función de inicializar módulo para que al cargar tu módulo se pueda interactuar con el módulo.
 
+### Revisar el código
+
+- Usar tu checklist individual para verificar todo el código.
+- Usar la checklist del equipo para verificar todo el código.
 
 ### Programar pruebas
 - Ejecutar prueba manual registrando entradas y salidas.
