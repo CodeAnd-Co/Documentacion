@@ -9,86 +9,61 @@ sidebar_position: 13
 
 ### Objetivo
 
-- Asegurar la identificación, análisis y corrección de problemas en los procesos organizacionales, garantizando su mejora continua y alineación con los objetivos de la empresa.
+- Detectar, registrar, comunicar, dar seguimiento y resolver de forma objetiva las no conformidades identificadas.
+- Asegurar que se tomen acciones correctivas adecuadas, manteniendo la calidad de los procesos y productos conforme a los estándares y procedimientos definidos por el departamento.
+
+:::tip ¿Qué es una no conformidad?
+
+Situación en la que el producto o acuerdo de trabajo no cumple con los requisitos establecidos, tales como estándares, especificaciones, políticas o criterios de calidad.
+
+:::
 
 ---
 
 ### Entradas
 
-1. Riesgo identificado.
-2. Problema detectado en un proceso existente.
-3. Propuesta de mejora aprobada.
-4. Cambio en las necesidades u objetivos de la empresa.
-5. Incumplimiento de estándares de codificación.
-6. Código no testeable.
-7. Requisitos mal identificados.
+1. Matriz de riesgos.
+2. Informe de evaluación. 
+3. Defect Log.
 
 ---
-
-### No conformidad
-
-Situación en la que el producto o acuerdo de trabajo no cumple con los requisitos establecidos:
-- Estándares.
-- Especificaciones.
-- Políticas.
-- Criterios de calidad.
-
-#### Ejemplos
-
-- Código que no sigue estándares.
-- Funcionalidades que no cumplen con lo especificado en los requisitos.
-- Pruebas no ejecutables o con resultados ignorados.
-- Documentación no completa o ausente.
 
 ### Proceso
 
 | Fase                                       | Descripción                                                                                                                                                                                                                                                                                                      | Responsable             | Meta y práctica específica del CMMI                                                            |
 | ------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- | ---------------------------------------------------------------------------------------------- |
-| **Identificar la no conformidad**          | Identifica cualquier desviación de los estándares para productos de trabajo o procesos que afecte el cumplimiento de los objetivos del proyecto. Ten a la mano los documentos de la sección de "Entradas".                                                                                                       | Miembro del equipo      | **OPD, SP 1.1**, **RSKM, SP 2.1**, **PMC, SP 2.1**, **PPQA SP 2.1**                                             |
-|                                            | Documenta las no conformidades en el [Repositorio de Acciones Correctivas](https://docs.google.com/spreadsheets/d/1bWcGOW0PjlB6ws4VDCAXw4rdlsBL1s1UbFidUgTCvCM/edit?gid=0#gid=0), llenando los campos correspondientes.                                                                                          | Miembro del equipo      | **PMC, SP 2.1**, **REQM SP 1.5**, **PPQA SP 2.1**                                                               |
-| **Análisis del problema**                  | Analiza los problemas documentados, utilizando los criterios establecidos para decidir si se requiere acción correctiva.                                                                                                                                                                                         | Miembro del equipo      | **PMC, SP 2.1**, **RSKM, SP 2.2**, **RSKM, SP 3.1**, **REQM SP 1.5**, **PPQA SP 2.1**                           |
-|                                            | Identifica y documenta los stakeholders relevantes en la columna correspondiente.                                                                                                                                                                                                                                | Miembro del equipo      | **PMC, SP 2.1**                                                                                |
-| **Notificar no conformidad**               | Notifícala formalmente a los stakeholders y responsables, por correo, mensaje o reunión. Registra la fecha y responsables en el [Repositorio de Acciones Correctivas](https://docs.google.com/spreadsheets/d/1bWcGOW0PjlB6ws4VDCAXw4rdlsBL1s1UbFidUgTCvCM/edit?gid=0#gid=0).                                     | QA / Líder de equipo    | **PPQA, SP 2.1**                                                                               |
-| **Registrar en el reporte**                | Documenta todas las no conformidades y acciones correctivas en el [Repositorio de Acciones Correctivas](https://docs.google.com/spreadsheets/d/1bWcGOW0PjlB6ws4VDCAXw4rdlsBL1s1UbFidUgTCvCM/edit?gid=0#gid=0), llenando los campos correspondientes.                                                             | QA / Miembro del equipo | **PPQA, SP 2.1**                                                                               |
-| **Obtener aprobación de stakeholders**     | Revisa el problema y las acciones propuestas con los stakeholders afectados. Registra su aprobación en el [Repositorio de Acciones Correctivas](https://docs.google.com/spreadsheets/d/1bWcGOW0PjlB6ws4VDCAXw4rdlsBL1s1UbFidUgTCvCM/edit?gid=0#gid=0).                                                           | Miembro del equipo      | **PMC, SP 2.2**, **OPF, SP 3.2**, **OPD, SP 1.3**, **PPQA SP 2.1**                                              |
-| **Llevar a cabo las acciones correctivas** | Agrega las tareas correspondientes al plan de trabajo, incluyendo responsable, fecha de realización y costo. Regístralo en la columna “Tareas agregadas al plan de trabajo”.                                                                                                                                     | Miembro del equipo      | **PMC, SP 2.2**, **REQM SP 1.5**, **PPQA SP 2.1**                                                               |
-|                                            | Anota la fecha en que se aplican las acciones correctivas en la columna “Fecha de ejecución”.                                                                                                                                                                                                                    | Miembro del equipo      | **PMC, SP 2.2**, **REQM SP 1.5**                                                               |
-|                                            | Verifica que las tareas se hayan cumplido conforme a lo planeado. Registra el cumplimiento en la columna “¿Se cumplieron todas las tareas agregadas en tiempo y forma?”.                                                                                                                                         | Miembro del equipo      | **PMC, SP 2.3**, **REQM SP 1.5**, **PPQA SP 2.1**                                                               |
-| **Validación y seguimiento**               | Agenda una revisión de los resultados. Registra en la columna “Fecha de revisión”. Evalúa si las acciones correctivas fueron efectivas y regístralo en “¿Resolvió el problema?”.                                                                                                                                 | QA / Miembro del equipo | **PPQA, SP 1.1**, **PPQA, SP 1.2**, **PPQA, SP 2.1**, **PMC, SP 2.3**, **REQM SP 1.5**         |
-|                                            | Si no se resolvió el problema, documenta áreas de oportunidad y repite el proceso desde la fase correspondiente.                                                                                                                                                                                                 | Miembro del equipo      | **PMC, SP 2.3**, **PPQA SP 2.1**                                                                                |
-| **Escalar si no se resuelve**              | Si la no conformidad persiste sin solución, escálala volviendo a aplicar este proceso.                                                                                                                                                                                                                           | QA / Gerente            | **PPQA, SP 2.1**                                                                               |
+| **Identificar la no conformidad**          | Identificar en las entradas del proceso aquellas cuestiones que cuente con alguno de los [criterios establecidos](../procesos/PR13-acciones-correctivas.md#tabla-de-criterios) para aplicar una acción correctiva.                                                                                              | Team member             | **OPD SP 1.1** (Esrablecer los procesos estándar), **PMC 2.1** (Analizar las cuestiones), **PPQA SP 2.1** (Comunicar y resolver las no conformidades)                                          |
+|                                            | Documenta las no conformidades en el [Repositorio de Acciones Correctivas](https://docs.google.com/spreadsheets/d/1bWcGOW0PjlB6ws4VDCAXw4rdlsBL1s1UbFidUgTCvCM/edit?gid=0#gid=0), llenando los campos correspondientes: <br/>-Fecha de identificación <br/>-Fuente de origen <br/>-Descripción breve del problema <br/>-Urgencia de la correción <br/>-Acción correctiva (tareas) <br/>-Responsable de implementar   <br/><br/>  *Nota: Si la no conformidad no puede resolverse dentro del proyecto, deberá escalarse al nivel de gestión designado para su atención (PMs o Maestros).*   | Team member             | **PMC SP 2.1** (Analizar las cuestiones), **PPQA SP 2.1** (Comunicar y resolver las no conformidades), **PPQA SP 2.2** (Establecer los registros), **PMC SP 2.2** (Llevar a cabo las acciones correctivas)                                                               |                                                                                                    | Miembro del equipo      |                                              |
+| **Aprobación stakeholders**                | Identificar a los stakeholders relevantes y obtener su aprobación de las acciones a tomar.                                                                                                                                                                                              | Team member             | **PMC, SP 2.2** (Llevar a cabo las acciones correctivas)                                                                               |
+|                                            | Documentar la fecha de aprobación.                                                                                                                                                                                                    | Team member             | **PMC, SP 2.2** (Llevar a cabo las acciones correctivas)                                                                               |
+| **Llevar a cabo las acciones correctivas** | Realiza la acción correctiva y documenta la fecha de ejecucción.                                                                                                                                                                                                 | Team member             | **PMC, SP 2.2** (Llevar a cabo las acciones correctivas)                                                                               |
+| **Validar la acción correctiva**           | Identifica la métrica o documentación (algo tangible) que demuestre que la accion correctiva fue exitosa.      | Team member             | **PMC, SP 2.3** (Gestionar las acciones correctivas)                                                                               |
+|                                            | Si la no conformidad persiste, repite el proceso nuevamente y documenta por qué no fue exitoso.                                                   | Team member             | **PMC, SP 2.3** (Gestionar las acciones correctivas), **PPQA SP 2.2** (Establecer los registros)                                                                              |
+|                                            | Si la resolución fue exitosa, notifica a los stakeholders y documenta la evidencia de resolución.                                                              | Team member             | **PPQA, SP 2.1** (Comunicar y resolver las no conformidades)                                                                               |
 
 ---
 
 ### Salidas
 
-1. Resolución de la no conformidad.
-2. Historial de cambios.
-3. Corrección validada y en funcionamiento.
-4. Comunicación formal de la no conformidad.
-5. Repositorio de acciones correctivas y no conformidades actualizado.
+1. Repositorio de acciones correctivas y no conformidades actualizado.
+
 
 ---
 
 ## Tabla de criterios
 
-| Criterio                                           | Pregunta guía                                                                                                                              | ¿Requiere acción correctiva?      |
-| -------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------- |
-| Impacto en objetivos                               | ¿Este problema puede afectar el cumplimiento de los objetivos del proyecto (tiempo, calidad, alcance, costo)?                              | Sí                                |
-| Compromisos no cumplidos                           | ¿Existen compromisos (internos o externos) que no se están cumpliendo según lo planeado?                                                   | Sí                                |
-| Repetición del problema                            | ¿Es una desviación o situación que ya ha ocurrido antes y aún no ha sido atendida?                                                         | Sí                                |
-| Acción previa fallida                              | ¿Es una desviación o situación que ya se abordó anteriormente, pero el problema persiste?                                                  | Sí                                |
-| Gravedad                                           | ¿Es una desviación significativa respecto al plan, métricas o compromisos?                                                                 | Sí                                |
-| Riesgo materializado                               | ¿Corresponde a un riesgo previamente identificado que ahora se ha hecho realidad?                                                          | Sí (Atender plan de contingencia) |
-| Interrupción de procesos                           | ¿Afecta el flujo de trabajo, la disponibilidad de recursos o la continuidad del proyecto?                                                  | Sí                                |
-| Falta de participación de stakeholders             | ¿Se observa una baja participación, compromiso o coordinación deficiente entre los interesados?                                            | Sí                                |
-| Gestión o seguridad de datos comprometida          | ¿Se han detectado accesos no autorizados o fallos en la privacidad, integridad o disponibilidad de los datos o productos de trabajo?       | Sí                                |
-| Desviación de los estándares de codificación       | ¿El código presenta inconsistencias, malas prácticas o no cumple con los estándares definidos por el equipo o la organización?             | Sí                                |
-| Problemas en pruebas o validación                  | ¿Se han detectado errores no capturados por pruebas, falta de cobertura o ejecución inadecuada de pruebas?                                 | Sí                                |
-| Problemas en la gestión y/o seguridad de los datos | ¿Se han identificado errores, accesos no controlados o compromisos en la privacidad, integridad o disponibilidad de los datos o productos? | Sí                                |
-| Fallas en la identificación de requisitos          | ¿Se han omitido, malinterpretado o identificado incorrectamente requisitos funcionales o no funcionales?                                   | Sí                                |
-| Sin impacto aparente                               | ¿No tiene consecuencias observables ni potenciales si no se atiende?                                                                       | No (solo registrar)               |
-
+| Criterio                                           | Pregunta guía                                                                                                                              | 
+| -------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ | 
+| Impacto en objetivos                               | ¿Este problema puede afectar el cumplimiento de los objetivos del proyecto (tiempo, calidad, alcance, costo)?                              | 
+| Acción previa fallida                              | ¿Es una desviación o situación que ya se abordó anteriormente, pero el problema persiste?                                                  | 
+| Gravedad                                           | ¿Es una desviación significativa respecto al plan, métricas o compromisos?                                                                 |
+| Riesgo materializado                               | ¿Corresponde a un riesgo previamente identificado que ahora se ha hecho realidad?                                                          | 
+| Interrupción de procesos                           | ¿Afecta el flujo de trabajo, la disponibilidad de recursos o la continuidad del proyecto?                                                  | 
+| Falta de participación de stakeholders             | ¿Se observa una baja participación, compromiso o coordinación deficiente entre los interesados?                                            | 
+| Gestión o seguridad de datos comprometida          | ¿Se han detectado accesos no autorizados o fallos en la privacidad, integridad o disponibilidad de los datos o productos de trabajo?       |
+| Desviación de los estándares de codificación       | ¿El código presenta inconsistencias, malas prácticas o no cumple con los estándares definidos por el equipo o la organización?             | 
+| Problemas en pruebas o validación                  | ¿Se han detectado errores no capturados por pruebas, falta de cobertura o ejecución inadecuada de pruebas?                                 | 
+| Fallas en la identificación de requisitos          | ¿Se han omitido, malinterpretado o identificado incorrectamente requisitos funcionales o no funcionales?                                   | 
 
 ---
 
@@ -103,3 +78,4 @@ Situación en la que el producto o acuerdo de trabajo no cumple con los requisit
 | **2.1**                         | Correcciones de REQM 1.5                                    | 22/04/2025 | Juan Pablo Chávez Leal                                                      |
 | **2.2**                         | Incorporación de PPQA 2.1 (no conformidades y notificación) | 24/04/2025 | Juan Eduardo Rosas Cerón                                                    |
 | **2.3**                         | Errores ortográficos | 25/04/2025 | Hiram Mendoza                                                   |
+| **3.0**                         | Simplifación del proceso y corrección acorde al CMMI.       | 15/05/2025 | Paola María Garrido, Valeria Zúñiga                                                   |
