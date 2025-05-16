@@ -41,9 +41,9 @@ sidebar_position: 1
             - Verificar que dentro de la carpeta 'data' exista la carpeta 'repositorios'.
         - Verificar que exista el archivo de índice de las rutas del módulo.
 - Crear el archivo de ruta individual del requisito, añadiendo los middlewares necesarios.
-- Agregar el archivo de ruta inidivual al índice de rutas del módulo.
+- Agregar el archivo de ruta individual al índice de rutas del módulo.
 - Crear el archivo de controlador del requisito dentro de la carpeta de controladores.
-- Agregar el archivo de controlador del requisito al archivo de ruta inidivual del requisito.
+- Agregar el archivo de controlador del requisito al archivo de ruta individual del requisito.
 - Crear el archivo de repositorio del requisito dentro de la carpeta data>repositorios.
 - Agregar el archivo de repositorio del requisito al controlador del requisito.
 
@@ -66,7 +66,7 @@ sidebar_position: 1
     - Verificar si existe la carpeta del módulo correspondiente al requisito.
     - Crear el archivo que tiene toda la lógica de negocio y que funciona como controlador del requisito.
 - Programar frontend:
-    - Ir ar src>framework>js y crear el archivo con el código de js que correra directamente en el frontEnd y manejará el DOM (Documento Object Model) o body.
+    - Ir ar src>framework>js y crear el archivo con el código de js que correra directamente en el frontEnd y manejará el DOM (Document Object Model) o body.
     - Conectar el controlador a la vista del usuario a través de este archivo.
     - Englobar las funciones del DOM en una función de inicializar módulo para que al cargar tu módulo se pueda interactuar con el módulo.
 
