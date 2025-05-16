@@ -66,13 +66,7 @@ npm install
 
 Crea un archivo `.env.staging` y `.env.production` en el root del proyecto (ver sección [Variables de Entorno](#variables-de-entorno)).
 
-## 4. Ejecutar o reiniciar procesos con PM2
-
-```bash
-pm2 start ecosystem-staging.config.js # o ecosystem-production.config.js
-# o si ya está corriendo
-pm2 reload ecosystem.config.js # o ecosystem-production.config.js
-```
+## 4. Crear archivos de ecosistema para staging y produccion
 
 ### Archivo de ecosistema para produccion y staging
 
@@ -114,13 +108,15 @@ module.exports = {
 };
 ```
 
-Para no tener que hacer estos pasos manualmente, usaremos un script de github actions que se puede encontrar en el apartado CI / CD de la [estrategia tecnica](./estrategia-tecnica-textiles.md)
-
-## 5. Verificar logs
+## 5. Ejecutar o reiniciar procesos con PM2
 
 ```bash
-pm2 logs
+pm2 start ecosystem-staging.config.js # o ecosystem-production.config.js
+# o si ya está corriendo
+pm2 reload ecosystem.config.js # o ecosystem-production.config.js
 ```
+
+Para no tener que hacer estos pasos manualmente, usaremos un script de github actions que se puede encontrar en el apartado CI / CD de la [estrategia tecnica](./estrategia-tecnica-textiles.md)
 
 ---
 

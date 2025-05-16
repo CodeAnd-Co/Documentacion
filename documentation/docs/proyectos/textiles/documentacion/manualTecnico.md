@@ -1,87 +1,139 @@
-# Manual Técnico del Sistema ALTERTEX
+# Manual Técnico ALTERTEX
 
 ## Índice
 
 1. [Introducción](#1-introducción)
-2. [Arquitectura del Sistema](#2-arquitectura-del-sistema)
-3. [Estructura de Carpetas](#3-estructura-de-carpetas)
-4. [Estrategia Técnica](#4-estrategia-técnica)
-5. [Seguridad](#5-seguridad)
-6. [Pruebas del Sistema](#6-pruebas-del-sistema)
-7. [Despliegue y CI/CD](#7-despliegue-y-cicd)
-8. [Documentación Visual](#8-documentación-visual)
-9. [Referencias](#9-referencias)
-10. [Historial de Cambios](#10-historial-de-cambios)
+2. [Requisitos Previos](#2-requisitos-previos)
+3. [Preparación del Proyecto](#3-preparación-del-proyecto)
+4. [Estructura de Carpetas](#4-estructura-de-carpetas)
+5. [Configuración del Entorno](#5-configuración-del-entorno)
+6. [Ejecución del Proyecto](#6-ejecución-del-proyecto)
+7. [Pruebas del Sistema](#7-pruebas-del-sistema)
+8. [CI/CD y Despliegue](#8-cicd-y-despliegue)
+9. [Documentación Visual](#9-documentación-visual)
+10. [Referencias Cruzadas](#10-referencias-cruzadas)
+11. [Historial de Cambios](#11-historial-de-cambios)
 
 ---
 
 ## 1. Introducción
 
-### 1.1 Propósito
-
-Este documento técnico detalla la arquitectura, codificación, pruebas, despliegue y mantenimiento del sistema ALTERTEX. Está destinado a desarrolladores, QA y personal técnico encargado del soporte, mantenimiento o evolución del sistema.
-
-### 1.2 Alcance
-
-Incluye toda la información técnica necesaria para entender la estructura, diseño, pruebas, calidad del software, despliegue y uso de herramientas DevOps del sistema ALTERTEX. Cubre tanto frontend como backend, bases de datos, integraciones y seguridad.
+Este manual técnico describe paso a paso cómo preparar, ejecutar, probar y mantener el sistema ALTERTEX. Está diseñado para que cualquier desarrollador pueda replicar la instalación y el despliegue del sistema desde cero, sin requerir conocimientos previos del proyecto.
 
 ---
 
-## 2. Arquitectura del Sistema
+## 2. Requisitos Previos
 
-### 2.1 Tecnologías Utilizadas
+Antes de iniciar, asegúrate de tener instalado y configurado lo siguiente:
 
-* **Frontend:** React + Vite + Material UI
-* **Backend:** Node.js + Express.js
-* **Base de Datos:** AWS RDS (MySQL 8.0.37)
-* **Almacenamiento:** AWS S3
-* **Despliegue:** Amplify (Frontend) y EC2 + PM2 (Backend)
-* **Autenticación:** JWT + API Key + RBAC
-* **Infraestructura Adicional:** CloudWatch, GitHub Actions
+### 2.1 Herramientas necesarias
 
-### 2.2 Diagrama de Arquitectura General
+* **Node.js (v18 o superior):** Descárgalo desde [nodejs.org](https://nodejs.org/)
+* **Git:** [git-scm.com](https://git-scm.com/)
+* **MySQL Workbench:** [dev.mysql.com](https://dev.mysql.com/downloads/workbench/)
+* **VS Code o editor similar:** [code.visualstudio.com](https://code.visualstudio.com/)
+* **Postman:** Para pruebas de APIs REST
 
-* Frontend se comunica con API Gateway usando `x-api-key` y JWT.
-* API Gateway redirige al backend en EC2.
-* Backend accede a RDS MySQL y S3 según sea necesario.
+### 2.2 Cuenta en AWS
+
+Debes tener una cuenta en AWS con acceso habilitado a:
+
+* EC2 (para el backend)
+* RDS (base de datos MySQL)
+* S3 (para imágenes)
+* Amplify (para el frontend)
+
+### 2.3 Instalaciones globales necesarias
+
+Instala PM2 globalmente:
+
+```bash
+npm install -g pm2
+```
 
 ---
 
-## 3. Estructura de Carpetas
+## 3. Preparación del Proyecto
 
-### 3.1 Backend
+### 3.1 Clonar los repositorios
+
+Ejecuta los siguientes comandos en tu terminal:
+
+```bash
+git clone https://github.com/CodeAnd-Co/Backend-textiles.git
+cd Backend-textiles
+npm install
+cp .env.example .env
+```
+
+```bash
+git clone https://github.com/CodeAnd-Co/Frontend-Text-Lines.git
+cd Frontend-Text-Lines
+npm install
+cp .env.example .env
+```
+
+### 3.2 Crear base de datos ALTERTEX
+
+1. Abre MySQL Workbench o consola.
+2. Crea la base de datos:
+
+```sql
+CREATE DATABASE altertex;
+```
+
+3. Importa el archivo `ALTERTEX.sql` que contiene toda la estructura del sistema.
+
+   En Workbench:
+
+   * Archivo > Importar > Selecciona `ALTERTEX.sql`
+   * Ejecuta el script sobre la base de datos `altertex`
+
+* [SQL ALTERTEX](https://drive.google.com/file/d/1cXzJ6DeLVpEa-q0A35umEcIBAPvdGVIP/view?usp=drive_link)
+
+---
+
+## 4. Estructura de Carpetas
+
+### 4.1 Backend
 
 ```bash
 /backend
-│
+├── Datos/
+│   ├── Modelos/
+│   ├── Repositorios/
 ├── Autenticacion/
 │   ├── controllers/
 │   ├── routes/
-│
 ├── Roles/
 │   ├── controllers/
 │   ├── routes/
 │   ├── repositorios/
-│
 ├── Utilidades/
 │   ├── middlewares/
-│   ├── services/
-│
+│   ├── servicios/
+│   ├── mensajes/
+│   ├── helpers/
+│   ├── validaciones/
 ├── Configuracion/
-│   └── conexiones.js
-│
+│   └── baseDeDatos.js
 ├── pruebasUnitarias/
+├── ecosystem-staging.config.js
+├── ecosystem-production.config.js
 ├── app.js
+├── .eslintrc.js
+├── .env.example
 ```
 
-### 3.2 Frontend (Atomic Design)
+### 4.2 Frontend
 
 ```bash
 /src
-├── hooks/
-├── rutas/
-├── constantes/
-├── dominio/
+├── @Hooks/
+├── @Rutas/
+├── @SRC/
+│   ├── constantes/
+├── @Dominio/
 │   ├── modelos/
 │   ├── servicios/
 │   ├── repositorios/
@@ -92,153 +144,163 @@ Incluye toda la información técnica necesaria para entender la estructura, dis
 │   │   ├── organismos/
 │   ├── paginas/
 ├── estilos/
+├── vite.config.js
+├── .eslintrc.js
+├── .env.example
 ```
 
 ---
 
-## 4. Estrategia Técnica
+## 5. Configuración del Entorno
 
-### 4.1 Estrategia de Ramas
+### 5.1 Variables del Backend (`.env`)
 
-* `main`: código en producción
-* `staging`: pruebas de aceptación
-* `develop`: desarrollo activo
-* `feature/nombre`: nuevas funcionalidades
+Modifica el archivo `.env` en la raíz del backend:
 
-### 4.2 Commits
-
-Uso de [Conventional Commits](https://www.conventionalcommits.org/).
-
-### 4.3 Documentación
-
-* JSDoc para funciones y controladores
-* Swagger para documentar endpoints REST
-
----
-
-## 5. Seguridad
-
-* **JWT:** Usado para autenticación de usuarios
-* **API Key:** Validada por middleware en cada ruta protegida
-* **RBAC:** Basado en roles y permisos almacenados en base de datos
-* **Protecciones:** CSRF, validaciones SQL, validación de inputs
-
----
-
-## 6. Pruebas del Sistema
-
-### 6.1 Objetivos de las Pruebas
-
-* Verificar funcionalidades (MVP y MBI)
-* Evaluar integración
-* Medir rendimiento y carga
-* Asegurar seguridad (RBAC, autenticación)
-
-### 6.2 Pruebas Funcionales
-
-* Registro/login
-* CRUD de roles, cuotas, sets de productos
-* Visualización de gráficas
-* Autenticación y protección de rutas
-
-**Ejemplo:**
-
-```markdown
-ID: RF6-001
-Funcionalidad: Crear Rol
-Precondición: Usuario autenticado con permiso
-Pasos: Ingresar módulo → Añadir rol → Llenar formulario → Guardar
-Resultado: Rol guardado en RDS y mensaje de éxito
+```env
+PORT=4000
+DB_HOST=localhost
+DB_PORT=3306
+DB_USER=root
+DB_PASSWORD=tu_clave
+DB_NAME=altertex
+JWT_SECRET=secreto123
+API_KEY=clave-api-secreta
+AWS_REGION=us-east-1
+AWS_BUCKET_NAME=nombre-bucket
+AWS_ACCESS_KEY_ID=...
+AWS_SECRET_ACCESS_KEY=...
 ```
 
-### 6.3 Pruebas de Volumen
+### 5.2 Variables del Frontend (`.env`)
 
-* Hasta 30,000 registros
-* Herramientas: Postman, CloudWatch, scripts Node.js
-* Métricas: latencia, integridad de datos, concurrencia
+Modifica el archivo `.env` del frontend:
 
-### 6.4 Pruebas de Estrés
-
-* Hasta 180,000 registros, +3,000 conexiones simultáneas
-* Simulación de caídas, errores de red, concurrencia extrema
-* Herramientas: Apache JMeter, Postman
-
-### 6.5 Pruebas de Seguridad
-
-* Inyección SQL
-* Validación de tokens
-* Verificación de accesos según rol
-
-### 6.6 Ambientes de Prueba
-
-| Entorno     | Características          |
-| ----------- | ------------------------ |
-| Local       | Node.js + MySQL          |
-| Staging AWS | EC2 + Amplify + RDS + S3 |
-
-### 6.7 Manejo de Defectos
-
-* Documentación vía GitHub Issues
-* Clasificación: bloqueante, crítico, menor
-* Procedimiento: subir evidencia → asignar → corregir → validar
-
-### 6.8 Firmas de Aprobación
-
-* QA Responsable
-* Team Lead
+```env
+VITE_API_URL=http://localhost:4000
+VITE_API_KEY=clave-api-secreta
+```
 
 ---
 
-## 7. Despliegue y CI/CD
+## 6. Ejecución del Proyecto
 
-### 7.1 Backend (EC2 + PM2)
+### 6.1 Backend local
 
-* Deploy automatizado vía GitHub Actions → pull en EC2 → restart con PM2
+```bash
+npm run dev
+```
 
-### 7.2 Frontend (Amplify)
+Verifica que se imprima en consola:
 
-* Amplify escucha `main` → despliegue automático
+```bash
+Servidor corriendo en puerto: 4000
+```
 
-### 7.3 Variables de Entorno
+### 6.2 Frontend local
 
-* `.env` para frontend
-* `process.env` en backend
+```bash
+npm run dev
+```
 
----
+Abre tu navegador y entra a:
 
-## 8. Documentación Visual
-
-### 8.1 Storybook
-
-* Documentación visual de componentes frontend
-* Atomos, Moleculas, Organismos
-
-### 8.2 Swagger
-
-* Documentación interactiva de endpoints backend
+```
+http://localhost:5173
+```
 
 ---
 
+## 7. Pruebas del Sistema
 
+### 7.1 Pruebas Manuales Funcionales
 
-## 9. Referencias
+Se utilizaron los siguientes usuarios de prueba:
 
-* [Manual de despliegue AWS Amplify y EC2](manual-despliegue-textiles.md)
-* [Diagrama MER y Diccionario de datos](diagrama-mer.md)
-* [Estrategia técnica](estrategia-tecnica-textiles.md)
-* [Manual de prueba de arquitectura](prueba-de-arquitectura.md)
+**SuperAdmin**
+
+* Correo: `maria.gonzalez@example.com`
+* Contraseña: `hola`
+
+**Empleado**
+
+* Correo: `gabriela.mendoza@example.com`
+* Contraseña: `hola`
+
+Se validaron manualmente:
+
+* Login exitoso
+* Acceso a rutas protegidas
+* Creación, edición y eliminación de roles
+* Consulta de sets de cuotas
+
+---
+
+## 8. CI/CD y Despliegue
+
+### 8.1 Backend en EC2 (Staging o Producción)
+
+1. Conéctate por SSH a tu instancia EC2
+2. Accede al proyecto y asegúrate de estar en la rama correcta (`staging` o `main`)
+
+```bash
+cd Backend-textiles
+git pull
+pm install
+pm run build
+pm2 start ecosystem-staging.config.js
+pm2 logs
+```
+
+### 8.2 Frontend en Amplify
+
+1. Entra a AWS Amplify
+2. Conecta el repositorio de GitHub y selecciona la rama (`main`, `staging`, etc.)
+3. Amplify generará automáticamente los builds y desplegará el frontend
+
+### 8.3 GitHub Actions
+
+Los workflows se activan automáticamente al hacer push a las ramas `main` o `staging`. Incluyen:
+
+* Instalación de dependencias
+* Despliegue por SSH a EC2
+* Restart automático con PM2
+
+---
+
+## 9. Documentación Visual
+
+### Storybook (Frontend)
+
+```bash
+npm run storybook
+```
+
+Esto abrirá Storybook en `http://localhost:6006` donde se visualizan todos los componentes visuales.
+
+### Swagger (Backend)
+
+Accede a la documentación de la API REST:
+
+```
+http://localhost:4000/api-docs
+```
+
+---
+
+## 10. Referencias Cruzadas
+
+* [Manual de Despliegue](manual-despliegue-textiles.md)
+* [Estrategia Técnica ](estrategia-tecnica-textiles.md)
+* [Manual de Prueba de Arquitectura](prueba-de-arquitectura.md)
 * [Plan de Pruebas de Software](plan-stp.md)
-* [Plan de Pruebas de Volumen](pruebas-vol.md)
-* [Plan de Pruebas de Estrés](pruebas-est.md)
-* [Endpoints usados para la prueba de arquitectura](endpoints-prueba-arquitectura.md)
-
-
-
+* [Diagrama MER y Diccionario](diagrama-mer.md)
+* [Endpoints del Sistema](endpoints-prueba-arquitectura.md)
 
 ---
 
-## 10. Historial de Cambios
+## 11. Historial de Cambios
 
-| Versión | Descripción                        | Fecha      | Colaborador       |
-| ------- | ---------------------------------- | ---------- | ----------------- |
-| 1.0     | Versión inicial del manual técnico | 14/05/2025 | Arturo Sánchez  |
+| Versión | Descripción                            | Fecha      | Colaborador    |
+| ------- | -------------------------------------- | ---------- | -------------- |
+| 1.0     | Implementacion de Manual Técnico | 15/05/2025 | Arturo Sánchez |
