@@ -1,244 +1,338 @@
-# Manual Técnico del Sistema ALTERTEX
+# Manual Técnico ALTERTEX
 
 ## Índice
 
 1. [Introducción](#1-introducción)
-2. [Arquitectura del Sistema](#2-arquitectura-del-sistema)
-3. [Estructura de Carpetas](#3-estructura-de-carpetas)
-4. [Estrategia Técnica](#4-estrategia-técnica)
-5. [Seguridad](#5-seguridad)
-6. [Pruebas del Sistema](#6-pruebas-del-sistema)
-7. [Despliegue y CI/CD](#7-despliegue-y-cicd)
-8. [Documentación Visual](#8-documentación-visual)
-9. [Referencias](#9-referencias)
-10. [Historial de Cambios](#10-historial-de-cambios)
+2. [Requisitos Previos](#2-requisitos-previos)
+3. [Preparación del Proyecto](#3-preparación-del-proyecto)
+4. [Estructura de Carpetas](#4-estructura-de-carpetas)
+5. [Configuración del Entorno](#5-configuración-del-entorno)
+6. [Ejecución del Proyecto](#6-ejecución-del-proyecto)
+7. [Pruebas del Sistema](#7-pruebas-del-sistema)
+8. [CI/CD y Despliegue](#8-cicd-y-despliegue)
+9. [Documentación Visual](#9-documentación-visual)
+10. [Referencias](#10-referencias)
+11. [Historial de Cambios](#11-historial-de-cambios)
 
 ---
 
 ## 1. Introducción
 
-### 1.1 Propósito
+Este manual técnico describe paso a paso cómo preparar, ejecutar, probar y mantener el sistema ALTERTEX. Está diseñado para que cualquier desarrollador o auditor técnico pueda replicar la instalación desde cero, sin requerir conocimientos previos del proyecto.
 
-Este documento técnico detalla la arquitectura, codificación, pruebas, despliegue y mantenimiento del sistema ALTERTEX. Está destinado a desarrolladores, QA y personal técnico encargado del soporte, mantenimiento o evolución del sistema.
+### 1.1 ¿Qué es ALTERTEX?
 
-### 1.2 Alcance
+ALTERTEX es un sistema de gestión administrativa B2B2C desarrollado para la empresa Altertex. Permite administrar clientes, productos, cuotas, roles, empleados y más desde una plataforma en la nube. Su arquitectura está compuesta por:
 
-Incluye toda la información técnica necesaria para entender la estructura, diseño, pruebas, calidad del software, despliegue y uso de herramientas DevOps del sistema ALTERTEX. Cubre tanto frontend como backend, bases de datos, integraciones y seguridad.
-
----
-
-## 2. Arquitectura del Sistema
-
-### 2.1 Tecnologías Utilizadas
-
-* **Frontend:** React + Vite + Material UI
-* **Backend:** Node.js + Express.js
-* **Base de Datos:** AWS RDS (MySQL 8.0.37)
-* **Almacenamiento:** AWS S3
-* **Despliegue:** Amplify (Frontend) y EC2 + PM2 (Backend)
-* **Autenticación:** JWT + API Key + RBAC
-* **Infraestructura Adicional:** CloudWatch, GitHub Actions
-
-### 2.2 Diagrama de Arquitectura General
-
-* Frontend se comunica con API Gateway usando `x-api-key` y JWT.
-* API Gateway redirige al backend en EC2.
-* Backend accede a RDS MySQL y S3 según sea necesario.
+* Un **frontend** desarrollado en React y desplegado en AWS Amplify.
+* Un **backend** basado en Node.js alojado en una instancia EC2.
+* Una **base de datos MySQL** en RDS.
+* Un bucket de **almacenamiento de imágenes** en S3.
 
 ---
 
-## 3. Estructura de Carpetas
+## 2. Requisitos Previos
 
-### 3.1 Backend
+### 2.1 Herramientas necesarias
+
+Instala las siguientes herramientas en tu equipo local:
+
+1. **Node.js:** Ejecuta el backend del sistema ALTERTEX. [Descargar](https://nodejs.org/)
+2. **Git:** Permite clonar el código fuente desde GitHub. [Descargar](https://git-scm.com/)
+3. **MySQL Workbench:** Interfaz visual para administrar la base de datos. [Descargar](https://dev.mysql.com/downloads/workbench/)
+4. **Postman:** Herramienta para probar las APIs del backend. [Descargar](https://www.postman.com/)
+
+> **NOTA:** Para conectarte en MySQL Workbench:
+>
+> 1. Abre Workbench.
+> 2. Da clic en el símbolo "+" para crear una nueva conexión.
+> 3. En "Hostname" coloca el endpoint de RDS.
+> 4. En "Username" coloca `root`.
+> 5. Da clic en "Store in Vault" para guardar tu contraseña.
+> 6. Prueba la conexión y guarda.
+> 1. [MySQL Capacitación](https://drive.google.com/file/d/1E9aODKokxhfOoEVqCS5lIcIZUki946ts/view?usp=drive_link)
+
+
+### 2.2 Crear y Configurar una Cuenta en AWS
+
+#### Paso a paso para crear la cuenta:
+
+1. Ve a [https://aws.amazon.com](https://aws.amazon.com) y haz clic en **"Crear una cuenta gratuita"**.
+2. Ingresa un correo electrónico válido y una contraseña segura.
+3. Completa los datos de contacto y método de pago.
+4. Verifica tu identidad vía SMS o llamada.
+5. Elige el plan **"Basic"**.
+
+#### Activación de servicios requeridos
+
+* **EC2:** Ejecuta el backend.
+* **RDS:** Almacena la base de datos MySQL.
+* **S3:** Almacena las imágenes cargadas por los usuarios.
+* **Amplify:** Despliega automáticamente el frontend desde GitHub.
+
+**Importante:** Algunos servicios como RDS pueden tardar varios minutos en habilitarse tras la creación de cuenta.
+
+### 2.3 Configuración de Servicios en AWS
+
+#### EC2 (backend)
+
+1. Ir a AWS > EC2 > Launch Instance
+
+2. Configuración:
+
+   * Nombre: `altertex`
+
+   * Imagen: Ubuntu Server 22.04 LTS
+
+   * Tipo: t2.micro (gratis)
+
+   * Par de claves: crear par de claves RSA (descargar `.pem`)
+
+     * Guarda la clave en una carpeta accesible (ej. `~/Documentos/keys/altertex.pem`)
+     * Para conectarse, **la consola debe estar posicionada en el mismo directorio de la clave** o se debe usar la ruta completa
+
+   * Grupo de seguridad:
+
+     * Añadir reglas:
+
+       * Puerto 22 (SSH)
+       * Puerto 80 (HTTP)
+       * Puerto 3000 (para pruebas frontend)
+       * Puerto 4000 (backend)
+       * Puerto 3306 (MySQL/RDS)
+
+3. Conectarse por SSH (en la consola de comandos):
 
 ```bash
-/backend
-│
-├── Autenticacion/
-│   ├── controllers/
-│   ├── routes/
-│
-├── Roles/
-│   ├── controllers/
-│   ├── routes/
-│   ├── repositorios/
-│
-├── Utilidades/
-│   ├── middlewares/
-│   ├── services/
-│
-├── Configuracion/
-│   └── conexiones.js
-│
-├── pruebasUnitarias/
-├── app.js
+cd ~/Documentos/keys
+chmod 400 altertex.pem
+ssh -i "altertex.pem" ubuntu@<ip-publica-ec2>
 ```
 
-### 3.2 Frontend (Atomic Design)
+4. Instalar Node.js y PM2 (en la consola de comandos de EC2):
 
 ```bash
-/src
-├── hooks/
-├── rutas/
-├── constantes/
-├── dominio/
-│   ├── modelos/
-│   ├── servicios/
-│   ├── repositorios/
-├── vistas/
-│   ├── componentes/
-│   │   ├── atomos/
-│   │   ├── moleculas/
-│   │   ├── organismos/
-│   ├── paginas/
-├── estilos/
+curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
+sudo apt-get install -y nodejs
+sudo npm install -g pm2
+```
+
+#### RDS (MySQL)
+
+1. Ir a RDS > Crear base de datos
+2. Tipo: Free Tier
+3. Motor: MySQL 8.0
+4. Usuario: root / Contraseña segura
+5. Nombre de la base: `altertex`
+6. Activar **Acceso Público**
+7. En el grupo de seguridad asociado, agregar una regla para permitir el acceso desde tu IP
+
+#### S3
+
+1. Ir a S3 > Crear Bucket
+2. Nombre: `altertex-bucket`
+3. Región: us-east-1
+4. Configurar políticas de acceso según los endpoints del frontend que harán peticiones (lectura/escritura de imágenes)
+
+#### Amplify (frontend)
+
+Consulta el [Manual de Despliegue](manual-despliegue-textiles.md) para conectar GitHub y configurar el entorno correctamente.
+
+#### Links de referencia
+
+1. [MySQL RDS - EC2](https://drive.google.com/file/d/1B9Ei6tlGTNb0JBR01YV85kIeRpS21gMs/view?usp=sharing)
+2. [ALTERTEX.SQL](https://drive.google.com/file/d/1phzB82eeAGwSd0o88BYTSBlc2VJlualM/view?usp=drive_link)
+
+---
+
+## 3. Preparación del Proyecto
+
+Después de configurar los servicios en AWS, clonaremos los repositorios y prepararemos el entorno de desarrollo local.
+
+### 3.1 Clonar los Repositorios (en la consola de VSCode):
+
+```bash
+# Backend
+cd ~
+git clone https://github.com/CodeAnd-Co/Backend-textiles.git
+cd Backend-textiles
+npm install
+cp .env.example .env
+```
+
+```bash
+# Frontend
+cd ~
+git clone https://github.com/CodeAnd-Co/Frontend-Text-Lines.git
+cd Frontend-Text-Lines
+npm install
+cp .env.example .env
+```
+
+### 3.2 Crear base de datos ALTERTEX
+
+**MySQL Workbench:**
+
+1. Abrir Workbench
+2. Crear nueva conexión con el host, puerto, usuario y contraseña de RDS
+3. Crear base:
+
+```sql
+CREATE DATABASE altertex;
+```
+
+4. Cargar y ejecutar el script `ALTERTEX.sql`
+
+**Desde consola de comandos:**
+
+```bash
+mysql -h <host-rds> -P 3306 -u root -p
+mysql> CREATE DATABASE altertex;
+mysql> EXIT;
+mysql -h <host-rds> -P 3306 -u root -p altertex < ALTERTEX.sql
+```
+
+**Capacitación**
+
+1. [MySQL Capacitación](https://drive.google.com/file/d/1E9aODKokxhfOoEVqCS5lIcIZUki946ts/view?usp=drive_link)
+2. [MySQL RDS - EC2](https://drive.google.com/file/d/1B9Ei6tlGTNb0JBR01YV85kIeRpS21gMs/view?usp=sharing)
+3. [ALTERTEX.SQL](https://drive.google.com/file/d/1phzB82eeAGwSd0o88BYTSBlc2VJlualM/view?usp=drive_link)
+
+---
+
+## 4. Estructura de Carpetas
+
+Una vez clonado el código fuente, es importante conocer su estructura para facilitar navegación, desarrollo y pruebas.
+
+
+![Frontend](DiagramaPaquetesFront.png)
+
+![Backend](diagrama-paquetes-textiles-Backend.png)
+
+---
+
+## 5. Configuración del Entorno
+
+### 5.1 Crear archivo .env en el servidor
+
+En la consola de comandos de la instancia EC2:
+
+```bash
+nano .env
+```
+
+1. Escribe las variables necesarias
+2. Presiona `Ctrl + O` para guardar
+3. Presiona `Enter`
+4. Presiona `Ctrl + X` para salir
+
+### 5.2 Variables del Backend
+
+```env
+AWS_REGION=...
+AWS_BUCKET_NAME=...
+AWS_ACCESS_KEY_ID=...
+AWS_SECRET_ACCESS_KEY=...
+
+LOCAL_URL=...
+LOCAL_URL_BACKEND=...
+DEPLOYED_URL=...
+API_GATEWAY_URL=...
+
+NODE_ENV=staging
+JWT_SECRET=...
+API_KEY=...
+PORT=4000
+
+DB_HOST=...
+DB_PORT=...
+DB_USER=...
+DB_PASSWORD=...
+DB_NAME=...
+```
+
+### 5.3 Variables del Frontend
+
+```env
+VITE_URL_API=http://localhost:4000
+VITE_CLAVE_API=clave-api-secreta
 ```
 
 ---
 
-## 4. Estrategia Técnica
+## 6. Ejecución del Proyecto
 
-### 4.1 Estrategia de Ramas
+### 6.1 Ejecutar Backend Local
 
-* `main`: código en producción
-* `staging`: pruebas de aceptación
-* `develop`: desarrollo activo
-* `feature/nombre`: nuevas funcionalidades
-
-### 4.2 Commits
-
-Uso de [Conventional Commits](https://www.conventionalcommits.org/).
-
-### 4.3 Documentación
-
-* JSDoc para funciones y controladores
-* Swagger para documentar endpoints REST
-
----
-
-## 5. Seguridad
-
-* **JWT:** Usado para autenticación de usuarios
-* **API Key:** Validada por middleware en cada ruta protegida
-* **RBAC:** Basado en roles y permisos almacenados en base de datos
-* **Protecciones:** CSRF, validaciones SQL, validación de inputs
-
----
-
-## 6. Pruebas del Sistema
-
-### 6.1 Objetivos de las Pruebas
-
-* Verificar funcionalidades (MVP y MBI)
-* Evaluar integración
-* Medir rendimiento y carga
-* Asegurar seguridad (RBAC, autenticación)
-
-### 6.2 Pruebas Funcionales
-
-* Registro/login
-* CRUD de roles, cuotas, sets de productos
-* Visualización de gráficas
-* Autenticación y protección de rutas
-
-**Ejemplo:**
-
-```markdown
-ID: RF6-001
-Funcionalidad: Crear Rol
-Precondición: Usuario autenticado con permiso
-Pasos: Ingresar módulo → Añadir rol → Llenar formulario → Guardar
-Resultado: Rol guardado en RDS y mensaje de éxito
+```bash
+cd Backend-textiles
+npm run dev
 ```
 
-### 6.3 Pruebas de Volumen
+### 6.2 Ejecutar Frontend Local
 
-* Hasta 30,000 registros
-* Herramientas: Postman, CloudWatch, scripts Node.js
-* Métricas: latencia, integridad de datos, concurrencia
+```bash
+cd Frontend-Text-Lines
+npm run dev
+```
 
-### 6.4 Pruebas de Estrés
+### 6.3 Backend en EC2
 
-* Hasta 180,000 registros, +3,000 conexiones simultáneas
-* Simulación de caídas, errores de red, concurrencia extrema
-* Herramientas: Apache JMeter, Postman
-
-### 6.5 Pruebas de Seguridad
-
-* Inyección SQL
-* Validación de tokens
-* Verificación de accesos según rol
-
-### 6.6 Ambientes de Prueba
-
-| Entorno     | Características          |
-| ----------- | ------------------------ |
-| Local       | Node.js + MySQL          |
-| Staging AWS | EC2 + Amplify + RDS + S3 |
-
-### 6.7 Manejo de Defectos
-
-* Documentación vía GitHub Issues
-* Clasificación: bloqueante, crítico, menor
-* Procedimiento: subir evidencia → asignar → corregir → validar
-
-### 6.8 Firmas de Aprobación
-
-* QA Responsable
-* Team Lead
+Consulta el [Manual de Despliegue](manual-despliegue-textiles.md)
 
 ---
 
-## 7. Despliegue y CI/CD
+## 7. Pruebas del Sistema
 
-### 7.1 Backend (EC2 + PM2)
+### 7.1 Pruebas Manuales
 
-* Deploy automatizado vía GitHub Actions → pull en EC2 → restart con PM2
-
-### 7.2 Frontend (Amplify)
-
-* Amplify escucha `main` → despliegue automático
-
-### 7.3 Variables de Entorno
-
-* `.env` para frontend
-* `process.env` en backend
+* **SuperAdmin:** [maria.gonzalez@example.com](mailto:maria.gonzalez@example.com) / hola
+* **Empleado:** [gabriela.mendoza@example.com](mailto:gabriela.mendoza@example.com) / hola
 
 ---
 
-## 8. Documentación Visual
+## 8. CI/CD y Despliegue
 
-### 8.1 Storybook
-
-* Documentación visual de componentes frontend
-* Atomos, Moleculas, Organismos
-
-### 8.2 Swagger
-
-* Documentación interactiva de endpoints backend
+Ver [Manual de Despliegue](manual-despliegue-textiles.md)
 
 ---
 
+## 9. Documentación Visual
 
+### Storybook
 
-## 9. Referencias
+```bash
+npm run storybook
+```
 
-* [Manual de despliegue AWS Amplify y EC2](manual-despliegue-textiles.md)
-* [Diagrama MER y Diccionario de datos](diagrama-mer.md)
-* [Estrategia técnica](estrategia-tecnica-textiles.md)
-* [Manual de prueba de arquitectura](prueba-de-arquitectura.md)
-* [Plan de Pruebas de Software](plan-stp.md)
-* [Plan de Pruebas de Volumen](pruebas-vol.md)
-* [Plan de Pruebas de Estrés](pruebas-est.md)
-* [Endpoints usados para la prueba de arquitectura](endpoints-prueba-arquitectura.md)
+Abre en:
 
+```
+http://localhost:6006
+```
 
+### Swagger
 
+```
+http://localhost:4000/api-docs
+```
 
 ---
 
-## 10. Historial de Cambios
+## 10. Referencias
 
-| Versión | Descripción                        | Fecha      | Colaborador       |
-| ------- | ---------------------------------- | ---------- | ----------------- |
-| 1.0     | Versión inicial del manual técnico | 14/05/2025 | Arturo Sánchez  |
+* [Manual de Despliegue](manual-despliegue-textiles.md)
+* [Estrategia Técnica](estrategia-tecnica-textiles.md)
+* [Manual de Prueba de Arquitectura](prueba-de-arquitectura.md)
+* [Plan de Pruebas](plan-stp.md)
+* [MER y Diccionario](diagrama-mer.md)
+* [Endpoints del Sistema](endpoints-prueba-arquitectura.md)
+
+---
+
+## 11. Historial de Cambios
+
+| Versión | Descripción                                        | Fecha      | Colaborador    |
+| ------- | -------------------------------------------------- | ---------- | -------------- |
+| 1.0     | Implementación inicial del Manual Técnico          | 15/05/2025 | Arturo Sánchez |
+| 1.1     | Correcciones continuidad y seguimiento paso a paso | 16/05/2025 | Arturo Sánchez |
