@@ -71,3 +71,4 @@ sidebar_position: 7
 | **2.7**             | Identificación de MA 2.2 | 24/04/2025 | Diego Fuentes |
 | **2.8**             | Actualización de link de plantilla | 28/04/2025 | Arturo Sánchez |
 | **3.0**             | Simplificar proceso, corregir ortografía y actualizar links | 13/05/2025 | Daniel Contreras Chávez |
+| **3.1**             | Añadir selección de profesor para la retro | 18/05/2025 | Juan Pablo Chávez Leal |
