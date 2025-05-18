@@ -1,0 +1,8 @@
+{
+  "label": "Documentación",
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "description": "Guías para documentar correctamente."
+  }
+}
