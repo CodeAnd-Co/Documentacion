@@ -1,11 +1,159 @@
-.features {
-  display: flex;
-  align-items: center;
+/* styles.module.css */
+.sectionsContainer {
   padding: 2rem 0;
   width: 100%;
 }
 
-.featureSvg {
-  height: 200px;
-  width: 200px;
+.sectionCard {
+  margin-bottom: 1.5rem;
+  height: 100%;
+}
+
+.cardLink {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  height: 100%;
+}
+
+.card {
+  height: 100%;
+  background-color: #f8f9fa;
+  border-radius: 12px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.cardIconContainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0.75rem;
+}
+
+.cardIcon {
+  background-color: var(--ifm-color-primary);
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 1.75rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  padding: 1rem;
+}
+
+.card:hover .cardIcon {
+  background-color: var(--ifm-color-primary-dark);
+  transform: scale(1.05);
+}
+
+.cardContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.cardTitle {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: var(--ifm-color-primary);
+  font-weight: 600;
+}
+
+.cardDescriptionWrapper {
+  overflow: hidden;
+  height: 4.5em; /* Altura fija para 3 líneas de texto */
+}
+
+.cardDescription {
+  font-size: 0.9rem;
+  color: var(--ifm-color-emphasis-700);
+  line-height: 1.5;
+  margin-bottom: 0;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Modo oscuro */
+html[data-theme="dark"] .card {
+  background-color: var(--ifm-card-background-color);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+html[data-theme="dark"] .cardIcon {
+  background-color: var(--ifm-color-primary);
+  color: #ffffff;
+}
+
+html[data-theme="dark"] .card:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+}
+
+/* Responsivo */
+@media screen and (max-width: 996px) {
+  .sectionsContainer {
+    padding: 1.5rem 0;
+  }
+
+  .card {
+    padding: 1.25rem;
+  }
+
+  .cardIcon {
+    width: 55px;
+    height: 55px;
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .cardTitle {
+    font-size: 1.15rem;
+    margin-bottom: 0.4rem;
+  }
+
+  .cardDescriptionWrapper {
+    height: 4.2em;
+  }
+
+  .cardDescription {
+    font-size: 0.85rem;
+  }
+}
+
+/* Aseguramos altura consistente en pantallas más pequeñas */
+@media screen and (max-width: 576px) {
+  .sectionCard {
+    margin-bottom: 1rem;
+  }
+
+  .card {
+    padding: 1rem;
+  }
+
+  .cardIcon {
+    width: 50px;
+    height: 50px;
+    font-size: 1.25rem;
+  }
+
+  .cardDescriptionWrapper {
+    height: 3.9em;
+  }
 }
