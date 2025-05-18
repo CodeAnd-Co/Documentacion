@@ -412,20 +412,9 @@ sequenceDiagram
 
 ### Mockup
 
-> _Descripción_: El mockup presenta la interfaz donde el Super Administrador puede ingresar los datos de un nuevo empleado, con campos requeridos y botones de acción para crear al empleado.
-
 ![Mockup: Registrar Charola](image-1.png)
 
-### Pruebas Unitarias
-
-| ID Prueba | Descripción                                                        | Resultado Esperado                                                                           |
-| --------- | ------------------------------------------------------------------ | -------------------------------------------------------------------------------------------- |
-| PU-RF5-01 | Registrar una nueva charola con datos válidos.                     | El sistema guarda la charola con su identificador único y muestra confirmación de éxito.     |
-| PU-RF5-02 | Intentar registrar una charola sin identificador único.            | El sistema muestra un mensaje de error indicando que el identificador es obligatorio.        |
-| PU-RF5-03 | Registrar una charola con datos incompletos.                       | El sistema impide el registro y señala qué campos faltan.                                    |
-| PU-RF5-04 | Intentar ingresar datos inválidos en peso o estado de la charola.  | El sistema valida los datos y muestra un error si no cumplen con el formato esperado.        |
-| PU-RF5-05 | Confirmar que la charola registrada se guarda en la base de datos. | La información ingresada se almacena de manera segura y es accesible para futuras consultas. |
-| PU-RF5-06 | Probar el mensaje de confirmación tras un registro exitoso.        | El sistema muestra una notificación confirmando que la charola fue registrada correctamente. |
+---
 
 ## Historial de cambios
 
