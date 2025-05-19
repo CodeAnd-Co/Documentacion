@@ -52,20 +52,17 @@ Proceso para generar reportes de estado que reflejen la salud de los proyectos d
 
 <details>
   <summary>Versiones</summary>
-
-
-| **Tipo de versión** | **Descripción**                                                                    | **Fecha**  | **Colaborador**                 |
-| -------------------- | ----------------------------------------------------------------------------------- | ---------- | ------------------------------- |
-| **1.0**              | Creación del proceso de reporte de estado.                                         | 31/03/2025 | Diego Fuentes                   |
-| **2.0**              | Corrección completa del proceso.                                                   | 03/04/2025 | Diego Fuentes                   |
-| **2.1**              | Adición de columna CMMI y vinculación con OPF SP 2.4.                             | 08/04/2025 | Carlos Iván Fonseca Mondragón |
-| **2.2**              | Adición de entrada, salida y práctica CMMI.                                       | 17/04/2025 | Ian Julián Estrada Castro      |
-| **2.3**              | Identificación de PMC 1.6.                                                         | 17/04/2025 | Nicolas Hood Figueroa           |
-| **2.4**              | Refactorización general.                                                           | 18/04/2025 | Diego Fuentes                   |
-| **2.5**              | Correcciones PMC 1.1.                                                               | 22/04/2025 | —                              |
-| **2.6**              | Inclusión del paso de actualización a socios ausentes (PMC 1.6).                  | 22/04/2025 | Nicolas Hood Figueroa           |
-| **2.7**              | Identificación de MA 2.2.                                                          | 24/04/2025 | Diego Fuentes                   |
-| **2.8**              | Actualización de enlaces.                                                          | 28/04/2025 | Arturo Sánchez                 |
-| **3.0**              | Simplificación del proceso, correcciones ortográficas, actualización de enlaces. | 13/05/2025 | Daniel Contreras Chávez        |
-
+| **Versión** | **Descripción**                                                                 | **Fecha**     | **Colaborador**                             |
+|-------------|----------------------------------------------------------------------------------|---------------|--------------------------------------------------|
+| **1.0.0**   | Creación del proceso de reporte de estado.                                      | 31/03/2025    | Diego Fuentes                                    |
+| **2.0.0**   | Corrección completa del proceso.                                                | 03/04/2025    | Diego Fuentes                                    |
+| **2.1.0**   | Adición de columna CMMI y vinculación con OPF SP 2.4.                           | 08/04/2025    | Carlos Iván Fonseca Mondragón                   |
+| **2.2.0**   | Adición de entrada, salida y práctica CMMI.                                     | 17/04/2025    | Ian Julián Estrada Castro                        |
+| **2.3.0**   | Identificación de la práctica PMC 1.6.                                          | 17/04/2025    | Nicolás Hood Figueroa                            |
+| **2.4.0**   | Refactorización general del proceso.                                            | 18/04/2025    | Diego Fuentes                                    |
+| **2.5.0**   | Correcciones relacionadas con la práctica PMC 1.1.                              | 22/04/2025    | —                                                |
+| **2.6.0**   | Inclusión del paso de actualización a socios ausentes (PMC 1.6).                | 22/04/2025    | Nicolás Hood Figueroa                            |
+| **2.7.0**   | Identificación de la práctica MA 2.2.                                           | 24/04/2025    | Diego Fuentes                                    |
+| **2.8.0**   | Actualización de enlaces.                                                       | 28/04/2025    | Arturo Sánchez                                   |
+| **3.0.0**   | Simplificación del proceso, correcciones ortográficas y actualización de enlaces.| 13/05/2025    | Daniel Contreras Chávez                          |
 </details>

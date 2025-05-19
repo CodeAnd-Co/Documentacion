@@ -43,8 +43,7 @@ Este proceso asegura la correcta comprensión y la trazabilidad bidireccional de
 
 <details>
   <summary>Versiones</summary>
-  
-  | **Tipo de versión** | **Descripción**                                                        | **Fecha**  | **Colaborador**                      |
+  | **Versión** | **Descripción**                                                        | **Fecha**  | **Colaborador**                      |
   | ------------------- | -------------------------------------------------------------------- | ---------- | ---------------------------------- |
   | **1.0.0**           | Creación inicial del proceso.                                         | 09/03/2025 | Angélica Ríos Cuentas               |
   | **2.0.0**           | Refactorización para especificar ubicación de documentos y simplificar. | 18/04/2025 | Diego Fuentes                      |

@@ -45,10 +45,7 @@ Proceso para identificar, evaluar, institucionalizar y comunicar mejoras en los 
 
 <details>
   <summary>Versiones</summary>
-
-
-| **Tipo de versión** | **Descripción**              | **Fecha**  | **Colaborador**                        |
+| **Versión** | **Descripción**              | **Fecha**  | **Colaborador**                        |
 | -------------------- | ----------------------------- | ---------- | -------------------------------------- |
 | **1.0.0**            | Creación inicial del proceso | 15/05/2025 | Paola María Garrido, Valeria Zúñiga |
-
 </details>

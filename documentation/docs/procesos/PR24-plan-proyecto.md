@@ -92,22 +92,20 @@ Este proceso define cómo planear un proyecto desde su inicio y cómo asegurar s
 
 <details>
   <summary>Versiones</summary>
-
-| **Tipo de Versión** | **Descripción**                                          | **Fecha**  | **Colaborador** |
-| ------------------- | -------------------------------------------------------- | ---------- | --------------- |
-| **1.0.0** | Creación inicial del proceso. | 04/03/2025 | Valeria Zúñiga, Max Toscano, Carlos Fonseca, Mariana Juárez, Sofía Osorio, Diego Alfaro, Arturo Sánchez, Juan Eduardo Rosas, Pablo Hurtado, Juan Carlos Calderón, Emiliano Gómez González, Angel Mauricio Ramírez |
-| **1.1** | Correcciones de ortografía y redacción | | Carlos Iván Fonseca Mondragón |
-| **1.2** | Adición del formato de Compromiso con el plan | | Juan Pablo Chávez Leal, Rommel Toledo Crespo |
-| **1.3** | Adición de la hoja de Disponibilidad de Recursos | | Carlos Iván Fonseca Mondragó, Miguel Ángel Uribe Esquivel |
-| **1.4** | Añadir PMC 1.1 a fases faltantes | | Daniel C. y Juan Pablo C. |
-| **1.5** | Definición de cuándo y cómo decidimos qué requisitos aceptar | 07/04/2025 | Angélica Ríos Cuentas |
-| **1.6** | Agregar SG 3.1 de PP | 08/04/2025 | Mariana Juárez Ramírez |
-| **1.7** | Refactorización | 18/04/2025 | Diego Fuentes |
-| **1.8** | Correcciones de PMC y REQM | 22/04/2025 | Juan Pablo Chávez Leal |
-| **1.9** | Correcciones de auditoría del 26 de abril del 2025. | 26/04/2025 | Paola María Garrido Montes |
-| **2.0** | Plan de Datos | 28/04/2025 | Pablo Hurtado |
-| **2.1** | Integración de versiones | 28/04/2025 | Diego Fuentes |
-| **2.2** | Agregar subpráctica OPD1.2 | 13/05/2025 | Nicolás Hood |
-| **3.0** | Modificación del proceso acorde al CMMI y simplificación | 16/05/2025 | Valeria Zúñiga, Paola Garrido |
-
+| **Versión** | **Descripción**                                                   | **Fecha**   | **Colaborador**                                                                                         |
+|-------------|------------------------------------------------------------------|-------------|-------------------------------------------------------------------------------------------------------|
+| **1.0.0**   | Creación inicial del proceso                                      | 04/03/2025  | Valeria Zúñiga, Max Toscano, Carlos Fonseca, Mariana Juárez, Sofía Osorio, Diego Alfaro, Arturo Sánchez, Juan Eduardo Rosas, Pablo Hurtado, Juan Carlos Calderón, Emiliano Gómez González, Angel Mauricio Ramírez |
+| **1.1.0**   | Correcciones de ortografía y redacción                            | (fecha)     | Carlos Iván Fonseca Mondragón                                                                          |
+| **1.2.0**   | Adición del formato de compromiso con el plan                    | (fecha)     | Juan Pablo Chávez Leal, Rommel Toledo Crespo                                                          |
+| **1.3.0**   | Adición de la hoja de disponibilidad de recursos                 | (fecha)     | Carlos Iván Fonseca Mondragón, Miguel Ángel Uribe Esquivel                                            |
+| **1.4.0**   | Añadir PMC 1.1 a fases faltantes                                 | (fecha)     | Daniel Contreras Chávez, Juan Pablo Chávez Leal                                                       |
+| **1.5.0**   | Definición de cuándo y cómo decidimos qué requisitos aceptar     | 07/04/2025  | Angélica Ríos Cuentas                                                                                  |
+| **1.6.0**   | Agregar SG 3.1 de PP                                             | 08/04/2025  | Mariana Juárez Ramírez                                                                                 |
+| **1.7.0**   | Refactorización                                                  | 18/04/2025  | Diego Fuentes                                                                                          |
+| **1.8.0**   | Correcciones de PMC y REQM                                       | 22/04/2025  | Juan Pablo Chávez Leal                                                                                 |
+| **1.9.0**   | Correcciones de auditoría del 26 de abril de 2025               | 26/04/2025  | Paola María Garrido Montes                                                                             |
+| **2.0.0**   | Plan de Datos                                                   | 28/04/2025  | Pablo Hurtado                                                                                          |
+| **2.1.0**   | Integración de versiones                                         | 28/04/2025  | Diego Fuentes                                                                                          |
+| **2.2.0**   | Agregar subpráctica OPD1.2                                      | 13/05/2025  | Nicolás Hood                                                                                          |
+| **3.0.0**   | Modificación del proceso acorde a CMMI y simplificación          | 16/05/2025  | Valeria Zúñiga, Paola Garrido                                                                         |
 </details>

@@ -39,15 +39,12 @@ Proceso para asegurar el análisis, registro y correcta implementación de mejor
 
 <details>
   <summary>Versiones</summary>
-
-
-| **Tipo de versión** | **Descripción**                           | **Fecha**  | **Colaborador**                                 |
-| -------------------- | ------------------------------------------ | ---------- | ----------------------------------------------- |
-| **1.0**              | Proceso inicial toma de retroalimentación |            | Galo Alejandro del Rio Viggiano                 |
-| **1.1**              | Adición de SP 1.1 de PMC                  | 01/04/2025 | Daniel C y Juan Pablo C                         |
-| **1.2**              | Refactorización                           | 18/04/2025 | Diego Fuentes                                   |
-| **1.3**              | Correcciones PMC 1.1                       | 22/04/2025 | Juan Pablo Chávez Leal                         |
-| **1.4**              | Correcciones PMC 2.2 y 2.3                 | 13/05/2025 | Juan Pablo Chávez Leal y Daniel Queijeiro Albo |
-| **2.0**              | Simplificación del proceso                | 15/05/2025 | Rommel Toledo Crespo, Daniel Contreras Chávez  |
-
+| **Versión** | **Descripción**                                     | **Fecha**   | **Colaborador**                                  |
+|-------------|----------------------------------------------------|-------------|-------------------------------------------------|
+| **1.0.0**   | Proceso inicial para toma de retroalimentación     | (fecha?)    | Galo Alejandro del Rio Viggiano                  |
+| **1.1.0**   | Adición de SP 1.1 de PMC                            | 01/04/2025  | Daniel Contreras, Juan Pablo Chávez Leal        |
+| **1.2.0**   | Refactorización del proceso                          | 18/04/2025  | Diego Fuentes                                    |
+| **1.3.0**   | Correcciones relacionadas con PMC 1.1               | 22/04/2025  | Juan Pablo Chávez Leal                           |
+| **1.4.0**   | Correcciones en PMC 2.2 y 2.3                        | 13/05/2025  | Juan Pablo Chávez Leal, Daniel Queijeiro Albo   |
+| **2.0.0**   | Simplificación y actualización del proceso          | 15/05/2025  | Rommel Toledo Crespo, Daniel Contreras Chávez   |
 </details>
