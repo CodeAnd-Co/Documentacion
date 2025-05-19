@@ -51,11 +51,11 @@ El CCB tiene como funciones principales:
 
 El CCB estará integrado por los siguientes representantes designados:
 
-- 
-- 
-- 
-- 
-- 
+- Diego Alfaro Pinto
+- Angel Mauricio Ramírez Herrera
+- Max Toscano Díaz
+- Diego Isaac Fuentes Juvera
+- Daniel Contreras Chávez
 
 ---
 
