@@ -31,7 +31,7 @@ Proceso encargado de asegurar que los productos o componentes desarrollados cump
 | **Documentación de resultados**             | Registrar observaciones y desviaciones identificadas durante la validación.                                                                                                                      | Todo el equipo                 | **VAL, SP 2.1**                                                                   |
 | **Análisis de resultados**                  | Cambiar el estado a aprobado o rechazado y definir acciones correctivas.                                                                                                                         | Todo el equipo                 | **VAL, SP 2.2** (Analizar resultados)                                             |
 
-## Listado de ítems de trabajo a validar con el socio formador
+## ⛓️ Listado de ítems de trabajo a validar con el socio formador
 
 1. Requisitos funcionales clave del sistema.
 2. Prototipo de interfaz (mockups).
