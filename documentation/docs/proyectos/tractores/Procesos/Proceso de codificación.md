@@ -83,15 +83,18 @@ sidebar_position: 1
 ---
 
 ## Acuerdos de trabajo:
-- Agarramos las tareas que nadie quiere, hacemos 2 tareas malas por una tarea buena.
-- No nos paramos hasta terminar el trabajo actual.
+- Agarramos las tareas que nadie quiere, hacemos 1 tarea aburrida por una tarea buena.
+- Respetar el pomodoro con el que se esté trabajando.
 - Nos damos recordatorios de seguir trabajando cuando notamos que alguien no trabaja.
 - No interrumpimos a las personas que están trabajando en el CMMI.
 - Dejamos el ego de lado al pedir ayuda, nos acercamos a miembros de otros equipos o departamentos.
+- Respetamos los turnos para hablar y si no es posible usamos el Token.
+- Nos comprometemos a leer los medios de comunicación del equipo.
+- Solo programamos si tenemos abierto nuestro proceso de codificación.
 
 
 ## Visión del equipo:
-- Ser un equipo disciplinado, que aprenda de los errores, y que retrabaje lo mínimo posible para su proceso de aprendizaje.
+- Ser un equipo disciplinado, que aprenda de los errores, que se comunique efectivamente, y que retrabaje lo mínimo posible para su proceso de aprendizaje.
 
 ---
 
