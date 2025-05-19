@@ -25,7 +25,7 @@ Una inspección de código es una revisión manual del código fuente para verif
 - Los inspectores abren la [plantilla defect log](https://docs.google.com/spreadsheets/d/1GwKcoKU2H5aKZJyG1p9df5Mvue4CNbyBMvIjGhjbyxg/edit?usp=sharing). Se hace una copia y se le da el nombre de Inspección-Fecha.
 - Cada inspector hace su propia hoja con su nombre. 
 - Cada inspector abre la [checklist de código](https://docs.google.com/document/d/1ItP965B7cFppIUX3RPXg_ZuUiYZzSuGs1b5bMw2-ZpQ/edit?tab=t.0#heading=h.fhau7kjl46pa). 
-- Cada inspector abre el estándar de [codificación departamental](/docs/standards/general.md).
+- Cada inspector abre el estándar de [codificación departamental](../standards/estandar-codificacion.md).
 - Una vez concluida la explicación del código, se abre un espacio para dudas de los inspectores que serán respondidas por el autor del código.
 - Una vez concluido el espacio de preguntas, los inspectores de código deben estar a una distancia considerable y sin comunicarse entre ellos. 
 - Cualquier duda se hace directamente con el autor del código.

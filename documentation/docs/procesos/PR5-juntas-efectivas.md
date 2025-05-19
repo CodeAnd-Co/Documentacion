@@ -41,9 +41,8 @@ Proceso que busca asegurar que las reuniones grupales y con stakeholders se real
 
 ## 📎 Recursos relacionados
 
-- [Proceso de justificación y recuperación de asistencia](/docs/next/procesos/PR22-justificar-recuperar-asistencia)
-- [Proceso para seguimiento de compromisos](/docs/next/procesos/PR23-seguimiento-compromisos)
-- [Plantilla para procesos](/docs/next/plantillas/plantilla-procesos)
+- [Proceso de justificación y recuperación de asistencia](/docs/procesos/PR22-justificar-recuperar-asistencia.md)
+- [Plantilla para procesos](/docs/plantillas/plantilla-procesos.md)
 
 ## 📚 Historial de cambios
 

@@ -21,7 +21,7 @@ Los requisitos no funcionales establecen las expectativas en términos de tiempo
 ## Usabilidad
 
 - El administrador se debe de tardar **6 horas** en aprender a utilizar el sistema de backoffice.
-- El sistema debe ser compatible con distintos navegadores:
+- El sistema debe ser compatible con estos navegadores:
   - **Chrome** versión **133.0.6943.126**
   - **Firefox** versión **135.0.1**
 - Un empleado debe de tardar **1 hora** en aprender a utilizar el sistema de e-commerce.
@@ -33,6 +33,8 @@ Los requisitos no funcionales establecen las expectativas en términos de tiempo
 ## Portabilidad y Compatibilidad
 
 - El sistema debe contar con **estándares abiertos** para facilitar la integración con otros sistemas.
+
+- El sistema debe ser compatible en cualquier computadora con Windows 11 y macOS 15.4.1 o superiores. 
 
 ## Mantenibilidad
 

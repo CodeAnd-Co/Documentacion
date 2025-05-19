@@ -139,7 +139,6 @@ Secciones: Las que veas necesarias.
 * [Estándar para crear nuevas plantillas](/docs/next/standards/estandar-plantillas)
 * [Definición de Ítems](/docs/next/procesos/PR2-definicion-items)
 * [Plantilla para estándares](/docs/next/plantillas/plantilla-estandares)
-* [Política de bienestar](/ruta/a/la/politica-de-bienestar)
 * [Manejo de assets en Docusaurus](https://docusaurus.io/docs/markdown-features/assets)
 
 ## 📚 Historial de cambios
