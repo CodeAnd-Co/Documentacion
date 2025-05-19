@@ -3,7 +3,8 @@
   "position": 6,
   "link": {
     "type": "generated-index",
-    "description": "Políticas a seguir en la organización.",
+    "title": "Políticas Organizacionales",
+    "description": "Consulta las políticas vigentes que rigen el comportamiento, la operación y la toma de decisiones en Code&Co, incluyendo lineamientos sobre seguridad, calidad, cumplimiento y buenas prácticas.",
     "slug": "/category/politicas"
   }
 }
