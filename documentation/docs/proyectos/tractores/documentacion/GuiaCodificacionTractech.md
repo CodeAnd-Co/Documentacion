@@ -13,7 +13,7 @@ El propósito de la guía es documentar la forma de trabajo de TracTech, además
 ### Estructura
 El proyecto cuenta actualmente con dos repositorios, **App-Local-TracTech** y el repositorio **Backend-Desacoplado-TracTech**.
 
-Ambos repositorios están configurados para prevenir pushes directos a ramas protegidas, como: Main, Staging y Develop. Utilizamos Pull Requests como estrategia para mantener el repositorio actualizado, al hacer un PR el desarrollador necesita solicitar una revisión de algún otro miembro del equipo y asegurarse de usar la [plantilla de PR](plantillaPR.md) del equipo. Quien haga la revisión debe verificar que el código dentro del Pull Request cumpla con la [checklist de codificación](https://docs.google.com/document/d/1ItP965B7cFppIUX3RPXg_ZuUiYZzSuGs1b5bMw2-ZpQ/edit?tab=t.0#heading=h.fhau7kjl46pa), además de los [estándares de estilo](../../../standards/general/).
+Ambos repositorios están configurados para prevenir pushes directos a ramas protegidas, como: Main, Staging y Develop. Utilizamos Pull Requests como estrategia para mantener el repositorio actualizado, al hacer un PR el desarrollador necesita solicitar una revisión de algún otro miembro del equipo y asegurarse de usar la [plantilla de PR](plantillaPR.md) del equipo. Quien haga la revisión debe verificar que el código dentro del Pull Request cumpla con la [checklist de codificación](https://docs.google.com/document/d/1ItP965B7cFppIUX3RPXg_ZuUiYZzSuGs1b5bMw2-ZpQ/edit?tab=t.0#heading=h.fhau7kjl46pa), además de los [estándares de estilo](../../../standards/estandar-codificacion.md).
 
 Asimismo, el repositorio de Github ejecutará pruebas de estilo para asegurar su seguimiento.
 

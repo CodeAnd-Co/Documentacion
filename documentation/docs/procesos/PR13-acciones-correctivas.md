@@ -1,13 +1,13 @@
 ---
-title: PR13 Acciones correctivas
+title: 🦴 | PR13 Acciones correctivas
 sidebar_position: 13
 ---
 
-# Proceso para acciones correctivas
+# 🦴 Proceso para acciones correctivas
 
----
+Detectar, registrar, comunicar, dar seguimiento y resolver de forma objetiva las no conformidades identificadas, asegurando que se tomen acciones correctivas adecuadas y manteniendo la calidad de los procesos y productos conforme a los estándares y procedimientos definidos por el departamento.
 
-### Objetivo
+## 🎯 Objetivo
 
 - Detectar, registrar, comunicar, dar seguimiento y resolver de forma objetiva las no conformidades identificadas.
 - Asegurar que se tomen acciones correctivas adecuadas, manteniendo la calidad de los procesos y productos conforme a los estándares y procedimientos definidos por el departamento.
@@ -18,17 +18,13 @@ Situación en la que el producto o acuerdo de trabajo no cumple con los requisit
 
 :::
 
----
-
-### Entradas
+## 📥 Entradas
 
 1. Matriz de riesgos.
-2. Informe de evaluación. 
+2. Informe de evaluación.
 3. Defect Log.
 
----
-
-### Proceso
+## ⚙️ Proceso
 
 | Fase                                       | Descripción                                                                                                                                                                                                                                                                                                      | Responsable             | Meta y práctica específica del CMMI                                                            |
 | ------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- | ---------------------------------------------------------------------------------------------- |
@@ -42,17 +38,18 @@ Situación en la que el producto o acuerdo de trabajo no cumple con los requisit
 |                                            | Si la no conformidad persiste, repite el proceso nuevamente y documenta por qué no fue exitoso.                                                   | Team member             | **PMC, SP 2.3** (Gestionar las acciones correctivas), **PPQA SP 2.2** (Establecer los registros)                                                                              |
 |                                            | Si la resolución fue exitosa, notifica a los stakeholders y documenta la evidencia de resolución.                                                              | Team member             | **PPQA, SP 2.1** (Comunicar y resolver las no conformidades)                                                                               |
 
----
-
-### Salidas
+## 📤 Salidas
 
 1. Repositorio de acciones correctivas y no conformidades actualizado.
 2. Plantillas, guías, estándares y procesos corregidos.
 
+## 📎 Recursos relacionados
 
----
+- [Estándar para crear nuevas plantillas](/docs/next/standards/estandar-plantillas)
+- [Definición de Ítems](/docs/next/procesos/PR2-definicion-items)
+- [Plantilla para procesos](/docs/next/plantillas/plantilla-procesos)
 
-## Tabla de criterios
+## 🤗 Tabla de criterios
 
 | Criterio                                           | Pregunta guía                                                                                                                              | 
 | -------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ | 
@@ -67,18 +64,21 @@ Situación en la que el producto o acuerdo de trabajo no cumple con los requisit
 | Problemas en pruebas o validación                  | ¿Se han detectado errores no capturados por pruebas, falta de cobertura o ejecución inadecuada de pruebas?                                 | 
 | Fallas en la identificación de requisitos          | ¿Se han omitido, malinterpretado o identificado incorrectamente requisitos funcionales o no funcionales?                                   | 
 
----
+## 📚 Historial de cambios
 
-## Historial de cambios
+<details>
+  <summary>Versiones</summary>
 
-| **Tipo de Versión**             | **Descripción**                                             | **Fecha**  | **Colaborador**                                                             |
-| ------------------------------- | ----------------------------------------------------------- | ---------- | --------------------------------------------------------------------------- |
-| **1.0**                         | Proceso inicial para acciones correctivas                   | 26/03/2025 | Paola Garrido, Valeria Zúñiga                                               |
-| **1.1**                         | Se agregó enlace y práctica OPD SP 1.3                      | 31/03/2025  | Ian Julián Estrada Castro                                                   |
-| **1.2**                         | Refactorización                                             | 18/04/2025  | Diego Fuentes                                                               |
-| **2.0**                         | Proceso actualizado para cumplir con la meta 2 de PMC       | 21/04/2025  | Diego Fuentes, Max Toscano, Paola Garrido, Rommel Toledo, Daniel Queijeiro. |
-| **2.1**                         | Correcciones de REQM 1.5                                    | 22/04/2025 | Juan Pablo Chávez Leal                                                      |
-| **2.2**                         | Incorporación de PPQA 2.1 (no conformidades y notificación) | 24/04/2025 | Juan Eduardo Rosas Cerón                                                    |
-| **2.3**                         | Errores ortográficos | 25/04/2025 | Hiram Mendoza                                                   |
-| **3.0**                         | Simplifación del proceso y corrección acorde al CMMI.       | 15/05/2025 | Paola María Garrido, Valeria Zúñiga                                                   |
-| **3.1**                         | Agregar paso para introducir VER 3.2       | 16/05/2025 | Daniel Contreras Chávez                                                   |
+| **Tipo de Versión** | **Descripción**                                   | **Fecha**   | **Colaborador**                                                        |
+| ------------------- | ------------------------------------------------- | ----------- | -------------------------------------------------------------------- |
+| **1.0**             | Proceso inicial para acciones correctivas         | 26/03/2025  | Paola Garrido, Valeria Zúñiga                                        |
+| **1.1**             | Se agregó enlace y práctica OPD SP 1.3            | 31/03/2025  | Ian Julián Estrada Castro                                            |
+| **1.2**             | Refactorización                                    | 18/04/2025  | Diego Fuentes                                                        |
+| **2.0**             | Proceso actualizado para cumplir con la meta 2 de PMC | 21/04/2025  | Diego Fuentes, Max Toscano, Paola Garrido, Rommel Toledo, Daniel Queijeiro |
+| **2.1**             | Correcciones de REQM 1.5                           | 22/04/2025  | Juan Pablo Chávez Leal                                               |
+| **2.2**             | Incorporación de PPQA 2.1 (no conformidades y notificación) | 24/04/2025  | Juan Eduardo Rosas Cerón                                             |
+| **2.3**             | Errores ortográficos                               | 25/04/2025  | Hiram Mendoza                                                       |
+| **3.0**             | Simplificación del proceso y corrección acorde al CMMI | 15/05/2025  | Paola María Garrido, Valeria Zúñiga                                 |
+| **3.1**             | Agregar paso para introducir VER 3.2              | 16/05/2025  | Daniel Contreras Chávez                                              |
+
+</details>

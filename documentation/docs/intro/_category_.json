@@ -3,7 +3,8 @@
   "position": 1,
   "link": {
     "type": "generated-index",
-    "description": "Información general del departamento.",
+    "title": "Bienvenido a Code&Co",
+    "description": "Explora la información esencial de Code&Co, incluyendo proyectos, objetivos, políticas, procesos, guías, estándares, plantillas y recursos de ayuda para facilitar tu trabajo.",
     "slug": "/category/inicio"
   }
 }
