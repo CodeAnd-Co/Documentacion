@@ -227,92 +227,66 @@ Arutro Sanchez Rodriguez
 ```
 
 ```
-## Plantilla PR BackEnd
-Última actualización 26/03/25
+# Plantilla PR BackEnd TEXT & LINES
 
 ---
 
-### Autores
+## Descripción
 
-| Nombre                         | Rol   |
-| ------------------------------ | ----- |
-| Rodrigo Antonio Benítez De La Portilla          | Autor |
-| Arturo Sánchez Rodríguez | Autor |
-
----
-
-# Descripción
-
-Incluye un resumen del cambio y el problema que se ha solucionado. También proporciona el contexto relevante y la motivación para este cambio. Lista cualquier dependencia requerida para esta modificación.
+<!-- Agrega una descripción breve del cambio y, si aplica, si se necesita instalar una nueva dependencia. -->
 
 ---
 
 ## Tipo de cambio
 
-- [ ] Corrección de error (fix sin romper funcionalidades existentes)
-- [ ] Nueva funcionalidad (feature sin romper funcionalidades existentes)
-- [ ] Cambio disruptivo (rompe compatibilidad o modifica comportamiento actual )
-- [ ] Actualización de documentación requerida
-- [ ] Cambio mínimo (cambio visual o estructural que no afecta la lógica del sistema)
+- [ ] Corrección de error (cambio no disruptivo que soluciona un problema)
+- [ ] Nueva funcionalidad (cambio no disruptivo que agrega funcionalidad)
+- [ ] Cambio disruptivo (corrección o función que afecta la compatibilidad existente)
+- [ ] Este cambio requiere actualización en la documentación
+- [ ] Cambio mínimo (cambio estructural o visual sin impacto en la lógica principal)
 
 ---
 
-# ¿Qué archivo fue el que modifique?
-Ejemplo:
-- UserController.js
-- api.js
+## Nueva funcionalidad (si aplica)
+
+- [ ] Controlador
+- [ ] Ruta
+- [ ] Repositorio
+- [ ] Consulta
+- [ ] Mensaje 
+- [ ] Middleware
+- [ ] Servicio
+
+Si agregaste otro archivo relevante, indícalo aquí:  
+- `ejemploArchivo.js`
 
 ---
 
-# ¿Cómo se ha probado?
-Describe berevemente cómo se probó esta funcionalidad. Ejemplo:
-- "Se probaron los endpoints '/api/login' y '/api/profile' con Postman. Las respuestas fueron correctas y sin errores en consola."
-- "Se realizaron pruebas visuales/manuales. No se detectaron impactos en lógica ni funcionalidad."
+## ¿Cómo se ha probado?
+
+- [ ] Se probaron manualmente los endpoints con Postman
+- [ ] Pasaron las pruebas unitarias (si aplica)
+- [ ] Se probaron integraciones con otros módulos
+- [ ] No se mostraron errores en consola ni logs
+- [ ] Validado en base de datos que el comportamiento es correcto
 
 ---
 
-# Notas para cambios menores
-- [ ] Este PR realiza un cambio mínimo que no afecta la lógica del sistema.
-- [ ] Se validó el comportamiento básico y no se detectaron efectos colaterales.
+### Cambios menores
+
+- [ ] Este PR realiza un cambio mínimo que no afecta la lógica del sistema
+- [ ] Se validó manualmente que el cambio no afecta funcionalidades existentes
 - [ ] No se realizaron pruebas automatizadas porque no aplica
-
----
-
-# Lista de verificación del autor
-
-- [ ] El código sigue las normas de estilo del proyecto
-- [ ] He realizado una autoevaluación del código
-- [ ] El código estña comentado en las secciones complejas o no obvias
-- [ ] Documentación actualizada aplica
-- [ ] El código no genera nuevas advertencias o errores
-- [ ] Se añadieron pruebas relevantes
-
----
-
-# Lista de Verificación de Pruebas
-- [ ] Las pruebas unitarias nuevas y existentes pasan correctamente con mis cambios
-- [ ] Las pruebas de estrés nuevas y existentes pasan correctamente con mis cambios
-- [ ] Las pruebas de volumen nuevas y existentes pasan correctamente con mis cambios
-- [ ] Las pruebas de seguridad nuevas y existentes pasan correctamente con mis cambios
-- [ ] Las pruebas de conectividad nuevas y existentes pasan correctamente con mis cambios
-- [ ] Las pruebas de integración nuevas y existentes pasan correctamente con mis cambios
-- [ ] Las pruebas heurísticas nuevas y existentes pasan correctamente con mis cambios
-- [ ] Los cambios dependientes han sido combinados y publicados en los módulos descendentes
 
 ---
 
 ## Checklist del evaluador:
 
-- [ ] La descripción del Pull Request es clara y específica
-- [ ] No se introducen errores ni inconsistencias
-- [ ] Ortografía y gramática correctas en documentación
-- [ ] El código es entendible y cumple con los estándares
-- [ ] Notifiqué al autor del PR si encontré errores, dudas o sugerencias
-- [ ] (Si se aprueba) Procedo a eliminar la rama correspondiente
+- [ ] He determinado que el autor cumplió con todos los puntos mencionados
+- [ ] He determinado que los cambios no tienen un impacto negativo en la aplicación
+- [ ] He notificado al autor del PR en caso de dudas o ajustes necesarios
+- [ ] Una vez que acepte el PR, eliminaré la rama correspondiente
 
----
-
-# Versión: V1
 ```
 
 ## CI / CD
@@ -398,3 +372,4 @@ jobs:
 | ------------------- | ------------------------------------------ | ---------- | ---------------------------------------------- |
 | **1.0**             | Creacion de la estrategia tecnica textiles | 6/03/2025  | Diego Alfaro, Daniel Contreras, Emiliano Gomez |
 | **1.1**             | Documentación de la estructura de frontend | 01/05/2025 | Angélica Ríos                                  |
+| **1.2**             | Modificaciones de plantilla de pull request del backend | 19/05/2025 | Arturo Sánchez                                  |
