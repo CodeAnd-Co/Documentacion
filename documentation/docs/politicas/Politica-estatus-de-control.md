@@ -1,61 +1,65 @@
 ---
-title: Política de estatus de control
+title: 📜 Política de estatus de control
 sidebar_position: 5
 ---
 
-# **Política de estatus de control de la matriz de configuración**
+# 📜 Política de estatus de control de la matriz de configuración
 
----
+Esta política clasifica los elementos de configuración como estáticos, dinámicos o en revisión, permitiendo un mejor seguimiento, control de calidad y gestión de cambios. Es clave para asegurar que siempre se trabaje con versiones confiables y actualizadas.
 
-## **1. Objetivo**
+## 🎯 Objetivo
 
-Este documento tiene como finalidad describir la política de control de estatus aplicada en la matriz de configuración, utilizada para clasificar y dar seguimiento a los elemento de configuración.
+- describir la política de control de estatus aplicada en la matriz de configuración, utilizada para clasificar y dar seguimiento a los elemento de configuración.
 
----
+## 📊 Alcance
 
-## **2. Tipos de Estatus**
+Esta política aplica a:
+- Esta política aplica a todos los elementos de configuración y productos de trabajo gestionados dentro de la matriz de configuración de la organización. Abarca desde su creación hasta su liberación final, asegurando trazabilidad, control y consistencia en cada etapa del ciclo de vida del producto.
 
-### **Estatus Estático**
+## 📋 Declaraciones de la política
 
-Indica que un elemento de configuración o producto de trabajo ya fue validado y cumple con las políticas y estándares establecidos por el departamento. Generalmente, no requiere modificaciones, a menos que haya actualizaciones relevantes en normativas, lineamientos o procedimientos. Una vez asignado este estatus, la versión se considera como base de referencia.
+1. **Clasificación por estatus**
+    - Los elementos de configuración deben clasificarse como Estático, Dinámico o Bajo Revisión, según su estado actual dentro del ciclo de vida.
+        - **Estatus estático**: Indica que un elemento de configuración o producto de trabajo ya fue validado y cumple con las políticas y estándares establecidos por el departamento. Generalmente, no requiere modificaciones, a menos que haya actualizaciones relevantes en normativas, lineamientos o procedimientos. Una vez asignado este estatus, la versión se considera como base de referencia.
+        - **Estatus dinámico**: Se refiere a elemento de configuración que están siendo trabajados, ajustados o en revisión continua. Son susceptibles a cambios frecuentes debido a nuevas prácticas, comentarios de los usuarios o ajustes necesarios. Es fundamental consultar siempre la última versión disponible.
+        - **Estatus bajo revisión**: Esta categoría aplica a elementos de configuración que han sido seleccionados específicamente para evaluación, pero que aún no concluyen su proceso de auditoría. Puede tratarse de material que anteriormente fue estático o que está en una fase crítica de análisis antes de volverse base estable.
+    - Esta clasificación debe mantenerse actualizada en la matriz de configuración y reflejarse en la documentación correspondiente.
 
-### **Estatus Dinámico**
+2. **Criterios de cambio de estatus**
+    - Un elemento puede cambiar de Dinámico a Estático tras superar una auditoría y no requerir ajustes relevantes.
+    - Cambios mayores (e.g., de versión 1.x a 2.0) deben justificar un cambio de estatus y nueva auditoría. Cambios menores pueden mantenerse como Estático si se sigue el estándar de versiones.
 
-Se refiere a elemento de configuración que están siendo trabajados, ajustados o en revisión continua. Son susceptibles a cambios frecuentes debido a nuevas prácticas, comentarios de los usuarios o ajustes necesarios. Es fundamental consultar siempre la última versión disponible.
+3. **Control y seguimiento**
+    - Toda modificación o reclasificación debe ser documentada adecuadamente en el [repositorio de configuración](https://docs.google.com/spreadsheets/d/1e73fKSTAhxyPqiPN32u_1mkIyCbzssFc-7Ylfs-HL3w/edit?gid=620052691#gid=620052691).
+    - Los elementos Bajo Revisión deben identificarse claramente y priorizarse para auditoría o ajustes según su impacto.
 
-### **Estatus Bajo Revisión**
+## 👥 Roles y responsabilidades
 
-Esta categoría aplica a elementos de configuración que han sido seleccionados específicamente para evaluación, pero que aún no concluyen su proceso de auditoría. Puede tratarse de material que anteriormente fue estático o que está en una fase crítica de análisis antes de volverse base estable.
+- **Responsable de configuración**: Clasificar y actualizar el estatus de cada elemento, asegurar trazabilidad y documentación.
+- **Equipo de desarrollo**: Consultar siempre el estatus antes de utilizar o modificar un elemento.
+- **Auditor**: Validar los cambios de estatus mediante revisiones y auditorías periódicas.
 
----
+## ⚠️ Consecuencias del incumplimiento
 
-## **3. ¿Para qué sirven estos estatus?**
+El incumplimiento de esta política puede resultar en:
+- Retrasos en entregas por uso de versiones obsoletas o no aprobadas.
+- Observaciones en auditorías de calidad o incumplimiento normativo.
+- Escalamiento al Comité de Calidad para evaluación de acciones correctivas.
 
-### **Claridad y seguimiento**
+## 📎 Recursos relacionados
 
-Permiten a cualquier persona identificar de inmediato qué tan estable o confiable es un elemento de configuración o producto de trabajo.
+- [Estándar para crear nuevas plantillas](/docs/next/standards/estandar-plantillas)
+- [Definición de Ítems](/docs/next/procesos/PR2-definicion-items)
+- [Plantilla para políticas](/docs/next/plantillas/plantilla-politicas)
+- [EST05 | Estándar de versiones](docs/standards/versionamiento-productos-trabajo.md).
+- [Repositorio de configuración](https://docs.google.com/spreadsheets/d/1e73fKSTAhxyPqiPN32u_1mkIyCbzssFc-7Ylfs-HL3w/edit?gid=620052691#gid=620052691)
 
-### **Gestión efectiva**
+## 📚 Historial de cambios
 
-Facilitan el trabajo de actualización, ya que distinguen fácilmente entre elementos en desarrollo, elementos estandarizados y elementos en revisión.
-
-### **Control de calidad**
-
-Un elemento de configuración o producto de trabajo en estatus estático refleja que ha pasado por una evaluación rigurosa y está alineado con los objetivos de calidad del área.
-
----
-
-## **4. Cambios entre estatus**
-
-- Los elemento de configuración o producto de trabajo en estatus dinámico pueden pasar a estático cuando completan exitosamente una auditoría y no requieren más ajustes relevantes.
-
-- De igual forma, un elemento de configuración o producto de trabajo estático puede regresar a estado dinámico si se identifican cambios sustanciales que afecten su versión principal (por ejemplo, pasar de la versión 1.x a 2.0), lo cual implica que se debe realizar una nueva auditoría.
-
-- En cambio, si los ajustes realizados son menores (por ejemplo, solo afectan los decimales como pasar de la versión 1.4 a 1.6), el documento puede conservar su estatus estático sin necesidad de una auditoría adicional, siempre que dichos cambios no alteren su validez y se siga el estandar de versiones. [EST05 | Estándar de versiones](docs/standards/versionamiento-productos-trabajo.md).
-
----
-## Historial de cambios
-
-| **Tipo de versión** | **Descripción**                               | **Fecha** | **Colaborador**                 |
-| ------------------- | --------------------------------------------- | --------- | ------------------------------- |
-| **1.0**             | Creación de la política.                       | 14/05/2025 | Armando Méndez Castro   |
+<details>
+  <summary>Versiones</summary>
+    | **Tipo de versión** | **Descripción** | **Fecha** | **Colaborador** |
+    | ------------------- | --------------- | --------- | --------------- |
+    | **1.0** | Creación de la política. | 14/05/2025 | Armando Méndez Castro |
+    | **2.0** | Refactorizar política. | 19/05/2025 | Daniel Contreras Chávez |
+</details>
