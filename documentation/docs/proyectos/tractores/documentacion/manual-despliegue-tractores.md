@@ -1,3 +1,8 @@
+---
+title: Manual de despliegue de TracTech
+sidebar_position: 0
+---
+
 # Manual de Despliegue
 
 ## Índice
