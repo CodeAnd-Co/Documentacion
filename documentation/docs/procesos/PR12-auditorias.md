@@ -1,28 +1,27 @@
 ---
-title: PR12 Auditorías internas
+title: 🩻 | PR12 Auditorías internas
 sidebar_position: 12
 ---
 
-# Proceso para auditorías internas
+# 🩻 Proceso para auditorías internas
 
----
+Asegurar la evaluación sistemática de procesos y productos de trabajo mediante auditorías internas, con el fin de detectar desviaciones, promover la mejora continua y garantizar el cumplimiento con los estándares de calidad y objetivos organizacionales.
 
-### Objetivo
+## 🎯 Objetivo
 
-- Asegurar la evaluación sistemática de procesos y productos de trabajo mediante auditorías internas. Con el fin de detectar desviaciones, promover la mejora continua y garantizar el cumplimiento con los estándares de calidad y objetivos organizacionales.
+- Asegurar la evaluación sistemática de procesos y productos de trabajo mediante auditorías internas.
+- Detectar desviaciones.
+- Promover la mejora continua.
+- Garantizar el cumplimiento con estándares de calidad y objetivos organizacionales.
 
----
+## 📥 Entradas
 
-## **Auditoría Interna en Iteraciones**
+1. Estándar
+2. Política
+3. Guía
+4. Proceso
 
-### **Entradas**
-
-- Estándar
-- Política
-- Guía
-- Proceso 
-
-### Proceso
+## ⚙️ Proceso
 
 | Fase                           | Actividades                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       | Responsable                    | Práctica específica del CMMI                               |
 | ------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------ | ---------------------------------------------------------- |
@@ -39,27 +38,34 @@ sidebar_position: 12
 |                                | El _ID de la auditoría_ es secuencial, comenzando con **`AUD00`**. <br/> El _elemento auditado_ corresponde al ítem de proceso o producto de trabajo revisado. <br/> La _fecha registrada_ debe coincidir con el día en que se realizó la auditoría. <br/> El _resultado_ debe reflejar los hallazgos obtenidos durante la revisión. <br/> Agregar el enlace el informe de evaluación y el autor.                                                                                                                 | Team Lead / SEPG / Team member | **PPQA SP 2.2**                                            |
 | **Seguimiento**                | Si es necesario, agregar al plan de iteración la tarea de "Aplicar el [proceso para acciones correctivas](/docs/procesos/PR13-acciones-correctivas) para el elemento auditado".                                                                                                                                                                                                                                                                                                                                   | Team Lead / SEPG / Team member | **PPQA SP 1.1, 1.2** <br/> **OPF SP 1.2**, **PPQA SP 2.1** |
 
-### Salidas
+## 📤 Salidas
 
-- Informe de evaluación
-- Bitácora de auditorías actualizada
-- Checklist del ítem
+1. Informe de evaluación
+2. Bitácora de auditorías actualizada
+3. Checklist del ítem auditado
 
----
+## 📎 Recursos relacionados
 
-## Historial de cambios
+- [Estándar para crear nuevas plantillas](/docs/next/standards/estandar-plantillas)
+- [Definición de Ítems](/docs/next/procesos/PR2-definicion-items)
+- [Plantilla para procesos](/docs/next/plantillas/plantilla-procesos)
 
-| **Tipo de Versión** | **Descripción**                                                                                                        | **Fecha**  | **Colaborador**                         |
-| ------------------- | ---------------------------------------------------------------------------------------------------------------------- | ---------- | --------------------------------------- |
-| **1.0**             | Creación de proceso de auditorias                                                                                      | 19/3/2025  | Juan Carlos Calderon, Mauricio Anguiano |
-| **1.1**             | Se agregó PPQA 2.2 al proceso                                                                                          | 8/4/2025   | Juan Carlos Calderon, Mauricio Anguiano |
-| **1.2**             | Refactorización                                                                                                        | 18/4/2025  | Diego Fuentes Juvera                    |
-| **2.0**             | Agregar pasos para bitácora.                                                                                           | 22/4/2025  | Ian Julián Estrada Castro               |
-| **3.0**             | Agregar pasos para checklists, conexión con acciones correctivas.                                                      | 22/4/2025  | Diego Fuentes Juvera                    |
-| **4.0**             | Agregar pasos para auditar CM                                                                                          | 22/4/2025  | Diego Fuentes Juvera                    |
-| **4.1**             | Agregar paso para asignar un repsonsable de la auditoría y para especificar cuándo se auditan procesos.                | 23/4/2025  | Diego Fuentes Juvera                    |
-| **4.2**             | Agregar paso para crear copias de la checklist y del informe de evaluación.                                            | 23/4/2025  | Diego Fuentes Juvera                    |
-| **5.0**             | Corregir el proceso completo                                                                                           | 23/4/2025  | Angel Ramírez, Valeria Zúñiga           |
-| **5.1**             | Corregir sintaxis y ortografía                                                                                         | 23/4/2025  | Max Toscano                             |
-| **5.2**             | Cambiar nombre de la copia del informe de evaluación, hacer más claros los pasos para llenar la bitácora de auditorías | 24/4/2025  | Max Toscano                             |
-| **5.3**             | Implementar acciones correctivas y simplificar el proceso                                                              | 08/05/2025 | Armando Méndez Castro, Valeria Zúñiga   |
+## 📚 Historial de cambios
+
+<details>
+  <summary>Versiones</summary>
+    | **Tipo de Versión** | **Descripción**                                                                                                        | **Fecha**  | **Colaborador**                         |
+    | ------------------- | ---------------------------------------------------------------------------------------------------------------------- | ---------- | --------------------------------------- |
+    | **1.0**             | Creación de proceso de auditorías                                                                                      | 19/3/2025  | Juan Carlos Calderon, Mauricio Anguiano |
+    | **1.1**             | Se agregó PPQA 2.2 al proceso                                                                                          | 8/4/2025   | Juan Carlos Calderon, Mauricio Anguiano |
+    | **1.2**             | Refactorización                                                                                                         | 18/4/2025  | Diego Fuentes Juvera                    |
+    | **2.0**             | Agregar pasos para bitácora                                                                                            | 22/4/2025  | Ian Julián Estrada Castro               |
+    | **3.0**             | Agregar pasos para checklists, conexión con acciones correctivas                                                      | 22/4/2025  | Diego Fuentes Juvera                    |
+    | **4.0**             | Agregar pasos para auditar CM                                                                                          | 22/4/2025  | Diego Fuentes Juvera                    |
+    | **4.1**             | Agregar paso para asignar un responsable de auditoría y especificar cuándo se auditan procesos                         | 23/4/2025  | Diego Fuentes Juvera                    |
+    | **4.2**             | Agregar paso para crear copias de la checklist y del informe de evaluación                                            | 23/4/2025  | Diego Fuentes Juvera                    |
+    | **5.0**             | Corregir el proceso completo                                                                                           | 23/4/2025  | Angel Ramírez, Valeria Zúñiga           |
+    | **5.1**             | Corregir sintaxis y ortografía                                                                                         | 23/4/2025  | Max Toscano                             |
+    | **5.2**             | Cambiar nombre de la copia del informe de evaluación, aclarar pasos para llenar bitácora                               | 24/4/2025  | Max Toscano                             |
+    | **5.3**             | Implementar acciones correctivas y simplificar el proceso                                                              | 08/05/2025 | Armando Méndez Castro, Valeria Zúñiga   |
+</details>

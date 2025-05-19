@@ -1,26 +1,22 @@
 ---
-title: PR11 Comprensión y trazabilidad de requisitos
+title: ☢️ | PR11 Comprensión y trazabilidad de requisitos
 sidebar_position: 11
 ---
 
-# Proceso de comprensión y trazabilidad de requisitos
+# ☢️  Proceso de comprensión y trazabilidad de requisitos
 
----
+Este proceso asegura la correcta comprensión y la trazabilidad bidireccional de los requisitos, desde su definición hasta su implementación, facilitando el control y la calidad del desarrollo dentro de la organización.
 
-### Objetivo
+## 🎯 Objetivo
 
 - Establecer el proceso para mantener una trazabilidad bidireccional en los requisitos.
 
----
+## 📥 Entradas
 
-### Entradas
+1. Requisitos definidos para un MVP (Producto Mínimo Viable).  
+2. Requisitos definidos para un MBI (Incremento Mínimo de Negocio).
 
-1. Requisitos definidos para un MVP
-2. Requisitos definidos para un MBI
-
----
-
-## Proceso de Comprensión y Trazabilidad de Requisitos
+## ⚙️ Proceso
 
 | **Fase**                                    | **Descripción**                                                                                                                                                                                                                                                                                                                                                                                  | **Responsables**     | **Meta y práctica específica del CMMI**                                    |
 | ------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------- | -------------------------------------------------------------------------- |
@@ -32,23 +28,25 @@ sidebar_position: 11
 |                                             | Al terminar de codificar el requisito reemplazar la etiqueta `Ready` por `Done`.                                                                                                                                                                                                                                                                                                | Equipo de producto   | **REQM SP1.4** (Mantener la trazabilidad bidireccional de los requisitos). |
 | **Vincular Pull Request (front y back)**    | Cuando se acepten los Pull requests se debe añadir los enlaces en la sección de "Código" de la documentación con el formato: <br/>`_<u>Pull request front-end: (enlace del PR)</u>_`. <br/>`_<u>Pull request back-end: (enlace del PR)</u>_`.                                                                                                                         | Equipo de desarrollo | **REQM SP1.4** (Mantener la trazabilidad bidireccional de los requisitos). |
 
-|
+## 📤 Salidas
 
----
+1. Documento consolidado con todos los requisitos funcionales y no funcionales, organizados por MVP y MBI.  
+2. Documentos detallados para cada requisito funcional, incluyendo historia, criterios, diagramas y pruebas.  
 
-### Salidas
+## 📎 Recursos relacionados
 
-1. Un documento general que consolida los requisitos de cada proyecto, organizados en:
-   - **Requisitos funcionales**, clasificados en **MVP** (Producto Mínimo Viable) y **MBI** (Incremento Mínimo de Negocio).
-   - **Requisitos no funcionales**, que establecen condiciones de calidad y restricciones del sistema.
-2. Un documento individual para cada requisito funcional, detallando su historia de usuario, criterios de aceptación, diagramas e interfaces.
+- [Estándar para crear nuevas plantillas](/docs/next/standards/estandar-plantillas)  
+- [Definición de Ítems](/docs/next/procesos/PR2-definicion-items)  
+- [Plantilla para procesos](/docs/next/plantillas/plantilla-procesos)  
 
----
+## 📚 Historial de cambios
 
-## Historial de cambios
-
-| **Tipo de Versión** | **Descripción**                                                          | **Fecha** | **Colaborador**         |
-| ------------------- | ------------------------------------------------------------------------ | --------- | ----------------------- |
-| **1.0**             | Creacion de proceso de comprensión y trazabilidad de requisitos.          | 9/3/2025  | Angélica Ríos Cuentas   |
-| **2.0**             | Refactorización y cambio para especificar dónde se crean los documentos. | 18/4/2025 | Diego Fuentes           |
-| **2.1**             | Simplificación del proceso y modificación para poner trazabilidad de código.                                      | 13/5/2025 | Rodrigo Antonio Benítez, Valeria Zúñiga, Paola Garrido |
+<details>
+  <summary>Versiones</summary>
+  
+  | **Tipo de versión** | **Descripción**                                                        | **Fecha**  | **Colaborador**                      |
+  | ------------------- | -------------------------------------------------------------------- | ---------- | ---------------------------------- |
+  | **1.0.0**           | Creación inicial del proceso.                                         | 09/03/2025 | Angélica Ríos Cuentas               |
+  | **2.0.0**           | Refactorización para especificar ubicación de documentos y simplificar. | 18/04/2025 | Diego Fuentes                      |
+  | **2.1.0**           | Agregado de trazabilidad en código y vinculación de Pull Requests.    | 13/05/2025 | Rodrigo A. Benítez, Valeria Zúñiga, Paola Garrido |
+</details>

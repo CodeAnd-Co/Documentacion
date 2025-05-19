@@ -3,7 +3,8 @@
   "position": 5,
   "link": {
     "type": "generated-index",
-    "description": "Colección de manuales y directrices diseñados para orientar a nuestro equipo.",
+    "title": "Guías y Manuales de Code&Co",
+    "description": "Accede a manuales, instructivos y directrices prácticas que orientan al equipo en el uso de herramientas, metodologías, buenas prácticas y flujos de trabajo dentro de Code&Co.",
     "slug": "/category/guias"
   }
 }
