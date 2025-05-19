@@ -48,10 +48,10 @@ El incumplimiento de esta política puede resultar en:
 
 ## 📎 Recursos relacionados
 
-- [Estándar para crear nuevas plantillas](/docs/next/standards/estandar-plantillas)
-- [Definición de Ítems](/docs/next/procesos/PR2-definicion-items)
-- [Plantilla para políticas](/docs/next/plantillas/plantilla-politicas)
-- [EST05 | Estándar de versiones](docs/standards/versionamiento-productos-trabajo.md).
+- [Estándar para crear nuevas plantillas](/docs/standards/estandar-plantillas.md)
+- [Definición de Ítems](/docs/procesos/PR2-definicion-items.md)
+- [Plantilla para políticas](/docs/plantillas/plantilla-politicas.md)
+- [EST05 | Estándar de versiones](/docs/standards/estandar-versiones.md).
 - [Repositorio de configuración](https://docs.google.com/spreadsheets/d/1e73fKSTAhxyPqiPN32u_1mkIyCbzssFc-7Ylfs-HL3w/edit?gid=620052691#gid=620052691)
 
 ## 📚 Historial de cambios
