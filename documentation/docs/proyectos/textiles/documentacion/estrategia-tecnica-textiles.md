@@ -169,17 +169,13 @@ El dominio contiene:
 
 ---
 
-## Plantilla Pull Requests equipo textiles
-
-```
-
-## Plantilla PR FrontEnd
-
-Última actualización 26/03/25
+# Plantilla PR FrontEnd TEXT & LINES
 
 ---
 
 # Descripción
+
+## <!--- Agrega una descripción del cambio en una línea y si se necesita instalar una nueva dependencia-->
 
 ---
 
@@ -189,26 +185,30 @@ El dominio contiene:
 - [ ] Nueva función (cambio no disruptivo que agrega funcionalidad)
 - [ ] Cambio disruptivo (corrección o función que afecta la compatibilidad existente)
 - [ ] Este cambio requiere una actualización en la documentación
-- [ ] Camio mínimo (Visual o de bajo impacto, sin afectcar lógica )
+- [ ] Cambio mínimo (visual o de bajo impacto, sin afectar lógica)
 
 ---
 
-# ¿Qué archivo fue el que modifiqué?
+## Nueva funcionalidad (si aplica)
 
-Ejemplo:
+- [ ] Repositorio
+- [ ] Modelo
+- [ ] Hook
+- [ ] Rutas y Rutas Individuales
+- [ ] Pagina
 
-- Componente1.jsx
-- Estilos.css
+Si creaste algo más, ponlo aquí:
+
+- Ejemplo.jsx
 
 ---
 
-# ¿Cómo se ha probado?
+## ¿Cómo se ha probado?
 
-Describe resumidamente cómo lo probaste y funciona. Ejemplo:
-
-- "Se probó manualmente en Chrome y Safari. Se validó que el botón 'Guardar' guarda correctamente la información y se muestra una alerta de éxito."
-  _En caso de cambio mínimo:_
-- "El cambio fue visualmente unicamente (color del boton). Se validó en los navegadores principales. No se requirieron pruebas funcionales."
+- [ ] Se utilizó lint para errores
+- [ ] Pasaron las pruebas unitarias (si aplica)
+- [ ] Se probó la funcionalidad y no mostró errores
+- [ ] Visualemente cumple con estándares definidos en el Figma
 
 ---
 
@@ -220,13 +220,19 @@ Describe resumidamente cómo lo probaste y funciona. Ejemplo:
 
 ---
 
-Versión: V1
-Rodrigo Antonio Benítez De La Portilla
-Arutro Sanchez Rodriguez
+## Checklist del evaluador:
+
+- [ ] He determinado que el autor cumplió con todos los puntos mencionados
+- [ ] He determinado que los cambios no tienen un impacto negativo en la aplicación
+- [ ] He notificado al autor del PR en caso de dudas o ajustes necesarios
+- [ ] Una vez que acepte el PR, eliminaré la rama
+
+---
 
 ```
 
 ```
+
 # Plantilla PR BackEnd TEXT & LINES
 
 ---
@@ -253,11 +259,12 @@ Arutro Sanchez Rodriguez
 - [ ] Ruta
 - [ ] Repositorio
 - [ ] Consulta
-- [ ] Mensaje 
+- [ ] Mensaje
 - [ ] Middleware
 - [ ] Servicio
 
-Si agregaste otro archivo relevante, indícalo aquí:  
+Si agregaste otro archivo relevante, indícalo aquí:
+
 - `ejemploArchivo.js`
 
 ---
@@ -287,7 +294,7 @@ Si agregaste otro archivo relevante, indícalo aquí:
 - [ ] He notificado al autor del PR en caso de dudas o ajustes necesarios
 - [ ] Una vez que acepte el PR, eliminaré la rama correspondiente
 
-```
+````
 
 ## CI / CD
 
@@ -364,12 +371,13 @@ jobs:
             npm install &&
             pm2 reload ecosystem-staging.config.js --only $PM2_PROCESS
           "
-```
+````
 
 # Historial de cambios
 
-| **Tipo de Versión** | **Descripción**                            | **Fecha**  | **Colaborador**                                |
-| ------------------- | ------------------------------------------ | ---------- | ---------------------------------------------- |
-| **1.0**             | Creacion de la estrategia tecnica textiles | 6/03/2025  | Diego Alfaro, Daniel Contreras, Emiliano Gomez |
-| **1.1**             | Documentación de la estructura de frontend | 01/05/2025 | Angélica Ríos                                  |
-| **1.2**             | Modificaciones de plantilla de pull request del backend | 19/05/2025 | Arturo Sánchez                                  |
+| **Tipo de Versión** | **Descripción**                                         | **Fecha**  | **Colaborador**                                |
+| ------------------- | ------------------------------------------------------- | ---------- | ---------------------------------------------- |
+| **1.0**             | Creacion de la estrategia tecnica textiles              | 6/03/2025  | Diego Alfaro, Daniel Contreras, Emiliano Gomez |
+| **1.1**             | Documentación de la estructura de frontend              | 01/05/2025 | Angélica Ríos                                  |
+| **1.2**             | Modificaciones de plantilla de pull request del backend | 19/05/2025 | Arturo Sánchez                                 |
+| **1.3**             | Mejoras en la plantilla de Frontend                     | 19/05/2025 | Rodrigo Antonio                                |
