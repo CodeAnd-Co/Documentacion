@@ -1,7 +1,7 @@
 ---
-title: ⚙️ | Plantilla para procesos
+title: ⚙️ | Plantilla para Procesos
 ---
-# ⚙️ Plantilla para procesos
+# ⚙️ Plantilla para Procesos
 
 Esta plantilla proporciona una estructura estandarizada para crear procesos dentro de la organización. Siguiendo este formato, se asegura que todos los procesos sean consistentes, claros y efectivos para guiar el comportamiento y la toma de decisiones en la organización.
 

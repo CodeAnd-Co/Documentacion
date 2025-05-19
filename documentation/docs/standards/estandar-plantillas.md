@@ -1,56 +1,68 @@
 ---
-title: Estándar para crear plantillas
+title: 📄 | Estándar para Plantillas
 sidebar_position: 1
 ---
-# 🧩 Estándar para crear nuevas plantillas
 
-Este estándar te guía paso a paso para crear una nueva plantilla dentro de la organización. Su propósito es asegurar uniformidad, claridad y facilidad de uso para cualquier miembro del equipo, incluso si es su primer día.
+# 📄 Estándar para Plantillas
 
-## 🔙 Pasos previos para la definición de una nueva plantilla
+Este estándar guía la creación de nuevas plantillas dentro de la organización para asegurar **uniformidad**, **claridad** y **facilidad de uso**, promoviendo un entorno de colaboración accesible para todos, incluso nuevos integrantes del equipo.
 
-Antes de redactar una plantilla, asegúrate de cumplir con los siguientes pasos:
+## 🎯 Objetivo
 
-1. Se siguió correctamente el proceso de [Definición de Ítems](/docs/next/procesos/PR2-definicion-items).
-2. La plantilla propuesta es útil y relevante para la organización.
-3. Se identificó qué tipo de archivo se requiere (archivo `.md`, presentación de Canva, documento en Google Docs, etc.).
-4. Existe una carpeta de plantillas relacionada donde se debe ubicar la nueva plantilla.
-5. En caso de que no exista una carpeta correspondiente, registra la nueva categoría en el índice general de plantillas.
+- Establecer lineamientos claros para la creación de plantillas en distintos formatos.
+- Asegurar la coherencia, utilidad y accesibilidad de las plantillas.
+- Fomentar un lenguaje claro, empático y alineado con la cultura organizacional.
 
-## 😄 Las plantillas deben transmitir alegría
+## 📑 Artefactos en los que aplica
 
-En Code&Co valoramos el bienestar y la alegría. Por ello, las plantillas deben reflejar ese espíritu:
+* Plantillas en Markdown (`.md`): Usadas en documentación Docusaurus.
+* Plantillas en Canva o PowerPoint: Usadas para presentaciones internas o formativas.
+* Plantillas en Google Docs o Notion: Usadas para documentos colaborativos y formularios internos.
 
-### Uso de emojis
+## 📋 Estándares
 
-Utiliza emojis representativos que:
+### 📄 Estructura general
 
-* Reflejen la esencia del contenido
-* Sean consistentes con otras plantillas similares
-* Faciliten la identificación visual rápida
+- Las plantillas deben comenzar con un bloque `frontmatter` con `title` y `sidebar_position`.
+- Todo archivo debe tener una sección de título visible con emoji representativo y un resumen inicial.
+- Debe incluir la sección `🎯 Objetivo`, siempre redactada en viñetas.
 
-**Ejemplos de uso adecuado:**
+### 😄 Estilo y tono
 
-* 🧑‍🍳 o ⚙️ para procesos
-* 📊 para reportes y análisis
-* 👥 para documentos relacionados con equipos
-* 🚀 para lanzamientos o proyectos nuevos
+- Utilizar emojis consistentes y relevantes al tipo de documento.
+- Mantener un lenguaje claro, empático y libre de jerga innecesaria.
+- Incluir ejemplos prácticos y anotaciones cuando sea necesario.
+- Seguir la política de bienestar para reflejar el espíritu de alegría y colaboración.
 
-### Tono y lenguaje
+### 🧾 Versionamiento
 
-* Escribe de forma clara y concisa, evitando jerga innecesaria
-* Usa un tono empático y colaborativo
-* Incluye ejemplos prácticos siempre que sea posible
-* Mantén una estructura consistente con viñetas y encabezados
+- Toda plantilla debe tener su historial de cambios como bloque `<details>` al final del archivo `.md`.
+- No incluir el historial dentro del contenido visible de la plantilla final (solo en el archivo de registro).
 
-Consulta la [política de bienestar](/ruta/a/la/politica-de-bienestar) para más contexto sobre el estilo esperado.
+### 🧪 Formato base para `.md`
 
-## 📅 Versionamiento de las plantillas
+- Debe incluir un bloque de código con el formato de plantilla sugerido para reutilización.
+- Incluir instrucciones de uso, ejemplos y secciones recomendadas.
+- Usar admonitions (`:::tip`, `:::info`, `:::warning`) de forma adecuada.
 
-Las plantillas deben seguir el estándar de versionamiento interno. Este historial **no debe ir dentro del contenido visible de la plantilla**, sino como metainformación en el archivo `.md` correspondiente al registro centralizado de plantillas.
+### 📱 Consideraciones por tipo de plantilla
 
-## 🧪 Formato base para crear una nueva plantilla `.md`
+#### Markdown (`.md`)
+- Respetar la sintaxis de Docusaurus.
+- Usar emojis y admonitions correctamente.
+- Incluir bloque descargable si aplica.
 
-> Copia y pega este bloque para redactar una nueva plantilla:
+#### Presentaciones (Canva, PowerPoint)
+- Mantener versión editable y otra de referencia.
+- Documentar su uso en archivo `.md` adjunto.
+
+#### Documentos colaborativos (Google Docs, Notion)
+- Controlar permisos de edición y visualización.
+- Documentar el proceso para duplicar o reutilizar.
+
+## 📝 Ejemplos
+
+### ✅ Correcto
 
 ```md
 ---
@@ -110,43 +122,33 @@ Incluye aquí un bloque de código **solo si** la plantilla que estás creando e
 </details>
 ```
 
-## 📱 Consideraciones para diferentes formatos
-
-### Plantillas en Markdown (`.md`)
-
-* Utiliza la sintaxis de Docusaurus cuando corresponda
-* Incluye bloques de código con formato adecuado
-* Aprovecha las admonitions (:::tip, :::info, etc.)
-
-### Presentaciones (Canva, PowerPoint, etc.)
-
-* Crea una versión de referencia en el repositorio oficial
-* Incluye un archivo `.md` con instrucciones de uso
-* Proporciona el enlace al archivo editable
-
-### Documentos colaborativos (Google Docs, Notion, etc.)
-
-* Configura los permisos adecuadamente
-* Crea una plantilla maestra con restricciones apropiadas
-* Documenta el proceso de "hacer una copia" o "usar plantilla"
-
-## ℹ️ Recursos para creadores de plantillas
-
-### Archivos descargables en Docusaurus
-
-Para incluir archivos descargables en tus plantillas, sigue la [documentación oficial de Docusaurus sobre manejo de assets](https://docusaurus.io/docs/markdown-features/assets).
-
-Ejemplo básico:
+### ❌ Incorrecto
 
 ```md
-[⬇️ Descargar plantilla](/assets/templates/nombre-plantilla.xlsx)
+# Documentación de entregables
+
+Objetivo: hacer entregables.
+
+Secciones: Las que veas necesarias.
 ```
 
-## 📚 Historial de Cambios
+> ❗ Falta estructura, frontmatter, emojis y claridad en redacción.
+
+## 📎 Recursos relacionados
+
+* [Estándar para crear nuevas plantillas](/docs/next/standards/estandar-plantillas)
+* [Definición de Ítems](/docs/next/procesos/PR2-definicion-items)
+* [Plantilla para estándares](/docs/next/plantillas/plantilla-estandares)
+* [Política de bienestar](/ruta/a/la/politica-de-bienestar)
+* [Manejo de assets en Docusaurus](https://docusaurus.io/docs/markdown-features/assets)
+
+## 📚 Historial de cambios
 
 <details>
   <summary>Versiones</summary>
-    | **Tipo de versión** | **Descripción** | **Fecha** | **Colaborador**           |
-    | -------------------------- | ---------------------- | --------------- | ------------------------------- |
-    | **1.0**              | Creación del estandar | 18/05/2025      | Angel Mauricio Ramírez Herrera |
+
+| **Tipo de versión** | **Descripción**               | **Fecha**  | **Colaborador**                |
+| ------------------- | ----------------------------- | ---------- | ------------------------------ |
+| **1.0.0**           | Creación inicial del estándar | 18/05/2025 | Angel Mauricio Ramírez Herrera |
+
 </details>

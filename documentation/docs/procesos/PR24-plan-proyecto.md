@@ -1,31 +1,26 @@
 ---
-title: PR24 Proceso para planear y mantener un proyecto
-sidebar_position: 24
+title: 🏇 | PR19 Proceso para planear y mantener un proyecto
+sidebar_position: 19
 ---
 
-# Proceso para planear y mantener un proyecto
+# 🏇 Proceso para planear y mantener un proyecto
 
----
+Este proceso define cómo planear un proyecto desde su inicio y cómo asegurar su mantenimiento alineado con los objetivos organizacionales y las necesidades del stakeholder. Establece criterios claros para aceptar requisitos, detalla los entregables y conecta las prácticas con el modelo CMMI.
 
-### Objetivo
+## 🎯 Objetivo
 
 - Definir la estrategia del proyecto, asegurando el alineamiento y monitoreo de todos los planes, la comprensión común del alcance y la validación de la estrategia con el stakeholder mediante la milestone “Stakeholder consensus”.
 
----
+## 📥 Entradas
 
-### Entradas
+1. Proyecto inicial con un cliente  
+2. Juntas con stakeholders  
+3. Plantilla del Plan de Proyecto  
+4. Plantillas de: SRS, Plan de Gestión de Datos, Plan de Pruebas, Plan de Comunicación, Plan de Recursos, Plan de Capacitación  
+5. Política de gestión de datos y estándar de arquitectura  
+6. Documento de ciclos de vida de proyecto  
 
-1. Proyecto inicial con un cliente
-2. Juntas con stakeholders
-2. Plantilla del Plan de Proyecto
-3. Plantillas de: SRS, Plan de Gestión de Datos, Plan de Pruebas, Plan de Comunicación, Plan de Recursos, Plan de Capacitación
-4. Política de gestión de datos y estándar de arquitectura
-5. Documento de ciclos de vida de proyecto
-
-
----
-
-### Proceso
+## ⚙️ Proceso
 
 | **Fase**                                 | **Descripción**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     | **Responsable**                | **Meta y práctica específica del CMMI**                                                                                                                                                                                                                                                                                                                        |
 | ---------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -58,12 +53,7 @@ sidebar_position: 24
 | **13. Seguimiento y actualización**      | -Actualizar tareas diariamente. <br/> -Reestimar costos según la hoja “Estimación y reestimación de costos” y actualizar la fórmula de “costo estimado” según sea necesario. <br/> -Monitorear gráficas de valor ganado y costo acumulado.                                                                                                                                                                                                                                                                                                                                                                                                                                      | Todo el equipo                 | **PMC, SP 1.1** (Monitorizar los parámetros de planificación del proyecto), **MA SP 2.1, 2.2**, **PP, SP 1.4** (Estimar el esfuerzo y el coste), **PP, SP 2.1** (Establecer el presupuesto y el calendario)                                                                                                                                                    |
 |                                          | Calcular el valor `SPI = valor real acumulado / valor planeado`. <br/> Calcular la desviación con: `(1 - SPI) * 100`. <br/>- **0-15%**: Aún es factible el plan. <br/>- **15-30%**: Se deben analizar y atender los motivos del atraso y tomar decisiones drásticas. <br/>- **Más del 30%**: Es necesaria una re-planeación.                                                                                                                                                                                                                                                                                                                                        | Team Lead                      | **PMC, SP 1.1** (Monitorizar los parámetros de planificación del proyecto), **PP, SP 2.1** (Establecer el presupuesto y el calendario), **PP, SP 3.1** (Revisar los planes que afectan al proyecto), **PP, SP 3.2** (Conciliar los niveles de trabajo y de recursos), **REQM SP 1.5**, Asegurar el alineamiento entre el trabajo del proyecto y los requisitos |
 
-------
-#### ¿Cómo se decide qué requisitos aceptar?
-
-Para garantizar que los requisitos definidos sean viables y valiosos para el proyecto, se aplican los siguientes **criterios de aceptación**:
-
-##### Criterios de Evaluación
+## ✔️ Criterios de Evaluación
 
 | Criterio                   | Descripción                                                 | Prioridad              |
 | -------------------------- | ----------------------------------------------------------- | ---------------------- |
@@ -73,51 +63,51 @@ Para garantizar que los requisitos definidos sean viables y valiosos para el pro
 | **Alineación estratégica** | ¿Se alinea con la necesidad del socio?                      | Media (Recomendable)   |
 | **Esfuerzo requerido**     | ¿Requiere un esfuerzo proporcional al beneficio que aporta? | Media (Recomendable)   |
 
-##### Reglas para la Aceptación
+## 📤 Salidas
 
-- Un requisito será **aceptado** si cumple **los tres criterios obligatorios**:  
-  `Viabilidad técnica`, `Viabilidad temporal` y `Valor al negocio`.
-- Se recomienda que además cumpla **al menos uno** de los dos criterios restantes (`Alineación estratégica` o `Esfuerzo requerido`), para priorizarlo dentro del desarrollo.
-------
+1. Sección de roles departamentales y lineamientos de liderazgo en los Acuerdos de trabajo  
+2. Documento de involucramiento de stakeholders  
+3. Especificación de Requisitos de Software (SRS)  
+4. Historias de usuario desglozadas y priorizadas  
+5. MVP y MBI definido  
+6. Manual de arquitectura + stack tecnológico  
+7. Plan de pruebas  
+8. Plan de gestión de datos  
+9. Estructura de descomposición del trabajo (WBS) del proyecto  
+10. Plan de recursos y capacitaciones  
+11. Documentación de misión, visión, valores y objetivos iniciales del equipo  
+12. Ciclo de vida del proyecto definido  
+13. Plan de valor ganado con lista de tareas priorizadas, estimadas y con fechas  
+14. Plan de comunicación con stakeholders  
+15. Matriz de riesgos actualizada  
+16. Acta de compromiso con el plan firmada  
 
-### Salidas
+## 📎 Recursos relacionados
 
-1. Sección de roles departamentales y lineamientos de liderazgo en los Acuerdos de trabajo
-2. Documento de involucramiento de stakeholders
-3. Especificación de Requisitos de Software (SRS)
-4. Juntas con stakeholders  
-5. Historias de usuario desglozadas y priorizadas
-6. MVP y MBI definido
-7. Manual de arquitectura + stack tecnológico
-8. Plan de pruebas
-9. Plan de gestión de datos
-10. Estructura de descomposición del trabajo (WBS) del proyecto
-11. Plan de recursos y capacitaciones
-12. Documentación de misión, visión, valores y objetivos iniciales del equipo
-13. Ciclo de vida del proyecto definido
-14. Plan de valor ganado con lista de tareas priorizadas, estimadas y con fechas
-16. Plan de comunicación con stakeholders
-17. Matriz de riesgos actualizada
-18. Acta de compromiso con el plan firmada
+- [Estándar para crear nuevas plantillas](/docs/next/standards/estandar-plantillas)  
+- [Definición de Ítems](/docs/next/procesos/PR2-definicion-items)  
+- [Plantilla para procesos](/docs/next/plantillas/plantilla-procesos)  
 
+## 📚 Historial de cambios
 
----
+<details>
+  <summary>Versiones</summary>
 
-## Historial de Cambios
+| **Tipo de Versión** | **Descripción**                                          | **Fecha**  | **Colaborador** |
+| ------------------- | -------------------------------------------------------- | ---------- | --------------- |
+| **1.0.0** | Creación inicial del proceso. | 04/03/2025 | Valeria Zúñiga, Max Toscano, Carlos Fonseca, Mariana Juárez, Sofía Osorio, Diego Alfaro, Arturo Sánchez, Juan Eduardo Rosas, Pablo Hurtado, Juan Carlos Calderón, Emiliano Gómez González, Angel Mauricio Ramírez |
+| **1.1** | Correcciones de ortografía y redacción | | Carlos Iván Fonseca Mondragón |
+| **1.2** | Adición del formato de Compromiso con el plan | | Juan Pablo Chávez Leal, Rommel Toledo Crespo |
+| **1.3** | Adición de la hoja de Disponibilidad de Recursos | | Carlos Iván Fonseca Mondragó, Miguel Ángel Uribe Esquivel |
+| **1.4** | Añadir PMC 1.1 a fases faltantes | | Daniel C. y Juan Pablo C. |
+| **1.5** | Definición de cuándo y cómo decidimos qué requisitos aceptar | 07/04/2025 | Angélica Ríos Cuentas |
+| **1.6** | Agregar SG 3.1 de PP | 08/04/2025 | Mariana Juárez Ramírez |
+| **1.7** | Refactorización | 18/04/2025 | Diego Fuentes |
+| **1.8** | Correcciones de PMC y REQM | 22/04/2025 | Juan Pablo Chávez Leal |
+| **1.9** | Correcciones de auditoría del 26 de abril del 2025. | 26/04/2025 | Paola María Garrido Montes |
+| **2.0** | Plan de Datos | 28/04/2025 | Pablo Hurtado |
+| **2.1** | Integración de versiones | 28/04/2025 | Diego Fuentes |
+| **2.2** | Agregar subpráctica OPD1.2 | 13/05/2025 | Nicolás Hood |
+| **3.0** | Modificación del proceso acorde al CMMI y simplificación | 16/05/2025 | Valeria Zúñiga, Paola Garrido |
 
-| **Tipo de Versión** | **Descripción**                                          | **Fecha**  | **Colaborador**                                                                                                                                                  |
-| ------------------- | -------------------------------------------------------- | ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **1.0**             | Creación del proceso                                     | 4/3/2025   | Valeria Zúñiga, Max Toscano, Carlos Fonseca, Mariana Juárez, Sofía Osorio, Diego Alfaro, Arturo Sánchez, Juan Eduardo Rosas, Pablo Hurtado, Juan Carlos Calderón, Emiliano Gómez González, Angel Mauricio Ramirez  |
-| **1.1**             | Correcciones de ortografía y redacción                   |            | Carlos Iván Fonseca Mondragón                                                                                                                                    |
-| **1.2**             | Adición del formato de Compromiso con el plan            |            | Juan Pablo Chávez Leal, Rommel Toledo Crespo                                                                                                                     |
-| **1.3**             | Adición de la hoja de Disponibilidad de Recursos         |            | Carlos Iván Fonseca Mondragó, Miguel Angel Uribe Esquivel                                                                                                        |
-| **1.4**             | Añadir PMC 1.1 a fases faltantes                         |            | Daniel C. y Juan Pablo C.                                                                                                                                        |
-| **1.5**             | Definición de cuándo y cómo decidimos qué requisitos aceptar | 07/4/2025 | Angélica Ríos Cuentas                          |
-| **1.6**             | Agregar SG 3.1 de PP                                     | 8/4/2025   | Mariana Juárez Ramírez                                                                                                                                           |
-| **1.7**             | Refactorización                                          | 18/4/2025  | Diego Fuentes                                                                                                                                                    |
-| **1.8**             | Correcciones de PMC y REQM                               | 22/04/2025 | Juan Pablo Chávez Leal                                                                                                                                           |
-| **1.9**             | Correcciones de auditoria del 26 de abril del 2025.      | 26/04/2025 | Paola María Garrido Montes                                                                                                                                       |
-| **2.0**             | Plan de Datos                                            | 28/04/2025 | Pablo Hurtado                                                                                                                                                    |
-| **2.1**             | Integración de versiones                                 | 28/04/2025 | Diego Fuentes                                                                                                                                                    |
-| **2.2**             | Agregar subpráctica OPD1.2                               | 13/05/2025 | Nicolas Hood                                                                                                                                                     |
-| **3.0**             | Modificación del proceso acorde al CMMI y simplificación | 16/05/2025 | Valeria Zúñiga, Paola Garrido                                                                                                                                                  |
+</details>
