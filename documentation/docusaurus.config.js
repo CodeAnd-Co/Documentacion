@@ -10,8 +10,8 @@ import { themes as prismThemes } from "prism-react-renderer";
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "Code&Co",
-  tagline: "Documentación general",
+  title: "Code&Co Wiki",
+  tagline: "Documentación oficial 🚀",
   favicon: "img/code&co-logoSimpleRound.ico",
 
   themes: ["@docusaurus/theme-mermaid"],
@@ -49,11 +49,11 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          sidebarPath: "./sidebars.js",
+          sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+            "https://github.com/CodeAnd-Co/Documentacion/tree/main/documentation",
         },
         blog: {
           showReadingTime: true,
@@ -64,7 +64,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+            "https://github.com/CodeAnd-Co/Documentacion/tree/main/documentation",
           // Useful options to enforce blogging best practices
           onInlineTags: "warn",
           onInlineAuthors: "warn",
@@ -90,44 +90,33 @@ const config = {
         },
         items: [
           {
-            to: "/docs/category/inicio",
-            label: "Inicio 🏡",
+            to: "/docs/category/textiles",
+            label: "Text&Lines",
             position: "left",
           },
           {
-            to: "/docs/category/recursos",
-            label: "Recursos ⛏️",
+            to: "/docs/category/tractores",
+            label: "TracTech",
             position: "left",
           },
           {
-            to: "/docs/category/procesos",
-            label: "Procesos ⚙️",
+            to: "/docs/category/larvas",
+            label: "Technebrios",
             position: "left",
           },
           {
-            to: "/docs/category/guías-",
-            label: "Guías 📖",
-            position: "left",
+            type: "docsVersionDropdown",
+            position: "right",
           },
           {
-            to: "/docs/category/politicas",
-            label: "Políticas 👮‍♀️",
-            position: "left",
+            to: "https://discord.gg/RheuUC8s",
+            label: "Discord",
+            position: "right",
           },
           {
-            to: "/docs/category/estandares",
-            label: "Estándares 📐",
-            position: "left",
-          },
-          {
-            to: "/docs/category/proyectos-",
-            label: "Proyectos 👨‍💻",
-            position: "left",
-          },
-          {
-            to: "/docs/category/plantillas",
-            label: "Plantillas 📄",
-            position: "left",
+            to: "https://drive.google.com/drive/folders/14rRuIvjLRNxXxczcR0kbLQOxzOCmcomg?usp=sharing",
+            label: "Google Drive",
+            position: "right",
           },
         ],
       },
@@ -138,6 +127,9 @@ const config = {
       prism: {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
+      },
+      colorMode: {
+        defaultMode: "dark",
       },
     }),
 };
