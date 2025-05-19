@@ -133,7 +133,9 @@ Después de configurar los servicios en AWS, clonaremos los repositorios y prepa
 ```bash
 # Backend
 cd ~
-git clone https://github.com/CodeAnd-Co/Backend-Desacoplado-TracTech.git
+# Para tener dos entornos de despliegue (Main y Staging) clonamos dos veces el repositorio
+git clone https://github.com/CodeAnd-Co/Backend-Desacoplado-TracTech.git Main-Backend-Desacoplado-TracTech
+git clone https://github.com/CodeAnd-Co/Backend-Desacoplado-TracTech.git Staging-Backend-Desacoplado-TracTech
 cd Backend-Desacoplado-TracTech
 npm install
 cp .env.example .env
@@ -205,7 +207,7 @@ SU='SUPER ADMIN'
 ### 6.1 Ejecutar Backend Local
 
 ```bash
-cd Backend-Desacoplado-TracTech
+cd Staging-Backend-Desacoplado-TracTech
 npm start
 ```
 
