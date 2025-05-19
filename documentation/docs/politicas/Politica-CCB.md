@@ -7,75 +7,81 @@ sidebar_position: 6
 
 ---
 
-## **1. Objetivo**
+## 1. Objetivo
 
-Establecer los lineamientos que regulan la creación, operación y responsabilidades del Comité de Control de Cambios (CCB) dentro del departamento, con el fin de asegurar que cualquier cambio que impacte productos bajo control de configuración sea evaluado, aprobado y gestionado de forma formal, estructurada y trazable.
-
----
-
-## **2. Alcance**
-
-Esta política aplica a todos los elementos bajo configuración dentro del departamento.
-
-Todo cambio que impacte alguno de estos elementos debe ser revisado y autorizado por el CCB.
+Definir los lineamientos para la operación del Comité de Control de Cambios (CCB), encargado de evaluar, autorizar y documentar modificaciones a elementos bajo control de configuración, garantizando trazabilidad y alineación con los objetivos del departamento.
 
 ---
 
-## **3. Definición del Comité**
+## 2. Alcance
 
-El Comité de Control de Cambios es el responsable de supervisar y autorizar los cambios propuestos sobre los elementos bajo control de configuración. Su objetivo es proteger la integridad de la línea base, minimizar riesgos, y asegurar que los cambios estén alineados con los objetivos del departamento.
-
----
-
-## **4. Funciones del CCB**
-
-El CCB tiene como funciones principales:
-
-- Recibir solicitudes de cambio de cualquier miembro del departamento.
-- Analizar el impacto de cada propuesta.
-- Aprobar o rechazar formalmente los cambios propuestos.
-- Asegurar que toda decisión quede registrada y documentada.
-- Coordinar la liberación de líneas base, versiones y configuraciones.
-- Monitorear que los elementos aprobados se actualicen adecuadamente.
+Aplica a todo cambio que afecte elementos bajo configuración en el departamento. Ninguna modificación puede implementarse sin la revisión y aprobación formal del CCB.
 
 ---
 
-## **5. Principios de operación**
+## 3. Comité y Responsabilidades
 
-- **Transparencia**: Todas las decisiones deben quedar registradas con justificación.
-- **Separación de funciones**: Quien propone un cambio no puede aprobarlo individualmente.
+El CCB supervisa los cambios propuestos para proteger la integridad de las líneas base, reducir riesgos y coordinar versiones. Sus principales funciones son:
 
----
-
-## **6. Composición del comité**
-
-El CCB estará integrado por los siguientes representantes designados:
-
-- 
-- 
-- 
-- 
-- 
+- Recibir solicitudes de cambio.
+- Evaluar impacto técnico, operativo y documental.
+- Aprobar o rechazar cambios formalmente.
+- Registrar y documentar todas las decisiones.
+- Coordinar liberaciones de líneas base y versiones.
+- Verificar que los cambios autorizados se implementen correctamente.
 
 ---
 
-## **7. Tipos de cambios que revisa el CCB**
+## 4. Principios de Operación
 
-- Liberación de una nueva línea base de documentación o código.
-- Cambios a procesos clave, estándares o flujos aprobados.
-- Inclusión o retiro de elementos bajo control de configuración.
+- **Transparencia**: Toda decisión debe estar respaldada y registrada.
+- **Separación de funciones**: Quien propone un cambio no puede aprobarlo.
+- **Trazabilidad**: Cada cambio debe relacionarse con una necesidad, incidente o requisito identificado.
 
 ---
 
-## **8. Frecuencia de reuniones**
+## 5. Composición
 
-El comité se reunirá de forma **quincenal** o de manera extraordinaria si existen cambios urgentes. Toda reunión debe documentarse en actas que incluyan:
+El CCB está integrado por representantes designados del equipo, incluyendo:
 
-- Fecha y asistentes
-- Cambio revisados
-- Decisiones tomadas
-- Justificaciones
-- Acciones a seguir
+- Juan Antonio Landeros Velázquez  
+- Diego Ricardo Alfaro Pinto  
+- Daniel Queijeiro Albo  
+- Arturo Sánchez Rodríguez  
+
+---
+
+## 6. Tipos de Cambios Revisados
+
+- Nuevas líneas base de documentación o código.  
+- Modificaciones a procesos clave o estándares.  
+- Inclusión/retiro de elementos bajo configuración.  
+
+---
+
+## 7. Frecuencia de Reuniones
+
+El CCB se reunirá **semanal** o de forma **extraordinaria** ante cambios urgentes. Cada sesión debe generar un acta con:
+
+- Fecha y asistentes  
+- Cambios revisados  
+- Decisiones y justificaciones  
+- Acciones derivadas  
+
+---
+
+## 8. Repositorio de Configuración
+
+Una vez aprobado un cambio, el responsable técnico debe **actualizar el Repositorio de Configuración** en un plazo no mayor a **48 horas hábiles**. La actualización debe incluir:
+
+- Versión nueva del elemento afectado  
+- Registro del cambio aprobado  
+- Fecha, autor y descripción del cambio  
+- Referencia al acta del CCB donde se autorizó  
+
+Este repositorio debe mantenerse actualizado y accesible a todo el equipo para garantizar control y trazabilidad.
+
+---
 
 
 --- 
@@ -84,3 +90,4 @@ El comité se reunirá de forma **quincenal** o de manera extraordinaria si exis
 | **Tipo de versión** | **Descripción**                               | **Fecha** | **Colaborador**                 |
 | ------------------- | --------------------------------------------- | --------- | ------------------------------- |
 | **1.0**             | Creación de la política.                       | 14/05/2025 | Armando Méndez Castro, Juan Antonio Landeros Velazquez  |
+| **2.0**             | Actualización de la política                     | 19/05/2025 | Armando Méndez Castro|
