@@ -81,6 +81,32 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
+      algolia: {
+        // The application ID provided by Algolia
+        appId: '5L3YX9YMBS',
+
+        // Public API key: it is safe to commit it
+        apiKey: '5393c067185bf2d8ffdbd3c6da5eb968',
+
+        indexName: 'codeandco-wiki',
+
+        // Optional: see doc section below
+        contextualSearch: true,
+
+        // Optional: Specify domains where the navigation should occur through window.location instead on history.push. Useful when our Algolia config crawls multiple documentation sites and we want to navigate with window.location.href to them.
+        externalUrlRegex: 'external\\.com|domain\\.com',
+
+        // Optional: Algolia search parameters
+        searchParameters: {},
+
+        // Optional: path for search page that enabled by default (`false` to disable it)
+        searchPagePath: 'search',
+
+        // Optional: whether the insights feature is enabled or not on Docsearch (`false` by default)
+        insights: false,
+
+        //... other Algolia params
+      },
       image: "img/docusaurus-social-card.jpg",
       navbar: {
         title: "Code&Co",

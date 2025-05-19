@@ -3,7 +3,8 @@
   "position": 2,
   "link": {
     "type": "generated-index",
-    "description": "Recursos base de la organización, incluyendo CMMI-DEV v1.3 y DAD.",
+    "title": "Recursos de la Organización",
+    "description": "Accede a marcos de trabajo, herramientas, referencias y materiales clave que respaldan los procesos, la mejora continua y la gestión del conocimiento en Code&Co.",
     "slug": "/category/recursos"
   }
 }

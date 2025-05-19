@@ -3,7 +3,8 @@
   "position": 7,
   "link": {
     "type": "generated-index",
-    "description": "Estándares de codificación utilizados en la organización.",
+    "title": "Estándares Organizacionales",
+    "description": "Consulta los estándares definidos por Code&Co para asegurar la calidad, consistencia y mantenibilidad en aspectos como codificación, diseño, documentación, control de versiones y desarrollo de software.",
     "slug": "/category/estandares"
   }
 }

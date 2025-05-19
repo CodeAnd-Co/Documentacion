@@ -3,7 +3,8 @@
   "position": 4,
   "link": {
     "type": "generated-index",
-    "description": "Procesos dentro de la organización.",
+    "title": "Procesos Organizacionales",
+    "description": "Consulta la definición y secuencia de los procesos clave de Code&Co, incluyendo flujos de trabajo, responsables, entradas, salidas y puntos de control para asegurar la eficiencia y calidad en la operación.",
     "slug": "/category/procesos"
   }
 }

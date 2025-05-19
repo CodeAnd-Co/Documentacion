@@ -1,15 +1,13 @@
 ---
-title: PR30 Proceso de cierre de iteracion
-sidebar_position: 30
+title: 🦑 | PR20 Proceso de cierre de iteración
+sidebar_position: 20
 ---
 
-# Proceso de cierre de iteracion
+# 🦑 Proceso de cierre de iteración
 
----
+Este proceso busca evaluar los resultados de la iteración para analizar logros y fallas, identificar áreas de oportunidad y fomentar la conciencia sobre nuestras acciones y decisiones. Es fundamental para la mejora continua y el aseguramiento del cumplimiento de objetivos.
 
-## Objetivo
-
-Evaluar los resultados de la iteración para analizar logros y fallas, identificar áreas de oportunidad y fomentar la conciencia sobre nuestras acciones y decisiones.
+## 🎯 Objetivo
 
 - Identificar qué salió mal y qué salió bien en la iteración y buscar nuevas y mejores maneras para trabajar.
 - Ver si los objetivos de la iteración se cumplieron.
@@ -17,15 +15,13 @@ Evaluar los resultados de la iteración para analizar logros y fallas, identific
 - Determinar estrategia para las siguientes iteraciones.
 - Ajustar los planes de proyecto de ser necesario.
 
----
-
-## Entradas
+## 📥 Entradas
 
 1. Objetivo de la iteración.
 2. Plan de iteración.
 3. Dashboards de estatus del proyecto.
 
-## Proceso
+## ⚙️ Proceso
 
 | Fase                       | Descripción                                                                                                                                                                                                      | Responsable   | Meta y práctica específica del CMMI                                                                       |
 | -------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------- | --------------------------------------------------------------------------------------------------------- |
@@ -42,16 +38,26 @@ Evaluar los resultados de la iteración para analizar logros y fallas, identific
 | Acciones de mejora         | Escribir acciones para corregir la forma de trabajo.                                                                                                                                                             | Team members  | **PPQA: SP 2.1** Comunicar y resolver las no conformidades                                                |
 |                            | Actualizar el plan de proyecto con base en los hallazgos de la iteración.                                                                                                                                        | Team leader   | **PMC: SP 1.1** Monitorizar los parámetros de planificación del proyecto                                  |
 
-## Salidas
+## 📤 Salidas
 
 1. Planes de proyecto actualizados.
 2. Minuta de cierre de iteración completa.
 3. Matriz de riesgos actualizada.
 
----
+## 📎 Recursos relacionados
 
-## Historial de Cambios
+- [Plantilla de minuta de cierre de iteración](https://docs.google.com/document/d/1p4Vs9uLDJbLrukanRDvZcnA1uJzysstMTKZe_ogMffc/edit?usp=sharing)
+- [Matriz de revisión de milestones](https://docs.google.com/spreadsheets/d/1ei3juQH-EVJTkKWWUHFywdmhfqlrlX1b6sznvBgwdJc/edit?usp=sharing)
+- [PR8 Gestión de riesgos](/docs/procesos/PR8-gestion-riesgos)
+- [Plantilla para procesos](/docs/next/plantillas/plantilla-procesos)
 
-| **Tipo de Versión** | **Descripción**                              | **Fecha**  | **Colaborador** |
-| ------------------- | -------------------------------------------- | ---------- | --------------- |
-| **1.0**             | Creación del proceso de cierre de iteración. | 25/04/2025 | Valeria Zúñiga  |
+## 📚 Historial de cambios
+
+<details>
+  <summary>Versiones</summary>
+
+  | **Tipo de versión** | **Descripción**                              | **Fecha**  | **Colaborador**     |
+  | ------------------- | -------------------------------------------- | ---------- | ------------------- |
+  | **1.0.0**           | Creación del proceso de cierre de iteración. | 25/04/2025 | Valeria Zúñiga      |
+
+</details>

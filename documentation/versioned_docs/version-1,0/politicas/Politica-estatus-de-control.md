@@ -51,7 +51,7 @@ Un elemento de configuración o producto de trabajo en estatus estático refleja
 
 - De igual forma, un elemento de configuración o producto de trabajo estático puede regresar a estado dinámico si se identifican cambios sustanciales que afecten su versión principal (por ejemplo, pasar de la versión 1.x a 2.0), lo cual implica que se debe realizar una nueva auditoría.
 
-- En cambio, si los ajustes realizados son menores (por ejemplo, solo afectan los decimales como pasar de la versión 1.4 a 1.6), el documento puede conservar su estatus estático sin necesidad de una auditoría adicional, siempre que dichos cambios no alteren su validez y se siga el estandar de versiones. [EST05 | Estándar de versiones](docs/standards/versionamiento-productos-trabajo.md).
+- En cambio, si los ajustes realizados son menores (por ejemplo, solo afectan los decimales como pasar de la versión 1.4 a 1.6), el documento puede conservar su estatus estático sin necesidad de una auditoría adicional, siempre que dichos cambios no alteren su validez y se siga el estandar de versiones. [EST05 | Estándar de versiones](/docs/standards/estandar-versiones.md).
 
 ---
 ## Historial de cambios

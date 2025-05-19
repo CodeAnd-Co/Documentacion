@@ -1,31 +1,27 @@
 ---
-title: PR31 Codificación
-sidebar_position: 31
+title: 🌻 | PR21 Codificación
+sidebar_position: 21
 ---
 
-# Proceso de codificación
+# 🌻 Proceso de codificación
 
----
+Proceso para establecer un flujo estructurado que garantice la creación de código de alta calidad, la detección temprana de defectos y la verificación efectiva en el desarrollo de software.
 
-## Objetivo
+## 🎯 Objetivo
 
 - Establecer un flujo para el desarrollo de código de alta calidad.
 - Identificar y corregir defectos en etapas tempranas del desarrollo.
 - Asegurar la verificación efectiva de código.
 
----
-
-## Entradas
+## 📥 Entradas
 
 1. Requerimientos o historias de usuario asignadas en READY.
 2. Estándares de codificación del proyecto.
 3. Checklist de verificación de código.
-4. Checklist de análisis
-5. Checklist de diseño
+4. Checklist de análisis.
+5. Checklist de diseño.
 
----
-
-## Proceso
+## ⚙️ Proceso
 
 | Fase     |Descripción                                                    | Responsable             | Meta y práctica específica del CMMI                                        |
 | -------- | -------------------------------------------------------------- | ----------------------- | -------------------------------------------------------------------------- |
@@ -46,27 +42,29 @@ sidebar_position: 31
 |  | Verificar que la integración fue exitosa con base a las pruebas de integración definidas en el STP de cada equipo y que no se introdujeron problemas nuevos. | Desarrollador, QA. | **CM, SP 2.1** (Seguimiento de solicitudes de cambio), **VER SP 3.1** (Realizar la verificación). |
 | **Trazabilidad** | Asegurar que el requisito cumple con la definición de DONE. Actualizar la matriz de trazabildiad del requisito para indicar que esta en DONE siguiendo el [proceso de trazabilidad](../procesos/PR11-trazabilidad-requisitos.md). | Desarrollador. | **REQM SP1.4** (Mantener la trazabilidad bidireccional de los requisitos), **VER SP 3.1** (Realizar la verificación). |
 
-
-
-
----
-
-## Salidas
+## 📤 Salidas
 
 1. Código verificado y validado que cumple con los estándares de calidad.
 2. Checklist de código completada con evidencia del cumplimiento.
-3. Checklist de análisis completada con evidencia del cumplimiento
+3. Checklist de análisis completada con evidencia del cumplimiento.
 4. Checklist de diseño completada con evidencia del cumplimiento.
 5. Checklist de Pull Request completada con evidencia del cumplimiento.
-6. Registro de la revisión con hallazgos y resoluciones.
+6. Registro de revisión con hallazgos y resoluciones.
 7. Código integrado exitosamente en la rama de desarrollo.
 
----
+## 📎 Recursos relacionados
 
-## Historial de cambios
+- [Estrategia de ramas del departamento](../guias/github/git-branches)
+- [Guía de Pull Request](../guias/github/git-pull.md)
+- [Proceso de trazabilidad de requisitos](../procesos/PR11-trazabilidad-requisitos.md)
 
-| **Tipo de Versión** | **Descripción** | **Fecha**  | **Colaborador** |
-| ------------------- | --------------- | ---------- | --------------- |
-| **1.0** | Creación del proceso | 25/04/2025 | Daniel Queijeiro, Daniel Contreras |
-| **1.1** | Cambios a pasos de integración y trazabilidad| 26/04/2025 | Daniel Queijeiro, Diego Fuentes |
-| **2.0** | Agregar ver, pasos de verificación con checklist de diseño, análisis y PR | 15/05/2025 | Emiliano Valdivia y Daniel Contreras | 
+## 📚 Historial de cambios
+
+<details>
+  <summary>Versiones</summary>
+    | **Tipo de versión** | **Descripción**                                       | **Fecha**  | **Colaborador**                   |
+    | ------------------- | ----------------------------------------------------- | ---------- | -------------------------------- |
+    | **1.0**             | Creación del proceso                                  | 25/04/2025 | Daniel Queijeiro, Daniel Contreras|
+    | **1.1**             | Cambios a pasos de integración y trazabilidad        | 26/04/2025 | Daniel Queijeiro, Diego Fuentes   |
+    | **2.0**             | Agregar verificación, checklist de diseño, análisis y PR | 15/05/2025 | Emiliano Valdivia, Daniel Contreras |
+</details>
