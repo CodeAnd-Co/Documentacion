@@ -109,5 +109,6 @@ Este proceso define cómo planear un proyecto desde su inicio y cómo asegurar s
 | **2.1** | Integración de versiones | 28/04/2025 | Diego Fuentes |
 | **2.2** | Agregar subpráctica OPD1.2 | 13/05/2025 | Nicolás Hood |
 | **3.0** | Modificación del proceso acorde al CMMI y simplificación | 16/05/2025 | Valeria Zúñiga, Paola Garrido |
+| **3.1** | Agregar PPQA al proceso | 19/05/2025 | Valeria Zúñiga, Paola Garrido |
 
 </details>
