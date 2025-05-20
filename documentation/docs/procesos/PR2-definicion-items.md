@@ -60,5 +60,5 @@ Proceso para garantizar la consistencia, trazabilidad y utilidad de los ítems d
   | 2.6         | Agregar redirección a guía de adaptación de procesos       | 14/05/2025  | Ethan Luna                                        |
   | 3.0         | Proceso de definición de ítems del WoW                     | 15/05/2025  | Daniel Contreras, Diego Antonio García Padilla    |
   | 4.0     | Actualización al formato estándar de procesos              | 18/05/2025  | Ángel Mauricio Ramírez Herrera                    |
-
+  | 4.1     | Agregar redirección a guía de adaptación de procesos              | 19/05/2025  | Ethan Luna Cadó
 </details>
