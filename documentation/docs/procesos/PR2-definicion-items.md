@@ -15,7 +15,7 @@ Proceso para garantizar la consistencia, trazabilidad y utilidad de los ítems d
 
 ## Consideraciones antes de seguir este proceso
 
-- Si el proceso que deseas realizar es muy similar a uno ya existente y solo requiere cambios mínimos, utiliza la [Guía de adaptación de procesos](https://codeandco-wiki.netlify.app/docs/guias/documentacion/guiaAdaptacionDeProcesos) para adaptarlo en lugar de crear uno nuevo desde cero.
+- Si el proceso que deseas realizar es muy similar a uno ya existente y solo requiere cambios mínimos, utiliza la [Guía de adaptación de procesos](../guias/documentacion/guiaAdaptacionDeProcesos.md) para adaptarlo en lugar de crear uno nuevo desde cero.
 
 
 ## 📥 Entradas
