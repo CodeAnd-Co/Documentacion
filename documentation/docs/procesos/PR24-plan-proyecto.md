@@ -16,7 +16,7 @@ Este proceso define cómo planear un proyecto desde su inicio y cómo asegurar s
 1. Proyecto inicial con un cliente  
 2. Juntas con stakeholders  
 3. Plantilla del Plan de Proyecto  
-4. Plantillas de: SRS, Plan de Gestión de Datos, Plan de Pruebas, Plan de Comunicación, Plan de Recursogit s, Plan de Capacitación  
+4. Plantillas de: SRS, Plan de Gestión de Datos, Plan de Pruebas, Plan de Comunicación, Plan de Recursos, gits, Plan de Capacitación  
 5. Política de gestión de datos y estándar de arquitectura  
 6. Documento de ciclos de vida de proyecto  
 
