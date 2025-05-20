@@ -1,3 +1,8 @@
+---
+title: Manual de despliegue de TracTech
+sidebar_position: 0
+---
+
 # Manual de Despliegue
 
 ## Índice
@@ -70,6 +75,7 @@ Crea un archivo `.env.` y  en el root del proyecto (ver sección [Variables de E
 ### Archivo de ecosistema para produccion y staging
 
 ```js
+// Creamos este documento para tener dos entornos de despliegue
 // ecosystem.config.js
 module.exports = {
   apps: [
