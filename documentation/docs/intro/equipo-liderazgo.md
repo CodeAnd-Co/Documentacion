@@ -4,7 +4,7 @@ title: 🏆 | Equipo de liderazgo
 
 # 🏆 Equipo de liderazgo en Code&Co a través del tiempo 
 
-En esta sección se presenta al equipo de liderazgo responsable de la dirección y gestión de los proyecto a lo largo de los 3 periodos diferentes. Aquí encontrarás información sobre los roles, responsabilidades y miembros clave que guían el desarrollo y la toma de decisiones.
+En esta sección se presenta al equipo de liderazgo responsable de la dirección y gestión de los proyecto a lo largo de los 3 periodos diferentes. Aquí encontrarás información los roles de los miembros, con sus objetivos de liderazgo. 
 
 # 1️⃣ Periodo 
 | Rol                | Nombre           | Proyecto              | Objetivo                                                                                                                                               |
