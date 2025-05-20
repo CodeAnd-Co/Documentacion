@@ -1,14 +1,9 @@
 ---
-title: Objetivo
+title: 🎯 | Objetivos
 sidebar_position: 3
 ---
 
-# Objetivo de Code & Co
-
-## Objetivos 🎯
-
-- Lograr un 90% de satisfacción de los clientes y de los miembros del departamento en todos los proyectos.
-- Alcanzar el nivel 2.6 del CMMI.
+# Objetivos de Code & Co
 
 ### 🚀 Metas SMART para el éxito
 
@@ -32,10 +27,12 @@ sidebar_position: 3
 
 
 
-## Historial de cambios
-
-| **Tipo de versión** | **Descripción**                               | **Fecha** | **Colaborador**                 |
+<details>   
+<summary>Versiones</summary>
+| **Versión** | **Descripción**                               | **Fecha** | **Colaborador(es)**                 |
 | ------------------- | --------------------------------------------- | --------- | ------------------------------- |
-| **1.0**             | Creacion de los objetivos.   | 6/3/2025  | Paola Garrido |
-| **1.1**             | Creacion del historial de cambios y actualizción.  | 23/4/2025  | Diego Fuentes |
-| **1.2**             | Actualizción de narración del objetivo. | 08/05/2025  | Paola Garrido |
+| **1.0.0**             | Creacion de los objetivos.   | 6/3/2025  | Paola Garrido |
+| **1.1.0**             | Creacion del historial de cambios y actualizción.  | 23/4/2025  | Diego Fuentes |
+| **1.2.0**             | Actualizción de narración del objetivo. | 08/05/2025  | Paola Garrido |
+| **1.3.0**             | Refactorización de la información y corrección de objetivos. | 20/05/2025  | Nicolas Hood |
+</details>
