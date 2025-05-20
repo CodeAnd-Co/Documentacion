@@ -12,6 +12,12 @@ Proceso para garantizar la consistencia, trazabilidad y utilidad de los ítems d
 - Asegurar un resultado exitoso y repetible.
 - Facilitar la mejora continua.
 
+
+## Consideraciones antes de seguir este proceso
+
+- Si el proceso que deseas realizar es muy similar a uno ya existente y solo requiere cambios mínimos, utiliza la [Guía de adaptación de procesos](https://codeandco-wiki.netlify.app/docs/guias/documentacion/guiaAdaptacionDeProcesos) para adaptarlo en lugar de crear uno nuevo desde cero.
+
+
 ## 📥 Entradas
 
 1. Propuesta de ítem del WoW
