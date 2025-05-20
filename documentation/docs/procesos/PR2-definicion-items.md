@@ -12,6 +12,12 @@ Proceso para garantizar la consistencia, trazabilidad y utilidad de los ítems d
 - Asegurar un resultado exitoso y repetible.
 - Facilitar la mejora continua.
 
+
+## Consideraciones antes de seguir este proceso
+
+- Si el proceso que deseas realizar es muy similar a uno ya existente y solo requiere cambios mínimos, utiliza la [Guía de adaptación de procesos](../guias/documentacion/guiaAdaptacionDeProcesos.md) para adaptarlo en lugar de crear uno nuevo desde cero.
+
+
 ## 📥 Entradas
 
 1. Propuesta de ítem del WoW
@@ -54,5 +60,5 @@ Proceso para garantizar la consistencia, trazabilidad y utilidad de los ítems d
   | 2.6         | Agregar redirección a guía de adaptación de procesos       | 14/05/2025  | Ethan Luna                                        |
   | 3.0         | Proceso de definición de ítems del WoW                     | 15/05/2025  | Daniel Contreras, Diego Antonio García Padilla    |
   | 4.0     | Actualización al formato estándar de procesos              | 18/05/2025  | Ángel Mauricio Ramírez Herrera                    |
-
+  | 4.1     | Agregar redirección a guía de adaptación de procesos              | 19/05/2025  | Ethan Luna Cadó
 </details>
