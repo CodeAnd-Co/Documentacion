@@ -40,6 +40,22 @@ Asegurar la **alta disponibilidad** y la **recuperación confiable de datos** pa
 4. Crea una nueva instancia RDS.
 5. Actualiza `.env` en backend con el nuevo endpoint si es necesario.
 
+#### 1.4. **Single-AZ vs Multi-AZ**
+
+##### 🔹 **Single-AZ (zona única de disponibilidad)**
+- **Qué es**: La instancia RDS se implementa en una sola zona de disponibilidad.
+- **Por qué se usa**: Es más económico y suficiente para entornos de desarrollo o pruebas donde una caída temporal es aceptable.
+- **Limitaciones**: Si la zona de disponibilidad falla, la base de datos no estará disponible hasta que se recupere manualmente o se restaure desde backup.
+- **Costo**: Incluido en el precio estándar de RDS.
+
+##### 🔹 **Multi-AZ (alta disponibilidad)**
+- **Qué es**: Configuración opcional que crea automáticamente una réplica sincronizada en una segunda zona de disponibilidad (AZ) dentro de la misma región.
+- **Por qué se usa**: Garantiza alta disponibilidad. Si la instancia primaria falla, RDS conmuta automáticamente a la réplica sin pérdida de datos ni intervención manual.
+- **Costo**: Aproximadamente el doble del costo de una instancia Single-AZ, ya que se mantienen dos instancias sincronizadas.
+- **Recomendado para**: Entornos de producción donde la continuidad del servicio es crítica.
+
+
+
 ---
 
 ### 2. **Imágenes y Archivos (S3)**
