@@ -33,12 +33,13 @@ Harvester es una aplicación de escritorio para el analísis de datos recabados 
 * Una **base de datos MySQL**.
 
 ---
+## 2. Backend desacoplado
 
-## 2. Requisitos Previos
+### 2.1 Requisitos Previos
 
-### 2.1 Herramientas necesarias
+#### 2.1.1 Herramientas necesarias
 
-Instala las siguientes herramientas en tu equipo local:
+Instala las siguientes herramientas para probar el backend en tu equipo local:
 
 1. **Node.js:** Ejecuta el backend del sistema Harvester. [Descargar](https://nodejs.org/)
 2. **Git:** Permite clonar el código fuente desde GitHub. [Descargar](https://git-scm.com/)
@@ -53,8 +54,6 @@ Instala las siguientes herramientas en tu equipo local:
 > 4. En "Username" coloca `root`.
 > 5. Da clic en "Store in Vault" para guardar tu contraseña.
 > 6. Prueba la conexión y guarda.
-> 1. [MySQL Capacitación](https://drive.google.com/file/d/1E9aODKokxhfOoEVqCS5lIcIZUki946ts/view?usp=drive_link)
-
 
 ### 2.2 Crear y Configurar una Cuenta en AWS
 
@@ -124,11 +123,10 @@ sudo apt install git -y
 ```
 ---
 
-## 3. Preparación del Proyecto
-
+### 2.3 Preparación del backend desacoplado
 Después de configurar los servicios en AWS, clonaremos los repositorios y prepararemos el entorno de desarrollo local.
 
-### 3.1 Clonar los Repositorios (en la consola de VSCode):
+#### 2.3.1 Clonar los Repositorios (en la consola de VSCode):
 
 ```bash
 # Backend
@@ -136,12 +134,12 @@ cd ~
 # Para tener dos entornos de despliegue (Main y Staging) clonamos dos veces el repositorio
 git clone https://github.com/CodeAnd-Co/Backend-Desacoplado-TracTech.git Main-Backend-Desacoplado-TracTech
 git clone https://github.com/CodeAnd-Co/Backend-Desacoplado-TracTech.git Staging-Backend-Desacoplado-TracTech
-cd Backend-Desacoplado-TracTech
+cd Main-Backend-Desacoplado-TracTech # o Staging-Backend-Desacoplado-TracTech
 npm install
 cp .env.example .env
 ```
 
-### 3.2 Crear base de datos Harvester
+#### 2.3.2 Crear base de datos Harvester
 
 **MySQL Workbench:**
 
@@ -161,20 +159,18 @@ CREATE DATABASE harvester;
 1. [HARVESTER.SQL](https://drive.google.com/file/d/1-jHoUr-9iyutlgRoevjk-BiEbZiOBhkS/view?usp=sharing)
 ---
 
-## 4. Estructura de Carpetas
+### 2.4 Estructura de Carpetas
 
 Una vez clonado el código fuente, es importante conocer su estructura para facilitar navegación, desarrollo y pruebas.
 
-
-![Frontend](./diagrama-de-paquetes-electron-diagrama-paquetes.png)
 
 ![Backend](./diagrama-de-paquetes-backend-desacoplado.png)
 
 ---
 
-## 5. Configuración del Entorno
+### 2.5 Configuración del Entorno
 
-### 5.1 Crear archivo .env en el servidor
+#### 2.5.1 Crear archivo .env en el servidor
 
 En la consola de comandos de la instancia EC2:
 
@@ -187,7 +183,7 @@ nano .env
 3. Presiona `Enter`
 4. Presiona `Ctrl + X` para salir
 
-### 5.2 Variables del Backend
+#### 2.5.2 Variables del Backend
 
 ```env
 PUERTO =
@@ -202,31 +198,91 @@ SU='SUPER ADMIN'
 
 ---
 
-## 6. Ejecución del Proyecto
+### 2.6 Ejecución del backend
 
-### 6.1 Ejecutar Backend Local
-
+Para inicializar el servidor de manera local:
 ```bash
 cd Staging-Backend-Desacoplado-TracTech
 npm start
 ```
 
-### 6.2 Ejecutar Aplicación
-
+Para inicializar el servidor en la instancia de EC2:
 ```bash
-cd App-Local-TracTech/harvester-app
-npm start
-```
+# Inicializar el server de producción
+cd Staging-Backend-Desacoplado-TracTech
+pm2 pm2 start ecosystem.config.js --only main
 
-### 6.3 Backend en EC2
+# Inicializar el server de staging
+cd Staging-Backend-Desacoplado-TracTech
+pm2 pm2 start ecosystem.config.js --only staging
+```
+#### 2.6.3 Backend en EC2
 
 Consulta el [Manual de Despliegue](./manual-despliegue-tractores.md)
 
 ---
 
-## 7. Pruebas del Sistema
+## 3. App local
 
-### 7.1 Pruebas Manuales
+### 3.1 Requisitos previos
+
+#### 3.1.1 Herramientas necesarias
+Instala las siguientes herramientas para probar la aplicación local en tu equipo local:
+
+1. **Node.js:** Ejecuta el backend del sistema Harvester. [Descargar](https://nodejs.org/)
+2. **Git:** Permite clonar el código fuente desde GitHub. [Descargar](https://git-scm.com/)
+3. **Visual Studio Code** Editor de código.               [Descargar](https://code.visualstudio.com/)
+
+### 3.2 Preparar ambiente de programación
+
+#### 3.2.1 Clonar repositorio de Github
+
+```bash
+cd # Carpeta donde quieras almacenar la aplicación local
+git clone https://github.com/CodeAnd-Co/App-Local-TracTech.git
+cd App-Local-TracTech 
+cd harvester-app
+npm install
+```
+
+#### 3.2.2 Iniciar aplicación
+```bash
+# Estando en la carpeta de harvester-app
+npm start
+```
+
+#### 3.3 Crear instalador de la aplicación
+Existen varias formas de crear un instalador de una aplicación en Electron. Para la aplicación de harvester decidimos usar Electron-builder.
+```bash
+cd App-Local-TracTech
+cd harvester-app
+npm install --save-dev electron-builder
+``` 
+Dentro de nuestro package.json debemos incluir lo siguiente:
+```json
+"build": {
+    "appId": "com.tractech.harvester",
+    "win": {
+      "target": [
+        "nsis"
+      ],
+      "icon": "src/framework/utils/imagenes/HarvesterAppIcon.ico"
+    },
+    "nsis": {
+      "oneClick": true,
+      "installerIcon": "src/framework/utils/imagenes/HarvesterAppIcon.ico",
+      "uninstallerIcon": "src/framework/utils/imagenes/HarvesterAppIcon.ico",
+      "uninstallDisplayName": "Desinstalador Harvester App",
+      "license": "LICENSE",
+      "allowToChangeInstallationDirectory": false
+    }
+  },
+```
+Debemos asegurarnos que tengamos un icono en formato .ico para la aplicación, al igual que una licencia. Harvester esta bajo la licencia de MIT.
+
+## 4. Pruebas del Sistema
+
+### 4.1 Pruebas Manuales
 
 * **SuperAdmin:** superadmin@cnhmx.com / Pruebas
 * **Administrador:** juanpablo@cnhmx.com / Pruebas
@@ -234,13 +290,13 @@ Consulta el [Manual de Despliegue](./manual-despliegue-tractores.md)
 
 ---
 
-## 8. Despliegue
+## 5. Despliegue
 
 Ver [Manual de Despliegue](./manual-despliegue-tractores.md)
 
 ---
 
-## 9. Documentación
+## 6. Documentación
 
 ### Swagger
 
@@ -251,7 +307,7 @@ http://localhost:4000/api-docs
 
 ---
 
-## 10. Referencias
+## 7. Referencias
 
 * [Manual de Despliegue](./manual-despliegue-tractores.md)
 * [Estrategia Técnica](./estrategia.md)
@@ -259,8 +315,9 @@ http://localhost:4000/api-docs
 
 ---
 
-## 11. Historial de Cambios
+## 8. Historial de Cambios
 
 | Versión | Descripción                                        | Fecha      | Colaborador      |
 | ------- | -------------------------------------------------- | ---------- | --------------   |
 | 1.0     | Implementación inicial del Manual Técnico          | 19/05/2025 | Daniel Queijeiro |
+| 1.1     | Añadir información de la aplicación local          | 21/05/2025 | Daniel Queijeiro |
