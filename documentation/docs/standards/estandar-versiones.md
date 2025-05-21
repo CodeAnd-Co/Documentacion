@@ -165,9 +165,9 @@ Docusaurus soporta múltiples versiones automáticamente si se sigue esta conven
 
 ## 📎 Recursos relacionados
 
-* [Estándar para crear nuevas plantillas](/docs/standards/estandar-plantillas)
-* [Definición de Ítems](/docs/procesos/PR2-definicion-items)
-* [Plantilla para estándares](/docs/plantillas/plantilla-estandares)
+* [Estándar para crear nuevas plantillas](/docs/next/standards/estandar-plantillas)
+* [Definición de Ítems](/docs/next/procesos/PR2-definicion-items)
+* [Plantilla para estándares](/docs/next/plantillas/plantilla-estandares)
 
 ## 📚 Historial de cambios
 
