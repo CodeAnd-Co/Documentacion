@@ -75,15 +75,31 @@ Para una mejor organización y visibilidad, se han definido los siguientes calen
 - 9.4 Nos comunicamos a través del canal oficial de Code&Co en Discord.
 - 9.5 Reasignamos los roles de liderazgo cuando se cumple el objetivo, se enfrentan bloqueos que impiden avanzar o se identifica que otro miembro tiene mayor disponibilidad, habilidades o alineación con las necesidades actuales del equipo.
 
-### 🏅 Lineamientos para roles de liderazgo
+### 🏅 Roles
 
+#### Desglose de los roles
+- **Team Member:** Grupo auto-organizado que sigue procesos, desarrolla y entrega incrementos funcionales del producto en cada iteración.
+- **Team leader:** Gestiona el trabajo del equipo, resuelve problemas internos, asegurando que el equipo siga las prácticas de DAD y elimina obstáculos para el progreso.
+- **Architecture Owner:** Define la arquitectura dle sistema, selecciona tecnologías, toma decisiones técnicas clave y asegura que la solución sea escalable, segura y eficiente.
+- **Product Owner:** Representa a los interesados y gestiona los requisitos en el Work Item List, priorizándolos para maximizar el valor para el negocio.
+- **Program manager:** Coordina los proyectos y los guía a cumplir el CMMI, asegurando que los equipos tengan los procesos adecuados.
+
+#### Lineamientos para roles de liderazgo
 - **Integridad y transparencia:** Actuar con honestidad y garantizar un flujo de información claro.
 - **Respeto y profesionalismo:** Fomentar una comunicación efectiva, escucha activa y empatía.
 - **Compromiso y colaboración:** Adoptar una actitud proactiva, promover el trabajo en equipo y apoyar el crecimiento continuo del equipo.
 - **Resolución de conflictos:** Abordar las diferencias con cordialidad y evitar actitudes egocéntricas o conductas que perjudiquen el ambiente laboral del departamento.
 - **Toma de decisiones éticas:** Evaluar solicitudes y acciones bajo un criterio ético sólido, alineado con el código de ética del departamento.
+- **Objetivos definidos:** Los miembros deben de definir objetivos SMART y planes de acción para sus roles de liderazgo.
 
-[Consultar especificaciones de roles aquí](https://www.canva.com/design/DAGgmNv02sM/miHwcr-EsE4jmvwLZh-keg/edit?utm_content=DAGgmNv02sM&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton).
+#### Capacitaciones
+- La capacitación de los roles se realiza siempre que hay una redistribución de los mismos. Además, la capacitación es realizada por los PMs 
+    - [Consultar capacitación de roles aquí](https://www.canva.com/design/DAGgmNv02sM/miHwcr-EsE4jmvwLZh-keg/edit?utm_content=DAGgmNv02sM&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton).
+    - [Consultar capacitación de PMs aquí](https://www.canva.com/design/DAGho9QSnLo/OG81Dm2NAZNzJNPngmT1Jw/edit)
+- La capacitación de nuevos miembros del equipo se realiza con ayuda de las guías de codificación correspondientes:
+    - [Guía de codificación de TracTech](/docs/proyectos/tractores/documentacion/GuiaCodificacionTractech.md)
+    - [Guía de codificación de Technebrios](/docs/proyectos/larvas/documentacion/Guia_de_codificacion.md)
+    - [Guía de codificación de Text&Lines](https://docs.google.com/document/d/1Q8VYJC8dHMi1pQBEjVf8EQ_yZCQKqGEBMMMsUhsX3G0/edit?tab=t.0#heading=h.cp0ow3wnfhq3)
 
 ---
 
