@@ -137,4 +137,9 @@ Asegurar la **alta disponibilidad** y la **recuperación confiable de datos** pa
 
 ---
 
+Historial
+| **Tipo de Versión** | **Descripción** | **Fecha** | **Colaborador** |
+| ------------------- | --------------| ---------- | --------------- |
+| **1.0** | Crear plan de redundancia y respaldo | 20/05/2025 | Arturo Sánchez |
+| **2.0** | Actualizacion AZ y multi AZ para RDS | 21/05/2025 | Arturo Sánchez |
 
