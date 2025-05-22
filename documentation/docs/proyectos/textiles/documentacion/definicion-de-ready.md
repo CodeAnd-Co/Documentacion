@@ -14,6 +14,7 @@ sidebar_position: 5
   - **Dependencias**
   - **Notas adicionales**
 - La historia de usuario no puede rebasar los 5 puntos; si lo hace, debe ser dividida para ser más específica.
+- Las historias con 5 o más puntos de valor deben de contar con diagrama de secuencia. 
 - La historia debe estar correctamente priorizada con la metodología **MoSCoW**.
 - La historia de usuario está asignada a su debido responsable.
 - Todos los miembros del equipo están al tanto de la existencia y la descripción de la historia de usuario.

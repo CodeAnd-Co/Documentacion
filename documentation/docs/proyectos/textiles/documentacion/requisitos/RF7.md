@@ -14,10 +14,10 @@ Como administrador, quiero poder ver un listado de roles con filtros y opciones 
 
 ## **Criterios de Aceptación:**
 
-1. El Super Administrador debe poder acceder a la opción **"Lista de Roles"** dentro del panel de administración.
+1. El Super Administrador debe poder acceder al apartado de **"Roles"** dentro del panel de administración de los usuarios.
 2. La lista debe mostrar los siguientes datos de cada rol:
    - Nombre del rol
-   - Cantidad de usuarios asignados a ese rol
+   - La descripción del rol
 3. Debe permitir filtrar roles por nombre.
 4. Si no hay roles registrados, se debe mostrar un mensaje indicando que no hay registros disponibles.
 

@@ -15,9 +15,13 @@ Como **Super Administrador**, quiero poder registrar nuevos usuarios en el siste
 
 1. El Super Administrador debe poder acceder a la opción de **"Crear Usuario"** desde el panel de administración.
 2. Se debe mostrar un formulario con los siguientes campos obligatorios:
-   - Nombre completo
+   - Nombre
+   - Apellido(s)
+   - Fecha de Nacimiento
+   - Género
    - Correo electrónico
    - Número de telefono
+   - Dirección
    - Cliente al que pertenece
    - Rol del usuario (Ejemplo: Administrador, Usuario estándar, Moderador, etc.)
    - Contraseña establecida y confirmada
