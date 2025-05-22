@@ -5,7 +5,16 @@ sidebar_position: 4
 
 # RF3: Usuario cierra sesión.
 
-**Última actualización:** 07 de marzo de 2025
+---
+
+### Pull Request de la Historia de Usuario
+
+- App local
+  - [RF3](https://github.com/CodeAnd-Co/App-Local-TracTech/pull/21)
+- Backend desacoplado
+  - [Backend RF3](https://github.com/CodeAnd-Co/Backend-Desacoplado-TracTech/pull/16)
+
+---
 
 ### Historia de Usuario
 
