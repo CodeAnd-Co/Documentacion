@@ -68,17 +68,15 @@ Situación en la que el producto o acuerdo de trabajo no cumple con los requisit
 
 <details>
   <summary>Versiones</summary>
-
-| **Tipo de Versión** | **Descripción**                                   | **Fecha**   | **Colaborador**                                                        |
-| ------------------- | ------------------------------------------------- | ----------- | -------------------------------------------------------------------- |
-| **1.0**             | Proceso inicial para acciones correctivas         | 26/03/2025  | Paola Garrido, Valeria Zúñiga                                        |
-| **1.1**             | Se agregó enlace y práctica OPD SP 1.3            | 31/03/2025  | Ian Julián Estrada Castro                                            |
-| **1.2**             | Refactorización                                    | 18/04/2025  | Diego Fuentes                                                        |
-| **2.0**             | Proceso actualizado para cumplir con la meta 2 de PMC | 21/04/2025  | Diego Fuentes, Max Toscano, Paola Garrido, Rommel Toledo, Daniel Queijeiro |
-| **2.1**             | Correcciones de REQM 1.5                           | 22/04/2025  | Juan Pablo Chávez Leal                                               |
-| **2.2**             | Incorporación de PPQA 2.1 (no conformidades y notificación) | 24/04/2025  | Juan Eduardo Rosas Cerón                                             |
-| **2.3**             | Errores ortográficos                               | 25/04/2025  | Hiram Mendoza                                                       |
-| **3.0**             | Simplificación del proceso y corrección acorde al CMMI | 15/05/2025  | Paola María Garrido, Valeria Zúñiga                                 |
-| **3.1**             | Agregar paso para introducir VER 3.2              | 16/05/2025  | Daniel Contreras Chávez                                              |
-
+| **Versión** | **Descripción**                                                    | **Fecha**   | **Colaborador**                                         |
+|-------------|------------------------------------------------------------------|-------------|--------------------------------------------------------|
+| **1.0.0**   | Proceso inicial para acciones correctivas                        | 26/03/2025  | Paola Garrido, Valeria Zúñiga                           |
+| **1.1.0**   | Se agregó enlace y práctica OPD SP 1.3                           | 31/03/2025  | Ian Julián Estrada Castro                               |
+| **1.2.0**   | Refactorización del proceso                                       | 18/04/2025  | Diego Fuentes                                          |
+| **2.0.0**   | Proceso actualizado para cumplir con la meta 2 de PMC            | 21/04/2025  | Diego Fuentes, Max Toscano, Paola Garrido, Rommel Toledo, Daniel Queijeiro |
+| **2.1.0**   | Correcciones de REQM 1.5                                         | 22/04/2025  | Juan Pablo Chávez Leal                                 |
+| **2.2.0**   | Incorporación de PPQA 2.1 (no conformidades y notificación)      | 24/04/2025  | Juan Eduardo Rosas Cerón                               |
+| **2.3.0**   | Corrección de errores ortográficos                                | 25/04/2025  | Hiram Mendoza                                         |
+| **3.0.0**   | Simplificación del proceso y corrección acorde al estándar CMMI  | 15/05/2025  | Paola María Garrido, Valeria Zúñiga                     |
+| **3.1.0**   | Agregado paso para introducir versión 3.2                        | 16/05/2025  | Daniel Contreras Chávez                               |
 </details>

@@ -55,9 +55,7 @@ Este proceso busca evaluar los resultados de la iteración para analizar logros 
 
 <details>
   <summary>Versiones</summary>
-
-  | **Tipo de versión** | **Descripción**                              | **Fecha**  | **Colaborador**     |
+  | **Versión** | **Descripción**                              | **Fecha**  | **Colaborador**     |
   | ------------------- | -------------------------------------------- | ---------- | ------------------- |
   | **1.0.0**           | Creación del proceso de cierre de iteración. | 25/04/2025 | Valeria Zúñiga      |
-
 </details>

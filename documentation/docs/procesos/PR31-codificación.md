@@ -62,9 +62,9 @@ Proceso para establecer un flujo estructurado que garantice la creación de cód
 
 <details>
   <summary>Versiones</summary>
-    | **Tipo de versión** | **Descripción**                                       | **Fecha**  | **Colaborador**                   |
-    | ------------------- | ----------------------------------------------------- | ---------- | -------------------------------- |
-    | **1.0**             | Creación del proceso                                  | 25/04/2025 | Daniel Queijeiro, Daniel Contreras|
-    | **1.1**             | Cambios a pasos de integración y trazabilidad        | 26/04/2025 | Daniel Queijeiro, Diego Fuentes   |
-    | **2.0**             | Agregar verificación, checklist de diseño, análisis y PR | 15/05/2025 | Emiliano Valdivia, Daniel Contreras |
+| **Versión** | **Descripción**                                         | **Fecha**   | **Colaborador**                           |
+|-------------|---------------------------------------------------------|-------------|------------------------------------------|
+| **1.0.0**   | Creación del proceso                                    | 25/04/2025  | Daniel Queijeiro, Daniel Contreras       |
+| **1.1.0**   | Cambios en pasos de integración y trazabilidad          | 26/04/2025  | Daniel Queijeiro, Diego Fuentes           |
+| **2.0.0**   | Agregar verificación, checklist de diseño, análisis y PR| 15/05/2025  | Emiliano Valdivia, Daniel Contreras       |
 </details>

@@ -46,13 +46,10 @@ Proceso para administrar adecuadamente los cambios en los requisitos del proyect
 
 <details>
   <summary>Versiones</summary>
-
-
-| **Tipo de versión** | **Descripción**                                           | **Fecha**  | **Colaborador**                                              |
-| -------------------- | ---------------------------------------------------------- | ---------- | ------------------------------------------------------------ |
-| **1.0**              | Creación de proceso de gestión de cambios en requisitos. |            | Daniel Contreras, Miguel Uribe, Paola Garrido, Galo del Río |
-| **1.1**              | Refactorización.                                          | 18/04/2025 | Diego Fuentes                                                |
-| **1.2**              | Implementar acciones correctivas.                          | 24/04/2025 | Max Toscano                                                  |
-| **2.0**              | Simplificación del proceso.                               | 14/05/2025 | Paola María Garrido                                         |
-
+| **Versión** | **Descripción**                              | **Fecha**     | **Colaborador**                                              |
+|-------------|-----------------------------------------------|---------------|------------------------------------------------------------------|
+| **1.0.0**   | Creación de proceso de gestión de cambios en requisitos. | —             | Daniel Contreras Chávez, Miguel Uribe, Paola María Garrido Montes, Galo del Río |
+| **1.1.0**   | Refactorización.                               | 18/04/2025    | Diego Fuentes                                                   |
+| **1.2.0**   | Implementar acciones correctivas.              | 24/04/2025    | Max Toscano                                                     |
+| **2.0.0**   | Simplificación del proceso.                    | 14/05/2025    | Paola María Garrido Montes                                      |
 </details>

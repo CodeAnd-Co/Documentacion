@@ -73,16 +73,13 @@ Este proceso busca identificar, reducir y resolver conflictos dentro del equipo 
 
 <details>
   <summary>Versiones</summary>
-
-
-| **Tipo de versión** | **Descripción**                                                            | **Fecha**  | **Colaborador**                                     |
-| -------------------- | --------------------------------------------------------------------------- | ---------- | --------------------------------------------------- |
-| **1.0**              | Creación del proceso de resolución de conflictos                          | [Fecha]    | Diego Fuentes, Juan Pablo Chávez, Mauricio Angiano |
-| **2.0**              | Añadido tiempo de respuesta máximo y proceso de resolución de conflictos | [Fecha]    | Juan Eduardo Rosas                                  |
-| **2.1**              | Corrección gramatical y adición de las 4 C’s                             | 05/03/2025 | Pablo Hazael Hurtado                                |
-| **2.2**              | Refactorización                                                            | 18/04/2025 | Diego Fuentes                                       |
-| **2.3**              | Implementación de acciones correctivas                                     | 24/04/2025 | Max Toscano                                         |
-| **3.0**              | Proceso que sigue el Comité de Ética y criterios de niveles de conflicto  | 01/05/2025 | Juan Eduardo Rosas Cerón                           |
-| **4.0**              | Simplificación del proceso                                                 | 11/05/2025 | Paola María Garrido Montes                         |
-
+| **Versión** | **Descripción**                                                                 | **Fecha**     | **Colaborador**                                          |
+|-------------|----------------------------------------------------------------------------------|---------------|---------------------------------------------------------------|
+| **1.0.0**   | Creación del proceso de resolución de conflictos.                               | —             | Diego Fuentes, Juan Pablo Chávez Leal, Mauricio Anguiano Juárez |
+| **2.0.0**   | Añadido tiempo de respuesta máximo y proceso de resolución de conflictos.       | —             | Juan Eduardo Rosas Cerón                                      |
+| **2.1.0**   | Corrección gramatical y adición de las 4 C’s.                                   | 05/03/2025    | Pablo Hazael Hurtado                                          |
+| **2.2.0**   | Refactorización.                                                                | 18/04/2025    | Diego Fuentes                                                 |
+| **2.3.0**   | Implementación de acciones correctivas.                                         | 24/04/2025    | Max Toscano                                                   |
+| **3.0.0**   | Inclusión del proceso seguido por el Comité de Ética y criterios de niveles.    | 01/05/2025    | Juan Eduardo Rosas Cerón                                      |
+| **4.0.0**   | Simplificación del proceso.                                                     | 11/05/2025    | Paola María Garrido Montes                                    |
 </details>

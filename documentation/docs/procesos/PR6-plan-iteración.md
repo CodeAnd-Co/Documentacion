@@ -50,15 +50,13 @@ Proceso para definir un plan de iteración con tareas claras, viables y manejabl
 
 <details>
   <summary>Versiones</summary>
-
-| **Tipo de versión** | **Descripción**                                                    | **Fecha**  | **Colaborador**               |
-| ------------------- | ------------------------------------------------------------------ | ---------- | ----------------------------- |
-| **1.0**             | Creación del proceso de iteración                                  | 03/04/2025 | Diego Fuentes                 |
-| **2.0**             | Refactorización. Cambio en las entradas, el proceso y las salidas. | 03/04/2025 | Diego Fuentes                 |
-| **2.1**             | Corrección PMC 1.1                                                 | 22/04/2025 | Juan Pablo Chávez Leal        |
-| **2.2**             | Modificación en las entradas                                       | 27/04/2025 | Hiram Mendoza                 |
-| **2.3**             | Implementar acciones correctivas                                   | 28/04/2025 | Max Toscano                   |
-| **3.0**             | Simplificación del proceso y corrección acorde a CMMI              | 15/05/2025 | Valeria Zúñiga, Paola Garrido |
-| **4.0**             | Clarificación de pasos y actualización de áreas del CMMI           | 20/05/2025 | Diego Antonio García Padilla  |
-
+| **Versión** | **Descripción**                                                                         | **Fecha**     | **Colaborador**                             |
+|-------------|------------------------------------------------------------------------------------------|---------------|--------------------------------------------------|
+| **1.0.0**   | Creación del proceso de iteración.                                                       | 03/04/2025    | Diego Fuentes                                    |
+| **2.0.0**   | Refactorización completa: cambios en entradas, proceso y salidas.                        | 03/04/2025    | Diego Fuentes                                    |
+| **2.1.0**   | Corrección relacionada con la práctica PMC 1.1.                                          | 22/04/2025    | Juan Pablo Chávez Leal                           |
+| **2.2.0**   | Modificación en las entradas del proceso.                                                | 27/04/2025    | Hiram Mendoza                                    |
+| **2.3.0**   | Implementación de acciones correctivas en el proceso.                                    | 28/04/2025    | Max Toscano                                      |
+| **3.0.0**   | Simplificación del proceso y correcciones para alinearlo con CMMI.                       | 15/05/2025    | Valeria Zúñiga, Paola Garrido                   |
+| **4.0.0**             | Clarificación de pasos y actualización de áreas del CMMI           | 20/05/2025 | Diego Antonio García Padilla  |
 </details>

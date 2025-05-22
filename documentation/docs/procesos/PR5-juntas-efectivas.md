@@ -48,14 +48,12 @@ Proceso que busca asegurar que las reuniones grupales y con stakeholders se real
 
 <details>
   <summary>Versiones</summary>
-
-| **Versión** | **Descripción del cambio**                                 | **Fecha**  | **Colaborador(es)**                                                           |
-| ----------- | ---------------------------------------------------------- | ---------- | ----------------------------------------------------------------------------- |
-| **1.0**     | Creación del proceso.                                      | 03/03/2025 | Daniel Queijeiro Albo, Ángel Mauricio Ramírez Herrera, Valeria Zúñiga Mendoza |
-| **1.1**     | Refactorización.                                           | 18/04/2025 | Diego Fuentes                                                                 |
-| **1.2**     | Correcciones PMC 1.1.                                      | 22/04/2025 | Juan Pablo Chávez Leal                                                        |
-| **1.3**     | Agregar entradas y referenciar a los procesos PR22 y PR23. | 25/04/2025 | Ian Julián Estrada Castro                                                     |
-| **1.4**     | Actualizar proceso.                                        | 11/05/2025 | Paola María Garrido Montes                                                    |
-| **1.5**     | Actualizar proceso.                                        | 13/05/2025 | Hiram Mendoza López                                                           |
-
+| **Versión** | **Descripción**                                                             | **Fecha**     | **Colaborador**                                                                 |
+|-------------|-----------------------------------------------------------------------------------------|---------------|--------------------------------------------------------------------------------------|
+| **1.0.0**   | Creación del proceso.                                                                   | 03/03/2025    | Daniel Queijeiro Albo, Ángel Mauricio Ramírez Herrera, Valeria Zúñiga Mendoza       |
+| **1.1.0**   | Refactorización general del proceso.                                                    | 18/04/2025    | Diego Fuentes                                                                       |
+| **1.2.0**   | Correcciones relacionadas con la práctica PMC 1.1.                                      | 22/04/2025    | Juan Pablo Chávez Leal                                                              |
+| **1.3.0**   | Agregadas entradas y referencias a los procesos PR22 y PR23.                            | 25/04/2025    | Ian Julián Estrada Castro                                                           |
+| **1.4.0**   | Actualización general del proceso.                                                      | 11/05/2025    | Paola María Garrido Montes                                                          |
+| **1.5.0**   | Actualización del proceso con mejoras adicionales.                                      | 13/05/2025    | Hiram Mendoza López                                                                 |
 </details>

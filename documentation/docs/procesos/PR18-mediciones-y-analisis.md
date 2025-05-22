@@ -48,15 +48,12 @@ Proceso para establecer una base sólida de información que permita tomar decis
 
 <details>
   <summary>Versiones</summary>
-
-
-| Tipo de Versión | Descripción                                          | Fecha      | Colaborador                                                                                            |
-| ---------------- | ----------------------------------------------------- | ---------- | ------------------------------------------------------------------------------------------------------ |
-| **1.0**          | Definición del proceso                               | 02/04/2025 | Rommel Toledo C, Daniel Queijeiro, Paola Garrido, Rodrigo Benítez, Emiliano Valdivia, Emiliano Gómez |
-| **1.1**          | Modificar estilo y nombre de las prácticas           | 03/04/2025 | Rommel Toledo C                                                                                        |
-| **1.2**          | Refactorización                                      | 18/04/2025 | Diego Fuentes                                                                                          |
-| **1.3**          | Agregar paso para llenar columna de interesados       | 22/04/2025 | Emiliano Valdivia                                                                                      |
-| **1.4**          | Corrección ortográfica y agregar fecha de creación | 25/04/2025 | Emiliano Valdivia                                                                                      |
-| **1.5**          | Mejora de legibilidad y agregar sección análisis    | 13/05/2025 | Paola María Garrido y Rommel Toledo                                                                   |
-
+| **Versión** | **Descripción**                                         | **Fecha**   | **Colaborador**                                                                                       |
+|-------------|---------------------------------------------------------|-------------|-----------------------------------------------------------------------------------------------------|
+| **1.0.0**   | Definición inicial del proceso                           | 02/04/2025  | Rommel Toledo C., Daniel Queijeiro, Paola Garrido, Rodrigo Benítez, Emiliano Valdivia, Emiliano Gómez |
+| **1.1.0**   | Modificación de estilo y renombrado de las prácticas    | 03/04/2025  | Rommel Toledo C.                                                                                      |
+| **1.2.0**   | Refactorización del documento                            | 18/04/2025  | Diego Fuentes                                                                                        |
+| **1.3.0**   | Inclusión de paso para llenar columna de interesados    | 22/04/2025  | Emiliano Valdivia                                                                                     |
+| **1.4.0**   | Corrección ortográfica y adición de fecha de creación   | 25/04/2025  | Emiliano Valdivia                                                                                     |
+| **1.5.0**   | Mejora en legibilidad y adición de sección de análisis  | 13/05/2025  | Paola María Garrido, Rommel Toledo                                                                   |
 </details>
