@@ -5,7 +5,14 @@ sidebar_position: 2
 
 # RF1: Usuario consulta página de inicio de sesión.
 
-**Última actualización:** 07 de marzo de 2025
+---
+
+### Pull Request de la Historia de Usuario
+
+- App local
+  - [RF1](https://github.com/CodeAnd-Co/App-Local-TracTech/pull/5)
+
+---
 
 ### Historia de Usuario
 
