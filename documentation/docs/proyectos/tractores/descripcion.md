@@ -22,7 +22,7 @@ Aumentar la conexión que CNHMx tiene con sus clientes finales creando solucione
 Optimizar procesos de CNH para asegurar una conexión efectiva y confiable con sus clientes.
 
 ### Visión del equipo:
-Ser un equipo disciplinado, que aprenda de los errores, y que retrabaje lo mínimo posible para su proceso de aprendizaje.
+Ser un equipo de INGENIEROS que aprende de sus errores y levanta proyectos de las cenizas.
 
 ### Restricciones
 - Existen 10 semanas para desarrollar la solución.
