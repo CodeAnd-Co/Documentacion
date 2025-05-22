@@ -5,7 +5,14 @@ sidebar_position: 7
 
 # RF6: Usuario consulta el módulo de análisis.
 
-**Última actualización:** 03 de abril de 2025
+---
+
+### Pull Request de la Historia de Usuario
+
+- App local
+  - [RF6](https://github.com/CodeAnd-Co/App-Local-TracTech/pull/7)
+
+---
 
 ### Historia de Usuario
 
