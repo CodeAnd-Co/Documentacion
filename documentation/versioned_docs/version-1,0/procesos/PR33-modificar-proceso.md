@@ -27,14 +27,19 @@ Este proceso proporciona los pasos para modificar algún proceso ya existente y 
 
 | Fase     | Descripción                                                    | Responsable             | Meta y práctica específica del CMMI                                        |
 | -------- | -------------------------------------------------------------- | ----------------------- | -------------------------------------------------------------------------- |
-| **Fase** | Explicar los pasos clave de esta fase de manera breve y clara. | Persona o rol asignado. | **Siglas del área de proceso, SP 0.0** (Nombre de la práctica específica). |
-| **Fase** | Explicar los pasos clave de esta fase de manera breve y clara. | Persona o rol asignado. | **MA, SP 1.2** (Especificar medidas), **PPQA, SP 1.1** (Evaluar procesos). |
+| **Seguir los compromisos.** | Revisar si el cambio que vas a hacer no afecta el [estándar para la modificación o creación de procesos](http://localhost:3000/docs/standards/modificacion-procesos).| Persona o rol asignado. |**PPQA** (1.1) Evaluar objetivamente los procesos
+| **Aviso de cambios.** | Avisar al autor o alguno de los autores los cambios que se van a realizar en el proceso.| Persona o rol asignado. |
+| **Generar ambiente de desarrollo** | Crear una rama del repositorio de  [Documentación](https://github.com/CodeAnd-Co/Documentacion) de acuerdo a la [estrategía de ramas](https://codeandco-wiki.netlify.app/docs/guias/github/git-branches) incluyendo el nombre de proceso a modificar. | Persona o rol asignado. | **CM** (SP 1.2) Establecer un sistema de gestión de configuración **CM** (SP 2.2) Control de cambios. |
+| **Aseguramiento del CMMI** | Asegurarse que los pasos modificados respeten las practicas CMMI añadidas y actualizarlas en caso de que ya no apliquen las practicas anteriores. | Persona o rol asignado. |  |
+| **Actualizar el versionamiento** | Actualiza el control de cambios de acuerdo con [Documentación](https://github.com/CodeAnd-Co/Documentacion) de acuerdo al [estándar para mantener un historial de cambios en la documentación](http://localhost:3000/docs/standards/versionamiento-productos-trabajo). | Persona o rol asignado. | **CM** (SP 1.2) Establecer un sistema de gestión de configuración **CM** (SP 2.2) Control de cambios. |
+| **Finalizar modificación** | Generar el pull request asignando al autor o a cualquier persona pertiente dentro del departamento.| Persona o rol asignado. | **CM** (SP 2.1) Seguir las peticiones de los cambios |
+| **Cerrar el proceso** |Eliminar la rama donde se desarrollo el cambio. | Persona o rol asignado. | |
 
 ---
 
 ## Salidas
 
-1. [Enlistar los resultados o entregables esperados del proceso].
+1. El proceso de entrada modificado.
 
 ---
 
