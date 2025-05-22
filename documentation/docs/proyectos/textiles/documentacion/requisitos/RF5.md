@@ -101,7 +101,7 @@ end
 
 > _Descripción_: El mockup muestra la interfaz donde el **Super Administrador** puede eliminar un usuario, con una ventana de confirmación para evitar acciones accidentales.
 
-![Interfaz para eliminar a un usuario](<imagenes/US05 Eliminar usuarios.png>)
+![Interfaz para eliminar a un usuario](./imagenes/eliminarUsuario.png)
 
 ## **Pruebas Unitarias**
 
@@ -116,4 +116,4 @@ _<u>[Enlace a pruebas RF5 Elimina Usuario](https://docs.google.com/spreadsheets/
 | **1.2**             | Actualización al diagrama de secuencia          | 24/4/2025 | Carlos Iván Fonseca Mondragón |
 | **1.3**             | Actualización de la documentación del requisito | 24/4/2025 | Carlos Iván Fonseca Mondragón |
 | **1.4**             | Actualización de diagrama | 06/05/2025 | Hiram Mendoza   |
-
+| **1.5**             | Actualizar interfaz                             | 22/5/2025 | Diego Antonio García Padilla  |
