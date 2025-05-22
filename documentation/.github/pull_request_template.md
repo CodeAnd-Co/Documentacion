@@ -51,10 +51,8 @@
 
 
 <!-- ## Registro de cambios
-
 Seguir la guía para mantener un control de versiones en la documentación: https://codeandco-wiki.netlify.app/docs/guias/documentacion/trazabilidad
 En la parte inferior de los documentos Markdown debe haber una tabla como la siguiente:
-
 | Autor | Descripción del cambio | Versión |
 |---------|-------------------------|---------|
 | [Tu nombre] | [Breve descripción del cambio] | [Versión] |
