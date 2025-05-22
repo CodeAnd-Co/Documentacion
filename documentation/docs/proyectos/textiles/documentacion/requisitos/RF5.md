@@ -13,10 +13,15 @@ Como administrador, quiero poder eliminar a un usuario que ya no requiera acceso
 
 ## **Criterios de Aceptación:**
 
-1. El Super Administrador debe poder acceder a la opción **"Eliminar Usuario"** dentro del panel de información de un usuario.
+1. El Super Administrador debe poder acceder a la opción "Eliminar Usuario" dentro del panel de información de un usuario.
 2. Antes de eliminar, se debe mostrar una ventana de confirmación para evitar eliminaciones accidentales.
 3. Si el usuario es eliminado con éxito, el sistema debe actualizar la lista de usuarios y mostrar un mensaje de confirmación.
 4. Si ocurre un error en la eliminación, se debe mostrar un mensaje de error indicando el motivo.
+5. Si el usuario a eliminar posee el rol de Super Administrador:
+   - Se debe solicitar un paso de verificación adicional mediante código 2FA (Google Authenticator), además de la contraseña.
+   - Solo los Super Administradores habilitados para acciones críticas podrán realizar esta operación.
+6. Si el código 2FA o la contraseña son incorrectos, la eliminación no se ejecuta y se muestra un mensaje de error.
+7. La eliminación debe garantizar autenticación por token válida y permisos correspondientes.
 
 ---
 
@@ -33,6 +38,7 @@ participant Backend
 participant rutaUsuario
 participant controladorUsuario
 participant repositorioUsuario
+participant Verificacion2FA
 participant RDS
 
 SuperAdmin -->> Frontend: Selecciona uno o más usuarios (checkbox)
@@ -45,30 +51,46 @@ else Hay usuarios seleccionados
     Frontend -->> SuperAdmin: Muestra modal de confirmación
     SuperAdmin -->> Frontend: Confirma eliminación
 
+    alt Se detecta usuario con rol SuperAdministrador
+        Frontend -->> SuperAdmin: Solicita contraseña + código 2FA
+        SuperAdmin -->> Frontend: Ingresa credenciales y código
+        Frontend -->> Api_gateway: POST /api/seguridad/verificar-2fa (idUsuario, código, contraseña)
+        Api_gateway -->> Backend: Verifica credenciales y código
+
+        Backend -->> Verificacion2FA: Valida contraseña y código 2FA
+        alt Verificación fallida
+            Verificacion2FA -->> Backend: Error 403
+            Backend -->> Api_gateway: Error 403
+            Api_gateway -->> Frontend: Error 403
+            Frontend -->> SuperAdmin: Muestra mensaje "Error en autenticación 2FA"
+        else Verificación exitosa
+            Verificacion2FA -->> Backend: OK
+            Backend -->> Api_gateway: OK
+            Api_gateway -->> Frontend: Continúa con eliminación
+        end
+    end
+
     Frontend -->> Api_gateway: DELETE /api/usuarios (body: lista_usuarios[]) + JWT
-
     Api_gateway -->> Backend: Solicitud de eliminación
-
     Backend -->> rutaUsuario: DELETE /api/usuarios
-
     rutaUsuario -->> rutaUsuario: Verifica API key y JWT
 
     alt API Key/JWT inválidas
-        rutaUsuario -->> Backend: Retorna JSON {"mensaje": "No autorizado"} con status 401
-        Backend -->> Api_gateway: Retorna JSON {"mensaje": "No autorizado"} con status 401
-        Api_gateway -->> Frontend: Retorna JSON {"mensaje": "No autorizado"} con status 401
+        rutaUsuario -->> Backend: Retorna 401
+        Backend -->> Api_gateway: Retorna 401
+        Api_gateway -->> Frontend: Retorna 401
         Frontend -->> SuperAdmin: Muestra "Error: acceso no autorizado"
     else Autenticación exitosa
-        rutaUsuario -->> controladorUsuario: Llama al controlador de eliminación
-        controladorUsuario -->> repositorioUsuario: Llama al controlador de eliminación
-        repositorioUsuario -->> RDS: Quita al usuario de la base de datos
-        RDS -->> repositorioUsuario: Confirma eliminación del usuario
-        repositorioUsuario -->> controladorUsuario: Retorna éxito
-        controladorUsuario -->> rutaUsuario: Retorna status 204 sin cuerpo
+        rutaUsuario -->> controladorUsuario: Llama controlador de eliminación
+        controladorUsuario -->> repositorioUsuario: Elimina usuario(s)
+        repositorioUsuario -->> RDS: Ejecuta eliminación en DB
+        RDS -->> repositorioUsuario: Confirma eliminación
+        repositorioUsuario -->> controladorUsuario: OK
+        controladorUsuario -->> rutaUsuario: Status 204
         rutaUsuario -->> Backend: Status 204
         Backend -->> Api_gateway: Status 204
         Api_gateway -->> Frontend: Status 204
-        Frontend -->> SuperAdmin: Muestra mensaje "Usuarios eliminados con éxito"
+        Frontend -->> SuperAdmin: Muestra "Usuarios eliminados con éxito"
     end
 end
 ```
