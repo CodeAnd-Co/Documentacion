@@ -23,11 +23,15 @@ Como **Super Administrador**, quiero poder registrar nuevos usuarios en el siste
    - Número de telefono
    - Dirección
    - Cliente al que pertenece
-   - Rol del usuario (Ejemplo: Administrador, Usuario estándar, Moderador, etc.)
-   - Contraseña establecida y confirmada
+   - Rol del usuario.
+   - Contraseña establecida
+   - Contraseña Confirmada
 3. Si los datos ingresados son válidos, el sistema debe registrar al nuevo usuario y mostrar un mensaje de confirmación.
-4. Si algún campo obligatorio está vacío o con formato incorrecto, se debe mostrar un mensaje de error indicando qué corregir.
-5. El usuario recién creado debe poder iniciar sesión con las credenciales proporcionadas.
+4. Si algún campo obligatorio está vacío o con formato incorrecto, se debe mostrar un mensaje de error en el campo a corregir.
+5. Si el rol seleccionado es Super Administrador, entonces el campo cliente debe bloquearse y asignarse automaticamente a todos los clientes.
+6. El usuario recién creado debe poder iniciar sesión con las credenciales proporcionadas.
+7. Se debe validar que no exista un usuario con el correo electrónico ingresado.
+8. Se debe validar que no exista un usuario con el número de teléfono ingresado.
 
 ---
 
