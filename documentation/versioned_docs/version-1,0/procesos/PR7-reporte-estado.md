@@ -72,3 +72,4 @@ sidebar_position: 7
 | **2.7**             | Identificación de MA 2.2 | 24/04/2025 | Diego Fuentes |
 | **2.8**             | Actualización de link de plantilla | 28/04/2025 | Arturo Sánchez |
 | **3.0**             | Simplificar proceso, corregir ortografía y actualizar links | 13/05/2025 | Daniel Contreras Chávez |
+| **4.0**             | Añadir paso de indentifica rpatrones y antipatrones| 22/05/2025 | Rommel Pacheco Hernández |
