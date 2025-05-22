@@ -46,3 +46,5 @@ _<u>[Enlace a pruebas RF7 Consultar lista de roles.](https://docs.google.com/spr
 | ------------------- | -------------------------------- | ---------- | --------------- |
 | **1.0**             | Creación de documentación        | 06/04/2025 | Hiram Mendoza  |
 | **1.1**             | Agregar pruebas | 06/05/2025 | Hiram Mendoza   |
+| **1.2**             | Actualización requisito | 06/05/2025 | Hiram Mendoza   |
+
