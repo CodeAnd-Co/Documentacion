@@ -86,6 +86,7 @@ sidebar_position: 1
         - Hacer el EJS usando variables para cargar cosas como las rutas.
     - Ir ar src>framework>utils>scripts y crear el archivo con el código de js que correra directamente en el frontEnd y manejará el DOM (Document Object Model) o body. No debes incluir lógica más allá de leer, escribir, y asignar funciones a los valores de los elementos de HTML.
         - Si en tu script quieres implementar la carga de otro módulo o vista, usar la función de ipcRenderer.invoke('precargarEJS')
+        - Añadir const { ipcRenderer } = require('electron');
             - Si quieres ver un ejemplo puedes consultar barraLateral.js
     - Cualquier lógica que no interactúe directamente con elementos HTML debe ir src>backend (consultar proceso para programar el Backend local)
     - Conectar el controlador a la vista del usuario a través de este archivo.
