@@ -5,7 +5,17 @@ sidebar_position: 3
 
 # RF2: Usuario registrado inicia sesión.
 
-**Última actualización:** 07 de marzo de 2025
+---
+
+### Pull Request de la Historia de Usuario
+
+- App local
+  - [RF2](https://github.com/CodeAnd-Co/App-Local-TracTech/pull/12)
+- Backend desacoplado
+  - [Backend RF2](https://github.com/CodeAnd-Co/Backend-Desacoplado-TracTech/pull/4)
+  - [Backend RF2](https://github.com/CodeAnd-Co/Backend-Desacoplado-TracTech/pull/5)
+
+---
 
 ### Historia de Usuario
 
