@@ -5,7 +5,14 @@ sidebar_position: 5
 
 # RF4: Usuario consulta datos de contacto.
 
-**Última actualización:** 07 de marzo de 2025
+---
+
+### Pull Request de la Historia de Usuario
+
+- App local
+  - [RF4](https://github.com/CodeAnd-Co/App-Local-TracTech/pull/6)
+
+---
 
 ### Historia de Usuario
 
