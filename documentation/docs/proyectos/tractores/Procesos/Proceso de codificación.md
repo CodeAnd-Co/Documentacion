@@ -77,7 +77,7 @@ sidebar_position: 1
 - Todas las rutas que se usen dentro de HTML son absolutas en base a /harvester-app.
     - Esto signfica que si quieres importar css o un script dentro del HTML debes usar el código `<%= rutaBase %>`
     - También deberás usar esta ruta absoluta en las importaciones dentro de cualquier script.
-    - Esto no aplica para código EJS aunque esté en el mismo archivo, en ese casi si se pueden usar rutas relativas.
+    - Esto no aplica para código EJS aunque esté en el mismo archivo, en ese si se pueden usar rutas relativas.
 
 **Codificación:**
     - Ir a src>framework>vistas>paginas y crear la carpeta correspondiente a tu módulo si no existe.

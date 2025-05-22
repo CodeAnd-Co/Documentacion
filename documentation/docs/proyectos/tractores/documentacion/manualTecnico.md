@@ -273,3 +273,5 @@ http://localhost:4000/api-docs
 | Versión | Descripción                                        | Fecha      | Colaborador      |
 | ------- | -------------------------------------------------- | ---------- | --------------   |
 | 1.0     | Implementación inicial del Manual Técnico          | 19/05/2025 | Daniel Queijeiro |
+| 2.0     | Actualizar diagrama de paquetes          | 22/05/2025 | Diego Fuentes, Daniel Queijeiro |
+

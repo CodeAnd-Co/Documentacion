@@ -350,3 +350,4 @@ import TabItem from '@theme/TabItem';
 | **1.2**             | Agregar Mision y Vision del proyecto | 25/04/2025 | Galo Alejandro del Rio Viggiano |
 | **1.3**             | Corrección de una palabra | 08/05/2025 | Rommel Toledo C. |
 | **1.4**             | Actualización del contenido | 15/05/2025 | Juan Pablo Chávez |
+| **2.0**             | Actualizar visión del equipo | 22/05/2025 | Diego Fuentes |
