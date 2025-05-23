@@ -75,9 +75,9 @@ sidebar_position: 1
 
 **Notas importantes**
 - Todas las rutas que se usen dentro de HTML son absolutas en base a /harvester-app.
-    - Esto signfica que si quieres importar css o un script dentro del HTML debes usar el código <%= rutaBase %>
+    - Esto signfica que si quieres importar css o un script dentro del HTML debes usar el código `<%= rutaBase %>`
     - También deberás usar esta ruta absoluta en las importaciones dentro de cualquier script.
-    - Esto no aplica para código EJS aunque esté en el mismo archivo, en ese casi si se pueden usar rutas relativas.
+    - Esto no aplica para código EJS aunque esté en el mismo archivo, en ese si se pueden usar rutas relativas.
 
 **Codificación:**
     - Ir a src>framework>vistas>paginas y crear la carpeta correspondiente a tu módulo si no existe.
@@ -85,8 +85,8 @@ sidebar_position: 1
         - Añadir el encabezado.ejs y piePagina.ejs que estan dentro de src>framework>vistas>includes
         - Hacer el EJS usando variables para cargar cosas como las rutas.
     - Ir ar src>framework>utils>scripts y crear el archivo con el código de js que correra directamente en el frontEnd y manejará el DOM (Document Object Model) o body. No debes incluir lógica más allá de leer, escribir, y asignar funciones a los valores de los elementos de HTML.
-        - Si en tu script quieres implementar la carga de otro módulo o vista, usar la función de ipcRenderer.invoke('precargarEJS')
-        - Añadir const { ipcRenderer } = require('electron');
+        - Si en tu script quieres implementar la carga de otro módulo o vista, usar la función de `ipcRenderer.invoke('precargarEJS')`.
+        - Añadir `const { ipcRenderer } = require('electron')`.
             - Si quieres ver un ejemplo puedes consultar barraLateral.js
     - Cualquier lógica que no interactúe directamente con elementos HTML debe ir src>backend (consultar proceso para programar el Backend local)
     - Conectar el controlador a la vista del usuario a través de este archivo.
