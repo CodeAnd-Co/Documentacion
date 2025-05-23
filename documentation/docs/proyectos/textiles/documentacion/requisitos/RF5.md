@@ -79,7 +79,7 @@ end
 
 > _Descripción_: El mockup muestra la interfaz donde el **Super Administrador** puede eliminar un usuario, con una ventana de confirmación para evitar acciones accidentales.
 
-![Interfaz para eliminar a un usuario](<imagenes/US05 Eliminar usuarios.png>)
+![Interfaz para eliminar a un usuario](imagenes/RF5EliminaUsuario.png)
 
 ## **Pruebas Unitarias**
 

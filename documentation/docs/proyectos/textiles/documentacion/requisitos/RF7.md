@@ -5,7 +5,6 @@ sidebar_position: 9
 
 # RF7: Super Administrador Consulta Lista de Roles
 
-
 ---
 
 ## Historia de Usuario
@@ -69,19 +68,20 @@ sequenceDiagram
         end
     end
 ```
+
 ---
 
 ## **Mockup**
 
 > _Descripción_: El mockup muestra la interfaz donde el Super Administrador puede ver la lista de roles disponibles, con opciones de búsqueda y filtrado.
 
-> ![Interfaz de consultar lista de roles](imagenes/Consultar_Roles.png)
+> ![Interfaz de consultar lista de roles](imagenes/RF7ConsultaRoles.png)
 
 ## **Pruebas**
 
 _<u>[Enlace a pruebas RF7 Consultar lista de roles.](https://docs.google.com/spreadsheets/d/1NLGwGrGA5PVOEzLaqxa8Ts1D_Ng3QzzqNKWJYUzxD-M/edit?pli=1&gid=1274458259#gid=1274458259)</u>_
 
-| **Tipo de Versión** | **Descripción**                  | **Fecha**  | **Colaborador** |
-| ------------------- | -------------------------------- | ---------- | --------------- |
-| **1.0**             | Creación de documentación        | 06/04/2025 | Hiram Mendoza  |
-| **1.1**             | Agregar pruebas | 06/05/2025 | Hiram Mendoza   |
+| **Tipo de Versión** | **Descripción**           | **Fecha**  | **Colaborador** |
+| ------------------- | ------------------------- | ---------- | --------------- |
+| **1.0**             | Creación de documentación | 06/04/2025 | Hiram Mendoza   |
+| **1.1**             | Agregar pruebas           | 06/05/2025 | Hiram Mendoza   |
