@@ -36,7 +36,6 @@ Como **Super Administrador**, quiero poder registrar nuevos usuarios en el siste
    - Rol del usuario (Ejemplo: Administrador, Usuario estándar, Moderador, etc.)
    - Cliente al que pertenece
    - Contraseña establecida y confirmada
-     > > > > > > > > > Temporary merge branch 2
 3. Si los datos ingresados son válidos, el sistema debe registrar al nuevo usuario y mostrar un mensaje de confirmación.
 4. Si algún campo obligatorio está vacío o con formato incorrecto, se debe mostrar un mensaje de error en el campo a corregir.
 5. Si el rol seleccionado es Super Administrador, entonces el campo cliente debe bloquearse y asignarse automaticamente a todos los clientes.
