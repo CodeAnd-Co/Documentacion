@@ -15,7 +15,6 @@ Como **Super Administrador**, quiero poder registrar nuevos usuarios en el siste
 
 1. El Super Administrador debe poder acceder a la opción de **"Crear Usuario"** desde el panel de administración.
 2. Se debe mostrar un formulario con los siguientes campos obligatorios:
-   <<<<<<<<< Temporary merge branch 1
    - Nombre
    - Apellido(s)
    - Fecha de Nacimiento
