@@ -165,10 +165,19 @@ CREATE DATABASE harvester;
 
 Una vez clonado el código fuente, es importante conocer su estructura para facilitar navegación, desarrollo y pruebas.
 
+**FrontEnd:**
+<iframe
+  frameborder="0"
+  style={{ borderRadius: "1em" }}
+  width="100%"
+  height="800em"
+  src="https://viewer.diagrams.net/?tags=%7B%7D&lightbox=1&highlight=0000ff&edit=https%3A%2F%2Fapp.diagrams.net%2F%23G1KPglZc2PKZ8ah6t3utgAD4n3U6BQs2sG%23%257B%2522pageId%2522%253A%2522l-jaUNbbZnOwnRJqBNt3%2522%257D&layers=1&nav=1&title=diagrama%20de%20paquetes%20Electron.drawio&dark=0#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1KPglZc2PKZ8ah6t3utgAD4n3U6BQs2sG%26export%3Ddownload"
+></iframe>
 
-![Frontend](./diagrama-de-paquetes-electron-diagrama-paquetes.png)
-
+**BackEnd:**
 ![Backend](./diagrama-de-paquetes-backend-desacoplado.png)
+
+
 
 ---
 
@@ -264,3 +273,5 @@ http://localhost:4000/api-docs
 | Versión | Descripción                                        | Fecha      | Colaborador      |
 | ------- | -------------------------------------------------- | ---------- | --------------   |
 | 1.0     | Implementación inicial del Manual Técnico          | 19/05/2025 | Daniel Queijeiro |
+| 2.0     | Actualizar diagrama de paquetes          | 22/05/2025 | Diego Fuentes, Daniel Queijeiro |
+

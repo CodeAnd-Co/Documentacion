@@ -15,15 +15,15 @@ Como **Super Administrador**, quiero poder registrar nuevos usuarios en el siste
 
 1. El Super Administrador debe poder acceder a la opción de **"Crear Usuario"** desde el panel de administración.
 2. Se debe mostrar un formulario con los siguientes campos obligatorios:
-   - Nombre
+   - Nombre(s)
    - Apellido(s)
-   - Fecha de Nacimiento
+   - Fecha de nacimiento
    - Género
    - Correo electrónico
    - Número de telefono
    - Dirección
-   - Cliente al que pertenece
    - Rol del usuario (Ejemplo: Administrador, Usuario estándar, Moderador, etc.)
+   - Cliente al que pertenece
    - Contraseña establecida y confirmada
 3. Si los datos ingresados son válidos, el sistema debe registrar al nuevo usuario y mostrar un mensaje de confirmación.
 4. Si algún campo obligatorio está vacío o con formato incorrecto, se debe mostrar un mensaje de error indicando qué corregir.
@@ -103,7 +103,7 @@ sequenceDiagram
 
 > _Descripción_: El mockup representa la interfaz del sistema donde el **Super Administrador** completa los datos del nuevo usuario, selecciona su rol y permisos, y confirma la creación del usuario en el sistema.
 
-![alt text](<imagenes/Añadir Usuarios.png>)
+![Interfaz de crear usuario](./imagenes/crearUsuario.png)
 
 ## **Pruebas**
 
