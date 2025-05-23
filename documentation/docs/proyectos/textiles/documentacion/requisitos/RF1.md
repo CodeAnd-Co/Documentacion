@@ -15,19 +15,32 @@ Como **Super Administrador**, quiero poder registrar nuevos usuarios en el siste
 
 1. El Super Administrador debe poder acceder a la opción de **"Crear Usuario"** desde el panel de administración.
 2. Se debe mostrar un formulario con los siguientes campos obligatorios:
-    - Nombre(s)
-    - Apellido(s)
-    - Fecha de nacimiento
-    - Género
-    - Correo electrónico
-    - Número de telefono
-    - Dirección
-    - Rol del usuario (Ejemplo: Administrador, Usuario estándar, Moderador, etc.)
-    - Cliente al que pertenece
-    - Contraseña establecida y confirmada
+   - Nombre
+   - Apellido(s)
+   - Fecha de Nacimiento
+   - Género
+   - Correo electrónico
+   - Número de telefono
+   - Dirección
+   - Cliente al que pertenece
+   - Rol del usuario (Ejemplo: Administrador, Usuario estándar, Moderador, etc.)
+   - # Contraseña establecida y confirmada
+   - Nombre(s)
+   - Apellido(s)
+   - Fecha de nacimiento
+   - Género
+   - Correo electrónico
+   - Número de telefono
+   - Dirección
+   - Rol del usuario (Ejemplo: Administrador, Usuario estándar, Moderador, etc.)
+   - Cliente al que pertenece
+   - Contraseña establecida y confirmada
 3. Si los datos ingresados son válidos, el sistema debe registrar al nuevo usuario y mostrar un mensaje de confirmación.
-4. Si algún campo obligatorio está vacío o con formato incorrecto, se debe mostrar un mensaje de error indicando qué corregir.
-5. El usuario recién creado debe poder iniciar sesión con las credenciales proporcionadas.
+4. Si algún campo obligatorio está vacío o con formato incorrecto, se debe mostrar un mensaje de error en el campo a corregir.
+5. Si el rol seleccionado es Super Administrador, entonces el campo cliente debe bloquearse y asignarse automaticamente a todos los clientes.
+6. El usuario recién creado debe poder iniciar sesión con las credenciales proporcionadas.
+7. Se debe validar que no exista un usuario con el correo electrónico ingresado.
+8. Se debe validar que no exista un usuario con el número de teléfono ingresado.
 
 ---
 
@@ -111,8 +124,9 @@ _<u>[Enlace a pruebas RF2 Consultar Lista de Usuarios.](https://docs.google.com/
 
 ---
 
-| **Tipo de Versión** | **Descripción**                | **Fecha**  | **Colaborador**              |
-| ------------------- | ------------------------------ | ---------- | ---------------------------- |
-| **1.0**             | Creación del requisito         | 6/3/2025   | Angélica Rios                |
-| **1.1**             | Cambio de estado de historia   | 6/5/2025   | Nicolas Hood                 |
-| **1.2**             | Actualización de documentación | 22/05/2025 | Diego Antonio García Padilla |
+| **Tipo de Versión** | **Descripción**              | **Fecha** | **Colaborador** |
+| ------------------- | ---------------------------- | --------- | --------------- |
+| **1.0**             | Creación del requisito       | 6/3/2025  | Angélica Rios   |
+| **1.1**             | Cambio de estado de historia | 6/5/2025  | Nicolas Hood    |
+| **1.3**             | Se actualizó documentación. | 22/05/2025 | Arturo Sánchez Rodríguez |
+
