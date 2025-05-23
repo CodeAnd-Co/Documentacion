@@ -161,7 +161,7 @@ Versión: V1
 
 ## Aplicación en Flutter
 
-![alt text](Diagrama_de_paquetes.png)
+![alt text](Diagrama_paquetes_frontend.png)
 
 Este diagrama describe la distribución de paquetes de la aplicación en Flutter utilizando MVVM y Clean Architecture
 
@@ -170,17 +170,17 @@ Este diagrama describe la distribución de paquetes de la aplicación en Flutter
 Framework es un paquete que se encarga de la gestión de la vista de la presentación.
 
 - **Views**: Contiene los elementos graficos de la aplicación, la UI.
-  - **Fonts**: Fuentes de texto usadas en la aplicación.
-  - **Prefabs**: Partes reutilizables como botones, tarjetas, etc.
+  - **Components**: Componentes usados en la aplicación.
 - **ViewModel**: Paquete que maneja la lógica dentro de la vista de la aplicación. ViewModel se comunica con Domain para obtener información.
+- **Navigation**: Incluye el archivo donde se manejan las rutas de la aplicación.
 
 ### 2. Data
 
 Data maneja la adquisición de los datos.
 
-- **Network**: Conexiones a internet y llamadas a APIs.
-  - **Model**: Modelos de datos que representan la información obtenida por las APIs y bases de datos.
+- **Model**: Modelos de datos que representan la información obtenida por las APIs y bases de datos.
 - **Repository**: Repositorios encargados de obtener los datos, remotos desde la red o locales.
+- **Service**: Contiene los archivos que declaran la clase abstracta de los métodos del repositorio.
 
 ### 3. Domain
 
@@ -188,7 +188,7 @@ Domain es la núcleo de la lógica dentro de la aplicación
 
 ### 4. Archivos importantes
 
-**App flutter**: Punto de entrada de la aplicación.
+**Main.dart**: Punto de entrada de la aplicación.
 
 ### 5. Pruebas unitarias
 
@@ -198,95 +198,6 @@ Contiene todas las pruebas unitarias.
 - **Domain**: casos de uso
 - **ViewModel**: validación de estados y lógica de presentación
 
-### 6. Librerias
-
-Almacena dependencias internas o librerias personalizadas que pueden ser reutilizadas en distintos módulos
-
----
-  ## Plantilla Pull Requests Backend
-
-```
-## Plantilla PR BackEnd
-Última actualización 28/04/25
-
----
-
-# Descripción
-
-Incluye un resumen del cambio y el problema que se ha solucionado. También proporciona el contexto relevante y la motivación para este cambio. Lista cualquier dependencia requerida para esta modificación.
-
----
-
-## Tipo de cambio
-
-- [ ] Corrección de error (fix sin romper funcionalidades existentes)
-- [ ] Nueva funcionalidad (feature sin romper funcionalidades existentes)
-- [ ] Cambio disruptivo (rompe compatibilidad o modifica comportamiento actual )
-- [ ] Actualización de documentación requerida
-- [ ] Cambio mínimo (cambio visual o estructural que no afecta la lógica del sistema)
-
----
-
-# ¿Qué archivo fue el que modifique?
-Ejemplo:
-- UserController.js
-- api.js
-
----
-
-# ¿Cómo se ha probado?
-Describe berevemente cómo se probó esta funcionalidad. Ejemplo:
-- "Se probaron los endpoints '/api/login' y '/api/profile' con Postman. Las respuestas fueron correctas y sin errores en consola."
-- "Se realizaron pruebas visuales/manuales. No se detectaron impactos en lógica ni funcionalidad."
-
----
-
-# Notas para cambios menores
-- [ ] Este PR realiza un cambio mínimo que no afecta la lógica del sistema.
-- [ ] Se validó el comportamiento básico y no se detectaron efectos colaterales.
-- [ ] No se realizaron pruebas automatizadas porque no aplica
-
----
-
-# Lista de verificación del autor
-
-- [ ] El código sigue las normas de estilo del proyecto
-- [ ] He realizado una autoevaluación del código
-- [ ] El código esta comentado en las secciones complejas o no obvias
-- [ ] Documentación actualizada aplica
-- [ ] El código no genera nuevas advertencias o errores
-- [ ] Se añadieron pruebas relevantes
-
----
-
-# Lista de Verificación de Pruebas
-- [ ] Las pruebas unitarias nuevas y existentes pasan correctamente con mis cambios
-- [ ] Las pruebas de seguridad nuevas y existentes pasan correctamente con mis cambios
-- [ ] Las pruebas de regresión nuevas y existentes pasan correctamente con mis cambios
-- [ ] Las pruebas de integración nuevas y existentes pasan correctamente con mis cambios
-- [ ] Las pruebas heurísticas nuevas y existentes pasan correctamente con mis cambios
-
----
-
-## Checklist del evaluador:
-
-- [ ] La descripción del Pull Request es clara y específica
-- [ ] No se introducen errores ni inconsistencias
-- [ ] Ortografía y gramática correctas en documentación
-- [ ] El código es entendible y cumple con los estándares
-- [ ] Notifiqué al autor del PR si encontré errores, dudas o sugerencias
-- [ ] (Si se aprueba) Procedo a eliminar la rama correspondiente
-
----
-
-# Versión: V1
-### Autores
-
-| Nombre                         | Rol   |
-| ------------------------------ | ----- |
-| Juan Antonio Landeros Velázquez          | Autor |
-```
-
 ### Historial de cambios
 
 | **Tipo de Versión** | **Descripción**                               | **Fecha** | **Colaborador**                 |
@@ -294,3 +205,4 @@ Describe berevemente cómo se probó esta funcionalidad. Ejemplo:
 | **1.0**             | Creación de la  estrategía tecnica   | 08/03/2025  | Juan Eduardo |
 | **2.0**             | Actualización del diagrama de paquetes backend   | 22/04/2025  | Miguel Angel Uribe Esquivel |
 | **3.0**             | Agregar plantilla de PR de technebrios   | 28/04/2025  | Juan Antonio Landeros Velázquez |
+| **4.0**             | Actualización del diagrama de paquetes frontend  | 22/05/2025  | Juan Antonio Landeros Velázquez |
