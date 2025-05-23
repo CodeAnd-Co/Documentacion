@@ -117,7 +117,7 @@ sequenceDiagram
 
 > _Descripción_: El mockup representa la interfaz de usuario donde el Super Administrador puede ver la lista de usuarios en formato de tabla, con opciones para filtrar, buscar y paginar los resultados.
 
-> ![Interfaz de consultar lista de usuarios](imagenes/RF2.PNG)
+> ![Interfaz de consultar lista de usuarios](imagenes/RF2CreaUsuario.png)
 
 ## **Pruebas**
 
