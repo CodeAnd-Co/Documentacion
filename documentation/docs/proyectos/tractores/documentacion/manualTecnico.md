@@ -34,7 +34,7 @@ Harvester es una aplicación de escritorio para el analísis de datos recabados 
 
 ---
 
-## 2. Requisitos Previos
+## 2. Requisitos previos
 
 ### 2.1 Herramientas necesarias
 
@@ -53,95 +53,32 @@ Instala las siguientes herramientas en tu equipo local:
 > 4. En "Username" coloca `root`.
 > 5. Da clic en "Store in Vault" para guardar tu contraseña.
 > 6. Prueba la conexión y guarda.
-> 1. [MySQL Capacitación](https://drive.google.com/file/d/1E9aODKokxhfOoEVqCS5lIcIZUki946ts/view?usp=drive_link)
-
-
-### 2.2 Crear y Configurar una Cuenta en AWS
-
-#### Paso a paso para crear la cuenta:
-
-1. Ve a [https://aws.amazon.com](https://aws.amazon.com) y haz clic en **"Crear una cuenta gratuita"**.
-2. Ingresa un correo electrónico válido y una contraseña segura.
-3. Completa los datos de contacto y método de pago.
-4. Verifica tu identidad vía SMS o llamada.
-5. Elige el plan **"Basic"**.
-
-#### Activación de servicios requeridos
-
-* **EC2:** Ejecuta el backend.
-
-### 2.3 Configuración de Servicios en AWS
-
-#### EC2 (backend)
-
-1. Ir a AWS > EC2 > Launch Instance
-
-2. Configuración:
-
-   * Nombre: `Harvester`
-
-   * Imagen: Ubuntu Noble 24.04 LTS
-
-   * Tipo: t4g.medium
-
-   * Par de claves: crear par de claves RSA (descargar `.pem`)
-
-     * Guarda la clave en una carpeta accesible (ej. `~/Documentos/keys/Harvester.pem`)
-     * Para conectarse, **la consola debe estar posicionada en el mismo directorio de la clave** o se debe usar la ruta completa
-
-   * Grupo de seguridad:
-
-     * Añadir reglas:
-
-       * Puerto 22 (SSH)
-       * Puerto 80 (HTTP)
-       * Puerto 443 (HTTPS)
-       * Puerto 3000 (para pruebas)
-       * Puerto 3306 (MySQL)
-
-3. Conectarse por SSH (en la consola de comandos):
-
-```bash
-cd ~/Documentos/keys
-chmod 400 Harvester.pem
-ssh -i "Harvester.pem" ubuntu@<ip-publica-ec2>
-```
-
-4. Preparar Ubuntu (en la consola de comandos de EC2):
-```bash
-sudo apt upgrade -y
-sudo apt install curl -y
-```
-
-5. Instalar herramientas de trabajo (en la consola de comandos de EC2):
-
-```bash
-curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
-sudo apt-get install -y nodejs
-sudo npm install -g pm2
-sudo apt install mysql-server -y
-sudo apt install git -y
-```
----
 
 ## 3. Preparación del Proyecto
 
-Después de configurar los servicios en AWS, clonaremos los repositorios y prepararemos el entorno de desarrollo local.
+Después de instalar las herramientas para trabahar, clonaremos los repositorios y prepararemos el entorno de desarrollo local.
 
-### 3.1 Clonar los Repositorios (en la consola de VSCode):
+### 3.1 Clonar los Repositorios:
+
+#### 3.1.1 Backend desacoplado:
 
 ```bash
-# Backend
 cd ~
-# Para tener dos entornos de despliegue (Main y Staging) clonamos dos veces el repositorio
-git clone https://github.com/CodeAnd-Co/Backend-Desacoplado-TracTech.git Main-Backend-Desacoplado-TracTech
-git clone https://github.com/CodeAnd-Co/Backend-Desacoplado-TracTech.git Staging-Backend-Desacoplado-TracTech
+git clone https://github.com/CodeAnd-Co/Backend-Desacoplado-TracTech.git
 cd Backend-Desacoplado-TracTech
 npm install
-cp .env.example .env
 ```
 
-### 3.2 Crear base de datos Harvester
+#### 3.1.2 App local:
+
+```bash
+cd ~
+git clone https://github.com/CodeAnd-Co/App-Local-TracTech.git
+cd harvester-app
+npm install
+```
+
+### 3.3 Crear base de datos Harvester
 
 **MySQL Workbench:**
 
