@@ -25,7 +25,7 @@ Asegurar la **alta disponibilidad** y la **recuperación confiable de datos** pa
 #### 1.1. **Backups automáticos de RDS**
 -  Ya están activos por defecto al crear una instancia RDS.
 -  **Por qué**: Permiten recuperar la base de datos a cualquier momento dentro del período de retención.
--  **Frecuencia**: (POR DEFINIR).
+-  **Frecuencia**: Diarios incrementales.
 -  **Costo**: Gratis si el tamaño del backup ≤ tamaño de la DB.
 
 #### 1.2. **Snapshots manuales de RDS**
@@ -42,13 +42,13 @@ Asegurar la **alta disponibilidad** y la **recuperación confiable de datos** pa
 
 #### 1.4. **Single-AZ vs Multi-AZ**
 
-##### 🔹 **Single-AZ (zona única de disponibilidad)**
+#####  **Single-AZ (zona única de disponibilidad)**
 - **Qué es**: La instancia RDS se implementa en una sola zona de disponibilidad.
 - **Por qué se usa**: Es más económico y suficiente para entornos de desarrollo o pruebas donde una caída temporal es aceptable.
 - **Limitaciones**: Si la zona de disponibilidad falla, la base de datos no estará disponible hasta que se recupere manualmente o se restaure desde backup.
 - **Costo**: Incluido en el precio estándar de RDS.
 
-##### 🔹 **Multi-AZ (alta disponibilidad)**
+#####  **Multi-AZ (alta disponibilidad)**
 - **Qué es**: Configuración opcional que crea automáticamente una réplica sincronizada en una segunda zona de disponibilidad (AZ) dentro de la misma región.
 - **Por qué se usa**: Garantiza alta disponibilidad. Si la instancia primaria falla, RDS conmuta automáticamente a la réplica sin pérdida de datos ni intervención manual.
 - **Costo**: Aproximadamente el doble del costo de una instancia Single-AZ, ya que se mantienen dos instancias sincronizadas.
