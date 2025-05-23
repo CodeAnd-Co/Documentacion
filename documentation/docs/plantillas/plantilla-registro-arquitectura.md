@@ -4,7 +4,7 @@ title: Registro de decisiones arquitectónicas
 
 # Registro de decisiones arquitectónicas
 
-### Seleccionar que tecnología vamos a usar
+### Título de la decisión arquitectónica
 Status: *Aceptado | Borrador | Rechazado | Obsoleto* 
 Encargados: *Personas involucradas en la decisión*
 Fecha: *DD-MM-YYYY*
