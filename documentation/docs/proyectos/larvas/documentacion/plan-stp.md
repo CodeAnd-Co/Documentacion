@@ -23,41 +23,84 @@ El proposito de este plan es garantizar la calidad del software, detectando y co
 - **UI**: User Interface (Interfaz de Usuario)
 
 # Objetivos de las Pruebas
+- Validan de forma aislada el comportamiento de funciones o métodos individuales, asegurando que produzcan los resultados esperados con entradas específicas.
 
-- Detectar problemas de usabilidad y experiencia del usuario aplicando criterios expertos, lo que facilita la mejora de la interfaz y la interacción general.
-- Verificar que los distintos módulos o componentes del sistema se comuniquen correctamente y funcionen en conjunto, asegurando la coherencia y el flujo adecuado de la información.
-- Validar que el proceso de instalación y configuración del software en el entorno de producción se realice sin contratiempos, garantizando que la transición del entorno de desarrollo a producción sea exitosa.
-- Evaluar la robustez y estabilidad del sistema bajo condiciones de carga extrema, identificando cuellos de botella y determinando la capacidad máxima antes de que el sistema falle.
-- Asegurar que cada componente o módulo individual funcione según lo esperado, permitiendo detectar y corregir errores en etapas tempranas del desarrollo.
-- Verificar la funcionalidad completa de la aplicación según los requisitos especificados.
-- Comprobar la seguridad de los datos de los usuarios y la implementación correcta del RBAC.
+- Evalúan la experiencia de usuario observando cómo interactúan con la interfaz mientras verbalizan sus pensamientos, permitiendo detectar barreras de uso.
+
+- Verifican que las nuevas funciones implementadas cumplan con los requisitos y se comporten correctamente desde su primera versión funcional.
+
+- Aseguran que los distintos módulos del sistema funcionen correctamente en conjunto, intercambiando datos y procesando flujos de forma coherente.
+
+- Confirman que nuevas actualizaciones o cambios no han afectado negativamente funcionalidades previamente desarrolladas y validadas.
+
+- Validan el comportamiento del sistema en el entorno real de uso, asegurando estabilidad, acceso correcto y rendimiento aceptable.
+
+- Confirman que el despliegue del sistema o sus actualizaciones se realizaron correctamente, sin errores de instalación ni pérdida de datos.
+
+- Verifican que el sistema protege adecuadamente los datos y recursos, evaluando posibles vulnerabilidades y control de accesos.
+
+- Evalúan el sistema como un todo en condiciones reales de operación, considerando tanto requerimientos funcionales como no funcionales.
+
+- Confirman que el sistema cumple con los criterios establecidos por el cliente o usuario final, y que está listo para su liberación o uso en producción.
 
 # Alcance de las Pruebas
 
 ### Dentro del Alcance
 
-- Módulos:
-    - Usuarios
-      - Registrar
-      - Autentificar
-      - Eliminar
-      - Consultar
-      - Editar
-    - Charolas y Frass
-      - Registrar
-      - Eliminar
-      - Consultar
-      - Editar
-    - Reportes
-      - Descargar
-    - Gráficas
-      - Consultar
+- **Autenticación**
+  - Iniciar sesión (RF1)
+  - Cerrar sesión (RF9)
+
+- **Usuarios**
+  - Registrar usuario (RF13)
+  - Editar usuario (RF19)
+  - Eliminar usuario (RF14)
+  - Recuperar contraseña (RF35)
+
+- **Charolas**
+  - Registrar charola (RF5)
+  - Buscar charola (RF6)
+  - Editar charola (RF7)
+  - Eliminar charola (RF8)
+  - Ver detalle de charola (RF10)
+  - Filtrar charolas (RF15)
+  - Listar todas las charolas (RF16)
+  - Ver estado de charolas (RF21)
+
+- **Historial de Charola**
+  - Consultar ancestros (RF3)
+  - Consultar historial de actividad (RF18)
+  - Ver cambios pasados (RF22)
+
+- **Tamizado**
+  - Seleccionar charola para tamizar (RF37)
+  - Registrar tamizado (RF38)
+
+- **Alimentación**
+  - Registrar tipo de comida (RF23)
+  - Editar tipo de comida (RF24)
+  - Eliminar tipo de comida (RF25)
+
+- **Hidratación**
+  - Registrar tipo de hidratación
+  - Editar tipo de hidratación
+  - Eliminar tipo de hidratación
+
+- **Frass**
+  - Registrar frass (RF29)
+  - Editar frass (RF30)
+
+- **Reportes**
+  - Descargar reportes (RF11)
+
+- **Gráficas**
+  - Consultar gráficas (RF2)
 
 # Aproximación a las Pruebas
 
 ### Estrategia de Pruebas
 
-Usaremos pruebas manuales y automatizadas dentro de la aplicación. 
+Usaremos pruebas, manuales y automatizadas dentro de la aplicación. 
 
 ### Tipos de Pruebas
 
@@ -92,7 +135,6 @@ Usaremos pruebas manuales y automatizadas dentro de la aplicación.
 # Entregables de las Pruebas
 
 - Casos de prueba.
-- Scripts de las pruebas.
 - Datos de las pruebas.
 - Resultados de las pruebas.
 
@@ -105,19 +147,13 @@ Usaremos pruebas manuales y automatizadas dentro de la aplicación.
 - Jest
 
 Herramientas a considerar:
-
-- chai
-- chai-http
 - mocha
 - mochawesome
 - nyc
 - sinon
 
 **Dispositivos**:
-
-- Tablet industrial con Windows 10
 - Computadoras portátiles del equipo (Windows 10 y 11, MacOS Sequoia 15.3.1)
-- Dispositivos móviles del equipo (iOS 18, Android 14)
 
 # Ambientes de Prueba
 
@@ -127,15 +163,12 @@ Herramientas a considerar:
 
 # Casos de Prueba
 
-- Por cada requisito funcional/historia de usuario que forma parte del MVP y MBI debe haber un caso de prueba. [Guía para hacer casos prueba a partir de casos de uso](https://www.fing.edu.uy/inco/cursos/ingsoft/iis/files/3172_0958_usecase.pdf)
-
+- Por cada requisito funcional/historia de usuario que forma parte del MVP y MBI debe haber un caso de prueba de portabilidad
 # Riesgos y Mitigación
 
 | Riesgos                                                           | Mitigación | 
 | ----------------------------------------------------------------- | --------------------------------------------------- |
-| Disponibilidad del entorno                                        | Prioizar las funciones que forman parte del MVP     |
-| El uso de una nueva tecnología (Flutter) para la aplicación móvil | Capacitación en Flutter                             |
-| Implementación de frameworks de pruebas                           | Capacitación en el uso de los frameworks y sus usos |
+| Dispositivos en el entorno de producción                          | Priorizar las funciones que forman parte del MVP    |
 | Los usuarios finales no se adaptan a la aplicación                | Capacitación y retroalimentación de los usuarios    |
 
 # Manejo de las Pruebas
