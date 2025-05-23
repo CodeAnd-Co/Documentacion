@@ -18,6 +18,12 @@ Como usuario del sistema, quiero modificar los datos de una charola que están g
 
 ---
 
+### Diagrama de Actividades
+
+<a href="https://drive.google.com/drive/folders/146R6qupKqyLif2oTC1R6PryB44fFYrHX" target="_blank" rel="noopener noreferrer">Modificar datos generales dl Charola</a>
+
+---
+
 ### Diagrama de Secuencia
 
 ```mermaid

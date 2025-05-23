@@ -19,6 +19,12 @@ Como usuario del sistema, quiero ingresar la información de una charola nueva e
 
 ---
 
+### Diagrama de Actividades
+
+<a href="https://drive.google.com/drive/folders/1rRK5isFN3jJ1_tyk0dgkABsYt7u_zt21" target="_blank" rel="noopener noreferrer">Registrar Charola</a>
+
+---
+
 ### Diagrama de Secuencia
 
 ```mermaid

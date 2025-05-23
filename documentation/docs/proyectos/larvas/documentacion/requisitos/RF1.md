@@ -18,6 +18,12 @@ Como usuario de la aplicación, quiero autenticarme en el sistema ingresando mi 
 
 ---
 
+### Diagrama de Actividades
+
+<a href="https://drive.google.com/drive/folders/12tMiuyDS43NvWSTEzlpkW-q52t2xfAij" target="_blank" rel="noopener noreferrer">Iniciar Sesión</a>
+
+---
+
 ### Diagrama de Secuencia
 
 ```mermaid
