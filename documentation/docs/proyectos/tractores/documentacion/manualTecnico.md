@@ -45,14 +45,6 @@ Instala las siguientes herramientas en tu equipo local:
 3. **MySQL Workbench:** Interfaz visual para administrar la base de datos. [Descargar](https://dev.mysql.com/downloads/workbench/)
 4. **Postman:** Herramienta para probar las APIs del backend. [Descargar](https://www.postman.com/)
 
-> **NOTA:** Para conectarte en MySQL Workbench:
->
-> 1. Abre Workbench.
-> 2. Da clic en el símbolo "+" para crear una nueva conexión.
-> 3. En "Hostname" coloca el endpoint de RDS.
-> 4. En "Username" coloca `root`.
-> 5. Da clic en "Store in Vault" para guardar tu contraseña.
-> 6. Prueba la conexión y guarda.
 
 ## 3. Preparación del Proyecto
 
