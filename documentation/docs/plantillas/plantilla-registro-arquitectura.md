@@ -16,7 +16,7 @@ Fecha: *DD-MM-YYYY*
 ***Lista de cosas que necesitas considerar para elegir una opción***  
 
 ### Opciones consideradas
-***Lista de las opciones con una pequeña descripción***  
+***Lista de las opciones con una pequeña descripción, ventajas y desventajas de usar cada opción***  
 
 ### Resultado de la decisión
 ***Explicación acerca de cuál opción fue seleccionada***  
