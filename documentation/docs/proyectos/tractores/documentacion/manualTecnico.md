@@ -74,11 +74,12 @@ npm install
 ```bash
 cd ~
 git clone https://github.com/CodeAnd-Co/App-Local-TracTech.git
+cd App-Local-TracTech
 cd harvester-app
 npm install
 ```
 
-### 3.3 Crear base de datos Harvester
+### 3.2 Crear base de datos Harvester
 
 **MySQL Workbench:**
 
@@ -95,7 +96,7 @@ CREATE DATABASE harvester;
 
 #### Links de referencia
 
-1. [HARVESTER.SQL](https://drive.google.com/file/d/1-jHoUr-9iyutlgRoevjk-BiEbZiOBhkS/view?usp=sharing)
+1. [HARVESTER.sql](https://drive.google.com/file/d/1mxIJnK36602K5GNVSg8o2zXxXfqooOmD/view?usp=sharing)
 ---
 
 ## 4. Estructura de Carpetas
@@ -120,22 +121,13 @@ Una vez clonado el código fuente, es importante conocer su estructura para faci
 
 ## 5. Configuración del Entorno
 
-### 5.1 Crear archivo .env en el servidor
+### 5.1 Crear archivo .env en el backend desacoplado
 
-En la consola de comandos de la instancia EC2:
+1. Crear el archivo .env a nivel de ./Backend-Desacoplado-TracTech
+
+#### 5.1.1 Variables del Backend
 
 ```bash
-nano .env
-```
-
-1. Escribe las variables necesarias
-2. Presiona `Ctrl + O` para guardar
-3. Presiona `Enter`
-4. Presiona `Ctrl + X` para salir
-
-### 5.2 Variables del Backend
-
-```env
 PUERTO =
 ANFITRION_BD=
 USUARIO_BD=
@@ -143,9 +135,41 @@ CONTRASENA_BD=
 NOMBRE_BD=
 SECRETO_JWT=
 DURACION_JWT=
-SU='SUPER ADMIN'
+SU=
 ```
 
+### 5.1 Crear archivo constantes.js en la App local
+
+1. Crear el archivo constantes.js a nivel de ./App-Local-TracTech/harvester-app/src/framework/utils/scripts
+
+#### 5.1.1 Constantes de la app
+
+```JS
+// RUTA A SERVIDOR - ENTORNO MAIN
+// const URL_BASE=
+
+// RUTA A SERVIDOR - ENTORNO STAGING
+// const URL_BASE=
+
+// RUTA A SERVIDOR - ENTORNO LOCAL
+// const URL_BASE = 
+
+const LONGITUD_MAXIMA_NOMBRE_FORMULA=
+const LONGITUD_MAXIMA_FORMULA=
+
+module.exports = {
+	URL_BASE,
+	LONGITUD_MAXIMA_NOMBRE_FORMULA,
+	LONGITUD_MAXIMA_FORMULA
+}
+```
+
+---
+
+#### Links de referencia
+
+1. [.env](https://docs.google.com/document/d/1kf0ulFP1xDJwSHOHcgjOH16juCH7AgIilGYx5rKG6hg/edit?usp=sharing)
+2. [constantes.js](https://docs.google.com/document/d/1PWI6vHMdoUOGs7xJ6BK7fUdmTrFR_gfuNQpypb7HtCw/edit?usp=sharing)
 ---
 
 ## 6. Ejecución del Proyecto
@@ -153,14 +177,15 @@ SU='SUPER ADMIN'
 ### 6.1 Ejecutar Backend Local
 
 ```bash
-cd Staging-Backend-Desacoplado-TracTech
+cd Backend-Desacoplado-TracTech
 npm start
 ```
 
 ### 6.2 Ejecutar Aplicación
 
 ```bash
-cd App-Local-TracTech/harvester-app
+cd App-Local-TracTech
+cd harvester-app
 npm start
 ```
 
@@ -210,5 +235,6 @@ http://localhost:4000/api-docs
 | Versión | Descripción                                        | Fecha      | Colaborador      |
 | ------- | -------------------------------------------------- | ---------- | --------------   |
 | 1.0     | Implementación inicial del Manual Técnico          | 19/05/2025 | Daniel Queijeiro |
-| 2.0     | Actualizar diagrama de paquetes          | 22/05/2025 | Diego Fuentes, Daniel Queijeiro |
+| 2.0     | Actualizar diagrama de paquetes                    | 22/05/2025 | Diego Fuentes, Daniel Queijeiro |
+| 2.1     | Mejorar el manual                                  | 23/05/2025 | Daniel Queijeiro |
 
