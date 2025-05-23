@@ -128,3 +128,4 @@ _<u>[Enlace a pruebas RF2 Consultar Lista de Usuarios.](https://docs.google.com/
 | **Tipo de Versión** | **Descripción**                                  | **Fecha** | **Colaborador** |
 | ------------------- | ------------------------------------------------ | --------- | --------------- |
 | **1.0**             | Actualización de la documentación del requisito. | 10/4/2025 | Valeria Zúñiga  |
+| **1.1**             | Se actualizó documentación. | 22/05/2025 | Arturo Sánchez Rodríguez |

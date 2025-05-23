@@ -112,3 +112,10 @@ sequenceDiagram
 
 
 ![alt text](<imagenes/RF6.png>)
+
+
+### Historial de cambios
+
+| **Tipo de Versión** | **Descripción**                                  | **Fecha** | **Colaborador** |
+| ------------------- | ------------------------------------------------ | --------- | --------------- |
+| **1.0**             | Se actualizó documentación. | 22/05/2025 | Arturo Sánchez Rodríguez |

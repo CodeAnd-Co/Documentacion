@@ -26,3 +26,5 @@ sidebar_position: 5
 | ------------------- | ------------------------------------------------- | --------- | ------------------------------ |
 | **1.0**             | Implementación de definición de Ready             | 10/3/2025 | Diego Ricardo Alfaro Quinto    |
 | **1.0**             | Se eliminó la creación de diagramas de secuencia. | 10/3/2025 | Angel Mauricio Ramirez Herrera |
+| **1.0**             | Se actualizó documentación. | 22/05/2025 | Arturo Sánchez Rodríguez |
+
