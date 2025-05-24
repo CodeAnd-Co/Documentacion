@@ -18,6 +18,12 @@ Como usuario de la aplicación, quiero autenticarme en el sistema ingresando mi 
 
 ---
 
+### Diagrama de Actividades
+
+<a href="https://drive.google.com/file/d/1Zql5LFEL76YKACtJoWMFsT_L4QYmpX8o/view?usp=sharing" target="_blank" rel="noopener noreferrer">Iniciar Sesión</a>
+
+---
+
 ### Diagrama de Secuencia
 
 ```mermaid
@@ -274,3 +280,4 @@ sequenceDiagram
 | **1.0**             | Verificación de los cambios          | 8/3/2025  | Miguel Angel      |
 | **1.1**             | Creación del diagrama de secuencia   | 22/4/2025  | Emiliano Valdivia Lara  |
 | **1.2**             | Se cambio el query del diagrama de secuencia   | 17/5/2025  | Mariana Juárez |
+| **1.3**             | Diagramas de actividades   | 23/5/2025  | Juan Eduardo Rosas Cerón |

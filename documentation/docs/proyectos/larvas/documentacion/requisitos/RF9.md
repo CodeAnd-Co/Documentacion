@@ -18,6 +18,12 @@ Como usuario de la aplicación, quiero cerrar mi cuenta de usuario en la aplicac
 
 ---
 
+### Diagrama de Actividades
+
+<a href="https://drive.google.com/file/d/12x_zfxa1QmTsGL5XsYHaTIIvdtvq-ioz/view?usp=sharing" target="_blank" rel="noopener noreferrer">Cerrar sesión</a>
+
+---
+
 ### Diagrama de Secuencia
 
 > *Descripción*: El diagrama de secuencia muestra cómo el Super Administrador selecciona un archivo, el sistema valida los datos y luego importa los empleados al sistema.
@@ -37,3 +43,9 @@ Como usuario de la aplicación, quiero cerrar mi cuenta de usuario en la aplicac
 | PU-RF-04  | Evaluar el tiempo de respuesta al cerrar sesión realizando el proceso de cierre. | El proceso se completa en un tiempo adecuado (por ejemplo, menos de 2 segundos) sin bloqueos ni errores durante la transición. |
 | PU-RF-05  | Validar la experiencia de usuario durante el proceso de cierre de sesión, asegurando que no se muestren pantallas en blanco ni errores inesperados. | La transición es fluida y consistente con el resto de la aplicación, sin afectar la experiencia de usuario. |
 | PU-RF-06  | Verificar que no se pueda recuperar la sesión cerrada usando el botón "Atrás" del navegador, luego de cerrar sesión. | Al utilizar el botón "Atrás", el usuario es redirigido a la pantalla de inicio de sesión y no se puede acceder a la información de la sesión cerrada. |
+
+
+| **Tipo de Versión** | **Descripción**                      | **Fecha** | **Colaborador**   |
+| ------------------- | ------------------------------------ | --------- | ----------------- |
+| **1.0**             | Creacion de la historia de usuario   | 8/3/2025  | Armando Mendez    |
+| **1.2**             | Diagramas de actividades   | 23/5/2025  | Juan Eduardo Rosas Cerón |
