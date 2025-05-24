@@ -248,3 +248,4 @@ sequenceDiagram
 | **1.1**             | Creación del diagrama de secuencia   | 3/4/2025  | Juan Eduardo      |
 | **1.2**             | Mockup y correcciones del diagrama   | 3/4/2025  | Juan Eduardo      |
 | **1.3**             | Correciones del query                | 17/5/2025 | Mariana Juárez    |
+| **1.3**             | Diagramas de actividades   | 23/5/2025  | Juan Eduardo Rosas Cerón |

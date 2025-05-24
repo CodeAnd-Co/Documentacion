@@ -38,3 +38,4 @@ Como usuario del sistema, quiero consultar el historial de ancestros de una char
 | ------------------- | ------------------------------------------ | --------- | ----------------------- |
 | **1.0**             | Creacion de la historia de usuario         | 8/3/2025  | Armando Mendez          |
 | **1.1**             | Modificar historial de cambio              | 17/05/2025| Mariaa Juárez           |
+| **1.2**             | Diagramas de actividades   | 23/5/2025  | Juan Eduardo Rosas Cerón |
