@@ -20,7 +20,7 @@ Como usuario de la aplicación, quiero autenticarme en el sistema ingresando mi 
 
 ### Diagrama de Actividades
 
-<a href="https://drive.google.com/drive/folders/12tMiuyDS43NvWSTEzlpkW-q52t2xfAij" target="_blank" rel="noopener noreferrer">Iniciar Sesión</a>
+<a href="https://drive.google.com/file/d/1Zql5LFEL76YKACtJoWMFsT_L4QYmpX8o/view?usp=sharing" target="_blank" rel="noopener noreferrer">Iniciar Sesión</a>
 
 ---
 

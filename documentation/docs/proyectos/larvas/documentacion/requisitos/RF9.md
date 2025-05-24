@@ -18,6 +18,12 @@ Como usuario de la aplicación, quiero cerrar mi cuenta de usuario en la aplicac
 
 ---
 
+### Diagrama de Actividades
+
+<a href="https://drive.google.com/file/d/12x_zfxa1QmTsGL5XsYHaTIIvdtvq-ioz/view?usp=sharing" target="_blank" rel="noopener noreferrer">Cerrar sesión</a>
+
+---
+
 ### Diagrama de Secuencia
 
 > *Descripción*: El diagrama de secuencia muestra cómo el Super Administrador selecciona un archivo, el sistema valida los datos y luego importa los empleados al sistema.

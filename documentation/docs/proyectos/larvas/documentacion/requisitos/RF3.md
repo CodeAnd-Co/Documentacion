@@ -17,6 +17,12 @@ Como usuario del sistema, quiero consultar el historial de ancestros de una char
 
 ---
 
+### Diagrama de Actividades
+
+<a href="https://drive.google.com/file/d/1ARurrnqu21mrli1PQnmguYwyDsvSI2ms/view?usp=sharing" target="_blank" rel="noopener noreferrer">Consultar historial de ancestros de una charola</a>
+
+---
+
 ### Diagrama de Secuencia
 
 ---
