@@ -13,6 +13,7 @@ Este proceso proporciona los pasos para modificar algún proceso ya existente y 
 
 - Modificar procesos de una rápida y genuina.
 - Motivar a las personas a modificar el WOW.
+- Tener procesos actualizados.
 
 ---
 
@@ -44,10 +45,7 @@ Este proceso proporciona los pasos para modificar algún proceso ya existente y 
 
 ### Historial de cambios
 
-| **Tipo de versión** | **Descripción**                                                                | **Fecha**  | **Colaborador**              |
-| ------------------- | ------------------------------------------------------------------------------ | ---------- | ---------------------------- |
-| **1.0**             | Refactorización completa de la wiki.                                           | 19/04/2025 | Valeria Zúñiga Mendoza       |
-| **1.1**             | Se actualizó la plantilla de procesos siguiendo el estándar de versionamiento. | 06/03/2025 | Diego Ricardo Alfaro Pinto   |
-| **1.2**             | Se corrigieron errores de ortografía.                                          | 8/05/2025  | Diego Ricardo Alfaro Pinto   |
-| **1.3**             | Se corrigieron errores de ortografía.                                          | 8/05/2025  | Paola María Garrido Montes   |
-| **1.4**             | Agregar descripción                                                            | 15/05/2025 | Diego Antonio García Padilla |
+| **Tipo de versión** | **Descripción**                               | **Fecha**  | **Colaborador** |
+| ------------------- | --------------------------------------------- | ---------- | --------------- |
+| **1.0**             | Creación del proceso                          | 22/05/2025 | Rommel Pacheco  |
+| **1.1**             | Corrección de responsables, estilo y objetivo | 24/05/2025 | Angélica Ríos   |
