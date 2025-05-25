@@ -120,7 +120,7 @@ Los requisitos no funcionales establecen las expectativas en términos de tiempo
 ---
 
 ## Requisitos de información
-[Diagrama MER](/docs/proyectos/tractores/documentacion/MER%20-%20Tractores.jpeg)
+[Diagrama MER](../MER%20-%20Tractores.jpeg)
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
