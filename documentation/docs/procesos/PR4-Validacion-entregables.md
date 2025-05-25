@@ -64,5 +64,6 @@ Proceso encargado de asegurar que los productos o componentes desarrollados cump
 | **1.2.1**           | Agregado apartado de documentación de resultados  | 15/05/2025 | Juan Pablo Chávez Leal  |
 | **1.2.2**           | Se agrego lista de ítems a validar con el socio   | 19/05/2025 | Juan Eduardo Rosas      |
 | **1.2.3**           | Se especificó como definir los métodos de validación   | 20/05/2025 | Mariana Juárez, Sofía Osorio      |
+| **1.2.4**           | Se especificó la validación de requisitos  | 25/05/2025 | Paola Garrido      |
 
 </details>
