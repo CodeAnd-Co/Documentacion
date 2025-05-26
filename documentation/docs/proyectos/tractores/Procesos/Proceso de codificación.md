@@ -95,24 +95,12 @@ sidebar_position: 1
 
 - Usar tu checklist individual para verificar todo el código.
 - Usar la checklist del equipo para verificar todo el código.
+- Actualizar las checklists en caso de ser necesario.
 
 ### Programar pruebas
 - Ejecutar prueba manual registrando entradas y salidas.
 - Ubicarte en las carpetas de src>pruebas y pruebas en el Front y Backend respectivamente.
 - Codificar la prueba Jest validando que los resultados sean iguales a la prueba manual.
-
----
-
-## Acuerdos de trabajo:
-- Agarramos las tareas que nadie quiere, hacemos 2 tareas malas por una tarea buena.
-- No nos paramos hasta terminar el trabajo actual.
-- Nos damos recordatorios de seguir trabajando cuando notamos que alguien no trabaja.
-- No interrumpimos a las personas que están trabajando en el CMMI.
-- Dejamos el ego de lado al pedir ayuda, nos acercamos a miembros de otros equipos o departamentos.
-
-
-## Visión del equipo:
-- Ser un equipo disciplinado, que aprenda de los errores, y que retrabaje lo mínimo posible para su proceso de aprendizaje.
 
 ---
 
