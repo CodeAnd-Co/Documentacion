@@ -43,4 +43,4 @@ Esta guía forma parte de la documentación oficial del departamento.
 
 | **Tipo de versión** | **Descripción** | **Fecha**  | **Colaborador** |
 | ------------------- | --------------- | ---------- | --------------- |
-| **1.0**             | Primera versión de la guía. | 07/04/2025 | Sofia Osorio Suárez, Mariana Juárez Ramíre  |
+| **1.0**             | Primera versión de la guía. | 26/05/2025 | Sofia Osorio Suárez, Mariana Juárez Ramíre  |
