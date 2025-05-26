@@ -26,7 +26,7 @@ Proceso para establecer un flujo estructurado que garantice la creación de cód
 | Fase     |Descripción                                                    | Responsable             | Meta y práctica específica del CMMI                                        |
 | -------- | -------------------------------------------------------------- | ----------------------- | -------------------------------------------------------------------------- |
 | **Verificación** | Verificar que el análisis del componente esté completo y no sea ambiguo, llenando una copia de la [checklist de análisis](https://docs.google.com/document/d/1dFEBxS_WGWtgCAAW1Sp57Vlgj06-X-od6HbNy2XnZKk/edit?tab=t.0#heading=h.fhau7kjl46pa) y guardándola en la carpeta correspondiente. | Desarrollador. | **VER SP 1.1** (Seleccionar los productos de trabajo para la verificación), **VER SP 1.3** (Establecer los procedimientos y los criterios de verificación), **VER SP 3.1** (Realizar la verificación). |
-| | Verificar si el requisito o historia tiene diagrama de flujo. <br/> - Si tiene diagrama, verificar el diseño llenandola una copia de la [checklist de diseño](https://docs.google.com/document/d/17iPu9h6KR80SHw6kBhKG3mf926_mbkIipx1Aq1sfD2A/edit?tab=t.0#heading=h.fhau7kjl46pa) y guardándola en la carpeta correspondiente <br/> - Si no tiene diagrama, verificar la prioridad del requisito para saber si amerita uno. En caso de que sí, diseñarlo usando la misma checklist.  |
+| | Verificar si el requisito o historia tiene diagrama de flujo. <br/> - Si tiene diagrama, verificar el diseño llenando una copia de la [checklist de diseño](https://docs.google.com/document/d/17iPu9h6KR80SHw6kBhKG3mf926_mbkIipx1Aq1sfD2A/edit?tab=t.0#heading=h.fhau7kjl46pa) y guardándola en la carpeta correspondiente <br/> - Si no tiene diagrama, verificar la prioridad del requisito para saber si amerita uno. En caso de que sí, diseñarlo usando la misma checklist.  |
 | **Desarrollo** | Entrar a la rama de desarrollo del repositorio según la [estrategia de ramas del departamento](../guias/github/git-branches). | Desarrollador. | **CM, SP 2.2** (Controlar los elementos de configuración). |
 | | Ejecutar git pull origin para asegurar que se tiene la versión más actualizada. | Desarrollador. | **CM, SP 2.2** (Controlar los elementos de configuración). |
 | | Crear la rama de trabajo para el requisito o historia asignado siguiendo la estrategia de ramas del equipo. | Desarollador. | **CM, SP 2.2** (Controlar los elementos de configuración). |
@@ -62,9 +62,10 @@ Proceso para establecer un flujo estructurado que garantice la creación de cód
 
 <details>
   <summary>Versiones</summary>
-    | **Tipo de versión** | **Descripción**                                       | **Fecha**  | **Colaborador**                   |
-    | ------------------- | ----------------------------------------------------- | ---------- | -------------------------------- |
-    | **1.0**             | Creación del proceso                                  | 25/04/2025 | Daniel Queijeiro, Daniel Contreras|
-    | **1.1**             | Cambios a pasos de integración y trazabilidad        | 26/04/2025 | Daniel Queijeiro, Diego Fuentes   |
-    | **2.0**             | Agregar verificación, checklist de diseño, análisis y PR | 15/05/2025 | Emiliano Valdivia, Daniel Contreras |
+| **Versión** | **Descripción**                                         | **Fecha**   | **Colaborador**                           |
+|-------------|---------------------------------------------------------|-------------|------------------------------------------|
+| **1.0.0**   | Creación del proceso                                    | 25/04/2025  | Daniel Queijeiro, Daniel Contreras       |
+| **1.1.0**   | Cambios en pasos de integración y trazabilidad          | 26/04/2025  | Daniel Queijeiro, Diego Fuentes           |
+| **2.0.0**   | Agregar verificación, checklist de diseño, análisis y PR| 15/05/2025  | Emiliano Valdivia, Daniel Contreras       |
+| **2.0.1**   | Corregir redacción y mapeo de VER | 26/05/2025  | Juan Carlos Calderón, Daniel Contreras       |
 </details>

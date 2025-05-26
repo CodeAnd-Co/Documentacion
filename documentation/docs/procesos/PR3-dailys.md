@@ -43,21 +43,19 @@ Este proceso establece la estructura y los pasos necesarios para realizar reunio
 
 <details>
   <summary>Versiones</summary>
-    | **Tipo de versión** | **Descripción** | **Fecha** | **Colaborador** |
-    | ------------------- | --------------- | --------- | --------------- |
-    | **1.0** | Primera versión del PR19 | 03/03/2025 | Arturo Sánchez Rodríguez |
-    | **1.1** | Actualización de fases y prácticas CMMI según nuevo documento | 01/04/2025 | Juan Pablo Chávez Leal |
-    | **1.1** | Inclusión de análisis de riesgos y toma de decisiones | 01/04/2025 | Daniel Contreras Chávez |
-    | **1.2** | Actualización de fases y prácticas CMMI según nuevo documento | 02/04/2025 | Hiram Israel Mendoza López |
-    | **1.2** | Actualización de fases y prácticas CMMI según nuevo documento | 02/04/2025 | Mauricio Anguiano Juárez |
-    | **1.2** | Actualización de fases y prácticas CMMI según nuevo documento | 02/04/2025 | Emiliano Valdivia Lara |
-    | **1.3** | Inclusión de SP 2.1 del área de proceso MA | 08/04/2025 | Ian Julián Estrada Castro |
-    | **1.4** | Refactorización | 18/04/2025 | Diego Fuentes |
-    | **1.5** | Corrección PMC 1.1 | 22/04/2025 | Juan Pablo Chávez |
-    | **2.0** | Cambio de todo el proceso para coincidir con cómo hacemos una daily efectiva | 25/04/2025 | Diego Fuentes |
-    | **2.1** | Identificación de práctica 2.4 de MA | 25/04/2025 | Diego Fuentes |
-    | **2.2** | Corregir CMMI y simplificar el proceso | 09/05/2025 | Valeria Zúñiga |
-    | **2.3** | Eliminar riesgos del proceso | 13/05/2025 | Paola María Garrido |
-    | **2.4** | Corrección SP 3.1 Revisar los planes que afectan al proyecto | 13/05/2025 | Arturo Sánchez |
-    | **3.0** | Actualización al formato estándar de procesos | 18/05/2025 | Angel Mauricio Ramírez Herrera |
+| **Versión** | **Descripción**                                                                 | **Fecha**     | **Colaborador**                                     |
+|-------------|----------------------------------------------------------------------------------|---------------|----------------------------------------------------------|
+| **1.0.0**   | Primera versión del PR19.                                                        | 03/03/2025    | Arturo Sánchez Rodríguez                                 |
+| **1.1.0**   | Actualización de fases y prácticas CMMI según nuevo documento.                   | 01/04/2025    | Juan Pablo Chávez Leal                                   |
+| **1.1.1**   | Inclusión de análisis de riesgos y toma de decisiones.                           | 01/04/2025    | Daniel Contreras Chávez                                  |
+| **1.2.0**   | Actualización de fases y prácticas CMMI según nuevo documento.                   | 02/04/2025    | Hiram Israel Mendoza López, Mauricio Anguiano Juárez, Emiliano Valdivia Lara |
+| **1.3.0**   | Inclusión de SP 2.1 del área de proceso MA.                                      | 08/04/2025    | Ian Julián Estrada Castro                                |
+| **1.4.0**   | Refactorización.                                                                 | 18/04/2025    | Diego Fuentes                                            |
+| **1.5.0**   | Corrección de la práctica PMC 1.1.                                               | 22/04/2025    | Juan Pablo Chávez                                        |
+| **2.0.0**   | Cambio total del proceso para alinear con la práctica de una daily efectiva.     | 25/04/2025    | Diego Fuentes                                            |
+| **2.1.0**   | Identificación de la práctica 2.4 del área MA.                                   | 25/04/2025    | Diego Fuentes                                            |
+| **2.2.0**   | Correcciones relacionadas con CMMI y simplificación del proceso.                 | 09/05/2025    | Valeria Zúñiga                                           |
+| **2.3.0**   | Eliminación de la sección de riesgos del proceso.                                | 13/05/2025    | Paola María Garrido                                      |
+| **2.4.0**   | Corrección de la SP 3.1: revisión de los planes que afectan al proyecto.         | 13/05/2025    | Arturo Sánchez                                           |
+| **3.0.0**   | Actualización al formato estándar de procesos.                                   | 18/05/2025    | Ángel Mauricio Ramírez Herrera                          |
 </details>
