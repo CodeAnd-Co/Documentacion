@@ -95,7 +95,7 @@ end
 
 > _Descripción_: El mockup representa la interfaz que permite al Super Administrador consultar la información detallada de un usuario. Al seleccionar un usuario en la tabla, se muestra un panel con sus datos completos, incluyendo nombre, cliente, rol, estado, correo electrónico, teléfono, dirección, fecha de nacimiento y género.
 
-> ![Interfaz de leer usuario](imagenes/mockupLeerUsuario.png)
+> ![Interfaz de leer usuario](imagenes/RF3LeeUsuario.png)
 
 ## **Pruebas Unitarias**
 
@@ -103,6 +103,6 @@ _<u>[Enlace a pruebas RF03 Lee Usuario](https://docs.google.com/spreadsheets/d/1
 
 ### Historial de cambios
 
-| **Tipo de Versión** | **Descripción**                                 | **Fecha** | **Colaborador**               |
-| ------------------- | ----------------------------------------------- | --------- | ----------------------------- |
-| **1.0**             | Actualización de la documentación del requisito. | 07/4/2025 | Paola María Garrido Montes    |
+| **Tipo de Versión** | **Descripción**                                  | **Fecha** | **Colaborador**            |
+| ------------------- | ------------------------------------------------ | --------- | -------------------------- |
+| **1.0**             | Actualización de la documentación del requisito. | 07/4/2025 | Paola María Garrido Montes |

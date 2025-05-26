@@ -39,7 +39,6 @@ Agregar las características del frontend de su proyecto.
   - Pantalla de inicio de sesión
 - **Análisis**
   - Módulo principal de análisis
-  - Selección y carga de filtros
   - Creación y aplicación de fórmulas a los datos
   - Generación de plantillas
   - Generación de reportes
@@ -48,14 +47,10 @@ Agregar las características del frontend de su proyecto.
   - Carga de gráficas
 - **Selección de distribuidores y tractores**
   - Panel para la selección de distribuidores y tractores a analizar
-  - Opciones múltiples para tractores
+  - Selección de parámetros de los tractores
 - **Selección de plantillas**
   - Panel para la selección de plantillas
   - Vista previa de las plantillas
-- **Periodicidad de envíos**
-  - Definición de destinatarios
-  - Definición de frecuencia de envío
-  - Definición de cantidad envíos
 - **Perfil de usuario**
   - Nombre
   - Cerrar sesión
@@ -63,6 +58,11 @@ Agregar las características del frontend de su proyecto.
   - Barra de búsqueda
   - Lista de usuarios
   - Eliminar o modificar usuarios
+
+  - **Periodicidad de envíos**
+  - Definición de destinatarios
+  - Definición de frecuencia de envío
+  - Definición de cantidad envíos
 
 ### Despliegue de su frontend
 El frontend de la aplicación se ejecutará localmente en el equipo del usuario mediante Electron, lo que significa que no requiere un servidor externo para su despliegue.
@@ -74,23 +74,24 @@ El frontend de la aplicación se ejecutará localmente en el equipo del usuario 
 ### Objetivo
 Desglose del componente Backend de la arquitectura. 
 
-- Exponer una API REST para manejar la autenticación de usuarios y guardado de plantillas (backend desplegado).
-- Procesamiento de los datos, generación de reportes, cargado y descargado de archivos (backend local)
+- Exponer una API REST para manejar la autenticación de usuarios y asegurar la persistencia de datos (backend desplegado).
+- Procesamiento de los datos, generación de reportes, cargado y descargado de archivos, así como asegurar el funcionamiento de las distintas funcionalidades especificadas anteriormente. (backend local)
 
 ### Tecnologías
 Escribir las tecnologías que se usarán para crear el backend.
 
 **Backend desplegado:**
 - Node.JS + Express.JS para construir la API
-- DynamoDB SDK para interactuar con la base de datos
+- MySQL para crear y administrar la base de datos
 - JWT para manejar la autenticación
 - PM2 para administrar procesos en producción
 
 **Backend local:**
 - Node.JS + Express.JS para hacer peticiones al backend desplegado.
-- JS PDF para el descargado de archivos al almacenamiento local
-- Hyperformula para el uso, y creación de fórmulas de excel sobre los datos
-- Chart JS para la creación y uso de gráficas
+- JS PDF para el descargado de archivos al almacenamiento local.
+- Hyperformula para el uso, y creación de fórmulas de excel sobre los datos.
+- Chart JS para la creación y uso de gráficas.
+- XSLX para el manejo de archivos de excel.
 
 ### Características
 
@@ -99,9 +100,6 @@ Escribir las tecnologías que se usarán para crear el backend.
   - Uso de middlewares para proteger las rutas según el rol del usuario
 - **RBAC y autenticación**
   - Uso de JWT para manejar las sesiones
-- **Optimización**
-  - Rate Limiting para evitar el abuso de la API
-  - CORS para la seguridad en las peticiones
 
 ### Despliegue
 - AWS EC2 para el despliegue del backend.
@@ -117,21 +115,20 @@ Proveer infraestructura escalable y segura para la aplicación.
 
 ### Servicios
 
-- **EC2 de amazon**
-  - Ya que el servidor no se encargará de hacer el procesamiento de los datos, una pequeña instancia del EC2 será suficiente (Especificar).
+- **EC2 de amazon web services**
+  - Se utilizará un t4g.Medium para soportar el procesamiento de Node.js, MySQL y en un futuro, el procesamiento de datos en el mismo servidor.
 ---
 
 ## Beneficios de la arquitectura seleccionada
 
 Redactar los beneficios de la arquitectura seleccionada.
 
-- Escalable
-- Segura
-- Optimizada
-- Flexible
-- Fácil implementación
-- Conocimiento previo de la mayoría de tecnologías
-- No necesitamos contratar instancias grandes
+- Escalable.
+- Segura.
+- Flexible.
+- Fácil implementación.
+- Conocimiento previo de la mayoría de tecnologías.
+- No necesitamos contratar instancias caras.
 
 ## Diagrama de despliegue
 ``` mermaid 
@@ -176,3 +173,4 @@ graph TD
 | **2.1**             | Corrección al diagrama de despliegue | 04/04/2025 | Ian Julián Estrada Castro |
 | **2.2**             | Corrección de una palabra | 08/05/2025 | Rommel Toledo C. |
 | **3.0**             | Eliminar servicios de AWS | 13/05/2025 | Daniel Queijeiro |
+| **3.1**             | Actualizar manual         | 26/05/2025 | Juan Pablo CHávez Leal |

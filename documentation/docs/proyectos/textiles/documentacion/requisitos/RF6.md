@@ -111,4 +111,11 @@ sequenceDiagram
 > _Descripción_: El mockup muestra la interfaz donde el Super Administrador puede ingresar el nombre del rol y seleccionar los permisos antes de crearlo.
 
 
-![alt text](<imagenes/CreaRol.png>)
+![alt text](<imagenes/RF6.png>)
+
+
+### Historial de cambios
+
+| **Tipo de Versión** | **Descripción**                                  | **Fecha** | **Colaborador** |
+| ------------------- | ------------------------------------------------ | --------- | --------------- |
+| **1.0**             | Se actualizó documentación. | 22/05/2025 | Arturo Sánchez Rodríguez |
