@@ -1,8 +1,8 @@
 ---
-title: Registro de decisiones arquitectónicas
+title: Plantilla de registro de decisiones arquitectónicas
 ---
 
-# Registro de decisiones arquitectónicas
+# Plantilla de registro de decisiones arquitectónicas
 
 ### Título de la decisión arquitectónica
 Status: *Aceptado | Borrador | Rechazado | Obsoleto* 
