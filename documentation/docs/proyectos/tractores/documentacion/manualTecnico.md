@@ -33,12 +33,13 @@ Harvester es una aplicación de escritorio para el analísis de datos recabados 
 * Una **base de datos MySQL**.
 
 ---
+## 2. Backend desacoplado
 
 ## 2. Requisitos previos
 
-### 2.1 Herramientas necesarias
+#### 2.1.1 Herramientas necesarias
 
-Instala las siguientes herramientas en tu equipo local:
+Instala las siguientes herramientas para probar el backend en tu equipo local:
 
 1. **Node.js:** Ejecuta el backend del sistema Harvester. [Descargar](https://nodejs.org/)
 2. **Git:** Permite clonar el código fuente desde GitHub. [Descargar](https://git-scm.com/)
@@ -71,7 +72,7 @@ cd harvester-app
 npm install
 ```
 
-### 3.2 Crear base de datos Harvester
+#### 2.3.2 Crear base de datos Harvester
 
 **MySQL Workbench:**
 
@@ -91,7 +92,7 @@ CREATE DATABASE harvester;
 1. [HARVESTER.sql](https://drive.google.com/file/d/1mxIJnK36602K5GNVSg8o2zXxXfqooOmD/view?usp=sharing)
 ---
 
-## 4. Estructura de Carpetas
+### 2.4 Estructura de Carpetas
 
 Una vez clonado el código fuente, es importante conocer su estructura para facilitar navegación, desarrollo y pruebas.
 
@@ -108,10 +109,9 @@ Una vez clonado el código fuente, es importante conocer su estructura para faci
 ![Backend](./diagrama-de-paquetes-backend-desacoplado.png)
 
 
-
 ---
 
-## 5. Configuración del Entorno
+### 2.5 Configuración del Entorno
 
 ### 5.1 Crear archivo .env en el backend desacoplado
 
@@ -158,12 +158,6 @@ module.exports = {
 
 ---
 
-#### Links de referencia
-
-1. [.env](https://docs.google.com/document/d/1kf0ulFP1xDJwSHOHcgjOH16juCH7AgIilGYx5rKG6hg/edit?usp=sharing)
-2. [constantes.js](https://docs.google.com/document/d/1PWI6vHMdoUOGs7xJ6BK7fUdmTrFR_gfuNQpypb7HtCw/edit?usp=sharing)
----
-
 ## 6. Ejecución del Proyecto
 
 ### 6.1 Ejecutar Backend Local
@@ -173,8 +167,7 @@ cd Backend-Desacoplado-TracTech
 npm start
 ```
 
-### 6.2 Ejecutar Aplicación
-
+Para inicializar el servidor en la instancia de EC2:
 ```bash
 cd App-Local-TracTech
 cd harvester-app
@@ -187,9 +180,67 @@ Consulta el [Manual de Despliegue](./manual-despliegue-tractores.md)
 
 ---
 
-## 7. Pruebas del Sistema
+## 3. App local
 
-### 7.1 Pruebas Manuales
+### 3.1 Requisitos previos
+
+#### 3.1.1 Herramientas necesarias
+Instala las siguientes herramientas para probar la aplicación local en tu equipo local:
+
+1. **Node.js:** Ejecuta el backend del sistema Harvester. [Descargar](https://nodejs.org/)
+2. **Git:** Permite clonar el código fuente desde GitHub. [Descargar](https://git-scm.com/)
+3. **Visual Studio Code** Editor de código.               [Descargar](https://code.visualstudio.com/)
+
+### 3.2 Preparar ambiente de programación
+
+#### 3.2.1 Clonar repositorio de Github
+
+```bash
+cd # Carpeta donde quieras almacenar la aplicación local
+git clone https://github.com/CodeAnd-Co/App-Local-TracTech.git
+cd App-Local-TracTech 
+cd harvester-app
+npm install
+```
+
+#### 3.2.2 Iniciar aplicación
+```bash
+# Estando en la carpeta de harvester-app
+npm start
+```
+
+#### 3.3 Crear instalador de la aplicación
+Existen varias formas de crear un instalador de una aplicación en Electron. Para la aplicación de harvester decidimos usar Electron-builder.
+```bash
+cd App-Local-TracTech
+cd harvester-app
+npm install --save-dev electron-builder
+``` 
+Dentro de nuestro package.json debemos incluir lo siguiente:
+```json
+"build": {
+    "appId": "com.tractech.harvester",
+    "win": {
+      "target": [
+        "nsis"
+      ],
+      "icon": "src/framework/utils/imagenes/HarvesterAppIcon.ico"
+    },
+    "nsis": {
+      "oneClick": true,
+      "installerIcon": "src/framework/utils/imagenes/HarvesterAppIcon.ico",
+      "uninstallerIcon": "src/framework/utils/imagenes/HarvesterAppIcon.ico",
+      "uninstallDisplayName": "Desinstalador Harvester App",
+      "license": "LICENSE",
+      "allowToChangeInstallationDirectory": false
+    }
+  },
+```
+Debemos asegurarnos que tengamos un icono en formato .ico para la aplicación, al igual que una licencia. Harvester esta bajo la licencia de MIT.
+
+## 4. Pruebas del Sistema
+
+### 4.1 Pruebas Manuales
 
 * **SuperAdmin:** superadmin@cnhmx.com / Pruebas
 * **Administrador:** juanpablo@cnhmx.com / Pruebas
@@ -197,13 +248,13 @@ Consulta el [Manual de Despliegue](./manual-despliegue-tractores.md)
 
 ---
 
-## 8. Despliegue
+## 5. Despliegue
 
 Ver [Manual de Despliegue](./manual-despliegue-tractores.md)
 
 ---
 
-## 9. Documentación
+## 6. Documentación
 
 ### Swagger
 
@@ -214,7 +265,7 @@ http://localhost:4000/api-docs
 
 ---
 
-## 10. Referencias
+## 7. Referencias
 
 * [Manual de Despliegue](./manual-despliegue-tractores.md)
 * [Estrategia Técnica](./estrategia.md)
@@ -222,11 +273,11 @@ http://localhost:4000/api-docs
 
 ---
 
-## 11. Historial de Cambios
+## 8. Historial de Cambios
 
 | Versión | Descripción                                        | Fecha      | Colaborador      |
 | ------- | -------------------------------------------------- | ---------- | --------------   |
 | 1.0     | Implementación inicial del Manual Técnico          | 19/05/2025 | Daniel Queijeiro |
-| 2.0     | Actualizar diagrama de paquetes                    | 22/05/2025 | Diego Fuentes, Daniel Queijeiro |
+| 1.1     | Añadir información de la aplicación local          | 21/05/2025 | Daniel Queijeiro |
+| 2.0     | Actualizar diagrama de paquetes          | 22/05/2025 | Diego Fuentes, Daniel Queijeiro |
 | 2.1     | Mejorar el manual                                  | 23/05/2025 | Daniel Queijeiro |
-
