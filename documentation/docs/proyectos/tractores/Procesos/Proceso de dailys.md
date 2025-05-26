@@ -56,3 +56,4 @@ sidebar_position: 3
 | **2.4**             |  Corrección SP 3.1 Revisar los planes que afectan al proyecto.                                                 | 13/05/2025 | Arturo Sánchez       |
 | **3.0**             |  Adaptación del proceso para TracTech.                                                 | 13/05/2025 | Diego Fuentes       |
 | **3.1**             |  Agregar paso para leer visión y mantra.                                                 | 22/05/2025 | Diego Fuentes       |
+| **3.2**             |  Agregar pasos para actualizar el PVG y los experimentos.                                                 | 22/05/2025 | Diego Fuentes       |

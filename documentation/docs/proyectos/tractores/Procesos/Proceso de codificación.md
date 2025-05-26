@@ -109,4 +109,5 @@ sidebar_position: 1
 | **Tipo de Versión** | **Descripción** | **Fecha**  | **Colaborador** |
 | ------------------- | --------------- | ---------- | --------------- |
 | **1.0** | Creación del proceso | 15/05/2025 | Diego Fuentes, Ian Julian Estrada, Daniel Queijeiro, Juan Pablo Chávez. |
-| **1.1** | Ajustar proceso con el refactor | 22/05/2025 | Daniel Queijeiro, Diego Fuentes |
+| **2.0** | Ajustar proceso con el refactor | 22/05/2025 | Daniel Queijeiro, Diego Fuentes |
+| **2.1** | Añadir pasos para actualizar checklists | 26/05/2025 | Diego Fuentes |

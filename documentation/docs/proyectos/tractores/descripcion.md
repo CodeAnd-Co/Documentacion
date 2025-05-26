@@ -371,3 +371,4 @@ import TabItem from '@theme/TabItem';
 | **1.3**             | Corrección de una palabra | 08/05/2025 | Rommel Toledo C. |
 | **1.4**             | Actualización del contenido | 15/05/2025 | Juan Pablo Chávez |
 | **2.0**             | Actualizar visión del equipo | 22/05/2025 | Diego Fuentes |
+| **3.0**             | Añadir mantra y acuerdos de trabajo del equipo | 26/05/2025 | Diego Fuentes |
