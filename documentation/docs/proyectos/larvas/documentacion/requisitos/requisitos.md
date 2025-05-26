@@ -9,13 +9,13 @@ sidebar_position: 1
 
 ### **Lista de Proveedores de Requisitos**  
 
-| Proveedor | Rol | Autoridad | Tipo de Requisitos | Método de Comunicación |
-|-----------|-----|-----------|--------------------|------------------------|
-| Product Owner | Interno | Alta | Funcionales y de negocio | Reuniones diarias en equipo, Whatsapp y Discord.|
-| Socio Formador | Externo | Alta | Funcionales, de negocio y UX | Reuniones 2 veces por semana, Whatsapp. |
-| Architecture Owner| Interno | Alta | No funcionales, de información | Reuniones diarias en equipo, Whatsapp y Discord.  |
-| UX/UI | Interno | Alta | de Interfaz | Reuniones diarias en equipo, Whatsapp y Discord. |
-| Team Members | Interno | Media | Funcionales y No funcionales | Reuniones diarias en equipo, Whatsapp y Discord. |
+| Proveedor          | Rol     | Autoridad | Tipo de Requisitos             | Método de Comunicación                           |
+| ------------------ | ------- | --------- | ------------------------------ | ------------------------------------------------ |
+| Product Owner      | Interno | Alta      | Funcionales y de negocio       | Reuniones diarias en equipo, Whatsapp y Discord. |
+| Socio Formador     | Externo | Alta      | Funcionales, de negocio y UX   | Reuniones 2 veces por semana, Whatsapp.          |
+| Architecture Owner | Interno | Alta      | No funcionales, de información | Reuniones diarias en equipo, Whatsapp y Discord. |
+| UX/UI              | Interno | Alta      | de Interfaz                    | Reuniones diarias en equipo, Whatsapp y Discord. |
+| Team Members       | Interno | Media     | Funcionales y No funcionales   | Reuniones diarias en equipo, Whatsapp y Discord. |
 
 
 ## Requisitos Funcionales
@@ -87,9 +87,10 @@ Los requisitos no funcionales establecen las expectativas en términos de tiempo
 ### Usabilidad
 - La interfaz debe ser intuitiva, permitiendo a los usuarios navegar con facilidad. Los botones deben ofrecer una interacción sencilla y las gráficas presentar los datos relevantes de forma clara y comprensible. El diseño debe ser minimalista y limpio, evitando un aspecto desordenado, y estar optimizado para su uso en tabletas.
 - El sistema deberá adaptarse a una interfaz de tableta
+- La capacitación debe ser de un máximo de 24 horas.
 
 ### Portabilidad
-- La aplicación móvil debe funcionar en Windows 10 y iOS 18 en adelante
+- La aplicación debe funcionar en Windows 10, 11 y macOS 14, macOS 15
 
 ### Seguridad 
 - El sistema debe realizar copias de seguridad de datos automáticas  cada 7 días. Debido a que es muy importante realizar respaldos.
@@ -98,17 +99,17 @@ Los requisitos no funcionales establecen las expectativas en términos de tiempo
 ### Mantenibilidad 
 - La documentación del código debe seguir el estándar establecido en el equipo Tech-Nebrios. 
 - Todo el código debe estar documentado adecuadamente utilizando comentarios explicativos y convenciones de documentación estándar para facilitar la comprensión por parte de otros desarrolladores.
-- El código debe ser acompañado por pruebas unitarias con al menos un 80% de cobertura.
+- El código debe ser acompañado por pruebas unitarias con al menos un 80% de cobertura en Backend.
 
 ### Interoperabilidad
 - El sistema debe ser capaz de integrarse con servicios de almacenamiento en la nube AWS debido a que el cliente cuenta con este servicio.
-- El sistema debe ser capaz de intercambiar datos con aplicaciones de terceros mediante APIs RESTful, utilizando el estándar JSON para el formato de intercambio.
 
 ### Historial de cambios 
-| **Versión** | **Descripción del cambio** | **Fecha** | **Colaborador** |
-|---------|-------------------------|---------|---------|
-| **1.0** | Historias de usuario y requisitos no funcionales | 6/03/2025 | Armando Méndez Castro |
-| **1.0** |  Reviewer y autorizador  | 6/03/2025 | Miguel Angel Uribe Esquivel  |
-| **1.1** |  Descripción de pruebas unitarias del MVP  | 6/03/2025 | Armando Méndez Castro |
-| **2.0** |  Actualizacion de las historias en Ready  | 28/04/2025 | Miguel Angel Uribe |
-| **2.1** |  Se agregaron y eliminaron historias       | 09/05/2025 | Juan Eduardo Rosas |
+| **Versión** | **Descripción del cambio**                       | **Fecha**  | **Colaborador**       |
+| ----------- | ------------------------------------------------ | ---------- | --------------------- |
+| **1.0**     | Historias de usuario y requisitos no funcionales | 6/03/2025  | Armando Méndez Castro |
+| **1.0**     | Reviewer y autorizador                           | 6/03/2025  | Miguel Angel Uribe    |
+| **1.1**     | Descripción de pruebas unitarias del MVP         | 6/03/2025  | Armando Méndez Castro |
+| **2.0**     | Actualizacion de las historias en Ready          | 28/04/2025 | Miguel Angel Uribe    |
+| **2.1**     | Se agregaron y eliminaron historias              | 09/05/2025 | Juan Eduardo Rosas    |
+| **2.2**     | Modificación de los requisiton no funcionales    | 26/05/2025 | Juan Eduardo Rosas    |
