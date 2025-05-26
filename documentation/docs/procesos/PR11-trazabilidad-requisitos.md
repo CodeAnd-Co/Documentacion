@@ -53,5 +53,5 @@ Este proceso asegura la correcta comprensión y la trazabilidad bidireccional de
   | **2.1.0**           | Agregado de trazabilidad en código y vinculación de Pull Requests.    | 13/05/2025 | Rodrigo A. Benítez, Valeria Zúñiga, Paola Garrido |
   | **2.2.0**           | Agregado sobre el Mapa de Dependencias y relación con SP 2.2 de RD.    | 25/05/2025 | Rommel Toledo C. |
   | **2.3.0**           | Reescritura para tener un lenguaje más adecuado.    | 25/05/2025 | Rommel Toledo C. |
-  | **3.3.0**             | Agregar RD2.1 al proceso                                     | 26/05/2025 | Nicolas Hood Figueroa  
+  | **2.4.0**             | Agregar RD2.1 al proceso                                     | 26/05/2025 | Nicolas Hood Figueroa  
 </details>
