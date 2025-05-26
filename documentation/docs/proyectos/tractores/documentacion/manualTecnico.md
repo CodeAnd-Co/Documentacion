@@ -26,9 +26,9 @@ Este manual técnico describe paso a paso cómo preparar, ejecutar, probar y man
 
 ### 1.1 ¿Qué es Harvester?
 
-Harvester es una aplicación de escritorio para el analísis de datos recabados por tractores de CNH, donde sus empleados podrán crear reportes de manera más eficiente. Su arquitectura está compuesta por:
+Harvester es una aplicación de escritorio para el análisis de datos recabados por tractores de CNH, donde sus empleados podrán crear reportes de manera más eficiente. Su arquitectura está compuesta por:
 
-* Una **aplicación de escritorio** desarrollada en HTML, CSS y JS, usando la libreria de ElectronJS.
+* Una **aplicación de escritorio** desarrollada en HTML, CSS y JS, usando la librería de ElectronJS.
 * Un **backend desacoplado** basado en Node.js alojado en una instancia EC2.
 * Una **base de datos MySQL**.
 
@@ -48,7 +48,7 @@ Instala las siguientes herramientas en tu equipo local:
 
 ## 3. Preparación del Proyecto
 
-Después de instalar las herramientas para trabahar, clonaremos los repositorios y prepararemos el entorno de desarrollo local.
+Después de instalar las herramientas para trabajar, clonaremos los repositorios y prepararemos el entorno de desarrollo local.
 
 ### 3.1 Clonar los Repositorios:
 
@@ -93,7 +93,7 @@ CREATE DATABASE harvester;
 
 ## 4. Estructura de Carpetas
 
-Una vez clonado el código fuente, es importante conocer su estructura para facilitar navegación, desarrollo y pruebas.
+Una vez clonado el código fuente, es importante conocer su estructura para facilitar la navegación, el desarrollo y las pruebas.
 
 **FrontEnd:**
 <iframe

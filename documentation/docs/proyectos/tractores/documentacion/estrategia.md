@@ -2,7 +2,7 @@
 title: Estrategia técnica TracTech
 ---
 
-# Plantilla Estrategia tecnica
+# Plantilla Estrategia técnica
 
 ## Objetivo
 
@@ -14,8 +14,8 @@ Establecer lineamientos claros para el desarrollo, asegurando calidad y consiste
 
 Utilizaremos 2 repositorios separados que manejarán:
 
-- **App local**: La aplicación que estará empaquetada en electron para cada uno de los equipos del cliente y donde se hará el procesamiento de los datos de los reportes, así como la creación de y modificación de los mismos.
-- **Backend desplegado**: Este será el alojado en la instancia del EC2, donde se manejará el guardado de los datos como el control de acceso basado en roles y las plantillas creadas.
+- **App local**: La aplicación que estará empaquetada en electron para cada uno de los equipos del cliente y donde se hará el procesamiento de los datos de los reportes, así como la creación y modificación de los mismos.
+- **Backend desplegado**: Este será el alojado en la instancia del EC2, donde se manejará el guardado de los datos como el control de acceso basado en roles, así como las plantillas creadas.
 
 De esta manera nuestro sistema puede ser modular y las responsabilidades se dividen eficientemente.
 
@@ -75,7 +75,7 @@ Documentar claramente las funcionalidades y código del sistema para lectura en 
 - Se agregaron espacios alrededor de operadores y comas.
 - Se agregan punto y coma al final de definiciones simples.
 - Para documentar el código utilizaremos el estándar de documentación JS docs.
-- El detalle del estándar de codificación se podrá ver en el siguiente documento: [**Estandar de codificación**](../../../standards/estandar-codificacion.md).
+- El detalle del estándar de codificación se podrá ver en el siguiente documento: [**Estándar de codificación**](../../../standards/estandar-codificacion.md).
 
 ---
 
@@ -157,7 +157,7 @@ Cada módulo puede incluir pruebas unitarias para garantizar su correcto funcion
 
 Se encarga de la integración de la aplicación con ElectronJS
 
-- **main.js**: Archivo principal de Electron. Crea la ventana, gestiona eventos del sistema. Inicia Electron y conecta frontend con backend local.
+- **main.js**: Archivo principal de Electron que crea la ventana, gestiona los eventos del sistema, inicia Electron y conecta el frontend con el backend local.
 
 ---
 
@@ -165,7 +165,7 @@ Se encarga de la integración de la aplicación con ElectronJS
 
 | **Tipo de versión** | **Descripción**                    | **Fecha** | **Colaborador**        |
 |---------------------|------------------------------------| --------- | ---------------------- |
-| **1.0**             | Primera versión de la estratégia técnica        | 06/03/2025 | Daniel Contreras Chávez      |
+| **1.0**             | Primera versión de la estrategia técnica        | 06/03/2025 | Daniel Contreras Chávez      |
 | **2.0**             | Se hizo el cambio del diagrama de paquetes de la aplicación local en electron | 25/03/2025   | Ian Julián Estrada Castro |
 | **2.1**             | Se quitó ViewModels del diagrama de paquetes. Se actualizó diagrama de backend desacoplado. Se cambió a español | 27/03/2025 | Ian Julián Estrada Castro |
 | **2.2** | Se actualizó el diagrama de paquetes de electron y su explicación | 25/04/2025 | Daniel Contreras |
