@@ -47,13 +47,13 @@ Este proceso establece los pasos necesarios para implementar correctamente las �
 
 <details>   
 <summary>Versiones</summary>
-| **Versión** | **Descripción**                                                   | **Fecha**     | **Colaborador(es)**                           |
-|-------------|--------------------------------------------------------------------|---------------|-----------------------------------------------|
-| **2.0**     | Proceso exclusivo para SP de CMMI                                  | —             | Valeria Zúñiga, Paola Garrido                 |
-| **2.1**     | Correcciones y modificaciones de pasos                             | 28/03/2025    | Valeria Zúñiga                                |
-| **3.0**     | Pasos para institucionalizar el proceso                            | —             | Diego Fuentes                                 |
-| **3.1**     | Refactorización                                                    | 18/04/2025    | Diego Fuentes                                 |
-| **4.0**     | Modificación del proceso basado en áreas del CMMI y colaboración   | 11/05/2025    | Valeria Zúñiga                                |
-| **5.0**     | Actualización al formato estándar de procesos                      | 18/05/2025    | Ángel Mauricio Ramírez Herrera                |
+| **Versión** | **Descripción**                                                                 | **Fecha**     | **Colaborador**                         |
+|-------------|----------------------------------------------------------------------------------|---------------|---------------------------------------------|
+| **2.0.0**   | Proceso exclusivo para prácticas específicas (SP) del modelo CMMI.              | —             | Valeria Zúñiga, Paola Garrido               |
+| **2.1.0**   | Correcciones y ajustes en la secuencia de pasos.                                | 28/03/2025    | Valeria Zúñiga                              |
+| **3.0.0**   | Inclusión de pasos para institucionalizar el proceso.                           | —             | Diego Fuentes                               |
+| **3.1.0**   | Refactorización general del proceso.                                            | 18/04/2025    | Diego Fuentes                               |
+| **4.0.0**   | Modificación del proceso basada en áreas de proceso de CMMI y trabajo colaborativo. | 11/05/2025 | Valeria Zúñiga                              |
+| **5.0.0**   | Actualización al formato estándar de documentación de procesos.                 | 18/05/2025    | Ángel Mauricio Ramírez Herrera              |
 
 </details>

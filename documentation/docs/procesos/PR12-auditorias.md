@@ -54,18 +54,18 @@ Asegurar la evaluación sistemática de procesos y productos de trabajo mediante
 
 <details>
   <summary>Versiones</summary>
-    | **Tipo de Versión** | **Descripción**                                                                                                        | **Fecha**  | **Colaborador**                         |
-    | ------------------- | ---------------------------------------------------------------------------------------------------------------------- | ---------- | --------------------------------------- |
-    | **1.0**             | Creación de proceso de auditorías                                                                                      | 19/3/2025  | Juan Carlos Calderon, Mauricio Anguiano |
-    | **1.1**             | Se agregó PPQA 2.2 al proceso                                                                                          | 8/4/2025   | Juan Carlos Calderon, Mauricio Anguiano |
-    | **1.2**             | Refactorización                                                                                                         | 18/4/2025  | Diego Fuentes Juvera                    |
-    | **2.0**             | Agregar pasos para bitácora                                                                                            | 22/4/2025  | Ian Julián Estrada Castro               |
-    | **3.0**             | Agregar pasos para checklists, conexión con acciones correctivas                                                      | 22/4/2025  | Diego Fuentes Juvera                    |
-    | **4.0**             | Agregar pasos para auditar CM                                                                                          | 22/4/2025  | Diego Fuentes Juvera                    |
-    | **4.1**             | Agregar paso para asignar un responsable de auditoría y especificar cuándo se auditan procesos                         | 23/4/2025  | Diego Fuentes Juvera                    |
-    | **4.2**             | Agregar paso para crear copias de la checklist y del informe de evaluación                                            | 23/4/2025  | Diego Fuentes Juvera                    |
-    | **5.0**             | Corregir el proceso completo                                                                                           | 23/4/2025  | Angel Ramírez, Valeria Zúñiga           |
-    | **5.1**             | Corregir sintaxis y ortografía                                                                                         | 23/4/2025  | Max Toscano                             |
-    | **5.2**             | Cambiar nombre de la copia del informe de evaluación, aclarar pasos para llenar bitácora                               | 24/4/2025  | Max Toscano                             |
-    | **5.3**             | Implementar acciones correctivas y simplificar el proceso                                                              | 08/05/2025 | Armando Méndez Castro, Valeria Zúñiga   |
+| **Versión** | **Descripción**                                                                                           | **Fecha**   | **Colaborador**                         |
+|-------------|-----------------------------------------------------------------------------------------------------------|-------------|---------------------------------------------|
+| **1.0.0**   | Creación del proceso de auditorías.                                                                       | 19/03/2025  | Juan Carlos Calderón, Mauricio Anguiano     |
+| **1.1.0**   | Se agregó PPQA 2.2 al proceso.                                                                             | 08/04/2025  | Juan Carlos Calderón, Mauricio Anguiano     |
+| **1.2.0**   | Refactorización del proceso para mejorar claridad y estructura.                                            | 18/04/2025  | Diego Fuentes Juvera                         |
+| **1.3.0**   | Agregados pasos para manejo de bitácora.                                                                  | 22/04/2025  | Ian Julián Estrada Castro                    |
+| **1.4.0**   | Incorporación de pasos para checklists y conexión con acciones correctivas.                                | 22/04/2025  | Diego Fuentes Juvera                         |
+| **1.5.0**   | Inclusión de pasos específicos para auditar Gestión de Configuración (CM).                                | 22/04/2025  | Diego Fuentes Juvera                         |
+| **1.5.1**   | Agregado paso para asignar responsable de auditoría y definir momentos para auditar procesos.             | 23/04/2025  | Diego Fuentes Juvera                         |
+| **1.5.2**   | Agregado paso para crear copias de checklist e informe de evaluación.                                     | 23/04/2025  | Diego Fuentes Juvera                         |
+| **2.0.0**   | Corrección completa del proceso para alinear con mejores prácticas y estándares internos.                 | 23/04/2025  | Ángel Mauricio Ramírez Herrera, Valeria Zúñiga |
+| **2.0.1**   | Corrección de sintaxis y ortografía en todo el documento.                                                 | 23/04/2025  | Max Toscano                                 |
+| **2.0.2**   | Cambiado nombre de copia del informe de evaluación; aclarados pasos para llenar bitácora.                 | 24/04/2025  | Max Toscano                                 |
+| **2.1.0**   | Implementación de acciones correctivas y simplificación del proceso para mayor eficiencia.                 | 08/05/2025  | Armando Méndez Castro, Valeria Zúñiga       |
 </details>

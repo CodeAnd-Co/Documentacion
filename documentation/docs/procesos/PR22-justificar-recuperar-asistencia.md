@@ -56,16 +56,13 @@ Procedimiento para justificar ausencias y recuperar asistencias dentro del equip
 
 <details>
   <summary>Versiones</summary>
-
-
-| **Tipo de versión** | **Descripción**                                                | **Fecha**  | **Colaborador**                                                |
-| -------------------- | --------------------------------------------------------------- | ---------- | -------------------------------------------------------------- |
-| **1.0**              | Creación del proceso de justificación de faltas               | 23/02/2025 | Nicolas Hood, Daniel Queijeiro, Ángel Ramírez, Diego Fuentes |
-| **1.1**              | Agregar plantilla al proceso de justificación de faltas        | 03/03/2025 | Nicolas Hood                                                   |
-| **2.0**              | Agregar la recuperación de asistencia                          | 04/03/2025 | Nicolas Hood, Hiram Mendoza                                    |
-| **2.1**              | Refactorización                                                | 18/04/2025 | Diego Fuentes                                                  |
-| **2.3**              | Correcciones PMC                                                | 22/04/2025 | Juan Pablo Chávez Leal                                        |
-| **2.4**              | Implementar acciones correctivas                                | 28/04/2025 | Max Toscano                                                    |
-| **3.0**              | Juntar procesos de justificación y recuperación de asistencia | 11/05/2025 | Valeria Zúñiga                                               |
-
+| **Versión** | **Descripción**                                                        | **Fecha**   | **Colaborador**                                                   |
+|-------------|------------------------------------------------------------------------|-------------|------------------------------------------------------------------|
+| **1.0.0**   | Creación del proceso de justificación de faltas                       | 23/02/2025  | Nicolás Hood, Daniel Queijeiro, Ángel Ramírez, Diego Fuentes    |
+| **1.1.0**   | Inclusión de plantilla al proceso de justificación de faltas          | 03/03/2025  | Nicolás Hood                                                    |
+| **2.0.0**   | Incorporación del proceso de recuperación de asistencia               | 04/03/2025  | Nicolás Hood, Hiram Mendoza                                     |
+| **2.1.0**   | Refactorización del proceso                                           | 18/04/2025  | Diego Fuentes                                                   |
+| **2.3.0**   | Correcciones conforme a PMC                                           | 22/04/2025  | Juan Pablo Chávez Leal                                         |
+| **2.4.0**   | Implementación de acciones correctivas                               | 28/04/2025  | Max Toscano                                                   |
+| **3.0.0**   | Unificación de los procesos de justificación y recuperación de asistencia | 11/05/2025  | Valeria Zúñiga                                                |
 </details>

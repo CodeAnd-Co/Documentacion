@@ -154,12 +154,12 @@ sidebar_position: [Número]
 
 <details>
   <summary>Versiones</summary>
-    | **Tipo de versión** | **Descripción** | **Fecha** | **Colaborador** |
-    | ------------------- | --------------- | --------- | --------------- |
-    | **1.0.0** | Refactorización completa de la wiki. | 19/04/2025 | Valeria Zúñiga Mendoza |
-    | **1.1.0** | Se actualizó la plantilla de procesos siguiendo el estándar de versionamiento. | 06/03/2025 | Diego Ricardo Alfaro Pinto |
-    | **1.2.0** | Se corrigieron errores de ortografía. | 08/05/2025 | Diego Ricardo Alfaro Pinto |
-    | **1.3.0** | Se corrigieron errores de ortografía. | 08/05/2025 | Paola María Garrido Montes |
-    | **1.4.0** | Agregar descripción | 15/05/2025 | Diego Antonio García Padilla |
-    | **2.0.0** | Actualización al nuevo formato estándar | 18/05/2025 | Angel Mauricio Ramírez Herrera |
+| **Tipo de versión** | **Descripción**                                                                 | **Fecha**     | **Colaborador**                   |
+|---------------------|---------------------------------------------------------------------------------|---------------|-----------------------------------|
+| **1.0.0**           | Refactorización completa de la wiki.                                           | 19/04/2025    | Valeria Zúñiga Mendoza            |
+| **1.1.0**           | Se actualizó la plantilla de procesos siguiendo el estándar de versionamiento. | 06/03/2025    | Diego Ricardo Alfaro Pinto        |
+| **1.1.1**           | Corrección de errores ortográficos.                                            | 08/05/2025    | Diego Ricardo Alfaro Pinto        |
+| **1.1.2**           | Corrección de errores ortográficos.                                            | 08/05/2025    | Paola María Garrido Montes        |
+| **1.2.0**           | Agregar descripción.                                                            | 15/05/2025    | Diego Antonio García Padilla      |
+| **2.0.0**           | Actualización al nuevo formato estándar.                                       | 18/05/2025    | Angel Mauricio Ramírez Herrera    |
 </details>
