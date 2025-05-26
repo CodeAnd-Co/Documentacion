@@ -170,6 +170,8 @@ Herramientas a considerar:
 | ----------------------------------------------------------------- | --------------------------------------------------- |
 | Dispositivos en el entorno de producción                          | Priorizar las funciones que forman parte del MVP    |
 | Los usuarios finales no se adaptan a la aplicación                | Capacitación y retroalimentación de los usuarios    |
+| Salud de los miembros del equipo              | Capacitación y retroalimentación de los usuarios    |
+
 
 # Manejo de las Pruebas
 
@@ -198,4 +200,4 @@ Proceso para validar las pruebas
 | **1.0**             | Primera versión                | 8/03/2025 | Miguel Angel Uribe Esquivel  |
 | **1.1**             | Agregar frameworks, dispositivos y riesgos                 | 8/03/2025 | Ian Julián Estrada Castro  |
 | **1.2**             | Manejo de pruebas y Aprobacion y firma             | 11/03/2025 | Juan Eduardo Rosas Ceron  |
-| **2.0**             | Actualización del stp            | 23/05/2025 | Armando Méndez Castrp  |
+| **2.0**             | Actualización de la información            | 23/05/2025 | Armando Méndez Castro  |
