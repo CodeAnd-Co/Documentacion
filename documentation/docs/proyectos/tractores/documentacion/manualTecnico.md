@@ -26,18 +26,16 @@ Este manual técnico describe paso a paso cómo preparar, ejecutar, probar y man
 
 ### 1.1 ¿Qué es Harvester?
 
-Harvester es una aplicación de escritorio para el analísis de datos recabados por tractores de CNH, donde sus empleados podrán crear reportes de manera más eficiente. Su arquitectura está compuesta por:
+Harvester es una aplicación de escritorio para el análisis de datos recabados por tractores de CNH, donde sus empleados podrán crear reportes de manera más eficiente. Su arquitectura está compuesta por:
 
-* Una **aplicación de escritorio** desarrollada en HTML, CSS y JS, usando la libreria de ElectronJS.
+* Una **aplicación de escritorio** desarrollada en HTML, CSS y JS, usando la librería de ElectronJS.
 * Un **backend desacoplado** basado en Node.js alojado en una instancia EC2.
 * Una **base de datos MySQL**.
 
 ---
-## 2. Backend desacoplado
+## 2 Requisitos previos
 
-## 2. Requisitos previos
-
-#### 2.1.1 Herramientas necesarias
+### 2.1 Herramientas necesarias
 
 Instala las siguientes herramientas para probar el backend en tu equipo local:
 
@@ -45,11 +43,32 @@ Instala las siguientes herramientas para probar el backend en tu equipo local:
 2. **Git:** Permite clonar el código fuente desde GitHub. [Descargar](https://git-scm.com/)
 3. **MySQL Workbench:** Interfaz visual para administrar la base de datos. [Descargar](https://dev.mysql.com/downloads/workbench/)
 4. **Postman:** Herramienta para probar las APIs del backend. [Descargar](https://www.postman.com/)
+5. **Visual Studio Code** Editor de código.               [Descargar](https://code.visualstudio.com/)
+
+#### 2.2.1 Crear base de datos Harvester
+
+**MySQL Workbench:**
+
+1. Abrir Workbench
+2. Crear nueva conexión con el host, puerto, usuario y contraseña
+3. Crear base:
+
+```sql
+CREATE DATABASE harvester;
+```
+
+4. Cargar y ejecutar el script `HARVESTER.sql`
+
+
+#### Links de referencia
+
+1. [HARVESTER.sql](https://drive.google.com/file/d/1mxIJnK36602K5GNVSg8o2zXxXfqooOmD/view?usp=sharing)
+---
 
 
 ## 3. Preparación del Proyecto
 
-Después de instalar las herramientas para trabahar, clonaremos los repositorios y prepararemos el entorno de desarrollo local.
+Después de instalar las herramientas para trabajar, clonaremos los repositorios y prepararemos el entorno de desarrollo local.
 
 ### 3.1 Clonar los Repositorios:
 
@@ -72,27 +91,7 @@ cd harvester-app
 npm install
 ```
 
-#### 2.3.2 Crear base de datos Harvester
-
-**MySQL Workbench:**
-
-1. Abrir Workbench
-2. Crear nueva conexión con el host, puerto, usuario y contraseña
-3. Crear base:
-
-```sql
-CREATE DATABASE harvester;
-```
-
-4. Cargar y ejecutar el script `HARVESTER.sql`
-
-
-#### Links de referencia
-
-1. [HARVESTER.sql](https://drive.google.com/file/d/1mxIJnK36602K5GNVSg8o2zXxXfqooOmD/view?usp=sharing)
----
-
-### 2.4 Estructura de Carpetas
+## 4. Estructura de Carpetas
 
 Una vez clonado el código fuente, es importante conocer su estructura para facilitar navegación, desarrollo y pruebas.
 
@@ -111,7 +110,7 @@ Una vez clonado el código fuente, es importante conocer su estructura para faci
 
 ---
 
-### 2.5 Configuración del Entorno
+## 5. Configuración del Entorno
 
 ### 5.1 Crear archivo .env en el backend desacoplado
 
@@ -130,11 +129,11 @@ DURACION_JWT=
 SU=
 ```
 
-### 5.1 Crear archivo constantes.js en la App local
+### 5.2 Crear archivo constantes.js en la App local
 
 1. Crear el archivo constantes.js a nivel de ./App-Local-TracTech/harvester-app/src/framework/utils/scripts
 
-#### 5.1.1 Constantes de la app
+#### 5.2.1 Constantes de la app
 
 ```JS
 // RUTA A SERVIDOR - ENTORNO MAIN
@@ -180,36 +179,15 @@ Consulta el [Manual de Despliegue](./manual-despliegue-tractores.md)
 
 ---
 
-## 3. App local
+### 6.1 App local
 
-### 3.1 Requisitos previos
-
-#### 3.1.1 Herramientas necesarias
-Instala las siguientes herramientas para probar la aplicación local en tu equipo local:
-
-1. **Node.js:** Ejecuta el backend del sistema Harvester. [Descargar](https://nodejs.org/)
-2. **Git:** Permite clonar el código fuente desde GitHub. [Descargar](https://git-scm.com/)
-3. **Visual Studio Code** Editor de código.               [Descargar](https://code.visualstudio.com/)
-
-### 3.2 Preparar ambiente de programación
-
-#### 3.2.1 Clonar repositorio de Github
-
-```bash
-cd # Carpeta donde quieras almacenar la aplicación local
-git clone https://github.com/CodeAnd-Co/App-Local-TracTech.git
-cd App-Local-TracTech 
-cd harvester-app
-npm install
-```
-
-#### 3.2.2 Iniciar aplicación
+### 6.2 Iniciar aplicación
 ```bash
 # Estando en la carpeta de harvester-app
 npm start
 ```
 
-#### 3.3 Crear instalador de la aplicación
+#### 6.3 Crear instalador de la aplicación
 Existen varias formas de crear un instalador de una aplicación en Electron. Para la aplicación de harvester decidimos usar Electron-builder.
 ```bash
 cd App-Local-TracTech
@@ -236,11 +214,11 @@ Dentro de nuestro package.json debemos incluir lo siguiente:
     }
   },
 ```
-Debemos asegurarnos que tengamos un icono en formato .ico para la aplicación, al igual que una licencia. Harvester esta bajo la licencia de MIT.
+Debemos asegurarnos que tengamos un icono en formato .ico para la aplicación, al igual que una licencia. Harvester está bajo la licencia de MIT.
 
-## 4. Pruebas del Sistema
+## 7. Pruebas del Sistema
 
-### 4.1 Pruebas Manuales
+### 7.1 Pruebas Manuales
 
 * **SuperAdmin:** superadmin@cnhmx.com / Pruebas
 * **Administrador:** juanpablo@cnhmx.com / Pruebas
@@ -248,13 +226,13 @@ Debemos asegurarnos que tengamos un icono en formato .ico para la aplicación, a
 
 ---
 
-## 5. Despliegue
+## 8. Despliegue
 
 Ver [Manual de Despliegue](./manual-despliegue-tractores.md)
 
 ---
 
-## 6. Documentación
+## 9. Documentación
 
 ### Swagger
 
@@ -265,7 +243,7 @@ http://localhost:4000/api-docs
 
 ---
 
-## 7. Referencias
+## 10. Referencias
 
 * [Manual de Despliegue](./manual-despliegue-tractores.md)
 * [Estrategia Técnica](./estrategia.md)
@@ -273,7 +251,7 @@ http://localhost:4000/api-docs
 
 ---
 
-## 8. Historial de Cambios
+## 11. Historial de Cambios
 
 | Versión | Descripción                                        | Fecha      | Colaborador      |
 | ------- | -------------------------------------------------- | ---------- | --------------   |

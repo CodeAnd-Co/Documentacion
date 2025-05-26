@@ -170,4 +170,4 @@ Se encarga de la integración de la aplicación con ElectronJS
 | **2.1**             | Se quitó ViewModels del diagrama de paquetes. Se actualizó diagrama de backend desacoplado. Se cambió a español | 27/03/2025 | Ian Julián Estrada Castro |
 | **2.2** | Se actualizó el diagrama de paquetes de electron y su explicación | 25/04/2025 | Daniel Contreras |
 | **2.3** | Se actualizó el diagrama de paquetes de electron y componentes | 13/05/2025 | Daniel Queijeiro |
-| **2.3** | Se actualizó la definición de repositorios | 23/05/2025 | Daniel Queijeiro |
+| **2.4** | Se actualizó la definición de repositorios | 23/05/2025 | Daniel Queijeiro |
