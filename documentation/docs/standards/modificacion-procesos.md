@@ -1,91 +1,89 @@
 ---
-title: Estándar para la modificación o creación de procesos
+title: ⚙️ | Estándar para la modificación o creación de procesos
 sidebar_position: 3
 ---
 
-# Estándar para la modificación o creación de procesos
+# ⚙️ Estándar para la modificación o creación de procesos
+
+Establece los criterios para determinar si una modificación a un proceso existente es suficiente o si debe crearse uno nuevo. Su correcta aplicación asegura la coherencia, trazabilidad y vigencia de los procesos documentados en la organización.
+
+## 🎯 Objetivo
+
+- Definir un marco de decisión claro entre modificar o reemplazar un proceso existente.
+- Evitar alteraciones sustanciales no controladas que puedan comprometer la integridad del proceso.
+- Facilitar la trazabilidad de cambios y asegurar la alineación con los objetivos organizacionales.
+
+## 📑 Artefactos en los que aplica
+
+* Procesos documentados: [/docs/procesos](#)
+* Plantillas de procesos: [/docs/plantillas/plantilla-procesos](#)
+* Historial de cambios: Incluido en cada pull request del repositorio correspondiente.
+
+## 📋 Estándares
+
+### 🔍 Identificación de necesidad
+
+- **Evaluar el cumplimiento parcial** del proceso actual frente a los nuevos requerimientos.
+- **Analizar el porcentaje de actividades afectadas** por los cambios (mayor o menor al 50%).
+- **Verificar si el propósito original del proceso permanece vigente**.
+- **Identificar si se incorporan nuevos elementos clave**: herramientas, roles o metodologías no contempladas previamente.
+- **Detectar la inclusión de nuevos stakeholders** que requieran estructuras diferenciadas.
+
+### 🛠️ Modificación de procesos existentes
+
+- Se permite cuando los cambios no alteran la estructura ni el objetivo del proceso.
+- Puede implicar la actualización de actividades, responsables o herramientas, siempre que el flujo esencial se mantenga.
+- La documentación base debe seguir siendo válida con ajustes menores.
+
+#### Cambios mínimos permitidos
+
+- Correcciones de redacción, formato o estilo.
+- Ajustes en la descripción de actividades sin modificar su lógica.
+- Inclusión de pasos opcionales que no afecten la secuencia general.
+- Mejoras en claridad, consistencia o eficiencia documental.
+
+#### Cambios máximos permitidos
+
+- Adición o eliminación de hasta el 50% de las actividades del proceso.
+- Reasignación de roles sin alterar responsabilidades clave.
+- Integración de nuevas herramientas sin modificar sustancialmente el flujo del proceso.
+
+### 🆕 Creación de un nuevo proceso
+
+- Cuando el cambio transforma completamente la lógica o el propósito del proceso existente.
+- Si se atiende a un stakeholder nuevo con requerimientos distintos.
+- Cuando el proceso actual se considera obsoleto o no aplicable.
+- En casos de fusión de procesos o por cambios regulatorios significativos.
+
+## 📝 Ejemplos
+
+### ✅ Correcto
+
+> Se desea agregar dos actividades y actualizar el nombre de un rol en un proceso vigente, sin alterar su objetivo ni su flujo general.
+
+✅ Se modifica el proceso existente, manteniendo su número de versión con incremento menor (por ejemplo, de 2.0.0 a 2.1.0).
 
 ---
 
-## 1. Propósito
-Este documento establece los criterios que determinan si un cambio en un proceso existente es suficiente o si es necesario crear un nuevo proceso. Además, define los límites de modificaciones permitidas en un proceso antes de requerir su reemplazo.
+### ❌ Incorrecto
 
-## 2. Identificación de necesidad
-Para determinar si se debe modificar un proceso existente o crear uno nuevo, responde las siguientes preguntas:
+> Se necesita reemplazar el 70% de las actividades, cambiar el propósito del proceso y añadir nuevos actores que no estaban contemplados.
 
-- **¿El proceso actual cumple parcialmente con los nuevos requerimientos?**
-  - **Sí** → Se puede modificar el proceso existente para ajustarlo a los nuevos requerimientos.
-  - **No** → Es necesario crear un nuevo proceso que cubra completamente los requerimientos.
+❌ Se modifica el proceso actual en lugar de crear uno nuevo, lo que genera ambigüedad e inconsistencia documental.
 
-- **¿Los cambios afectan a más del 50% de las actividades del proceso?**
-  - **Sí** → Se recomienda crear un nuevo proceso, ya que el actual cambiaría de forma significativa.
-  - **No** → Se puede modificar el proceso existente manteniendo su estructura principal.
+## 📎 Recursos relacionados
 
-- **¿El propósito del proceso sigue siendo el mismo?**
-  - **Sí** → Se debe modificar el proceso existente, ya que su objetivo sigue siendo válido.
-  - **No** → Se debe crear un nuevo proceso, ya que su finalidad ha cambiado.
+- [Estándar para crear nuevas plantillas](/docs/next/standards/estandar-plantillas)
+- [Definición de Ítems](/docs/next/procesos/PR2-definicion-items)
+- [Plantilla para estándares](/docs/next/plantillas/plantilla-estandares)
 
-- **¿Se requieren nuevas herramientas, roles o metodologías que no existían antes?**
-  - **Sí** → Se debe crear un nuevo proceso que integre estos nuevos elementos.
-  - **No** → Se puede modificar el proceso existente sin necesidad de una nueva estructura.
+## 📚 Historial de cambios
 
-- **¿El cambio afecta a un stakeholder adicional o específico?**
-  - **Sí** → Se debe crear un nuevo proceso que contemple los nuevos requerimientos del stakeholder.
-  - **No** → Se puede modificar el proceso actual sin necesidad de generar uno nuevo.
+<details>
+  <summary>Versiones</summary>
+| **Tipo de versión** | **Descripción**                   | **Fecha**   | **Colaborador**                                                   |
+|---------------------|-----------------------------------|-------------|-------------------------------------------------------------------|
+| **1.0.0**           | Creación inicial del estándar.    | 23/03/2025  | Galo Alejandro del Río Viggiano <br/> Ian Julián Estrada Castro  |
+| **1.2.0**           | Corregir redacción y estilo.    | 26/05/2025  | Angel Mauricio Ramírez Herrera  |
 
-## 3. Criterios para modificar un proceso existente
-Un proceso existente debe modificarse cuando:
-
-- Los cambios propuestos no alteran la estructura fundamental del proceso.
-- Se requiere actualizar actividades o responsabilidades sin afectar su objetivo general.
-- Se incorporan mejoras de eficiencia sin cambiar el resultado final del proceso.
-- La documentación sigue siendo válida con ajustes menores.
-- No se introducen nuevos actores o sistemas que requieran una reformulación completa.
-
-### Cambios mínimos permitidos
-Se consideran cambios mínimos aquellos que:
-
-- Ajustan descripciones sin modificar la lógica del proceso.
-- Corrigen errores de redacción o formato.
-- Agregan pasos opcionales sin afectar la secuencia principal.
-- Mejoran la claridad o simplifican la documentación.
-
-### Cambios máximos permitidos
-Se consideran cambios máximos en un proceso antes de requerir la creación de uno nuevo cuando:
-
-- Se agregan o eliminan más del 50% de las actividades.
-- Se cambia el objetivo o el resultado final del proceso.
-- Se modifican significativamente los roles o responsabilidades de los actores clave.
-- Se introducen tecnologías o herramientas que alteran la ejecución original del proceso.
-
-## 4. Criterios para crear un nuevo proceso
-Debe crearse un nuevo proceso cuando:
-
-- El cambio propuesto transforma por completo el flujo de trabajo.
-- Se requiere un proceso específico para un nuevo stakeholder.
-- El proceso existente ya no es aplicable o se ha vuelto obsoleto.
-- Se fusionan varios procesos en uno nuevo.
-- Existen diferencias regulatorias o de cumplimiento que lo justifican.
-
-## 5. Proceso de decisión
-1. **Análisis de impacto:** Evaluar el proceso actual y los cambios propuestos.
-2. **Comparación con los criterios:** Determinar si se cumplen los criterios de modificación o de creación de un nuevo proceso.
-3. **Revisión y validación:** Someter la decisión al Comité de Revisión.
-4. **Implementación:** Aplicar la modificación o desarrollar el nuevo proceso según las políticas establecidas.
-
-## 6. Registro de cambios
-Cualquier modificación o nuevo proceso debe documentarse con:
-
-- Autor del cambio.
-- Descripción del cambio.
-- Versión.
-
-Esto se hace en la documentación del pull request.
-
----
-
-## Historial de cambios
-
-| **Tipo de versión** | **Descripción**                                                                                                                | **Fecha** | **Colaborador**                                   |
-| ------------------- | ------------------------------------------------------------------------------------------------------------------------------ | --------- | ------------------------------------------------- |
-| **1.0**             | Creación del estándar.  | 23/03/2025 | Galo Alejandro del Río Viggiano <br/> Ian Julián Estrada Castro | 
+</details>
