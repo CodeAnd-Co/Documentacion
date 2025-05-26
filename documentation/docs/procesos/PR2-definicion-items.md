@@ -58,4 +58,5 @@ Proceso para garantizar la consistencia, trazabilidad y utilidad de los ítems d
   | 3.0         | Proceso de definición de ítems del WoW                     | 15/05/2025  | Daniel Contreras, Diego Antonio García Padilla    |
   | 4.0     | Actualización al formato estándar de procesos | 18/05/2025  | Ángel Mauricio Ramírez Herrera |
   | 4.1     | Añadir link a índice de checklists y corregir redacción | 19/05/2025 | Daniel Contreras Chávez |
+  | 4.2     | Añadir link a índice a guía de adaptación y mapear OPF. | 26/05/2025 | Daniel Contreras Chávez |
 </details>
