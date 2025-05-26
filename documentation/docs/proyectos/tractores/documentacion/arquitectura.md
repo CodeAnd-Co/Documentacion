@@ -100,9 +100,6 @@ Escribir las tecnologías que se usarán para crear el backend.
   - Uso de middlewares para proteger las rutas según el rol del usuario
 - **RBAC y autenticación**
   - Uso de JWT para manejar las sesiones
-- **Optimización**
-  - Rate Limiting para evitar el abuso de la API
-  - CORS para la seguridad en las peticiones
 
 ### Despliegue
 - AWS EC2 para el despliegue del backend.
@@ -128,7 +125,6 @@ Redactar los beneficios de la arquitectura seleccionada.
 
 - Escalable.
 - Segura.
-- Optimizada.
 - Flexible.
 - Fácil implementación.
 - Conocimiento previo de la mayoría de tecnologías.
