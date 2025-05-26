@@ -28,38 +28,39 @@ Los requisitos funcionales del sistema describen una variedad de acciones que lo
 
 ### Requisitos Específicos
 
-- [**RF1**](RF1.md): Iniciar Sesión - `Ready` 
+- [**RF1**](RF1.md): Iniciar Sesión - `Done` 
 - [**RF2**](RF2.md): Consultar Gráficas 
-- [**RF3**](RF3.md): Consultar historial de ancestros de una charola - `Ready`
-- [**RF4**](RF4.md): Splashscreen 
-- [**RF5**](RF5.md): Registrar Charola - `Ready`
+- [**RF3**](RF3.md): Consultar historial de ancestros de una charola - `Done`
+- [**RF5**](RF5.md): Registrar Charola - `Done`
 - [**RF6**](RF6.md): Buscar charola 
-- [**RF7**](RF7.md): Modificar datos generales Charola
-- [**RF8**](RF8.md): Eliminar Charola  
-- [**RF9**](RF9.md): Cerrar sesión
-- [**RF10**](RF10.md): Consultar información detallada de una charola - `Ready`
-- [**RF11**](RF11.md): Descargar reportes - `Ready`
-- [**RF12**](RF12.md): Alertas
+- [**RF7**](RF7.md): Modificar datos generales Charola - `Ready`
+- [**RF8**](RF8.md): Eliminar Charola - `Done`
+- [**RF9**](RF9.md): Cerrar sesión - `Done`
+- [**RF10**](RF10.md): Consultar información detallada de una charola - `Done`
+- [**RF11**](RF11.md): Descargar reportes - `Done`
+- [**RF12**](RF12.md): Alertas 
 - [**RF13**](RF13.md): Registrar usuario  
 - [**RF14**](RF14.md): Borrar usuario 
-- [**RF15**](RF15.md): Filtrar las charolas por escarabajo y larva
-- [**RF16**](RF16.md): Visualizar todas las charolas registradas en el sistema  
-- [**RF17**](RF17.md): Multiselección para eliminar historial  
-- [**RF18**](RF18.md): Historial de actividad de charola 
-- [**RF19**](RF19.md): Editar Usuario
-- [**RF21**](RF21.md): Consultar charolas de cambios pasados
-- [**RF22**](RF22.md): Consultar charolas de cambios pasados
-- [**RF23**](RF23.md): Registrar un nuevo tipo de comida en el sistema - `Ready`
-- [**RF24**](RF24.md): Editar un tipo de comida en el sistema - `Ready`
-- [**RF25**](RF25.md): Eliminar un tipo de comida
-- [**RF26**](RF26.md): Registrar un nuevo tipo de comida en el sistema
+- [**RF15**](RF15.md): Filtrar las charolas por escarabajo y larva 
+- [**RF16**](RF16.md): Visualizar todas las charolas registradas en el sistema - `Done`
+- [**RF18**](RF18.md): Historial de actividad de charola - `Done`
+- [**RF19**](RF19.md): Editar Usuario 
+- [**RF21**](RF21.md): Consultar charolas de cambios pasados - `Done`
+- [**RF22**](RF22.md): Modificar el estado de la charola 
+- [**RF23**](RF23.md): Registrar un nuevo tipo de comida en el sistema - `Done`
+- [**RF24**](RF24.md): Editar un tipo de comida en el sistema - `Done`
+- [**RF25**](RF25.md): Eliminar un tipo de comida - `Done`
+- [**RF26**](RF26.md): Registrar la alimentación de la charola - `Done`
 - [**RF29**](RF29.md): Registar la información del Frass obtenido 
 - [**RF30**](RF30.md): Editar la información del Frass obtenido  
-- [**RF34**](RF34.md): Sidebar
-- [**RF35**](RF35.md): Recuperar contraseña
-- [**RF36**](RF36.md): Registrar un nuevo tipo de hidratación al sistema
-- [**RF37**](RF37.md): Seleccionar charolas para tamizar y registrar sus datos
-- [**RF38**](RF38.md): Registrar nuevas charolas del tamizado
+- [**RF34**](RF34.md): Sidebar - `Done`
+- [**RF35**](RF35.md): Recuperar contraseña 
+- [**RF36**](RF36.md): Registrar un nuevo tipo de hidratación al sistema 
+- [**RF37**](RF37.md): Seleccionar charolas para tamizar y registrar sus datos - `Ready`
+- [**RF38**](RF38.md): Registrar nuevas charolas del tamizado - `Ready`
+- [**RF39**](RF39.md): Visualizar charolas eliminadas
+- [**RF40**](RF40.md): Editar un tipo de hidratación en el sistema - `Ready`
+- [**RF41**](RF41.md): Eliminar un tipo de hidratación en el sistema
 
 ---
 

@@ -33,3 +33,5 @@ Como administrador, quiero poder visualizar la información de un rol para consu
 ## **Mockup**
 
 > _Descripción_: El mockup muestra la interfaz donde el Super Administrador puede visualizar la información detallada de un rol sin opciones de edición.
+
+![alt text](imagenes/RF8LeeRol.png)
