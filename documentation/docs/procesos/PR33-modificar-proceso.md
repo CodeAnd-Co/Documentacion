@@ -43,9 +43,13 @@ Este proceso proporciona los pasos para modificar algún proceso ya existente y 
 
 ---
 
-### Historial de cambios
+## 📚 Historial de cambios
 
-| **Tipo de versión** | **Descripción**                               | **Fecha**  | **Colaborador** |
-| ------------------- | --------------------------------------------- | ---------- | --------------- |
-| **1.0**             | Creación del proceso                          | 22/05/2025 | Rommel Pacheco  |
-| **1.1**             | Corrección de responsables, estilo y objetivo | 24/05/2025 | Angélica Ríos   |
+<details>
+  <summary>Versiones</summary>
+  
+  | **Tipo de versión** | **Descripción**                                                        | **Fecha**  | **Colaborador**                      |
+  | ------------------- | -------------------------------------------------------------------- | ---------- | ---------------------------------- |
+  | **1.0.0**           | Creación inicial del proceso.                                         | 22/05/2025 | Rommel Pacheco  |
+  | **1.1.0**           | Corrección de responsables, estilo y objetivo | 24/05/2025 | Angélica Ríos   |
+</details>
