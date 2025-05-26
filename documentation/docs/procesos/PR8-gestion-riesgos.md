@@ -48,14 +48,11 @@ Proceso para identificar, analizar, monitorear y mitigar riesgos que puedan afec
 
 <details>
   <summary>Versiones</summary>
-
-
-| Tipo de versión | Descripción                                                          | Fecha      | Colaborador                                       |
-| ---------------- | --------------------------------------------------------------------- | ---------- | ------------------------------------------------- |
-| 1.0              | Creación de proceso de gestión de riesgos                           | 03/03/2025 | Rommel Toledo, Daniel Quejeiro, Mauricio Anguiano |
-| 1.1              | Se agregó fase de monitoreo y definición de probabilidad de riesgos | 04/04/2025 | Angélica Ríos, Paola Garrido                    |
-| 1.2              | Inclusión de referencias PMC 1.6 en pasos del proceso                | 17/04/2025 | Nicolas Hood Figueroa                             |
-| 1.3              | Refactorización                                                      | 18/04/2025 | Diego Fuentes                                     |
-| 1.4              | Simplificación de pasos                                              | 13/05/2025 | Paola María Garrido                              |
-
+  | **Versión** | **Descripción**                                                                 | **Fecha**     | **Colaborador**                                   |
+|-------------|----------------------------------------------------------------------------------|---------------|--------------------------------------------------------|
+| **1.0.0**   | Creación del proceso de gestión de riesgos.                                     | 03/03/2025    | Rommel Toledo, Daniel Queijeiro, Mauricio Anguiano     |
+| **1.1.0**   | Agregada fase de monitoreo y definición de probabilidad de riesgos.             | 04/04/2025    | Angélica Ríos, Paola María Garrido                     |
+| **1.2.0**   | Inclusión de referencias a PMC 1.6 en los pasos del proceso.                    | 17/04/2025    | Nicolás Hood Figueroa                                  |
+| **1.3.0**   | Refactorización del proceso.                                                    | 18/04/2025    | Diego Fuentes                                          |
+| **1.4.0**   | Simplificación de pasos del proceso.                                            | 13/05/2025    | Paola María Garrido                                    |
 </details>

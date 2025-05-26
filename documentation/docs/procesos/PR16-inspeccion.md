@@ -41,14 +41,11 @@ Proceso para identificar defectos en los componentes mediante inspecciones estru
 
 <details>
   <summary>Versiones</summary>
-
-
-| **Tipo de versión** | **Descripción**                                    | **Fecha**  | **Colaborador**            |
-| -------------------- | --------------------------------------------------- | ---------- | -------------------------- |
-| **1.0**              | Primera versión del PR16                           | 10/04/2025 | Ian Julián Estrada Castro |
-| **1.1**              | Refactorización                                    | 18/04/2025 | Diego Fuentes              |
-| **1.2**              | Proceso más conciso                                | 15/05/2025 | Angel Ramírez             |
-| **1.3**              | Cambio de nombre de archivo, título y aclaraciones | 15/05/2025 | Daniel Contreras Chávez   |
-| **1.4**             | Agregar especificación de responsable y solución en el defect log en el paso del proceso | 26/05/2025 | Ian Julián Estrada Castro |
-
+| **Versión** | **Descripción**                                         | **Fecha**   | **Colaborador**            |
+|-------------|---------------------------------------------------------|-------------|----------------------------|
+| **1.0.0**   | Versión inicial del PR16                                | 10/04/2025  | Ian Julián Estrada Castro  |
+| **1.1.0**   | Refactorización del proceso                             | 18/04/2025  | Diego Fuentes              |
+| **1.2.0**   | Simplificación y mejora en la concisión del proceso    | 15/05/2025  | Ángel Mauricio Ramírez Herrera |
+| **1.3.0**   | Cambio de nombre de archivo, actualización de título y aclaraciones | 15/05/2025  | Daniel Contreras Chávez    |
+| **1.4.0**   | Agregar especificación de responsable y solución en el defect log en el paso del proceso | 26/05/2025 | Ian Julián Estrada Castro |
 </details>
