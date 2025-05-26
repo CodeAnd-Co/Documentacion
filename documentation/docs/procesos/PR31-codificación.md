@@ -67,4 +67,5 @@ Proceso para establecer un flujo estructurado que garantice la creación de cód
     | **1.0**             | Creación del proceso                                  | 25/04/2025 | Daniel Queijeiro, Daniel Contreras|
     | **1.1**             | Cambios a pasos de integración y trazabilidad        | 26/04/2025 | Daniel Queijeiro, Diego Fuentes   |
     | **2.0**             | Agregar verificación, checklist de diseño, análisis y PR | 15/05/2025 | Emiliano Valdivia, Daniel Contreras |
+    | **2.1**             | Agregar especificación de responsable y solución en el defect log en el paso del proceso | 26/05/2025 | Ian Julián Estrada Castro |
 </details>

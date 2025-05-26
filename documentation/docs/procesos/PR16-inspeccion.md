@@ -49,5 +49,6 @@ Proceso para identificar defectos en los componentes mediante inspecciones estru
 | **1.1**              | Refactorización                                    | 18/04/2025 | Diego Fuentes              |
 | **1.2**              | Proceso más conciso                                | 15/05/2025 | Angel Ramírez             |
 | **1.3**              | Cambio de nombre de archivo, título y aclaraciones | 15/05/2025 | Daniel Contreras Chávez   |
+| **1.4**             | Agregar especificación de responsable y solución en el defect log en el paso del proceso | 26/05/2025 | Ian Julián Estrada Castro |
 
 </details>
