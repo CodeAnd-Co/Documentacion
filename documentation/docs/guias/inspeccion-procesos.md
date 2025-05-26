@@ -1,8 +1,8 @@
 ---
-title: [Inspección de Procesos]
+title: Inspección de Procesos
 ---
 
-# 📖 [Inspección de Procesos]
+# 📖 Inspección de Procesos
 
 Esta guía tiene como propósito evaluar los procesos existentes dentro del departamento y encontrar sus fortalezas y debilidades, para a partir de ellas determinar áreas de oportunidad.
 
