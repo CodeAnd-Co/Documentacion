@@ -110,5 +110,19 @@ sequenceDiagram
 
 > _Descripción_: El mockup muestra la interfaz donde el Super Administrador puede ingresar el nombre del rol y seleccionar los permisos antes de crearlo.
 
+![alt text](imagenes/RF6.png)
 
-![alt text](<imagenes/CreaRol.png>)
+## **Código**
+
+_<u>[Pull Request Front-End](https://github.com/CodeAnd-Co/Frontend-Text-Lines/pull/43)</u>_
+
+_<u>[Pull Request Back-End](https://github.com/CodeAnd-Co/Backend-textiles/pull/44)</u>_
+
+---
+
+### Historial de cambios
+
+| **Tipo de Versión** | **Descripción**             | **Fecha**  | **Colaborador**          |
+| ------------------- | --------------------------- | ---------- | ------------------------ |
+| **1.0**             | Se actualizó documentación. | 22/05/2025 | Arturo Sánchez Rodríguez |
+| **1.1**             | Agregar links de PR         | 26/05/2025 | Max Toscano              |

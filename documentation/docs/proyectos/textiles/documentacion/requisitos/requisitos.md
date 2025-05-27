@@ -75,7 +75,6 @@ Los requisitos funcionales del sistema describen una variedad de acciones que lo
 
 ### Requisitos Específicos MBI (Parte 1)
 
-
 - [**RF4**](RF4.md): Super Administrador Actualiza Usuario
 - [**RF8**](RF8.md): Super Administrador Lee Rol
 - [**RF9**](RF9.md): Super Administrador Actualiza Rol
@@ -127,41 +126,46 @@ Los requisitos no funcionales establecen las expectativas en términos de tiempo
 
 **Rendimiento**
 
-- El tiempo de respuesta del sistema debe ser menor a 5 segundos.
-- El sistema debe ser capaz de soportar al menos 100 usuarios concurrentes.
+- El tiempo de respuesta tiene que ser menor a **5 segundos**.
+- El sistema debe soportar al menos **5,000 usuarios concurrentes**.
 
 **Usabilidad**
 
-- El administrador debe tardar menos de 6 horas en aprender a utilizar el sistema de backoffice.
-- El sistema debe ser compatible con los siguientes navegadores:
-  - Chrome versión 133.0.6943.126
-  - Firefox 135.0.1
-- Un empleado debe tardar menos de 1 hora en aprender a utilizar el sistema de e-commerce.
+- El administrador se debe de tardar **6 horas** en aprender a utilizar el sistema de backoffice.
+- El sistema debe ser compatible con estos navegadores:
+  - **Chrome** versión **133.0.6943.126**
+  - **Firefox** versión **135.0.1**
+- Un empleado debe de tardar **1 hora** en aprender a utilizar el sistema de e-commerce.
 
 **Disponibilidad**
 
-- El sistema debe contar con redundancia de datos y sistemas de respaldo para garantizar la disponibilidad continua.
+- El sistema debe de contar con **redundancia de datos** y **sistemas de respaldo**.
 
 **Portabilidad y compatibilidad**
 
-- El sistema debe contar con estándares abiertos para facilitar la integración con otros sistemas.
+- El sistema debe contar con **estándares abiertos** para facilitar la integración con otros sistemas.
+
+- El sistema debe ser compatible en cualquier computadora con Windows 11 y macOS 15.4.1 o superiores.
 
 **Mantenibilidad**
 
-- El sistema debe contar con una documentación clara y actualizada. Un desarrollador debe poder encontrarla en un plazo de 15 minutos.
+- El sistema debe contar con una **documentación clara y actualizada**.
+- Un desarrollador debe poder encontrar la documentación en **15 minutos**.
 
 **Escalabilidad**
 
-- El sistema debe soportar un rango de entre 5,000 y 10,000 usuarios registrados.
-- El sistema debe permitir la carga masiva de datos y facilitar la incorporación de nuevas funciones sin afectar las existentes.
+- El sistema debe soportar al menos **5,000 - 10,000 usuarios registrados**.
+- El sistema debe permitir la **carga masiva de datos** y facilitar la incorporación de **nuevas funciones sin afectar las existentes**.
 
 **Seguridad**
 
-- Los datos sensibles, como contraseñas, deben estar cifrados utilizando bcrypt.
-- Una computadora debe tardar más de 3 años en descifrar la contraseña cifrada.
-- El sistema debe contar con protección contra ataques CSRF y ataques de inyección NoSQL.
-- El sistema debe contar con un sistema de autorización y autenticación robusto.
-- El sistema debe cerrar automáticamente la sesión de los usuarios después de 8 horas de inactividad.
+- Los **datos sensibles** guardados en la base de datos (ej. contraseñas) deben estar **cifrados usando bcrypt**.
+- Una computadora debe tardar **más de 3 años** en descifrar una contraseña.
+- El sistema debe contar con protección contra:
+  - **Ataques CSRF**
+  - **Ataques por inyección NoSQL**
+- El sistema debe contar con un **sistema de autorización y autenticación**.
+- El sistema **cierra la sesión** de los usuarios después de **8 horas** desde que iniciaron sesión.
 
 ---
 
