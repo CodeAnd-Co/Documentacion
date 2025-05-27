@@ -33,7 +33,6 @@ Yo como usuario registrado de CNH quiero ingresar mis credenciales a la aplicaci
 > *Descripción*: El mockup representa la interfaz del sistema donde el usuario puede iniciar de sesión. Muestra los campos requeridos y los botones de acción disponibles.
 
 ---
-
 ### Pruebas Unitarias 
 | ID Prueba | Descripción | Resultado Esperado |
 |-----------|-------------|--------------------|
@@ -41,3 +40,8 @@ Yo como usuario registrado de CNH quiero ingresar mis credenciales a la aplicaci
 |PU-RF2-02|Inicio de sesión con contraseña incorrecta.|Se muestra un mensaje de error claro indicando que la credencial es inválida.|
 |PU-RF2-03|Inicio de sesión con correo no registrado.|Se muestra un mensaje de error claro indicando que la credencial es inválida.|
 |PU-RF2-04 |Inicio de sesión con campos vacíos|Se muestra un mensaje de error claro pidiendo completar los campos necesarios.|
+
+---
+
+### Pull Request
+[https://github.com/CodeAnd-Co/App-Local-TracTech/pull/12](https://github.com/CodeAnd-Co/App-Local-TracTech/pull/12)
