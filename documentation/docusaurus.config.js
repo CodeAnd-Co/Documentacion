@@ -116,17 +116,17 @@ const config = {
         },
         items: [
           {
-            to: "/docs/category/textiles",
+            to: "/docs/next/category/textiles",
             label: "Text&Lines",
             position: "left",
           },
           {
-            to: "/docs/category/tractores",
+            to: "/docs/next/category/tractores",
             label: "TracTech",
             position: "left",
           },
           {
-            to: "/docs/category/larvas",
+            to: "/docs/next/category/larvas",
             label: "Technebrios",
             position: "left",
           },
