@@ -73,9 +73,8 @@ El incumplimiento de esta política puede resultar en:
 
 ## 📎 Recursos relacionados
 
-- [Política de identificación de elementos de configuración](/docs/next/politicas/politica-identificacion-elementos)
-- [Proceso de gestión de cambios](/docs/next/procesos/PR9-gestion-cambios)
-- [Acta estándar del CCB](/docs/next/plantillas/acta-ccb)
+- [Política de identificación de elementos de configuración](/docs/next/politicas/politica-elementos-de-configuración)
+- [Proceso de gestión de cambios](/docs/procesos/PR10-cambios-requisitos)
 
 ## 📚 Historial de cambios
 
