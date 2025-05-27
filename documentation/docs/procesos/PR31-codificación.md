@@ -70,4 +70,5 @@ Proceso para establecer un flujo estructurado que garantice la creación de cód
   | **2.0.0**   | Agregar verificación, checklist de diseño, análisis y PR| 15/05/2025  | Emiliano Valdivia, Daniel Contreras       |
   | **2.0.1 | Agregar especificación de responsable y solución en el defect log en el paso del proceso | 26/05/2025 | Ian Julián Estrada Castro |
   | **2.0.2**   | Corregir redacción y mapeo de VER | 26/05/2025  | Juan Carlos Calderón, Daniel Contreras       |
+  | **2.0.3**   | Mapear VER 3.2 | 27/05/2025  | Ian Julián Estrada Castro       |
 </details>

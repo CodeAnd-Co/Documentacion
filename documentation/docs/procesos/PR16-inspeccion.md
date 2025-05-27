@@ -48,4 +48,5 @@ Proceso para identificar defectos en los componentes mediante inspecciones estru
 | **1.2.0**   | Simplificación y mejora en la concisión del proceso    | 15/05/2025  | Ángel Mauricio Ramírez Herrera |
 | **1.3.0**   | Cambio de nombre de archivo, actualización de título y aclaraciones | 15/05/2025  | Daniel Contreras Chávez    |
 | **1.4.0**   | Agregar especificación de responsable y solución en el defect log en el paso del proceso | 26/05/2025 | Ian Julián Estrada Castro |
+| **1.4.1**   | Mapear VER 3.2 | 27/05/2025  | Ian Julián Estrada Castro       |
 </details>
