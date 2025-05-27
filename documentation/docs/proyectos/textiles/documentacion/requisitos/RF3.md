@@ -45,9 +45,9 @@ participant Database
 
 
 SuperAdmin -->> Frontend: Hace clic en un usuario de la lista
-Frontend -->> Api_gateway: GET /api/usuarios/:id con JWT
-Api_gateway -->> Backend: Reenvía GET /api/usuarios/:id con JWT
-Backend -->> rutaUsuarios: Llama a la ruta /api/usuarios/:id
+Frontend -->> Api_gateway: GET /api/usuarios con JWT
+Api_gateway -->> Backend: Reenvía GET /api/usuarios con JWT
+Backend -->> rutaUsuarios: Llama a la ruta /api/usuarios
 rutaUsuarios -->> rutaUsuarios: Valida API key
 
 alt API key inválida
