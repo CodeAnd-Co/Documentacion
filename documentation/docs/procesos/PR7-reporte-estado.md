@@ -66,4 +66,5 @@ Proceso para generar reportes de estado que reflejen la salud de los proyectos d
 | **2.8.0**   | Actualización de enlaces.                                                       | 28/04/2025    | Arturo Sánchez                                   |
 | **3.0.0**   | Simplificación del proceso, correcciones ortográficas y actualización de enlaces.| 13/05/2025    | Daniel Contreras Chávez                          |
 | **3.1.0**             | Añadir pedir retroalimentación de un profesor en específico.                     | 13/05/2025 | Juan Pablo Chávez Leal        |
+| **3.1.1**   | Mapear VER 3.2 | 27/05/2025  | Ian Julián Estrada Castro       |
 </details>
