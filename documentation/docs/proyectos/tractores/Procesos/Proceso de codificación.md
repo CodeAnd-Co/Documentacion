@@ -82,6 +82,7 @@ sidebar_position: 1
 **Codificación:**
     - Ir a src>framework>vistas>paginas y crear la carpeta correspondiente a tu módulo si no existe.
     - Crear el archivo de EJS donde vas a crear la vista.
+        - Revisar que componentes se necesitan para crear la vista y revisar si ya existen. Si necesitas un componente que aún no existe, avisar en el grupo para confirmar y luego programarlo.
         - Añadir el encabezado.ejs y piePagina.ejs que estan dentro de src>framework>vistas>includes
         - Hacer el EJS usando variables para cargar cosas como las rutas.
     - Ir ar src>framework>utils>scripts y crear el archivo con el código de js que correra directamente en el frontEnd y manejará el DOM (Document Object Model) o body. No debes incluir lógica más allá de leer, escribir, y asignar funciones a los valores de los elementos de HTML.
@@ -111,3 +112,4 @@ sidebar_position: 1
 | **1.0** | Creación del proceso | 15/05/2025 | Diego Fuentes, Ian Julian Estrada, Daniel Queijeiro, Juan Pablo Chávez. |
 | **2.0** | Ajustar proceso con el refactor | 22/05/2025 | Daniel Queijeiro, Diego Fuentes |
 | **2.1** | Añadir pasos para actualizar checklists | 26/05/2025 | Diego Fuentes |
+| **2.2** | Añadir pasos para revisar componentes | 26/05/2025 | Diego Fuentes |
