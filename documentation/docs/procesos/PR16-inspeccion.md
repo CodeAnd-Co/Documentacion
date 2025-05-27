@@ -31,7 +31,7 @@ Proceso para identificar defectos en los componentes mediante inspecciones estru
 |                  | Los inspectores registran los defectos en su defect log personal.                                                                                  | Inspectores         | **VER SP 2.2** (Realizar las revisiones entre pares)                      |
 |                  | Los defectos detectados por todos los inspectores se consolidan en el defect log del proyecto. Se asigna un responsable y la solución al defecto.                                                    | Inspectores         |                                                                            |
 |                  | Se detiene el cronómetro cuando todos los inspectores terminan de evaluar el componente.                                                          | Inspectores         |                                                                            |
-| **Análisis**    | Se evalúan los datos obtenidos y se toman decisiones para implementar estrategias de mejora. Los análisis se hacen en el defect log                                                      | Inspectores. | **VER SP 2.3**(Analizar los datos de las revisiones entre pares) **VER SP 3.2** (Analizar los resultados de la verificación).           |
+| **Análisis**    | Se evalúan los datos obtenidos y se toman decisiones para implementar estrategias de mejora. Los análisis de los defectos y la calidad se hacen en el defect log. log                                                      | Inspectores. | **VER SP 2.3**(Analizar los datos de las revisiones entre pares) **VER SP 3.2** (Analizar los resultados de la verificación).           |
 
 ## 📤 Salidas
 
