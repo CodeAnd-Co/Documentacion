@@ -16,6 +16,12 @@ Como usuario del sistema, quiero borrar los datos de una charola en la base de d
 
 ---
 
+### Diagrama de Actividades
+
+<a href="https://drive.google.com/file/d/1vQI5exhxIFS7IrY4KmKrz5jEx54D7FlS/view?usp=sharing" target="_blank" rel="noopener noreferrer">Eliminar Charola</a>
+
+---
+
 ### Diagrama de Secuencia
 
 
@@ -242,3 +248,4 @@ sequenceDiagram
 | **1.1**             | Creación del diagrama de secuencia   | 3/4/2025  | Juan Eduardo      |
 | **1.2**             | Mockup y correcciones del diagrama   | 3/4/2025  | Juan Eduardo      |
 | **1.3**             | Correciones del query                | 17/5/2025 | Mariana Juárez    |
+| **1.3**             | Diagramas de actividades   | 23/5/2025  | Juan Eduardo Rosas Cerón |

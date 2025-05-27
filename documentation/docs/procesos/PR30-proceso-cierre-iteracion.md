@@ -29,7 +29,7 @@ Este proceso busca evaluar los resultados de la iteración para analizar logros 
 |                            | Mostrar avances los stakeholders, presentar la solución y registrar retroalimentación.                                                                                                                           | Product Owner | **PMC: SP 1.6** Llevar a cabo las revisiones del progreso                                                 |
 | Retrospectiva              | Realizar sesión de retrospectiva con el equipo.                                                                                                                                                                  | Team leader   | **PMC: SP 1.6** Llevar a cabo las revisiones del progreso, <br/>**PMC: SP 2.1** Analizar las cuestiones   |
 |                            | Usar la _[plantilla de minuta para cierre de iteración](https://docs.google.com/document/d/1p4Vs9uLDJbLrukanRDvZcnA1uJzysstMTKZe_ogMffc/edit?usp=sharing)_.                                                      | Team leader   |                                                                                                           |
-| Evaluación de objetivo     | Verificar si se cumplió el objetivo de la iteración.                                                                                                                                                             | Team members  | **PMC: SP 1.2** Monitorizar los compromisos, **PMC: SP 1.6** Llevar a cabo las revisiones del progreso    |
+| Evaluación de objetivo     | Verificar si se cumplió el objetivo de la iteración.                                                                                                                                                             | Team members  | **PMC: SP 1.2** Monitorizar los compromisos, **PMC: SP 1.6** Llevar a cabo las revisiones del progreso, **VER SP 3.1** (Realizar la verificación)    |
 |                            | Evaluar si el resultado de la iteración es un producto consumible.                                                                                                                                               | Team members  |                                                                                                           |
 | Patrones y antipatrones    | Identificar patrones y antipatrones observados durante la iteración.                                                                                                                                             | Team members  | **PMC: SP 2.1** Analizar las cuestiones                                                                   |
 | Revisión de milestones     | Evaluar el cumplimiento de las milestones y agregar la evidencia en la [matriz de revisión de milestones](https://docs.google.com/spreadsheets/d/1ei3juQH-EVJTkKWWUHFywdmhfqlrlX1b6sznvBgwdJc/edit?usp=sharing). | Team leader   | **PMC: SP 1.7** Llevar a cabo las revisiones de hitos                                                     |
@@ -55,9 +55,8 @@ Este proceso busca evaluar los resultados de la iteración para analizar logros 
 
 <details>
   <summary>Versiones</summary>
-
-  | **Tipo de versión** | **Descripción**                              | **Fecha**  | **Colaborador**     |
+  | **Versión** | **Descripción**                              | **Fecha**  | **Colaborador**     |
   | ------------------- | -------------------------------------------- | ---------- | ------------------- |
   | **1.0.0**           | Creación del proceso de cierre de iteración. | 25/04/2025 | Valeria Zúñiga      |
-
+  | **1.0.1**           | Corrección de VER 3.1. | 26/05/2025 | Daniel Contreras, Miguel Angel Uribe      |
 </details>

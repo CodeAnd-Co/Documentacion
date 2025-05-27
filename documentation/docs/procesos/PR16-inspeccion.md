@@ -29,7 +29,7 @@ Proceso para identificar defectos en los componentes mediante inspecciones estru
 |                  | El responsable del componente presenta y explica la funcionalidad del mismo.                                                                       | Autor del código   |                                                                            |
 |                  | Si el ítem a inspeccionar es código, entonces se realiza la revisión de código utilizando la [checklist de código](../recursos/checklists.md). | Inspectores         | **VER SP 3.1**(Realizar la verificación)                                  |
 |                  | Los inspectores registran los defectos en su defect log personal.                                                                                  | Inspectores         | **VER SP 2.2** (Realizar las revisiones entre pares)                      |
-|                  | Los defectos detectados por todos los inspectores se consolidan en el defect log del proyecto.                                                     | Inspectores         |                                                                            |
+|                  | Los defectos detectados por todos los inspectores se consolidan en el defect log del proyecto. Se asigna un responsable y la solución al defecto.                                                    | Inspectores         |                                                                            |
 |                  | Se detiene el cronómetro cuando todos los inspectores terminan de evaluar el componente.                                                          | Inspectores         |                                                                            |
 | **Análisis**    | Se evalúan los datos obtenidos y se toman decisiones para implementar estrategias de mejora.                                                      | Miembros del equipo | **VER SP 2.3**(Analizar los datos de las revisiones entre pares)           |
 
@@ -41,13 +41,11 @@ Proceso para identificar defectos en los componentes mediante inspecciones estru
 
 <details>
   <summary>Versiones</summary>
-
-
-| **Tipo de versión** | **Descripción**                                    | **Fecha**  | **Colaborador**            |
-| -------------------- | --------------------------------------------------- | ---------- | -------------------------- |
-| **1.0**              | Primera versión del PR16                           | 10/04/2025 | Ian Julián Estrada Castro |
-| **1.1**              | Refactorización                                    | 18/04/2025 | Diego Fuentes              |
-| **1.2**              | Proceso más conciso                                | 15/05/2025 | Angel Ramírez             |
-| **1.3**              | Cambio de nombre de archivo, título y aclaraciones | 15/05/2025 | Daniel Contreras Chávez   |
-
+| **Versión** | **Descripción**                                         | **Fecha**   | **Colaborador**            |
+|-------------|---------------------------------------------------------|-------------|----------------------------|
+| **1.0.0**   | Versión inicial del PR16                                | 10/04/2025  | Ian Julián Estrada Castro  |
+| **1.1.0**   | Refactorización del proceso                             | 18/04/2025  | Diego Fuentes              |
+| **1.2.0**   | Simplificación y mejora en la concisión del proceso    | 15/05/2025  | Ángel Mauricio Ramírez Herrera |
+| **1.3.0**   | Cambio de nombre de archivo, actualización de título y aclaraciones | 15/05/2025  | Daniel Contreras Chávez    |
+| **1.4.0**   | Agregar especificación de responsable y solución en el defect log en el paso del proceso | 26/05/2025 | Ian Julián Estrada Castro |
 </details>

@@ -6,33 +6,50 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #2a1a40; /* morado muy oscuro */
-  --ifm-color-primary-dark: #211430;
-  --ifm-color-primary-darker: #1a1026;
-  --ifm-color-primary-darkest: #120b1a;
+  /* Tema claro - Azul profesional con buen contraste */
+  --ifm-color-primary: #1e40af; /* azul más claro y legible */
+  --ifm-color-primary-dark: #1d4ed8; /* azul medio */
+  --ifm-color-primary-darker: #1e3a8a; /* azul oscuro */
+  --ifm-color-primary-darkest: #1e3a8a; /* azul muy oscuro */
 
-  --ifm-color-primary-light: #3b2a5c;
-  --ifm-color-primary-lighter: #4d3a78;
-  --ifm-color-primary-lightest: #5f4a95;
+  --ifm-color-primary-light: #3b82f6; /* azul claro */
+  --ifm-color-primary-lighter: #60a5fa; /* azul más claro */
+  --ifm-color-primary-lightest: #93c5fd; /* azul muy claro */
 
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(
-    18,
-    11,
-    26,
-    0.15
-  ); /* sutil fondo para líneas de código */
+    30,
+    64,
+    175,
+    0.1
+  ); /* fondo sutil para código */
+
+  /* Mejoras de legibilidad */
+  --ifm-font-color-base: #1a1a1a; /* texto más oscuro para mejor contraste */
+  --ifm-heading-color: #1e40af; /* títulos en azul principal */
 }
-/* For readability concerns, you should choose a lighter palette in dark mode. */
+
+/* Tema oscuro - Colores optimizados para legibilidad nocturna */
 [data-theme="dark"] {
-  --ifm-color-primary: #3d3dff; /* azul intenso para contrastar en dark mode */
-  --ifm-color-primary-dark: #2f2fd1;
-  --ifm-color-primary-darker: #2424a3;
-  --ifm-color-primary-darkest: #1a1a75;
+  --ifm-color-primary: #60a5fa; /* azul claro pero no demasiado brillante */
+  --ifm-color-primary-dark: #3b82f6; /* azul medio */
+  --ifm-color-primary-darker: #2563eb; /* azul más oscuro */
+  --ifm-color-primary-darkest: #1d4ed8; /* azul oscuro */
 
-  --ifm-color-primary-light: #5050ff;
-  --ifm-color-primary-lighter: #6a6aff;
-  --ifm-color-primary-lightest: #8787ff;
+  --ifm-color-primary-light: #93c5fd; /* azul claro */
+  --ifm-color-primary-lighter: #bfdbfe; /* azul muy claro */
+  --ifm-color-primary-lightest: #dbeafe; /* azul súper claro */
 
-  --docusaurus-highlighted-code-line-bg: rgba(138, 130, 255, 0.05);
+  --docusaurus-highlighted-code-line-bg: rgba(
+    96,
+    165,
+    250,
+    0.08
+  ); /* fondo sutil para código */
+
+  /* Mejoras específicas para tema oscuro */
+  --ifm-font-color-base: #e5e7eb; /* texto claro pero no blanco puro */
+  --ifm-heading-color: #93c5fd; /* títulos en azul claro */
+  --ifm-background-color: #111827; /* fondo más suave que negro puro */
+  --ifm-background-surface-color: #1f2937; /* superficies con contraste sutil */
 }
