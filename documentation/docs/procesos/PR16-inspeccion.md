@@ -52,4 +52,5 @@ Proceso para identificar defectos en los componentes mediante inspecciones estru
 | **1.1**   | Refactorización del proceso                             | 18/04/2025  | Diego Fuentes              |
 | **1.2**   | Simplificación y mejora en la concisión del proceso    | 15/05/2025  | Ángel Mauricio Ramírez Herrera |
 | **1.3**   | Cambio de nombre de archivo, actualización de título y aclaraciones | 15/05/2025  | Daniel Contreras Chávez    |
+| **2.0**   | Refactorización del proceso   | 26/05/2025  | Sofia Osorio Suárez, Mariana Juárez Ramírez    |
 </details>
