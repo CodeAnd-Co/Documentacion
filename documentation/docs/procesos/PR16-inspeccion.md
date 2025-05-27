@@ -31,7 +31,7 @@ Proceso para identificar defectos en los componentes mediante inspecciones estru
 |                  | Los inspectores registran los defectos en su defect log personal.                                                                                  | Inspectores         | **VER SP 2.2** (Realizar las revisiones entre pares)                      |
 |                  | Los defectos detectados por todos los inspectores se consolidan en el defect log del proyecto. Se asigna un responsable y la solución al defecto.                                                    | Inspectores         |                                                                            |
 |                  | Se detiene el cronómetro cuando todos los inspectores terminan de evaluar el componente.                                                          | Inspectores         |                                                                            |
-| **Análisis**    | Se evalúan los datos obtenidos y se toman decisiones para implementar estrategias de mejora.                                                      | Miembros del equipo | **VER SP 2.3**(Analizar los datos de las revisiones entre pares)           |
+| **Análisis**    | Se evalúan los datos obtenidos y se toman decisiones para implementar estrategias de mejora. Los análisis de los defectos y la calidad se hacen en el defect log. | Inspectores. | **VER SP 2.3** (Analizar los datos de las revisiones entre pares) **VER SP 3.2** (Analizar los resultados de la verificación). |
 
 ## 📤 Salidas
 
@@ -48,4 +48,5 @@ Proceso para identificar defectos en los componentes mediante inspecciones estru
 | **1.2.0**   | Simplificación y mejora en la concisión del proceso    | 15/05/2025  | Ángel Mauricio Ramírez Herrera |
 | **1.3.0**   | Cambio de nombre de archivo, actualización de título y aclaraciones | 15/05/2025  | Daniel Contreras Chávez    |
 | **1.4.0**   | Agregar especificación de responsable y solución en el defect log en el paso del proceso | 26/05/2025 | Ian Julián Estrada Castro |
+| **1.4.1**   | Mapear VER 3.2 | 27/05/2025  | Ian Julián Estrada Castro       |
 </details>
