@@ -140,7 +140,7 @@ import TabItem from '@theme/TabItem';
 - permisos
 
 </TabItem>
-<TabItem value="clientes" label="Charolas">
+<TabItem value="charolas" label="Charolas">
 
 ## 🧬 Ancestro
 
@@ -160,7 +160,7 @@ import TabItem from '@theme/TabItem';
 - fechaActualizacion
 
 </TabItem>
-<TabItem value="clientes" label="Alimento, Hidratación y Frass">
+<TabItem value="alimento" label="Alimento e Hidratación">
 
 ## 🥗 Alimento
 
@@ -187,7 +187,7 @@ import TabItem from '@theme/TabItem';
 - cantidadOtorgada
 
 </TabItem>
-<TabItem value="clientes" label="Frass">
+<TabItem value="frass" label="Frass">
 
 ## 🪱 Frass
 
@@ -200,7 +200,7 @@ import TabItem from '@theme/TabItem';
 - id (o ids relacionados)
 
 </TabItem>
-<TabItem value="clientes" label="Pupa">
+<TabItem value="pupas" label="Pupa">
 
 ## 🐛 Pupa
 

@@ -75,7 +75,6 @@ Los requisitos funcionales del sistema describen una variedad de acciones que lo
 
 ### Requisitos Específicos MBI (Parte 1)
 
-
 - [**RF4**](RF4.md): Super Administrador Actualiza Usuario
 - [**RF8**](RF8.md): Super Administrador Lee Rol
 - [**RF9**](RF9.md): Super Administrador Actualiza Rol
@@ -146,7 +145,7 @@ Los requisitos no funcionales establecen las expectativas en términos de tiempo
 
 - El sistema debe contar con **estándares abiertos** para facilitar la integración con otros sistemas.
 
-- El sistema debe ser compatible en cualquier computadora con Windows 11 y macOS 15.4.1 o superiores. 
+- El sistema debe ser compatible en cualquier computadora con Windows 11 y macOS 15.4.1 o superiores.
 
 **Mantenibilidad**
 
