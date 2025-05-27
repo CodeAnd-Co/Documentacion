@@ -40,3 +40,8 @@ Yo como usuario quiero acceder a un módulo de análisis que me permita visualiz
 |PU-RF6-01|Acceder al módulo de análisis.|Se muestra correctamente la interfaz con los datos y gráficas relevantes.|
 |PU-RF6-02|Verificar carga de datos.|Los gráficos se generan correctamente con los datos recopilados por la aplicación.|
 |PU-RF6-03|Verificar que el uso del módulo es correcto.|El usuario es capaz de utilizar todas las funcionalidades definidas en el módulo de análisis|
+
+---
+
+### Pull Request
+[https://github.com/CodeAnd-Co/App-Local-TracTech/pull/7](https://github.com/CodeAnd-Co/App-Local-TracTech/pull/7)

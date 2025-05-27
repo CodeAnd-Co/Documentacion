@@ -38,3 +38,8 @@ Yo como usuario quiero cerrar sesión en el sistema de manera segura termino de 
 |-----------|-------------|--------------------|
 |PU-RF3-01|Cerrar sesión desde la aplicación.|El usuario es redirigido a la pantalla de inicio de sesión|
 |PU-RF3-02|Intento de acceso después de cerrar sesión.|El sistema requiere autenticación nuevamente.|
+
+---
+
+### Pull Request
+[https://github.com/CodeAnd-Co/App-Local-TracTech/pull/21](https://github.com/CodeAnd-Co/App-Local-TracTech/pull/21)

@@ -31,8 +31,12 @@ Yo como usuario quiero acceder a la información de contacto de CNH, para poder 
 > *Descripción*: El mockup representa la interfaz donde el usuario puede ver los datos de contacto.
 
 ---
-
 ### Pruebas Unitarias 
 | ID Prueba | Descripción | Resultado Esperado |
 |-----------|-------------|--------------------|
 |PU-RF4-01|Acceder a la sección de datos de contacto.|La información de contacto se muestra correctamente.|
+
+---
+
+### Pull Request
+[https://github.com/CodeAnd-Co/App-Local-TracTech/pull/6](https://github.com/CodeAnd-Co/App-Local-TracTech/pull/6)
