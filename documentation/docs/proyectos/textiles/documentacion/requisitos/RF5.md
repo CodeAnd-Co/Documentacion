@@ -107,6 +107,14 @@ end
 
 _<u>[Enlace a pruebas RF5 Elimina Usuario](https://docs.google.com/spreadsheets/d/1NLGwGrGA5PVOEzLaqxa8Ts1D_Ng3QzzqNKWJYUzxD-M/edit?usp=sharing)</u>_
 
+## **Código**
+
+_<u>[Pull Request Front-End](https://github.com/CodeAnd-Co/Frontend-Text-Lines/pull/40)</u>_
+
+_<u>[Pull Request Back-End](https://github.com/CodeAnd-Co/Backend-textiles/pull/42)</u>_
+
+---
+
 ### Historial de cambios
 
 | **Tipo de Versión** | **Descripción**                                 | **Fecha**  | **Colaborador**               |
@@ -117,3 +125,4 @@ _<u>[Enlace a pruebas RF5 Elimina Usuario](https://docs.google.com/spreadsheets/
 | **1.3**             | Actualización de la documentación del requisito | 24/4/2025  | Carlos Iván Fonseca Mondragón |
 | **1.4**             | Actualización de diagrama                       | 06/05/2025 | Hiram Mendoza                 |
 | **1.5**             | Actualizar interfaz                             | 22/5/2025  | Diego Antonio García Padilla  |
+| **1.6**             | Agregar links de PR                             | 26/05/2025 | Max Toscano                   |
