@@ -7,52 +7,52 @@ import styles from "./styles.module.css";
 const SectionList = [
   {
     title: "Inicio",
-    link: "/docs/category/inicio",
+    link: "/docs/next/category/inicio",
     icon: "mdi:home-outline",
     description:
       "Conoce la base del proyecto, objetivos y lineamientos generales.",
   },
   {
     title: "Recursos",
-    link: "/docs/category/recursos",
+    link: "/docs/next/category/recursos",
     icon: "mdi:toolbox-outline",
     description:
       "Herramientas y recursos para el desarrollo de nuestros proyectos.",
   },
   {
     title: "Procesos",
-    link: "/docs/category/procesos",
+    link: "/docs/next/category/procesos",
     icon: "mdi:chart-timeline-variant",
     description: "Flujos de trabajo y metodologías que seguimos en Code&Co.",
   },
   {
     title: "Guías",
-    link: "/docs/category/guias",
+    link: "/docs/next/category/guias",
     icon: "mdi:map-marker-path",
     description:
       "Accede a instrucciones paso a paso para utilizar la plataforma.",
   },
   {
     title: "Políticas",
-    link: "/docs/category/politicas",
+    link: "/docs/next/category/politicas",
     icon: "mdi:scale-balance",
     description: "Normativas y regulaciones internas del equipo.",
   },
   {
     title: "Estándares",
-    link: "/docs/category/estandares",
+    link: "/docs/next/category/estandares",
     icon: "mdi:clipboard-check-outline",
     description: "Buenas prácticas y estándares técnicos de desarrollo.",
   },
   {
     title: "Proyectos",
-    link: "/docs/category/proyectos",
+    link: "/docs/next/category/proyectos",
     icon: "mdi:folder-outline",
     description: "Documentación técnica para colaboradores y desarrolladores.",
   },
   {
     title: "Plantillas",
-    link: "/docs/category/plantillas",
+    link: "/docs/next/category/plantillas",
     icon: "mdi:file-document-outline",
     description: "Documentos base para estandarizar la comunicación.",
   },
