@@ -46,17 +46,17 @@ Proceso para garantizar la consistencia, trazabilidad y utilidad de los ítems d
 
 <details>
   <summary>Versiones</summary>
-  | **Versión** | **Descripción del cambio**                                | **Fecha**   | **Colaborador**                                   |
-  |-------------|------------------------------------------------------------|-------------|---------------------------------------------------|
-  | 2.0         | Proceso inicial para generar procesos                      |             | Valeria Zuñiga Mendoza, Paola María Garrido Monte |
-  | 2.1         | Añadir la plantilla base de procesos                       |             | Valeria Zuñiga Mendoza                            |
-  | 2.2         | Cambios de lógica para Docusaurus                          |             | Juan Pablo Chávez Leal                            |
-  | 2.3         | Cambio al control de cambios                               | 18/04/2025  | Miguel Angel, Diego Alfaro                        |
-  | 2.4         | Refactorización                                            | 18/04/2025  | Diego Fuentes                                     |
-  | 2.5         | Implementar política de gestión de procesos                | 08/05/2025  | Mariana Juárez                                    |
-  | 2.6         | Agregar redirección a guía de adaptación de procesos       | 14/05/2025  | Ethan Luna                                        |
-  | 3.0         | Proceso de definición de ítems del WoW                     | 15/05/2025  | Daniel Contreras, Diego Antonio García Padilla    |
-  | 4.0     | Actualización al formato estándar de procesos | 18/05/2025  | Ángel Mauricio Ramírez Herrera |
-  | 4.1     | Añadir link a índice de checklists y corregir redacción | 19/05/2025 | Daniel Contreras Chávez |
-  | 4.2     | Añadir link a índice a guía de adaptación y mapear OPF. | 26/05/2025 | Daniel Contreras Chávez |
+| **Versión** | **Descripción**                                              | **Fecha**     | **Colaborador**                                     |
+|-------------|-------------------------------------------------------------------------|---------------|----------------------------------------------------------|
+| **2.0.0**   | Proceso inicial para la generación de procesos.                         | —             | Valeria Zúñiga Mendoza, Paola María Garrido Monte        |
+| **2.1.0**   | Adición de la plantilla base de procesos.                               | —             | Valeria Zúñiga Mendoza                                   |
+| **2.2.0**   | Cambios de lógica para compatibilidad con Docusaurus.                   | —             | Juan Pablo Chávez Leal                                   |
+| **2.3.0**   | Modificación en la sección de control de cambios.                       | 18/04/2025    | Miguel Ángel, Diego Alfaro                               |
+| **2.4.0**   | Refactorización general.                                                | 18/04/2025    | Diego Fuentes                                            |
+| **2.5.0**   | Implementación de la política de gestión de procesos.                   | 08/05/2025    | Mariana Juárez                                           |
+| **2.6.0**   | Agregado de redirección a la guía de adaptación de procesos.            | 14/05/2025    | Ethan Luna                                               |
+| **3.0.0**   | Incorporación del proceso de definición de ítems del WoW.               | 15/05/2025    | Daniel Contreras, Diego Antonio García Padilla           |
+| **4.0.0**   | Actualización al nuevo formato estándar de procesos.                    | 18/05/2025    | Ángel Mauricio Ramírez Herrera                          |
+| **4.1.0**     | Añadir link a índice de checklists y corregir redacción | 19/05/2025 | Daniel Contreras Chávez |
+| **4.1.1** | Añadir link a índice a guía de adaptación y mapear OPF. | 26/05/2025 | Daniel Contreras Chávez |
 </details>

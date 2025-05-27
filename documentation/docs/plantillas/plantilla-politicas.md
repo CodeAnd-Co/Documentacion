@@ -177,8 +177,8 @@ El incumplimiento de esta política puede resultar en:
 
 <details>
   <summary>Versiones</summary>
-    | **Tipo de versión** | **Descripción** | **Fecha** | **Colaborador** |
-    | ------------------- | --------------- | --------- | --------------- |
-    | **1.0.0** | Creación de la plantilla. | 15/05/2025 | Diego Antonio García Padilla |
-    | **2.0.0** | Actualización al nuevo formato estándar | 18/05/2025 | Angel Mauricio Ramírez Herrera |
+| **Tipo de versión** | **Descripción**                             | **Fecha**     | **Colaborador**                  |
+|---------------------|---------------------------------------------|---------------|----------------------------------|
+| **1.0.0**           | Creación de la plantilla.                   | 06/03/2025    | Diego Antonio García Padilla     |
+| **1.1.0**           | Actualización al nuevo formato estándar.    | 19/05/2025    | Angel Mauricio Ramírez Herrera   |
 </details>

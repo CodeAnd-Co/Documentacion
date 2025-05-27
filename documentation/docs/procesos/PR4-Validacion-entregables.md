@@ -2,7 +2,6 @@
 title: 👨‍🍼 | PR4 Validación de entregables
 sidebar_position: 4
 ---
-
 # 👨‍🍼 Validación de entregables
 
 Proceso encargado de asegurar que los productos o componentes desarrollados cumplan con los requisitos esperados y sean validados en un entorno controlado junto con los stakeholders, asegurando su aceptación formal.
@@ -31,6 +30,7 @@ Proceso encargado de asegurar que los productos o componentes desarrollados cump
 |                                             | Utilizar el proceso de [**Juntas efectivas**](../procesos/PR5-juntas-efectivas.md) para documentar en la minuta el feedback así como las desviaciones y observaciones de los resultados obtenidos.  <br/><br/>****Nota:** En el caso de los requisitos documentar si se identificó un nuevo requisito o se detectó un cambio. Para esto seguir el proceso de [**Gestión de cambios de requisitos**](../procesos/PR10-cambios-requisitos.md). | Product Owner / Todo el equipo | **VAL, SP 2.1** (Ejecutar validación), <br/>**RD, SP 3.5** (Validar los requisitos.), <br/>**REQM, SP 1.3** (Administrar cambios a los requisitos), <br/>**PMC, SP 1.5** (Monitorear la participación de los interesados)                                                |
 |                                             | Obtener la firma del stakeholder donde aprueba o rechaza los ítems de validación.                                                  | Product Owner / Todo el equipo | **VAL, SP 2.1** (Ejecutar validación), **RD, SP 3.5** (Validar los requisitos.)                                              |
 | **Documentación de resultados**             | Registrar los hallazgos clave de las observaciones y desviaciones identificadas durante la validación.                                                                                                                      | Todo el equipo                 | **VAL, SP 2.1**                                                                   |
+|                                             | Todo cambio, desviación, error o rechazo detectado durante la validación **debe registrarse obligatoriamente** en el **Defect Log**.                                                 |  Todo el equipo | **VAL, SP 2.2** (Analizar los resultados de la validación), **PPQA, SP 2.1** (Comunicar y resolver las no conformidades.)                                              |
 | **Análisis de resultados**                  | Identificar patrones entre los resultados obtenidos y los esperados, para definir las [**acciones correctivas**](../procesos/PR13-acciones-correctivas.md) correspondientes.                                                                                                                         | Todo el equipo                 | **VAL, SP 2.2** (Analizar resultados)                                             |
 
 ## ⛓️ Listado de ítems de trabajo a validar con el socio formador
@@ -43,7 +43,7 @@ Proceso encargado de asegurar que los productos o componentes desarrollados cump
 
 1. Matriz de validación actualizada.
 2. Lista de observaciones documentadas.
-3. Registro de acciones correctivas (si aplica).
+3. Registro de acciones correctivas en el Defect Log (si aplica).
 
 ## 📎 Recursos relacionados
 
@@ -55,7 +55,6 @@ Proceso encargado de asegurar que los productos o componentes desarrollados cump
 
 <details>
   <summary>Versiones</summary>
-
 | **Tipo de versión** | **Descripción**                                   | **Fecha**  | **Colaborador**         |
 | ------------------- | ------------------------------------------------- | ---------- | ----------------------- |
 | **1.0.0**           | Creación del proceso de validación de entregables | 15/05/2025 | Arturo Sánchez          |
@@ -65,5 +64,5 @@ Proceso encargado de asegurar que los productos o componentes desarrollados cump
 | **1.2.2**           | Se agrego lista de ítems a validar con el socio   | 19/05/2025 | Juan Eduardo Rosas      |
 | **1.2.3**           | Se especificó como definir los métodos de validación   | 20/05/2025 | Mariana Juárez, Sofía Osorio      |
 | **1.2.4**           | Se especificó la validación de requisitos  | 25/05/2025 | Paola Garrido      |
-
+| **1.2.5**           | Se especificó el uso del Defect Log  | 25/05/2025 | Arturo Sánchez, Paola Garrido, Rodrigo Antonio      |
 </details>
