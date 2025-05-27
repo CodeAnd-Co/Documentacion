@@ -68,4 +68,5 @@ Asegurar la evaluación sistemática de procesos y productos de trabajo mediante
 | **2.0.1**   | Corrección de sintaxis y ortografía en todo el documento.                                                 | 23/04/2025  | Max Toscano                                 |
 | **2.0.2**   | Cambiado nombre de copia del informe de evaluación; aclarados pasos para llenar bitácora.                 | 24/04/2025  | Max Toscano                                 |
 | **2.1.0**   | Implementación de acciones correctivas y simplificación del proceso para mayor eficiencia.                 | 08/05/2025  | Armando Méndez Castro, Valeria Zúñiga       |
+| **2.1.1**   | Mapeada la práctica 1.2 de OPF en el proceso.                 | 26/05/2025  | Emiliano Valdivia Lara       |
 </details>
