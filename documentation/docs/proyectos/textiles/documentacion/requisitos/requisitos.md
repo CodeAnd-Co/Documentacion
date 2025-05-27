@@ -375,6 +375,14 @@ import TabItem from '@theme/TabItem';
 
 ---
 
+## MER + Diccionario de datos
+
+<u>[Enlace a MER + Diccionario de datos](docs\proyectos\textiles\documentacion\diagrama-mer.md)</u>
+
+## Diagrama de paquetes
+
+<u>[Enlace a diagramas de paquetes de frontend y backend](/docs/proyectos/textiles/documentacion/estrategia-tecnica-textiles/#patrones-de-diseño-y-diagrama-de-paquetes)</u>
+
 ## Reglas de negocio
 
 #### Descripción General
