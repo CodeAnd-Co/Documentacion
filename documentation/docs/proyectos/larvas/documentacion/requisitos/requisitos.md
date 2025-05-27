@@ -116,7 +116,8 @@ Los requisitos no funcionales establecen las expectativas en términos de tiempo
 
 ## Requisitos de información
 
-[Diagrama MER](/docs/proyectos/larvas/documentacion/requisitos/diagrama-mer.png)
+Diagrama MER
+![Diagrama MER](./diagrama-mer.png)
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
