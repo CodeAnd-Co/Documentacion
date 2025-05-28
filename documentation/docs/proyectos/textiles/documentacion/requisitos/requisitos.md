@@ -77,7 +77,7 @@ Los requisitos funcionales del sistema describen una variedad de acciones que lo
 
 
 - [**RF4**](RF4.md): Super Administrador Actualiza Usuario
-- [**RF8**](RF8.md): Super Administrador Lee Rol
+- [**RF8**](RF8.md): Super Administrador Lee Rol - `Done`
 - [**RF9**](RF9.md): Super Administrador Actualiza Rol
 - [**RF16**](RF16.md): Super Administrador Crea Empleado
 - [**RF21**](RF21.md): Super Administrador Crea Grupo de Empleados

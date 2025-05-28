@@ -28,6 +28,10 @@ Como administrador, quiero poder visualizar la información de un rol para consu
 
 > _Descripción_: El diagrama de secuencia representa el flujo de interacción del Super Administrador con el sistema para visualizar los detalles de un rol.
 
+:::warning Importante
+Debido a la dificultad baja del requisito, no se quiere diagrama de secuencia
+:::
+
 ---
 
 ## **Mockup**
