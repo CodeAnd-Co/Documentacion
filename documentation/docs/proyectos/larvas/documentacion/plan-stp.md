@@ -67,7 +67,6 @@ El proposito de este plan es garantizar la calidad del software, detectando y co
   - Listar todas las charolas (RF16)
   - Ver estado de charolas (RF21)
 
-<<<<<<< HEAD
 
 - **Historial de Charola**
   - Consultar ancestros (RF3)
@@ -75,15 +74,6 @@ El proposito de este plan es garantizar la calidad del software, detectando y co
 
 - **Tamizado**
   - Seleccionar charola para tamizar (RF20)
-=======
-- **Historial de Charola**
-  - Consultar ancestros (RF3)
-  - Consultar historial de actividad (RF18)
-  - Ver cambios pasados (RF22)
-
-- **Tamizado**
-  - Seleccionar charola para tamizar (RF37)
->>>>>>> ea95eed (Arreglar el error de notify)
   - Registrar tamizado (RF38)
 
 - **Alimentación**
@@ -92,15 +82,9 @@ El proposito de este plan es garantizar la calidad del software, detectando y co
   - Eliminar tipo de comida (RF25)
 
 - **Hidratación**
-<<<<<<< HEAD
   - Registrar tipo de hidratación (RF36)
   - Editar tipo de hidratación (RF40)
   - Eliminar tipo de hidratación (RF41)
-=======
-  - Registrar tipo de hidratación
-  - Editar tipo de hidratación
-  - Eliminar tipo de hidratación
->>>>>>> ea95eed (Arreglar el error de notify)
 
 - **Frass**
   - Registrar frass (RF29)
@@ -109,11 +93,6 @@ El proposito de este plan es garantizar la calidad del software, detectando y co
 - **Reportes**
   - Descargar reportes (RF11)
 
-<<<<<<< HEAD
-=======
-- **Gráficas**
-  - Consultar gráficas (RF2)
->>>>>>> ea95eed (Arreglar el error de notify)
 
 # Aproximación a las Pruebas
 
@@ -163,15 +142,6 @@ Usaremos pruebas, manuales y automatizadas dentro de la aplicación.
 
 - Jest
 
-<<<<<<< HEAD
-=======
-Herramientas a considerar:
-- mocha
-- mochawesome
-- nyc
-- sinon
-
->>>>>>> ea95eed (Arreglar el error de notify)
 **Dispositivos**:
 - Computadoras portátiles del equipo (Windows 10 y 11, MacOS Sequoia 15.3.1)
 
@@ -184,15 +154,6 @@ Herramientas a considerar:
 # Casos de Prueba
 
 - Por cada requisito funcional/historia de usuario que forma parte del MVP y MBI debe haber un caso de prueba de portabilidad
-<<<<<<< HEAD
-=======
-# Riesgos y Mitigación
-
-| Riesgos                                                           | Mitigación | 
-| ----------------------------------------------------------------- | --------------------------------------------------- |
-| Dispositivos en el entorno de producción                          | Priorizar las funciones que forman parte del MVP    |
-| Los usuarios finales no se adaptan a la aplicación                | Capacitación y retroalimentación de los usuarios    |
->>>>>>> ea95eed (Arreglar el error de notify)
 
 # Manejo de las Pruebas
 
