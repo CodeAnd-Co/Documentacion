@@ -158,7 +158,7 @@ sequenceDiagram
 
 ### Mockup
 
-![mockup-rf7](image-2.png)
+![alt text](<img/mockupRF7.png>)
 
 ---
 ## Historial de cambios

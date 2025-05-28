@@ -268,7 +268,7 @@ sequenceDiagram
 
 ### Mockup
 
-![alt text](../mockupRF1.png)
+![alt text](<img/mockupRF1.png>)
 
 ---
 
@@ -281,3 +281,4 @@ sequenceDiagram
 | **1.1**             | Creación del diagrama de secuencia   | 22/4/2025  | Emiliano Valdivia Lara  |
 | **1.2**             | Se cambio el query del diagrama de secuencia   | 17/5/2025  | Mariana Juárez |
 | **1.3**             | Diagramas de actividades   | 23/5/2025  | Juan Eduardo Rosas Cerón |
+| **1.4**             | Se corrigió mockup  | 27/5/2025  | Mariana Juárez |

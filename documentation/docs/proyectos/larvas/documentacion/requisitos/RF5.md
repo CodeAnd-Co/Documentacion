@@ -418,7 +418,7 @@ sequenceDiagram
 
 ### Mockup
 
-![Mockup: Registrar Charola](image-1.png)
+![alt text](<img/mockupRF5.png>)
 
 ---
 

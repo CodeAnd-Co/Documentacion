@@ -235,7 +235,7 @@ sequenceDiagram
 
 ### Mockup
 
-![Mockup](../mockupRF8.jpg)
+![alt text](<img/mockupRF8.png>)
 
 ---
 
