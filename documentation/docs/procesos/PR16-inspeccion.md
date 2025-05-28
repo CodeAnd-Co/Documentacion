@@ -33,7 +33,7 @@ Proceso para identificar defectos en los componentes mediante inspecciones estru
 ## 📤 Salidas
 
 1. Defect Log actualizado.
-2. Matriz para monitorear prcesos.
+2. Matriz para monitorear procesos.
 
 ## 📎 Recursos relacionados
 
