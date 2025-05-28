@@ -67,13 +67,13 @@ El proposito de este plan es garantizar la calidad del software, detectando y co
   - Listar todas las charolas (RF16)
   - Ver estado de charolas (RF21)
 
+
 - **Historial de Charola**
   - Consultar ancestros (RF3)
   - Consultar historial de actividad (RF18)
-  - Ver cambios pasados (RF22)
 
 - **Tamizado**
-  - Seleccionar charola para tamizar (RF37)
+  - Seleccionar charola para tamizar (RF20)
   - Registrar tamizado (RF38)
 
 - **Alimentación**
@@ -82,9 +82,9 @@ El proposito de este plan es garantizar la calidad del software, detectando y co
   - Eliminar tipo de comida (RF25)
 
 - **Hidratación**
-  - Registrar tipo de hidratación
-  - Editar tipo de hidratación
-  - Eliminar tipo de hidratación
+  - Registrar tipo de hidratación (RF36)
+  - Editar tipo de hidratación (RF40)
+  - Eliminar tipo de hidratación (RF41)
 
 - **Frass**
   - Registrar frass (RF29)
@@ -93,29 +93,25 @@ El proposito de este plan es garantizar la calidad del software, detectando y co
 - **Reportes**
   - Descargar reportes (RF11)
 
-- **Gráficas**
-  - Consultar gráficas (RF2)
 
 # Aproximación a las Pruebas
 
 ### Estrategia de Pruebas
 
-Usaremos pruebas, manuales y automatizadas dentro de la aplicación. 
+Usaremos pruebas manuales y automatizadas dentro de la aplicación. 
 
 ### Tipos de Pruebas
 
-- Pruebas Funcionales.
-- Pruebas de Usabilidad.
+- Pruebas de Voz Alta.
+- Pruebas de Nuevas Funcionalidades.
 - Pruebas de Rendimiento.
-- Pruebas de Interfaz.
-
-### Niveles de Pruebas
-
-- Pruebas Unitarias.
-- Pruebas de Integración.
-- Pruebas Heuristicas.
-- Pruebas de Despliegue.
 - Pruebas de Estrés.
+- Pruebas de Portabilidad.
+- Pruebas de Integración.
+- Pruebas de Regresión.
+- Pruebas Unitarias(Automatizadas).
+- Pruebas de Aceptación.
+- Pruebas de Disponibilidad.
 
 # Criterios de las Pruebas
 
@@ -125,32 +121,26 @@ Usaremos pruebas, manuales y automatizadas dentro de la aplicación.
 - El sistema debe responder a las solicitudes del usuario dentro de un tiempo de respuesta aceptable; menos de 2 segundos para la mayoría de las operaciones.
 - El sistema debe ser escalable para soportar hasta 20 usuarios concurrentes sin que se degrade significativamente el rendimiento. Actualmente, Zuustento cuenta con 4 usuarios y se proyecta una expansión a 20 colaboradores en los próximos 2 años. Aunque este límite no es elevado, es esencial que la arquitectura permita adaptaciones para futuros crecimientos.
 - La interfaz debe ser intuitiva, permitiendo a los usuarios navegar con facilidad. Los botones deben ofrecer una interacción sencilla y las gráficas presentar los datos relevantes de forma clara y comprensible. El diseño debe ser minimalista y limpio, evitando un aspecto desordenado, y estar optimizado para su uso en tabletas.
-- El 90% de los usuarios deben calificar la usabilidad como satisfactoria o mejor.
 
 ### Criterios de Suspensión
 
 - Fallos críticos que impidan el funcionamiento básico de la aplicación.
 - Problemas de despliegue y relación con los servidores.
 
-# Entregables de las Pruebas
+# Entregables de las Pruebas (No aplica para las pruebas de integración y regresión)
 
 - Casos de prueba.
 - Datos de las pruebas.
 - Resultados de las pruebas.
 
+
 # Recursos para Pruebas
 
-**Personal**: El ingeniero de QA se asegurará de la correcta aplicación de las pruebas y calidad del código. Los miembros del equipo se encargarán de hacer las pruebas. El autor de la prueba debe ser diferente al autor del caso de uso/historia de usuario.
+**Personal**: El ingeniero de QA se asegurará de la correcta aplicación de las pruebas y calidad del código. Los miembros del equipo se encargarán de hacer las pruebas. El autor de la prueba debe ser diferente al autor del caso de uso/historia de usuario, excepto para las pruebas unitarias automatizadas.
 
 **Herramientas**: Frameworks de testing en node
 
 - Jest
-
-Herramientas a considerar:
-- mocha
-- mochawesome
-- nyc
-- sinon
 
 **Dispositivos**:
 - Computadoras portátiles del equipo (Windows 10 y 11, MacOS Sequoia 15.3.1)
@@ -164,29 +154,21 @@ Herramientas a considerar:
 # Casos de Prueba
 
 - Por cada requisito funcional/historia de usuario que forma parte del MVP y MBI debe haber un caso de prueba de portabilidad
-# Riesgos y Mitigación
-
-| Riesgos                                                           | Mitigación | 
-| ----------------------------------------------------------------- | --------------------------------------------------- |
-| Dispositivos en el entorno de producción                          | Priorizar las funciones que forman parte del MVP    |
-| Los usuarios finales no se adaptan a la aplicación                | Capacitación y retroalimentación de los usuarios    |
-| Salud de los miembros del equipo              | Capacitación y retroalimentación de los usuarios    |
-
 
 # Manejo de las Pruebas
 
-Explicación de cómo se gestionarán los defectos y los resultados de las pruebas. Se debe detallar:
+Explicación de cómo se gestionarán los defectos y los resultados de las pruebas:
 
-- Cómo se clasificarán y priorizarán los defectos encontrados.
-- Procedimientos para informar a los desarrolladores y diseñadores sobre los resultados de las pruebas.
-- Herramientas utilizadas para registrar y dar seguimiento a los defectos.
+- En nuestra matríz de pruebas se van a clasificar por tipos de pruebas. 
+- Al estar realizando la prueba el autor de la historia de usuario debe de estar presente para en caso de fallos o defectos se le va a informar para su revisión.
+- Se debe de registrar en el defect log los fallos y defectos encontrados.
 
 # Aprobación y Firma
 
 Proceso para validar las pruebas
 
 - Realizar la documentación de la prueba correspondiente.
-- Notificar al responsable de la aprobación.
+- Notificar al autor de la historia de usuario de la aprobación.
 - Notificar al QA.
 
 # Apéndices
@@ -201,3 +183,4 @@ Proceso para validar las pruebas
 | **1.1**             | Agregar frameworks, dispositivos y riesgos                 | 8/03/2025 | Ian Julián Estrada Castro  |
 | **1.2**             | Manejo de pruebas y Aprobacion y firma             | 11/03/2025 | Juan Eduardo Rosas Ceron  |
 | **2.0**             | Actualización de la información            | 23/05/2025 | Armando Méndez Castro  |
+| **2.1**             | Corrección de las pruebas y el manejo de pruebas            | 27/05/2025 | Sofía Osorio Suárez  |
