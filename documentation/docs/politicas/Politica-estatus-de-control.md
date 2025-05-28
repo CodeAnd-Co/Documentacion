@@ -33,6 +33,14 @@ Esta política aplica a:
 
    - Toda modificación o reclasificación debe ser documentada adecuadamente en el [repositorio de configuración](https://docs.google.com/spreadsheets/d/1e73fKSTAhxyPqiPN32u_1mkIyCbzssFc-7Ylfs-HL3w/edit?gid=620052691#gid=620052691).
    - Los elementos Bajo Revisión deben identificarse claramente y priorizarse para auditoría o ajustes según su impacto.
+   Aquí tienes la sección que falta, añadida como un nuevo punto dentro de las declaraciones de la política. También puedes decidir ponerla como una sección separada si prefieres destacarla más:
+
+4. **Frecuencia y método de actualización del repositorio de configuración**
+
+   * El repositorio de configuración debe actualizarse **al menos una vez por semana** o inmediatamente después de cualquier modificación significativa en un elemento de configuración.
+   * El **responsable de configuración** debe registrar cada cambio de estatus, nueva versión o inclusión de elementos, asegurando que la información esté sincronizada con la realidad operativa del proyecto.
+   * Para garantizar trazabilidad, cada entrada debe contener: identificador único, nombre del elemento, versión, estatus actual, fecha de actualización, autor del cambio y notas relevantes.
+   * Las actualizaciones deben hacerse directamente en el [repositorio de configuración](https://docs.google.com/spreadsheets/d/1e73fKSTAhxyPqiPN32u_1mkIyCbzssFc-7Ylfs-HL3w/edit?gid=620052691#gid=620052691) y notificarse a los equipos interesados si afectan entregables, dependencias o procesos clave.
 
 ## 👥 Roles y responsabilidades
 
