@@ -54,10 +54,9 @@ Los requisitos funcionales del sistema describen una variedad de acciones que lo
 - [**RF29**](RF29.md): Registar la información del Frass obtenido 
 - [**RF30**](RF30.md): Editar la información del Frass obtenido  
 - [**RF34**](RF34.md): Sidebar - `Done`
-- [**RF35**](RF35.md): Recuperar contraseña 
-- [**RF36**](RF36.md): Registrar un nuevo tipo de hidratación al sistema 
-- [**RF37**](RF37.md): Seleccionar charolas para tamizar y registrar sus datos - `Ready`
-- [**RF38**](RF38.md): Registrar nuevas charolas del tamizado - `Ready`
+- [**RF35**](RF35.md): Recuperar contraseña
+- [**RF36**](RF36.md): Registrar un nuevo tipo de hidratación al sistema - `Ready`
+- [**RF38**](RF38.md): Registrar nuevas charolas del tamizado - `Done`
 - [**RF39**](RF39.md): Visualizar charolas eliminadas
 - [**RF40**](RF40.md): Editar un tipo de hidratación en el sistema - `Ready`
 - [**RF41**](RF41.md): Eliminar un tipo de hidratación en el sistema
