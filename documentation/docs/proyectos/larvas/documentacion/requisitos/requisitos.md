@@ -29,11 +29,10 @@ Los requisitos funcionales del sistema describen una variedad de acciones que lo
 ### Requisitos Específicos
 
 - [**RF1**](RF1.md): Iniciar Sesión - `Done`
-- [**RF2**](RF2.md): Consultar Gráficas
 - [**RF3**](RF3.md): Consultar historial de ancestros de una charola - `Done`
 - [**RF5**](RF5.md): Registrar Charola - `Done`
 - [**RF6**](RF6.md): Buscar charola
-- [**RF7**](RF7.md): Modificar datos generales Charola - `Ready`
+- [**RF7**](RF7.md): Modificar datos generales Charola - `Done`
 - [**RF8**](RF8.md): Eliminar Charola - `Done`
 - [**RF9**](RF9.md): Cerrar sesión - `Done`
 - [**RF10**](RF10.md): Consultar información detallada de una charola - `Done`
@@ -45,6 +44,7 @@ Los requisitos funcionales del sistema describen una variedad de acciones que lo
 - [**RF16**](RF16.md): Visualizar todas las charolas registradas en el sistema - `Done`
 - [**RF18**](RF18.md): Historial de actividad de charola - `Done`
 - [**RF19**](RF19.md): Editar Usuario
+- [**RF20**](RF20.md): Seleccionar charolas para tamizar y registrar sus datos - `Ready`
 - [**RF21**](RF21.md): Consultar charolas de cambios pasados - `Done`
 - [**RF22**](RF22.md): Modificar el estado de la charola
 - [**RF23**](RF23.md): Registrar un nuevo tipo de comida en el sistema - `Done`
@@ -56,11 +56,11 @@ Los requisitos funcionales del sistema describen una variedad de acciones que lo
 - [**RF34**](RF34.md): Sidebar - `Done`
 - [**RF35**](RF35.md): Recuperar contraseña
 - [**RF36**](RF36.md): Registrar un nuevo tipo de hidratación al sistema
-- [**RF37**](RF37.md): Seleccionar charolas para tamizar y registrar sus datos - `Ready`
-- [**RF38**](RF38.md): Registrar nuevas charolas del tamizado - `Ready`
+- [**RF38**](RF38.md): Registrar nuevas charolas del tamizado - `Done`
 - [**RF39**](RF39.md): Visualizar charolas eliminadas
 - [**RF40**](RF40.md): Editar un tipo de hidratación en el sistema - `Ready`
-- [**RF41**](RF41.md): Eliminar un tipo de hidratación en el sistema
+- [**RF41**](RF41.md): Eliminar un tipo de hidratación en el sistema `Ready`
+- [**RF42**](RF42.md):Registrar la hidratación de la charola - `Ready`
 
 ---
 
