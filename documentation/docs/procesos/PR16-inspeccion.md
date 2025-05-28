@@ -48,9 +48,11 @@ Proceso para identificar defectos en los componentes mediante inspecciones estru
   <summary>Versiones</summary>
 | **Versión** | **Descripción**                                         | **Fecha**   | **Colaborador**            |
 |-------------|---------------------------------------------------------|-------------|----------------------------|
-| **1.0**   | Versión inicial del PR16                                | 10/04/2025  | Ian Julián Estrada Castro  |
-| **1.1**   | Refactorización del proceso                             | 18/04/2025  | Diego Fuentes              |
-| **1.2**   | Simplificación y mejora en la concisión del proceso    | 15/05/2025  | Ángel Mauricio Ramírez Herrera |
-| **1.3**   | Cambio de nombre de archivo, actualización de título y aclaraciones | 15/05/2025  | Daniel Contreras Chávez    |
-| **2.0**   | Refactorización del proceso   | 26/05/2025  | Sofia Osorio Suárez, Mariana Juárez Ramírez    |
+| **1.0.0**   | Versión inicial del PR16                                | 10/04/2025  | Ian Julián Estrada Castro  |
+| **1.1.0**   | Refactorización del proceso                             | 18/04/2025  | Diego Fuentes              |
+| **1.2.0**   | Simplificación y mejora en la concisión del proceso    | 15/05/2025  | Ángel Mauricio Ramírez Herrera |
+| **1.3.0**   | Cambio de nombre de archivo, actualización de título y aclaraciones | 15/05/2025  | Daniel Contreras Chávez    |
+| **1.4.0**   | Agregar especificación de responsable y solución en el defect log en el paso del proceso | 26/05/2025 | Ian Julián Estrada Castro |
+| **1.4.1**   | Mapear VER 3.2 | 27/05/2025  | Ian Julián Estrada Castro       |
+| **2.0.0** |  Refactorización del proceso   | 26/05/2025  | Sofia Osorio Suárez, Mariana Juárez Ramírez    |
 </details>
