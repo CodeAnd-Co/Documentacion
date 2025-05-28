@@ -24,6 +24,26 @@ Optimizar procesos de CNH para asegurar una conexión efectiva y confiable con s
 ### Visión del equipo:
 Ser un equipo de INGENIEROS que aprende de sus errores y levanta proyectos de las cenizas.
 
+### Mantra:
+
+Todos somos importantes para el proyecto, para el equipo, para el departamento.
+Yo soy importante para el proyecto, para el equipo, para el departamento.
+
+
+Todos podemos hacer todo por el proyecto, por el equipo, por el departamento.
+Yo puedo hacer todo por el proyecto, por el equipo, por el departamento.
+
+## Acuerdos de trabajo:
+- Agarramos las tareas que nadie quiere, hacemos 2 tareas malas por una tarea buena.
+- No nos paramos hasta terminar el trabajo actual.
+- Nos damos recordatorios de seguir trabajando cuando notamos que alguien no trabaja.
+- No interrumpimos a las personas que están trabajando en el CMMI.
+- Dejamos el ego de lado al pedir ayuda, nos acercamos a miembros de otros equipos o departamentos.
+
+---
+
+
+
 ### Restricciones
 - Existen 10 semanas para desarrollar la solución.
 - Conexión a internet: El sistema requerirá acceso a internet para poder sincronizar los datos ya sea mediante una conexión con Field Ops o TLXplorer.
@@ -351,3 +371,4 @@ import TabItem from '@theme/TabItem';
 | **1.3**             | Corrección de una palabra | 08/05/2025 | Rommel Toledo C. |
 | **1.4**             | Actualización del contenido | 15/05/2025 | Juan Pablo Chávez |
 | **2.0**             | Actualizar visión del equipo | 22/05/2025 | Diego Fuentes |
+| **3.0**             | Añadir mantra y acuerdos de trabajo del equipo | 26/05/2025 | Diego Fuentes |

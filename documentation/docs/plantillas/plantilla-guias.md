@@ -147,8 +147,8 @@ title: [Título de la Guía]
 
 <details>
   <summary>Versiones</summary>
-    | **Tipo de versión** | **Descripción**          | **Fecha**       | **Colaborador**                 |
-    | ------------------- | ------------------------ | --------------- | ------------------------------- |
-    | **1.0.0**           | Creación de la plantilla.| 06/03/2025      | Diego Antonio García Padilla    |
-    | **2.0.0**           | Modificar plantilla.     | 18/05/2025      | Angel Mauricio Ramírez Herrera  |
+| **Tipo de versión** | **Descripción**                             | **Fecha**     | **Colaborador**                  |
+|---------------------|---------------------------------------------|---------------|----------------------------------|
+| **1.0.0**           | Creación de la plantilla.                   | 06/03/2025    | Diego Antonio García Padilla     |
+| **1.1.0**           | Actualización al nuevo formato estándar.    | 19/05/2025    | Angel Mauricio Ramírez Herrera   |
 </details>

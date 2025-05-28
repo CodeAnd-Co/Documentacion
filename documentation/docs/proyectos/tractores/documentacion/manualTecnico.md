@@ -26,122 +26,26 @@ Este manual técnico describe paso a paso cómo preparar, ejecutar, probar y man
 
 ### 1.1 ¿Qué es Harvester?
 
-Harvester es una aplicación de escritorio para el analísis de datos recabados por tractores de CNH, donde sus empleados podrán crear reportes de manera más eficiente. Su arquitectura está compuesta por:
+Harvester es una aplicación de escritorio para el análisis de datos recabados por tractores de CNH, donde sus empleados podrán crear reportes de manera más eficiente. Su arquitectura está compuesta por:
 
-* Una **aplicación de escritorio** desarrollada en HTML, CSS y JS, usando la libreria de ElectronJS.
+* Una **aplicación de escritorio** desarrollada en HTML, CSS y JS, usando la librería de ElectronJS.
 * Un **backend desacoplado** basado en Node.js alojado en una instancia EC2.
 * Una **base de datos MySQL**.
 
 ---
-
-## 2. Requisitos Previos
+## 2 Requisitos previos
 
 ### 2.1 Herramientas necesarias
 
-Instala las siguientes herramientas en tu equipo local:
+Instala las siguientes herramientas para probar el backend en tu equipo local:
 
 1. **Node.js:** Ejecuta el backend del sistema Harvester. [Descargar](https://nodejs.org/)
 2. **Git:** Permite clonar el código fuente desde GitHub. [Descargar](https://git-scm.com/)
 3. **MySQL Workbench:** Interfaz visual para administrar la base de datos. [Descargar](https://dev.mysql.com/downloads/workbench/)
 4. **Postman:** Herramienta para probar las APIs del backend. [Descargar](https://www.postman.com/)
+5. **Visual Studio Code** Editor de código.               [Descargar](https://code.visualstudio.com/)
 
-> **NOTA:** Para conectarte en MySQL Workbench:
->
-> 1. Abre Workbench.
-> 2. Da clic en el símbolo "+" para crear una nueva conexión.
-> 3. En "Hostname" coloca el endpoint de RDS.
-> 4. En "Username" coloca `root`.
-> 5. Da clic en "Store in Vault" para guardar tu contraseña.
-> 6. Prueba la conexión y guarda.
-> 1. [MySQL Capacitación](https://drive.google.com/file/d/1E9aODKokxhfOoEVqCS5lIcIZUki946ts/view?usp=drive_link)
-
-
-### 2.2 Crear y Configurar una Cuenta en AWS
-
-#### Paso a paso para crear la cuenta:
-
-1. Ve a [https://aws.amazon.com](https://aws.amazon.com) y haz clic en **"Crear una cuenta gratuita"**.
-2. Ingresa un correo electrónico válido y una contraseña segura.
-3. Completa los datos de contacto y método de pago.
-4. Verifica tu identidad vía SMS o llamada.
-5. Elige el plan **"Basic"**.
-
-#### Activación de servicios requeridos
-
-* **EC2:** Ejecuta el backend.
-
-### 2.3 Configuración de Servicios en AWS
-
-#### EC2 (backend)
-
-1. Ir a AWS > EC2 > Launch Instance
-
-2. Configuración:
-
-   * Nombre: `Harvester`
-
-   * Imagen: Ubuntu Noble 24.04 LTS
-
-   * Tipo: t4g.medium
-
-   * Par de claves: crear par de claves RSA (descargar `.pem`)
-
-     * Guarda la clave en una carpeta accesible (ej. `~/Documentos/keys/Harvester.pem`)
-     * Para conectarse, **la consola debe estar posicionada en el mismo directorio de la clave** o se debe usar la ruta completa
-
-   * Grupo de seguridad:
-
-     * Añadir reglas:
-
-       * Puerto 22 (SSH)
-       * Puerto 80 (HTTP)
-       * Puerto 443 (HTTPS)
-       * Puerto 3000 (para pruebas)
-       * Puerto 3306 (MySQL)
-
-3. Conectarse por SSH (en la consola de comandos):
-
-```bash
-cd ~/Documentos/keys
-chmod 400 Harvester.pem
-ssh -i "Harvester.pem" ubuntu@<ip-publica-ec2>
-```
-
-4. Preparar Ubuntu (en la consola de comandos de EC2):
-```bash
-sudo apt upgrade -y
-sudo apt install curl -y
-```
-
-5. Instalar herramientas de trabajo (en la consola de comandos de EC2):
-
-```bash
-curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
-sudo apt-get install -y nodejs
-sudo npm install -g pm2
-sudo apt install mysql-server -y
-sudo apt install git -y
-```
----
-
-## 3. Preparación del Proyecto
-
-Después de configurar los servicios en AWS, clonaremos los repositorios y prepararemos el entorno de desarrollo local.
-
-### 3.1 Clonar los Repositorios (en la consola de VSCode):
-
-```bash
-# Backend
-cd ~
-# Para tener dos entornos de despliegue (Main y Staging) clonamos dos veces el repositorio
-git clone https://github.com/CodeAnd-Co/Backend-Desacoplado-TracTech.git Main-Backend-Desacoplado-TracTech
-git clone https://github.com/CodeAnd-Co/Backend-Desacoplado-TracTech.git Staging-Backend-Desacoplado-TracTech
-cd Backend-Desacoplado-TracTech
-npm install
-cp .env.example .env
-```
-
-### 3.2 Crear base de datos Harvester
+#### 2.2.1 Crear base de datos Harvester
 
 **MySQL Workbench:**
 
@@ -158,8 +62,34 @@ CREATE DATABASE harvester;
 
 #### Links de referencia
 
-1. [HARVESTER.SQL](https://drive.google.com/file/d/1-jHoUr-9iyutlgRoevjk-BiEbZiOBhkS/view?usp=sharing)
+1. [HARVESTER.sql](https://drive.google.com/file/d/1mxIJnK36602K5GNVSg8o2zXxXfqooOmD/view?usp=sharing)
 ---
+
+
+## 3. Preparación del Proyecto
+
+Después de instalar las herramientas para trabajar, clonaremos los repositorios y prepararemos el entorno de desarrollo local.
+
+### 3.1 Clonar los Repositorios:
+
+#### 3.1.1 Backend desacoplado:
+
+```bash
+cd ~
+git clone https://github.com/CodeAnd-Co/Backend-Desacoplado-TracTech.git
+cd Backend-Desacoplado-TracTech
+npm install
+```
+
+#### 3.1.2 App local:
+
+```bash
+cd ~
+git clone https://github.com/CodeAnd-Co/App-Local-TracTech.git
+cd App-Local-TracTech
+cd harvester-app
+npm install
+```
 
 ## 4. Estructura de Carpetas
 
@@ -178,27 +108,17 @@ Una vez clonado el código fuente, es importante conocer su estructura para faci
 ![Backend](./diagrama-de-paquetes-backend-desacoplado.png)
 
 
-
 ---
 
 ## 5. Configuración del Entorno
 
-### 5.1 Crear archivo .env en el servidor
+### 5.1 Crear archivo .env en el backend desacoplado
 
-En la consola de comandos de la instancia EC2:
+1. Crear el archivo .env a nivel de ./Backend-Desacoplado-TracTech
+
+#### 5.1.1 Variables del Backend
 
 ```bash
-nano .env
-```
-
-1. Escribe las variables necesarias
-2. Presiona `Ctrl + O` para guardar
-3. Presiona `Enter`
-4. Presiona `Ctrl + X` para salir
-
-### 5.2 Variables del Backend
-
-```env
 PUERTO =
 ANFITRION_BD=
 USUARIO_BD=
@@ -206,7 +126,33 @@ CONTRASENA_BD=
 NOMBRE_BD=
 SECRETO_JWT=
 DURACION_JWT=
-SU='SUPER ADMIN'
+SU=
+```
+
+### 5.2 Crear archivo constantes.js en la App local
+
+1. Crear el archivo constantes.js a nivel de ./App-Local-TracTech/harvester-app/src/framework/utils/scripts
+
+#### 5.2.1 Constantes de la app
+
+```JS
+// RUTA A SERVIDOR - ENTORNO MAIN
+// const URL_BASE=
+
+// RUTA A SERVIDOR - ENTORNO STAGING
+// const URL_BASE=
+
+// RUTA A SERVIDOR - ENTORNO LOCAL
+// const URL_BASE = 
+
+const LONGITUD_MAXIMA_NOMBRE_FORMULA=
+const LONGITUD_MAXIMA_FORMULA=
+
+module.exports = {
+	URL_BASE,
+	LONGITUD_MAXIMA_NOMBRE_FORMULA,
+	LONGITUD_MAXIMA_FORMULA
+}
 ```
 
 ---
@@ -216,14 +162,14 @@ SU='SUPER ADMIN'
 ### 6.1 Ejecutar Backend Local
 
 ```bash
-cd Staging-Backend-Desacoplado-TracTech
+cd Backend-Desacoplado-TracTech
 npm start
 ```
 
-### 6.2 Ejecutar Aplicación
-
+Para inicializar el servidor en la instancia de EC2:
 ```bash
-cd App-Local-TracTech/harvester-app
+cd App-Local-TracTech
+cd harvester-app
 npm start
 ```
 
@@ -232,6 +178,43 @@ npm start
 Consulta el [Manual de Despliegue](./manual-despliegue-tractores.md)
 
 ---
+
+### 6.1 App local
+
+### 6.2 Iniciar aplicación
+```bash
+# Estando en la carpeta de harvester-app
+npm start
+```
+
+#### 6.3 Crear instalador de la aplicación
+Existen varias formas de crear un instalador de una aplicación en Electron. Para la aplicación de harvester decidimos usar Electron-builder.
+```bash
+cd App-Local-TracTech
+cd harvester-app
+npm install --save-dev electron-builder
+``` 
+Dentro de nuestro package.json debemos incluir lo siguiente:
+```json
+"build": {
+    "appId": "com.tractech.harvester",
+    "win": {
+      "target": [
+        "nsis"
+      ],
+      "icon": "src/framework/utils/imagenes/HarvesterAppIcon.ico"
+    },
+    "nsis": {
+      "oneClick": true,
+      "installerIcon": "src/framework/utils/imagenes/HarvesterAppIcon.ico",
+      "uninstallerIcon": "src/framework/utils/imagenes/HarvesterAppIcon.ico",
+      "uninstallDisplayName": "Desinstalador Harvester App",
+      "license": "LICENSE",
+      "allowToChangeInstallationDirectory": false
+    }
+  },
+```
+Debemos asegurarnos que tengamos un icono en formato .ico para la aplicación, al igual que una licencia. Harvester está bajo la licencia de MIT.
 
 ## 7. Pruebas del Sistema
 
@@ -273,5 +256,6 @@ http://localhost:4000/api-docs
 | Versión | Descripción                                        | Fecha      | Colaborador      |
 | ------- | -------------------------------------------------- | ---------- | --------------   |
 | 1.0     | Implementación inicial del Manual Técnico          | 19/05/2025 | Daniel Queijeiro |
+| 1.1     | Añadir información de la aplicación local          | 21/05/2025 | Daniel Queijeiro |
 | 2.0     | Actualizar diagrama de paquetes          | 22/05/2025 | Diego Fuentes, Daniel Queijeiro |
-
+| 2.1     | Mejorar el manual                                  | 23/05/2025 | Daniel Queijeiro |

@@ -123,9 +123,18 @@ sequenceDiagram
 
 _<u>[Enlace a pruebas RF2 Consultar Lista de Usuarios.](https://docs.google.com/spreadsheets/d/1NLGwGrGA5PVOEzLaqxa8Ts1D_Ng3QzzqNKWJYUzxD-M/edit?gid=1685718554#gid=1685718554)</u>_
 
+## **Código**
+
+_<u>[Pull Request Front-End](https://github.com/CodeAnd-Co/Frontend-Text-Lines/pull/17)</u>_
+
+_<u>[Pull Request Back-End](https://github.com/CodeAnd-Co/Backend-textiles/pull/24)</u>_
+
+---
+
 ### Historial de cambios
 
-| **Tipo de Versión** | **Descripción**                                  | **Fecha** | **Colaborador** |
-| ------------------- | ------------------------------------------------ | --------- | --------------- |
-| **1.0**             | Actualización de la documentación del requisito. | 10/4/2025 | Valeria Zúñiga  |
-| **1.1**             | Se actualizó documentación. | 22/05/2025 | Arturo Sánchez Rodríguez |
+| **Tipo de Versión** | **Descripción**                                  | **Fecha**  | **Colaborador**          |
+| ------------------- | ------------------------------------------------ | ---------- | ------------------------ |
+| **1.0**             | Actualización de la documentación del requisito. | 10/4/2025  | Valeria Zúñiga           |
+| **1.1**             | Se actualizó documentación.                      | 22/05/2025 | Arturo Sánchez Rodríguez |
+| **1.2**             | Agregar links de PR                              | 26/05/2025 | Max Toscano              |
