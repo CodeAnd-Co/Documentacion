@@ -52,4 +52,5 @@ Proceso para identificar, evaluar, institucionalizar y comunicar mejoras en los 
 | -------------------- | ----------------------------- | ---------- | -------------------------------------- |
 | **1.0.0**            | Creación inicial del proceso | 15/05/2025 | Paola María Garrido, Valeria Zúñiga |
 | **1.1.0**            | Mapear OPF dentro del proceso | 26/05/2025 | Angel Mauricio Ramírez Herrera, Paola María Garrido, Valeria Zúñiga |
+| **1.1.1**            | Corregir OPF 1.3 | 28/05/2025 | Angel Mauricio Ramírez Herrera |
 </details>

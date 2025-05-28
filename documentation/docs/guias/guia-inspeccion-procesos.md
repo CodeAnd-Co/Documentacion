@@ -25,7 +25,7 @@ Esta guía permite asegurar que los equipos sigan los procesos definidos, genere
 ### Paso 2: Identificar procesos a inspeccionar
 
 - Prioriza procesos de **uso frecuente** y **gran impacto** en el departamento.
-- Verifica que estén **documentados en la Weeky** y cumplan con su **checklist de verificación**.
+- Verifica que estén **documentados en la Wili** y cumplan con su [**checklist de verificación**](/docs/next/recursos/checklists).
 
 **Resultado esperado:** Lista de procesos clave a inspeccionar.
 
@@ -43,6 +43,7 @@ Esta guía permite asegurar que los equipos sigan los procesos definidos, genere
 
 - Tomando en cuenta el uso del proceso dentro del departamento, selecciona:
   - ✅ Está siguiendo el proceso
+  - 🫡 Verificar que los productos de trabajo y salidas del proceso están siendo generadas por los miembros del departamento.
   - ⚠️ No aplica
   - ❌ No lo está implementando
   - 🔄 En proceso de implementación

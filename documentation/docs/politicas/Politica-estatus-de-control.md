@@ -33,7 +33,6 @@ Esta política aplica a:
 
    - Toda modificación o reclasificación debe ser documentada adecuadamente en el [repositorio de configuración](https://docs.google.com/spreadsheets/d/1e73fKSTAhxyPqiPN32u_1mkIyCbzssFc-7Ylfs-HL3w/edit?gid=620052691#gid=620052691).
    - Los elementos Bajo Revisión deben identificarse claramente y priorizarse para auditoría o ajustes según su impacto.
-   Aquí tienes la sección que falta, añadida como un nuevo punto dentro de las declaraciones de la política. También puedes decidir ponerla como una sección separada si prefieres destacarla más:
 
 4. **Frecuencia y método de actualización del repositorio de configuración**
 
@@ -68,8 +67,9 @@ El incumplimiento de esta política puede resultar en:
 
 <details>
   <summary>Versiones</summary>
-    | **Tipo de versión** | **Descripción** | **Fecha** | **Colaborador** |
-    | ------------------- | --------------- | --------- | --------------- |
-    | **1.0.0** | Creación de la política. | 14/05/2025 | Armando Méndez Castro |
-    | **1.1.0** | Refactorizar política. | 19/05/2025 | Daniel Contreras Chávez |
+    | **Tipo de versión** | **Descripción**                                          | **Fecha**  | **Colaborador**                |
+    | ------------------- | -------------------------------------------------------- | ---------- | ------------------------------ |
+    | **1.0.0** | Creación de la política.                                           | 14/05/2025 | Armando Méndez Castro          |
+    | **1.1.0** | Refactorizar política.                                             | 19/05/2025 | Daniel Contreras Chávez        |
+    | **1.1.1** | Incluir frecuencia de actualización de la matriz de configuración. | 28/05/2025 | Angel Mauricio Ramírez Herrera |
 </details>
