@@ -7,6 +7,19 @@ sidebar_position: 1
 
 **Nombre de la Empresa:** Altertex US
 
+<div style={{ display: "flex", justifyContent: "space-between" }}>
+
+<div style={{ width: "48%" }}>
+<h3>Misión</h3>
+<p>Desarrollar soluciones tecnológicas innovadoras que optimicen la gestión de clientes, empleados y productos, garantizando eficiencia y satisfacción para Altertex.</p>
+</div>
+
+<div style={{ width: "48%" }}>
+<h3>Visión</h3>
+<p>Convertirse en la herramienta clave de Altertex para optimizar la gestión de clientes, empleados y productos antes de julio de 2025, garantizando procesos más ágiles y eficientes.</p>
+</div>
+</div>
+
 ## Análisis de Necesidades 😑
 
 ### Problemas Actuales
