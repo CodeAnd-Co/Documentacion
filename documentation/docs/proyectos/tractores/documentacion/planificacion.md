@@ -18,7 +18,7 @@ _Cronograma, hitos y entregables._
 | Construcción 2 (MVP)                    | 02/06/25              | En progreso |
 | Transición 1 (MVP)                      | 04/06/25              | No empezado |
 | Construcción 3 (MBI 1)                  | 09/06/25              | No empezado |
-| Transición 2 (MBI 1)                    | 11/05/25              | No empezado |
+| Transición 2 (MBI 1)                    | 11/06/25              | No empezado |
 
 
 
@@ -29,9 +29,9 @@ _Cronograma, hitos y entregables._
 | Inicio del Proyecto      | Inicio formal del proyecto              | 14/02/25       | Terminado   |
 | Aprobación de Requisitos | Aprobación final de los requisitos      | 01/03/25       | Terminado   |
 | Finalización del Diseño  | Finalización de diseño del sistema      | 08/04/25       | Terminado   |
-| Desarrollo Completo      | Finalización del desarrollo del sistema | 25/05/25       | En progreso |
-| Pruebas Completas        | Finalización de las pruebas             | 30/05/25       | No empezado |
-| Implementación Exitosa   | Implementación exitosa en producción    | 30/04/25       | No empezado |
+| Desarrollo Completo      | Finalización del desarrollo del sistema | 09/06/25       | En progreso |
+| Pruebas Completas        | Finalización de las pruebas             | 09/06/25       | No empezado |
+| Implementación Exitosa   | Implementación exitosa en producción    | 11/06/25       | No empezado |
 | Cierre del Proyecto      | Cierre formal del proyecto              | 11/06/25       | No empezado |
 
 
@@ -47,7 +47,7 @@ _Cronograma, hitos y entregables._
 7. **Informe Final:** Resumen del proyecto, incluyendo lecciones aprendidas y recomendaciones.
 
 ## Ciclo de Vida del Proyecto
-Como equipo, TracTech trabaja con el ciclo de vida: <u>_[DAD Básico  ](https://codeandco-wiki.netlify.app/docs/recursos/ciclo-de-vida/)_</u>
+Como equipo, TracTech trabaja con el ciclo de vida: <u>_[DAD Básico](https://codeandco-wiki.netlify.app/docs/recursos/ciclo-de-vida/)_</u>
 
 ---
 
