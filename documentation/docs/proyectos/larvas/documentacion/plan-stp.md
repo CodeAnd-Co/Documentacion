@@ -23,56 +23,95 @@ El proposito de este plan es garantizar la calidad del software, detectando y co
 - **UI**: User Interface (Interfaz de Usuario)
 
 # Objetivos de las Pruebas
+- Validan de forma aislada el comportamiento de funciones o métodos individuales, asegurando que produzcan los resultados esperados con entradas específicas.
 
-- Detectar problemas de usabilidad y experiencia del usuario aplicando criterios expertos, lo que facilita la mejora de la interfaz y la interacción general.
-- Verificar que los distintos módulos o componentes del sistema se comuniquen correctamente y funcionen en conjunto, asegurando la coherencia y el flujo adecuado de la información.
-- Validar que el proceso de instalación y configuración del software en el entorno de producción se realice sin contratiempos, garantizando que la transición del entorno de desarrollo a producción sea exitosa.
-- Evaluar la robustez y estabilidad del sistema bajo condiciones de carga extrema, identificando cuellos de botella y determinando la capacidad máxima antes de que el sistema falle.
-- Asegurar que cada componente o módulo individual funcione según lo esperado, permitiendo detectar y corregir errores en etapas tempranas del desarrollo.
-- Verificar la funcionalidad completa de la aplicación según los requisitos especificados.
-- Comprobar la seguridad de los datos de los usuarios y la implementación correcta del RBAC.
+- Evalúan la experiencia de usuario observando cómo interactúan con la interfaz mientras verbalizan sus pensamientos, permitiendo detectar barreras de uso.
+
+- Verifican que las nuevas funciones implementadas cumplan con los requisitos y se comporten correctamente desde su primera versión funcional.
+
+- Aseguran que los distintos módulos del sistema funcionen correctamente en conjunto, intercambiando datos y procesando flujos de forma coherente.
+
+- Confirman que nuevas actualizaciones o cambios no han afectado negativamente funcionalidades previamente desarrolladas y validadas.
+
+- Validan el comportamiento del sistema en el entorno real de uso, asegurando estabilidad, acceso correcto y rendimiento aceptable.
+
+- Confirman que el despliegue del sistema o sus actualizaciones se realizaron correctamente, sin errores de instalación ni pérdida de datos.
+
+- Verifican que el sistema protege adecuadamente los datos y recursos, evaluando posibles vulnerabilidades y control de accesos.
+
+- Evalúan el sistema como un todo en condiciones reales de operación, considerando tanto requerimientos funcionales como no funcionales.
+
+- Confirman que el sistema cumple con los criterios establecidos por el cliente o usuario final, y que está listo para su liberación o uso en producción.
 
 # Alcance de las Pruebas
 
 ### Dentro del Alcance
 
-- Módulos:
-    - Usuarios
-      - Registrar
-      - Autentificar
-      - Eliminar
-      - Consultar
-      - Editar
-    - Charolas y Frass
-      - Registrar
-      - Eliminar
-      - Consultar
-      - Editar
-    - Reportes
-      - Descargar
-    - Gráficas
-      - Consultar
+- **Autenticación**
+  - Iniciar sesión (RF1)
+  - Cerrar sesión (RF9)
+
+- **Usuarios**
+  - Registrar usuario (RF13)
+  - Editar usuario (RF19)
+  - Eliminar usuario (RF14)
+  - Recuperar contraseña (RF35)
+
+- **Charolas**
+  - Registrar charola (RF5)
+  - Buscar charola (RF6)
+  - Editar charola (RF7)
+  - Eliminar charola (RF8)
+  - Ver detalle de charola (RF10)
+  - Filtrar charolas (RF15)
+  - Listar todas las charolas (RF16)
+  - Ver estado de charolas (RF21)
+
+
+- **Historial de Charola**
+  - Consultar ancestros (RF3)
+  - Consultar historial de actividad (RF18)
+
+- **Tamizado**
+  - Seleccionar charola para tamizar (RF20)
+  - Registrar tamizado (RF38)
+
+- **Alimentación**
+  - Registrar tipo de comida (RF23)
+  - Editar tipo de comida (RF24)
+  - Eliminar tipo de comida (RF25)
+
+- **Hidratación**
+  - Registrar tipo de hidratación (RF36)
+  - Editar tipo de hidratación (RF40)
+  - Eliminar tipo de hidratación (RF41)
+
+- **Frass**
+  - Registrar frass (RF29)
+  - Editar frass (RF30)
+
+- **Reportes**
+  - Descargar reportes (RF11)
+
 
 # Aproximación a las Pruebas
 
 ### Estrategia de Pruebas
 
-Usaremos pruebas manuales y automatizadas dentro de la aplicación. 
+Usaremos pruebas, manuales y automatizadas dentro de la aplicación. 
 
 ### Tipos de Pruebas
 
-- Pruebas Funcionales.
-- Pruebas de Usabilidad.
+- Pruebas de Voz Alta.
+- Pruebas de Nuevas Funcionalidades.
 - Pruebas de Rendimiento.
-- Pruebas de Interfaz.
-
-### Niveles de Pruebas
-
-- Pruebas Unitarias.
-- Pruebas de Integración.
-- Pruebas Heuristicas.
-- Pruebas de Despliegue.
 - Pruebas de Estrés.
+- Pruebas de Portabilidad.
+- Pruebas de Integración.
+- Pruebas de Regresión.
+- Pruebas Unitarias(Automatizadas).
+- Pruebas de Aceptación.
+- Pruebas de Disponibilidad.
 
 # Criterios de las Pruebas
 
@@ -82,42 +121,29 @@ Usaremos pruebas manuales y automatizadas dentro de la aplicación.
 - El sistema debe responder a las solicitudes del usuario dentro de un tiempo de respuesta aceptable; menos de 2 segundos para la mayoría de las operaciones.
 - El sistema debe ser escalable para soportar hasta 20 usuarios concurrentes sin que se degrade significativamente el rendimiento. Actualmente, Zuustento cuenta con 4 usuarios y se proyecta una expansión a 20 colaboradores en los próximos 2 años. Aunque este límite no es elevado, es esencial que la arquitectura permita adaptaciones para futuros crecimientos.
 - La interfaz debe ser intuitiva, permitiendo a los usuarios navegar con facilidad. Los botones deben ofrecer una interacción sencilla y las gráficas presentar los datos relevantes de forma clara y comprensible. El diseño debe ser minimalista y limpio, evitando un aspecto desordenado, y estar optimizado para su uso en tabletas.
-- El 90% de los usuarios deben calificar la usabilidad como satisfactoria o mejor.
 
 ### Criterios de Suspensión
 
 - Fallos críticos que impidan el funcionamiento básico de la aplicación.
 - Problemas de despliegue y relación con los servidores.
 
-# Entregables de las Pruebas
+# Entregables de las Pruebas (No aplica para las pruebas de integración y regresión)
 
 - Casos de prueba.
-- Scripts de las pruebas.
 - Datos de las pruebas.
 - Resultados de las pruebas.
 
+
 # Recursos para Pruebas
 
-**Personal**: El ingeniero de QA se asegurará de la correcta aplicación de las pruebas y calidad del código. Los miembros del equipo se encargarán de hacer las pruebas. El autor de la prueba debe ser diferente al autor del caso de uso/historia de usuario.
+**Personal**: El ingeniero de QA se asegurará de la correcta aplicación de las pruebas y calidad del código. Los miembros del equipo se encargarán de hacer las pruebas. El autor de la prueba debe ser diferente al autor del caso de uso/historia de usuario, excepto para las pruebas unitarias automatizadas.
 
 **Herramientas**: Frameworks de testing en node
 
 - Jest
 
-Herramientas a considerar:
-
-- chai
-- chai-http
-- mocha
-- mochawesome
-- nyc
-- sinon
-
 **Dispositivos**:
-
-- Tablet industrial con Windows 10
 - Computadoras portátiles del equipo (Windows 10 y 11, MacOS Sequoia 15.3.1)
-- Dispositivos móviles del equipo (iOS 18, Android 14)
 
 # Ambientes de Prueba
 
@@ -127,31 +153,22 @@ Herramientas a considerar:
 
 # Casos de Prueba
 
-- Por cada requisito funcional/historia de usuario que forma parte del MVP y MBI debe haber un caso de prueba. [Guía para hacer casos prueba a partir de casos de uso](https://www.fing.edu.uy/inco/cursos/ingsoft/iis/files/3172_0958_usecase.pdf)
-
-# Riesgos y Mitigación
-
-| Riesgos                                                           | Mitigación | 
-| ----------------------------------------------------------------- | --------------------------------------------------- |
-| Disponibilidad del entorno                                        | Prioizar las funciones que forman parte del MVP     |
-| El uso de una nueva tecnología (Flutter) para la aplicación móvil | Capacitación en Flutter                             |
-| Implementación de frameworks de pruebas                           | Capacitación en el uso de los frameworks y sus usos |
-| Los usuarios finales no se adaptan a la aplicación                | Capacitación y retroalimentación de los usuarios    |
+- Por cada requisito funcional/historia de usuario que forma parte del MVP y MBI debe haber un caso de prueba de portabilidad
 
 # Manejo de las Pruebas
 
-Explicación de cómo se gestionarán los defectos y los resultados de las pruebas. Se debe detallar:
+Explicación de cómo se gestionarán los defectos y los resultados de las pruebas:
 
-- Cómo se clasificarán y priorizarán los defectos encontrados.
-- Procedimientos para informar a los desarrolladores y diseñadores sobre los resultados de las pruebas.
-- Herramientas utilizadas para registrar y dar seguimiento a los defectos.
+- En nuestra matríz de pruebas se van a clasificar por tipos de pruebas. 
+- Al estar realizando la prueba el autor de la historia de usuario debe de estar presente para en caso de fallos o defectos se le va a informar para su revisión.
+- Se debe de registrar en el defect log los fallos y defectos encontrados.
 
 # Aprobación y Firma
 
 Proceso para validar las pruebas
 
 - Realizar la documentación de la prueba correspondiente.
-- Notificar al responsable de la aprobación.
+- Notificar al autor de la historia de usuario de la aprobación.
 - Notificar al QA.
 
 # Apéndices
@@ -165,3 +182,5 @@ Proceso para validar las pruebas
 | **1.0**             | Primera versión                | 8/03/2025 | Miguel Angel Uribe Esquivel  |
 | **1.1**             | Agregar frameworks, dispositivos y riesgos                 | 8/03/2025 | Ian Julián Estrada Castro  |
 | **1.2**             | Manejo de pruebas y Aprobacion y firma             | 11/03/2025 | Juan Eduardo Rosas Ceron  |
+| **2.0**             | Actualización de la información            | 23/05/2025 | Armando Méndez Castro  |
+| **2.1**             | Corrección de las pruebas y el manejo de pruebas            | 27/05/2025 | Sofía Osorio Suárez  |

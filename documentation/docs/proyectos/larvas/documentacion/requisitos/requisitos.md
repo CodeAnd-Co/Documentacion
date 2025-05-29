@@ -37,7 +37,6 @@ Los requisitos funcionales del sistema describen una variedad de acciones que lo
 - [**RF9**](RF9.md): Cerrar sesión - `Done`
 - [**RF10**](RF10.md): Consultar información detallada de una charola - `Done`
 - [**RF11**](RF11.md): Descargar reportes - `Done`
-- [**RF12**](RF12.md): Alertas
 - [**RF13**](RF13.md): Registrar usuario
 - [**RF14**](RF14.md): Borrar usuario
 - [**RF15**](RF15.md): Filtrar las charolas por escarabajo y larva
@@ -46,7 +45,6 @@ Los requisitos funcionales del sistema describen una variedad de acciones que lo
 - [**RF19**](RF19.md): Editar Usuario
 - [**RF20**](RF20.md): Seleccionar charolas para tamizar y registrar sus datos - `Ready`
 - [**RF21**](RF21.md): Consultar charolas de cambios pasados - `Done`
-- [**RF22**](RF22.md): Modificar el estado de la charola
 - [**RF23**](RF23.md): Registrar un nuevo tipo de comida en el sistema - `Done`
 - [**RF24**](RF24.md): Editar un tipo de comida en el sistema - `Done`
 - [**RF25**](RF25.md): Eliminar un tipo de comida - `Done`
@@ -55,7 +53,7 @@ Los requisitos funcionales del sistema describen una variedad de acciones que lo
 - [**RF30**](RF30.md): Editar la información del Frass obtenido
 - [**RF34**](RF34.md): Sidebar - `Done`
 - [**RF35**](RF35.md): Recuperar contraseña
-- [**RF36**](RF36.md): Registrar un nuevo tipo de hidratación al sistema
+- [**RF36**](RF36.md): Registrar un nuevo tipo de hidratación al sistema - `Ready`
 - [**RF38**](RF38.md): Registrar nuevas charolas del tamizado - `Done`
 - [**RF39**](RF39.md): Visualizar charolas eliminadas
 - [**RF40**](RF40.md): Editar un tipo de hidratación en el sistema - `Ready`
