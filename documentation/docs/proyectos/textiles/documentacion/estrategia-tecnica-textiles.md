@@ -6,7 +6,7 @@ title: Estrategia tecnica
 
 ---
 
-# Estrategia tecnica
+# Estrategia técnica
 
 ## Objetivo
 

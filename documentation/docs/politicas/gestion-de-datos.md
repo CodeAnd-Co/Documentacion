@@ -1,5 +1,5 @@
 ---
-title: Política de gestión de gatos del proyecto
+title: Política de gestión de datos del proyecto
 sidebar_position: 2
 ---
 
@@ -13,7 +13,7 @@ Establecer lineamientos para gestionar los datos del proyecto de forma estructur
 
 ## **2. Alcance**
 
-Esta política aplica a todos los proyectos en los que se utilicen datos relevantes para la operación, análisis y toma de decisiones dentro de la organización. Involucra a todas las áreas responsables de la recopilación, almacenamiento, distribución y protección de datos. 
+Esta política aplica a todos los proyectos en los que se utilicen datos relevantes para la operación, análisis y toma de decisiones dentro de la organización. Involucra a todas las áreas responsables de la recopilación, almacenamiento, distribución y protección de datos.
 
 Se excluyen las métricas derivadas del análisis de desempeño del proyecto, pues pertenecen a procesos de evaluación específicos.
 
@@ -34,7 +34,7 @@ Estos datos se almacenarán en sus archivos originales (en caso de ser .env, .pe
 
 Para salvaguardar la integridad, seguridad y confianza depositada en los datos, el acceso será restringido únicamente al Team Leader y Architecture Owner de cada proyecto. Ambos roles de liderazgo tienen la obligación de colocar dichos accesos dentro de las carpetas y delegar su acceso en caso de cambiar de rol. En caso de que un miembro del equipo necesite tener acceso a alguno estos datos, debe notificar a alguno de estos dos líderes, que evaluarán la petición y concederán acceso al dato específico que fue solicitado si lo consideran necesario.
 
-Para evitar cualquier filtración de información, **queda estrictamente prohibida la distribución de los accesos a través de cualquier medio digital distinto a los canales oficiales.** 
+Para evitar cualquier filtración de información, **queda estrictamente prohibida la distribución de los accesos a través de cualquier medio digital distinto a los canales oficiales.**
 
 ### **3.2 Datos generales**
 
