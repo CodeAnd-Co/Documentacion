@@ -4,7 +4,7 @@ title: 🏆 | Equipo de liderazgo
 
 # 🏆 Equipo de liderazgo en Code&Co a través del tiempo 
 
-En esta sección se presenta al equipo de liderazgo responsable de la dirección y gestión de los proyecto a lo largo de los 3 periodos diferentes. Aquí encontrarás información los roles de los miembros, con sus objetivos de liderazgo. 
+En esta sección se presenta al equipo de liderazgo responsable de la dirección y gestión de los proyecto a lo largo de los 3 periodos diferentes. Aquí encontrarás información sobre los roles de los miembros, con sus objetivos de liderazgo. 
 # 3️⃣ Periodo 
 
 | Rol                | Nombre                          | Proyecto              | Objetivo                                                                                                                                                                                                                                                                       |
@@ -19,7 +19,7 @@ En esta sección se presenta al equipo de liderazgo responsable de la dirección
 | Product Owner      | Nicolás Hood Figueroa            | 👕Proyecto textiles     | Asegurar la asistencia del socio formador a las juntas semanales por lo menos una vez por semana.                                                                                                                                                                             |
 | Product Owner      | Juan Carlos Calderón García      | 🚜Proyecto Tractores    | Asegurar la asistencia del socio formador a las juntas semanales por lo menos una vez por semana.                                                                                                                                                                             |
 | Program manager    | Daniel Contreras Chávez          | Proyecto departamental | Durante este periodo, aprender a acompañar a los equipos para institucionalizar los procesos definidos en su flujo de trabajo, asistiendo al menos a 6 dailies o reuniones clave para observar y retroalimentar en tiempo real el uso de procesos.<br />Durante las próximas 2 semanas, aprender y aplicar las prácticas clave del Nivel 2 del CMMI, junto con algunas del nivel 3 documentando semanalmente su implementación práctica en el departamento. |
-| Program manager    | Angel Mauricio Ramírez Herrera   | Proyecto departamental | Antes del 29 de mayo, asegurar que el 100% de los integrantes de cada equipo conoz can el estado actual del desarrollo de las aplicaciones de los demás equipos del departamento.                                                                                              |
+| Program manager    | Angel Mauricio Ramírez Herrera   | Proyecto departamental | Antes del 29 de mayo, asegurar que el 100% de los integrantes de cada equipo conozcan el estado actual del desarrollo de las aplicaciones de los demás equipos del departamento.                                                                                              |
 
 # 2️⃣ Periodo
 
