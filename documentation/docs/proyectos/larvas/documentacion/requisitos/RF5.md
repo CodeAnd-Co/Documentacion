@@ -413,6 +413,13 @@ sequenceDiagram
 
 
 ```
+---
+
+### Pull Request
+
+<a href="https://github.com/CodeAnd-Co/TECH-NEBRIOS-BACKEND/pull/25" target="_blank" rel="noopener noreferrer"> PR de Registrar Charola Backend</a>
+
+<a href="https://github.com/CodeAnd-Co/TECH-NEBRIOS-FLUTTER/pull/27" target="_blank" rel="noopener noreferrer"> PR de Registrar Charola Frontend</a>
 
 ---
 
@@ -432,3 +439,4 @@ sequenceDiagram
 | **1.2**             | Correciones del DS y agregacion del Mockup | 22/4/2025 | Emiliano Gomez Gonzalez |
 | **1.3**             | Diagramas de actividades   | 23/5/2025  | Juan Eduardo Rosas Cerón |
 | **1.4**             | Se corrigió mockup  | 29/5/2025  | Mariana Juárez |
+| **1.5**             | Se agregaron los pull request de fornt y back | 29/5/2025  | Sofía Osorio |

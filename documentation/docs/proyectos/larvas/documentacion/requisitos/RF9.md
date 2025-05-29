@@ -30,6 +30,11 @@ Como usuario de la aplicación, quiero cerrar mi cuenta de usuario en la aplicac
 
 ---
 
+### Pull Request
+
+<a href="https://github.com/CodeAnd-Co/TECH-NEBRIOS-FLUTTER/pull/20" target="_blank" rel="noopener noreferrer"> PR de Cerrar Sesión Frontend</a>
+---
+
 ### Mockup
 
 > *Descripción*: El mockup muestra la interfaz donde el Super Administrador puede cargar un archivo de empleados, con la opción de revisar los datos antes de importarlos.
