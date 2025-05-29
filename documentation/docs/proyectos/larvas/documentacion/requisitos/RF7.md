@@ -168,3 +168,4 @@ sequenceDiagram
 | **1.0**             | Creacion de la historia de usuario         | 8/3/2025  | Armando Mendez          |
 | **1.1**             | Modificar historial de cambio              | 17/05/2025| Mariaa Juárez           |
 | **1.3**             | Diagramas de actividades   | 23/5/2025  | Juan Eduardo Rosas Cerón |
+| **1.4**             | Se corrigió mockup  | 29/5/2025  | Mariana Juárez |
