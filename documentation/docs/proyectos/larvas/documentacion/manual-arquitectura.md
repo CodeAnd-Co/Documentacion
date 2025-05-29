@@ -22,7 +22,7 @@ La arquitectura se compone de capas principales:
 
 ## Diagrama de Despliegue
 
-![Diagrama de Despliegue](diagrama-despliegue.png)
+![Diagrama de Despliegue](./diagrama-despliegue.png)
 
 ## Frontend
 
