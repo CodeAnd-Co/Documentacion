@@ -57,7 +57,7 @@ sidebar_position: 1
 
 **Codificación:**
 - Si necesitas comunicarte con el backend desacoplado:
-    - Asegurate de tener tu .env con la URL base ya sea con la IP del servidor o localhost para local
+    - Asegurate de tener tu constantes.js con la URL base ya sea con la IP del servidor (staging) o localhost para local
     - Checar en la carpeta domain si existe la carpeta API de tu modulo:
         - En esa carpeta debes crear tu moduloAPI.js donde vas a poner tus funciones con las llamadas al servidor
         - Cuando tengas tu controlador conectarlo a la ruta de la peticion del servidor para que exista comunicacion
@@ -65,15 +65,38 @@ sidebar_position: 1
     - Ingresar a src>backend>casosUso
     - Verificar si existe la carpeta del módulo correspondiente al requisito.
     - Crear el archivo que tiene toda la lógica de negocio y que funciona como controlador del requisito.
-- Programar frontend:
-    - Ir ar src>framework>js y crear el archivo con el código de js que correra directamente en el frontEnd y manejará el DOM (Document Object Model) o body.
+
+### Programar frontend:
+
+**Preparación:**
+- Ir a develop y hacer git pull.
+- Hacer npm i.
+- Crear la rama deacuerdo al requisito siguiendo la estrategia de ramas.
+
+**Notas importantes**
+- Todas las rutas que se usen dentro de HTML son absolutas en base a /harvester-app.
+    - Esto signfica que si quieres importar css o un script dentro del HTML debes usar el código `<%= rutaBase %>`
+    - También deberás usar esta ruta absoluta en las importaciones dentro de cualquier script.
+    - Esto no aplica para código EJS aunque esté en el mismo archivo, en ese si se pueden usar rutas relativas.
+
+**Codificación:**
+    - Ir a src>framework>vistas>paginas y crear la carpeta correspondiente a tu módulo si no existe.
+    - Crear el archivo de EJS donde vas a crear la vista.
+        - Revisar que componentes se necesitan para crear la vista y revisar si ya existen. Si necesitas un componente que aún no existe, avisar en el grupo para confirmar y luego programarlo.
+        - Añadir el encabezado.ejs y piePagina.ejs que estan dentro de src>framework>vistas>includes
+        - Hacer el EJS usando variables para cargar cosas como las rutas.
+    - Ir ar src>framework>utils>scripts y crear el archivo con el código de js que correra directamente en el frontEnd y manejará el DOM (Document Object Model) o body. No debes incluir lógica más allá de leer, escribir, y asignar funciones a los valores de los elementos de HTML.
+        - Si en tu script quieres implementar la carga de otro módulo o vista, usar la función de `ipcRenderer.invoke('precargarEJS')`.
+        - Añadir `const { ipcRenderer } = require('electron')`.
+            - Si quieres ver un ejemplo puedes consultar barraLateral.js
+    - Cualquier lógica que no interactúe directamente con elementos HTML debe ir src>backend (consultar proceso para programar el Backend local)
     - Conectar el controlador a la vista del usuario a través de este archivo.
-    - Englobar las funciones del DOM en una función de inicializar módulo para que al cargar tu módulo se pueda interactuar con el módulo.
 
 ### Revisar el código
 
 - Usar tu checklist individual para verificar todo el código.
 - Usar la checklist del equipo para verificar todo el código.
+- Actualizar las checklists en caso de ser necesario.
 
 ### Programar pruebas
 - Ejecutar prueba manual registrando entradas y salidas.
@@ -82,21 +105,11 @@ sidebar_position: 1
 
 ---
 
-## Acuerdos de trabajo:
-- Agarramos las tareas que nadie quiere, hacemos 2 tareas malas por una tarea buena.
-- No nos paramos hasta terminar el trabajo actual.
-- Nos damos recordatorios de seguir trabajando cuando notamos que alguien no trabaja.
-- No interrumpimos a las personas que están trabajando en el CMMI.
-- Dejamos el ego de lado al pedir ayuda, nos acercamos a miembros de otros equipos o departamentos.
-
-
-## Visión del equipo:
-- Ser un equipo disciplinado, que aprenda de los errores, y que retrabaje lo mínimo posible para su proceso de aprendizaje.
-
----
-
 ## Historial de cambios
 
 | **Tipo de Versión** | **Descripción** | **Fecha**  | **Colaborador** |
 | ------------------- | --------------- | ---------- | --------------- |
 | **1.0** | Creación del proceso | 15/05/2025 | Diego Fuentes, Ian Julian Estrada, Daniel Queijeiro, Juan Pablo Chávez. |
+| **2.0** | Ajustar proceso con el refactor | 22/05/2025 | Daniel Queijeiro, Diego Fuentes |
+| **2.1** | Añadir pasos para actualizar checklists | 26/05/2025 | Diego Fuentes |
+| **2.2** | Añadir pasos para revisar componentes | 26/05/2025 | Diego Fuentes |

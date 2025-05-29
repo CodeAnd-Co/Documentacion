@@ -17,6 +17,12 @@ Como usuario del sistema, quiero consultar el historial de ancestros de una char
 
 ---
 
+### Diagrama de Actividades
+
+<a href="https://drive.google.com/file/d/1ARurrnqu21mrli1PQnmguYwyDsvSI2ms/view?usp=sharing" target="_blank" rel="noopener noreferrer">Consultar historial de ancestros de una charola</a>
+
+---
+
 ### Diagrama de Secuencia
 
 ---
@@ -32,3 +38,4 @@ Como usuario del sistema, quiero consultar el historial de ancestros de una char
 | ------------------- | ------------------------------------------ | --------- | ----------------------- |
 | **1.0**             | Creacion de la historia de usuario         | 8/3/2025  | Armando Mendez          |
 | **1.1**             | Modificar historial de cambio              | 17/05/2025| Mariaa Juárez           |
+| **1.2**             | Diagramas de actividades   | 23/5/2025  | Juan Eduardo Rosas Cerón |
