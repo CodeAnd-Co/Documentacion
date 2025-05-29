@@ -58,5 +58,6 @@ Proceso para establecer una base sólida de información que permita tomar decis
 | **1.4.0**   | Corrección ortográfica y adición de fecha de creación   | 25/04/2025  | Emiliano Valdivia                                                                                     |
 | **1.5.0**   | Mejora en legibilidad y adición de sección de análisis  | 13/05/2025  | Paola María Garrido, Rommel Toledo                                                                   |
 | **1.5.1**   | Correcciones de VER 3.1          | 26/05/2025  | Daniel Contreras Chávez, Miguel Angel Uribe   |
+| **1.5.2**       | Correcciones ortográficas y de enlaces                       | 29/05/2025 | Valeria Zúñiga, Nicolas Hood                 |
 
 </details>

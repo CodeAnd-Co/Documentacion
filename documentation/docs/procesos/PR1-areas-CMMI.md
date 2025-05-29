@@ -55,5 +55,5 @@ Este proceso establece los pasos necesarios para implementar correctamente las �
 | **3.1.0**   | Refactorización general del proceso.                                            | 18/04/2025    | Diego Fuentes                               |
 | **4.0.0**   | Modificación del proceso basada en áreas de proceso de CMMI y trabajo colaborativo. | 11/05/2025 | Valeria Zúñiga                              |
 | **5.0.0**   | Actualización al formato estándar de documentación de procesos.                 | 18/05/2025    | Ángel Mauricio Ramírez Herrera              |
-
+| **5.1.0**       | Correcciones ortográficas y de enlaces                       | 29/05/2025 | Valeria Zúñiga, Nicolas Hood                 |
 </details>

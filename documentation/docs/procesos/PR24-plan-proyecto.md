@@ -111,4 +111,5 @@ Este proceso define cómo planear un proyecto desde su inicio y cómo asegurar s
 | **3.1.0** | Agregar PPQA al proceso | 19/05/2025 | Valeria Zúñiga, Paola Garrido |
 | **3.2.0**             | Agregar RD1.2 al proceso                                     | 26/05/2025 | Juan Eduardo Rosas Cerón                                                                                                                                                                                          |
 | **3.3.0**             | Agregar RD2.1 al proceso                                     | 26/05/2025 | Nicolas Hood Figueroa                                                                                                                                                                                         |
+| **3.3.1**       | Correcciones ortográficas y de enlaces                       | 29/05/2025 | Valeria Zúñiga, Nicolas Hood                 |
 </details>

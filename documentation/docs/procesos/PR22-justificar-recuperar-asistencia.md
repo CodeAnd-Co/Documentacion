@@ -65,4 +65,5 @@ Procedimiento para justificar ausencias y recuperar asistencias dentro del equip
 | **2.3.0**   | Correcciones conforme a PMC                                           | 22/04/2025  | Juan Pablo Chávez Leal                                         |
 | **2.4.0**   | Implementación de acciones correctivas                               | 28/04/2025  | Max Toscano                                                   |
 | **3.0.0**   | Unificación de los procesos de justificación y recuperación de asistencia | 11/05/2025  | Valeria Zúñiga                                                |
+| **3.0.1**       | Correcciones ortográficas y de enlaces                       | 29/05/2025 | Valeria Zúñiga, Nicolas Hood                 |
 </details>
