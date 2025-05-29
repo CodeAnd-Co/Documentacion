@@ -131,3 +131,4 @@ Para garantizar el cumplimiento de esta política, se implementarán mecanismos 
 | **1.4**             | Plan de Datos.                                                          | 28/04/2025 | Pablo Hurtado                   |
 | **1.5**             | Eliminar principios y resumir objetivo.                                 | 08/05/2025 | Daniel Contreras                |
 | **1.6**             | Definir un método para que una persona pueda acceder a datos sensibles. | 29/05/2025 | Emiliano Valdivia Lara          |
+

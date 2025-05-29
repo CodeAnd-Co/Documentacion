@@ -230,6 +230,13 @@ sequenceDiagram
     end
 
 ```
+---
+
+### Pull Request
+
+<a href="https://github.com/CodeAnd-Co/TECH-NEBRIOS-BACKEND/pull/17" target="_blank" rel="noopener noreferrer"> PR de Eliminar Charola Backend</a>
+
+<a href="https://github.com/CodeAnd-Co/TECH-NEBRIOS-FLUTTER/pull/12" target="_blank" rel="noopener noreferrer"> PR de Eliminar Charola Frontend</a>
 
 ---
 
@@ -250,3 +257,4 @@ sequenceDiagram
 | **1.3**             | Correciones del query                | 17/5/2025 | Mariana Juárez    |
 | **1.3**             | Diagramas de actividades   | 23/5/2025  | Juan Eduardo Rosas Cerón |
 | **1.4**             | Se corrigió mockup  | 29/5/2025  | Mariana Juárez |
+| **1.5**             | Se agregaron los pull request de front y back | 29/5/2025  | Sofía Osorio |
