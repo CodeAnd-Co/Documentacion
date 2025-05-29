@@ -347,9 +347,9 @@ import TabItem from '@theme/TabItem';
 | Rommel Toledo Crespo            | Team Member, QA | |
 | Pablo Hazael Hurtado Mireles    | Team Member, UX/UI, QA | |
 | Diego Isaac Fuentes Juvera      | Team Member, QA | |
-| Daniel Queijeiro Albo           | Architecture Owner, QA | |
+| Daniel Queijeiro Albo           | Architecture Owner, QA |  Asegurar que el 80% del equipo se sienta cómodo con el nuevo patrón de diseño. |
 | Mauricio Anguiano Juárez        | Team member, QA | |
-| Juan Carlos Calderón García     | Product Owner, QA | |
+| Juan Carlos Calderón García     | Product Owner, QA | Mantener máximo un día de retraso en la comunicación con el socio |
 | Ian Julián Estrada Castro       | Team Member, QA | Que todos los miembros del equipo duerman más de 7 horas para antes del 6 de junio |
 | Galo Alejandro del Rio Viggiano | Team Leader, QA | |
 
