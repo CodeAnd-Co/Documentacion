@@ -18,9 +18,13 @@ Como usuario de la aplicación, quiero autenticarme en el sistema ingresando mi 
 
 ---
 
-### Diagrama de Secuencia
+### Diagrama de Actividades
 
-> *Descripción*: El diagrama de secuencia muestra cómo el Super Administrador interactúa con el sistema para crear un cliente, detallando los pasos de solicitud de datos, validación y confirmación.
+<a href="https://drive.google.com/file/d/1Zql5LFEL76YKACtJoWMFsT_L4QYmpX8o/view?usp=sharing" target="_blank" rel="noopener noreferrer">Iniciar Sesión</a>
+
+---
+
+### Diagrama de Secuencia
 
 ```mermaid
 sequenceDiagram
@@ -62,7 +66,7 @@ sequenceDiagram
         deactivate Controller
         activate Model
 
-        Model->>Database: SELECT FROM usuarios WHERE user = usuario && contrasena = contraseña
+        Model->>Database: query
         deactivate Model
         activate Database
 
@@ -162,7 +166,7 @@ sequenceDiagram
         Controller->>Model: iniciarSesion
         activate Model
 
-        Model->>Database: SELECT FROM usuarios WHERE user = usuario && contrasena = contraseña
+        Model->>Database: query
         activate Database
 
         Database-->>Model: Error
@@ -222,7 +226,7 @@ sequenceDiagram
         deactivate Controller
         activate Model
 
-        Model->>Database: SELECT FROM usuarios WHERE user = usuario && contrasena = contraseña
+        Model->>Database: query
         deactivate Model
         activate Database
 
@@ -264,18 +268,9 @@ sequenceDiagram
 
 ### Mockup
 
-![alt text](../mockupRF1.png)
+![alt text](<img/mockupRF1.png>)
 
-> *Descripción*: El mockup representa la interfaz del sistema donde los usuarios pueden iniciar sesión.
-
-### Pruebas Unitarias 
-| ID Prueba  | Descripción                                             | Resultado Esperado  |
-|------------|---------------------------------------------------------|---------------------|
-| PU-RF1-01  | Inicio de sesión con credenciales válidas.              | El usuario es autenticado y redirigido a la pantalla principal. |
-| PU-RF1-02  | Inicio de sesión con contraseña incorrecta.             | Se muestra un mensaje de error indicando que la contraseña es incorrecta. |
-| PU-RF1-03  | Inicio de sesión con usuario no registrado.             | Se muestra un mensaje de error indicando que el usuario no existe. |
-| PU-RF1-04  | Inicio de sesión con campos vacíos.                     | Se muestra un mensaje de error solicitando completar los campos. |
-| PU-RF1-05  | Tiempo de sesión expira por inactividad.                | La sesión es invalidada y el usuario es redirigido a la pantalla de inicio de sesión. |
+---
 
 
 # Historial de cambios
@@ -283,4 +278,7 @@ sequenceDiagram
 | ------------------- | ------------------------------------ | --------- | ----------------- |
 | **1.0**             | Creacion de la historia de usuario   | 8/3/2025  | Armando Mendez    |
 | **1.0**             | Verificación de los cambios          | 8/3/2025  | Miguel Angel      |
-| **1.1**             | Creación del diagrama de secuencia   | 22/4/2025  | Emiliano Valdivia Lara      |
+| **1.1**             | Creación del diagrama de secuencia   | 22/4/2025  | Emiliano Valdivia Lara  |
+| **1.2**             | Se cambio el query del diagrama de secuencia   | 17/5/2025  | Mariana Juárez |
+| **1.3**             | Diagramas de actividades   | 23/5/2025  | Juan Eduardo Rosas Cerón |
+| **1.4**             | Se corrigió mockup  | 27/5/2025  | Mariana Juárez |

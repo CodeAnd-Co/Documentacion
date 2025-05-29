@@ -18,11 +18,10 @@ Como **Super Administrador**, quiero acceder a un listado de usuarios con opcion
 1. El Super Administrador debe poder acceder a la opción **"Usuarios"** desde el panel de administración.
 2. Se debe mostrar una tabla con la siguiente información de cada usuario:
    - ID
-   - Nombre completo
+   - Nombre
    - Rol
    - Cliente
-   - Estatus
-   - Correo
+   - Correo electrónico
    - Teléfono
 3. Se deben poder hacer búsquedas y filtros para ubicar usuarios.
 4. Debe permitir paginación si hay muchos usuarios registrados.
@@ -118,8 +117,24 @@ sequenceDiagram
 
 > _Descripción_: El mockup representa la interfaz de usuario donde el Super Administrador puede ver la lista de usuarios en formato de tabla, con opciones para filtrar, buscar y paginar los resultados.
 
-> ![Interfaz de consultar lista de usuarios](imagenes/mockupConsultaListaUsuarios.PNG)
+> ![Interfaz de consultar lista de usuarios](imagenes/RF2CreaUsuario.png)
 
 ## **Pruebas**
 
 _<u>[Enlace a pruebas RF2 Consultar Lista de Usuarios.](https://docs.google.com/spreadsheets/d/1NLGwGrGA5PVOEzLaqxa8Ts1D_Ng3QzzqNKWJYUzxD-M/edit?gid=1685718554#gid=1685718554)</u>_
+
+## **Código**
+
+_<u>[Pull Request Front-End](https://github.com/CodeAnd-Co/Frontend-Text-Lines/pull/17)</u>_
+
+_<u>[Pull Request Back-End](https://github.com/CodeAnd-Co/Backend-textiles/pull/24)</u>_
+
+---
+
+### Historial de cambios
+
+| **Tipo de Versión** | **Descripción**                                  | **Fecha**  | **Colaborador**          |
+| ------------------- | ------------------------------------------------ | ---------- | ------------------------ |
+| **1.0**             | Actualización de la documentación del requisito. | 10/4/2025  | Valeria Zúñiga           |
+| **1.1**             | Se actualizó documentación.                      | 22/05/2025 | Arturo Sánchez Rodríguez |
+| **1.2**             | Agregar links de PR                              | 26/05/2025 | Max Toscano              |

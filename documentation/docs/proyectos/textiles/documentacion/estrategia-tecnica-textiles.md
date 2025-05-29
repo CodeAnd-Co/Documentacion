@@ -51,8 +51,6 @@ La priorización de requerimientos se puede encontrar aquí:
 
 [_Priorizacion de requisitos_](https://docs.google.com/spreadsheets/d/1ToxcYLMjoZ0dPXlb2eTesLf_YXg8q86tE7bredXapYk/edit?gid=1686427669#gid=1686427669)
 
-La especificación de historias de usuario se llevarán a cabo teniendo en cuenta la definición de [_Done_](/docs/intro/definicion-de-done/) y [_Ready_](/docs/intro/definicion-de-ready/) que se encuentran en este archivo:
-
 ---
 
 ## Gestión de Calidad y Pruebas
@@ -123,17 +121,61 @@ Cada módulo puede incluir pruebas unitarias para garantizar su correcto funcion
 - app.js: Punto de entrada del servidor.
 - node_modules: Dependencias del proyecto.
 
-## Plantilla Pull Requests equipo textiles
+### Frontend
 
-```
+![alt text](DiagramaPaquetesFront.png)
 
-## Plantilla PR FrontEnd
+Este diagrama de paquetes representa la organización de un frontend. Se divide en varias secciones principales:
 
-Última actualización 26/03/25
+### 1. estilos
+
+Contiene los archivos de estilos globales del proyecto.
+
+### 2. hooks
+
+Incluye hooks personalizados de React que encapsulan lógica para ser utilizada en distintos componentes de la aplicación.
+
+### 3. Rutas
+
+Contiene la configuración de rutas del proyecto, para definir la navegación entre páginas y componentes.
+
+### 4. Utilidades
+
+Incluye utilidades generales que no pertenecen a una parte específica del dominio o la interfaz, como validaciones, constantes, etc.
+
+- **Constantes**: Conjunto de componentes organizados por nivel de complejidad:
+
+### 5. Vistas
+
+La carpeta de vistas contiene:
+
+- **Componentes**: Conjunto de componentes organizados por nivel de complejidad:
+
+  - `Atomos` : Componentes más pequeños e indivisibles como botones, iconos, etiquetas.
+  - `Moleculas` : Combinación de átomos que forman unidades funcionales simples, como formularios, inputs con etiqueta, etc.
+  - `Organismos` : Combinaciones de moléculas y/o átomos que conforman secciones completas reutilizables, como encabezados o tarjetas de usuario.
+
+- **Paginas**: Vistas completas que representan pantallas enteras del sistema, construidas a partir de los organismos y otros componentes.
+
+### 6. dominio
+
+El dominio contiene:
+
+- **modelos**: Definiciones de los modelos de datos utilizados en el frontend, como clases o interfaces que representan la estructura de la información.
+
+- **repositorios**: Encapsulan la lógica de acceso a datos, conectándose con APIs u otras fuentes para obtener o enviar información.
+
+- **servicios**: Contienen funciones que implementan la lógica de negocio relacionada con el dominio, trabajando con los repositorios y modelos para realizar operaciones más complejas como la obtención de permisos.
+
+---
+
+# Plantilla PR FrontEnd TEXT & LINES
 
 ---
 
 # Descripción
+
+## <!--- Agrega una descripción del cambio en una línea y si se necesita instalar una nueva dependencia-->
 
 ---
 
@@ -143,26 +185,30 @@ Cada módulo puede incluir pruebas unitarias para garantizar su correcto funcion
 - [ ] Nueva función (cambio no disruptivo que agrega funcionalidad)
 - [ ] Cambio disruptivo (corrección o función que afecta la compatibilidad existente)
 - [ ] Este cambio requiere una actualización en la documentación
-- [ ] Camio mínimo (Visual o de bajo impacto, sin afectcar lógica )
+- [ ] Cambio mínimo (visual o de bajo impacto, sin afectar lógica)
 
 ---
 
-# ¿Qué archivo fue el que modifiqué?
+## Nueva funcionalidad (si aplica)
 
-Ejemplo:
+- [ ] Repositorio
+- [ ] Modelo
+- [ ] Hook
+- [ ] Rutas y Rutas Individuales
+- [ ] Pagina
 
-- Componente1.jsx
-- Estilos.css
+Si creaste algo más, ponlo aquí:
+
+- Ejemplo.jsx
 
 ---
 
-# ¿Cómo se ha probado?
+## ¿Cómo se ha probado?
 
-Describe resumidamente cómo lo probaste y funciona. Ejemplo:
-
-- "Se probó manualmente en Chrome y Safari. Se validó que el botón 'Guardar' guarda correctamente la información y se muestra una alerta de éxito."
-  _En caso de cambio mínimo:_
-- "El cambio fue visualmente unicamente (color del boton). Se validó en los navegadores principales. No se requirieron pruebas funcionales."
+- [ ] Se utilizó lint para errores
+- [ ] Pasaron las pruebas unitarias (si aplica)
+- [ ] Se probó la funcionalidad y no mostró errores
+- [ ] Visualemente cumple con estándares definidos en el Figma
 
 ---
 
@@ -174,110 +220,164 @@ Describe resumidamente cómo lo probaste y funciona. Ejemplo:
 
 ---
 
-Versión: V1
-Rodrigo Antonio Benítez De La Portilla
-Arutro Sanchez Rodriguez
+## Checklist del evaluador:
+
+- [ ] He determinado que el autor cumplió con todos los puntos mencionados
+- [ ] He determinado que los cambios no tienen un impacto negativo en la aplicación
+- [ ] He notificado al autor del PR en caso de dudas o ajustes necesarios
+- [ ] Una vez que acepte el PR, eliminaré la rama
+
+---
 
 ```
 
 ```
-## Plantilla PR BackEnd
-Última actualización 26/03/25
+
+# Plantilla PR BackEnd TEXT & LINES
 
 ---
 
-### Autores
+## Descripción
 
-| Nombre                         | Rol   |
-| ------------------------------ | ----- |
-| Rodrigo Antonio Benítez De La Portilla          | Autor |
-| Arturo Sánchez Rodríguez | Autor |
-
----
-
-# Descripción
-
-Incluye un resumen del cambio y el problema que se ha solucionado. También proporciona el contexto relevante y la motivación para este cambio. Lista cualquier dependencia requerida para esta modificación.
+<!-- Agrega una descripción breve del cambio y, si aplica, si se necesita instalar una nueva dependencia. -->
 
 ---
 
 ## Tipo de cambio
 
-- [ ] Corrección de error (fix sin romper funcionalidades existentes)
-- [ ] Nueva funcionalidad (feature sin romper funcionalidades existentes)
-- [ ] Cambio disruptivo (rompe compatibilidad o modifica comportamiento actual )
-- [ ] Actualización de documentación requerida
-- [ ] Cambio mínimo (cambio visual o estructural que no afecta la lógica del sistema)
+- [ ] Corrección de error (cambio no disruptivo que soluciona un problema)
+- [ ] Nueva funcionalidad (cambio no disruptivo que agrega funcionalidad)
+- [ ] Cambio disruptivo (corrección o función que afecta la compatibilidad existente)
+- [ ] Este cambio requiere actualización en la documentación
+- [ ] Cambio mínimo (cambio estructural o visual sin impacto en la lógica principal)
 
 ---
 
-# ¿Qué archivo fue el que modifique?
-Ejemplo:
-- UserController.js
-- api.js
+## Nueva funcionalidad (si aplica)
+
+- [ ] Controlador
+- [ ] Ruta
+- [ ] Repositorio
+- [ ] Consulta
+- [ ] Mensaje
+- [ ] Middleware
+- [ ] Servicio
+
+Si agregaste otro archivo relevante, indícalo aquí:
+
+- `ejemploArchivo.js`
 
 ---
 
-# ¿Cómo se ha probado?
-Describe berevemente cómo se probó esta funcionalidad. Ejemplo:
-- "Se probaron los endpoints '/api/login' y '/api/profile' con Postman. Las respuestas fueron correctas y sin errores en consola."
-- "Se realizaron pruebas visuales/manuales. No se detectaron impactos en lógica ni funcionalidad."
+## ¿Cómo se ha probado?
+
+- [ ] Se probaron manualmente los endpoints con Postman
+- [ ] Pasaron las pruebas unitarias (si aplica)
+- [ ] Se probaron integraciones con otros módulos
+- [ ] No se mostraron errores en consola ni logs
+- [ ] Validado en base de datos que el comportamiento es correcto
 
 ---
 
-# Notas para cambios menores
-- [ ] Este PR realiza un cambio mínimo que no afecta la lógica del sistema.
-- [ ] Se validó el comportamiento básico y no se detectaron efectos colaterales.
+### Cambios menores
+
+- [ ] Este PR realiza un cambio mínimo que no afecta la lógica del sistema
+- [ ] Se validó manualmente que el cambio no afecta funcionalidades existentes
 - [ ] No se realizaron pruebas automatizadas porque no aplica
-
----
-
-# Lista de verificación del autor
-
-- [ ] El código sigue las normas de estilo del proyecto
-- [ ] He realizado una autoevaluación del código
-- [ ] El código estña comentado en las secciones complejas o no obvias
-- [ ] Documentación actualizada aplica
-- [ ] El código no genera nuevas advertencias o errores
-- [ ] Se añadieron pruebas relevantes
-
----
-
-# Lista de Verificación de Pruebas
-- [ ] Las pruebas unitarias nuevas y existentes pasan correctamente con mis cambios
-- [ ] Las pruebas de estrés nuevas y existentes pasan correctamente con mis cambios
-- [ ] Las pruebas de volumen nuevas y existentes pasan correctamente con mis cambios
-- [ ] Las pruebas de seguridad nuevas y existentes pasan correctamente con mis cambios
-- [ ] Las pruebas de conectividad nuevas y existentes pasan correctamente con mis cambios
-- [ ] Las pruebas de integración nuevas y existentes pasan correctamente con mis cambios
-- [ ] Las pruebas heurísticas nuevas y existentes pasan correctamente con mis cambios
-- [ ] Los cambios dependientes han sido combinados y publicados en los módulos descendentes
 
 ---
 
 ## Checklist del evaluador:
 
-- [ ] La descripción del Pull Request es clara y específica
-- [ ] No se introducen errores ni inconsistencias
-- [ ] Ortografía y gramática correctas en documentación
-- [ ] El código es entendible y cumple con los estándares
-- [ ] Notifiqué al autor del PR si encontré errores, dudas o sugerencias
-- [ ] (Si se aprueba) Procedo a eliminar la rama correspondiente
+- [ ] He determinado que el autor cumplió con todos los puntos mencionados
+- [ ] He determinado que los cambios no tienen un impacto negativo en la aplicación
+- [ ] He notificado al autor del PR en caso de dudas o ajustes necesarios
+- [ ] Una vez que acepte el PR, eliminaré la rama correspondiente
 
----
-
-# Versión: V1
-```
+````
 
 ## CI / CD
 
 ### CD
 
-Para el despliegue continuo del backend utilizaremos un script de [_github actions_](/docs/guias/github/github-actions.md) paa hacer pull automaticamente y desplegar las ramas de produccion (main) y pruebas (staging), por lo que no tendremos que manejar estas acciones manualmente.
+Para el despliegue continuo del backend utilizaremos un script de github actions para hacer pull automaticamente y desplegar las ramas de produccion (main) y pruebas (staging), por lo que no tendremos que manejar estas acciones manualmente.
+
+```yaml
+name: Node.js CI/CD
+
+on:
+  push:
+    branches:
+      - main
+      - staging
+
+jobs:
+  deploy-production:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Setup SSH
+        env:
+          DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
+          SERVER_IP: ${{ secrets.SERVER_IP }}
+        run: |
+          mkdir -p ~/.ssh
+          echo "$DEPLOY_KEY" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan -H $SERVER_IP >> ~/.ssh/known_hosts
+          ssh-keyscan -H github.com >> ~/.ssh/known_hosts
+
+      - name: Deploy to Production
+        env:
+          SERVER_IP: ${{ secrets.SERVER_IP }}
+          PROJECT_PATH: ${{ secrets.PROJECT_PATH_PRODUCTION }}
+          GIT_REPO: ${{ secrets.GIT_REPO }}
+          PM2_PROCESS: ${{ secrets.PM2_PROCESS_PRODUCTION }}
+        run: |
+          ssh -i ~/.ssh/id_rsa -o StrictHostKeyChecking=no ubuntu@$SERVER_IP "
+            cd $PROJECT_PATH &&
+            git checkout main &&
+            git pull origin main &&
+            npm install &&
+            pm2 reload ecosystem-production.config.js --only $PM2_PROCESS
+          "
+
+  deploy-staging:
+    if: github.ref == 'refs/heads/staging'
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Setup SSH
+        env:
+          DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
+          SERVER_IP: ${{ secrets.SERVER_IP }}
+        run: |
+          mkdir -p ~/.ssh
+          echo "$DEPLOY_KEY" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan -H $SERVER_IP >> ~/.ssh/known_hosts
+          ssh-keyscan -H github.com >> ~/.ssh/known_hosts
+
+      - name: Deploy to Staging
+        env:
+          SERVER_IP: ${{ secrets.SERVER_IP }}
+          PROJECT_PATH: ${{ secrets.PROJECT_PATH_STAGING }}
+          GIT_REPO: ${{ secrets.GIT_REPO }}
+          PM2_PROCESS: ${{ secrets.PM2_PROCESS_STAGING }}
+        run: |
+          ssh -i ~/.ssh/id_rsa -o StrictHostKeyChecking=no ubuntu@$SERVER_IP "
+            cd $PROJECT_PATH &&
+            git checkout staging &&
+            git pull origin staging &&
+            npm install &&
+            pm2 reload ecosystem-staging.config.js --only $PM2_PROCESS
+          "
+````
 
 # Historial de cambios
 
-| **Tipo de Versión** | **Descripción**                                             | **Fecha** | **Colaborador**            |
-| ------------------- | ----------------------------------------------------------- | --------- | -------------------------- |
-| **1.0**             | Creacion de la estrategia tecnica textiles                     | 6/03/2025 | Diego Alfaro,  Daniel Contreras, Emiliano Gomez               |
-
+| **Tipo de Versión** | **Descripción**                                         | **Fecha**  | **Colaborador**                                |
+| ------------------- | ------------------------------------------------------- | ---------- | ---------------------------------------------- |
+| **1.0**             | Creacion de la estrategia tecnica textiles              | 6/03/2025  | Diego Alfaro, Daniel Contreras, Emiliano Gomez |
+| **1.1**             | Documentación de la estructura de frontend              | 01/05/2025 | Angélica Ríos                                  |
+| **1.2**             | Modificaciones de plantilla de pull request del backend | 19/05/2025 | Arturo Sánchez                                 |
+| **1.3**             | Mejoras en la plantilla de Frontend                     | 19/05/2025 | Rodrigo Antonio                                |

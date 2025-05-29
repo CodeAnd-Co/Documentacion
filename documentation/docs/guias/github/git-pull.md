@@ -5,15 +5,13 @@ sidebar_position: 3
 
 # Guía de pull request
 
-
 _Detalla el proceso para crear, revisar y aprobar pull requests, fomentando una colaboración efectiva y asegurando la calidad del código antes de su integración._
-
 
 ## ¿Cómo hacer un pull request?
 
 1. Hacer pull origin (main/develop) para asegurar que tu rama local este al corriente.
 
-    - Si al hacer el pull origin surgen conflictos es necesario resolverlos antes de hacer el pull request.
+   - Si al hacer el pull origin surgen conflictos es necesario resolverlos antes de hacer el pull request.
 
 2. Hacer push origin (tu rama) con tus cambios de la rama local.
 
@@ -51,55 +49,55 @@ _Detalla el proceso para crear, revisar y aprobar pull requests, fomentando una 
 
 8. Si no hay errores y pasó la checklist, aceptar el pull request y borrar la rama.
 
-## Criterios para la Creación de pull requests
+## Criterios para la creación de pull requests
 
-1. **Tamaño y Enfoque**: Limita las pull requests a cambios pequeños y enfocados. Esto facilita una revisión más rápida y reduce la posibilidad de introducir errores.
+1. **Tamaño y enfoque**: Limita las pull requests a cambios pequeños y enfocados. Esto facilita una revisión más rápida y reduce la posibilidad de introducir errores.
 
-2. **Descripciones Claras**: Proporciona títulos y descripciones detalladas que expliquen el propósito de los cambios, los archivos modificados y cualquier contexto relevante.
+2. **Descripciones claras**: Proporciona títulos y descripciones detalladas que expliquen el propósito de los cambios, los archivos modificados y cualquier contexto relevante.
 
-3. **Adherencia a Convenciones de Estilo**: Asegúrate de que el código siga las guías de estilo y convenciones del proyecto para mantener la coherencia.
+3. **Adherencia a convenciones de estilo**: Asegúrate de que el código siga las guías de estilo y convenciones del proyecto para mantener la coherencia.
 
-4. **Documentación Actualizada**: Si es necesario, actualiza la documentación relacionada con los cambios realizados.
+4. **Documentación actualizada**: Si es necesario, actualiza la documentación relacionada con los cambios realizados.
 
-## Checklist para Revisores (Code Review)
+## Checklist para revisores (Code Review)
 
-1. **Comprensión del Propósito**: Verifica que el propósito de la pull request esté claramente definido y que los cambios sean coherentes con los objetivos del proyecto
+1. **Comprensión del propósito**: Verifica que el propósito de la pull request esté claramente definido y que los cambios sean coherentes con los objetivos del proyecto
 
-2. **Calidad del Código**: Evalúa la legibilidad, estructura y adherencia a las convenciones de estilo del código.
+2. **Calidad del código**: Evalúa la legibilidad, estructura y adherencia a las convenciones de estilo del código.
 
-3. **Cobertura de Pruebas**: Asegúrate de que existan pruebas adecuadas que validen los cambios y que todas las pruebas pasen correctamente.
+3. **Cobertura de pruebas**: Asegúrate de que existan pruebas adecuadas que validen los cambios y que todas las pruebas pasen correctamente.
 
 4. **Seguridad**: Revisa el código en busca de posibles vulnerabilidades de seguridad y asegúrate de que se sigan las mejores prácticas de seguridad.
 
-## Procedimientos para Pruebas y Validación Antes de la Fusión
+## Procedimientos para pruebas y validación antes de la fusión
 
-1. **Ejecución de Pruebas**: Antes de fusionar, ejecuta todas las pruebas para garantizar que los cambios no introduzcan errores.
+1. **Ejecución de pruebas**: Antes de fusionar, ejecuta todas las pruebas para garantizar que los cambios no introduzcan errores.
 
-2. **Pruebas Manuales**: Si es necesario, realiza pruebas manuales para validar escenarios que no estén cubiertos por las pruebas descritas.
+2. **Pruebas manuales**: Si es necesario, realiza pruebas manuales para validar escenarios que no estén cubiertos por las pruebas descritas.
 
-3. **Revisión de Dependencias**: Verifica que las dependencias del proyecto estén actualizadas y que no se hayan introducido vulnerabilidades.
+3. **Revisión de dependencias**: Verifica que las dependencias del proyecto estén actualizadas y que no se hayan introducido vulnerabilidades.
 
-4. **Confirmación de Documentación**: Asegúrate de que cualquier documentación relacionada esté actualizada y refleje los cambios realizados.
+4. **Confirmación de documentación**: Asegúrate de que cualquier documentación relacionada esté actualizada y refleje los cambios realizados.
 
-5. **Aprobación Formal**: Una vez que todas las pruebas hayan pasado y la revisión haya sido completada, obtén la aprobación formal de los revisores antes de proceder con la fusión.
+5. **Aprobación formal**: Una vez que todas las pruebas hayan pasado y la revisión haya sido completada, obtén la aprobación formal de los revisores antes de proceder con la fusión.
 
 :::tip Beneficio  
 Implementar estas prácticas garantizará una gestión efectiva de las pull request, promoviendo una colaboración eficiente y manteniendo la calidad del código en el proyecto.
 :::
 
-6. **Eliminación de la rama**: Una vez que se haya hecho la fusión, elimina la rama. 
+6. **Eliminación de la rama**: Una vez que se haya hecho la fusión, elimina la rama.
 
 :::warning Importante  
  No eliminar las ramas principales definidas según la estratégia técnica. Ejemplo: main, staging, develop.
- :::
+:::
 
 **Plantilla de PR**
 
 ```
 <!--- Plantilla de PR para docusaurus -->
 <!--- Autor: Ian Julián Estrada Castro -->
-<!--- Versión 2.1 -->
-<!--- Última actualización: 26 de abril de 2025 -->
+<!--- Versión 2.2 -->
+<!--- Última actualización: 27 de mayo de 2025 -->
 
 # Solicitud de cambio (PR)
 
@@ -135,7 +133,7 @@ Implementar estas prácticas garantizará una gestión efectiva de las pull requ
 - [ ] Contenido actualizado y relevante
 - [ ] Fecha y versión actualizados (si aplica)
 - [ ] Alguien más está asignado como evaluador (tester/reviewer)
-- [ ] Actualicé la información del repositorio de configuración.
+- [ ] Actualicé la información del repositorio de configuración: https://docs.google.com/spreadsheets/d/1e73fKSTAhxyPqiPN32u_1mkIyCbzssFc-7Ylfs-HL3w/edit?usp=sharing
 
 ## Checklist del evaluador:
 
@@ -163,15 +161,16 @@ En la parte inferior de los documentos Markdown debe haber una tabla como la sig
 
 ## Historial de cambios
 
-| **Tipo de Versión** | **Descripción** | **Fecha**  | **Colaborador** |
-| ------------------- | --------------- | ---------- | --------------- |
-| **1.0** |  Creación de la guía | 16/02/2025 | Ángel Ramírez, Ian Estrada |
-| **1.1** |  Agregué la plantilla para pull request. | 16/02/2025 |  Ian Julián Estrada Castro |
-| **1.2** |  Agregué un campo en el checklist del evaluador. | 24/04/2025 |  Ian Julián Estrada Castro |
-| **2.0** | Eliminé apartado de lista de archivos, cambié un elemento de la lista del evaluador y comenté el apartado de registro de cambios en plantilla. Hice referencia de la guía para mantener un control de versiones en la documentación.  | 24/04/2025 |  Ian Julián Estrada Castro |
-| **2.1** |  Corregí error ortográfico. Agregué enlace a guía para mantener un control de versiones en la documentación.  | 24/04/2025 | Ian Julián Estrada Castro |
-| **2.2** |  Solicitudes de extracción -> pull request.  | 24/04/2025 | Juan Eduardo Rosas Cerón, Juan Carlos Calderón García, Pablo Hazael Hurtado Mireles |
-| **2.3** |  Gestión de configuración.  | 24/04/2025 | Diego Fuentes |
-| **2.4** |  Gestión de configuración como check.  | 25/04/2025 | Diego Fuentes |
-| **3.0** |  Agregué como realizar un PR y aprobarlo en Github  | 26/04/2025 | Daniel Queijeiro |
-| **3.1** |  Correcciones de gramática | 26/04/2025 | Daniel Queijeiro, Diego Fuentes |
+| **Tipo de versión** | **Descripción**                                                                                                                                                                                                                      | **Fecha**  | **Colaborador**                                                                     |
+| ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | ----------------------------------------------------------------------------------- |
+| **1.0**             | Creación de la guía.                                                                                                                                                                                                                 | 16/02/2025 | Ángel Ramírez, Ian Estrada                                                          |
+| **1.1**             | Agregué la plantilla para pull request.                                                                                                                                                                                              | 16/02/2025 | Ian Julián Estrada Castro                                                           |
+| **1.2**             | Agregué un campo en el checklist del evaluador.                                                                                                                                                                                      | 24/04/2025 | Ian Julián Estrada Castro                                                           |
+| **2.0**             | Eliminé apartado de lista de archivos, cambié un elemento de la lista del evaluador y comenté el apartado de registro de cambios en plantilla. Hice referencia de la guía para mantener un control de versiones en la documentación. | 24/04/2025 | Ian Julián Estrada Castro                                                           |
+| **2.1**             | Corregí error ortográfico. Agregué enlace a guía para mantener un control de versiones en la documentación.                                                                                                                          | 24/04/2025 | Ian Julián Estrada Castro                                                           |
+| **2.2**             | Solicitudes de extracción -> pull request.                                                                                                                                                                                           | 24/04/2025 | Juan Eduardo Rosas Cerón, Juan Carlos Calderón García, Pablo Hazael Hurtado Mireles |
+| **2.3**             | Gestión de configuración.                                                                                                                                                                                                            | 24/04/2025 | Diego Fuentes                                                                       |
+| **2.4**             | Gestión de configuración como check.                                                                                                                                                                                                 | 25/04/2025 | Diego Fuentes                                                                       |
+| **3.0**             | Agregué como realizar un PR y aprobarlo en Github.                                                                                                                                                                                   | 26/04/2025 | Daniel Queijeiro                                                                    |
+| **3.1**             | Correcciones de gramática.                                                                                                                                                                                                           | 26/04/2025 | Daniel Queijeiro, Diego Fuentes                                                     |
+| **3.2**             | Añadir link de repositorio de configuración a la plantilla de PRs                                                                                                                                                                    | 27/05/2025 | Valeria Zúñiga                                                                      |

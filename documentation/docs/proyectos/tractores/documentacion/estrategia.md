@@ -12,11 +12,10 @@ Establecer lineamientos claros para el desarrollo, asegurando calidad y consiste
 
 ## Repositorios
 
-Utilizaremos 3 repositorios separados que manejarán:
+Utilizaremos 2 repositorios separados que manejarán:
 
-- **Backend local**: El backend que estará acoplado a electron en cada uno de los equipos del cliente y donde se hará el procesamiento de los datos de los reportes, así como la creación de y modificación de los mismos. Se empaquetará en la app de electron mediante una estrategia de empaquetado de submódulo.
+- **App local**: La aplicación que estará empaquetada en electron para cada uno de los equipos del cliente y donde se hará el procesamiento de los datos de los reportes, así como la creación de y modificación de los mismos.
 - **Backend desplegado**: Este será el alojado en la instancia del EC2, donde se manejará el guardado de los datos como el control de acceso basado en roles y las plantillas creadas.
-- **Frontend**: El frontend estará hosteado localmente en la aplicación de Electron.
 
 De esta manera nuestro sistema puede ser modular y las responsabilidades se dividen eficientemente.
 
@@ -26,7 +25,7 @@ De esta manera nuestro sistema puede ser modular y las responsabilidades se divi
 
 Utilizaremos 3 ramas principales:
 
-- **Master**: Contiene el código que será desplegado en producción y sobre el que se maneja el versionamiento de la aplicación.
+- **Main**: Contiene el código que será desplegado en producción y sobre el que se maneja el versionamiento de la aplicación.
   - El código no debe tener problemas de integración o ejecución.
   - El código debe haber sido probado.
 - **Staging**: Rama pre-productiva usada para preparar el release de las versiones y realizar pruebas de aceptación.
@@ -47,7 +46,7 @@ La priorización de requerimientos se puede encontrar aquí:
 
 [Priorización de requerimientos](https://docs.google.com/spreadsheets/d/14zEYm84Y-QQ2gP_btGMyOinaKZQsw_wrYQQwqiqdSLY/edit?gid=1792238005#gid=1792238005)
 
-La especificación de historias de usuario se llevarán a cabo teniendo en cuenta la definición de [**Done**](/docs/intro/definicion-de-done/) y [**Ready**](/docs/intro/definicion-de-ready/) que se encuentran en este archivo:
+La especificación de historias de usuario se llevarán a cabo teniendo en cuenta la definición de [**Done**](../definicion-done-tractores.md) y [**Ready**](../definicion-ready-tractores.md).
 
 ---
 
@@ -63,7 +62,7 @@ Garantizar un software confiable a través de buenas prácticas de aseguramiento
 
 La estrategia que se seguirá para las pruebas será la siguiente:
 
-- **STP**: [Llenar la plantilla con el plan de pruebas de su proyecto]
+- **STP**: [Software Test Plan TracTech](/docs/proyectos/tractores/documentacion/stp)
 
 ---
 
@@ -76,7 +75,7 @@ Documentar claramente las funcionalidades y código del sistema para lectura en 
 - Se agregaron espacios alrededor de operadores y comas.
 - Se agregan punto y coma al final de definiciones simples.
 - Para documentar el código utilizaremos el estándar de documentación JS docs.
-- El detalle del estándar de codificación se podrá ver en el siguiente documento: [**Estandar de codificación**](../../../standards/general).
+- El detalle del estándar de codificación se podrá ver en el siguiente documento: [**Estandar de codificación**](../../../standards/estandar-codificacion.md).
 
 ---
 
@@ -114,7 +113,13 @@ Cada módulo puede incluir pruebas unitarias para garantizar su correcto funcion
 
 ### Aplicación local de electron
 
-![alt text](./diagrama-de-paquetes-electron-diagrama-paquetes.png)
+<iframe
+  frameborder="0"
+  style={{ borderRadius: "1em" }}
+  width="100%"
+  height="800em"
+  src="https://viewer.diagrams.net/?tags=%7B%7D&lightbox=1&highlight=0000ff&edit=https%3A%2F%2Fapp.diagrams.net%2F%23G1KPglZc2PKZ8ah6t3utgAD4n3U6BQs2sG%23%257B%2522pageId%2522%253A%2522l-jaUNbbZnOwnRJqBNt3%2522%257D&layers=1&nav=1&title=diagrama%20de%20paquetes%20Electron.drawio&dark=0#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1KPglZc2PKZ8ah6t3utgAD4n3U6BQs2sG%26export%3Ddownload"
+></iframe>
 
 Este diagrama de paquetes representa la organización de la app local de electron. Se divide en varias secciones principales:
 
@@ -136,9 +141,6 @@ Esta carpeta sigue una arquitectura basada en CLEAN.
 
 - **Servicios**: Que contendrán scripts y clases reutilizables a lo largo del proyecto
 
-- **Archivo principal**:
-
-  - **app.js**: Punto de entrada principal del backend. Su función es inicializar y configurar el servidor local de la aplicación.
 
 ### 2. Framework
 
@@ -146,8 +148,6 @@ Esta carpeta se encarga de la interfaz de usuario y la interacción con el usuar
 
 - **Vistas**: Son las interfaces que el usuario ve y con las que interactúa.
 - **Utils**: Funciones auxiliares para el comportamiento de las vistas.
-- **Archivo principal**:
-  - **index.js**: Punto de entrada de Electron.
 
 ### 3. Pruebas Unitarias
 
@@ -158,7 +158,6 @@ Cada módulo puede incluir pruebas unitarias para garantizar su correcto funcion
 Se encarga de la integración de la aplicación con ElectronJS
 
 - **main.js**: Archivo principal de Electron. Crea la ventana, gestiona eventos del sistema. Inicia Electron y conecta frontend con backend local.
-- **preload.js**: Script que se ejecuta antes de la carga de la página de electron, permitiendo la comunicación entre el frontend y el backend de manera segura.
 
 ---
 
@@ -170,3 +169,5 @@ Se encarga de la integración de la aplicación con ElectronJS
 | **2.0**             | Se hizo el cambio del diagrama de paquetes de la aplicación local en electron | 25/03/2025   | Ian Julián Estrada Castro |
 | **2.1**             | Se quitó ViewModels del diagrama de paquetes. Se actualizó diagrama de backend desacoplado. Se cambió a español | 27/03/2025 | Ian Julián Estrada Castro |
 | **2.2** | Se actualizó el diagrama de paquetes de electron y su explicación | 25/04/2025 | Daniel Contreras |
+| **2.3** | Se actualizó el diagrama de paquetes de electron y componentes | 13/05/2025 | Daniel Queijeiro |
+| **2.4** | Se actualizó la definición de repositorios | 23/05/2025 | Daniel Queijeiro |

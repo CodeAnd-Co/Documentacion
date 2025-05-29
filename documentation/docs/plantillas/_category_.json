@@ -1,0 +1,10 @@
+{
+  "label": "Plantillas 📄",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "title": "Plantillas Organizacionales",
+    "description": "Accede a plantillas estandarizadas para informes, procesos, documentación técnica, gestión de proyectos y otros entregables clave de Code&Co.",
+    "slug": "/category/plantillas"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "label": "Procesos ⚙️",
+  "position": 4,
+  "link": {
+    "type": "generated-index",
+    "description": "Procesos dentro de la organización.",
+    "slug": "/category/procesos"
+  }
+}

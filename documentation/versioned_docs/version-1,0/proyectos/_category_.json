@@ -1,0 +1,9 @@
+{
+  "label": "Proyectos 👨‍💻",
+  "position": 7,
+  "link": {
+    "type": "generated-index",
+    "description": "Proyectos desarrollados por Code&Co.",
+    "slug": "/category/proyectos"
+  }
+}

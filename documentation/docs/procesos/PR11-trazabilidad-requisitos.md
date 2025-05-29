@@ -1,52 +1,59 @@
 ---
-title: PR11 Comprensión y trazabilidad de requisitos
+title: ☢️ | PR11 Comprensión y trazabilidad de requisitos
 sidebar_position: 11
 ---
 
-# Proceso de comprensión y trazabilidad de requisitos
+# ☢️  Proceso de comprensión y trazabilidad de requisitos
 
----
+Este proceso asegura la correcta comprensión y la trazabilidad bidireccional de los requisitos, desde su definición hasta su implementación, facilitando el control y la calidad del desarrollo dentro de la organización.
 
-### Objetivo
+## 🎯 Objetivo
 
 - Establecer el proceso para mantener una trazabilidad bidireccional en los requisitos.
 
----
+## 📥 Entradas
 
-### Entradas
+1. Requisitos definidos para un MVP (Producto Mínimo Viable).  
+2. Requisitos definidos para un MBI (Incremento Mínimo de Negocio).
 
-1. Requisitos definidos para un MVP
-2. Requisitos definidos para un MBI
+## ⚙️ Proceso
 
----
+| **Fase**                                    | **Actividades**                                                                                                                                                                                                                                                                                                                                                                                  | **Responsables**     | **Meta y práctica específica del CMMI**                                    |
+| ------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------- | -------------------------------------------------------------------------- |
+| **Definición de requisitos**                | Crea un índice en la Wiki para tu proyecto dentro de la carpeta "_documentación/requisitos/_" que incluya los requisitos funcionales del MVP, de los MBIs y los atributos de calidad.                                                                                                                                  | Equipo de producto   | **REQM SP1.4** (Mantener la trazabilidad bidireccional de los requisitos). **RD SP2.1** (Establecer requisitos del producto y de los componentes del producto), **RD, SP 3.2** ( Establecer una definición de la funcionalidad y de los atributos de calidad requeridos) |
+| **Documentación de requisitos funcionales** | Crea un documento para cada requisito funcional dentro de la carpeta "_documentación/requisitos/_", asegúrate de incluir:  - Número y nombre del requisito  - Descripción de la historia de usuario  - Criterios de aceptación  - Diagrama de secuencia (si aplica)  - Mockup/wireframe (si aplica)  - Pruebas  - Código  - Cualquier otra documentación relevante basándose en la definición de READY y DONE de cada proyecto  - Historial de cambios | Equipo de producto   | **REQM SP1.4** (Mantener la trazabilidad bidireccional de los requisitos). **RD SP2.1** (Establecer requisitos del producto y de los componentes del producto), **RD, SP 3.2** ( Establecer una definición de la funcionalidad y de los atributos de calidad requeridos) |
+|  | Crea una copia de la plantilla: [Plantilla de Mapa de Dependencias](https://docs.google.com/spreadsheets/d/1hz5GIibzKkaJ8YaTeMbx-nxblXaC9XCyG-1BDpHJ4Sg/edit) y utilízala para tener un registro de las interdependencias entre requisitos, y las dependencias entre los requisitos funcionales y los atributos de calidad. | Equipo de producto | **RD SP2.2** (Asignar los requisitos a los componentes del producto). **RD SP2.1** (Establecer requisitos del producto y de los componentes del producto) |
+|  | En el índice de requisitos de tu proyecto, añade una sección de Dependencias y coloca el link a tu Mapa de Dependencias. | Equipo de producto | **RD SP2.2** (Asignar los requisitos a los componentes del producto).  |
+| **Vinculación de documentos**               | Incluye en el índice de requisitos enlaces a cada uno de los documentos individuales de los requisitos.                                                                                                                                                                                                                                                       | Equipo de producto   | **REQM SP1.4** (Mantener la trazabilidad bidireccional de los requisitos). |
+| **Etiquetado de requisitos funcionales** | Al terminar de diseñar el requisito incluye la etiqueta `Ready` junto a la historia en el índice.                                                                                                                                                                                                                                                                                                                | Equipo de producto   | **REQM SP1.4** (Mantener la trazabilidad bidireccional de los requisitos). |
+| **Referencia en el código**                 | Durante el desarrollo, cada implementación debe incluir un comentario dentro del código indicando el requisito al que corresponde. Para el comentario, sigue el formato:`RF[num] Nombre del Requisito - [Link]`, donde el enlace dirigirá al documento del requisito.                                                                                     | Equipo de desarrollo | **REQM SP1.4** (Mantener la trazabilidad bidireccional de los requisitos). |
+| **Cambio de estado del requisito** | Tras terminar de codificar un requisito, reemplaza la etiqueta `Ready` por `Done` en el índice de requisitos.                                                                                                                                                                                                                                                                                                | Equipo de producto   | **REQM SP1.4** (Mantener la trazabilidad bidireccional de los requisitos). |
+| **Vincular Pull Request (front y back)**    | Cuando se acepten los Pull Requests, añade los enlaces en la sección de "Código" en la documentación del requisito, asegurándote de tener el formato: `Pull request front-end: (enlace del PR)`. `Pull request back-end: (enlace del PR)`.                                                                                                                         | Equipo de desarrollo | **REQM SP1.4** (Mantener la trazabilidad bidireccional de los requisitos). |
 
-## Proceso de Comprensión y Trazabilidad de Requisitos
+## 📤 Salidas
 
-| **Fase**                                    | **Descripción**                                                                                                                                                                                                                                                                                                            | **Responsables**     | **Meta y práctica específica del CMMI**                                    |
-| ------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------- | -------------------------------------------------------------------------- |
-| **Definición de requisitos**                | Crear un documento en la Wiki del proyecto dentro de las carpetas *documentación/requisitos/* que incluya los requisitos funcionales del MVP, los requisitos funcionales de los MBI y los requisitos no funcionales del proyecto para que funcione como índice. | Equipo de producto   | **REQM SP1.4** (Mantener la trazabilidad bidireccional de los requisitos). |
-| **Documentación de requisitos funcionales** | Crear un documento para cada requisito funcional dentro de las carpetas *documentación/requisitos/* de la wiki de cada proyecto que incluya: nombre y número del requisito, historia de usuario, criterios de aceptación, diagrama de secuencia (si aplica), mockup/wireframe (si aplica), y cualquier otra documentación relevante basándose en la definición de READY y DONE de cada proyecto. | Equipo de producto   | **REQM SP1.4** (Mantener la trazabilidad bidireccional de los requisitos). |
-| **Vinculación de documentos**               | Incluir en el documento general de requisitos de la Wiki enlaces a cada uno de los documentos individuales de los requisitos del proyecto.     | Equipo de producto   | **REQM SP1.4** (Mantener la trazabilidad bidireccional de los requisitos). |
-| **Documentación de requisitos funcionales** | Al terminar de diseñar el requisito incluir la etiqueta `Ready` abajo del título.  | Equipo de producto | **REQM SP1.4** (Mantener la trazabilidad bidireccional de los requisitos). |
-| **Referencia en el código**                 | Durante el desarrollo, cada implementación debe incluir un comentario dentro del código indicando el requisito al que corresponde. El comentario debe seguir el formato:`RF[num] Nombre del Requisito - [Link]`, donde el enlace dirigirá al diagrama de secuencia o mockup según corresponda (front, back).  | Equipo de desarrollo | **REQM SP1.4** (Mantener la trazabilidad bidireccional de los requisitos). |
-|   | Al terminar de codificar el requisito reemplazar la etiqueta `Ready` por `Done` abajo del título.  | Equipo de producto | **REQM SP1.4** (Mantener la trazabilidad bidireccional de los requisitos). |
+1. Documento consolidado con todos los requisitos funcionales y no funcionales, organizados por MVP y MBI.  
+2. Documentos detallados para cada requisito funcional, incluyendo historia, criterios, diagramas y pruebas.
+3. Mapa de Dependencias actualizado.  
 
+## 📎 Recursos relacionados
 
+- [Estándar para crear nuevas plantillas](/docs/next/standards/estandar-plantillas)  
+- [Definición de Ítems](/docs/next/procesos/PR2-definicion-items)  
+- [Plantilla para procesos](/docs/next/plantillas/plantilla-procesos)  
 
----
+## 📚 Historial de cambios
 
-### Salidas
+<details>
+  <summary>Versiones</summary>
+  | **Versión** | **Descripción**                                                        | **Fecha**  | **Colaborador**                      |
+  | ------------------- | -------------------------------------------------------------------- | ---------- | ---------------------------------- |
+  | **1.0.0**           | Creación inicial del proceso.                                         | 09/03/2025 | Angélica Ríos Cuentas               |
+  | **2.0.0**           | Refactorización para especificar ubicación de documentos y simplificar. | 18/04/2025 | Diego Fuentes                      |
+  | **2.1.0**           | Agregado de trazabilidad en código y vinculación de Pull Requests.    | 13/05/2025 | Rodrigo A. Benítez, Valeria Zúñiga, Paola Garrido |
+  | **2.2.0**           | Agregado sobre el Mapa de Dependencias y relación con SP 2.2 de RD.    | 25/05/2025 | Rommel Toledo C. |
+  | **2.3.0**           | Reescritura para tener un lenguaje más adecuado.    | 25/05/2025 | Rommel Toledo C. |
+  | **2.4.0**             | Agregar RD2.1 al proceso                                     | 26/05/2025 | Nicolas Hood Figueroa  
+  | **2.4.1**     | Mapear RD 3.2  | 28/05/2025 | Hiram Israel Mendoza López 
 
-1. Un documento general que consolida los requisitos de cada proyecto, organizados en:
-   - **Requisitos funcionales**, clasificados en **MVP** (Producto Mínimo Viable) y **MBI** (Incremento Mínimo de Negocio).
-   - **Requisitos no funcionales**, que establecen condiciones de calidad y restricciones del sistema.
-2. Un documento individual para cada requisito funcional, detallando su historia de usuario, criterios de aceptación, diagramas e interfaces.
-
----
-
-## Historial de cambios
-
-| **Tipo de Versión** | **Descripción**                                                                                                                | **Fecha** | **Colaborador**                                   |
-| ------------------- | ------------------------------------------------------------------------------------------------------------------------------ | --------- | ------------------------------------------------- |
-| **1.0**             | Creacion de proceso de gestión de riesgos                                                                                      | 9/3/2025 | Angélica Ríos Cuentas |
-| **2.0**             | Refactorización y cambio para especificar dónde se crean los documentos.                                                       | 18/4/2025 | Diego Fuentes                             |
+</details>

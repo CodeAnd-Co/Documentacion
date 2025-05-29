@@ -5,8 +5,6 @@ sidebar_position: 5
 
 # RF3: Super Administrador Lee Usuario
 
-**Última actualización:** 07 de abril de 2025
-
 ---
 
 ## Historia de Usuario
@@ -97,4 +95,23 @@ end
 
 > _Descripción_: El mockup representa la interfaz que permite al Super Administrador consultar la información detallada de un usuario. Al seleccionar un usuario en la tabla, se muestra un panel con sus datos completos, incluyendo nombre, cliente, rol, estado, correo electrónico, teléfono, dirección, fecha de nacimiento y género.
 
-> ![Interfaz de leer usuario](imagenes/mockupLeerUsuario.png)
+> ![Interfaz de leer usuario](imagenes/RF3LeeUsuario.png)
+
+## **Pruebas Unitarias**
+
+_<u>[Enlace a pruebas RF03 Lee Usuario](https://docs.google.com/spreadsheets/d/1NLGwGrGA5PVOEzLaqxa8Ts1D_Ng3QzzqNKWJYUzxD-M/edit?usp=sharing)</u>_
+
+## **Código**
+
+_<u>[Pull Request Front-End](https://github.com/CodeAnd-Co/Frontend-Text-Lines/pull/127)</u>_
+
+_<u>[Pull Request Back-End](https://github.com/CodeAnd-Co/Backend-textiles/pull/32)</u>_
+
+---
+
+### Historial de cambios
+
+| **Tipo de Versión** | **Descripción**                                  | **Fecha**  | **Colaborador**            |
+| ------------------- | ------------------------------------------------ | ---------- | -------------------------- |
+| **1.0**             | Actualización de la documentación del requisito. | 07/4/2025  | Paola María Garrido Montes |
+| **1.1**             | Agregar links de PR                              | 26/05/2025 | Max Toscano                |

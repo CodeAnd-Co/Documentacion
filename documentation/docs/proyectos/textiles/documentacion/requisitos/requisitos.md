@@ -34,70 +34,65 @@ Los requisitos funcionales del sistema describen una variedad de acciones que lo
 
 - [**RF1**](RF1.md): Super Administrador Crea Usuario - `Done`
 - [**RF2**](RF2.md): Super Administrador Consulta Lista de Usuarios - `Done`
-- [**RF3**](RF3.md): Super Administrador Lee Usuario - `Ready`
-- [**RF4**](RF4.md): Super Administrador Actualiza Usuario - `Ready`
-- [**RF5**](RF5.md): Super Administrador Elimina Usuario - `Ready`
-- [**RF6**](RF6.md): Super Administrador Crea Rol - `Ready`
+- [**RF3**](RF3.md): Super Administrador Lee Usuario - `Done`
+- [**RF5**](RF5.md): Super Administrador Elimina Usuario - `Done`
+- [**RF6**](RF6.md): Super Administrador Crea Rol - `Done`
 - [**RF7**](RF7.md): Super Administrador Consulta Lista de Roles - `Done`
-- [**RF10**](RF10.md): Super Administrador Elimina Rol
-- [**RF11**](RF11.md): Super Administrador Crea Cliente
+- [**RF10**](RF10.md): Super Administrador Elimina Rol - `Done`
+- [**RF11**](RF11.md): Super Administrador Crea Cliente - `Done`
 - [**RF12**](RF12.md): Super Administrador Consulta Lista de Clientes - `Done`
-- [**RF13**](RF13.md): Super Administrador, Lee Cliente
-- [**RF15**](RF15.md): Super Administrador Elimina Cliente
-- [**RF16**](RF16.md): Super Administrador Crea Empleado
-- [**RF17**](RF17.md): Super Administrador Consulta Lista de Empleados - `Ready`
-- [**RF18**](RF18.md): Super Administrador Lee Empleado
-- [**RF20**](RF20.md): Super Administrador Elimina Empleado
-- [**RF21**](RF21.md): Super Administrador Crea Grupo de Empleados
+- [**RF13**](RF13.md): Super Administrador, Lee Cliente - `Done`
+- [**RF14**](RF14.md): Super Administrador Actualiza Cliente - `Done`
+- [**RF15**](RF15.md): Super Administrador Elimina Cliente `Done`
+- [**RF17**](RF17.md): Super Administrador Consulta Lista de Empleados - `Done`
+- [**RF18**](RF18.md): Super Administrador Lee Empleado - `Done`
+- [**RF19**](RF19.md): Super Administrador Actualiza Empleado
+- [**RF20**](RF20.md): Super Administrador Elimina Empleado - `Done`
 - [**RF22**](RF22.md): Super Administrador Consulta Lista de Grupos de Empleados - `Done`
-- [**RF23**](RF23.md): Super Administrador Lee Grupo de Empleados
-- [**RF25**](RF25.md): Super Administrador Elimina Grupo de Empleados. - `Ready`
-- [**RF26**](RF26.md): Super Administrador Crea Producto - `Ready`
+- [**RF23**](RF23.md): Super Administrador Lee Grupo de Empleados - `Done`
+- [**RF25**](RF25.md): Super Administrador Elimina Grupo de Empleados. - `Done`
+- [**RF26**](RF26.md): Super Administrador Crea Producto - `Done`
 - [**RF27**](RF27.md): Super Administrador, Cliente Consulta Lista de Productos - `Done`
-- [**RF30**](RF30.md): Super Administrador Elimina Producto - `Ready`
-- [**RF31**](RF31.md): Super Administrador Crea Set de Cuotas
+- [**RF30**](RF30.md): Super Administrador Elimina Producto - `Done`
+- [**RF31**](RF31.md): Super Administrador Crea Set de Cuotas - `Done`
 - [**RF32**](RF32.md): Super Administrador, Cliente Consulta Lista de Set de Cuotas - `Done`
-- [**RF33**](RF33.md): Super Administrador, Cliente Lee Set de Cuotas
-- [**RF35**](RF35.md): Super Administrador Elimina Set de Cuotas - `Ready`
-- [**RF36**](RF36.md): Super Administrador Crea Evento
-- [**RF37**](RF37.md): Super Administrador, Cliente Consulta Lista de Eventos - `Ready`
-- [**RF38**](RF38.md): Super Administrador, Cliente Lee Evento - `Ready`
-- [**RF40**](RF40.md): Super Administrador, Cliente Elimina Evento - `Ready`
-- [**RF41**](RF41.md): Super Administrador Crea Set de Productos
+- [**RF35**](RF35.md): Super Administrador Elimina Set de Cuotas - `Done`
+- [**RF37**](RF37.md): Super Administrador, Cliente Consulta Lista de Eventos - `Done`
+- [**RF38**](RF38.md): Super Administrador, Cliente Lee Evento - `Done`
+- [**RF40**](RF40.md): Super Administrador, Cliente Elimina Evento - `Done`
 - [**RF42**](RF42.md): Super Administrador, Cliente Consulta Lista de Sets de Productos - `Done`
-- [**RF43**](RF43.md): Super Administrador, Cliente Lee Set de Productos
-- [**RF45**](RF45.md): Super Administrador Elimina Set de Productos
+- [**RF43**](RF43.md): Super Administrador, Cliente Lee Set de Productos - `Done`
+- [**RF45**](RF45.md): Super Administrador Elimina Set de Productos -`Done`
 - [**RF46**](RF46.md): Super Administrador Crea Categoria de Productos - `Done`
 - [**RF47**](RF47.md): Super Administrador Consulta Lista de Categorias de Productos - `Done`
 - [**RF50**](RF50.md): Elimina Categoria de Productos - `Done`
-- [**RF51**](RF51.md): Super Administrador Crea Tipo de Pago
-- [**RF52**](RF52.md): Super Administrador, Cliente Consulta Lista de Tipos de Pago
-- [**RF53**](RF53.md): Super Administrador, Cliente Lee Tipo de Pago
-- [**RF55**](RF55.md): Super Administrador Elimina Tipo de Pago
-- [**RF56**](RF56.md): Super Administrador Importa Productos
-- [**RF57**](RF57.md): Super Administrador Importa Empleados
-- [**RF58**](RF58.md): Super Administrador Exporta Productos
-- [**RF59**](RF59.md): Super Administrador Exportar Empleados
-- [**RF60**](RF60.md): Super Administrador, Cliente Consulta Lista de Pedidos
-- [**RF61**](RF61.md): Super Administrador, Cliente Lee Pedido
-- [**RF63**](RF63.md): Super Administrador Elimina Pedido
-- [**RF78**](RF78.md): Iniciar Sesión `Done`
+- [**RF52**](RF52.md): Super Administrador, Cliente Consulta Lista de Tipos de Pago - `Done`
+- [**RF54**](RF54.md): Super Administrador Actualiza Tipo de Pago - `Done`
+- [**RF57**](RF57.md): Super Administrador Importa Empleados - `Done`
+- [**RF60**](RF60.md): Super Administrador, Cliente Consulta Lista de Pedidos - `Done`
+- [**RF63**](RF63.md): Super Administrador Elimina Pedido - `Done`
+- [**RF78**](RF78.md): Iniciar Sesión - `Done`
 
 ### Requisitos Específicos MBI (Parte 1)
 
+- [**RF4**](RF4.md): Super Administrador Actualiza Usuario
 - [**RF8**](RF8.md): Super Administrador Lee Rol
 - [**RF9**](RF9.md): Super Administrador Actualiza Rol
-- [**RF14**](RF14.md): Super Administrador Actualiza Cliente
-- [**RF19**](RF19.md): Super Administrador Actualiza Empleado
+- [**RF16**](RF16.md): Super Administrador Crea Empleado
+- [**RF21**](RF21.md): Super Administrador Crea Grupo de Empleados
 - [**RF24**](RF24.md): Super Administrador Actualiza Grupo de Empleados
 - [**RF28**](RF28.md): Super Administrador, Cliente Lee Producto
 - [**RF29**](RF29.md): Super Administrador Actualizar Producto
+- [**RF33**](RF33.md): Super Administrador, Cliente Lee Set de Cuotas
 - [**RF34**](RF34.md): Super Administrador Actualiza Set de Cuotas
-- [**RF39**](RF39.md): Super Administrador Actualiza Evento
+- [**RF36**](RF36.md): Super Administrador Crea Evento
+- [**RF41**](RF41.md): Super Administrador Crea Set de Productos
 - [**RF44**](RF44.md): Super Administrador Actualiza Set de Productos
 - [**RF48**](RF48.md): Super Administrador, Cliente Lee Categoria de Productos
 - [**RF49**](RF49.md): Super Administrador Actualiza Categoria de Productos
-- [**RF54**](RF54.md): Super Administrador Actualiza Tipo de Pago
+- [**RF56**](RF56.md): Super Administrador Importa Productos
+- [**RF58**](RF58.md): Super Administrador Exportar Productos
+- [**RF59**](RF59.md): Super Administrador Exportar Empleados
 - [**RF62**](RF62.md): Super Administrador, Cliente Actualiza Pedido
 
 ### Requisitos Específicos MBI (Parte 2)
@@ -131,41 +126,46 @@ Los requisitos no funcionales establecen las expectativas en términos de tiempo
 
 **Rendimiento**
 
-- El tiempo de respuesta del sistema debe ser menor a 5 segundos.
-- El sistema debe ser capaz de soportar al menos 100 usuarios concurrentes.
+- El tiempo de respuesta tiene que ser menor a **5 segundos**.
+- El sistema debe soportar al menos **5,000 usuarios concurrentes**.
 
 **Usabilidad**
 
-- El administrador debe tardar menos de 6 horas en aprender a utilizar el sistema de backoffice.
-- El sistema debe ser compatible con los siguientes navegadores:
-  - Chrome versión 133.0.6943.126
-  - Firefox 135.0.1
-- Un empleado debe tardar menos de 1 hora en aprender a utilizar el sistema de e-commerce.
+- El administrador se debe de tardar **6 horas** en aprender a utilizar el sistema de backoffice.
+- El sistema debe ser compatible con estos navegadores:
+  - **Chrome** versión **133.0.6943.126**
+  - **Firefox** versión **135.0.1**
+- Un empleado debe de tardar **1 hora** en aprender a utilizar el sistema de e-commerce.
 
 **Disponibilidad**
 
-- El sistema debe contar con redundancia de datos y sistemas de respaldo para garantizar la disponibilidad continua.
+- El sistema debe de contar con **redundancia de datos** y **sistemas de respaldo**.
 
 **Portabilidad y compatibilidad**
 
-- El sistema debe contar con estándares abiertos para facilitar la integración con otros sistemas.
+- El sistema debe contar con **estándares abiertos** para facilitar la integración con otros sistemas.
+
+- El sistema debe ser compatible en cualquier computadora con Windows 11 y macOS 15.4.1 o superiores.
 
 **Mantenibilidad**
 
-- El sistema debe contar con una documentación clara y actualizada. Un desarrollador debe poder encontrarla en un plazo de 15 minutos.
+- El sistema debe contar con una **documentación clara y actualizada**.
+- Un desarrollador debe poder encontrar la documentación en **15 minutos**.
 
 **Escalabilidad**
 
-- El sistema debe soportar un rango de entre 5,000 y 10,000 usuarios registrados.
-- El sistema debe permitir la carga masiva de datos y facilitar la incorporación de nuevas funciones sin afectar las existentes.
+- El sistema debe soportar al menos **5,000 - 10,000 usuarios registrados**.
+- El sistema debe permitir la **carga masiva de datos** y facilitar la incorporación de **nuevas funciones sin afectar las existentes**.
 
 **Seguridad**
 
-- Los datos sensibles, como contraseñas, deben estar cifrados utilizando bcrypt.
-- Una computadora debe tardar más de 3 años en descifrar la contraseña cifrada.
-- El sistema debe contar con protección contra ataques CSRF y ataques de inyección NoSQL.
-- El sistema debe contar con un sistema de autorización y autenticación robusto.
-- El sistema debe cerrar automáticamente la sesión de los usuarios después de 8 horas de inactividad.
+- Los **datos sensibles** guardados en la base de datos (ej. contraseñas) deben estar **cifrados usando bcrypt**.
+- Una computadora debe tardar **más de 3 años** en descifrar una contraseña.
+- El sistema debe contar con protección contra:
+  - **Ataques CSRF**
+  - **Ataques por inyección NoSQL**
+- El sistema debe contar con un **sistema de autorización y autenticación**.
+- El sistema **cierra la sesión** de los usuarios después de **8 horas** desde que iniciaron sesión.
 
 ---
 
@@ -374,6 +374,14 @@ import TabItem from '@theme/TabItem';
 </Tabs>
 
 ---
+
+## MER + Diccionario de datos
+
+<u>[Enlace a MER + Diccionario de datos](docs\proyectos\textiles\documentacion\diagrama-mer.md)</u>
+
+## Diagrama de paquetes
+
+<u>[Enlace a diagramas de paquetes de frontend y backend](/docs/proyectos/textiles/documentacion/estrategia-tecnica-textiles/#patrones-de-diseño-y-diagrama-de-paquetes)</u>
 
 ## Reglas de negocio
 

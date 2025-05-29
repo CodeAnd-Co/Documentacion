@@ -5,17 +5,21 @@ sidebar_position: 4
 
 # RF3: Consultar historial de ancestros de una charola
 
-**Última actualización:** 08 de marzo de 2025
 
 ### Historia de Usuario
 Como usuario del sistema, quiero consultar el historial de ancestros de una charola específica dentro del sistema, para rastrear su origen y evolución, asegurando un mejor control sobre la producción.
 
   **Criterios de Aceptación:**
-  - El sistema debe permitir al administrador seleccionar una charola específica.
+  - El sistema debe permitir al usuario seleccionar una charola específica.
   - Se debe mostrar el historial completo de la charola, incluyendo las charolas de las que proviene.
   - La información debe presentarse de manera clara y organizada, utilizando una estructura visual intuitiva que facilite la vista de los datos.
   - La visualización del historial debe actualizarse en tiempo real conforme se registren nuevos datos.
-  - La interfaz debe permitir la navegación entre generaciones de charolas para rastrear su evolución y procedencia de manera eficiente.
+
+---
+
+### Diagrama de Actividades
+
+<a href="https://drive.google.com/file/d/1ARurrnqu21mrli1PQnmguYwyDsvSI2ms/view?usp=sharing" target="_blank" rel="noopener noreferrer">Consultar historial de ancestros de una charola</a>
 
 ---
 
@@ -54,7 +58,7 @@ sequenceDiagram
         Controller->>Model: obtenerHistorialAncestros()
         deactivate Controller
         activate Model
-        Model->>Database: SELECT * FROM CHAROLA WHERE charolaId = ?
+        Model->>Database: Query
         deactivate Model
         activate Database
 
@@ -207,41 +211,6 @@ sequenceDiagram
         View-->>Usuario: Regresar al View de Inicio de sesión
         deactivate View
 
-    else GET No hay permiso de acceso, 403
-        Usuario->>+View: Clic en botón "Historial"
-        View->>-ViewModel: obtenerAncestros(charolaId)
-        activate ViewModel 
-        ViewModel->>Domain: obtenerAncestros(charolaId)
-        deactivate ViewModel 
-        activate Domain
-        Domain->>Repository: obtenerAncestros(charolaId)
-        deactivate Domain
-        activate Repository
-        Repository->>APIService: obtenerAncestros(charolaId)
-        deactivate Repository
-        activate APIService
-        APIService->>Controller: GET /:charolaId/historial
-        deactivate APIService
-        activate Controller
-
-        Controller-->>APIService: 403 No Autorizado, permisos insuficientes
-        deactivate Controller
-        activate APIService
-        APIService-->>Repository: 403 No Autorizado, permisos insuficientes
-        deactivate APIService
-        activate Repository
-        Repository-->>Domain: 403 No Autorizado, permisos insuficientes
-        deactivate Repository
-        activate Domain
-        Domain-->>ViewModel: 403 No Autorizado, permisos insuficientes
-        deactivate Domain
-        activate ViewModel
-        ViewModel-->>View: Notificar falta de Inicio de sesión
-        deactivate ViewModel
-        activate View
-        View-->>Usuario: Regresar al View de Inicio de sesión
-        deactivate View
-
     else GET Sin conexión a internet, 101
         Usuario->>+View: Clic en botón "Historial"
         View->>-ViewModel: obtenerAncestros(charolaId)
@@ -273,14 +242,11 @@ sequenceDiagram
     end
 ```
 
----
-
 ### Mockup
 
-> *Descripción*: El mockup muestra la interfaz donde los usuarios pueden visualizar el historial de ancestros de una charola.
-
-![alt text](<img/mockupRF3.png>)
 ![alt text](<img/mockupRF3_2.png>)
+
+---
 
 ### Pruebas Unitarias 
 | ID Prueba  | Descripción                                               | Resultado Esperado  |

@@ -1,8 +1,10 @@
 {
-"label": "Proyectos 👨‍💻",
+  "label": "Proyectos 👨‍💻",
   "position": 7,
   "link": {
     "type": "generated-index",
-    "description": "Proyectos desarrollados por Code&Co."
+    "title": "Proyectos de Code&Co",
+    "description": "Explora los proyectos desarrollados por Code&Co, incluyendo objetivos, alcance, tecnologías utilizadas, resultados obtenidos y aprendizajes clave.",
+    "slug": "/category/proyectos"
   }
 }
