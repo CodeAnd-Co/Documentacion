@@ -15,8 +15,8 @@ Como administrador, quiero poder crear nuevos roles personalizados con permisos 
 
 ## **Criterios de Aceptación:**
 
-1. El Super Administrador debe poder acceder a la opción **"Crear Rol"** dentro del panel de administración.
-2. Debe permitir ingresar un nombre para el rol y definir los permisos asociados.
+1. El Super Administrador debe poder acceder a la opción **"Crear Rol"** dentro de la vista de roles.
+2. Debe permitir ingresar un nombre para el rol, una descripción y definir los permisos asociados.
 3. Al guardar, el sistema debe validar que el nombre del rol no esté duplicado.
 4. Si la creación es exitosa, el nuevo rol debe aparecer en la lista de roles disponibles.
 5. Si hay un error, el sistema debe mostrar un mensaje indicando el problema.
