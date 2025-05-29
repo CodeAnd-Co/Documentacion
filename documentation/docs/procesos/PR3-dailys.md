@@ -58,4 +58,5 @@ Este proceso establece la estructura y los pasos necesarios para realizar reunio
 | **2.3.0**   | Eliminación de la sección de riesgos del proceso.                                | 13/05/2025    | Paola María Garrido                                      |
 | **2.4.0**   | Corrección de la SP 3.1: revisión de los planes que afectan al proyecto.         | 13/05/2025    | Arturo Sánchez                                           |
 | **3.0.0**   | Actualización al formato estándar de procesos.                                   | 18/05/2025    | Ángel Mauricio Ramírez Herrera                          |
+| **3.0.1**       | Correcciones ortográficas y de enlaces                       | 29/05/2025 | Valeria Zúñiga, Nicolas Hood                 |
 </details>

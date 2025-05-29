@@ -56,4 +56,5 @@ sidebar_position: 28
 | **1.3**             | Refactorización | 18/4/2025  | Diego Fuentes |
 | **2.0**             | Agregar práctica 1.1 de TS y corregir redacción. | 26/05/2025  | Diego Fuentes |
 | **2.1**             | Corrección de historial de versión | 29/05/2025  | Valeria Zúñiga |
+| **2.2**       | Correcciones ortográficas y de enlaces                       | 29/05/2025 | Valeria Zúñiga, Nicolas Hood                 |
 </details>

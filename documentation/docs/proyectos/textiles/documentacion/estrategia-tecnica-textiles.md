@@ -1,5 +1,5 @@
 ---
-title: Estrategia tecnica
+title: Estrategia técnica
 ---
 
 **Última actualización por:** Hiram Mendoza , 24 de abril de 2025
@@ -377,7 +377,8 @@ jobs:
 
 | **Tipo de Versión** | **Descripción**                                         | **Fecha**  | **Colaborador**                                |
 | ------------------- | ------------------------------------------------------- | ---------- | ---------------------------------------------- |
-| **1.0**             | Creacion de la estrategia tecnica textiles              | 6/03/2025  | Diego Alfaro, Daniel Contreras, Emiliano Gomez |
-| **1.1**             | Documentación de la estructura de frontend              | 01/05/2025 | Angélica Ríos                                  |
-| **1.2**             | Modificaciones de plantilla de pull request del backend | 19/05/2025 | Arturo Sánchez                                 |
-| **1.3**             | Mejoras en la plantilla de Frontend                     | 19/05/2025 | Rodrigo Antonio                                |
+| **1.0.0**           | Creacion de la estrategia tecnica textiles              | 6/03/2025  | Diego Alfaro, Daniel Contreras, Emiliano Gomez |
+| **1.1.0**           | Documentación de la estructura de frontend              | 01/05/2025 | Angélica Ríos                                  |
+| **1.2.0**           | Modificaciones de plantilla de pull request del backend | 19/05/2025 | Arturo Sánchez                                 |
+| **1.3.0**           | Mejoras en la plantilla de Frontend                     | 19/05/2025 | Rodrigo Antonio                                |
+| **1.3.1**           | Correcciones ortográficas                               | 29/05/2025 | Valeria Zúñiga, Nicolas Hood                   |

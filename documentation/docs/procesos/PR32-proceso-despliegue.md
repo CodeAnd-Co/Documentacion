@@ -52,5 +52,6 @@ sidebar_position: 32
   <summary>Versiones</summary>
 | **Tipo de Versión** | **Descripción** | **Fecha**  | **Colaborador** |
 | ------------------- | --------------- | ---------- | --------------- |
-| **1.0** | Creación del proceso | 18/05/2025 | Rommel Pacheco Hernández|
+| **1.0.0** | Creación del proceso | 18/05/2025 | Rommel Pacheco Hernández|
+| **1.0.1**       | Correcciones ortográficas y de enlaces                       | 29/05/2025 | Valeria Zúñiga, Nicolas Hood                 |
 </details>

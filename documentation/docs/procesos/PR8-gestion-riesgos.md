@@ -75,4 +75,5 @@ Esta probabilidad puede ser estimada por el equipo con base en la experiencia y 
 | **1.2.0**   | Inclusión de referencias a PMC 1.6 en los pasos del proceso.                    | 17/04/2025    | Nicolás Hood Figueroa                                  |
 | **1.3.0**   | Refactorización del proceso.                                                    | 18/04/2025    | Diego Fuentes                                          |
 | **1.4.0**   | Simplificación de pasos del proceso.                                            | 13/05/2025    | Paola María Garrido                                    |
+| **1.4.1**       | Correcciones ortográficas y de enlaces                       | 29/05/2025 | Valeria Zúñiga, Nicolas Hood                 |
 </details>

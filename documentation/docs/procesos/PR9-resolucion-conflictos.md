@@ -81,4 +81,5 @@ Este proceso busca identificar, reducir y resolver conflictos dentro del equipo 
 | **2.3.0**   | Implementación de acciones correctivas.                                         | 24/04/2025    | Max Toscano                                                   |
 | **3.0.0**   | Inclusión del proceso seguido por el Comité de Ética y criterios de niveles.    | 01/05/2025    | Juan Eduardo Rosas Cerón                                      |
 | **4.0.0**   | Simplificación del proceso.                                                     | 11/05/2025    | Paola María Garrido Montes                                    |
+| **4.0.1**       | Correcciones ortográficas y de enlaces                       | 29/05/2025 | Valeria Zúñiga, Nicolas Hood                 |
 </details>

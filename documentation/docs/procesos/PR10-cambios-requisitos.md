@@ -52,6 +52,6 @@ Proceso para administrar adecuadamente los cambios en los requisitos del proyect
 | **1.1.0**   | Refactorización.                               | 18/04/2025    | Diego Fuentes                                                   |
 | **1.2.0**   | Implementar acciones correctivas.              | 24/04/2025    | Max Toscano                                                     |
 | **2.0.0**   | Simplificación del proceso.                    | 14/05/2025    | Paola María Garrido Montes                                      |
-| **2.0.1**     | Mapear RD 3.2  | 28/05/2025 | Hiram Israel Mendoza López
-
+| **2.1.0**     | Mapear RD 3.2  | 28/05/2025 | Hiram Israel Mendoza López |
+| **2.2.0**       | Correcciones ortográficas y de enlaces                       | 29/05/2025 | Valeria Zúñiga, Nicolas Hood                 |
 </details>

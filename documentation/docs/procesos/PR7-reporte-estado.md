@@ -68,5 +68,5 @@ Proceso para generar reportes de estado que reflejen la salud de los proyectos d
 | **3.1.0**             | Añadir pedir retroalimentación de un profesor en específico.                     | 13/05/2025 | Juan Pablo Chávez Leal        |
 | **3.1.1**   | Mapear VER 3.2 | 27/05/2025  | Ian Julián Estrada Castro       |
 | **3.1.2**     | Mapear RD 3.2  | 28/05/2025 | Hiram Israel Mendoza López
-
+| **3.1.3**       | Correcciones ortográficas y de enlaces                       | 29/05/2025 | Valeria Zúñiga, Nicolas Hood                 |
 </details>

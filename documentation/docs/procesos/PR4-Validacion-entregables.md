@@ -67,5 +67,5 @@ Proceso encargado de asegurar que los productos o componentes desarrollados cump
 | **1.2.4**           | Se especificó la validación de requisitos  | 25/05/2025 | Paola Garrido      |
 | **1.2.5**           | Se especificó el uso del Defect Log  | 25/05/2025 | Arturo Sánchez, Paola Garrido, Rodrigo Antonio      |
 | **1.2.6**     | Mapear RD 3.2  | 28/05/2025 | Hiram Israel Mendoza López
-
+| **1.2.7**       | Correcciones ortográficas y de enlaces                       | 29/05/2025 | Valeria Zúñiga, Nicolas Hood                 |
 </details>

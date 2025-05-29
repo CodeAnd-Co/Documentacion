@@ -54,6 +54,7 @@ Este proceso asegura la correcta comprensión y la trazabilidad bidireccional de
   | **2.2.0**           | Agregado sobre el Mapa de Dependencias y relación con SP 2.2 de RD.    | 25/05/2025 | Rommel Toledo C. |
   | **2.3.0**           | Reescritura para tener un lenguaje más adecuado.    | 25/05/2025 | Rommel Toledo C. |
   | **2.4.0**             | Agregar RD2.1 al proceso                                     | 26/05/2025 | Nicolas Hood Figueroa  
-  | **2.4.1**     | Mapear RD 3.2  | 28/05/2025 | Hiram Israel Mendoza López
+  | **2.4.1**     | Mapear RD 3.2  | 28/05/2025 | Hiram Israel Mendoza López |
+  | **2.4.2**       | Correcciones ortográficas y de enlaces                       | 29/05/2025 | Valeria Zúñiga, Nicolas Hood                 |
 
 </details>
