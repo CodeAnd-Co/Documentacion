@@ -343,15 +343,15 @@ import TabItem from '@theme/TabItem';
 
 | Nombre                  | Rol         | Objetivo |
 | ----------------------- | ----------- | ---------- |
-| Juan Pablo Chávez Leal          | Team member, QA, Presentation Owner | |
-| Rommel Toledo Crespo            | Team Member | |
-| Pablo Hazael Hurtado Mireles    | Team Member, UX/UI, Writing Owner | |
-| Diego Isaac Fuentes Juvera         | Team Member | |
-| Daniel Queijeiro Albo           | Architecture Owner | |
-| Mauricio Anguiano Juárez        | Team member, UX/UI | |
-| Juan Carlos Calderón García     | Product Owner | |
-| Ian Julián Estrada Castro       | Team Leader | |
-| Galo Alejandro del Rio Viggiano | Team Member | |
+| Juan Pablo Chávez Leal          | Team member, QA | |
+| Rommel Toledo Crespo            | Team Member, QA | |
+| Pablo Hazael Hurtado Mireles    | Team Member, UX/UI, QA | |
+| Diego Isaac Fuentes Juvera      | Team Member, QA | |
+| Daniel Queijeiro Albo           | Architecture Owner, QA |  Asegurar que el 80% del equipo se sienta cómodo con el nuevo patrón de diseño. |
+| Mauricio Anguiano Juárez        | Team member, QA | |
+| Juan Carlos Calderón García     | Product Owner, QA | Mantener máximo un día de retraso en la comunicación con el socio |
+| Ian Julián Estrada Castro       | Team Member, QA | Que todos los miembros del equipo duerman más de 7 horas para antes del 6 de junio |
+| Galo Alejandro del Rio Viggiano | Team Leader, QA | |
 
 ### Recursos Necesarios
 
@@ -363,12 +363,17 @@ import TabItem from '@theme/TabItem';
 
 ## Historial de cambios
 
-| **Tipo de versión** | **Descripción**                    | **Fecha**  | **Colaborador**        |
-|---------------------|------------------------------------| ---------- | ---------------------- |
-| **1.0**             | Primera versión de descripción general del proyecto | 03/03/2025 | Diego Isaac Fuentes Juvera <br/> Juan Pablo Chávez Leal |
-| **1.1**             | Adición de todo exceptuando "Roles y Responsabilidades" | 08/03/2025 | Juan Pablo Chávez Leal |
-| **1.2**             | Agregar Mision y Vision del proyecto | 25/04/2025 | Galo Alejandro del Rio Viggiano |
-| **1.3**             | Corrección de una palabra | 08/05/2025 | Rommel Toledo C. |
-| **1.4**             | Actualización del contenido | 15/05/2025 | Juan Pablo Chávez |
-| **2.0**             | Actualizar visión del equipo | 22/05/2025 | Diego Fuentes |
-| **3.0**             | Añadir mantra y acuerdos de trabajo del equipo | 26/05/2025 | Diego Fuentes |
+<details>
+  <summary>Versiones</summary>
+    | **Tipo de versión** | **Descripción**                    | **Fecha**  | **Colaborador**        |
+    |---------------------|------------------------------------| ---------- | ---------------------- |
+    | **1.0.0**             | Primera versión de descripción general del proyecto | 03/03/2025 | Diego Isaac Fuentes Juvera <br/> Juan Pablo Chávez Leal |
+    | **1.1.0**             | Adición de todo exceptuando "Roles y Responsabilidades" | 08/03/2025 | Juan Pablo Chávez Leal |
+    | **1.2.0**             | Agregar Mision y Vision del proyecto | 25/04/2025 | Galo Alejandro del Rio Viggiano |
+    | **1.3.0**             | Corrección de una palabra | 08/05/2025 | Rommel Toledo C. |
+    | **1.4.0**             | Actualización del contenido | 15/05/2025 | Juan Pablo Chávez |
+    | **2.0.0**             | Actualizar visión del equipo | 22/05/2025 | Diego Fuentes |
+    | **3.0.0**             | Añadir mantra y acuerdos de trabajo del equipo | 26/05/2025 | Diego Fuentes |
+    | **3.0.1**             | Actualizar roles de los miembros del equipo | 29/05/2025 | Ian Julián Estrada Castro |
+    | **3.0.2**             | Actualizar roles de los miembros del equipo | 29/05/2025 | Juan Pablo Chávez Leal|
+</details>

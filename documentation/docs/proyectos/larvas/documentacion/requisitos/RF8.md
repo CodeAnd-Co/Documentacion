@@ -16,6 +16,12 @@ Como usuario del sistema, quiero borrar los datos de una charola en la base de d
 
 ---
 
+### Diagrama de Actividades
+
+<a href="https://drive.google.com/file/d/1vQI5exhxIFS7IrY4KmKrz5jEx54D7FlS/view?usp=sharing" target="_blank" rel="noopener noreferrer">Eliminar Charola</a>
+
+---
+
 ### Diagrama de Secuencia
 
 
@@ -224,12 +230,19 @@ sequenceDiagram
     end
 
 ```
+---
+
+### Pull Request
+
+<a href="https://github.com/CodeAnd-Co/TECH-NEBRIOS-BACKEND/pull/17" target="_blank" rel="noopener noreferrer"> PR de Eliminar Charola Backend</a>
+
+<a href="https://github.com/CodeAnd-Co/TECH-NEBRIOS-FLUTTER/pull/12" target="_blank" rel="noopener noreferrer"> PR de Eliminar Charola Frontend</a>
 
 ---
 
 ### Mockup
 
-![Mockup](../mockupRF8.jpg)
+![alt text](<img/mockupRF8.png>)
 
 ---
 
@@ -242,3 +255,6 @@ sequenceDiagram
 | **1.1**             | Creación del diagrama de secuencia   | 3/4/2025  | Juan Eduardo      |
 | **1.2**             | Mockup y correcciones del diagrama   | 3/4/2025  | Juan Eduardo      |
 | **1.3**             | Correciones del query                | 17/5/2025 | Mariana Juárez    |
+| **1.3**             | Diagramas de actividades   | 23/5/2025  | Juan Eduardo Rosas Cerón |
+| **1.4**             | Se corrigió mockup  | 29/5/2025  | Mariana Juárez |
+| **1.5**             | Se agregaron los pull request de front y back | 29/5/2025  | Sofía Osorio |

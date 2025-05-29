@@ -13,15 +13,16 @@ Como administrador, quiero poder eliminar a un usuario que ya no requiera acceso
 
 ## **Criterios de Aceptación:**
 
-1. El Super Administrador debe poder acceder a la opción "Eliminar Usuario" dentro del panel de información de un usuario.
+1. El Super Administrador debe poder eliminar un usuario existente.
 2. Antes de eliminar, se debe mostrar una ventana de confirmación para evitar eliminaciones accidentales.
-3. Si el usuario es eliminado con éxito, el sistema debe actualizar la lista de usuarios y mostrar un mensaje de confirmación.
+3. Si el usuario es eliminado con éxito, el sistema debe actualizar la lista de usuarios y mostrar un mensaje de éxito.
 4. Si ocurre un error en la eliminación, se debe mostrar un mensaje de error indicando el motivo.
 5. Si el usuario a eliminar posee el rol de Super Administrador:
    - Se debe solicitar un paso de verificación adicional mediante código 2FA (Google Authenticator), además de la contraseña.
    - Solo los Super Administradores habilitados para acciones críticas podrán realizar esta operación.
 6. Si el código 2FA o la contraseña son incorrectos, la eliminación no se ejecuta y se muestra un mensaje de error.
 7. La eliminación debe garantizar autenticación por token válida y permisos correspondientes.
+8. No se podrá eliminar el usuario que está en uso.
 
 ---
 
@@ -107,6 +108,14 @@ end
 
 _<u>[Enlace a pruebas RF5 Elimina Usuario](https://docs.google.com/spreadsheets/d/1NLGwGrGA5PVOEzLaqxa8Ts1D_Ng3QzzqNKWJYUzxD-M/edit?usp=sharing)</u>_
 
+## **Código**
+
+_<u>[Pull Request Front-End](https://github.com/CodeAnd-Co/Frontend-Text-Lines/pull/40)</u>_
+
+_<u>[Pull Request Back-End](https://github.com/CodeAnd-Co/Backend-textiles/pull/42)</u>_
+
+---
+
 ### Historial de cambios
 
 | **Tipo de Versión** | **Descripción**                                 | **Fecha**  | **Colaborador**               |
@@ -117,3 +126,4 @@ _<u>[Enlace a pruebas RF5 Elimina Usuario](https://docs.google.com/spreadsheets/
 | **1.3**             | Actualización de la documentación del requisito | 24/4/2025  | Carlos Iván Fonseca Mondragón |
 | **1.4**             | Actualización de diagrama                       | 06/05/2025 | Hiram Mendoza                 |
 | **1.5**             | Actualizar interfaz                             | 22/5/2025  | Diego Antonio García Padilla  |
+| **1.6**             | Agregar links de PR                             | 26/05/2025 | Max Toscano                   |

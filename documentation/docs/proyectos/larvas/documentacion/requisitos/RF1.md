@@ -18,6 +18,12 @@ Como usuario de la aplicación, quiero autenticarme en el sistema ingresando mi 
 
 ---
 
+### Diagrama de Actividades
+
+<a href="https://drive.google.com/file/d/1Zql5LFEL76YKACtJoWMFsT_L4QYmpX8o/view?usp=sharing" target="_blank" rel="noopener noreferrer">Iniciar Sesión</a>
+
+---
+
 ### Diagrama de Secuencia
 
 ```mermaid
@@ -257,12 +263,19 @@ sequenceDiagram
     end
 
 ```
+---
+
+### Pull Request
+
+<a href="https://github.com/CodeAnd-Co/TECH-NEBRIOS-BACKEND/pull/10" target="_blank" rel="noopener noreferrer"> PR de Iniciar Sesión Backend</a>
+
+<a href="https://github.com/CodeAnd-Co/TECH-NEBRIOS-FLUTTER/pull/7" target="_blank" rel="noopener noreferrer"> PR de Iniciar Sesión Frontend</a>
 
 ---
 
 ### Mockup
 
-![alt text](../mockupRF1.png)
+![alt text](<img/mockupRF1.png>)
 
 ---
 
@@ -274,3 +287,6 @@ sequenceDiagram
 | **1.0**             | Verificación de los cambios          | 8/3/2025  | Miguel Angel      |
 | **1.1**             | Creación del diagrama de secuencia   | 22/4/2025  | Emiliano Valdivia Lara  |
 | **1.2**             | Se cambio el query del diagrama de secuencia   | 17/5/2025  | Mariana Juárez |
+| **1.3**             | Diagramas de actividades   | 23/5/2025  | Juan Eduardo Rosas Cerón |
+| **1.4**             | Se corrigió mockup  | 27/5/2025  | Mariana Juárez |
+| **1.5**             | Se agregaron los pull request de front y back | 29/5/2025  | Sofía Osorio |
