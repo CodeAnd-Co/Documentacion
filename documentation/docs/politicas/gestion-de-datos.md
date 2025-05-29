@@ -122,12 +122,13 @@ Para garantizar el cumplimiento de esta política, se implementarán mecanismos 
 
 ## Historial de cambios
 
-| **Tipo de versión** | **Descripción**                               | **Fecha** | **Colaborador**                 |
-| ------------------- | --------------------------------------------- | --------- | ------------------------------- |
-| **1.0**             | Creación de la política.  |   | Diego Alfaro, Arturo Sánchez |
-| **1.1**             | Eliminación de salidas de la política.   | 08/04/2025  | Daniel Contreras, Eduardo Rosas |
-| **1.2**             | Modificación datos sensibles.  | 25/04/2025  | Miguel Angel Uribe |
-| **1.3**             |  Implementar acciones correctivas. |      26/04/2025        |  Max Toscano 
-| **1.4**             | Plan de Datos.  | 28/04/2025  | Pablo Hurtado |
-| **1.5** | Eliminar principios y resumir objetivo. | 08/05/2025 | Daniel Contreras
-| **1.6** | Definir un método para que una persona pueda acceder a datos sensibles. | 29/05/2025 | Emiliano Valdivia Lara
+| **Tipo de versión** | **Descripción**                                                         | **Fecha**  | **Colaborador**                 |
+| ------------------- | ----------------------------------------------------------------------- | ---------- | ------------------------------- |
+| **1.0**             | Creación de la política.                                                |            | Diego Alfaro, Arturo Sánchez    |
+| **1.1**             | Eliminación de salidas de la política.                                  | 08/04/2025 | Daniel Contreras, Eduardo Rosas |
+| **1.2**             | Modificación datos sensibles.                                           | 25/04/2025 | Miguel Angel Uribe              |
+| **1.3**             | Implementar acciones correctivas.                                       | 26/04/2025 | Max Toscano                     |
+| **1.4**             | Plan de Datos.                                                          | 28/04/2025 | Pablo Hurtado                   |
+| **1.5**             | Eliminar principios y resumir objetivo.                                 | 08/05/2025 | Daniel Contreras                |
+| **1.6**             | Definir un método para que una persona pueda acceder a datos sensibles. | 29/05/2025 | Emiliano Valdivia Lara          |
+
