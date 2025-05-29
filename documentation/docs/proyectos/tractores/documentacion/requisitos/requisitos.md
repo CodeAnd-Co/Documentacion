@@ -96,6 +96,21 @@ Los requisitos no funcionales establecen las expectativas en términos de tiempo
 **Escalabilidad**.
 
 - El sistema debe ser capaz de permitir la creación y uso de nuevas fórmulas.
+- El sistema debe usar el patron de diseño CLEAN para el frontEnd y MVC para el backend.
+
+**Diagrama de paquetes Frontend:**
+
+<iframe
+  frameborder="0"
+  style={{ borderRadius: "1em" }}
+  width="100%"
+  height="500em"
+  src="https://viewer.diagrams.net/?tags=%7B%7D&lightbox=1&highlight=0000ff&edit=https%3A%2F%2Fapp.diagrams.net%2F%23G1KPglZc2PKZ8ah6t3utgAD4n3U6BQs2sG%23%257B%2522pageId%2522%253A%2522l-jaUNbbZnOwnRJqBNt3%2522%257D&layers=1&nav=1&title=diagrama%20de%20paquetes%20Electron.drawio&dark=0#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1KPglZc2PKZ8ah6t3utgAD4n3U6BQs2sG%26export%3Ddownload"
+></iframe>
+
+**Diagrama de paquetes Backend:**
+
+![alt text](../diagrama-de-paquetes-backend-desacoplado.png)
 
 **Usabilidad**.
 
@@ -130,7 +145,16 @@ Los requisitos no funcionales establecen las expectativas en términos de tiempo
 
 ## Requisitos de información
 
-[Diagrama MER](../MER%20-%20Tractores.jpeg)
+**Diagrama MER**
+
+<iframe
+  frameborder="0"
+  style={{ borderRadius: "1em" }}
+  width="100%"
+  height="500em"
+  src="https://viewer.diagrams.net/?tags=%7B%7D&lightbox=1&highlight=0000ff&edit=https%3A%2F%2Fapp.diagrams.net%2F%3Fsplash%3D0%23G160oFnNvJFYZdJblO2gJofiWYZ3D7cJyZ%23%257B%2522pageId%2522%253A%2522RvwrZuzGptMe-nOa_BFY%2522%257D&layers=1&nav=1&title=MER.drawio&dark=auto#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D160oFnNvJFYZdJblO2gJofiWYZ3D7cJyZ%26export%3Ddownload"
+></iframe>
+
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
