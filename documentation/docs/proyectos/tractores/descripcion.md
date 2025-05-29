@@ -375,4 +375,5 @@ import TabItem from '@theme/TabItem';
     | **2.0.0**             | Actualizar visión del equipo | 22/05/2025 | Diego Fuentes |
     | **3.0.0**             | Añadir mantra y acuerdos de trabajo del equipo | 26/05/2025 | Diego Fuentes |
     | **3.0.1**             | Actualizar roles de los miembros del equipo | 29/05/2025 | Ian Julián Estrada Castro |
+    | **3.0.2**             | Actualizar roles de los miembros del equipo | 29/05/2025 | Juan Pablo Chávez Leal|
 </details>
