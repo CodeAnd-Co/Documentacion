@@ -51,7 +51,7 @@ Esta política aplica a:
    - Inclusión o retiro de elementos bajo configuración.
 
 6. **Frecuencia de reuniones**
-   - El CCB se reunirá de forma **quincenal**, o extraordinariamente ante cambios urgentes.
+   - El CCB se reunirá de forma **semanal**, o extraordinariamente ante cambios urgentes.
    - Las reuniones deben registrar:
      - Fecha y asistentes
      - Cambios evaluados

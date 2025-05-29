@@ -24,6 +24,8 @@ Esta política aplica a:
 
 ## 📋 Declaraciones de la política
 
+> Todo elemento identificado debe de ser evaluado por los miembros de CCB. Consulta la política del Comité de Control de Cambios (CCB) para [más información](/docs/next/politicas/Politica-CCB).
+
 ### 1. **Criterios de selección de elementos de configuración**
 Un producto de trabajo será considerado elemento de configuración si cumple uno o más de los siguientes criterios:
 
@@ -54,11 +56,12 @@ Se utilizará una matriz centralizada para registrar los elementos seleccionados
 
 ### 3. **Identificación y actualización de líneas base**
 
-Una **línea base** se identifica cuando un conjunto de elementos ha alcanzado un estado aprobado y estable, listo para ser utilizado como referencia en iteraciones posteriores.
+Una **línea base** se identifica cuando un conjunto de elementos ha alcanzado un estado aprobado y estable, listo para ser utilizado como referencia en iteraciones posteriores. 
 
 #### 📌 Ejemplos típicos de hitos para crear líneas base:
 
 - Validación o verificación exitosa del sistema o módulo.
+- Avaluación y autorización de modificaciones por parte de CCB.
 - Publicación de una versión tipo **MVP**, **MBI**, **release estable** o **release candidata**.
 - Aprobación de entregables por parte del cliente.
 - Cierre de un sprint o etapa con entregables aceptados.
@@ -75,8 +78,6 @@ Las líneas base se documentan en la matriz e incluyen la versión de cada eleme
 Toda nueva línea base debe ser registrada con su fecha, versión y justificación.
 
 ## 🧩 Elementos bajo gestión de configuración
-
-Los siguientes elementos **deben registrarse y mantenerse bajo control de configuración**, siempre que cumplan con criterios como: estar listos para entrega, validados por responsables, tener dependencias interequipos, o implicar impacto significativo en el proyecto.
 
 ### 🗂 Categorías gestionadas
 
@@ -97,13 +98,19 @@ Los siguientes elementos **deben registrarse y mantenerse bajo control de config
 | **Código**                   | Repositorios, scripts o pull requests **solo cuando se trata de versiones críticas o revisadas**. |
 | **Información del Proyecto** | Documento resumen con nombre del proyecto, objetivos, responsables, alcance, fechas y cambios.    |
 
-> ✅ Estos elementos deben agregarse a la matriz de configuración si cumplen con los **criterios de control**, como uso compartido, necesidad de trazabilidad o validación externa.
 
----
+## ⏳ Frecuencia de revisión de los elementos
 
-Además, puedes ajustar esta frase en la sección anterior para reforzar el criterio del código:
+Para asegurar la vigencia, relevancia y alineación de los elementos de configuración con los objetivos del proyecto, se establecerá un calendario de revisión periódica según el tipo y el estatus del elemento:
 
-> * Su modificación requiere trazabilidad y control formal (ej. **pull requests de código**, infraestructura como código, definiciones de API, documentos de arquitectura, wikis oficiales, procesos automatizados).
+| **Estatus**   | **Frecuencia de Revisión**                                             |
+| ------------- | ---------------------------------------------------------------------- |
+| Estático      | Cada 15 días o ante cambios regulatorios o normativos relevantes.      |
+| Dinámico      | Cada semana, iteración o mínimo una vez al mes.                        |
+| Bajo Revisión | Durante la auditoría correspondiente o en un lapso no mayor a 15 días. |
+
+
+> 📌 Estas revisiones serán realizadas por el propietario del elemento y supervisadas por el CCB en las reuniones establecidas, documentando cualquier actualización en la matriz.
 
 ## 👥 Roles y responsabilidades
 
@@ -123,6 +130,7 @@ El incumplimiento de esta política puede resultar en:
 - [Estándar para crear nuevas plantillas](/docs/next/standards/estandar-plantillas)
 - [Definición de Ítems](/docs/next/procesos/PR2-definicion-items)
 - [Plantilla para políticas](/docs/next/plantillas/plantilla-politicas)
+- [Política del Comité de Control de Cambios (CCB)](/docs/next/politicas/Politica-CCB)
 
 ## 📚 Historial de cambios
 
