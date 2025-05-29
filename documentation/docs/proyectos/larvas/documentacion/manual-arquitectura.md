@@ -19,10 +19,10 @@ La arquitectura se compone de capas principales:
 - **Backend:** (Node-express)
 - **Servicios AWS:** (S3, EC2)
 - **Base de datos:** (MariaDB)
-  ***
-  **Diagrama de Despliegue**
 
-## ![Diagrama de Despliegue](diagrama-despliegue.png)
+## Diagrama de Despliegue
+
+![Diagrama de Despliegue](diagrama-despliegue.png)
 
 ## Frontend
 
