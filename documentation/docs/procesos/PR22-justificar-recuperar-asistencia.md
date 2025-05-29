@@ -2,6 +2,7 @@
 title: 👯‍♀️ | PR18 Justificación y Recuperación de Asistencia
 sidebar_position: 18
 ---
+
 # 👯‍♀️ Proceso de Justificación y Recuperación de Asistencia
 
 Procedimiento para justificar ausencias y recuperar asistencias dentro del equipo. Este proceso asegura la continuidad del trabajo, fomenta la responsabilidad de los colaboradores y mantiene un registro formal de incidencias.
@@ -18,20 +19,19 @@ Procedimiento para justificar ausencias y recuperar asistencias dentro del equip
 
 ## ⚙️ Proceso
 
-
-| Fase                             | Descripción                                                                                                                                                                                                               | Responsables            |
-| -------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
-| **Justificación de asistencia** | Informar con 12 horas de anticipación al Comité de Ética sobre la ausencia.                                                                                                                                             | Colaborador             |
-|                                  | Comunicar con 12 horas de anticipación la falta al Team Leader.                                                                                                                                                           | Colaborador             |
-|                                  | Presentar el formato de justificaciones de faltas y añadirlo a la[carpeta de justificación de faltas](https://drive.google.com/drive/folders/1XTXSAhKDnb3mBSdOwFK179TPhYcSdHsi?usp=drive_link).                          | Colaborador             |
-|                                  | Aprobar/rechazar la justificación presentada y notificar al colaborador.                                                                                                                                                  | Comité de Ética       |
-|                                  | Documentar en el historial correspondiente.                                                                                                                                                                                | Comité de Ética       |
-| **Posterior a la falta**         | Revisar lo realizado en su ausencia y coordinarse con el Team Leader para reponer actividades.                                                                                                                             | Team Leader/Colaborador |
-|                                  | Asegurar que no haya retrasos en sus responsabilidades.                                                                                                                                                                    | Colaborador             |
-| **Recuperación de asistencia**  | Presentar el[formato de recuperación de asistencias](https://docs.google.com/document/d/1ITy1mSxYEbpZlgPr5B6GFSGERKHlTQCQpj8v0V6gz6g/edit?usp=sharing) debidamente completado en la carpeta Recuperación de asistencias. | Colaborador             |
-|                                  | Informar a un miembro del Comité de Ética de la solicitud.                                                                                                                                                               | Colaborador             |
-|                                  | Aprobar/rechazar la solicitud de recuperación presentada y notificar al colaborador.                                                                                                                                      | Comité de Ética       |
-| **Registro final**               | Documentar en el historial correspondiente.                                                                                                                                                                                | Comité de Ética       |
+| Fase                            | Descripción                                                                                                                                                                                                               | Responsables            |
+| ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
+| **Justificación de asistencia** | Informar con 12 horas de anticipación al Comité de Ética sobre la ausencia.                                                                                                                                               | Colaborador             |
+|                                 | Comunicar con 12 horas de anticipación la falta al Team Leader.                                                                                                                                                           | Colaborador             |
+|                                 | Presentar el formato de justificaciones de faltas y añadirlo a la [carpeta de justificación de faltas](https://drive.google.com/drive/folders/1XTXSAhKDnb3mBSdOwFK179TPhYcSdHsi?usp=drive_link).                          | Colaborador             |
+|                                 | Aprobar/rechazar la justificación presentada y notificar al colaborador.                                                                                                                                                  | Comité de Ética         |
+|                                 | Documentar en el historial correspondiente.                                                                                                                                                                               | Comité de Ética         |
+| **Posterior a la falta**        | Revisar lo realizado en su ausencia y coordinarse con el Team Leader para reponer actividades.                                                                                                                            | Team Leader/Colaborador |
+|                                 | Asegurar que no haya retrasos en sus responsabilidades.                                                                                                                                                                   | Colaborador             |
+| **Recuperación de asistencia**  | Presentar el [formato de recuperación de asistencias](https://docs.google.com/document/d/1ITy1mSxYEbpZlgPr5B6GFSGERKHlTQCQpj8v0V6gz6g/edit?usp=sharing) debidamente completado en la carpeta Recuperación de asistencias. | Colaborador             |
+|                                 | Informar a un miembro del Comité de Ética de la solicitud.                                                                                                                                                                | Colaborador             |
+|                                 | Aprobar/rechazar la solicitud de recuperación presentada y notificar al colaborador.                                                                                                                                      | Comité de Ética         |
+| **Registro final**              | Documentar en el historial correspondiente.                                                                                                                                                                               | Comité de Ética         |
 
 ## 📤 Salidas
 
