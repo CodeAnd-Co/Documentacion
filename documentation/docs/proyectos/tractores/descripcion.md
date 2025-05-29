@@ -343,15 +343,15 @@ import TabItem from '@theme/TabItem';
 
 | Nombre                  | Rol         | Objetivo |
 | ----------------------- | ----------- | ---------- |
-| Juan Pablo Chávez Leal          | Team member, QA, Presentation Owner | |
-| Rommel Toledo Crespo            | Team Member | |
-| Pablo Hazael Hurtado Mireles    | Team Member, UX/UI, Writing Owner | |
-| Diego Isaac Fuentes Juvera         | Team Member | |
-| Daniel Queijeiro Albo           | Architecture Owner | |
-| Mauricio Anguiano Juárez        | Team member, UX/UI | |
-| Juan Carlos Calderón García     | Product Owner | |
-| Ian Julián Estrada Castro       | Team Leader | |
-| Galo Alejandro del Rio Viggiano | Team Member | |
+| Juan Pablo Chávez Leal          | Team member, QA | |
+| Rommel Toledo Crespo            | Team Member, QA | |
+| Pablo Hazael Hurtado Mireles    | Team Member, UX/UI, QA | |
+| Diego Isaac Fuentes Juvera      | Team Member, QA | |
+| Daniel Queijeiro Albo           | Architecture Owner, QA | |
+| Mauricio Anguiano Juárez        | Team member, QA | |
+| Juan Carlos Calderón García     | Product Owner, QA | |
+| Ian Julián Estrada Castro       | Team Member, QA | Que todos los miembros del equipo duerman más de 7 horas para antes del 6 de junio |
+| Galo Alejandro del Rio Viggiano | Team Leader, QA | |
 
 ### Recursos Necesarios
 
