@@ -5,7 +5,7 @@ sidebar_position: 5
 
 ## Tipo de arquitectura de software
 
-**Arquitectura elegida**: Arquitectura monolitica
+**Arquitectura elegida**: Arquitectura monolítica
 
 ---
 
