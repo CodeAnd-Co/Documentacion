@@ -94,6 +94,7 @@ Instala las siguientes herramientas en tu equipo local:
    * Grupo de seguridad:
 
      * Añadir reglas:
+     * 
 
        * Puerto 22 (SSH)
        * Puerto 80 (HTTP)

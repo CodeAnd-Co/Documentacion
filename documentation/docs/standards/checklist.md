@@ -83,7 +83,7 @@ Las checklist deben estar registradas en el [índice de checklists](/docs/recurs
 
 ---
 
-## Historial de cambios
+## Historial de cambios 📚
 
 | **Tipo de versión** | **Descripción**                               | **Fecha** | **Colaborador**                 |
 | ------------------- | --------------------------------------------- | --------- | ------------------------------- |

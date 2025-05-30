@@ -1,5 +1,5 @@
 ---
-title: Política de gestión de gatos del proyecto
+title: Política de gestión de datos del proyecto
 sidebar_position: 2
 ---
 
@@ -13,7 +13,7 @@ Establecer lineamientos para gestionar los datos del proyecto de forma estructur
 
 ## **2. Alcance**
 
-Esta política aplica a todos los proyectos en los que se utilicen datos relevantes para la operación, análisis y toma de decisiones dentro de la organización. Involucra a todas las áreas responsables de la recopilación, almacenamiento, distribución y protección de datos. 
+Esta política aplica a todos los proyectos en los que se utilicen datos relevantes para la operación, análisis y toma de decisiones dentro de la organización. Involucra a todas las áreas responsables de la recopilación, almacenamiento, distribución y protección de datos.
 
 Se excluyen las métricas derivadas del análisis de desempeño del proyecto, pues pertenecen a procesos de evaluación específicos.
 
@@ -32,9 +32,9 @@ Se refiere a aquellos datos cuya divulgación podría comprometer la integridad 
 
 Estos datos se almacenarán en sus archivos originales (en caso de ser .env, .pem o similares) o, en caso de ser cuentas y contraseñas, se almacenarán en un archivo Excel. Dichos archivos se guardarán en una carpeta dentro del resto de recursos de cada proyecto con el nombre de “Credenciales”.
 
-Para salvaguardar la integridad, seguridad y confianza depositada en los datos, el acceso será restringido únicamente al Team Leader y Architecture Owner de cada proyecto. Ambos roles de liderazgo tienen la obligación de colocar dichos accesos dentro de las carpetas y delegar su acceso en caso de cambiar de rol.
+Para salvaguardar la integridad, seguridad y confianza depositada en los datos, el acceso será restringido únicamente al Team Leader y Architecture Owner de cada proyecto. Ambos roles de liderazgo tienen la obligación de colocar dichos accesos dentro de las carpetas y delegar su acceso en caso de cambiar de rol. En caso de que un miembro del equipo necesite tener acceso a alguno estos datos, debe notificar a alguno de estos dos líderes, que evaluarán la petición y concederán acceso al dato específico que fue solicitado si lo consideran necesario.
 
-Para evitar cualquier filtración de información, **queda estrictamente prohibida la distribución de los accesos a través de cualquier medio digital distinto a los canales oficiales.** 
+Para evitar cualquier filtración de información, **queda estrictamente prohibida la distribución de los accesos a través de cualquier medio digital distinto a los canales oficiales.**
 
 ### **3.2 Datos generales**
 
@@ -122,11 +122,13 @@ Para garantizar el cumplimiento de esta política, se implementarán mecanismos 
 
 ## Historial de cambios
 
-| **Tipo de versión** | **Descripción**                               | **Fecha** | **Colaborador**                 |
-| ------------------- | --------------------------------------------- | --------- | ------------------------------- |
-| **1.0**             | Creación de la política.  |   | Diego Alfaro, Arturo Sánchez |
-| **1.1**             | Eliminación de salidas de la política.   | 08/04/2025  | Daniel Contreras, Eduardo Rosas |
-| **1.2**             | Modificación datos sensibles.  | 25/04/2025  | Miguel Angel Uribe |
-| **1.3**             |  Implementar acciones correctivas. |      26/04/2025        |  Max Toscano 
-| **1.4**             | Plan de Datos.  | 28/04/2025  | Pablo Hurtado |
-| **1.5** | Eliminar principios y resumir objetivo. | 08/05/2025 | Daniel Contreras
+| **Tipo de versión** | **Descripción**                                                         | **Fecha**  | **Colaborador**                 |
+| ------------------- | ----------------------------------------------------------------------- | ---------- | ------------------------------- |
+| **1.0**             | Creación de la política.                                                |            | Diego Alfaro, Arturo Sánchez    |
+| **1.1**             | Eliminación de salidas de la política.                                  | 08/04/2025 | Daniel Contreras, Eduardo Rosas |
+| **1.2**             | Modificación datos sensibles.                                           | 25/04/2025 | Miguel Angel Uribe              |
+| **1.3**             | Implementar acciones correctivas.                                       | 26/04/2025 | Max Toscano                     |
+| **1.4**             | Plan de Datos.                                                          | 28/04/2025 | Pablo Hurtado                   |
+| **1.5**             | Eliminar principios y resumir objetivo.                                 | 08/05/2025 | Daniel Contreras                |
+| **1.6**             | Definir un método para que una persona pueda acceder a datos sensibles. | 29/05/2025 | Emiliano Valdivia Lara          |
+
