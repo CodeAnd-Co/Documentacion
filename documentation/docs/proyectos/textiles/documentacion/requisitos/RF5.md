@@ -13,15 +13,16 @@ Como administrador, quiero poder eliminar a un usuario que ya no requiera acceso
 
 ## **Criterios de Aceptación:**
 
-1. El Super Administrador debe poder acceder a la opción "Eliminar Usuario" dentro del panel de información de un usuario.
+1. El Super Administrador debe poder eliminar un usuario existente.
 2. Antes de eliminar, se debe mostrar una ventana de confirmación para evitar eliminaciones accidentales.
-3. Si el usuario es eliminado con éxito, el sistema debe actualizar la lista de usuarios y mostrar un mensaje de confirmación.
+3. Si el usuario es eliminado con éxito, el sistema debe actualizar la lista de usuarios y mostrar un mensaje de éxito.
 4. Si ocurre un error en la eliminación, se debe mostrar un mensaje de error indicando el motivo.
 5. Si el usuario a eliminar posee el rol de Super Administrador:
    - Se debe solicitar un paso de verificación adicional mediante código 2FA (Google Authenticator), además de la contraseña.
    - Solo los Super Administradores habilitados para acciones críticas podrán realizar esta operación.
 6. Si el código 2FA o la contraseña son incorrectos, la eliminación no se ejecuta y se muestra un mensaje de error.
 7. La eliminación debe garantizar autenticación por token válida y permisos correspondientes.
+8. No se podrá eliminar el usuario que está en uso.
 
 ---
 
