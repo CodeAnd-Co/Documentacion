@@ -37,3 +37,8 @@ Yo como usuario quiero consultar la pagina de inicio de sesion antes de estar ve
 |-----------|-------------|--------------------|
 |PU-RF1-01|Cargar la página de inicio de sesión. |La página se muestra con el formulario para el inicio de sesión|
 |PU-RF1-02|Probar acceso sin autenticación.|El usuario puede visualizar la página de inicio de sesión sin estar iniciado dentro de la sesión|
+
+---
+
+### Pull Request
+[https://github.com/CodeAnd-Co/App-Local-TracTech/pull/1](https://github.com/CodeAnd-Co/App-Local-TracTech/pull/1)

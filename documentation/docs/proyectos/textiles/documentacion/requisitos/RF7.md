@@ -18,7 +18,7 @@ Como administrador, quiero poder ver un listado de roles con filtros y opciones 
    - Nombre del rol
    - La descripción del rol
 3. Debe permitir filtrar roles por nombre.
-4. Si no hay roles registrados, se debe mostrar un mensaje indicando que no hay registros disponibles.
+4. Si no hay roles registrados, se debe mostrar un mensaje indicando que no hay filas.
 
 ---
 

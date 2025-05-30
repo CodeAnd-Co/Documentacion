@@ -70,6 +70,11 @@ sequenceDiagram
 
 ---
 
+### Pull Request
+
+<a href="https://github.com/CodeAnd-Co/TECH-NEBRIOS-FLUTTER/pull/20" target="_blank" rel="noopener noreferrer"> PR de Cerrar Sesión Frontend</a>
+---
+
 ### Mockup
 
 ![alt text](<img/mockup09.png>)
@@ -93,4 +98,4 @@ sequenceDiagram
 | ------------------- | ------------------------------------ | --------- | ----------------- |
 | **1.0**             | Creacion de la historia de usuario   | 8/3/2025  | Armando Mendez    |
 | **1.2**             | Diagramas de actividades   | 23/5/2025  | Juan Eduardo Rosas Cerón |
-| **1.2**             | Diagramas de secuencia y mockup   | 23/5/2025  | Armando Méndez Castro |
+| **1.3**             | Se agregaron los pull request de front  | 29/5/2025  | Sofía Osorio |

@@ -11,7 +11,6 @@ Como usuario del sistema, quiero consultar el historial de ancestros de una char
 
   **Criterios de Aceptación:**
   - El sistema debe permitir al usuario seleccionar una charola específica.
-  - Se debe mostrar el historial completo de la charola, incluyendo las charolas de las que proviene.
   - La información debe presentarse de manera clara y organizada, utilizando una estructura visual intuitiva que facilite la vista de los datos.
   - La visualización del historial debe actualizarse en tiempo real conforme se registren nuevos datos.
 
