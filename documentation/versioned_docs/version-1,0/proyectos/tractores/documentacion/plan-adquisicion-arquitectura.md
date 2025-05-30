@@ -7,12 +7,6 @@ sidebar_position: 12
 
 ---
 
-**TracTech**  
-**Versión:** 1.0  
-**Última actualización:** 30 de mayo de 2025
-
----
-
 ## Objetivo
 
 Definir los costos de la infraestructura planeada e informar al socio de estos costos.
@@ -55,6 +49,6 @@ Cotizaciones generadas con la calculadora de precios de Amazon: [Aquí se encuen
 
 ---
 
-| Autor | Descripción del cambio | Versión |
-|---------|-------------------------|---------|
-| Mauricio Anguiano Juarez Daniel Queijeiro | Creación del plan de adquisición de infraestructura | V1.0 |
+| **Tipo de Versión** | **Descripción**                               | **Fecha** | **Colaborador**                 |
+| ------------------- | --------------------------------------------- | --------- | ------------------------------- |
+| **1.0**             | Creación del documento   | 13/3/2025  | Daniel Queijeiro Mauricio Anguiano Juarez  |
