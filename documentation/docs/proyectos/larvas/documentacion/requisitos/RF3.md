@@ -24,17 +24,244 @@ Como usuario del sistema, quiero consultar el historial de ancestros de una char
 
 ### Diagrama de Secuencia
 
----
+> *Descripción*: El diagrama de secuencia muestra cómo el usuario consulta el historial de ancestros de una charola.
+
+```mermaid
+sequenceDiagram
+    actor Usuario 
+    participant View as View
+    participant ViewModel as ViewModel
+    participant Domain as Domain
+    participant Repository as Repository
+    participant APIService as API Service (MVVM)
+    participant Controller as Controller
+    participant Model as Model
+    participant Database as Base de Datos
+
+    alt GET Historial ancestros, 200
+        Usuario->>+View: Clic en botón "Historial"
+        View->>-ViewModel: obtenerAncestros(charolaId)
+        activate ViewModel 
+        ViewModel->>Domain: obtenerAncestros(charolaId)
+        deactivate ViewModel 
+        activate Domain
+        Domain->>Repository: obtenerAncestros(charolaId)
+        deactivate Domain
+        activate Repository
+        Repository->>APIService: obtenerAncestros(charolaId)
+        deactivate Repository
+        activate APIService
+        APIService->>Controller: GET /:charolaId/historial
+        deactivate APIService
+        activate Controller
+        Controller->>Model: obtenerHistorialAncestros()
+        deactivate Controller
+        activate Model
+        Model->>Database: Query
+        deactivate Model
+        activate Database
+
+        Database-->>Model: Informacion
+        deactivate Database
+        activate Model
+        Model-->>Controller: Éxito [Info]
+        deactivate Model
+        activate Controller
+        Controller-->>APIService: 200 OK [Info]
+        deactivate Controller
+        activate APIService
+        APIService-->>Repository: [Info]
+        deactivate APIService
+        activate Repository
+        Repository-->>Domain: [Info]
+        deactivate Repository
+        activate Domain
+        Domain-->>ViewModel: Cargar informacion
+        deactivate Domain
+        activate ViewModel
+        ViewModel-->>View: Actualizar UI
+        deactivate ViewModel
+        activate View
+        View-->>Usuario: Mostrar interfaz de historial de ancestros
+        deactivate View
+    
+    else GET No se encontraron datos, 200
+        Usuario->>+View: Clic en botón "Historial"
+        View->>-ViewModel: obtenerAncestros(charolaId)
+        activate ViewModel 
+        ViewModel->>Domain: obtenerAncestros(charolaId)
+        deactivate ViewModel 
+        activate Domain
+        Domain->>Repository: obtenerAncestros(charolaId)
+        deactivate Domain
+        activate Repository
+        Repository->>APIService: obtenerAncestros(charolaId)
+        deactivate Repository
+        activate APIService
+        APIService->>Controller: GET /:charolaId/historial
+        deactivate APIService
+        activate Controller
+        Controller->>Model: obtenerHistorialAncestros()
+        deactivate Controller
+        activate Model
+        Model->>Database: SELECT * FROM CHAROLA WHERE charolaId = ?
+        deactivate Model
+        activate Database
+
+        Database-->>Model: [ ]
+        deactivate Database
+        activate Model
+        Model-->>Controller: Éxito [ ]
+        deactivate Model
+        activate Controller
+        Controller-->>APIService: 200 OK [ ]
+        deactivate Controller
+        activate APIService
+        APIService-->>Repository: [ ]
+        deactivate APIService
+        activate Repository
+        Repository-->>Domain: [ ]
+        deactivate Repository
+        activate Domain
+        Domain-->>ViewModel: Informacion vacia
+        deactivate Domain
+        activate ViewModel
+        ViewModel-->>View: Actualizar UI
+        deactivate ViewModel
+        activate View
+        View-->>Usuario: Mostrar mensaje no hay ancestros
+        deactivate View
+
+    else GET Error de servidor, 500
+        Usuario->>+View: Clic en botón "Historial"
+        View->>-ViewModel: obtenerAncestros(charolaId)
+        activate ViewModel 
+        ViewModel->>Domain: obtenerAncestros(charolaId)
+        deactivate ViewModel 
+        activate Domain
+        Domain->>Repository: obtenerAncestros(charolaId)
+        deactivate Domain
+        activate Repository
+        Repository->>APIService: obtenerAncestros(charolaId)
+        deactivate Repository
+        activate APIService
+        APIService->>Controller: GET /:charolaId/historial
+        deactivate APIService
+        activate Controller
+        Controller->>Model: obtenerHistorialAncestros()
+        activate Model
+        Model->>Database: SELECT * FROM CHAROLA WHERE charolaId = ?
+        activate Database
+
+        Database-->>Model: Error 500
+        deactivate Database
+        Model-->>Controller: Error 500
+        deactivate Model
+        Controller-->>APIService: Error 500
+        deactivate Controller
+        activate APIService
+        APIService-->>Repository: Error 500
+        deactivate APIService
+        activate Repository
+        Repository-->>Domain: Error 500
+        deactivate Repository
+        activate Domain
+        Domain-->>ViewModel: Error del servidor
+        deactivate Domain
+        activate ViewModel
+        ViewModel-->>View: Actualizar UI
+        deactivate ViewModel
+        activate View
+        View-->>Usuario: Mostrar mensaje Error de servidor
+        deactivate View
+
+    else GET No hay inicio de sesión, 401
+        Usuario->>+View: Clic en botón "Historial"
+        View->>-ViewModel: obtenerAncestros(charolaId)
+        activate ViewModel 
+        ViewModel->>Domain: obtenerAncestros(charolaId)
+        deactivate ViewModel 
+        activate Domain
+        Domain->>Repository: obtenerAncestros(charolaId)
+        deactivate Domain
+        activate Repository
+        Repository->>APIService: obtenerAncestros(charolaId)
+        deactivate Repository
+        activate APIService
+        APIService->>Controller: GET /:charolaId/historial
+        deactivate APIService
+        activate Controller
+
+        Controller-->>APIService: 401 No Autorizado
+        deactivate Controller
+        activate APIService
+        APIService-->>Repository: 401 No Autorizado
+        deactivate APIService
+        activate Repository
+        Repository-->>Domain: 401 No Autorizado
+        deactivate Repository
+        activate Domain
+        Domain-->>ViewModel: 401 No Autorizado
+        deactivate Domain
+        activate ViewModel
+        ViewModel-->>View: Notificar falta de Inicio de sesión
+        deactivate ViewModel
+        activate View
+        View-->>Usuario: Regresar al View de Inicio de sesión
+        deactivate View
+
+    else GET Sin conexión a internet, 101
+        Usuario->>+View: Clic en botón "Historial"
+        View->>-ViewModel: obtenerAncestros(charolaId)
+        activate ViewModel 
+        ViewModel->>Domain: obtenerAncestros(charolaId)
+        deactivate ViewModel 
+        activate Domain
+        Domain->>Repository: obtenerAncestros(charolaId)
+        deactivate Domain
+        activate Repository
+        Repository->>APIService: obtenerAncestros(charolaId)
+        deactivate Repository
+        activate APIService
+
+        APIService-->>Repository: TIMEOUT
+        deactivate APIService
+        activate Repository
+        Repository-->>Domain: Error 101
+        deactivate Repository
+        activate Domain
+        Domain-->>ViewModel: Notifica error
+        deactivate Domain
+        activate ViewModel
+        ViewModel-->>View: Actualizar UI
+        deactivate ViewModel
+        activate View
+        View-->>Usuario: Mostrar mensaje "Sin conexión a internet"
+        deactivate View
+    end
+```
 
 ### Mockup
 
+![alt text](<img/mockupRF3_2.png>)
 
 ---
 
-## Historial de cambios
+### Pruebas Unitarias 
+| ID Prueba  | Descripción                                               | Resultado Esperado  |
+|------------|-----------------------------------------------------------|---------------------|
+| PU-RF3-01  | Consultar el historial de una charola que tiene ancestros registrados. | El sistema muestra correctamente todas las charolas de las que proviene la charola seleccionada. |
+| PU-RF3-02  | Consultar el historial de una charola sin ancestros registrados. | El sistema indica que no hay datos disponibles sin generar errores. |
+| PU-RF3-03  | Verificar la actualización del historial en tiempo real. | Si se registra un nuevo ancestro, el historial se actualiza automáticamente sin necesidad de recargar la página. |
+| PU-RF3-04  | Buscar una charola inexistente. | El sistema muestra un mensaje de error indicando que la charola no existe. |
+| PU-RF3-05  | Validar la navegación entre generaciones de charolas. | El sistema permite desplazarse entre diferentes niveles de ancestros sin fallos. |
 
-| **Tipo de Versión** | **Descripción**                            | **Fecha** | **Colaborador**         |
-| ------------------- | ------------------------------------------ | --------- | ----------------------- |
-| **1.0**             | Creacion de la historia de usuario         | 8/3/2025  | Armando Mendez          |
-| **1.1**             | Modificar historial de cambio              | 17/05/2025| Mariaa Juárez           |
-| **1.2**             | Diagramas de actividades   | 23/5/2025  | Juan Eduardo Rosas Cerón |
+---
+
+## Historial de Cambios
+
+
+| **Tipo de Versión** | **Descripción**                               | **Fecha** | **Colaborador**                 |
+| ------------------- | --------------------------------------------- | --------- | ------------------------------- |
+| **1.0**             | Redactar requerimiento funcional y pruebas unitarias  | 8/03/2025 | Armando Méndez|
+| **2.0**             | Añadir diagrama de secuencia get y mockup | 30/04/2025  | Armando Méndez |
