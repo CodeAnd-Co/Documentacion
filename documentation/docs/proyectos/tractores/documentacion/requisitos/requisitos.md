@@ -31,6 +31,9 @@ Los requisitos funcionales del sistema describen una variedad de acciones que lo
 
 ---
 
+### Mapa de dependencias.
+[Mapa de dependencias](https://docs.google.com/spreadsheets/d/12LGuotzg1zaO7pS5-I_qlntOOh-vTWoIH8i-Eyptbg4/edit?gid=1737125783#gid=1737125783)
+
 ### Requisitos Específicos del sistema.
 
 - [**RF1**](RF1.md): Usuario consulta página de inicio de sesión.\ `Done`
