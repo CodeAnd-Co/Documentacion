@@ -45,8 +45,10 @@ Se utilizará una matriz centralizada para registrar los elementos seleccionados
 - Estatus que puede tener un elemento de configuración
   - Estático: Indica que un elemento de configuración o producto de trabajo ya fue validado y cumple con las políticas y estándares establecidos por el departamento. Generalmente, no requiere modificaciones, a menos que haya actualizaciones relevantes en normativas, lineamientos o procedimientos. Una vez asignado este estatus, la versión se considera como base de referencia.					
   - Dinámico: Se refiere a elemento de configuración que están siendo trabajados, ajustados o en revisión continua. Son susceptibles a cambios frecuentes debido a nuevas prácticas, comentarios de los usuarios o ajustes necesarios. Es fundamental consultar siempre la última versión disponible.					
-  - Bajo Revisión: Esta categoría aplica a elementos de configuración que han sido seleccionados específicamente para evaluación, pero que aún no concluyen su proceso de auditoría. Puede tratarse de material que anteriormente fue estático o que está en una fase crítica de análisis antes de volverse base estable.					
+  - Bajo Revisión: Esta categoría aplica a elementos de configuración que han sido seleccionados específicamente para evaluación, pero que aún no concluyen su proceso de auditoría. Puede tratarse de material que anteriormente fue estático o que está en una fase crítica de análisis antes de volverse base estable.		
+- Versión correspondiente a la última versión del elemento de configuración.			
 - Versión correspondiente a la última versión estable del elemento de configuración para la documentación que fue parte del último release.
+- Bitácora de peticiones de cambio para almacenar y recuperar versiones archivadas de elementos de configuración.
 - Auditado: Estado de la de auditorías sobre esa versión del elemento.
 - Ubicación o link de acceso al elemento de configuración
 - Utilidad: Checkbox para saber si el elemento está siendo usado y aporta valr
@@ -80,23 +82,22 @@ Toda nueva línea base debe ser registrada con su fecha, versión y justificaci�
 
 ### 🗂 Categorías gestionadas
 
-| Categoría                    | Descripción                                                                                       |
-| ---------------------------- | ------------------------------------------------------------------------------------------------- |
-| **Acuerdos**                 | Compromisos formales/informales entre partes, como cliente y proveedor o entre áreas internas.    |
-| **Arquitectura**             | Estructura técnica o lógica del sistema (componentes, relaciones, decisiones de diseño clave).    |
-| **Entregas**                 | Productos, documentos o resultados esperados. Incluye MVPs, MBIs, releases, etc.                  |
-| **Plantillas**               | Documentos modelo que aseguran consistencia (actas, informes, reportes, etc.).                    |
-| **Procesos**                 | Descripciones paso a paso de actividades repetitivas, incluyendo roles, entradas y salidas.       |
-| **Políticas**                | Lineamientos obligatorios de la organización (seguridad, recursos, buenas prácticas).             |
-| **Guías**                    | Instrucciones o recomendaciones operativas (no siempre obligatorias).                             |
-| **Estándares**               | Normas mínimas requeridas (ej. codificación, diseño, documentación).                              |
-| **Definiciones**             | Glosarios de términos clave usados en el proyecto o proceso.                                      |
-| **Checklist**                | Listas de verificación para asegurar cumplimiento de criterios, actividades o entregables.        |
-| **Encuestas**                | Formularios para recolectar retroalimentación, satisfacción o métricas de uso.                    |
-| **Diagramas**                | Representaciones visuales de arquitectura, procesos, flujos, etc.                                 |
-| **Código**                   | Repositorios, scripts o pull requests **solo cuando se trata de versiones críticas o revisadas**. |
-| **Información del Proyecto** | Documento resumen con nombre del proyecto, objetivos, responsables, alcance, fechas y cambios.    |
-
+| **Categoría**             | **Descripción**                                                                                                                                             |
+|---------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Acuerdos**              | Registra los compromisos formales o informales entre partes (por ejemplo, entre cliente y proveedor o entre áreas).                                          |
+| **Arquitectura**          | Describe la estructura técnica o lógica de un sistema (software, infraestructura, etc.) y cómo interactúan sus componentes.                                  |
+| **Entregas**              | Enumera los productos, documentos o resultados esperados en un proyecto o fase. Indica qué se entrega, cuándo y en qué formato.                              |
+| **Plantillas**            | Documentos modelo que permiten mantener la consistencia y formato de otros documentos (ej. reporte de incidentes, actas, informes).                          |
+| **Procesos**              | Define el paso a paso de una actividad repetitiva, sus responsables, entradas, salidas y métricas.                                                           |
+| **Políticas**             | Establecen lineamientos obligatorios dentro de la organización (ej. política de seguridad, uso de recursos, etc.).                                           |
+| **Guías**                 | Brinda instrucciones detalladas o recomendaciones para realizar una tarea o proceso. Es orientativa, no siempre obligatoria.                                 |
+| **Estándares**            | Define normas mínimas obligatorias para asegurar calidad o cumplimiento (ej. codificación, documentación, diseño, etc.).                                     |
+| **Definiciones**          | Reúne los términos clave y su significado, para asegurar entendimiento común entre todos los involucrados.                                                   |
+| **Checklist**             | Listas de verificación usadas para validar que se han cumplido ciertos pasos, requisitos o entregables.                                                      |
+| **Encuestas**             | Herramientas para recolectar opiniones, datos o retroalimentación de usuarios, clientes o equipos.                                                           |
+| **Diagramas**             | Representaciones visuales que ayudan a explicar procesos, flujos, arquitecturas o relaciones de manera gráfica (ej. diagramas de flujo, UML, ER, etc.).      |
+| **Código**                | Repositorios, scripts o pull requests solo cuando se trata de versiones críticas o revisadas.                                                                |
+| **Información del Proyecto** | Documento resumen que contiene los datos generales del proyecto: nombre, objetivos, fechas, responsables, presupuesto, alcance, etc.                   |
 
 ## ⏳ Frecuencia de revisión de los elementos
 
