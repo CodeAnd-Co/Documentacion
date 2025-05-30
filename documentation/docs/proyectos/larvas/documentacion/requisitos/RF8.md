@@ -10,7 +10,6 @@ Como usuario del sistema, quiero borrar los datos de una charola en la base de d
 
 
   **Criterios de Aceptación:**
-  - El sistema debe permitir la eliminación de charolas solo a usuarios autorizados.
   - Antes de eliminar una charola, se debe mostrar un mensaje de confirmación.
   - La eliminación debe reflejarse de inmediato en la base de datos sin afectar otros registros.
 
