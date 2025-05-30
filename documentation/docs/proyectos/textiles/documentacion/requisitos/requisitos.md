@@ -114,6 +114,10 @@ Los requisitos funcionales del sistema describen una variedad de acciones que lo
 
 ---
 
+## Matriz de dependencias
+
+[Enlace a Matriz de dependencias](https://docs.google.com/spreadsheets/d/1ToxcYLMjoZ0dPXlb2eTesLf_YXg8q86tE7bredXapYk/edit?gid=2006473852#gid=2006473852)
+
 ## Requisitos No Funcionales
 
 #### Descripción General
