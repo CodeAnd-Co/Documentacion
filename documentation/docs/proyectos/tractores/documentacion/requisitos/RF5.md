@@ -1,22 +1,23 @@
 ---
-title: "RF5: Usuario selecciona modo claro/oscuro."  
-sidebar_position: 6
+title: "RF7: Usuario consulta los ranchos disponibles."  
+sidebar_position: 8
 ---
 
-# RF5: Usuario selecciona modo claro/oscuro.
+# RF7: Usuario consulta los ranchos disponibles.
 
 **Última actualización:** 03 de abril de 2025
 
 ### Historia de Usuario
 
-Yo como usuario quiero cambiar entre el modo claro y oscuro del sistema, y que mi elección se mantenga incluso al reiniciar la aplicación, para tener una experiencia visual consistente y personalizada.
+Yo como usuario quiero consultar una lista completa de ranchos disponibles en el sistema, con opciones de búsqueda y organización clara, para poder encontrar rápidamente la información que necesito.
 
   **Criterios de Aceptación:**
-  - El sistema debe mostrar una opción en la configuración para alternar entre modo claro y modo oscuro.
-  - El cambio debe aplicarse inmediatamente al seleccionar la opción (sin requerir reinicio).
-  - La selección del tema debe guardarse automáticamente en las preferencias del usuario.
-  - Al cerrar y reabrir la aplicación, el sistema debe cargar el último tema seleccionado.
-  - Todos los componentes de la interfaz (botones, textos, fondos) deben adaptarse al tema activo sin errores (ej.: texto ilegible, contraste insuficiente).
+  - Mostrar los ranchos disponibles en un formato tabla.
+  - La lista debe cargarse en menos de 2 segundos (bajo condiciones normales de red).
+  - Permitir ordenar la lista por Nombre (A-Z / Z-A).
+  - Barra de búsqueda: Permitir buscar ranchos por nombre (búsqueda parcial, ej.: "San" → "San Miguel").
+  - Si no hay ranchos disponibles, mostrar un mensaje claro (ej.: "No se encontraron ranchos con los filtros seleccionados").
+  - En caso de error de carga, mostrar un mensaje amigable con opción de reintentar.
 
 ---
 
@@ -24,21 +25,18 @@ Yo como usuario quiero cambiar entre el modo claro y oscuro del sistema, y que m
 
 ![Diagrama de Secuencia] 
 
-> *Descripción*: El diagrama de secuencia muestra cómo el usuario cambia el modo de visualización.
-
+> *Descripción*: El diagrama de secuencia muestra cómo el usuario solicita ver los ranchos disponibless y el sistema responde con la información indicada
 ---
 
 ### Mockup
 
 ![Mockup]
 
-> *Descripción*: El mockup muestra la interfaz con la opción de cambiar el modo claro/oscuro
+> *Descripción*: El mockup representa la interfaz del sistema donde se enlistan los ranchos disponibles en una forma de menú dropdown.
 
 ---
 
 ### Pruebas Unitarias 
 | ID Prueba | Descripción | Resultado Esperado |
 |-----------|-------------|--------------------|
-|PU-RF5-01|Cambiar a modo oscuro.|La interfaz cambia a modo oscuro y se guarda la preferencia dentro de la aplicación|
-|PU-RF5-02|Cambiar a modo claro.|La interfaz cambia a modoclaro y se guarda la preferencia dentro de la aplicación|
-|PU-RF5-03|Persistencia del modo.|Se mantiene la preferencia del usuario aun cuando salga de la aplicación o se cierre la sesión|
+|PU-RF7-01|Cargar la lista de ranchos disponibles.|Se muestra el nombre de todos los ranchos disponibles para analizar.|

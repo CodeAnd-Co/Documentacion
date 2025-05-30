@@ -1,22 +1,26 @@
 ---
-title: "RF6: Usuario consulta el módulo de análisis."  
+title: "RF6: Usuario selecciona el rancho a analizar."  
 sidebar_position: 7
 ---
 
-# RF6: Usuario consulta el módulo de análisis.
+# RF8: Usuario selecciona el rancho a analizar.
 
 **Última actualización:** 03 de abril de 2025
 
 ### Historia de Usuario
 
-Yo como usuario quiero acceder a un módulo de análisis que me permita visualizar métricas, gráficos y estadísticas relevantes sobre los datos del sistema, con una carga eficiente, para tomar decisiones basadas en datos.
+Yo como usuario quiero seleccionar un rancho específico de la lista disponible para visualizar los tractores asociados.
 
   **Criterios de Aceptación:**
-  - El módulo debe estar disponible desde el menú principal.
-  - La navegación al módulo debe ser inmediata (latencia < 1 segundo en condiciones normales).
-  - La carga inicial de los datos y gráficos debe completarse en menos de 10 segundos (en conexiones estándar).
-  - Si el volumen de datos es grande, el sistema debe mostrar un indicador de carga mientras se procesa la información.
-  - En caso de fallo en la carga, mostrar un botón de "Reintentar" y un mensaje claro (no errores técnicos crudos).
+  - Al seleccionar un rancho, el sistema debe resaltarlo visualmente (checkmark) para confirmar la selección.
+  - Al seleccionar un rancho, el sistema debe mostrar automáticamente la lista de tractores vinculados a ese rancho.
+  - La lista de tractores debe incluir al menos:
+Identificador del tractor (ej.: número de serie o nombre).
+  - Si no hay tractores asociados al rancho, mostrar un mensaje claro: "No se encontraron tractores registrados para este rancho".
+  - Permitir volver a la lista de ranchos sin perder el filtro/búsqueda anterior.
+  - La carga de los tractores debe ser inmediata (< 2 segundo) desde la selección del rancho.
+  - Si la carga demora (ej.: muchos tractores), mostrar un indicador de progreso (spinner).
+  - Si el rancho seleccionado no existe (ej.: fue eliminado), mostrar un error amigable y recargar la lista automáticamente.
 
 ---
 
@@ -24,19 +28,20 @@ Yo como usuario quiero acceder a un módulo de análisis que me permita visualiz
 
 ![Diagrama de Secuencia] 
 
-> *Descripción*: El diagrama de secuencia muestra como el usuario accede al módulo de análisis y el sistema carga la información para mostrar la información relevante.
+> *Descripción*: El diagrama de secuencia muestra el flujo de selección de un rancho y de como este se actualiza para mostrar los tractores asignados a ese rancho.
+
+---
 
 ### Mockup
 
 ![Mockup]
 
-> *Descripción*: El mockup representa la interfaz del sistema donde el usuario puede ver el módulo de análisis 
+> *Descripción*: El mockup representa la interfaz de selección de ranchos con los tractores asociados por rancho
 
 ---
 
 ### Pruebas Unitarias 
 | ID Prueba | Descripción | Resultado Esperado |
 |-----------|-------------|--------------------|
-|PU-RF6-01|Acceder al módulo de análisis.|Se muestra correctamente la interfaz con los datos y gráficas relevantes.|
-|PU-RF6-02|Verificar carga de datos.|Los gráficos se generan correctamente con los datos recopilados por la aplicación.|
-|PU-RF6-03|Verificar que el uso del módulo es correcto.|El usuario es capaz de utilizar todas las funcionalidades definidas en el módulo de análisis|
+|PU-RF8-01|Seleccionar un rancho de la lista.|Se cargan los tractores asignados por rancho.|
+|PU-RF8-02|Comprobar persistencia de selección.|Al navegar entre secciones, se mantiene el rancho seleccionado.|

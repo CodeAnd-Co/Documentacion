@@ -1,6 +1,6 @@
 ---
-title: "RF9: Usuario modifica seleccion de rancho a analizar."  
-sidebar_position: 10
+title: "RF7: Usuario modifica seleccion de rancho a analizar."  
+sidebar_position: 8
 ---
 
 # RF9: Usuario modifica selección de rancho a analizar.

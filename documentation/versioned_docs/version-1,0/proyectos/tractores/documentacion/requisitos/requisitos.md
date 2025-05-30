@@ -45,7 +45,6 @@ Los requisitos funcionales del sistema describen una variedad de acciones que lo
 [**RF11**](RF11.md): Usuario consulta datos disponibles.\ `Ready`
 [**RF12**](RF12.md): Usuario selecciona datos a comparar.\
 [**RF13**](RF13.md): Usuario consulta filtros disponibles.\
-[**RF14**](RF14.md): Usuario selecciona filtros a aplicar.\ 
 [**RF15**](RF15.md): Usuario añade cuadro de texto al reporte.\ `Ready`
 [**RF16**](RF16.md): Usuario edita cuadro de texto del reporte.\ `Ready`
 [**RF17**](RF17.md): Usuario elimina cuadro de texto del reporte.\ `Ready`
