@@ -16,7 +16,6 @@ Establece los lineamientos para la operación del Comité de Control de Cambios 
 ## 📊 Alcance
 
 Esta política aplica a:
-- Todos los proyectos y productos bajo control de configuración del departamento.
 - Todo cambio propuesto que afecte la integridad, trazabilidad o estructura de dichos elementos.
 - Todos los miembros del equipo que deseen proponer cambios formales sobre elementos configurados.
 

@@ -16,7 +16,6 @@ Esta política establece los criterios, responsabilidades y mecanismos para iden
 ## 📊 Alcance
 
 Esta política aplica a:
-- Todos los proyectos del departamento y sus equipos involucrados.
 - Elementos y productos de trabajo seleccionados por cumplir con criterios de control de configuración.
 - Documentación, software, diagramas, resultados de pruebas y cualquier otro activo considerado crítico.
 
