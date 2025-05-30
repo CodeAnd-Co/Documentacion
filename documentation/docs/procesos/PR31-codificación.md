@@ -35,6 +35,7 @@ Proceso para establecer un flujo estructurado que garantice la creación de cód
 |  | Desarrollar el requisito siguiendo el diseño técnico aprobado, aplicando métodos eficaces de implementación (ej. programación modular o basada en componentes), de acuerdo con los estándares definidos. | Desarollador. | **CM, SP 2.1** (Seguimiento de solicitudes de cambio). |
 |  | Desarrollar el requisito o historia siguiendo los estándares del equipo. | Desarollador. | **CM, SP 2.2** (Controlar los elementos de configuración). |
 |  | Copiar la [checklist de desarrollo](https://docs.google.com/document/d/1ItP965B7cFppIUX3RPXg_ZuUiYZzSuGs1b5bMw2-ZpQ/edit?tab=t.0#heading=h.fhau7kjl46pa) en la carpeta correspondiente y verificar que el código cumple con lo estipulado. | Desarollador. | **PPQA, SP 1.2** (Evaluar productos objetivamente y documentar hallazgos), **VER SP 1.3** (Establecer los procedimientos y los criterios de verificación) **VER SP 3.1** (Realizar la verificación). |
+|**Trazabilidad** | Ejecuta el [proceso de trazabilidad](/docs/next/procesos/PR11-trazabilidad-requisitos). **NO** se puede pasar a la próxima fase sin haber ejecutado este proceso.| Desarrollador | REQM SP1.4 (Mantener la trazabilidad bidireccional de los requisitos).|
 | **Desarrollo** (Opcional) | Realizar pair programming para implementar el componente, para asegurar la aplicación de estándares en tiempo real y detectar errores de manera temprana. | Desarrolladores | **TS SP 3.1** (Implementar el diseño de los componentes del producto), **VER SP 2.1** (Preparar la revisión entre pares) |
 | **Pruebas** | Desarrollar y ejecutar pruebas unitarias y funcionales para validar la lógica del componente de forma aislada. Asegurar una cobertura adecuada con herramientas integradas en los respectivos proyectos. | Según la estrategia del equipo (Desarrollador o tester). | **PPQA, SP 1.2** (Evaluar productos objetivamente y documentar hallazgos), **VER SP 1.2** (Establecer el entorno de verificación), **VER SP 3.1** (Realizar la verificación). **TS SP 3.1** |
 |  | Ejecutar linting y otras verificaciones automáticas.  | Desarollador. | **PPQA, SP 1.2** (Evaluar productos objetivamente y documentar hallazgos). |
@@ -72,4 +73,5 @@ Proceso para establecer un flujo estructurado que garantice la creación de cód
   | **2.0.1 | Agregar especificación de responsable y solución en el defect log en el paso del proceso | 26/05/2025 | Ian Julián Estrada Castro |
   | **2.0.2**   | Corregir redacción y mapeo de VER | 26/05/2025  | Juan Carlos Calderón, Daniel Contreras       |
   | **2.0.3**   | Mapear VER 3.2 | 27/05/2025  | Ian Julián Estrada Castro       |
+  | **2.0.4**   | Actualización pequeña al proceso. | 30/05/2025  | Juan Pablo Chávez Leal   |
 </details>

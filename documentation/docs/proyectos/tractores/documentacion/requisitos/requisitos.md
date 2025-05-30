@@ -261,3 +261,4 @@ Los **mockups** de la interfaz están disponibles en el siguiente enlace:
 | Juan Pablo Chávez       | Adición de requisitos no-funcionales                    | V1.1    |
 | Daniel Queijeiro Albo   | Adición de requisitos de información, reglas de negocio | V2.0    |
 | Emiliano Gomez Gonzalez | Agrega el link de lso mockups                           | V2.1    |
+  | **2.2**   | Adición del mapa de procesos. | 30/05/2025  | Juan Pablo Chávez Leal   |

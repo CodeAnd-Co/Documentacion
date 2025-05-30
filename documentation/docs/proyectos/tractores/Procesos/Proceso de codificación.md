@@ -101,3 +101,4 @@ sidebar_position: 1
 | **2.2** | Añadir pasos para revisar componentes | 26/05/2025 | Diego Fuentes |
 | **3.0** | Refactorización del proceso | 29/5/2025 | Juan Pablo Chávez Leal |
 | **3.1** | Corrección de errores ortográficos en el proceso | 30/5/2025 | Juan Pablo Chávez Leal |
+| **3.2**   | Enlaces al proceso de RTM. | 30/05/2025  | Juan Pablo Chávez Leal   |
