@@ -11,8 +11,8 @@ Fecha: 19-05-2025
 
 ### Contexto y problema
 ***Una breve explicación acerca del problema a resolver***  
-La forma en que implementamos nuestra navegación entre vistas en ElectronJS originalmente esta dificultando mucho el desarrollar requisitos funcionales.
-Hicimos una prueba de concepto y si implementamos EJS en la lógica de carga de vistas se puede acelerar el deesarrollo, pero esto significa:
+La forma en que implementamos nuestra navegación entre vistas en ElectronJS originalmente está dificultando mucho el desarrollar requisitos funcionales.
+Hicimos una prueba de concepto y si implementamos EJS en la lógica de carga de vistas se puede acelerar el desarrollo, pero esto significa:
 1. Tener que hacer una forma reutilizable de precargar los EJS, ya que ElectronJS solo carga HTML y el EJS necesita de Node para renderizarse.
 2. Refactorizar todas nuestras vistas a formato EJS.
 3. Adaptar todos nuestros scripts a la nueva forma de cargar vistas. 
@@ -57,12 +57,12 @@ Continuar con archivos HTML estáticos como se implementó originalmente.
 
 ### Resultado de la decisión
 ***Explicación acerca de cuál opción fue seleccionada***  
-Decidimos hacer la migración a EJS por las múltiples maneras en que nos ayudara a acelerar el desarrollo. Vemos más viable liberar el MVP tomando una semana para refactorizar todo a EJS que seguir con nuestro HTML complicado.
+Decidimos hacer la migración a EJS por las múltiples maneras en que nos ayudará a acelerar el desarrollo. Vemos más viable liberar el MVP tomando una semana para refactorizar todo a EJS que seguir con nuestro HTML complicado.
 
 ### Consecuencias positivas
 ***Lista de consecuencias positivas que introduce la opción seleccionada***  
 - Aceleración significativa en el desarrollo de nuevas vistas
-- Mejor reutilización de componentes UI (headers, footers, menu)
+- Mejor reutilización de componentes UI (headers, footers, menú)
 - Código más mantenible y organizado
 - Facilita la implementación de temas y estilos consistentes
 - Reducción de duplicación de código HTML
