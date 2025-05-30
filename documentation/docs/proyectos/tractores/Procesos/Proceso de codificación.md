@@ -87,6 +87,7 @@ sidebar_position: 1
     - Si en tu script quieres implementar la carga de otro módulo o vista, usar la función de `ipcRenderer.invoke('precargarEJS')`.
         - Añadir `const { ipcRenderer } = require('electron')`.
         - Si quieres ver un ejemplo puedes consultar barraLateral.js.
+- Cada cierto tiempo se deben actualizar las checklists de acuerdo con nuestro defectlog, así atacando directamente las áreas de oportunidad más comunes que tenemos
 
 ---
 
