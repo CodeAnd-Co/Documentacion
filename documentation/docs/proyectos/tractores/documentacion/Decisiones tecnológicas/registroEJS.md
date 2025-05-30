@@ -29,31 +29,31 @@ Hicimos una prueba de concepto y si implementamos EJS en la lógica de carga de 
 Motor de plantillas que permite generar HTML dinámico usando JavaScript y sintaxis embebida.
 
 **Ventajas:**
-- Permite reutilización de componentes y layouts
-- Sintaxis familiar para desarrolladores JavaScript
-- Facilita la inyección de datos dinámicos
-- Reduce duplicación de código HTML
-- Mejor mantenibilidad del código
+- Permite reutilización de componentes y layouts.
+- Sintaxis familiar para desarrolladores JavaScript.
+- Facilita la inyección de datos dinámicos.
+- Reduce duplicación de código HTML.
+- Mejor mantenibilidad del código.
 
 **Desventajas:**
-- Requiere configuración adicional en ElectronJS
-- Necesita refactorización completa de vistas existentes
-- Curva de aprendizaje para el equipo
-- Dependencia adicional en el proyecto
+- Requiere configuración adicional en ElectronJS.
+- Necesita refactorización completa de vistas existentes.
+- Curva de aprendizaje para el equipo.
+- Dependencia adicional en el proyecto.
 
 #### HTML
 Continuar con archivos HTML estáticos como se implementó originalmente.
 
 **Ventajas:**
-- No requiere cambios en la arquitectura actual
-- Funciona directamente con ElectronJS
-- Sin curva de aprendizaje adicional
+- No requiere cambios en la arquitectura actual.
+- Funciona directamente con ElectronJS.
+- Sin curva de aprendizaje adicional.
 
 **Desventajas:**
-- Alta duplicación de código
-- Dificultad para mantener consistencia en la UI
-- Desarrollo más lento de nuevas características
-- Navegación entre vistas compleja
+- Alta duplicación de código.
+- Dificultad para mantener consistencia en la UI.
+- Desarrollo más lento de nuevas características.
+- Navegación entre vistas compleja.
 
 ### Resultado de la decisión
 ***Explicación acerca de cuál opción fue seleccionada***  
@@ -61,24 +61,24 @@ Decidimos hacer la migración a EJS por las múltiples maneras en que nos ayudar
 
 ### Consecuencias positivas
 ***Lista de consecuencias positivas que introduce la opción seleccionada***  
-- Aceleración significativa en el desarrollo de nuevas vistas
-- Mejor reutilización de componentes UI (headers, footers, menú)
-- Código más mantenible y organizado
-- Facilita la implementación de temas y estilos consistentes
-- Reducción de duplicación de código HTML
-- Mayor flexibilidad para inyectar datos dinámicos en las vistas
+- Aceleración significativa en el desarrollo de nuevas vistas.
+- Mejor reutilización de componentes UI (headers, footers, menú).
+- Código más mantenible y organizado.
+- Facilita la implementación de temas y estilos consistentes.
+- Reducción de duplicación de código HTML.
+- Mayor flexibilidad para inyectar datos dinámicos en las vistas.
 
 ### Consecuencias negativas
 ***Lista de consecuencias negativas que introduce la opción seleccionada***  
-- Tiempo invertido en refactorización (aproximadamente 1 semana)
-- Posibles bugs introducidos durante la migración
-- Complejidad adicional en el proceso de build
-- Dependencia nueva que debe ser mantenida
-- Posible impacto en el rendimiento por el proceso de renderizado
+- Tiempo invertido en refactorización (aproximadamente 1 semana).
+- Posibles bugs introducidos durante la migración.
+- Complejidad adicional en el proceso de build.
+- Dependencia nueva que debe ser mantenida.
+- Posible impacto en el rendimiento por el proceso de renderizado.
 
 ### Links
 ***Lista de recursos relevantes para aprender de cada opción***  
-- [Documentación oficial de EJS](https://ejs.co/)
+- [Documentación oficial de EJS](https://ejs.co/).
 ---
 
 ## Historial de cambios
