@@ -32,9 +32,9 @@ Su propósito es reducir los tiempos de ingreso de datos y facilitar la configur
 
 ### Objetivos Específicos
 
-- Reducir los tiempos en el ingreso de datos y facilitar la configuración del sistema de compras para los usuarios finales.
+- Gestionar el control de empleados y productos, mejorando la eficiencia operativa un 20% en un plazo de 2 meses.
 
-- Asegurar la satisfacción del socio formador con el uso del sistema.
+- Asegurar una experiencia de usuario satisfactoria mediante mejoras en interfaz y accesibilidad, alcanzando un 90% de satisfacción, en un plazo de 3 meses.
 
 ## Alcance del Proyecto ➡️
 
