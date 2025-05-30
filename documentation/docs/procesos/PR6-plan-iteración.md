@@ -35,6 +35,7 @@ Proceso para definir un plan de iteración con tareas claras, viables y manejabl
 | **7. Revisión de capacidad y plan**           | Evaluar si se ha alcanzado el 70% de capacidad del equipo. <br/> - Si se puede incluir otro ítem, volver a la fase 2. <br/> - Si no, continuar.                                                                                                                                                                                                                                                                         | Team leader  | **PP, SP 3.2** (Conciliar niveles de trabajo y recursos), **PMC, SP 1.1** (Monitorear parámetros de planeación de proyectos)                |
 |                                               | Revisar la sensatez del plan (sanity check).                                                                                                                                                                                                                                                                                                                                                                            | Team members | **PP, SP 3.2** (Conciliar niveles de trabajo y recursos)                                                                                    |
 | **8. Compromiso con el plan**                 | Comprometerse con el plan de iteración.                                                                                                                                                                                                                                                                                                                                                                                 | Team members | **PP, SP 3.3** (Obtener compromiso con el plan), **REQM, SP 1.2** (Obtener compromiso con los requerimientos)                               |
+| **9. Asignación de tareas** | La asignación de tareas se realiza conforme a los acuerdos de trabajo. Es decir, primero buscar apoyar a alguien, si no es posible, tomar la siguiente tarea disponible. | Team Leader y Team Members | **RD, SP 2.2** (Asignar requisitos a componentes específicos del producto) |
 
 ## 📤 Salidas
 
@@ -59,6 +60,7 @@ Proceso para definir un plan de iteración con tareas claras, viables y manejabl
 | **2.3.0**   | Implementación de acciones correctivas en el proceso.                                    | 28/04/2025    | Max Toscano                                      |
 | **3.0.0**   | Simplificación del proceso y correcciones para alinearlo con CMMI.                       | 15/05/2025    | Valeria Zúñiga, Paola Garrido                   |
 | **4.0.0**             | Clarificación de pasos y actualización de áreas del CMMI           | 20/05/2025 | Diego Antonio García Padilla  |
-| **4.0.1**     | Mapear RD 3.2  | 28/05/2025 | Hiram Israel Mendoza López 
+| **4.1.0**     | Mapear RD 3.2  | 28/05/2025 | Hiram Israel Mendoza López|
+| **4.2.0**       | Añadir mención a la asignación de tareas.                       | 30/05/2025 | Rommel Toledo C.                 |
 
 </details>
