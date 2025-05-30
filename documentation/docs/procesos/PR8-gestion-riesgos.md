@@ -77,4 +77,6 @@ Esta probabilidad puede ser estimada por el equipo con base en la experiencia y 
 | **1.3.0**   | Refactorización del proceso.                                                    | 18/04/2025    | Diego Fuentes                                          |
 | **1.4.0**   | Simplificación de pasos del proceso.                                            | 13/05/2025    | Paola María Garrido                                    |
 | **1.4.1**       | Correcciones ortográficas y de enlaces                       | 29/05/2025 | Valeria Zúñiga, Nicolas Hood                 |
+| **1.5.0**   | Mapeo de RD 3.4 y RD 3.5 en el proceso.                                           | 30/05/2025    | Paola María Garrido, Carlos Iván Fonseca Mondragón |
+
 </details>
