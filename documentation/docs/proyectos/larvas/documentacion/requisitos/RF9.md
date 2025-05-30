@@ -24,13 +24,11 @@ Como usuario de la aplicación, quiero cerrar mi cuenta de usuario en la aplicac
 
 ---
 
-### Diagrama de Secuencia
+### Mockup
 
-> *Descripción*: El diagrama de secuencia muestra cómo el Super Administrador selecciona un archivo, el sistema valida los datos y luego importa los empleados al sistema.
+![alt text](<img/mockup09.png>)
 
 ---
-
-### Mockup
 
 > *Descripción*: El mockup muestra la interfaz donde el Super Administrador puede cargar un archivo de empleados, con la opción de revisar los datos antes de importarlos.
 
@@ -49,3 +47,4 @@ Como usuario de la aplicación, quiero cerrar mi cuenta de usuario en la aplicac
 | ------------------- | ------------------------------------ | --------- | ----------------- |
 | **1.0**             | Creacion de la historia de usuario   | 8/3/2025  | Armando Mendez    |
 | **1.2**             | Diagramas de actividades   | 23/5/2025  | Juan Eduardo Rosas Cerón |
+| **1.2**             | Diagramas de secuencia y mockup   | 23/5/2025  | Armando Méndez Castro |
