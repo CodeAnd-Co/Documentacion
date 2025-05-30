@@ -23,50 +23,10 @@ Como usuario de la aplicación, quiero cerrar mi cuenta de usuario en la aplicac
 <a href="https://drive.google.com/file/d/12x_zfxa1QmTsGL5XsYHaTIIvdtvq-ioz/view?usp=sharing" target="_blank" rel="noopener noreferrer">Cerrar sesión</a>
 
 ---
-### Diagrama de secuencia 
 
-```mermaid
-sequenceDiagram
-    actor Usuario 
-    participant View as View
-    participant ViewModel as ViewModel
-    participant Domain as Domain
-    participant Repository as Repository
-    participant APIService as API Service (MVVM)
+### Diagrama de Secuencia
 
-
-    alt GET Historial de actividad, 200
-        Usuario->>+View: Cerrar sesion
-        View->>-ViewModel: loginView()
-        activate ViewModel 
-        ViewModel->>Domain: loginViewModel()
-        deactivate ViewModel 
-        activate Domain
-        Domain->>Repository: cerrarSesion/UseCase()
-        deactivate Domain
-        activate Repository
-        Repository->>APIService: eliminartokenAPIS()
-        deactivate Repository
-        activate APIService
-
-        APIService-->>Repository: 200 OK[Info]
-        deactivate APIService
-        activate Repository
-        Repository-->>Domain: 200 OK[Info]
-        deactivate Repository
-        activate Domain
-        Domain-->>ViewModel: 200 OK[Info]
-        deactivate Domain
-        activate ViewModel
-        ViewModel-->>View: 200 OK[Info]
-        deactivate ViewModel
-        activate View
-        View-->>Usuario: login
-        deactivate View
-      end
-    
-```
-
+> *Descripción*: El diagrama de secuencia muestra cómo el Super Administrador selecciona un archivo, el sistema valida los datos y luego importa los empleados al sistema.
 
 ---
 
@@ -76,10 +36,6 @@ sequenceDiagram
 ---
 
 ### Mockup
-
-![alt text](<img/mockup09.png>)
-
----
 
 > *Descripción*: El mockup muestra la interfaz donde el Super Administrador puede cargar un archivo de empleados, con la opción de revisar los datos antes de importarlos.
 
