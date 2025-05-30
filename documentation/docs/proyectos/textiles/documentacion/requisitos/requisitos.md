@@ -116,7 +116,7 @@ Los requisitos funcionales del sistema describen una variedad de acciones que lo
 
 ## Matriz de dependencias
 
-[Enlace a Matriz de dependencias](https://www.figma.com/design/Mxut7xu6u7bxGbO68K6SQ0/INTERFAZ-ALTERTEX?node-id=8604-22210&t=GNn8LoDEtX2et6kq-1)
+[Enlace a Matriz de dependencias](https://docs.google.com/spreadsheets/d/1ToxcYLMjoZ0dPXlb2eTesLf_YXg8q86tE7bredXapYk/edit?gid=2006473852#gid=2006473852)
 
 ## Requisitos No Funcionales
 
