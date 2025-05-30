@@ -13,7 +13,6 @@ Como usuario del sistema, quiero modificar los datos de una charola que están g
 **Criterios de Aceptación:**
 
 - El sistema debe permitir la edición de los datos de una charola previamente registrada.
-- Solo los usuarios autorizados deben poder modificar la información.
 - La actualización de datos debe reflejarse de inmediato en la base de datos.
 
 ---
@@ -153,12 +152,19 @@ sequenceDiagram
     end
 
 ```
+---
+
+### Pull Request
+
+<a href="https://github.com/CodeAnd-Co/TECH-NEBRIOS-BACKEND/pull/25" target="_blank" rel="noopener noreferrer"> PR de Modificar datos generales dl Charola Backend</a>
+
+<a href="https://github.com/CodeAnd-Co/TECH-NEBRIOS-FLUTTER/pull/27" target="_blank" rel="noopener noreferrer"> PR de Modificar datos generales dl Charola Frontend</a>
 
 ---
 
 ### Mockup
 
-![mockup-rf7](image-2.png)
+![alt text](<img/mockupRF7.png>)
 
 ---
 ## Historial de cambios
@@ -168,3 +174,5 @@ sequenceDiagram
 | **1.0**             | Creacion de la historia de usuario         | 8/3/2025  | Armando Mendez          |
 | **1.1**             | Modificar historial de cambio              | 17/05/2025| Mariaa Juárez           |
 | **1.3**             | Diagramas de actividades   | 23/5/2025  | Juan Eduardo Rosas Cerón |
+| **1.4**             | Se corrigió mockup  | 29/5/2025  | Mariana Juárez |
+| **1.5**             | Se agregaron los pull request de front y back | 29/5/2025  | Sofía Osorio |
