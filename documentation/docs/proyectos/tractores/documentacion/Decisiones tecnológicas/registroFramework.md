@@ -1,8 +1,8 @@
 ---
-title: Registro de decisiones arquitectónicas
+title: Registro de decisiones arquitectónicas ElectronJS & NeutralinoJS
 ---
 
-# Registro de decisiones arquitectónicas
+# Registro de decisiones arquitectónicas - ElectronJS & NeutralinoJS
 
 ---
 
