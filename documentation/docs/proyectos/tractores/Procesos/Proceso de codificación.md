@@ -56,11 +56,11 @@ sidebar_position: 1
 |**Revisa la definición de DONE** | Repasa la definición de DONE y verifica que se cumpla por completo, si cumple con la definición sigue el [proceso de RTM](/docs/next/procesos/PR11-trazabilidad-requisitos). | Codificador del requisito | 
 | **Preparación del ambiente** | Repasa la fase de '**Inicio de codificación**'. | Codificador del requisito |
 | **Codificación del backend local** | Si necesitas comunicarte con el backend desacoplado debes: | Codificador del requisito|
-|**Comunicación** | Tener el archivo constantes.js actualizado en la carpeta 'scripts' en su primer nivel. | Codificador del requisito |
+|**Comunicación con el servidor desacoplado** | Tener el archivo constantes.js actualizado en la carpeta 'scripts' en su primer nivel. | Codificador del requisito |
 | | Tener en la carpeta 'domain' una carpeta 'API' de tu módulo. | Codificador del requisito | 
 | | En esa carpeta 'API' debes crear tu archivo moduloAPI.js en donde debes agregar las funciones que incorporen las llamadas al servidor. | Codificador del requisito |
 | | Conecta el controlador con la ruta de la petición del servidor. | Codificador del requisito |
-| **Casos de uso** | Ingresa a la carpeta 'casosUso' y verifica si la carpeta del módulo existe, crea el archivo que contendrá toda la lógica de negocio que simula al controlador del backend, pero en la aplicación local. |  Codificador del requisito |
+| **Caso de uso** | Ingresa a la carpeta 'casosUso' y verifica si la carpeta del módulo existe, crea el archivo que contendrá toda la lógica de negocio que simula al controlador del backend, pero en la aplicación local. |  Codificador del requisito |
 | **Preparación del ambiente** | Repasa la fase de '**Inicio de codificación**'. | Codificador del requisito |
 | **Codificación del front-end** | Ir a la carpeta de "paginas"  que se encuentra en framework > vistas. Crea la carpeta de tu módulo ahí. | Codificador del requisito | 
 | | Dentro de la carpeta, crea el archivo EJS donde crearás la vista. | Codificador del requisito |
