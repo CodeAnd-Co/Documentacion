@@ -8,7 +8,7 @@ sidebar_position: 1
 **Última actualización:** 23 de mayo de 2025
 **Versión:** V2.0
 
-### **Proveedores de **
+### **Proveedores de Historias de Usuario**
 
 - **Internos**: Personas dentro de Code & Co.
 - **Externos**: Cliente.
