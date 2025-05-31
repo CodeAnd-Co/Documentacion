@@ -16,12 +16,12 @@ Yo como usuario quiero consultar la página de inicio de sesión de la aplicaci�
   - El sistema debe de permitir a cualquier usuario que tenga instalada la aplicación de escritorio poder consultar la página de inicio de sesión
   - La página de inicio de sesión debe de mostrar el nombre de la aplicación.
   - La página de inicio de sesión debe de mostrar el icono y logo de la aplicación
-  - La página de inicio de sesión debe de contener campo para ingresar correo electronico. 
+  - La página de inicio de sesión debe de contener campo para ingresar correo electrónico. 
   - La página de inicio de sesión debe de contener un campo para ingresar contraseña.
   - La página de inicio de sesión debe de contar con un botón de "Acceder" para entrar a la aplicación.
   - La página de inicio de sesión debe de contar con una leyenda que diga "¿No tienes una cuenta?".
   - La página de inicio de sesión debe de contar con un botón que se llame contáctanos, que muestra los datos de contacto de CNH Mx.
-  - La página de inicio de sesión debe de validar los campos de correo electronico y contraseña dando retroalimentación en forma de alerta.
+  - La página de inicio de sesión debe de validar los campos de correo electrónico y contraseña dando retroalimentación en forma de alerta.
 
 ---
 
