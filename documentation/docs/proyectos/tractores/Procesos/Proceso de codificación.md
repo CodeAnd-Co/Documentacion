@@ -77,6 +77,10 @@ sidebar_position: 1
 | | Si las pruebas arrojan correcciones, corrígelas y haz push a la rama. | Codificador del requisito |
 |**Revisa la definición de DONE** | Repasa la definición de DONE y verifica que se cumpla por completo, si cumple con la definición sigue el proceso de RTM. | Codificador del requisito |
 
+### Actualización de Checklists
+- La **checklist de codificación** se actualizará **cada lunes**, incorporando los defectos más frecuentemente registrados en el Defect Log.
+- Al **cierre de cada iteración**, se actualizarán las **checklists de análisis y diseño** con base en los defectos detectados durante el ciclo.
+- El objetivo de estas actualizaciones periódicas es **abordar de manera directa las áreas de oportunidad** del equipo y fomentar la mejora continua.
 
 
 ### Notas
@@ -87,7 +91,6 @@ sidebar_position: 1
     - Si en tu script quieres implementar la carga de otro módulo o vista, usar la función de `ipcRenderer.invoke('precargarEJS')`.
         - Añadir `const { ipcRenderer } = require('electron')`.
         - Si quieres ver un ejemplo puedes consultar barraLateral.js.
-- Cada cierto tiempo se deben actualizar las checklists de acuerdo con nuestro defectlog, así atacando directamente las áreas de oportunidad más comunes que tenemos
 
 ---
 
@@ -101,3 +104,4 @@ sidebar_position: 1
 | **2.2** | Añadir pasos para revisar componentes | 26/05/2025 | Diego Fuentes |
 | **3.0** | Refactorización del proceso | 29/5/2025 | Juan Pablo Chávez Leal |
 | **3.1** | Corrección de errores ortográficos en el proceso | 30/5/2025 | Juan Pablo Chávez Leal |
+| **3.2** | Añadir al proceso la actualización de Checklists | 31/5/2025 | Rommel Toledo C. |
