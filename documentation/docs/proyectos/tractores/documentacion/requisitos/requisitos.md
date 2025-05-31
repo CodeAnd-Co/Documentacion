@@ -75,6 +75,7 @@ Los requisitos funcionales del sistema describen una variedad de acciones que lo
 - [**RF37**](RF37.md):Usuario elimina el Excel cargado.\ `Done`
 - [**RF38**](RF38.md):Usuario sustituye el Excel cargado.\ `Done`
 - [**RF39**](RF39.md):Usuario inicia sesión con Microsoft.\
+- [**RF70](RF70.md): Usuario carga fórmula. \ `Ready`
 
 ---
 
