@@ -5,8 +5,6 @@ sidebar_position: 7
 
 # HU3: Usuario consulta el módulo de análisis.
 
-**Última actualización:** 31 de mayo de 2025
-
 ### Historia de Usuario
 
 Yo como usuario de la aplicación de escritorio Harvester quiero acceder al módulo de análisis donde podré realizar reportes, visualizar gráficos, agregar tarjetas de texto y agregar tarjetas de gráfica para poder interpretar los datos del Excel cargado. 

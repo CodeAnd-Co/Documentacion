@@ -5,8 +5,6 @@ sidebar_position: 3
 
 # HU2: Usuario registrado inicia sesión.
 
-**Última actualización:** 31 de mayo de 2025
-
 ### Historia de Usuario
 
 Yo como empleado de CNH y usuario de la aplicación harvester quiero ingresar con mis credenciales correspondientes a la aplicación de escritorio para pdoer acceder a las funcionalidades que hay dentro del sistema.

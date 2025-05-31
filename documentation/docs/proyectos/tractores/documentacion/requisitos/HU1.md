@@ -5,8 +5,6 @@ sidebar_position: 2
 
 # HU1: Usuario consulta página de inicio de sesión.
 
-**Última actualización:** 30 de mayo de 2025
-
 ### Historia de Usuario
 
 Yo como usuario quiero consultar la página de inicio de sesión de la aplicación de escritorio de Harvester para tener conocimiento de la aplicación a la que estoy entrando. 
