@@ -26,56 +26,57 @@ sidebar_position: 1
 
 ## Proceso
 
-| Fase | Descripción | Responsable | 
+| **Fase** | **Descripción** | **Responsable** |
 |------|-------------|-------------|
-| **Verificar el análisis** | Llenar la [checklist de análisis](https://docs.google.com/document/d/1dFEBxS_WGWtgCAAW1Sp57Vlgj06-X-od6HbNy2XnZKk/edit?tab=t.0#heading=h.fhau7kjl46pa), si hay un punto faltante llevar a cabo las acciones correctivas para asegurar que el análisis es correcto. Esta checklist debe estar llena en la carpeta 'Checklists Tractech'.| Codificador del requisito |
-| **Seguir el proceso de RTM** | Abrir y seguir el proceso de RTM. | Codificador del requisito |
-| **Verificación del diseño** | Abrir el requisito a programar en el docusaurus y verificar su diseño. | Codificador del requisito |
-| | Rehacer el diagrama de secuencia a papel para verificar qué tan útil es su diseño actual. | Codificador del requisito |
-| | Llenar la [checklist de diseño](https://docs.google.com/document/d/17iPu9h6KR80SHw6kBhKG3mf926_mbkIipx1Aq1sfD2A/edit?tab=t.0#heading=h.fhau7kjl46pa) y crear una copia en la carpeta de 'Checklists TracTech'. | Codificador del requisito | 
-| **Seguir el proceso de RTM** | Abrir y seguir el proceso de RTM. | Codificador del requisito |
-| **Preparación para la codificación** | Mantén abierto el diagrama de secuencia del requisito para basarte de él a la hora de programar el requerimiento. | Codificador del requisito |
-| **Inicio de codificación** | Asegúrate de estar en la rama de develop, en el repositorio pertiente ejecutando: ```git branch```, si no estás en develop: ```git checkout develop```, después ejecuta: ```git pull origin``` y ```npm i```, finalmente ejecuta:  ```git checkout -b <NombreDeLaRama>```, recuerda seguir la estrategia de ramas. | Codificador del requisito |
-| **Selección de pareja** | En el único caso de que no exista persona con la que colaborar, se puede iniciar la codificación solo. De lo contrario, es obligatorio hacer pair programming para el desarrollo de historias de usuario. | Codificador del requisito|
-| **Codificación del backend desacoplado.** | Verifica que en ```app.js``` esté definida la ruta del módulo de tu requisito. | Codificador del requisito |
-| Si no está la ruta: | **1.** Verifica que la carpeta del módulo correspondiente exista.  | Codificador del requisito |
-| Si no está la ruta: | **2.** Verifica que dentro de la carpeta del módulo existan las carpetas (controladores, data y rutas).| Codificador del requisito |
-| | **3.** Asegúrate de que dentro de la carpeta 'data' exista la carpeta 'repositorios'. | Codificador del requisito |
-| | **4.** Verifica que exista el archivo de índice y el de la ruta de tu requisito dentro de la carpeta 'rutas'. | Codificador del requisito. Además de incluir en el archivo de índice la dirección al archivo de ruta del requisito  |
-| | En cualquiera de los casos anteriores, crea el archivo teniendo en cuenta: el patrón de diseño, el estándar para nombrar los archivos y la práctica de SOLID. | Codificador del requisito | 
-| **Codificación** |  En el archivo de rutas de tu requerimiento importa los middlewares que requieras. | Codificador del requisito
-| | Crear el controlador del requerimiento dentro de la carpeta de controladores y agregarlo al archivo de rutas de tu requerimiento. | Codificador del requisito|
-| | Crear el archivo repositorio en la carpeta con el mismo nombre del módulo pertinente. Asegúrate de hacer todas las validaciones congruentes en este archivo. | Codificador del requisito |
-| | Crear el archivo modelo del requerimiento, en el que solo debe incluirse la consulta a la base de datos. | Codificador del requisito|
-| **Seguir el proceso de RTM** | Abrir y seguir el proceso de RTM. | Codificador del requisito |
-| **Verificaciones y PR** | Revisa el código con la checklist  de codificación propia. | Codificador del requisito|
-| | Revisa el código con la checklist de codificación del equipo. | Codificador del requisito|
-| | Abre el PR asegurándote de que la rama objetivo sea develop. | Codificador del requisito|
-| | Notifica a alguien más del equipo para que diseñe y ejecute las pruebas de tu requerimiento. | Codificador del requisito |
-| | Si las pruebas arrojan correcciones, corrígelas y haz push a la rama. | Codificador del requisito |
-|**Revisa la definición de DONE** | Repasa la definición de DONE y verifica que se cumpla por completo, si cumple con la definición sigue el proceso de RTM. | Codificador del requisito | 
-| **Preparación del ambiente** | Repasa la fase de '**Inicio de codificación**'. | Codificador del requisito |
-| **Codificación del backend local** | Si necesitas comunicarte con el backend desacoplado debes: | Codificador del requisito|
-|**Comunicación** | Tener el archivo constantes.js actualizado en la carpeta 'scripts' en su primer nivel. | Codificador del requisito |
-| | Tener en la carpeta 'domain' una carpeta 'API' de tu módulo. | Codificador del requisito | 
-| | En esa carpeta 'API' debes crear tu archivo moduloAPI.js en donde debes agregar las funciones que incorporen las llamadas al servidor. | Codificador del requisito |
-| | Conecta el controlador con la ruta de la petición del servidor. | Codificador del requisito |
-| **Casos de uso** | Ingresa a la carpeta 'casosUso' y verifica si la carpeta del módulo existe, crea el archivo que contendrá toda la lógica de negocio que simula al controlador del backend, pero en la aplicación local. |  Codificador del requisito |
-| **Preparación del ambiente** | Repasa la fase de '**Inicio de codificación**'. | Codificador del requisito |
-| **Codificación del front-end** | Ir a la carpeta de "paginas"  que se encuentra en framework > vistas. Crea la carpeta de tu módulo ahí. | Codificador del requisito | 
-| | Dentro de la carpeta, crea el archivo EJS donde crearás la vista. | Codificador del requisito |
-| | Identifica los componentes que debes utilizar para desarrollar la vista y checar su existencia. Si necesitas un componente que no existe aún, avisa en el grupo para confirmar que no existe y pasar a desarrolarlo. | Codificador del requisito | 
-| | Dentro del archivo EJS añade el encabezado.ejs y piePagina.ejs que estan ubicados en framework > vistas > includes. Crea el EJS usando variables para cargar cosas como las rutas. | Codificador del requisito | 
-| | Abre la carpeta scripts en framework > utils, y crear el archivo con el código de js que correrá en el frontEnd y manejará el DOM o body. No debes incluir lógica más allá de lectura, escritura y asignación de funciones y valores de los elementos HTML. | Codificador del requisito |
-| | Si tienes lógica que NO interactúa con elementos HTML, debes agregarlo en el backend local (Consulta la fase de Codificación de backend local, específicamente el archivo de casoUso). | Codificador del requisito |
-| | Conecta el controlador a la vista del usuario a tráves del archivo de casoUso.| Codificador del requisito|
-| **Seguir el proceso de RTM** | Abrir y seguir el proceso de RTM. | Codificador del requisito |
-| **Verificaciones y PR** | Revisa el código con la checklist  de codificación propia. | Codificador del requisito|
-| | Revisa el código con la checklist de codificación del equipo. | Codificador del requisito|
-| | Abre el PR asegurándote de que la rama objetivo sea develop. | Codificador del requisito|
-| | Notifica a alguien más del equipo para que diseñe y ejecute las pruebas de tu requerimiento. | Codificador del requisito |
-| | Si las pruebas arrojan correcciones, corrígelas y haz push a la rama. | Codificador del requisito |
-|**Revisa la definición de DONE** | Repasa la definición de DONE y verifica que se cumpla por completo, si cumple con la definición sigue el proceso de RTM. | Codificador del requisito |
+| **Verificar el análisis** | Abre la [checklist de análisis](https://docs.google.com/document/d/1dFEBxS_WGWtgCAAW1Sp57Vlgj06-X-od6HbNy2XnZKk/edit?tab=t.0#heading=h.fhau7kjl46pa). Revísala punto por punto y, si falta algo, haz las correcciones necesarias para asegurar que el análisis esté completo. Guarda la checklist en la carpeta 'Checklists Tractech'. | Codificador del requisito |
+| **Seguir el proceso de RTM** | Abre y sigue el proceso de RTM. | Codificador del requisito |
+| **Verificación del diseño** | Abre el requisito en Docusaurus y verifica su diseño. | Codificador del requisito |
+|  | Dibuja el diagrama de secuencia a mano (en papel) para validar si el diseño es útil. | Codificador del requisito |
+|  | Llena la [checklist de diseño](https://docs.google.com/document/d/17iPu9h6KR80SHw6kBhKG3mf926_mbkIipx1Aq1sfD2A/edit?tab=t.0#heading=h.fhau7kjl46pa) y crea una copia en la carpeta 'Checklists Tractech'. | Codificador del requisito |
+| **Seguir el proceso de RTM** | Una vez te asegures de que el diagrama de secuencia cumpla con la checklist de diseño, añádelo al documento de la historia siguiendo el Proceso 11 de Trazabilidad.. | Codificador del requisito |
+| **Preparación para la codificación** | Mantén abierto el diagrama de secuencia mientras programas el requerimiento. | Codificador del requisito |
+| **Inicio de codificación** | Verifica que estás en la rama develop: ejecuta `git branch`. Si no estás en develop: `git checkout develop`. Luego ejecuta: `git pull origin`, `npm i`, y finalmente: `git checkout -b <NombreDeLaRama>`. Sigue la estrategia de ramas. | Codificador del requisito |
+| **Selección de pareja** | Si no tienes con quién colaborar, puedes codificar solo. De lo contrario, es obligatorio hacer pair programming. | Codificador del requisito |
+| **Codificación del backend desacoplado.** | Verifica que en `app.js` esté definida la ruta del módulo de tu requisito. | Codificador del requisito |
+| Si no está la ruta: | **1.** Verifica que exista la carpeta del módulo correspondiente. | Codificador del requisito |
+| Si no está la ruta: | **2.** Asegúrate de que existan las carpetas 'controladores', 'data' y 'rutas'. | Codificador del requisito |
+|  | **3.** Revisa que dentro de 'data' exista la carpeta 'repositorios'. | Codificador del requisito |
+|  | **4.** Verifica que en 'rutas' estén el archivo de índice y el archivo de tu ruta. Agrega tu ruta al índice. | Codificador del requisito |
+|  | Si falta algo, créalo siguiendo el patrón de diseño, la convención de nombres y los principios SOLID. | Codificador del requisito |
+| **Codificación** | En el archivo de rutas, importa los middlewares necesarios. | Codificador del requisito |
+|  | Crea el controlador y agrégalo al archivo de rutas. | Codificador del requisito |
+|  | Crea el archivo repositorio en la carpeta correspondiente e incluye todas las validaciones necesarias. | Codificador del requisito |
+|  | Crea el archivo modelo con la consulta a base de datos. | Codificador del requisito |
+| **Seguir el proceso de RTM** | Abre y sigue el proceso de RTM. | Codificador del requisito |
+| **Verificaciones y PR** | Revisa tu código con la checklist de codificación propia. | Codificador del requisito |
+|  | Revisa el código con la checklist de codificación del equipo. | Codificador del requisito |
+|  | Abre el PR y asegúrate de que la rama objetivo sea develop. | Codificador del requisito |
+|  | Notifica a alguien del equipo para que diseñe y ejecute las pruebas. | Codificador del requisito |
+|  | Si las pruebas fallan, corrige los errores y haz push a la rama. | Codificador del requisito |
+| **Revisa la definición de DONE** | Asegúrate de que todo se cumpla según la definición de DONE. Si es así, continúa con RTM. | Codificador del requisito |
+| **Preparación del ambiente** | Vuelve a repasar la fase de "Inicio de codificación". | Codificador del requisito |
+| **Codificación del backend local** | Si necesitas comunicarte con el backend desacoplado, sigue los pasos siguientes. | Codificador del requisito |
+| **Comunicación** | Verifica que `constantes.js` esté actualizado en la carpeta 'scripts'. | Codificador del requisito |
+|  | Crea una carpeta 'API' de tu módulo dentro de 'domain'. | Codificador del requisito |
+|  | Dentro de 'API', crea `moduloAPI.js` con las funciones que hacen llamadas al servidor. | Codificador del requisito |
+|  | Conecta tu controlador con la ruta de la petición al servidor. | Codificador del requisito |
+| **Casos de uso** | En la carpeta 'casosUso', asegúrate de que exista la carpeta del módulo y crea el archivo con la lógica de negocio del backend local. | Codificador del requisito |
+| **Preparación del ambiente** | Vuelve a repasar la fase de "Inicio de codificación". | Codificador del requisito |
+| **Codificación del front-end** | En `framework > vistas > paginas`, crea la carpeta del módulo. | Codificador del requisito |
+|  | Dentro de ella, crea el archivo `.ejs` de la vista. | Codificador del requisito |
+|  | Identifica los componentes necesarios. Si no existen, consulta al grupo y desarróllalos si es necesario. | Codificador del requisito |
+|  | Añade `encabezado.ejs` y `piePagina.ejs` desde `includes`, y usa variables para rutas. | Codificador del requisito |
+|  | En `framework > utils > scripts`, crea el archivo `.js` con la lógica del DOM. Solo debe haber lectura, escritura y funciones HTML. | Codificador del requisito |
+|  | Si tienes lógica que no interactúa con HTML, muévela al backend local en el archivo de caso de uso. | Codificador del requisito |
+|  | Conecta el controlador con el caso de uso y este con la vista. | Codificador del requisito |
+| **Seguir el proceso de RTM** | Abre y sigue el proceso de RTM. | Codificador del requisito |
+| **Verificaciones y PR** | Revisa tu código con la checklist propia. | Codificador del requisito |
+|  | Revisa tu código con la checklist del equipo. | Codificador del requisito |
+|  | Abre el PR asegurándote de apuntar a la rama develop. | Codificador del requisito |
+|  | Notifica al equipo para que prueben tu requerimiento. | Codificador del requisito |
+|  | Corrige los errores y haz push a la rama. | Codificador del requisito |
+| **Revisa la definición de DONE** | Verifica que todo esté completo. Si lo está, continúa con RTM. | Codificador del requisito |
+
 
 ### Actualización de Checklists
 - La **checklist de codificación** se actualizará **cada lunes**, incorporando los defectos más frecuentemente registrados en el Defect Log.
@@ -105,3 +106,4 @@ sidebar_position: 1
 | **3.0** | Refactorización del proceso | 29/5/2025 | Juan Pablo Chávez Leal |
 | **3.1** | Corrección de errores ortográficos en el proceso | 30/5/2025 | Juan Pablo Chávez Leal |
 | **3.2** | Añadir al proceso la actualización de Checklists | 31/5/2025 | Rommel Toledo C. |
+| **4.0** | Reescritura completa del proceso | 31/5/2025 | Rommel Toledo C. |
