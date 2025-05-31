@@ -75,7 +75,7 @@ Los requisitos funcionales del sistema describen una variedad de acciones que lo
 - [**RF37**](RF37.md):Usuario elimina el Excel cargado.\ `Done`
 - [**RF38**](RF38.md):Usuario sustituye el Excel cargado.\ `Done`
 - [**RF39**](RF39.md):Usuario inicia sesión con Microsoft.\
-- [**RF70](RF70.md): Usuario carga fórmula. \ `Ready`
+- [**RF70**](RF70.md): Usuario carga fórmula. \ `Ready`
 
 ---
 
@@ -266,5 +266,5 @@ Los **mockups** de la interfaz están disponibles en el siguiente enlace:
 | ----------------------- | ------------------------------------------------------- | ------- |
 | Juan Pablo Chávez       | Adición de requisitos no-funcionales                    | V1.1    |
 | Daniel Queijeiro Albo   | Adición de requisitos de información, reglas de negocio | V2.0    |
-| Emiliano Gomez Gonzalez | Agrega el link de lso mockups                           | V2.1    |
-  | **2.2**   | Adición del mapa de procesos. | 30/05/2025  | Juan Pablo Chávez Leal   |
+| Emiliano Gomez Gonzalez | Agrega el link de los mockups                           | V2.1    |
+| Juan Pablo Chávez Leal  | Adición del mapa de procesos.                           | V2.2    | 
