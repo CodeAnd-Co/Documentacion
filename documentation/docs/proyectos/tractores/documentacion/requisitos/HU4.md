@@ -1,6 +1,6 @@
 ---
 title: "HU4: Usuario consulta datos disponibles."  
-sidebar_position: 4
+sidebar_position: 5
 ---
 
 # HU4: Usuario consulta datos disponibles.
