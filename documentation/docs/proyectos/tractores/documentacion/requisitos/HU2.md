@@ -1,9 +1,9 @@
 ---
-title: "RF2: Usuario registrado inicia sesión."  
+title: "HU2: Usuario registrado inicia sesión."  
 sidebar_position: 3
 ---
 
-# RF2: Usuario registrado inicia sesión.
+# HU2: Usuario registrado inicia sesión.
 
 **Última actualización:** 31 de mayo de 2025
 
@@ -40,7 +40,7 @@ Yo como empleado de CNH y usuario de la aplicación harvester quiero ingresar co
 ---
 ### Pruebas Unitarias 
 
-#### [Pruebas de la RF](https://docs.google.com/spreadsheets/d/1W-JW32dTsfI22-Yl5LydMhiu-oXHH_xo3hWvK6FHeLw/edit?gid=710795973#gid=710795973)
+#### [Pruebas de la HU](https://docs.google.com/spreadsheets/d/1W-JW32dTsfI22-Yl5LydMhiu-oXHH_xo3hWvK6FHeLw/edit?gid=710795973#gid=710795973)
 
 ---
 

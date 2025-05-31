@@ -1,9 +1,9 @@
 ---
-title: "RF37: Usuario modifica tipo de gráfica en reporte."  
-sidebar_position: 38
+title: "HU3: Usuario modifica tipo de gráfica en reporte."  
+sidebar_position: 4
 ---
 
-# RF37: Usuario modifica tipo de gráfica en reporte.
+# HU3: Usuario modifica tipo de gráfica en reporte.
 
 **Última actualización:** 31 de mayo de 2025
 
@@ -39,7 +39,7 @@ Yo como usuario de la aplicación de escritorio de Harvester quiero poder modifi
 
 ### Pruebas Unitarias 
 
-#### [Pruebas de la RF](https://docs.google.com/spreadsheets/d/1W-JW32dTsfI22-Yl5LydMhiu-oXHH_xo3hWvK6FHeLw/edit?gid=1382813747#gid=1382813747)
+#### [Pruebas de la HU](https://docs.google.com/spreadsheets/d/1W-JW32dTsfI22-Yl5LydMhiu-oXHH_xo3hWvK6FHeLw/edit?gid=1382813747#gid=1382813747)
 
 ---
 
