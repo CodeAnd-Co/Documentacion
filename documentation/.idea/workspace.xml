@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="32dcb52d-e72d-4e2e-befc-011a6748fdce" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/versioned_docs/version-1,0/proyectos/textiles/documentacion/stack-tecnologico-Textiles.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="32dcb52d-e72d-4e2e-befc-011a6748fdce" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,7 +40,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "docs/DA__no__ref__diagrama-de-stack",
+    "git-widget-placeholder": "docs/DA__no__ref__actualizar-RF9-textiles",
     "last_opened_file_path": "C:/Users/die_g/OneDrive/Desktop/CodeCo/Documentacion/documentation",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -69,7 +66,6 @@
       <updated>1748533104315</updated>
       <workItem from="1748533106009" duration="7055000" />
       <workItem from="1748560053193" duration="140000" />
-      <workItem from="1748632338744" duration="1697000" />
     </task>
     <servers />
   </component>
