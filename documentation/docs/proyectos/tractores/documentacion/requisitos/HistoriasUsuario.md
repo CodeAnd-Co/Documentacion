@@ -5,9 +5,6 @@ sidebar_position: 1
 
 # Historias de Usuario
 
-**Última actualización:** 23 de mayo de 2025
-**Versión:** V2.0
-
 ### **Proveedores de Historias de Usuario**
 
 - **Internos**: Personas dentro de Code & Co.
