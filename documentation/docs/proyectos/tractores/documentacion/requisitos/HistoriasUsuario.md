@@ -33,10 +33,10 @@ Los requisitos funcionales del sistema describen una variedad de acciones que lo
 
 ### Requisitos Específicos del sistema.
 
-- [**RF1**](RF1.md): Usuario consulta página de inicio de sesión.\ `Done`
-- [**RF2**](RF2.md): Usuario registrado inicia sesión.\ `Done`
-- [**RF3**](RF3.md): Usuario cierra sesión\ `Done`
-- [**RF4**](RF4.md): Usuario consulta módulo de análisis.\ `Done`
+- [**HU1**](./HU1.md): Usuario consulta página de inicio de sesión.\ `Done`
+- [**HU2**](./HU2.md): Usuario registrado inicia sesión.\ `Done`
+- [**HU3**](./HU3.md): Usuario consulta módulo de análisis.\ `Done`
+- [**RF4**](RF4.md): 
 - [**RF5**](RF5.md): Usuario consulta los ranchos disponibles.\ `Eliminado`
 - [**RF6**](RF6.md): Usuario selecciona el rancho a analizar.\ `Eliminado`
 - [**RF7**](RF7.md): Usuario modifica selección de rancho a analizar\ `Eliminado`
