@@ -39,7 +39,7 @@ sidebar_position: 1
 | **Selección de pareja** | En el único caso de que no exista persona con la que colaborar, se puede iniciar la codificación solo. De lo contrario, es obligatorio hacer pair programming para el desarrollo de historias de usuario. | Codificador del requisito|
 | **Codificación del backend desacoplado.** | Verifica que en ```app.js``` esté definida la ruta del módulo de tu requisito. | Codificador del requisito |
 | Si no está la ruta: | **1.** Verifica que la carpeta del módulo correspondiente exista.  | Codificador del requisito |
-| Si no está la ruta: | **2.** Verifica que dentro de la carpeta del módulo existan las carpetas (controladores, data y rutas).| Codificador del requisito |
+| | **2.** Verifica que dentro de la carpeta del módulo existan las carpetas (controladores, data y rutas).| Codificador del requisito |
 | | **3.** Asegúrate de que dentro de la carpeta 'data' exista la carpeta 'repositorios'. | Codificador del requisito |
 | | **4.** Verifica que exista el archivo de índice y el de la ruta de tu requisito dentro de la carpeta 'rutas'. | Codificador del requisito. Además de incluir en el archivo de índice la dirección al archivo de ruta del requisito  |
 | | En cualquiera de los casos anteriores, crea el archivo teniendo en cuenta: el patrón de diseño, el estándar para nombrar los archivos y la práctica de SOLID. | Codificador del requisito | 
