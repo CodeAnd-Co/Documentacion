@@ -94,7 +94,7 @@ sequenceDiagram
 |PU-RF13-01|Cargar lista de datos disponible.|Se muestran los datos del tractor de manera ordenada.|
 |PU-RF13-02|Filtrar la información por la categoría.|Solo se muestran los datos de la categoría seleccionada|
 
-- [Pruebas TracTech](https://docs.google.com/spreadsheets/d/1W-JW32dTsfI22-Yl5LydMhiu-oXHH_xo3hWvK6FHeLw/edit?usp=sharing)
+- [Pruebas TracTech HU4](https://docs.google.com/spreadsheets/d/1W-JW32dTsfI22-Yl5LydMhiu-oXHH_xo3hWvK6FHeLw/edit?gid=1089355168#gid=1089355168)
 
 ---
 

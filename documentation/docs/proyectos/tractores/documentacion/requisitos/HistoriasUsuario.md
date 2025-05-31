@@ -33,6 +33,9 @@ Los Historias de Usuario funcionales del sistema describen una variedad de accio
 - [**HU1**](./HU1.md): Usuario consulta página de inicio de sesión.\ `Done`
 - [**HU2**](./HU2.md): Usuario registrado inicia sesión.\ `Done`
 - [**HU3**](./HU3.md): Usuario consulta módulo de análisis.\ `Done`
+- [**HU3**](./HU4.md): Usuario consulta datos disponibles.\ `Done`
+- [**HU3**](./HU26.md): Usuario selecciona datos a comparar.\ `Ready`
+
 
 
 ---
