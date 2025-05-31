@@ -110,7 +110,7 @@ sequenceDiagram
 
 ## **Pruebas**
 
-_<u>[Enlace a pruebas RF2 Consultar Lista de Usuarios.](https://docs.google.com/spreadsheets/d/1NLGwGrGA5PVOEzLaqxa8Ts1D_Ng3QzzqNKWJYUzxD-M/edit?gid=336266899#gid=336266899)</u>_
+_<u>[Enlace a pruebas RF2 Crear Usuarios.](https://docs.google.com/spreadsheets/d/1NLGwGrGA5PVOEzLaqxa8Ts1D_Ng3QzzqNKWJYUzxD-M/edit?gid=336266899#gid=336266899)</u>_
 
 ## **Código**
 
