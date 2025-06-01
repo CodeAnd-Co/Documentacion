@@ -49,7 +49,7 @@ Los Historias de Usuario funcionales del sistema describen una variedad de accio
 
 #### Descripción General
 
-Los Historias de Usuario no funcionales establecen las expectativas en términos de tiempo de respuesta, capacidad de carga, compatibilidad con diferentes plataformas, accesibilidad para los usuarios, disponibilidad, entre otros aspectos. También incluyen criterios de seguridad, como el cifrado de datos y la protección contra ataques, así como la facilidad de mantenimiento y escalabilidad del sistema, asegurando que pueda adaptarse a nuevas necesidades y crecimiento sin comprometer la estabilidad del sistema.
+Los requisitos no funcionales establecen las expectativas en términos de tiempo de respuesta, capacidad de carga, compatibilidad con diferentes plataformas, accesibilidad para los usuarios, disponibilidad, entre otros aspectos. También incluyen criterios de seguridad, como el cifrado de datos y la protección contra ataques, así como la facilidad de mantenimiento y escalabilidad del sistema, asegurando que pueda adaptarse a nuevas necesidades y crecimiento sin comprometer la estabilidad del sistema.
 
 ---
 
@@ -225,6 +225,7 @@ Los **mockups** de la interfaz están disponibles en el siguiente enlace:
 
 | Autor                   | Descripción del cambio                                  | Versión |
 | ----------------------- | ------------------------------------------------------- | ------- |
-| Juan Pablo Chávez       | Adición de Historias de Usuario no-funcionales                    | V1.1    |
-| Daniel Queijeiro Albo   | Adición de Historias de Usuario de información, reglas de negocio | V2.0    |
-| Emiliano Gomez Gonzalez | Agrega el link de lso mockups                           | V2.1    |
+| Juan Pablo Chávez       | Adición de requisitos no-funcionales                    | V1.1    |
+| Daniel Queijeiro Albo   | Adición de requisitos de información, reglas de negocio | V2.0    |
+| Emiliano Gomez Gonzalez | Agrega el link de los mockups                           | V2.1    |
+| Juan Pablo Chávez Leal  | Adición del mapa de procesos.                           | V2.2    | 
