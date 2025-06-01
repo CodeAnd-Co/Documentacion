@@ -1,9 +1,9 @@
 ---
-title: "RF3: Usuario cierra sesión."  
+title: "RF5: Usuario cierra sesión."  
 sidebar_position: 4
 ---
 
-# RF3: Usuario cierra sesión.
+# RF5: Usuario cierra sesión.
 
 **Última actualización:** 07 de marzo de 2025
 

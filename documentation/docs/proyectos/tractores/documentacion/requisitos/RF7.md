@@ -1,9 +1,9 @@
 ---
-title: "RF07: Usuario sustituye el Excel cargado."  
+title: "RF7: Usuario sustituye el Excel cargado."  
 sidebar_position: 47
 ---
 
-# RF07: Usuario sustituye el Excel cargado.
+# RF7: Usuario sustituye el Excel cargado.
 
 ### Historia de Usuario
 

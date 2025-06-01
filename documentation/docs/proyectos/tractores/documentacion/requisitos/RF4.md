@@ -1,9 +1,9 @@
 ---
-title: "HU4: Usuario consulta datos disponibles."  
+title: "RF4: Usuario consulta datos disponibles."  
 sidebar_position: 5
 ---
 
-# HU4: Usuario consulta datos disponibles.
+# RF4: Usuario consulta datos disponibles.
 
 ### Historia de Usuario
 
