@@ -74,10 +74,37 @@ sequenceDiagram
     
     repositorio -->> repositorio: Validar que los datos se esten enviando correctamente  
 
+    alt Datos no validos
+        repositorio -->> controlador: Enviar error con mensaje
+        controlador -->> backend: Enviar mensaje de error y status de error
+        backend -->> api_gateway: Enviar mensaje de error y status de error
+        api_gateway -->> frontend: Enviar mensaje de error y status de error
+        frontend -->> Usuario: Alerta de error de formato de datos invalido
+    end
+    
+    repositorio -->> rds: Consultas para actualizar los datos del rol
+    
+    alt Error al hacer la query
+        rds -->> repositorio: Enviar mensaje de error(error al correr la query o error con base de datos)
+        repositorio -->> controlador: Enviar mensaje de error
+        controlador -->> backend: Enviar mensaje de error y status de error
+        backend -->> api_gateway: Enviar mensaje de error y status de error
+        api_gateway -->> frontend: Enviar mensaje de error y status de error
+        frontend -->> Usuario: Alerta de error de formato de datos invalido
+    end
+    
+    rds -->> repositorio: No regresa Error
+    repositorio -->> controlador: Retorna vacio porque no hay error
+    controlador -->> backend: Envia mensaje de exito con estatus 200
+    backend -->> api_gateway: Envia mensaje de exito con estatus 200
+    api_gateway -->> frontend: Envia mensaje de exito con estatus 200
+    frontend -->> Usuario: Muestra alerta de exito con mensaje de exito
+
+
 ```
 
 ---
 
 ## **Mockup**
 
-> _Descripción_: El mockup representa la interfaz donde el Super Administrador puede modificar la información de un rol y guardar los cambios.
+> _Descripción_: El mockup representa la interfaz donde el Superadministrador puede modificar la información de un rol y guardar los cambios.
