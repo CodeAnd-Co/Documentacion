@@ -1,9 +1,9 @@
 ---
-title: "RF44: Usuario carga Excel a la plataforma."  
-sidebar_position: 45
+title: "RF6: Usuario carga Excel a la plataforma."  
+sidebar_position: 7
 ---
 
-# RF44: Usuario carga Excel a la plataforma.
+# RF6: Usuario carga Excel a la plataforma.
 
 ### Historia de Usuario
 

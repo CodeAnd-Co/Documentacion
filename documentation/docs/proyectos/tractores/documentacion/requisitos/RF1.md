@@ -1,9 +1,9 @@
 ---
-title: "HU1: Usuario consulta página de inicio de sesión."  
+title: "RF1: Usuario consulta página de inicio de sesión."  
 sidebar_position: 2
 ---
 
-# HU1: Usuario consulta página de inicio de sesión.
+# RF1: Usuario consulta página de inicio de sesión.
 
 ### Historia de Usuario
 
@@ -40,7 +40,7 @@ Yo como usuario quiero consultar la página de inicio de sesión de la aplicaci�
 
 ### Pruebas Unitarias 
 
-#### [Pruebas de la HU](https://docs.google.com/spreadsheets/d/1W-JW32dTsfI22-Yl5LydMhiu-oXHH_xo3hWvK6FHeLw/edit?gid=1905076093#gid=1905076093)
+#### [Pruebas de la RF](https://docs.google.com/spreadsheets/d/1W-JW32dTsfI22-Yl5LydMhiu-oXHH_xo3hWvK6FHeLw/edit?gid=1905076093#gid=1905076093)
 
 ---
 
