@@ -24,23 +24,30 @@ Yo como usuario quiero cargar archivos Excel a la plataforma para importar y ana
 ```mermaid
 sequenceDiagram
     actor Usuario
-    participant vistaInicio as moduloInicio.html
-    participant utilInicio as moduloInicio.js
+    participant vistaInicio as inicio.ejs
+    participant utilInicio as seleccionarArchivo.js
     participant casoUso as cargarExcel.js
 
-    Usuario->>vistaInicio: /moduloInicio.html
+    Usuario->>vistaInicio: /inicio.ejs
     activate Usuario
     activate vistaInicio
     vistaInicio->>utilInicio: addEventListener('click')
     deactivate vistaInicio
     activate utilInicio
-    utilInicio->>casoUso: botonCargar()
+    utilInicio-)casoUso: botonCargar()
     activate casoUso
     casoUso-->>utilInicio: leerExcel(archivo)
     deactivate casoUso
     alt Caso Exitoso
         rect Lightgreen
         utilInicio-->>vistaInicio: response(exito)
+        activate vistaInicio
+        vistaInicio-->>Usuario: HTML
+        deactivate vistaInicio
+        end
+    else Archivo supera los 10 Mb
+        rect Lightcoral
+        utilInicio-->>vistaInicio: response(error)
         activate vistaInicio
         vistaInicio-->>Usuario: HTML
         deactivate vistaInicio
