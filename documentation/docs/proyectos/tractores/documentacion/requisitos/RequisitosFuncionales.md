@@ -42,7 +42,7 @@ Los Requisitos Funcionales funcionales del sistema describen una variedad de acc
 - [**RF10**](./RF10.md): Usuario añade gráfica al reporte.\ `Done`
 - [**RF11**](./RF11.md): Usuario elimina gráfica en reporte.\ `Done`
 - [**RF12**](./RF12.md): Usuario modifica tipo de gráfica en reporte.\ `Done`
-- [**RF13**](./RF13.md): Administrador busca usuario.\
+- [**RF13**](./RF13.md): Administrador busca usuario.\ `Done`
 - [**RF14**](./RF14.md): Administrador crea usuario.\ `Done`
 - [**RF15**](./RF15.md): Administrador consulta usuario.\ `Done`
 - [**RF16**](./RF16.md): Administrador modifica usuario.\ `Done`
@@ -50,15 +50,15 @@ Los Requisitos Funcionales funcionales del sistema describen una variedad de acc
 - [**RF18**](./RF18.md): Usuario añade cuadro de texto al reporte.\ `Done`
 - [**RF19**](./RF19.md): Usuario modifica cuadro de texto del reporte.\ `Done`
 - [**RF20**](./RF20.md): Usuario elimina cuadro de texto del reporte.\ `Done`
-- [**RF21**](./RF21.md): Usuario consulta fórmulas.\
-- [**RF22**](./RF22.md): Usuario guarda fórmula.\
-- [**RF23**](./RF23.md): Usuario elimina fórmula.\
-- [**RF24**](./RF24.md): Usuario define fórmula.\
+- [**RF21**](./RF21.md): Usuario consulta fórmulas.\ `Done`
+- [**RF22**](./RF22.md): Usuario guarda fórmula.\ `Done`
+- [**RF23**](./RF23.md): Usuario elimina fórmula.\ `Done`
+- [**RF24**](./RF24.md): Usuario define fórmula.\ `Done`
 - [**RF25**](./RF25.md): Usuario selecciona parámetros de fórmula.\
 - [**RF26**](./RF26.md): Usuario selecciona datos a comparar.\ `Ready`
 - [**RF27**](./RF27.md): Usuario es notificado si se carga algún archivo incorrecto.\ `Done`
-- [**RF28**](./RF28.md): Usuario aplica fórmula.\
-- [**RF29**](./RF29.md): Usuario modifica fórmula.\
+- [**RF28**](./RF28.md): Usuario aplica fórmula.\ `Done`
+- [**RF29**](./RF29.md): Usuario modifica fórmula.\ `Done`
 - [**RF30**](./RF30.md): Usuario carga fórmula.\
 - [**RF31**](./RF31.md): Usuario retira fórmula.\
 - [**RF32**](./RF32.md): Usuario modifica parámetros de fórmula.\
