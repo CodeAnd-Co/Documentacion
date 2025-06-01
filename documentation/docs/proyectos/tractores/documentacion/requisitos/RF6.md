@@ -1,9 +1,9 @@
 ---
-title: "HU6: Usuario carga Excel a la plataforma."  
+title: "RF6: Usuario carga Excel a la plataforma."  
 sidebar_position: 7
 ---
 
-# HU6: Usuario carga Excel a la plataforma.
+# RF6: Usuario carga Excel a la plataforma.
 
 ### Historia de Usuario
 

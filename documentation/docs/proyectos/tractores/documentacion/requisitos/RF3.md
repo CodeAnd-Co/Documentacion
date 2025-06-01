@@ -1,9 +1,9 @@
 ---
-title: "HU3: Usuario consulta el módulo de análisis."  
-sidebar_position: 7
+title: "RF3: Usuario consulta el módulo de análisis."  
+sidebar_position: 4
 ---
 
-# HU3: Usuario consulta el módulo de análisis.
+# RF3: Usuario consulta el módulo de análisis.
 
 ### Historia de Usuario
 
@@ -106,7 +106,7 @@ sequenceDiagram
 
 ### Pruebas Unitarias 
 
-#### [Pruebas de la HU](https://docs.google.com/spreadsheets/d/1W-JW32dTsfI22-Yl5LydMhiu-oXHH_xo3hWvK6FHeLw/edit?gid=753403593#gid=753403593)
+#### [Pruebas de la RF](https://docs.google.com/spreadsheets/d/1W-JW32dTsfI22-Yl5LydMhiu-oXHH_xo3hWvK6FHeLw/edit?gid=753403593#gid=753403593)
 
 ---
 
