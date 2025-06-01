@@ -1,23 +1,16 @@
 ---
-title: "RF7: Usuario consulta los ranchos disponibles."  
+title: "RF7: Usuario sustituye el Excel cargado."  
 sidebar_position: 8
 ---
 
-# RF7: Usuario consulta los ranchos disponibles.
-
-**Última actualización:** 03 de abril de 2025
+# RF7: Usuario sustituye el Excel cargado.
 
 ### Historia de Usuario
 
-Yo como usuario quiero consultar una lista completa de ranchos disponibles en el sistema, con opciones de búsqueda y organización clara, para poder encontrar rápidamente la información que necesito.
+Yo como usuario quiero sustituir el excel cargado para actualizar la información del reporte.
 
   **Criterios de Aceptación:**
-  - Mostrar los ranchos disponibles en un formato tabla.
-  - La lista debe cargarse en menos de 2 segundos (bajo condiciones normales de red).
-  - Permitir ordenar la lista por Nombre (A-Z / Z-A).
-  - Barra de búsqueda: Permitir buscar ranchos por nombre (búsqueda parcial, ej.: "San" → "San Miguel").
-  - Si no hay ranchos disponibles, mostrar un mensaje claro (ej.: "No se encontraron ranchos con los filtros seleccionados").
-  - En caso de error de carga, mostrar un mensaje amigable con opción de reintentar.
+  - El sistema debe mantener el reporte con los mismos datos sin importar el cambio de Excel.
 
 ---
 
@@ -25,18 +18,19 @@ Yo como usuario quiero consultar una lista completa de ranchos disponibles en el
 
 ![Diagrama de Secuencia] 
 
-> *Descripción*: El diagrama de secuencia muestra cómo el usuario solicita ver los ranchos disponibless y el sistema responde con la información indicada
+> *Descripción*: El diagrama de secuencia muestra cómo el usuario interactúa con el sistema para cerrar sesión, detallando los pasos de solicitud de datos, validación y confirmación.
+
 ---
 
 ### Mockup
 
 ![Mockup]
 
-> *Descripción*: El mockup representa la interfaz del sistema donde se enlistan los ranchos disponibles en una forma de menú dropdown.
+> *Descripción*: El mockup representa la interfaz del sistema donde el usuario puede cerrar sesión. Muestra los campos requeridos y los botones de acción disponibles.
 
 ---
 
 ### Pruebas Unitarias 
 | ID Prueba | Descripción | Resultado Esperado |
 |-----------|-------------|--------------------|
-|PU-RF7-01|Cargar la lista de ranchos disponibles.|Se muestra el nombre de todos los ranchos disponibles para analizar.|
+|PU-RF46-01|Sustituir archivo|El archivo se cambia sin afectar el reporte|

@@ -1,21 +1,17 @@
 ---
-title: "RF9: Usuario modifica seleccion de rancho a analizar."  
+title: "RF9: Usuario descarga PDF del reporte."  
 sidebar_position: 10
 ---
 
-# RF9: Usuario modifica selección de rancho a analizar.
+# RF9: Usuario descarga pdf del reporte.
 
 ### Historia de Usuario
 
-Yo como usuario quiero cambiar el rancho seleccionado para poder analizar los diferentes tractores que están asignados a este rancho seleccionado.
-
-  **Precondiciones:**
-  - Se consultaron los ranchos.
-  - Los ranchos dispobibles se muestran en un menú desplegable.
+Yo como usuario quiero descargar el reporte en formato PDF para compartirlo o almacenarlo en el dispositivo en el que se tenga descargada la aplicación
 
   **Criterios de Aceptación:**
-  - El usuario debe poder modificar la selección del rancho.
-  - Al cambiar el rancho, el sistema debe de actualizar los tractores asignados a este rancho.
+  - El usuario debe de poder descargar el reporte en formato PDF desde la interfaz del sistema.
+  - El PDF debe de incluir toda la información visible y clara del reporte.
 
 ---
 
@@ -23,21 +19,21 @@ Yo como usuario quiero cambiar el rancho seleccionado para poder analizar los di
 
 ![Diagrama de Secuencia] 
 
-> *Descripción*: El diagrama de secuencia muestra el proceso de cambio de selección de rancho y la actualización de los tractores en la pantalla.
-
----
+> *Descripción*: El diagrama de secuencia muestra cómo el usuario solicita la descarga del reporte y el sistema genera y entrega el PDF del reporte.
 
 ### Mockup
 
 ![Mockup]
 
-> *Descripción*: El mockup representa la interfaz donde se muestra la modificación de la selección del rancho
-
----
+> *Descripción*: El mockup representa la interfaz del sistema donde el usuario puede seleccionar la opción para descargar el archivo PDF del reporte.
 
 ### Pruebas Unitarias 
 | ID Prueba | Descripción | Resultado Esperado |
 |-----------|-------------|--------------------|
-|PU-RF9-01|Cambiar el rancho seleccionado.|Se actualizan los tractores asignados al nuevo rancho seleccionado|
-|PU-RF-02|Verificar actualización.|La información se refresca sin necesidad de recargar la aplicación|
-|PU-RF-03|Comprobar persistencia.|Al navegar entre secciones se mantiene el nuevo rancho seleccionado.|
+|PU-RF25-01|Descargar el reporte.|Se descarga el archivo PDF mostrando un mensaje de éxito|
+|PU-RF25-02|Verificar contenido.|El PDF contiene toda la información del reporte visible.|
+
+---
+
+### Pull Request
+[https://github.com/CodeAnd-Co/App-Local-TracTech/pull/27](https://github.com/CodeAnd-Co/App-Local-TracTech/pull/27)

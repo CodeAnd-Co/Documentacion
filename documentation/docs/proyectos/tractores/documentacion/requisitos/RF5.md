@@ -1,22 +1,17 @@
 ---
-title: "RF5: Usuario selecciona modo claro/oscuro."  
+title: "RF3: Usuario cierra sesión."  
 sidebar_position: 6
 ---
 
-# RF5: Usuario selecciona modo claro/oscuro.
-
-**Última actualización:** 03 de abril de 2025
+# RF3: Usuario cierra sesión.
 
 ### Historia de Usuario
 
-Yo como usuario quiero cambiar entre el modo claro y oscuro del sistema, y que mi elección se mantenga incluso al reiniciar la aplicación, para tener una experiencia visual consistente y personalizada.
+Yo como usuario quiero cerrar sesión en el sistema de manera segura termino de utilizar la aplicación de escritorio, asegurando que no se puede accede a mis datos sin mis credenciales.
 
   **Criterios de Aceptación:**
-  - El sistema debe mostrar una opción en la configuración para alternar entre modo claro y modo oscuro.
-  - El cambio debe aplicarse inmediatamente al seleccionar la opción (sin requerir reinicio).
-  - La selección del tema debe guardarse automáticamente en las preferencias del usuario.
-  - Al cerrar y reabrir la aplicación, el sistema debe cargar el último tema seleccionado.
-  - Todos los componentes de la interfaz (botones, textos, fondos) deben adaptarse al tema activo sin errores (ej.: texto ilegible, contraste insuficiente).
+  - El sistema debe garantizar que una vez el usuario cierre sesión ni el sistema ni los datos del usuario sean accesibles.
+  - Al cerrar sesión, el sistema debe redirigir al usuario a la página de inicio de sesión.
 
 ---
 
@@ -24,7 +19,7 @@ Yo como usuario quiero cambiar entre el modo claro y oscuro del sistema, y que m
 
 ![Diagrama de Secuencia] 
 
-> *Descripción*: El diagrama de secuencia muestra cómo el usuario cambia el modo de visualización.
+> *Descripción*: El diagrama de secuencia muestra cómo el usuario interactúa con el sistema para cerrar sesión, detallando los pasos de solicitud de datos, validación y confirmación.
 
 ---
 
@@ -32,13 +27,17 @@ Yo como usuario quiero cambiar entre el modo claro y oscuro del sistema, y que m
 
 ![Mockup]
 
-> *Descripción*: El mockup muestra la interfaz con la opción de cambiar el modo claro/oscuro
+> *Descripción*: El mockup representa la interfaz del sistema donde el usuario puede cerrar sesión. Muestra los campos requeridos y los botones de acción disponibles.
 
 ---
 
 ### Pruebas Unitarias 
 | ID Prueba | Descripción | Resultado Esperado |
 |-----------|-------------|--------------------|
-|PU-RF5-01|Cambiar a modo oscuro.|La interfaz cambia a modo oscuro y se guarda la preferencia dentro de la aplicación|
-|PU-RF5-02|Cambiar a modo claro.|La interfaz cambia a modoclaro y se guarda la preferencia dentro de la aplicación|
-|PU-RF5-03|Persistencia del modo.|Se mantiene la preferencia del usuario aun cuando salga de la aplicación o se cierre la sesión|
+|PU-RF3-01|Cerrar sesión desde la aplicación.|El usuario es redirigido a la pantalla de inicio de sesión|
+|PU-RF3-02|Intento de acceso después de cerrar sesión.|El sistema requiere autenticación nuevamente.|
+
+---
+
+### Pull Request
+[https://github.com/CodeAnd-Co/App-Local-TracTech/pull/21](https://github.com/CodeAnd-Co/App-Local-TracTech/pull/21)

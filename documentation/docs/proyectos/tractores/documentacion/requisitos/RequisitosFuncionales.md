@@ -1,18 +1,18 @@
 ---
-title: Historias de Usuario
+title: Requisitos Funcionales
 sidebar_position: 1
 ---
 
-# Historias de Usuario
+# Requisitos Funcionales
 
-### **Proveedores de Historias de Usuario**
+### **Proveedores de Requisitos Funcionales**
 
 - **Internos**: Personas dentro de Code & Co.
 - **Externos**: Cliente.
 
-### **Lista de Proveedores de Historias de Usuario**
+### **Lista de Proveedores de Requisitos Funcionales**
 
-| Proveedor                       | Rol     | Autoridad | Tipo de Historias de Usuario             | Método de Comunicación                           |
+| Proveedor                       | Rol     | Autoridad | Tipo de Requisitos Funcionales             | Método de Comunicación                           |
 | ------------------------------- | ------- | --------- | ------------------------------ | ------------------------------------------------ |
 | Product Owner                   | Interno | Alta      | Funcionales y de negocio       | Reuniones diarias en equipo, Whatsapp y Discord. |
 | José Luz Bravo (Socio Formador) | Externo | Alta      | Funcionales, de negocio y UX   | Reuniones según sea necesario, Whatsapp y Teams  |
@@ -20,19 +20,16 @@ sidebar_position: 1
 | UX/UI                           | Interno | Alta      | De Interfaz                    | Reuniones diarias en equipo, Whatsapp y Discord. |
 | Team Members                    | Interno | Media     | Funcionales y No funcionales   | Reuniones diarias en equipo, Whatsapp y Discord. |
 
-## Historias de Usuario Funcionales
+## Requisitos Funcionales
 
 ### Descripción General
 
-Los Historias de Usuario funcionales del sistema describen una variedad de acciones que los usuarios, administradores y empleados pueden realizar dentro del sistema como lo son la creación, lectura, actualización y eliminación de usuarios, plantillas de reportes, fórmulas y otros elementos clave. Estos Historias de Usuario funcionales también contemplan la administración de seguridad, roles y permisos para garantizar que cada usuario pueda realizar únicamente las acciones que le corresponden.
+Los Requisitos Funcionales funcionales del sistema describen una variedad de acciones que los usuarios, administradores y empleados pueden realizar dentro del sistema como lo son la creación, lectura, actualización y eliminación de usuarios, plantillas de reportes, fórmulas y otros elementos clave. Estos Requisitos Funcionales funcionales también contemplan la administración de seguridad, roles y permisos para garantizar que cada usuario pueda realizar únicamente las acciones que le corresponden.
 
 ---
 
-### Historias de Usuario Específicos del sistema.
+### Requisitos Funcionales Específicos del sistema.
 
-- [**HU1**](./HU1.md): Usuario consulta página de inicio de sesión.\ `Done`
-- [**HU2**](./HU2.md): Usuario registrado inicia sesión.\ `Done`
-- [**HU3**](./HU3.md): Usuario consulta módulo de análisis.\ `Done`
 
 
 ---
@@ -42,15 +39,15 @@ Los Historias de Usuario funcionales del sistema describen una variedad de accio
 [Enlace a Matriz de dependencias](https://docs.google.com/spreadsheets/d/12LGuotzg1zaO7pS5-I_qlntOOh-vTWoIH8i-Eyptbg4/edit?gid=1737125783#gid=1737125783)
 
 
-## Historias de Usuario No Funcionales
+## Requisitos No Funcionales
 
 #### Descripción General
 
-Los Historias de Usuario no funcionales establecen las expectativas en términos de tiempo de respuesta, capacidad de carga, compatibilidad con diferentes plataformas, accesibilidad para los usuarios, disponibilidad, entre otros aspectos. También incluyen criterios de seguridad, como el cifrado de datos y la protección contra ataques, así como la facilidad de mantenimiento y escalabilidad del sistema, asegurando que pueda adaptarse a nuevas necesidades y crecimiento sin comprometer la estabilidad del sistema.
+Los Requisitos no funcionales establecen las expectativas en términos de tiempo de respuesta, capacidad de carga, compatibilidad con diferentes plataformas, accesibilidad para los usuarios, disponibilidad, entre otros aspectos. También incluyen criterios de seguridad, como el cifrado de datos y la protección contra ataques, así como la facilidad de mantenimiento y escalabilidad del sistema, asegurando que pueda adaptarse a nuevas necesidades y crecimiento sin comprometer la estabilidad del sistema.
 
 ---
 
-### Historias de Usuario Específicas
+### Requisitos Funcionales Específicas
 
 **Rendimiento**.
 
@@ -110,7 +107,7 @@ Los Historias de Usuario no funcionales establecen las expectativas en términos
 
 ---
 
-## Historias de Usuario de información
+## Requisitos de información
 
 **Diagrama MER**
 
@@ -185,7 +182,7 @@ import TabItem from '@theme/TabItem';
 
 ---
 
-## Historias de Usuario de interfaz
+## Requisitos de interfaz
 
 - Las interfaces generadas para su uso dentro del proyecto deberán seguir el estilo de las presentes en la plataforma “FieldOps”.
 - Se utilizará una paleta de colores conformada por: azul marino (#1f4281), gris azulado (#262b40), rojo (#a61930), negro (#0e101a) y blanco (#fcfcfd).
@@ -222,6 +219,6 @@ Los **mockups** de la interfaz están disponibles en el siguiente enlace:
 
 | Autor                   | Descripción del cambio                                  | Versión |
 | ----------------------- | ------------------------------------------------------- | ------- |
-| Juan Pablo Chávez       | Adición de Historias de Usuario no-funcionales                    | V1.1    |
-| Daniel Queijeiro Albo   | Adición de Historias de Usuario de información, reglas de negocio | V2.0    |
+| Juan Pablo Chávez       | Adición de Requisitos no-funcionales                    | V1.1    |
+| Daniel Queijeiro Albo   | Adición de Requisitos  de información, reglas de negocio | V2.0    |
 | Emiliano Gomez Gonzalez | Agrega el link de lso mockups                           | V2.1    |
