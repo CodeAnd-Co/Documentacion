@@ -1,9 +1,9 @@
 ---
-title: "RF4: Usuario consulta datos disponibles."  
+title: "HU4: Usuario consulta datos disponibles."  
 sidebar_position: 5
 ---
 
-# RF4: Usuario consulta datos disponibles.
+# HU4: Usuario consulta datos disponibles.
 
 ### Historia de Usuario
 
@@ -12,11 +12,10 @@ Yo como usuario quiero ver los datos disponibles para los tractores seleccionado
   **Criterios de Aceptación:**
   - El sistema debe de permitir al usuario visualizar los datos que se encuentren disponibles
   - La información debe de estar organizada por categorías como:
-    - Rendimiento
-    - Mantenimiento
-    - Consumo de combustible
-    - Kilometraje
-
+    - Distribuidores
+    - Tractores
+    - Datos de los tractores
+  - El sistema debe mostrar una alerta si ocurre un error
 ---
 
 ### Diagrama de Secuencia
@@ -28,25 +27,54 @@ Yo como usuario quiero ver los datos disponibles para los tractores seleccionado
 ```mermaid
 sequenceDiagram
     actor Usuario
-    participant vistaInicio
-    participant utilInicio
-    participant vistaTractores
-    participant utilTractores
+    participant vistaInicio as inicio.ejs
+    participant seleccionarArchivo as seleccionarArchivo.js
+    participant vistaTractores as seleccionarTractor.ejs
+    participant moduloTractores as moduloTractores.js
 
     activate Usuario
-    Usuario->>vistaInicio: /moduloInicio.html
+    Usuario->>vistaInicio: /inicio.ejs
     activate vistaInicio
-    vistaInicio->>utilInicio: botonTractores()
+    vistaInicio->>seleccionarArchivo: botonTractores()
     deactivate vistaInicio
-    activate utilInicio
-    utilInicio->>utilTractores: inicializarModuloTractores()
-    deactivate utilInicio
-    activate utilTractores
-    utilTractores->>vistaTractores: inicializarModuloTractores()
-    deactivate utilTractores
+    activate seleccionarArchivo
+    seleccionarArchivo-)vistaTractores: ipcRenderer.invoke('cargar-vista');
+    deactivate seleccionarArchivo
     activate vistaTractores
-    vistaTractores-->>Usuario: HTML
-    deactivate vistaTractores
+    vistaTractores->>moduloTractores: inicializarModuloTractores()
+    activate moduloTractores
+    moduloTractores->>moduloTractores: iniciarDistribuidores(datosExcel)
+    moduloTractores->>moduloTractores: iniciarTractores(datosExcel)
+    alt Caso exitoso
+      rect Lightgreen
+      moduloTractores->>vistaTractores: inicializarModuloTractores()
+      vistaTractores->>Usuario: HTML
+      end
+    else Error al obtener distribuidores
+      rect Lightcoral
+      moduloTractores->>vistaTractores: inicializarModuloTractores()
+      vistaTractores->>Usuario: HTML
+      end
+    else Error al obtener tractores
+      rect Lightcoral
+      moduloTractores->>vistaTractores: inicializarModuloTractores()
+      vistaTractores->>Usuario: HTML
+      end
+    else Error al obtener datos del excel
+      rect Lightcoral
+      moduloTractores->>vistaTractores: inicializarModuloTractores()
+      vistaTractores->>Usuario: HTML
+      deactivate vistaTractores
+      end
+    else Error
+      rect Lightcoral
+      moduloTractores->>vistaInicio: error()
+      deactivate moduloTractores
+      activate vistaInicio
+      vistaInicio->>Usuario: HTML
+      deactivate vistaInicio
+      end
+    end 
     deactivate Usuario
 
 ```
@@ -65,6 +93,8 @@ sequenceDiagram
 |-----------|-------------|--------------------|
 |PU-RF13-01|Cargar lista de datos disponible.|Se muestran los datos del tractor de manera ordenada.|
 |PU-RF13-02|Filtrar la información por la categoría.|Solo se muestran los datos de la categoría seleccionada|
+
+- [Pruebas TracTech HU4](https://docs.google.com/spreadsheets/d/1W-JW32dTsfI22-Yl5LydMhiu-oXHH_xo3hWvK6FHeLw/edit?gid=1089355168#gid=1089355168)
 
 ---
 

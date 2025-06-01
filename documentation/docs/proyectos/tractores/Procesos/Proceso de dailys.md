@@ -15,6 +15,8 @@ sidebar_position: 3
 2. Plan de valor ganado del proyecto.
 3. Dashboard del proyecto.
 4. Matriz de riesgos del proyecto.
+5. Ruleta con los nombres del los participates de TracTech.
+6. Bitacora de mejora con las fechas para evaluar ese mismo dia.
 
 ## Proceso
 

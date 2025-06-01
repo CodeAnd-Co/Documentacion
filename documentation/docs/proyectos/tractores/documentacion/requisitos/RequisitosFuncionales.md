@@ -43,7 +43,11 @@ Los Requisitos Funcionales funcionales del sistema describen una variedad de acc
 
 #### Descripción General
 
+<<<<<<< HEAD:documentation/docs/proyectos/tractores/documentacion/requisitos/RequisitosFuncionales.md
 Los Requisitos no funcionales establecen las expectativas en términos de tiempo de respuesta, capacidad de carga, compatibilidad con diferentes plataformas, accesibilidad para los usuarios, disponibilidad, entre otros aspectos. También incluyen criterios de seguridad, como el cifrado de datos y la protección contra ataques, así como la facilidad de mantenimiento y escalabilidad del sistema, asegurando que pueda adaptarse a nuevas necesidades y crecimiento sin comprometer la estabilidad del sistema.
+=======
+Los requisitos no funcionales establecen las expectativas en términos de tiempo de respuesta, capacidad de carga, compatibilidad con diferentes plataformas, accesibilidad para los usuarios, disponibilidad, entre otros aspectos. También incluyen criterios de seguridad, como el cifrado de datos y la protección contra ataques, así como la facilidad de mantenimiento y escalabilidad del sistema, asegurando que pueda adaptarse a nuevas necesidades y crecimiento sin comprometer la estabilidad del sistema.
+>>>>>>> df7c0ecfe46627f40271b3f734b210ba3308d66d:documentation/docs/proyectos/tractores/documentacion/requisitos/HistoriasUsuario.md
 
 ---
 
@@ -219,6 +223,13 @@ Los **mockups** de la interfaz están disponibles en el siguiente enlace:
 
 | Autor                   | Descripción del cambio                                  | Versión |
 | ----------------------- | ------------------------------------------------------- | ------- |
+<<<<<<< HEAD:documentation/docs/proyectos/tractores/documentacion/requisitos/RequisitosFuncionales.md
 | Juan Pablo Chávez       | Adición de Requisitos no-funcionales                    | V1.1    |
 | Daniel Queijeiro Albo   | Adición de Requisitos  de información, reglas de negocio | V2.0    |
 | Emiliano Gomez Gonzalez | Agrega el link de lso mockups                           | V2.1    |
+=======
+| Juan Pablo Chávez       | Adición de requisitos no-funcionales                    | V1.1    |
+| Daniel Queijeiro Albo   | Adición de requisitos de información, reglas de negocio | V2.0    |
+| Emiliano Gomez Gonzalez | Agrega el link de los mockups                           | V2.1    |
+| Juan Pablo Chávez Leal  | Adición del mapa de procesos.                           | V2.2    | 
+>>>>>>> df7c0ecfe46627f40271b3f734b210ba3308d66d:documentation/docs/proyectos/tractores/documentacion/requisitos/HistoriasUsuario.md
