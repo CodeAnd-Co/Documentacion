@@ -30,7 +30,42 @@ Los Requisitos Funcionales funcionales del sistema describen una variedad de acc
 
 ### Requisitos Funcionales Específicos del sistema.
 
-
+- [**RF1**](./RF1.md): Usuario consulta página de inicio de sesión.\ `Done`
+- [**RF2**](./RF2.md): Usuario registrado inicia sesión.\ `Done`
+- [**RF3**](./RF3.md): Usuario consulta módulo de análisis.\ `Done`
+- [**RF4**](./RF4.md): Usuario consulta datos disponibles.\ `Ready`
+- [**RF5**](./RF5.md): Usuario cierra sesión.\
+- [**RF6**](./RF6.md): Usuario carga excel a la plataforma.\ `Done`
+- [**RF7**](./RF7.md): Usuario sustituye el excel cargado.\ `Done`
+- [**RF8**](./RF8.md): Usuario elimina el excel cargado.\ `Done`
+- [**RF9**](./RF9.md): Usuario descarga PDF del reporte.\ `Done`
+- [**RF10**](./RF10.md): Usuario añade gráfica al reporte.\ `Done`
+- [**RF11**](./RF11.md): Usuario elimina gráfica en reporte.\ `Done`
+- [**RF12**](./RF12.md): Usuario modifica tipo de gráfica en reporte.\ `Done`
+- [**RF13**](./RF13.md): Administrador busca usuario.\
+- [**RF14**](./RF14.md): Administrador crea usuario.\ `Done`
+- [**RF15**](./RF15.md): Administrador consulta usuario.\ `Done`
+- [**RF16**](./RF16.md): Administrador modifica usuario.\ `Done`
+- [**RF17**](./RF17.md): Administrador elimina usuario.\ `Done`
+- [**RF18**](./RF18.md): Usuario añade cuadro de texto al reporte.\ `Done`
+- [**RF19**](./RF19.md): Usuario modifica cuadro de texto del reporte.\ `Done`
+- [**RF20**](./RF20.md): Usuario elimina cuadro de texto del reporte.\ `Done`
+- [**RF21**](./RF21.md): Usuario consulta fórmulas.\
+- [**RF22**](./RF22.md): Usuario guarda fórmula.\
+- [**RF23**](./RF23.md): Usuario elimina fórmula.\
+- [**RF24**](./RF24.md): Usuario define fórmula.\
+- [**RF25**](./RF25.md): Usuario selecciona parámetros de fórmula.\
+- [**RF26**](./RF26.md): Usuario selecciona datos a comparar.\ `Ready`
+- [**RF27**](./RF27.md): Usuario es notificado si se carga algún archivo incorrecto.\ `Done`
+- [**RF28**](./RF28.md): Usuario aplica fórmula.\
+- [**RF29**](./RF29.md): Usuario modifica fórmula.\
+- [**RF30**](./RF30.md): Usuario carga fórmula.\
+- [**RF31**](./RF31.md): Usuario retira fórmula.\
+- [**RF32**](./RF32.md): Usuario modifica parámetros de fórmula.\
+- [**RF33**](./RF33.md): Usuario consulta plantillas de reporte.\ `Ready`
+- [**RF34**](./RF34.md): Usuario elimina plantilla de reporte.\ `Ready`
+- [**RF35**](./RF35.md): Usuario guarda plantilla de reporte.\ `Ready`
+- [**RF36**](./RF36.md): Usuario selecciona plantilla de reporte.\ `Ready`
 
 ---
 
