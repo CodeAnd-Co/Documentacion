@@ -3,7 +3,7 @@ title: "RF46: Usuario sustituye el Excel cargado."
 sidebar_position: 47
 ---
 
-# RF7: Usuario sustituye el Excel cargado.
+# HU7: Usuario sustituye el Excel cargado.
 
 **Última actualización:** 08 de marzo de 2025
 
