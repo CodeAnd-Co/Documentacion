@@ -62,6 +62,7 @@ Seleccionamos ElectronJS debido a su capacidad de tener el backend integrado, pa
 
 ---
 
+
 ## Historial de cambios
 
 | **Tipo de Versión** | **Descripción** | **Fecha**  | **Colaborador** |
