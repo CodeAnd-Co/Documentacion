@@ -68,7 +68,7 @@ sequenceDiagram
 
 ### Mockup
 
-![Mockup]
+![Mockup](./mockups/MockupInicio.png)
 
 > *Descripción*: El mockup representa la interfaz del sistema donde el usuario puede cerrar sesión. Muestra los campos requeridos y los botones de acción disponibles.
 
@@ -77,6 +77,8 @@ sequenceDiagram
 | ID Prueba | Descripción | Resultado Esperado |
 |-----------|-------------|--------------------|
 |PU-HU6-01|Cargar archivo Excel válido|Los datos del archivo son cargados y procesados correctamente|
+
+- [Pruebas TracTech HU6](https://docs.google.com/spreadsheets/d/1W-JW32dTsfI22-Yl5LydMhiu-oXHH_xo3hWvK6FHeLw/edit?gid=1898208261#gid=1898208261)
 
 ---
 
