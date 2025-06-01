@@ -26,7 +26,7 @@ Yo como usuario quiero eliminar el Excel cargado para cuando termine de trabajar
 ```mermaid
   sequenceDiagram
       actor Usuario
-      participant vistaInicio as Inicio
+      participant vistaInicio as Interfaz "Inicio"
       participant utilInicio as seleccionarArchivo.js
       participant backend as borrarExcel.js
 
