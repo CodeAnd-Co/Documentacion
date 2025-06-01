@@ -1,6 +1,6 @@
 ---
 title: "RF5: Usuario cierra sesión."  
-sidebar_position: 4
+sidebar_position: 6
 ---
 
 # RF5: Usuario cierra sesión.
