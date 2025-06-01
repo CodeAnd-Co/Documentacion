@@ -35,6 +35,7 @@ Los Historias de Usuario funcionales del sistema describen una variedad de accio
 - [**HU3**](./HU3.md): Usuario consulta módulo de análisis.\ `Done`
 - [**HU4**](./HU4.md): Usuario consulta datos disponibles.\ `Done`
 - [**HU6**](./HU6.md): Usuario carga excel a la plataforma.\ `Done`
+- [**HU10**](./HU10.md): Usuario añade gráfica a reporte.\ `Done`
 - [**HU26**](./HU26.md): Usuario selecciona datos a comparar.\ `Ready`
 
 
