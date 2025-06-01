@@ -73,16 +73,11 @@ Los Requisitos Funcionales funcionales del sistema describen una variedad de acc
 
 [Enlace a Matriz de dependencias](https://docs.google.com/spreadsheets/d/12LGuotzg1zaO7pS5-I_qlntOOh-vTWoIH8i-Eyptbg4/edit?gid=1737125783#gid=1737125783)
 
-
 ## Requisitos No Funcionales
 
 #### Descripción General
 
-<<<<<<< HEAD:documentation/docs/proyectos/tractores/documentacion/requisitos/RequisitosFuncionales.md
 Los Requisitos no funcionales establecen las expectativas en términos de tiempo de respuesta, capacidad de carga, compatibilidad con diferentes plataformas, accesibilidad para los usuarios, disponibilidad, entre otros aspectos. También incluyen criterios de seguridad, como el cifrado de datos y la protección contra ataques, así como la facilidad de mantenimiento y escalabilidad del sistema, asegurando que pueda adaptarse a nuevas necesidades y crecimiento sin comprometer la estabilidad del sistema.
-=======
-Los requisitos no funcionales establecen las expectativas en términos de tiempo de respuesta, capacidad de carga, compatibilidad con diferentes plataformas, accesibilidad para los usuarios, disponibilidad, entre otros aspectos. También incluyen criterios de seguridad, como el cifrado de datos y la protección contra ataques, así como la facilidad de mantenimiento y escalabilidad del sistema, asegurando que pueda adaptarse a nuevas necesidades y crecimiento sin comprometer la estabilidad del sistema.
->>>>>>> df7c0ecfe46627f40271b3f734b210ba3308d66d:documentation/docs/proyectos/tractores/documentacion/requisitos/HistoriasUsuario.md
 
 ---
 
@@ -103,17 +98,11 @@ Los requisitos no funcionales establecen las expectativas en términos de tiempo
 
 **Diagrama de paquetes Frontend:**
 
-<iframe
-  frameborder="0"
-  style={{ borderRadius: "1em" }}
-  width="100%"
-  height="500em"
-  src="https://viewer.diagrams.net/?tags=%7B%7D&lightbox=1&highlight=0000ff&edit=https%3A%2F%2Fapp.diagrams.net%2F%23G1KPglZc2PKZ8ah6t3utgAD4n3U6BQs2sG%23%257B%2522pageId%2522%253A%2522l-jaUNbbZnOwnRJqBNt3%2522%257D&layers=1&nav=1&title=diagrama%20de%20paquetes%20Electron.drawio&dark=0#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1KPglZc2PKZ8ah6t3utgAD4n3U6BQs2sG%26export%3Ddownload"
-></iframe>
+[Ver diagrama de paquetes Frontend](https://viewer.diagrams.net/?tags=%7B%7D&lightbox=1&highlight=0000ff&edit=https%3A%2F%2Fapp.diagrams.net%2F%23G1KPglZc2PKZ8ah6t3utgAD4n3U6BQs2sG%23%257B%2522pageId%2522%253A%2522l-jaUNbbZnOwnRJqBNt3%2522%257D&layers=1&nav=1&title=diagrama%20de%20paquetes%20Electron.drawio&dark=0#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1KPglZc2PKZ8ah6t3utgAD4n3U6BQs2sG%26export%3Ddownload)
 
 **Diagrama de paquetes Backend:**
 
-![alt text](../diagrama-de-paquetes-backend-desacoplado.png)
+![Diagrama de paquetes Backend](../diagrama-de-paquetes-backend-desacoplado.png)
 
 **Usabilidad**.
 
@@ -150,20 +139,9 @@ Los requisitos no funcionales establecen las expectativas en términos de tiempo
 
 **Diagrama MER**
 
-<iframe
-  frameborder="0"
-  style={{ borderRadius: "1em" }}
-  width="100%"
-  height="500em"
-  src="https://viewer.diagrams.net/?tags=%7B%7D&lightbox=1&highlight=0000ff&edit=https%3A%2F%2Fapp.diagrams.net%2F%3Fsplash%3D0%23G160oFnNvJFYZdJblO2gJofiWYZ3D7cJyZ%23%257B%2522pageId%2522%253A%2522RvwrZuzGptMe-nOa_BFY%2522%257D&layers=1&nav=1&title=MER.drawio&dark=auto#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D160oFnNvJFYZdJblO2gJofiWYZ3D7cJyZ%26export%3Ddownload"
-></iframe>
+[Ver diagrama MER](https://viewer.diagrams.net/?tags=%7B%7D&lightbox=1&highlight=0000ff&edit=https%3A%2F%2Fapp.diagrams.net%2F%3Fsplash%3D0%23G160oFnNvJFYZdJblO2gJofiWYZ3D7cJyZ%23%257B%2522pageId%2522%253A%2522RvwrZuzGptMe-nOa_BFY%2522%257D&layers=1&nav=1&title=MER.drawio&dark=auto#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D160oFnNvJFYZdJblO2gJofiWYZ3D7cJyZ%26export%3Ddownload)
 
-
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
-
-<Tabs>
-<TabItem value="usuarios" label="Usuarios y Roles" default>
+### Usuarios y Roles
 
 ## Usuario
 
@@ -173,9 +151,7 @@ import TabItem from '@theme/TabItem';
 - Nombre
 - Rol
 
-</TabItem>
-
-<TabItem value='Plantilla de reporte' label='Plantilla de reporte'>
+### Plantilla de reporte
 
 ## Plantilla de reporte
 
@@ -186,44 +162,35 @@ import TabItem from '@theme/TabItem';
 - Correo de destino
 - Número de destino
 
-</TabItem>
+### Fórmulas
 
-<TabItem value='Fórmulas' label='Fórmulas'>
-
-## Plantilla de reporte
+## Fórmulas
 
 - Id
 - Codificación
 - Nombre
 
-</TabItem>
+### Plantilla de alertas
 
-<TabItem value='Plantilla de alertas' label='Plantilla de alertas'>
-
-## Plantilla de reporte
+## Plantilla de alertas
 
 - Id
 - Datos de la plantilla
 - Nombre
 
-</TabItem>
+### Reporte
 
-<TabItem value='Reporte' label='Reporte'>
-
-## Plantilla de reporte
+## Reporte
 
 - Id
 - Destino
 - Fecha
 
-</TabItem>
-</Tabs>
-
 ---
 
 ## Requisitos de interfaz
 
-- Las interfaces generadas para su uso dentro del proyecto deberán seguir el estilo de las presentes en la plataforma “FieldOps”.
+- Las interfaces generadas para su uso dentro del proyecto deberán seguir el estilo de las presentes en la plataforma "FieldOps".
 - Se utilizará una paleta de colores conformada por: azul marino (#1f4281), gris azulado (#262b40), rojo (#a61930), negro (#0e101a) y blanco (#fcfcfd).
 - La aplicación no reproducirá sonidos.
 - El tamaño de letra debe ser ajustable para ser legible en todo tiempo.
@@ -258,13 +225,6 @@ Los **mockups** de la interfaz están disponibles en el siguiente enlace:
 
 | Autor                   | Descripción del cambio                                  | Versión |
 | ----------------------- | ------------------------------------------------------- | ------- |
-<<<<<<< HEAD:documentation/docs/proyectos/tractores/documentacion/requisitos/RequisitosFuncionales.md
 | Juan Pablo Chávez       | Adición de Requisitos no-funcionales                    | V1.1    |
 | Daniel Queijeiro Albo   | Adición de Requisitos  de información, reglas de negocio | V2.0    |
 | Emiliano Gomez Gonzalez | Agrega el link de lso mockups                           | V2.1    |
-=======
-| Juan Pablo Chávez       | Adición de requisitos no-funcionales                    | V1.1    |
-| Daniel Queijeiro Albo   | Adición de requisitos de información, reglas de negocio | V2.0    |
-| Emiliano Gomez Gonzalez | Agrega el link de los mockups                           | V2.1    |
-| Juan Pablo Chávez Leal  | Adición del mapa de procesos.                           | V2.2    | 
->>>>>>> df7c0ecfe46627f40271b3f734b210ba3308d66d:documentation/docs/proyectos/tractores/documentacion/requisitos/HistoriasUsuario.md
