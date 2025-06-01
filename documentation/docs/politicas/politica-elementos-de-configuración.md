@@ -49,9 +49,9 @@ Se utilizará una matriz centralizada para registrar los elementos seleccionados
 - Versión correspondiente a la última versión del elemento de configuración.			
 - Versión correspondiente a la última versión estable del elemento de configuración para la documentación que fue parte del último release.
 - Bitácora de peticiones de cambio para almacenar y recuperar versiones archivadas de elementos de configuración.
+- Auditorías: Registro cronológico de todas las auditorías realizadas al elemento de configuración, incluyendo enlaces a la documentación de auditoría y estado de cumplimiento actual.
 - Auditado: Estado de la de auditorías sobre esa versión del elemento.
 - Ubicación o link de acceso al elemento de configuración
-- Utilidad: Checkbox para saber si el elemento está siendo usado y aporta valr
 
 📎 Enlace a la matriz: [Matriz de identificación de elementos de configuración](https://docs.google.com/spreadsheets/d/1e73fKSTAhxyPqiPN32u_1mkIyCbzssFc-7Ylfs-HL3w/edit?gid=0#gid=0)
 
@@ -109,6 +109,7 @@ Para asegurar la vigencia, relevancia y alineación de los elementos de configur
 | Dinámico      | Cada semana, iteración o mínimo una vez al mes.                        |
 | Bajo Revisión | Durante la auditoría correspondiente o en un lapso no mayor a 15 días. |
 
+> 🤔 En caso de tener duda sobre cómo funcionan los estatus de control, consulta la [Política de estatus de control](/docs/next/politicas/Politica-estatus-de-control).
 
 > 📌 Estas revisiones serán realizadas por el propietario del elemento y supervisadas por el CCB en las reuniones establecidas, documentando cualquier actualización en la matriz.
 
@@ -144,5 +145,5 @@ El incumplimiento de esta política puede resultar en:
 | **1.3.0**           | Corrección de ortografía.                                        | 08/05/2025  | Paola Garrido                    |
 | **1.4.0**           | Se agregan criterios y gestión de líneas base.                   | 26/05/2025  | Angel Mauricio Ramírez Herrera  |
 | **1.5.0**           | Incluir categorías de los elementos bajo configuración.   | 29/05/2025  | Angel Mauricio Ramírez Herrera                      |
-
+| **1.5.1**           | Corregir apartado de campos.   | 30/05/2025  | Angel Mauricio Ramírez Herrera                      |
 </details>
