@@ -1,47 +1,75 @@
 ---
-title: "RF6: Usuario consulta el módulo de análisis."  
+title: "RF6: Usuario carga Excel a la plataforma."  
 sidebar_position: 7
 ---
 
-# RF6: Usuario consulta el módulo de análisis.
-
-**Última actualización:** 03 de abril de 2025
+# RF6: Usuario carga Excel a la plataforma.
 
 ### Historia de Usuario
 
-Yo como usuario quiero acceder a un módulo de análisis que me permita visualizar métricas, gráficos y estadísticas relevantes sobre los datos del sistema, con una carga eficiente, para tomar decisiones basadas en datos.
+Yo como usuario quiero cargar archivos Excel a la plataforma para importar y analizar los datos para realizar reportes.
+
+  **Precondiciones:**
+  - El sistema debe tener acceso a los archivos.
 
   **Criterios de Aceptación:**
-  - El módulo debe estar disponible desde el menú principal.
-  - La navegación al módulo debe ser inmediata (latencia < 1 segundo en condiciones normales).
-  - La carga inicial de los datos y gráficos debe completarse en menos de 10 segundos (en conexiones estándar).
-  - Si el volumen de datos es grande, el sistema debe mostrar un indicador de carga mientras se procesa la información.
-  - En caso de fallo en la carga, mostrar un botón de "Reintentar" y un mensaje claro (no errores técnicos crudos).
+  - El sistema debe aceptar archivos en formato .csv y .xls.
 
 ---
 
 ### Diagrama de Secuencia
 
-![Diagrama de Secuencia] 
+```mermaid
+sequenceDiagram
+    actor Usuario
+    participant vistaInicio as moduloInicio.html
+    participant utilInicio as moduloInicio.js
+    participant casoUso as cargarExcel.js
 
-> *Descripción*: El diagrama de secuencia muestra como el usuario accede al módulo de análisis y el sistema carga la información para mostrar la información relevante.
+    Usuario->>vistaInicio: /moduloInicio.html
+    activate Usuario
+    activate vistaInicio
+    vistaInicio->>utilInicio: addEventListener('click')
+    deactivate vistaInicio
+    activate utilInicio
+    utilInicio->>casoUso: botonCargar()
+    activate casoUso
+    casoUso-->>utilInicio: leerExcel(archivo)
+    deactivate casoUso
+    alt Caso Exitoso
+        rect Lightgreen
+        utilInicio-->>vistaInicio: response(exito)
+        activate vistaInicio
+        vistaInicio-->>Usuario: HTML
+        deactivate vistaInicio
+        end
+    else Error al cargar excel
+        rect Lightcoral
+        utilInicio-->>vistaInicio: response(error)
+        deactivate utilInicio
+        activate vistaInicio
+        vistaInicio-->>Usuario: HTML
+        deactivate vistaInicio
+        deactivate Usuario
+        end
+    end
+```
+
+---
 
 ### Mockup
 
 ![Mockup]
 
-> *Descripción*: El mockup representa la interfaz del sistema donde el usuario puede ver el módulo de análisis 
+> *Descripción*: El mockup representa la interfaz del sistema donde el usuario puede cerrar sesión. Muestra los campos requeridos y los botones de acción disponibles.
 
 ---
-
 ### Pruebas Unitarias 
 | ID Prueba | Descripción | Resultado Esperado |
 |-----------|-------------|--------------------|
-|PU-RF6-01|Acceder al módulo de análisis.|Se muestra correctamente la interfaz con los datos y gráficas relevantes.|
-|PU-RF6-02|Verificar carga de datos.|Los gráficos se generan correctamente con los datos recopilados por la aplicación.|
-|PU-RF6-03|Verificar que el uso del módulo es correcto.|El usuario es capaz de utilizar todas las funcionalidades definidas en el módulo de análisis|
+|PU-RF44-01|Cargar archivo Excel válido|Los datos del archivo son cargados y procesados correctamente|
 
 ---
 
 ### Pull Request
-[https://github.com/CodeAnd-Co/App-Local-TracTech/pull/7](https://github.com/CodeAnd-Co/App-Local-TracTech/pull/7)
+[https://github.com/CodeAnd-Co/App-Local-TracTech/pull/11](https://github.com/CodeAnd-Co/App-Local-TracTech/pull/11)
