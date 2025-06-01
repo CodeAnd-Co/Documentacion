@@ -14,6 +14,8 @@ Yo como usuario quiero cargar archivos Excel a la plataforma para importar y ana
 
   **Criterios de Aceptación:**
   - El sistema debe aceptar archivos en formato .csv y .xls.
+  - El sistema muestra una alerta si el archivo supera los 10 Mb.
+  - El sistema muestra el nombre del archivo cargado.
 
 ---
 
