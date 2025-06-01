@@ -26,7 +26,7 @@ Yo como usuario quiero eliminar el Excel cargado para cuando termine de trabajar
 ```mermaid
   sequenceDiagram
       actor Usuario
-      participant vistaInicio as seleccionarArchivo.js
+      participant vistaInicio as Inicio
       participant utilInicio as seleccionarArchivo.js
       participant backend as borrarExcel.js
 
@@ -61,7 +61,7 @@ Yo como usuario quiero eliminar el Excel cargado para cuando termine de trabajar
 ```
 
 
-> *Descripción*: El diagrama de secuencia muestra cómo el usuario interactúa con el sistema para cerrar sesión, detallando los pasos de solicitud de datos, validación y confirmación.
+> *Descripción*: El diagrama de secuencia muestra cómo el usuario interactúa con el sistema para eliminar un Excel, detallando los pasos de solicitud de datos, validación y confirmación.
 
 ---
 
@@ -69,7 +69,7 @@ Yo como usuario quiero eliminar el Excel cargado para cuando termine de trabajar
 
 ![Mockup](./mockups/MockupInicio.png)
 
-> *Descripción*: El mockup representa la interfaz del sistema donde el usuario puede cerrar sesión. Muestra los campos requeridos y los botones de acción disponibles.
+> *Descripción*: El mockup representa la interfaz del sistema donde el usuario elimina un Excel. Muestra los campos requeridos y los botones de acción disponibles.
 
 ---
 
