@@ -1,6 +1,6 @@
 ---
 title: "RF7: Usuario sustituye el Excel cargado."  
-sidebar_position: 47
+sidebar_position: 8
 ---
 
 # RF7: Usuario sustituye el Excel cargado.
