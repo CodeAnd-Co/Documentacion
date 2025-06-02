@@ -292,3 +292,4 @@ sequenceDiagram
 | **1.3**             | Diagramas de actividades   | 23/5/2025  | Juan Eduardo Rosas Cerón |
 | **1.4**             | Se corrigió mockup  | 27/5/2025  | Mariana Juárez |
 | **1.5**             | Se agregaron los pull request de front y back | 29/5/2025  | Sofía Osorio |
+| **1.6**             | Correcciones a los criterios de aceptación | 2/6/2025  | Emiliano Valdivia Lara |
