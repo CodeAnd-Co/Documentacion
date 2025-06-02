@@ -82,7 +82,7 @@ sequenceDiagram
 
 ### Link a pruebas
 
-[https://docs.google.com/spreadsheets/d/1W-JW32dTsfI22-Yl5LydMhiu-oXHH_xo3hWvK6FHeLw/edit?gid=1725561716#gid=1725561716](https://docs.google.com/spreadsheets/d/1W-JW32dTsfI22-Yl5LydMhiu-oXHH_xo3hWvK6FHeLw/edit?gid=1725561716#gid=1725561716)
+[Pruebas](https://docs.google.com/spreadsheets/d/1W-JW32dTsfI22-Yl5LydMhiu-oXHH_xo3hWvK6FHeLw/edit?gid=1725561716#gid=1725561716)
 
 ### Pull Request
 [https://github.com/CodeAnd-Co/App-Local-TracTech/pull/21](https://github.com/CodeAnd-Co/App-Local-TracTech/pull/21)
