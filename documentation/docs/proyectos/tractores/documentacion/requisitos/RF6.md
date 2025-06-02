@@ -74,11 +74,7 @@ sequenceDiagram
 
 ---
 ### Pruebas Unitarias 
-| ID Prueba | Descripción | Resultado Esperado |
-|-----------|-------------|--------------------|
-|PU-HU6-01|Cargar archivo Excel válido|Los datos del archivo son cargados y procesados correctamente|
-
-- [Pruebas TracTech HU6](https://docs.google.com/spreadsheets/d/1W-JW32dTsfI22-Yl5LydMhiu-oXHH_xo3hWvK6FHeLw/edit?gid=1898208261#gid=1898208261)
+- [Pruebas](https://docs.google.com/spreadsheets/d/1W-JW32dTsfI22-Yl5LydMhiu-oXHH_xo3hWvK6FHeLw/edit?usp=sharing)
 
 ---
 
