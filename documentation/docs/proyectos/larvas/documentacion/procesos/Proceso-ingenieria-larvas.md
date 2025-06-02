@@ -27,7 +27,7 @@ Proceso para establecer un flujo estructurado que garantice la construcción de 
 | **Análisis** | Realizar las tareas definidas para el proyecto en la fase de análisis del WBS  | Desarrollador. |  |
 | | Definir un encargado de revisar el análisis que llene la [checklist de análisis](https://docs.google.com/document/d/1jJxhJx1XB6c_uC0Xv454qV2YoEVuMPm_U2Kq9hSIfAM/edit?usp=sharing) y la guarde una copia en la carpeta correspondiente. | Verificador | **VER SP 1.1** (Seleccionar los productos de trabajo para la verificación), **VER SP 1.3** (Establecer los procedimientos y los criterios de verificación), **VER SP 3.1** (Realizar la verificación). |
 |**Diseño** | Realizar las tareas definidas para el proyecto en la fase de diseño del WBS  | Desarrollador |  |
-| | Definir un encargado de revisar el diseño llenando una copia de la [checklist de diseño](https://docs.google.com/document/d/1Ohhx9sQJd8ATYIdWR9o8iSQAHvQ2X4IANYub0c1DShA/edit?tab=t.0#heading=h.fhau7kjl46pa) y guardándola en la carpeta correspondiente | Verificador | **VER SP 1.1** (Seleccionar los productos de trabajo para la verificación), **VER SP 1.3** (Establecer los procedimientos y los criterios de verificación), **VER SP 3.1** (Realizar la verificación). |
+| | Definir un encargado de revisar el diseño llenando una copia de la [checklist de diseño](https://docs.google.com/document/d/1Ohhx9sQJd8ATYIdWR9o8iSQAHvQ2X4IANYub0c1DShA/edit?tab=t.0#heading=h.fhau7kjl46pa) y guardándola en la carpeta correspondiente | Verificador | **VER SP 1.1** (Seleccionar los productos de trabajo para la verificación), **VER SP 1.3** (Establecer los procedimientos y los criterios de verificación), **VER SP 3.1** (Realizar la verificación), **TS 2.3** (Diseñar las interfaces usando criterios). |
 | **Desarrollo** | Entrar a la rama de desarrollo del repositorio según la [estrategia de ramas del departamento](../../../../guias/github/git-branches). | Desarrollador. | **CM, SP 2.2** (Controlar los elementos de configuración). |
 | | Ejecutar git pull origin para asegurar que se tiene la versión más actualizada. | Desarrollador. | **CM, SP 2.2** (Controlar los elementos de configuración). |
 | | Crear la rama de trabajo para el requisito o historia asignado siguiendo la estrategia de ramas del equipo. | Desarollador. | **CM, SP 2.2** (Controlar los elementos de configuración). |
@@ -69,5 +69,6 @@ Proceso para establecer un flujo estructurado que garantice la construcción de 
   | **Versión** | **Descripción**                                         | **Fecha**   | **Colaborador**                           |
   |-------------|---------------------------------------------------------|-------------|------------------------------------------|
   | **1.0.0**   | Adaptación del proceso                                    | 30/05/2025  |Emiliano Valdivia Lara, Sofia Osorio Suárez       |
+  | **1.0.1**   | Mapear TS 2.3 | 02/06/2025  | Emiliano Valdivia Lara, Hiram Israel Mendoza López       |
   
 </details>
