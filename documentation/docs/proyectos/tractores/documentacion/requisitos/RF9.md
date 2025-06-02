@@ -29,12 +29,10 @@ Yo como usuario de la aplicación de escritorio Harvester quiero descargar el re
 
 ---
 
-### Diagrama de Secuencia - App Local
+### Diagrama de Secuencia
 
 ```mermaid
-sequenceDiagram
-  %% DIAGRAMA 1: APP LOCAL
-  
+sequenceDiagram  
   box App local
     actor Usuario as Usuario
     participant vistaAnalisis as Vista: moduloAnalisis.ejs
