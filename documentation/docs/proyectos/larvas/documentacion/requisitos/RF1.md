@@ -7,14 +7,12 @@ sidebar_position: 2
 
 
 ### Historia de Usuario
-Como usuario de la aplicación, quiero autenticarme en el sistema ingresando mi usuario y contraseña, para acceder de forma segura a la aplicación y utilizar sus funcionalidades sin restricciones.
+Como usuario de la aplicación, quiero autenticarme en el sistema ingresando mi nombre de usuario y contraseña, para acceder de forma segura a la aplicación y utilizar sus funcionalidades.
 
   **Criterios de Aceptación:**
   - El sistema debe permitir al usuario ingresar su usuario y contraseña para autenticarse mediante una interfaz clara e intuitiva.
   - Si las credenciales son correctas, el usuario debe acceder a la aplicación y ser redirigido a la pantalla principal. 
   - Si las credenciales son incorrectas, el sistema debe mostrar un mensaje de error.
-  - Si el usuario cierra sesión, el sistema debe invalidar la sesión activa y redirigirlo a la pantalla de inicio de sesión.
-  - La autenticación debe ser segura y estar encriptada para proteger los datos de acceso de los usuarios.
 
 ---
 
@@ -198,7 +196,7 @@ sequenceDiagram
         View-->>Usuario: Mostrar mensaje "Error de servidor"
         deactivate View
 
-        else POST: Usuario o contraseña incorrecto, 404
+        else POST: Usuario o contraseña incorrecto, 401
         Usuario->>View: Presiona "Iniciar Sesión"
         activate View
 
@@ -238,15 +236,15 @@ sequenceDiagram
         deactivate Model
         activate Controller
 
-        Controller-->>APIService: Error 404
+        Controller-->>APIService: Error 401
         deactivate Controller
         activate APIService
 
-        APIService-->>Repository: Error 404
+        APIService-->>Repository: Error 401
         deactivate APIService
         activate Repository
 
-        Repository-->>Domain: Error 404
+        Repository-->>Domain: Error 401
         deactivate Repository
         activate Domain
 
@@ -278,7 +276,11 @@ sequenceDiagram
 ![alt text](<img/mockupRF1.png>)
 
 ---
+### Pruebas
 
+[Matriz de pruebas de funcionalidad](https://docs.google.com/spreadsheets/d/1-EwSa6HMrU9eqEvx9wWw8HCH9tba0EpWPCBFGSmpnu4/edit?usp=sharing)
+
+---
 
 # Historial de cambios
 | **Tipo de Versión** | **Descripción**                      | **Fecha** | **Colaborador**   |
