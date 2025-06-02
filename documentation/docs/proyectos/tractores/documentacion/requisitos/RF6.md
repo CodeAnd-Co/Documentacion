@@ -65,9 +65,8 @@ sequenceDiagram
 
 ---
 ### Pruebas Unitarias 
-| ID Prueba | Descripción | Resultado Esperado |
-|-----------|-------------|--------------------|
-|PU-RF44-01|Cargar archivo Excel válido|Los datos del archivo son cargados y procesados correctamente|
+
+
 
 ---
 

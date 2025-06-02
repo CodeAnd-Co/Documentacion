@@ -73,10 +73,8 @@ sequenceDiagram
 ---
 
 ### Pruebas Unitarias 
-| ID Prueba | Descripción | Resultado Esperado |
-|-----------|-------------|--------------------|
-|PU-RF3-01|Cerrar sesión desde la aplicación.|El usuario es redirigido a la pantalla de inicio de sesión|
-|PU-RF3-02|Intento de acceso después de cerrar sesión.|El sistema requiere autenticación nuevamente.|
+
+
 
 ---
 
