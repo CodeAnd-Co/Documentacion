@@ -61,5 +61,5 @@ El incumplimiento de esta política puede resultar en:
   <summary>Versiones</summary>
     | **Tipo de versión** | **Descripción**                                 | **Fecha**     | **Colaborador**                  |
     |---------------------|-------------------------------------------------|---------------|----------------------------------|
-    | **1.0.0**           | Creación inicial de la política.                | 02/06/2025    | Daniel Contreras Chávez                     |
+    | **1.0.0**           | Creación inicial de la política.                | 02/06/2025    | Daniel Contreras Chávez |
 </details>
