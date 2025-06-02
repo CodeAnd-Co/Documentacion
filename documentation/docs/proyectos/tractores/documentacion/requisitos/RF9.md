@@ -28,10 +28,8 @@ Yo como usuario quiero descargar el reporte en formato PDF para compartirlo o al
 > *Descripción*: El mockup representa la interfaz del sistema donde el usuario puede seleccionar la opción para descargar el archivo PDF del reporte.
 
 ### Pruebas Unitarias 
-| ID Prueba | Descripción | Resultado Esperado |
-|-----------|-------------|--------------------|
-|PU-RF25-01|Descargar el reporte.|Se descarga el archivo PDF mostrando un mensaje de éxito|
-|PU-RF25-02|Verificar contenido.|El PDF contiene toda la información del reporte visible.|
+
+
 
 [Pruebas](https://docs.google.com/spreadsheets/d/1W-JW32dTsfI22-Yl5LydMhiu-oXHH_xo3hWvK6FHeLw/edit?gid=177557881#gid=177557881)
 ---

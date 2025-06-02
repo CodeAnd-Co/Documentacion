@@ -74,10 +74,8 @@ Yo como usuario quiero eliminar el Excel cargado para cuando termine de trabajar
 ---
 
 ### Pruebas Unitarias 
-| ID Prueba   | Descripción                        | Resultado Esperado                                 |
-|-------------|------------------------------------|----------------------------------------------------|
-|PU-RF45-01   |Eliminar archivo Excel              |El archivo es eliminado correctamente               |
-|PU-RF45-02   |Intentar eliminar archivo con error |El sistema muestra un mensaje de error al usuario   |
+
+
 
 ---
 
