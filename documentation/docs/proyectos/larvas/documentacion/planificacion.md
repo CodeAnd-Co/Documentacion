@@ -1,6 +1,6 @@
 ---
 title: Planificación
-sidebar_position: 3
+sidebar_position: 10
 ---
 
 # Planificación

@@ -1,6 +1,6 @@
 ---
 title: Manual de Arquitectura
-sidebar_position: 5
+sidebar_position: 7
 ---
 
 ## Tipo de arquitectura de software
