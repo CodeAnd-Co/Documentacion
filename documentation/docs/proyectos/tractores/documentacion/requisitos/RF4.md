@@ -16,6 +16,7 @@ Yo como usuario quiero ver los datos disponibles para los tractores seleccionado
     - Tractores
     - Datos de los tractores
   - El sistema debe permitir hacer la busqueda de tractores por nombre
+  - La barra de búsqueda no permite más de 60 caracteres
   - La barra de búsqueda no permite inyecciones de código
   - El sistema debe mostrar una alerta si ocurre un error
 ---
