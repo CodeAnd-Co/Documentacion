@@ -70,7 +70,7 @@ sequenceDiagram
 
 ![Mockup](./mockups/MockupInicio.png)
 
-> *Descripción*: El mockup representa la interfaz del sistema donde el usuario puede cerrar sesión. Muestra los campos requeridos y los botones de acción disponibles.
+> *Descripción*: El mockup representa la interfaz del sistema donde el usuario carga un archivo de excel.
 
 ---
 ### Pruebas Unitarias 
