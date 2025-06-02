@@ -204,6 +204,7 @@ sequenceDiagram
 
 > *Descripción*: El diagrama de secuencia muestra cómo el usuario solicita la descarga del reporte y el sistema genera y entrega el PDF del reporte usando jsPDF localmente, incluyendo el procesamiento de fórmulas aplicadas a las gráficas
 
+
 ### Mockup
 
 ![Mockup](./mockups/MockupAnálisis.png)
