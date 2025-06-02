@@ -413,6 +413,7 @@ sequenceDiagram
 
 
 ```
+
 ---
 
 ### Pull Request
@@ -425,19 +426,19 @@ sequenceDiagram
 
 ### Mockup
 
-![alt text](<img/mockupRF5.png>)
+![alt text](img/mockupRF5.png)
 
 ---
 
 ## Historial de cambios
 
-| **Tipo de Versión** | **Descripción**                            | **Fecha** | **Colaborador**         |
-| ------------------- | ------------------------------------------ | --------- | ----------------------- |
-| **1.0**             | Creacion de la historia de usuario         | 8/3/2025  | Armando Mendez          |
-| **1.0**             | Verificación de los cambios                | 8/3/2025  | Miguel Angel            |
-| **1.1**             | Creación del diagrama de secuencia         | 3/4/2025  | Emiliano Gomez Gonzalez |
-| **1.2**             | Correciones del DS y agregacion del Mockup | 22/4/2025 | Emiliano Gomez Gonzalez |
-| **1.3**             | Diagramas de actividades   | 23/5/2025  | Juan Eduardo Rosas Cerón |
-| **1.4**             | Se corrigió mockup  | 29/5/2025  | Mariana Juárez |
-| **1.5**             | Se agregaron los pull request de front y back | 29/5/2025  | Sofía Osorio |
-| **1.6**             | Pequeñas correciones | 29/5/2025  | Emiliano Gomez Gonzalez |
+| **Tipo de Versión** | **Descripción**                               | **Fecha** | **Colaborador**          |
+| ------------------- | --------------------------------------------- | --------- | ------------------------ |
+| **1.0**             | Creacion de la historia de usuario            | 8/3/2025  | Armando Mendez           |
+| **1.0**             | Verificación de los cambios                   | 8/3/2025  | Miguel Angel             |
+| **1.1**             | Creación del diagrama de secuencia            | 3/4/2025  | Emiliano Gomez Gonzalez  |
+| **1.2**             | Correciones del DS y agregacion del Mockup    | 22/4/2025 | Emiliano Gomez Gonzalez  |
+| **1.3**             | Diagramas de actividades                      | 23/5/2025 | Juan Eduardo Rosas Cerón |
+| **1.4**             | Se corrigió mockup                            | 29/5/2025 | Mariana Juárez           |
+| **1.5**             | Se agregaron los pull request de front y back | 29/5/2025 | Sofía Osorio             |
+| **1.6**             | Pequeñas correciones                          | 02/6/2025 | Emiliano Gomez Gonzalez  |
