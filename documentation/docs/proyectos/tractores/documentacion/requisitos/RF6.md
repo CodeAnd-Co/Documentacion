@@ -70,12 +70,15 @@ sequenceDiagram
 
 ![Mockup](./mockups/MockupInicio.png)
 
-> *Descripción*: El mockup representa la interfaz del sistema donde el usuario carga un archivo de excel.
+> *Descripción*: El mockup representa la interfaz del sistema donde el usuario puede cargar archivos Excel. 
 
 ---
 ### Pruebas Unitarias 
 - [Pruebas](https://docs.google.com/spreadsheets/d/1W-JW32dTsfI22-Yl5LydMhiu-oXHH_xo3hWvK6FHeLw/edit?usp=sharing)
 
+
+### Link a pruebas
+[Pruebas](https://docs.google.com/spreadsheets/d/1W-JW32dTsfI22-Yl5LydMhiu-oXHH_xo3hWvK6FHeLw/edit?gid=753403593#gid=753403593)
 ---
 
 ### Pull Request
