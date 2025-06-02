@@ -31,6 +31,7 @@ Yo como usuario quiero descargar el reporte en formato PDF para compartirlo o al
 
 
 
+[Pruebas](https://docs.google.com/spreadsheets/d/1W-JW32dTsfI22-Yl5LydMhiu-oXHH_xo3hWvK6FHeLw/edit?gid=177557881#gid=177557881)
 ---
 
 ### Pull Request

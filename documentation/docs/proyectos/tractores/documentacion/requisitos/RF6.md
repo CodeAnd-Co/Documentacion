@@ -14,6 +14,8 @@ Yo como usuario quiero cargar archivos Excel a la plataforma para importar y ana
 
   **Criterios de Aceptación:**
   - El sistema debe aceptar archivos en formato .csv y .xls.
+  - El sistema muestra una alerta si el archivo supera los 10 Mb.
+  - El sistema muestra el nombre del archivo cargado.
 
 ---
 
@@ -22,23 +24,30 @@ Yo como usuario quiero cargar archivos Excel a la plataforma para importar y ana
 ```mermaid
 sequenceDiagram
     actor Usuario
-    participant vistaInicio as moduloInicio.html
-    participant utilInicio as moduloInicio.js
+    participant vistaInicio as inicio.ejs
+    participant utilInicio as seleccionarArchivo.js
     participant casoUso as cargarExcel.js
 
-    Usuario->>vistaInicio: /moduloInicio.html
+    Usuario->>vistaInicio: /inicio.ejs
     activate Usuario
     activate vistaInicio
     vistaInicio->>utilInicio: addEventListener('click')
     deactivate vistaInicio
     activate utilInicio
-    utilInicio->>casoUso: botonCargar()
+    utilInicio-)casoUso: botonCargar()
     activate casoUso
     casoUso-->>utilInicio: leerExcel(archivo)
     deactivate casoUso
     alt Caso Exitoso
         rect Lightgreen
         utilInicio-->>vistaInicio: response(exito)
+        activate vistaInicio
+        vistaInicio-->>Usuario: HTML
+        deactivate vistaInicio
+        end
+    else Archivo supera los 10 Mb
+        rect Lightcoral
+        utilInicio-->>vistaInicio: response(error)
         activate vistaInicio
         vistaInicio-->>Usuario: HTML
         deactivate vistaInicio
@@ -59,14 +68,13 @@ sequenceDiagram
 
 ### Mockup
 
-![Mockup]
+![Mockup](./mockups/MockupInicio.png)
 
-> *Descripción*: El mockup representa la interfaz del sistema donde el usuario puede cerrar sesión. Muestra los campos requeridos y los botones de acción disponibles.
+> *Descripción*: El mockup representa la interfaz del sistema donde el usuario puede cargar archivos Excel. 
 
 ---
 ### Pruebas Unitarias 
-
-
+- [Pruebas](https://docs.google.com/spreadsheets/d/1W-JW32dTsfI22-Yl5LydMhiu-oXHH_xo3hWvK6FHeLw/edit?usp=sharing)
 
 ---
 
