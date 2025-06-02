@@ -136,7 +136,7 @@ graph TD
     Usuario <--> |Accede a| Dispositivo
     Administrador <--> |Accede a| Dispositivo
     subgraph Dispositivo
-      subgraph Windows 10
+      subgraph Windows 11
         subgraph Harvester
         end
       end
