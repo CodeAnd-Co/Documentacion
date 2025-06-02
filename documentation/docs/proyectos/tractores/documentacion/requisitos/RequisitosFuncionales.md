@@ -56,16 +56,16 @@ Los Requisitos Funcionales funcionales del sistema describen una variedad de acc
 - [**RF24**](./RF24.md): Usuario define fórmula.\ `Done`
 - [**RF25**](./RF25.md): Usuario selecciona parámetros de fórmula.\
 - [**RF26**](./RF26.md): Usuario selecciona datos a comparar.\ `Ready`
-- [**RF27**](./RF27.md): Usuario es notificado si se carga algún archivo incorrecto.\ `Done`
-- [**RF28**](./RF28.md): Usuario aplica fórmula.\ `Done`
-- [**RF29**](./RF29.md): Usuario modifica fórmula.\ `Done`
-- [**RF30**](./RF30.md): Usuario carga fórmula.\
-- [**RF31**](./RF31.md): Usuario retira fórmula.\
-- [**RF32**](./RF32.md): Usuario modifica parámetros de fórmula.\
-- [**RF33**](./RF33.md): Usuario consulta plantillas de reporte.\ `Ready`
-- [**RF34**](./RF34.md): Usuario elimina plantilla de reporte.\ `Ready`
-- [**RF35**](./RF35.md): Usuario guarda plantilla de reporte.\ `Ready`
-- [**RF36**](./RF36.md): Usuario selecciona plantilla de reporte.\ `Ready`
+- [**RF27**](./RF27.md): Usuario aplica fórmula.\ `Done`
+- [**RF28**](./RF28.md): Usuario modifica fórmula.\ `Done`
+- [**RF29**](./RF29.md): Usuario carga fórmula.\ `Done`
+- [**RF30**](./RF30.md): Usuario retira fórmula.\
+- [**RF31**](./RF31.md): Usuario modifica parámetros de fórmula.\
+- [**RF32**](./RF32.md): Usuario consulta plantillas de reporte.\
+- [**RF33**](./RF33.md): Usuario elimina plantilla de reporte.\ `Ready`
+- [**RF34**](./RF34.md): Usuario guarda plantilla de reporte.\ `Ready`
+- [**RF35**](./RF35.md): Usuario selecciona plantilla de reporte.\ `Ready`
+- [**RF36**](./RF36.md): Administrador deshabilita dispositivo.\ `Ready`
 
 ---
 
