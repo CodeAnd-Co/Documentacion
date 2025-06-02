@@ -61,7 +61,7 @@ sequenceDiagram
 
 ![Mockup]
 
-> *Descripción*: El mockup representa la interfaz del sistema donde el usuario puede cerrar sesión. Muestra los campos requeridos y los botones de acción disponibles.
+> *Descripción*: El mockup representa la interfaz del sistema donde el usuario puede cargar archivos Excel. 
 
 ---
 ### Pruebas Unitarias 
@@ -69,6 +69,9 @@ sequenceDiagram
 |-----------|-------------|--------------------|
 |PU-RF44-01|Cargar archivo Excel válido|Los datos del archivo son cargados y procesados correctamente|
 
+
+### Link a pruebas
+[Pruebas](https://docs.google.com/spreadsheets/d/1W-JW32dTsfI22-Yl5LydMhiu-oXHH_xo3hWvK6FHeLw/edit?gid=753403593#gid=753403593)
 ---
 
 ### Pull Request
