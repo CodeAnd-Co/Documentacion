@@ -7,7 +7,7 @@ sidebar_position: 3
 
 ### Historia de Usuario
 
-Yo como empleado de CNH y usuario de la aplicación harvester quiero ingresar con mis credenciales correspondientes a la aplicación de escritorio para pdoer acceder a las funcionalidades que hay dentro del sistema.
+Yo como empleado de CNH y usuario de la aplicación harvester quiero ingresar con mis credenciales correspondientes a la aplicación de escritorio para poder acceder a las funcionalidades que hay dentro del sistema.
 
   **Criterios de Aceptación:**
   - El sistema debe permitir a lo usuarios registrados acceder a sus cuentas e ingresar al sistema.
