@@ -238,6 +238,13 @@ sequenceDiagram
     end
 ```
 
+---
+
+### Pull Request
+
+<a href="https://github.com/CodeAnd-Co/TECH-NEBRIOS-BACKEND/pull/25" target="_blank" rel="noopener noreferrer"> PR de Registrar Charola Backend</a>
+
+<a href="https://github.com/CodeAnd-Co/TECH-NEBRIOS-FLUTTER/pull/29#issue-3068429096" target="_blank" rel="noopener noreferrer"> PR de Consultar historial de ancestros Frontend</a>
 
 ---
 

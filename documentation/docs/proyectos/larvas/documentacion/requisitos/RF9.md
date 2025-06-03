@@ -69,7 +69,8 @@ sequenceDiagram
 
 ### Pull Request
 
-<a href="https://github.com/CodeAnd-Co/TECH-NEBRIOS-FLUTTER/pull/20" target="_blank" rel="noopener noreferrer"> PR de Cerrar Sesión Frontend</a>
+<a href="https://github.com/CodeAnd-Co/TECH-NEBRIOS-FLUTTER/pull/20#issue-3065267609" target="_blank" rel="noopener noreferrer"> PR de Cerrar sesión Frontend</a>
+
 ---
 
 ### Mockup
