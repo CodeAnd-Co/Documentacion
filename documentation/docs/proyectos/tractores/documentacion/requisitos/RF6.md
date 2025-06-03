@@ -68,7 +68,7 @@ sequenceDiagram
 
 ### Mockup
 
-![Mockup](./mockups/MockupInicio.png)
+![Mockup](./mockups/MockupInicioCargar.png)
 
 > *Descripción*: El mockup representa la interfaz del sistema donde el usuario puede cargar archivos Excel. 
 
