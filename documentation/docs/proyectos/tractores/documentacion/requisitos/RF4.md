@@ -12,7 +12,7 @@ Yo como usuario quiero ver los datos disponibles para los tractores seleccionado
   **Criterios de Aceptación:**
   - El sistema debe de permitir al usuario visualizar los datos que se encuentren disponibles
   - La información debe de estar organizada por categorías como:
-    - Distribuidores
+    - Distribuidores (Si el reporte cuenta con distribuidores)
     - Tractores
     - Datos de los tractores
   - El sistema debe permitir hacer la busqueda de tractores por nombre
