@@ -76,6 +76,8 @@ sequenceDiagram
 
 ![alt text](img/mockupRF09.png)
 
+![alt text](img/mockupRF09_1.png)
+
 ---
 
 | **Tipo de Versión** | **Descripción**                      | **Fecha** | **Colaborador**   |
