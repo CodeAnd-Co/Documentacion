@@ -101,7 +101,7 @@ sequenceDiagram
         Controller->>Model: obtenerHistorialAncestros()
         deactivate Controller
         activate Model
-        Model->>Database: SELECT * FROM CHAROLA WHERE charolaId = ?
+        Model->>Database: Query
         deactivate Model
         activate Database
 
@@ -147,7 +147,7 @@ sequenceDiagram
         activate Controller
         Controller->>Model: obtenerHistorialAncestros()
         activate Model
-        Model->>Database: SELECT * FROM CHAROLA WHERE charolaId = ?
+        Model->>Database: Query
         activate Database
 
         Database-->>Model: Error 500
