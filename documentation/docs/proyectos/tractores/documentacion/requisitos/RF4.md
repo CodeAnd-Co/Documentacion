@@ -12,6 +12,7 @@ Yo como usuario quiero ver los datos disponibles para los tractores seleccionado
   **Criterios de Aceptación:**
   - El sistema debe de permitir al usuario visualizar los datos que se encuentren disponibles
   - La información debe de estar organizada por categorías como:
+    - Distribuidores (Si el reporte cuenta con distribuidores)
     - Con telemetría / Sin telemetría
     - Tractores
     - Datos de los tractores
@@ -91,8 +92,7 @@ sequenceDiagram
 ---
 
 ### Pruebas Unitarias 
-
-#### [Pruebas del RF](https://docs.google.com/spreadsheets/d/1W-JW32dTsfI22-Yl5LydMhiu-oXHH_xo3hWvK6FHeLw/edit?gid=1089355168#gid=1089355168)
+- [Pruebas](https://docs.google.com/spreadsheets/d/1W-JW32dTsfI22-Yl5LydMhiu-oXHH_xo3hWvK6FHeLw/edit?gid=1089355168#gid=1089355168)
 
 ---
 
