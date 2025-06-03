@@ -13,7 +13,6 @@ Yo como empleado de CNH y usuario de la aplicación harvester quiero ingresar co
   - El sistema debe permitir a lo usuarios registrados acceder a sus cuentas e ingresar al sistema.
   - Si las credenciales son incorrectas, el sistema debe de mostrar un mensaje claro de error.
   - Si el usuario ingresa correctamente, debe de ser reedirigido a la página principal.
-
   - La aplicación tendrá de contar con 2 campos a la hora de iniciar sesión, uno para correo electrónico, otro para contraseña del usuario.
   - La aplicación debe de validar y comparar las credenciales ingresadas por el usuario.
   - La aplicación arrojará una alerta en dado caso que el usuario no llene el campo de correo electrónico y se intenté acceder a la aplicación.

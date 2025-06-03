@@ -14,7 +14,7 @@ Yo como usuario de la aplicación de escritorio Harvester quiero descargar el re
  - El PDF debe incluir toda la información visible y clara del reporte.
  - El sistema debe procesar todas las tarjetas de texto y gráficas presentes en el reporte.
  - Las tarjetas de texto deben mantener su formato (Título, Subtítulo, Contenido) en el PDF.
- - Las gráficas deben incluirse como imágenes PNG en el PDF.
+ - Las gráficas deben incluirse como imágenes en el PDF.
  - Las gráficas deben reflejar los datos procesados según las fórmulas aplicadas desde el botón de fórmulas.
  - Si una gráfica tiene fórmulas asociadas, los datos mostrados deben ser el resultado de aplicar esas fórmulas a los parámetros seleccionados.
  - El PDF debe mantener el orden de los elementos tal como aparecen en la previsualización.
