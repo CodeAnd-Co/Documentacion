@@ -13,7 +13,7 @@ Como usuario del sistema, quiero modificar los datos de una charola que están g
 
 - El sistema debe permitir la edición de los datos de una charola previamente registrada.
 - La actualización de datos debe reflejarse de inmediato en la base de datos.
-- Cuando una charola est apasado solo se puede modificar su estado
+- Cuando una charola esta pasada solo se puede modificar su estado
 
 ---
 
