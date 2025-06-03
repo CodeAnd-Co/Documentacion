@@ -11,9 +11,10 @@ Yo como usuario de la aplicación de escritorio Harvester quiero acceder al mód
 
   **Criterios de Aceptación:**
   - Al módulo solamente se puede acceder cuando se cargue un Excel, se seleccionen los datos a comparar y se de click en generar reporte proveniente del módulo de inicio.
-  - La redirección al modulo de análisis tiene que ser en un tiempo menor a 2 segundos.
-  - La aplicación debe de hacer la carga inicial de los datos y gráficos debe completarse en menos de 10 segundos.
+  - La navegación al módulo debe ser inmediata (latencia < 1 segundo en condiciones normales).
+  - La aplicación debe de hacer la carga inicial de los datos y gráficos debe completarse en menos de 10 segundos (en conexiones estándar).
   - Al momento de entrar al módulo de análisis se debe de mostrar una tarjeta de texto y una tarjeta de gráfica.
+  - No se puede tener menos de una tarjeta, ya sea texto o de gráfica.
   - En dado caso de que se pueda acceder al módulo sin cargar un archivo de Excel, este mostrará una alerta donde diga que no hay datos cargados en el Excel. 
   - En el modulo de análisis se podrán descargar los reportes en pdf.
 ---
