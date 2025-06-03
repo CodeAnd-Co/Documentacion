@@ -23,8 +23,6 @@ Como usuario de la aplicación, quiero cerrar mi cuenta de usuario en la aplicac
 ---
 
 ### Diagrama de Secuencia
-
-> Descripción: El diagrama de secuencia muestra cómo los usuarios salen del sistema.
 ```mermaid
 sequenceDiagram
     actor Usuario 
