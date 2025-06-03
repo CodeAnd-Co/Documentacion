@@ -27,7 +27,7 @@ Yo como usuario quiero sustituir el excel cargado en la pestaña de inicio para 
 
 ### Mockup
 
-![Mockup](./mockups/mockupRF7.png)
+![Mockup](./mockups/mockupInicioCambiar.png)
 
 > *Descripción*: El mockup representa la interfaz del sistema donde el usuario puede sustituir el excel cargado, se muestra el nombre del anterior excel y el botón para cargar otro excel si se encuentra habilitado.
 
