@@ -26,7 +26,50 @@ Como usuario de la aplicación, quiero cerrar mi cuenta de usuario en la aplicac
 
 ### Diagrama de Secuencia
 
-> *Descripción*: El diagrama de secuencia muestra cómo el Super Administrador selecciona un archivo, el sistema valida los datos y luego importa los empleados al sistema.
+### Diagrama de Secuencia
+
+> Descripción: El diagrama de secuencia muestra cómo los usuarios salen del sistema.
+```mermaid
+sequenceDiagram
+    actor Usuario 
+    participant View as View
+    participant ViewModel as ViewModel
+    participant Domain as Domain
+    participant Repository as Repository
+   
+    alt GET Historial de actividad, 200
+        Usuario->>+View: Do cerrar sesión
+        View->>-ViewModel: loginView()
+        activate ViewModel 
+        ViewModel->>Domain: loginVM()
+        deactivate ViewModel 
+        activate Domain
+        Domain->>Repository: CerrarSesio()
+        deactivate Domain
+        activate Repository
+        Repository->>APIService: Eliinar Token APIS()
+        deactivate Repository
+        activate APIService
+        
+
+        APIService-->>Repository: EliminarTokenRepo
+        deactivate APIService
+        activate Repository
+        Repository-->>Domain: 200 OK [Info]
+        deactivate Repository
+        activate Domain
+        Domain-->>ViewModel: 200 OK [Info]
+        deactivate Domain
+        activate ViewModel
+        ViewModel-->>View: Actualizar UI
+        deactivate ViewModel
+        activate View
+        View-->>Usuario: Mostrar pop up de historial de actividad
+        deactivate View
+    
+      end
+```   
+
 
 ---
 
@@ -37,8 +80,9 @@ Como usuario de la aplicación, quiero cerrar mi cuenta de usuario en la aplicac
 
 ### Mockup
 
-> *Descripción*: El mockup muestra la interfaz donde el Super Administrador puede cargar un archivo de empleados, con la opción de revisar los datos antes de importarlos.
+![alt text](img/mockupRF09.png)
 
+---
 ### Pruebas Unitarias 
 | ID Prueba  | Descripción | Resultado Esperado |
 |------------|-------------|--------------------|
@@ -47,7 +91,6 @@ Como usuario de la aplicación, quiero cerrar mi cuenta de usuario en la aplicac
 | PU-RF-03  | Verificar la invalidación de la sesión tras cerrar sesión. Se debe cerrar la sesión y luego intentar acceder a una ruta protegida (por ejemplo, perfil de usuario). | El sistema impide el acceso a áreas restringidas y solicita nuevamente el inicio de sesión para acceder a rutas protegidas. |
 | PU-RF-04  | Evaluar el tiempo de respuesta al cerrar sesión realizando el proceso de cierre. | El proceso se completa en un tiempo adecuado (por ejemplo, menos de 2 segundos) sin bloqueos ni errores durante la transición. |
 | PU-RF-05  | Validar la experiencia de usuario durante el proceso de cierre de sesión, asegurando que no se muestren pantallas en blanco ni errores inesperados. | La transición es fluida y consistente con el resto de la aplicación, sin afectar la experiencia de usuario. |
-| PU-RF-06  | Verificar que no se pueda recuperar la sesión cerrada usando el botón "Atrás" del navegador, luego de cerrar sesión. | Al utilizar el botón "Atrás", el usuario es redirigido a la pantalla de inicio de sesión y no se puede acceder a la información de la sesión cerrada. |
 
 
 | **Tipo de Versión** | **Descripción**                      | **Fecha** | **Colaborador**   |
@@ -55,3 +98,4 @@ Como usuario de la aplicación, quiero cerrar mi cuenta de usuario en la aplicac
 | **1.0**             | Creacion de la historia de usuario   | 8/3/2025  | Armando Mendez    |
 | **1.2**             | Diagramas de actividades   | 23/5/2025  | Juan Eduardo Rosas Cerón |
 | **1.3**             | Se agregaron los pull request de front  | 29/5/2025  | Sofía Osorio |
+| **1.3**             | Actualización | 03/06/2025  | Armando Méndez Catro |
