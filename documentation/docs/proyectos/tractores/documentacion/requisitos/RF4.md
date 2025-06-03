@@ -24,8 +24,6 @@ Yo como usuario quiero ver los datos disponibles para los tractores seleccionado
 
 ### Diagrama de Secuencia
 
-- No aplica según nuestra [definición de Ready](../../definicion-ready-tractores.md).
-
 > *Descripción*: El diagrama de secuencia muestra cómo el usuario accede a los datos disponibles que tienen los tractores para su análisis.
 
 ```mermaid
