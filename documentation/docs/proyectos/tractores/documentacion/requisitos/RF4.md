@@ -13,17 +13,17 @@ Yo como usuario quiero ver los datos disponibles para los tractores seleccionado
   - El sistema debe de permitir al usuario visualizar los datos que se encuentren disponibles
   - La información debe de estar organizada por categorías como:
     - Distribuidores (Si el reporte cuenta con distribuidores)
+    - Con telemetría / Sin telemetría
     - Tractores
     - Datos de los tractores
   - El sistema debe permitir hacer la busqueda de tractores por nombre
   - La barra de búsqueda no permite más de 60 caracteres
   - La barra de búsqueda no permite inyecciones de código
-  - El sistema debe mostrar una alerta si ocurre un error
+  - El sistema debe mostrar una alerta si se selecciona un tractor pero no seleccionas valores de ese tractor.
+  - El sistema debe de mostrar una alerta si se selecciona un valor de un tractor, pero no el tractor para analizarlo. 
 ---
 
 ### Diagrama de Secuencia
-
-![Diagrama de Secuencia] 
 
 > *Descripción*: El diagrama de secuencia muestra cómo el usuario accede a los datos disponibles que tienen los tractores para su análisis.
 
@@ -92,7 +92,6 @@ sequenceDiagram
 ---
 
 ### Pruebas Unitarias 
-
 - [Pruebas](https://docs.google.com/spreadsheets/d/1W-JW32dTsfI22-Yl5LydMhiu-oXHH_xo3hWvK6FHeLw/edit?gid=1089355168#gid=1089355168)
 
 ---

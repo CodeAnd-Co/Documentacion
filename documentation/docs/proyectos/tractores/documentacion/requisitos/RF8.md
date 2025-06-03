@@ -67,7 +67,7 @@ Yo como usuario quiero eliminar el Excel cargado para cuando termine de trabajar
 
 ### Mockup
 
-![Mockup](./mockups/MockupInicio.png)
+![Mockup](./mockups/MockupInicioCambiar.png)
 
 > *Descripción*: El mockup representa la interfaz del sistema donde el usuario elimina un Excel. Muestra los campos requeridos y los botones de acción disponibles.
 
