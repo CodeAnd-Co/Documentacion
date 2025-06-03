@@ -258,9 +258,9 @@ Organiza las funcionalidades de una aplicación en servicios independientes y re
 
 # Historial de cambios
 
-| **Tipo de Versión** | **Descripción**                                  | **Fecha**  | **Colaborador**         |
-| ------------------- | ------------------------------------------------ | ---------- | ----------------------- |
-| **1.0**             | Documento inicial                                | 6/03/2025  | Emiliano Gomez Gonzalez |
-| **1.1**             | Agrega Diagrama de Despliegue                    | 8/03/2025  | Emiliano Gomez Gonzalez |
-| **2.1**             | Actualiza Diagrama de despliegue y documentación | 29/05/2025 | Emiliano Gomez Gonzalez |
-| **2.2**             | Correciones de Diagrama de despliegue            | 30/05/2025 | Emiliano Gomez Gonzalez |
+| **Tipo de Versión** | **Descripción**                                  | **Fecha**  | **Colaborador**                             |
+| ------------------- | ------------------------------------------------ | ---------- | ------------------------------------------- |
+| **1.0**             | Documento inicial                                | 6/03/2025  | Emiliano Gomez Gonzalez                     |
+| **1.1**             | Agrega Diagrama de Despliegue                    | 8/03/2025  | Emiliano Gomez Gonzalez                     |
+| **2.1**             | Actualiza Diagrama de despliegue y documentación | 29/05/2025 | Emiliano Gomez Gonzalez                     |
+| **2.2**             | Correciones de Diagrama de despliegue            | 03/06/2025 | Emiliano Gomez Gonzalez y Emiliano Valdivia |
