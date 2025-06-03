@@ -13,6 +13,9 @@ Como usuario, quiero cerrar mi sesión en la aplicación, para asegurar el cierr
   - Al cerrar sesión, el usuario debe ser redirigido a la pantalla de inicio de sesión.
   - Se debe invalidar la sesión activa para evitar que otra persona acceda sin autenticación.
   - El cierre de sesión debe ser rápido y no afectar la usabilidad del sistema.
+  - Se debe mandar mensaje de error, en caso de error de conexión.
+  - Se debe mostrar una alerta, preguntándole al usuario si está seguro de cerrar sesión
+
 
 ---
 
