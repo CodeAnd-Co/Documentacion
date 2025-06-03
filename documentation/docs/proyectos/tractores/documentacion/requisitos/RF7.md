@@ -15,6 +15,8 @@ Yo como usuario quiero sustituir el excel cargado en la pestaña de inicio para 
   - El botón de analizar documento debe estar disponible cuando se cargue el nuevo excel.
   - El sistema no debe de aceptar archivos mayores a un tamaño de 10 mb.
   - El sistema no debe de aceptar archivos con una extensión diferente de .xlsx.
+  - El sistema permite que se arrastre y suelte un archivo .xls.
+  - El sistema da un mensaje de error tras soltar varios archivos a la vez.
   - Cuando se presione el botón de cargar excel se debe de abrir el explorador de archivos del dispositivo.
 
 ---

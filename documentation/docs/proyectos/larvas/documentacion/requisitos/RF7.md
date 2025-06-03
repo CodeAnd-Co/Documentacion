@@ -19,7 +19,7 @@ Como usuario del sistema, quiero modificar los datos de una charola que están g
 
 ### Diagrama de Actividades
 
-<a href="https://drive.google.com/file/d/1fBtWBZdEJXJS6EgMfcuVWJjD4JW90CD7/view?usp=sharing" target="_blank" rel="noopener noreferrer">Modificar datos generales dl Charola</a>
+<a href="https://drive.google.com/file/d/1fBtWBZdEJXJS6EgMfcuVWJjD4JW90CD7/view?usp=sharing" target="_blank" rel="noopener noreferrer">Modificar datos generales de la Charola</a>
 
 ---
 
@@ -52,7 +52,7 @@ sequenceDiagram
         Repository->>APIService: apiService.obtenerCharola(id)
         deactivate Repository
         activate APIService
-        APIService->>Controller: @GET ("/charola/:id")
+        APIService->>Controller: GET ("/charola/:id")
         deactivate APIService
         activate Controller
         Controller->>Controller: exports.obtenerCharola = async(req, res)
@@ -109,7 +109,7 @@ sequenceDiagram
         Repository->>APIService: apiService.editar(charola)
         deactivate Repository
         activate APIService
-        APIService->>Controller: @PUT ("/charola/editarCharola")
+        APIService->>Controller: PUT ("/charola/editarCharola")
         deactivate APIService
         activate Controller
         Controller->>Controller: exports.editarCharola = async(req, res)
@@ -156,9 +156,9 @@ sequenceDiagram
 
 ### Pull Request
 
-<a href="https://github.com/CodeAnd-Co/TECH-NEBRIOS-BACKEND/pull/25" target="_blank" rel="noopener noreferrer"> PR de Modificar datos generales dl Charola Backend</a>
+<a href="https://github.com/CodeAnd-Co/TECH-NEBRIOS-BACKEND/pull/25" target="_blank" rel="noopener noreferrer"> PR de Modificar datos generales de la Charola Backend</a>
 
-<a href="https://github.com/CodeAnd-Co/TECH-NEBRIOS-FLUTTER/pull/27" target="_blank" rel="noopener noreferrer"> PR de Modificar datos generales dl Charola Frontend</a>
+<a href="https://github.com/CodeAnd-Co/TECH-NEBRIOS-FLUTTER/pull/27" target="_blank" rel="noopener noreferrer"> PR de Modificar datos generales de la Charola Frontend</a>
 
 ---
 
@@ -176,3 +176,4 @@ sequenceDiagram
 | **1.3**             | Diagramas de actividades   | 23/5/2025  | Juan Eduardo Rosas Cerón |
 | **1.4**             | Se corrigió mockup  | 29/5/2025  | Mariana Juárez |
 | **1.5**             | Se agregaron los pull request de front y back | 29/5/2025  | Sofía Osorio |
+| **1.6**             | Pequeñas correciones | 02/6/2025  | Emiliano Gomez Gonzalez |

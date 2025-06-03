@@ -207,6 +207,129 @@ flowchart TB
     MercadoPago -- SDK --> EC2
 ```
 
+## Justificación de tecnologías utilizadas
+
+### ¿Por qué decidimos usar React y no otras tecnologías?
+
+Al analizar el proyecto se identificó que muchas historias de usuario compartían funcionalidades similares basadas en operaciones CRUD (Create, Read, Update y Delete). Esto nos llevó a priorizar una tecnología que permitiera una rápida construcción de interfaces reutilizables y escalables.
+
+---
+
+### Frontend
+
+#### Tecnología seleccionada: React con Vite + AWS Amplify
+
+- **Curva de aprendizaje**: Relativamente baja para quienes ya manejan JavaScript.
+- **Popularidad**: React cuenta con una comunidad amplia y activa, así como abundante documentación, lo que facilita la solución de problemas e incorporación de buenas prácticas.
+- **Rendimiento**: Vite mejora los tiempos de construcción y desarrollo en comparación con otras herramientas.
+- **Integración con AWS Amplify**: Facilita el hosting y despliegue continuo del frontend.
+- **Componentes y reutilización de UI**: Compatible con TailwindCSS, Bootstrap y Material UI para el diseño de interfaces consistentes.
+
+#### Ventajas específicas de React
+
+- **Estabilidad**: Plataforma madura que reduce riesgos en desarrollo y mantenimiento.
+- **Reutilización de componentes**: Facilita la creación de interfaces coherentes, especialmente útil en operaciones CRUD repetitivas.
+- **Flexibilidad**: Adaptable a nuevas necesidades del cliente sin complicaciones técnicas mayores.
+- **Soporte amplio**: Extensa oferta de tutoriales y recursos formativos.
+- **Ecosistema maduro**: Bibliotecas como Axios y Tailwind permiten un desarrollo ágil, seguro y eficiente.
+
+#### Alineación de React con CMMI y DAD
+
+- **CMMI (Capability Maturity Model Integration)**: React permite construir componentes reutilizables y documentados, manteniendo una trazabilidad clara entre requerimientos y funcionalidad.
+- **DAD (Disciplined Agile Delivery)**: React se alinea con metodologías ágiles, promoviendo entregas incrementales y continuas.
+
+#### Tecnologías consideradas y descartadas
+
+**Angular**
+- **Arquitectura MVC**: Basado en el modelo-vista-controlador, lo que ayuda a estructurar el código de forma modular.
+- **Uso de TypeScript**: Proporciona tipado estático y decoradores que mejoran la detección temprana de errores y la legibilidad del código.
+
+**Razones por las que no se eligió Angular**:
+- **Curva de aprendizaje pronunciada**: Requiere mayor tiempo para dominar conceptos avanzados.
+- **Desempeño**: Puede requerir optimización adicional para mantener un rendimiento competitivo en aplicaciones complejas.
+
+**Svelte**
+- **Menos código repetitivo**: Facilita el desarrollo reduciendo el código necesario para la reactividad.
+- **Curva de aprendizaje baja**: Utiliza HTML, CSS y JavaScript/TypeScript.
+
+**Razones por las que no se eligió Svelte**:
+- Ecosistema más limitado.
+- Menor soporte comunitario al ser una tecnología más nueva.
+
+---
+
+### Backend
+
+#### Tecnología seleccionada: Node.js + Express
+
+- **Curva de aprendizaje**: Sencilla para desarrolladores con experiencia en JavaScript.
+- **Escalabilidad**: Eficiente manejo de múltiples peticiones concurrentes gracias a su arquitectura basada en eventos.
+- **Ecosistema de paquetes**: Gran disponibilidad de módulos mediante `npm`.
+- **Compatibilidad**: Integración directa con servicios de AWS como DynamoDB y S3.
+
+#### Comparación con alternativas
+
+**Django**
+- Framework robusto en Python.
+- Mayor consumo de recursos en comparación con Node.js.
+
+**Spring Boot**
+- Arquitectura empresarial en Java.
+- Curva de aprendizaje considerablemente más alta.
+
+#### Razones por las que se eligió Node.js
+- Experiencia previa del equipo.
+- Ecosistema compatible con AWS SDK.
+- Ideal para construir APIs REST eficientes en entornos e-commerce.
+
+---
+
+### Base de Datos
+
+#### Tecnología seleccionada: Amazon RDS (MySQL)
+
+- **Escalabilidad automática**: Ajuste de capacidad sin intervención manual.
+- **Modelo sin servidor**: Optimización de costos operativos.
+- **Alta disponibilidad**: Gestión automática por parte de AWS.
+
+#### Comparación con alternativas
+
+**PostgreSQL**
+- Necesita configuración manual para escalar adecuadamente.
+
+**DynamoDB**
+- La escalabilidad fuera de los entornos administrados de AWS es más compleja.
+- El modelo de claves compuestas limita las consultas relacionales.
+
+---
+
+### Servicios en la nube
+
+#### Tecnología seleccionada: AWS (Amplify, S3, IAM, CloudWatch, RDS, EC2)
+
+- **Integración completa**: Arquitectura sin servidor optimizada para despliegue continuo.
+- **Escalabilidad**: Servicios como Amplify y RDS permiten ajustar la capacidad según la demanda.
+- **Seguridad**: IAM y CloudWatch proporcionan control de acceso y monitoreo continuo.
+- **Mantenimiento reducido**: Servicios gestionados que eliminan la necesidad de administración manual de infraestructura.
+
+#### Comparación con alternativas
+
+**Google Cloud**
+- Menor configurabilidad en comparación con AWS.
+
+**Azure**
+- Costos más elevados en diversos escenarios.
+
+**Docker**
+- Añade complejidad en la gestión de infraestructura, innecesaria para este caso de uso.
+
+#### Razones por las que se eligió AWS
+
+- Conocimiento previo del equipo en su uso.
+- Infraestructura escalable sin necesidad de administrar servidores.
+- Mayor número de servicios integrados comparado con Firebase.
+
+
 # Justificacion de cambio
 
 1. Cambio de DynamoDB a RDS
@@ -219,3 +342,4 @@ Debido al alto de uso de queries, y a las limitaciones que nos impone DynamoDB m
 | ------------------- | ----------------------------------------------------------- | --------- | -------------------------- |
 | **1.0**             | Creacion de el manual de aquitectura                        | 3/10/2025 | Diego Alfaro               |
 | **2.0**             | Actualizacion por cambio de base de datos de DynamoDB a RDS | 4/8/2025  | Miguel Angel, Diego Alfaro |
+| **2.1**             | Implementación de justificación del stack tecnológico | 05/30/2025  | Arturo Sánchez |
