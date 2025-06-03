@@ -25,6 +25,9 @@ Como **Super Administrador**, quiero consultar la información detallada de un u
    - Fecha de nacimiento
    - Género
 3. El panel debe tener las opciones “Editar” y “Salir”.
+4. Si el usuario no tiene ningún cliente asignado, en el apartado “Cliente” debe mostrarse el texto: “Sin cliente asignado”.
+5. Si el usuario tiene múltiples clientes asignados, en el apartado “Cliente” deben mostrarse todos los nombres de los clientes en forma de lista.
+6.  En caso de que ocurra un error al consultar la información del usuario, se debe mostrar una alerta con un mensaje que especifique el tipo de error ocurrido.
 
 ---
 
