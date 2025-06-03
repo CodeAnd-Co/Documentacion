@@ -13,11 +13,14 @@ Yo como usuario quiero cargar archivos de Excel a la plataforma para importar y 
   - El sistema debe tener acceso a los archivos.
 
   **Criterios de Aceptación:**
-  - El sistema debe aceptar archivos en formato .xlsx.
+  - El sistema debe aceptar archivos en formato .xlsx .
   - El sistema muestra una alerta si el archivo supera los 10 Mb.
   - El sistema muestra el nombre del archivo cargado.
-  - El sistema permite que se arrastre y suelte un archivo .xlsx.
+  - El sistema permite que se arrastre y suelte un archivo .xlsx .
   - El sistema da un mensaje de error tras soltar varios archivos a la vez.
+  - El sistema muestra error si le mandas un archivo vacio .xlsx .
+  - El sistema te muestra un error si le mandas un archivo .xlsx que cuente con celdas que contengan al principio caracteres especiales.
+  - El sistema te muestra un error en caso de que alguna de las anteriores verificaciones no pasen en cada hoja de calculo del archivo.xlsx .
 
 ---
 
