@@ -7,7 +7,7 @@ sidebar_position: 7
 
 ### Historia de Usuario
 
-Yo como usuario quiero cargar archivos Excel a la plataforma para importar y analizar los datos para realizar reportes.
+Yo como usuario quiero cargar archivos de Excel a la plataforma para importar y analizar los datos para realizar reportes.
 
   **Precondiciones:**
   - El sistema debe tener acceso a los archivos.
