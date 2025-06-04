@@ -24,8 +24,7 @@ Como **Super Administrador**, quiero acceder a un listado de usuarios con opcion
    - Correo electrónico
    - Teléfono
 3. Se deben poder hacer búsquedas y filtros para ubicar usuarios.
-4. Debe permitir paginación si hay muchos usuarios registrados.
-5. Si no hay usuarios en la base de datos, se debe mostrar un mensaje indicando que no hay registros disponibles.
+4. Si no hay usuarios en la base de datos, se debe mostrar un mensaje indicando que no hay filas.
 
 ---
 

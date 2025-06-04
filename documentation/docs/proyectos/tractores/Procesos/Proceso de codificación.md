@@ -11,7 +11,7 @@ sidebar_position: 1
 
 - Establecer un flujo para el desarrollo de código de alta calidad.
 - Identificar y corregir defectos en etapas tempranas del desarrollo.
-- Asegurar la verificación efectiva de código.
+- Asegurar la verificación efectiva del código.
 
 ---
 
@@ -26,82 +26,52 @@ sidebar_position: 1
 
 ## Proceso
 
-### Para programar backend desacoplado:
-
-**Preparación:**
-- Ir a develop y hacer git pull.
-- Hacer npm i.
-- Crear la rama deacuerdo al requisito siguiendo la estrategia de ramas.
-
-**Codificación:**
-- Verificas que en app.js esté definida la ruta del módulo correspondiente al requisito.
-    - Si no está:
-        - Verificar que exista la carpeta del módulo correspondiente al requisito.
-        - Verificar que dentro de la carpeta del módulo existan las carpetas 'controladores', 'data', y 'rutas'.
-            - Verificar que dentro de la carpeta 'data' exista la carpeta 'repositorios'.
-        - Verificar que exista el archivo de índice de las rutas del módulo.
-- Crear el archivo de ruta individual del requisito, añadiendo los middlewares necesarios.
-- Agregar el archivo de ruta individual al índice de rutas del módulo.
-- Crear el archivo de controlador del requisito dentro de la carpeta de controladores.
-- Agregar el archivo de controlador del requisito al archivo de ruta individual del requisito.
-- Crear el archivo de repositorio del requisito dentro de la carpeta data>repositorios.
-- Agregar el archivo de repositorio del requisito al controlador del requisito.
+| **Fase** | **Descripción** | **Responsable** |
+|----------|-----------------|-----------------|
+| **1. Análisis** | **Abre y llena** la [checklist de análisis](https://docs.google.com/document/d/10oQVaYoiHrBbJjHWcvZDRMZLWdWukiI5ONUdzWmxchs/edit?tab=t.0#heading=h.fhau7kjl46pa). Revísala punto por punto y, si falta algo, haz las correcciones necesarias para asegurar que el análisis esté completo. Guarda la checklist en la carpeta correspondiente en 'Checklists Tractech'. Y sigue la parte correspondiente del [Proceso de Trazabilidad](/docs/next/procesos/PR11-trazabilidad-requisitos). | **Codificador del requisito** |
+| **2. Diseño** | Verifica el diseño en Docusaurus en el documento del requisito. **Abre y llena** la [checklist de diseño](https://docs.google.com/document/d/1RWFAyym9Kphn2Pl4UBQtPHf09XGEX_OADpe3IqYxLe4/edit?tab=t.0#heading=h.fhau7kjl46pa). Si identificas áreas de mejora, dibuja el diagrama de secuencia a mano (en papel) para replantear su lógica. Una vez definido el nuevo diseño, actualiza el diagrama del documento del requisito. Guarda la checklist en la carpeta correspondiente en 'Checklists Tractech'. Y sigue la parte correspondiente del [Proceso de Trazabilidad](/docs/next/procesos/PR11-trazabilidad-requisitos). | **Codificador del requisito** |
+| **3. Inicio de Codificación** |  Si no tienes con quién colaborar, puedes codificar solo. De lo contrario, es obligatorio hacer pair programming. | **Codificador del requisito** |
+| | Mantén abierto el diagrama de secuencia durante la codificación. Verifica que estás en la rama con `git branch` y cambia a `develop` si es necesario. Ejecuta `git pull origin`, `npm i` y crea tu rama con `git checkout -b <NombreDeLaRama>`. Recuerda seguir [la estrategia de ramas](/docs/next/guias/github/git-branches). | **Codificador del requisito** |
+| **4. Backend desacoplado** | Verifica que la ruta esté definida en `app.js`. Si no está: crea la carpeta del módulo con subcarpetas `controladores`, `data`, `rutas` y `repositorios`. Agrega el archivo de rutas e índice aplicando [la convención de nombres](/docs/next/standards/estandar-codificacion/), los principios SOLID y el [patrón de diseño](/docs/next/proyectos/tractores/documentacion/estrategia). | **Codificador del requisito** |
+| **5. Implementación Backend Desacoplado** | Importa los middlewares necesarios en el archivo de rutas. Crea el controlador, el repositorio con validaciones, y el modelo con la consulta a la base de datos. Sigue la parte correspondiente del [Proceso de Trazabilidad](/docs/next/procesos/PR11-trazabilidad-requisitos). | **Codificador del requisito** |
+| **6. Verificación del Código** | Revisa tu código con tu checklist personal y posteriormente con la del equipo. Realiza las modificaciones necesarias para cumplir con ambas. | **Codificador del requisito** |
+| **7. Pull Request** | Abre un PR asegurándote de apuntar a `develop`. Notifica a alguien para que realice las pruebas. Si hay errores, corrígelos y haz push. Verifica que se cumpla la definición de DONE y sigue la parte correspondiente del [Proceso de Trazabilidad](/docs/next/procesos/PR11-trazabilidad-requisitos). | **Codificador del requisito** |
+| **8. Backend Local** |  Vuelve a repasar la segunda parte de la fase de '_Inicio de codificación_'. Si necesitas comunicarte con el backend desacoplado actualiza `constantes.js` en la carpeta `scripts`. Crea una carpeta `API` en `domain` con `moduloAPI.js` para funciones que llamen al servidor. Conecta tu controlador con la ruta del servidor. En `casosUso`, crea la lógica de negocio del módulo. Revisa tu código como se menciona en la fase de '_Verificación del Código_'. | **Codificador del requisito** |
+| **9. Frontend** |  Vuelve a repasar la segunda parte de la fase de '_Inicio de codificación_'. En `framework/vistas/paginas`, crea la carpeta del módulo y el archivo `.ejs`. Incluye `encabezado.ejs` y `piePagina.ejs`. Usa variables para rutas. Identifica componentes existentes o crea nuevos si es necesario, recordando consultar al grupo y añadiendo la tarea al Plan de Iteración correspondiente. En `scripts`, crea un archivo `.js` para manipular el DOM. Si hay lógica que no interactúa con HTML, muévela al archivo de caso de uso. Conecta el controlador con el caso de uso y este con la vista. Revisa tu código como se menciona en la fase de '_Verificación del Código_'. Para terminar realiza un Pull Request siguiendo la fase de '_Pull Request_'. | **Codificador del requisito** |
 
 
-### Programar backend local:
 
-**Preparación:**
-- Ir a develop y hacer git pull.
-- Hacer npm i.
-- Crear la rama deacuerdo al requisito siguiendo la estrategia de ramas.
+### Actualización de Checklists
+- La **checklist de codificación** se actualizará **cada lunes**, incorporando los defectos más frecuentemente registrados en el Defect Log.
+- Al **cierre de cada iteración**, se actualizarán las **checklists de análisis y diseño** con base en los defectos detectados durante el ciclo.
+- El objetivo de estas actualizaciones periódicas es **abordar de manera directa las áreas de oportunidad** del equipo y fomentar la mejora continua.
 
-**Codificación:**
-- Si necesitas comunicarte con el backend desacoplado:
-    - Asegurate de tener tu constantes.js con la URL base ya sea con la IP del servidor (staging) o localhost para local
-    - Checar en la carpeta domain si existe la carpeta API de tu modulo:
-        - En esa carpeta debes crear tu moduloAPI.js donde vas a poner tus funciones con las llamadas al servidor
-        - Cuando tengas tu controlador conectarlo a la ruta de la peticion del servidor para que exista comunicacion
- -  Ya con la conexion al backend desacoplado puedes codificar el backend local:
-    - Ingresar a src>backend>casosUso
-    - Verificar si existe la carpeta del módulo correspondiente al requisito.
-    - Crear el archivo que tiene toda la lógica de negocio y que funciona como controlador del requisito.
 
-### Programar frontend:
+### Uso de rutas en HTML, EJS y scripts
+- **Todas las rutas dentro del HTML deben ser absolutas**, partiendo de `/harvester-app`. Ejemplo: para importar un script o archivo CSS en un archivo HTML, usa:  
+    ```html
+  <script src="<%= rutaBase %>src/scripts/archivo.js"></script>
+  <link rel="stylesheet" href="<%= rutaBase %>src/css/estilos.css">
+    ```
+- **También deberás usar rutas absolutas en las importaciones dentro de cualquier script JS.** Esto garantiza que el módulo cargue correctamente desde la raíz del proyecto.
 
-**Preparación:**
-- Ir a develop y hacer git pull.
-- Hacer npm i.
-- Crear la rama deacuerdo al requisito siguiendo la estrategia de ramas.
+- **Excepción importante:** las rutas **dentro del código EJS** (aunque esté en el mismo archivo) **sí pueden ser relativas.**
 
-**Notas importantes**
-- Todas las rutas que se usen dentro de HTML son absolutas en base a /harvester-app.
-    - Esto signfica que si quieres importar css o un script dentro del HTML debes usar el código `<%= rutaBase %>`
-    - También deberás usar esta ruta absoluta en las importaciones dentro de cualquier script.
-    - Esto no aplica para código EJS aunque esté en el mismo archivo, en ese si se pueden usar rutas relativas.
+---
 
-**Codificación:**
-    - Ir a src>framework>vistas>paginas y crear la carpeta correspondiente a tu módulo si no existe.
-    - Crear el archivo de EJS donde vas a crear la vista.
-        - Revisar que componentes se necesitan para crear la vista y revisar si ya existen. Si necesitas un componente que aún no existe, avisar en el grupo para confirmar y luego programarlo.
-        - Añadir el encabezado.ejs y piePagina.ejs que estan dentro de src>framework>vistas>includes
-        - Hacer el EJS usando variables para cargar cosas como las rutas.
-    - Ir ar src>framework>utils>scripts y crear el archivo con el código de js que correra directamente en el frontEnd y manejará el DOM (Document Object Model) o body. No debes incluir lógica más allá de leer, escribir, y asignar funciones a los valores de los elementos de HTML.
-        - Si en tu script quieres implementar la carga de otro módulo o vista, usar la función de `ipcRenderer.invoke('precargarEJS')`.
-        - Añadir `const { ipcRenderer } = require('electron')`.
-            - Si quieres ver un ejemplo puedes consultar barraLateral.js
-    - Cualquier lógica que no interactúe directamente con elementos HTML debe ir src>backend (consultar proceso para programar el Backend local)
-    - Conectar el controlador a la vista del usuario a través de este archivo.
+### Carga dinámica de módulos o vistas (Electron)
 
-### Revisar el código
+Si necesitas **cargar otra vista desde un script**, sigue estos pasos:
 
-- Usar tu checklist individual para verificar todo el código.
-- Usar la checklist del equipo para verificar todo el código.
-- Actualizar las checklists en caso de ser necesario.
-
-### Programar pruebas
-- Ejecutar prueba manual registrando entradas y salidas.
-- Ubicarte en las carpetas de src>pruebas y pruebas en el Front y Backend respectivamente.
-- Codificar la prueba Jest validando que los resultados sean iguales a la prueba manual.
+1. **Importa ipcRenderer al inicio de tu script:**
+    ```js
+   const { ipcRenderer } = require('electron');
+    ```
+2. **Usa la función:**
+    ```js
+    ipcRenderer.invoke('precargarEJS', 'ruta/de/la/vista');
+    ```
+Puedes consultar un ejemplo en: `barraLateral.js`.
 
 ---
 
@@ -113,3 +83,10 @@ sidebar_position: 1
 | **2.0** | Ajustar proceso con el refactor | 22/05/2025 | Daniel Queijeiro, Diego Fuentes |
 | **2.1** | Añadir pasos para actualizar checklists | 26/05/2025 | Diego Fuentes |
 | **2.2** | Añadir pasos para revisar componentes | 26/05/2025 | Diego Fuentes |
+| **3.0** | Refactorización del proceso | 29/5/2025 | Juan Pablo Chávez Leal |
+| **3.1** | Corrección de errores ortográficos en el proceso | 30/5/2025 | Juan Pablo Chávez Leal |
+| **3.2**   | Enlaces al proceso de RTM. | 30/05/2025  | Juan Pablo Chávez Leal   |
+| **3.3** | Añadir al proceso la actualización de Checklists | 31/5/2025 | Rommel Toledo C. |
+| **4.0** | Reescritura para aumentar la claridad del proceso | 31/5/2025 | Rommel Toledo C. |
+| **5.0** | Reescritura completa del proceso para aumentar la concisión | 31/5/2025 | Rommel Toledo C. |
+| **5.1** | Corrección de los links a las checklist del equipo | 2/6/2025 | Rommel Toledo C. |

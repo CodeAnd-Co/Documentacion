@@ -5,39 +5,41 @@ sidebar_position: 3
 
 # RF2: Usuario registrado inicia sesión.
 
-**Última actualización:** 07 de marzo de 2025
-
 ### Historia de Usuario
 
-Yo como usuario registrado de CNH quiero ingresar mis credenciales a la aplicación de escritorio para acceder a mis datos y funcionalidades dentro del sistema.
+Yo como empleado de CNH y usuario de la aplicación harvester quiero ingresar con mis credenciales correspondientes a la aplicación de escritorio para poder acceder a las funcionalidades que hay dentro del sistema.
 
   **Criterios de Aceptación:**
   - El sistema debe permitir a lo usuarios registrados acceder a sus cuentas e ingresar al sistema.
   - Si las credenciales son incorrectas, el sistema debe de mostrar un mensaje claro de error.
   - Si el usuario ingresa correctamente, debe de ser reedirigido a la página principal.
+  - La aplicación tendrá de contar con 2 campos a la hora de iniciar sesión, uno para correo electrónico, otro para contraseña del usuario.
+  - La aplicación debe de validar y comparar las credenciales ingresadas por el usuario.
+  - La aplicación arrojará una alerta en dado caso que el usuario no llene el campo de correo electrónico y se intenté acceder a la aplicación.
+  - La aplicación arrojará una alerta en dado caso que el usuario no llene el campo de contraseña y se intenté acceder a la aplicación.
+  - La aplicación arrojará una alerta en dado caso que la información ingresada dentro de los 2 campos correspondientes sea incorrecta.
+  - Una vez iniciada la sesión y validados los datos del usuario, se mantendrá localmente almacenado un token el que hará que la sesión pueda mantenerse abierta durante 15 días, haciendo que no se tengan que validar los datos en cada apertura de la aplicación.
 
 ---
 
 ### Diagrama de Secuencia
 
-![Diagrama de Secuencia] 
-
-> *Descripción*: El diagrama de secuencia muestra cómo el usuario interactúa con el sistema para iniciar sesión, detallando los pasos de solicitud de datos, validación y confirmación.
+- No aplica según nuestra [definición de Ready](../../definicion-ready-tractores.md).
 
 ---
 
 ### Mockup
 
-![Mockup]
+![Mockup](./mockups/RF1.jpg)
 
-> *Descripción*: El mockup representa la interfaz del sistema donde el usuario puede iniciar de sesión. Muestra los campos requeridos y los botones de acción disponibles.
+> *Descripción*: El mockup representa la interfaz del sistema donde el usuario puede iniciar de sesión. Muestra los campos tanto de correo electrónico como de contraseña, además del botón de "Acceder" para poder entrar a la aplicación.
+
+---
+### Pruebas Unitarias 
+
+#### [Pruebas de la RF](https://docs.google.com/spreadsheets/d/1W-JW32dTsfI22-Yl5LydMhiu-oXHH_xo3hWvK6FHeLw/edit?gid=710795973#gid=710795973)
 
 ---
 
-### Pruebas Unitarias 
-| ID Prueba | Descripción | Resultado Esperado |
-|-----------|-------------|--------------------|
-|PU-RF2-01|Inicio de sesión con credenciales válidas.|El usuario es autenticado y redirigidoa la página principal|
-|PU-RF2-02|Inicio de sesión con contraseña incorrecta.|Se muestra un mensaje de error claro indicando que la credencial es inválida.|
-|PU-RF2-03|Inicio de sesión con correo no registrado.|Se muestra un mensaje de error claro indicando que la credencial es inválida.|
-|PU-RF2-04 |Inicio de sesión con campos vacíos|Se muestra un mensaje de error claro pidiendo completar los campos necesarios.|
+### Pull Request
+[https://github.com/CodeAnd-Co/App-Local-TracTech/pull/12](https://github.com/CodeAnd-Co/App-Local-TracTech/pull/12)
