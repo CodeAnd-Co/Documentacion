@@ -15,11 +15,16 @@ Como administrador, quiero poder modificar los permisos y el nombre de un rol pa
 
 ## **Criterios de Aceptación:**
 
-1. El Super Administrador debe poder modificar la información de un rol existente.
-2. Se debe permitir cambiar el nombre y los permisos asignados.
-3. El sistema debe validar que el nuevo nombre no esté duplicado.
-4. Si la actualización es exitosa, los cambios deben reflejarse de inmediato en la vista con la información del rol.
-5. Si hay un error, el sistema debe mostrar un mensaje indicando el problema.
+1. El Superadministrador debe poder modificar la información de un rol existente.
+2. El rol de Superadministrador no puede ser cambiado bajo ninguna circunstancia.
+3. Se debe permitir cambiar el nombre, descripcion y los permisos asignados.
+4. El nombre debe ser obligatorio.
+5. El sistema debe validar que el nuevo nombre no esté duplicado.
+6. El sistema debe validar que el nuevo nombre no pase de 50 caracteres.
+7. El sistema debe validar que la descripcion no pase de los 250 caracteres.
+8. Si la actualización es exitosa, los cambios deben reflejarse de inmediato en la vista con la información del rol.
+9. Si hay un error, el sistema debe mostrar un mensaje indicando el problema.
+10. No se puede aceptar inyecciones SQL.
 
 ---
 
