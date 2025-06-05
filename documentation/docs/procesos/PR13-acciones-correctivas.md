@@ -80,4 +80,5 @@ Situación en la que el producto o acuerdo de trabajo no cumple con los requisit
 | **2.3.0**   | Corrección de errores ortográficos                                | 25/04/2025  | Hiram Mendoza                                         |
 | **3.0.0**   | Simplificación del proceso y corrección acorde al estándar CMMI  | 15/05/2025  | Paola María Garrido, Valeria Zúñiga                     |
 | **3.1.0**   | Agregado paso para introducir versión 3.2                        | 16/05/2025  | Daniel Contreras Chávez                               |
+| **3.2.0**   | Se agregó el estándar de modificación o creación de proceso como recurso relacionado | 4/06/2025 | Ian Julián Estrada Castro |
 </details>
