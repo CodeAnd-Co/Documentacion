@@ -84,3 +84,5 @@ sequenceDiagram
 
 ### Pull Request
 [https://github.com/CodeAnd-Co/App-Local-TracTech/pull/21](https://github.com/CodeAnd-Co/App-Local-TracTech/pull/21)
+
+[https://github.com/CodeAnd-Co/Backend-Desacoplado-TracTech/pull/16](https://github.com/CodeAnd-Co/Backend-Desacoplado-TracTech/pull/16)
