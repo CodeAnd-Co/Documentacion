@@ -113,3 +113,19 @@ sequenceDiagram
 ## **Mockup**
 
 > _Descripción_: El mockup representa la interfaz donde el Superadministrador puede modificar la información de un rol y guardar los cambios.
+
+![alt_text](/img/mockup-rf9-textiles.png)
+
+---
+
+# Pruebas
+
+[Pruebas](https://docs.google.com/spreadsheets/d/1NLGwGrGA5PVOEzLaqxa8Ts1D_Ng3QzzqNKWJYUzxD-M/edit?gid=1441262574#gid=1441262574)
+
+---
+
+# Historial
+
+| **Tipo de Versión** | **Descripción**                | **Fecha**  | **Colaborador** |
+| ------------------- |--------------------------------| ---------- |-----------------|
+| **1.0**             | Actualizacion de documentación | 06/04/2025 | Diego Alfaro    |
