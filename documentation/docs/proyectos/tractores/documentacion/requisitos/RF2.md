@@ -43,3 +43,5 @@ Yo como empleado de CNH y usuario de la aplicación harvester quiero ingresar co
 
 ### Pull Request
 [https://github.com/CodeAnd-Co/App-Local-TracTech/pull/12](https://github.com/CodeAnd-Co/App-Local-TracTech/pull/12)
+
+[https://github.com/CodeAnd-Co/Backend-Desacoplado-TracTech/pull/24](https://github.com/CodeAnd-Co/Backend-Desacoplado-TracTech/pull/24)
