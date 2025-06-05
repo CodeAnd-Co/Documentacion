@@ -22,6 +22,7 @@ Es un documento que reúne los recursos y conocimientos necesarios para ejecutar
     - **Requisitos de personal**: perfiles y conocimientos clave. Para ello:
         - Cada integrante del departamento debe registrar o actualizar sus habilidades en el [Repositorio de habilidades departamentales](https://docs.google.com/spreadsheets/d/1fa2Wl-FCAMtcPqP0MmCJEuIEIezpAFJHTCUcAxAQ9FU/edit?usp=sharing).
         - Además, por proyecto se debe responder o actualizar la [plantilla de conocimientos técnicos](https://docs.google.com/spreadsheets/d/1OT4_ssxMjGavbrr5AA35Lu_H7lh68kxyCN6FcmlTQWQ/edit?usp=sharing) (adaptar las columnas a la necesidad de conociminetos del proyecto) para detectar brechas de habilidades.
+            - **La evaluación de los conocimientos finales debe de ocurrir al finalizar el plan de capacitación o al menos 2 meses despues de iniciado el plan.**
 
 2. **Registro**
 - Registrar la información identificada en la [tabla de adquisición los recursos](https://docs.google.com/spreadsheets/d/1OT4_ssxMjGavbrr5AA35Lu_H7lh68kxyCN6FcmlTQWQ/edit?usp=sharing) sleccionando el tipo de recurso y si se cuenta con este o que se necesita. 
@@ -43,3 +44,4 @@ Es un documento que reúne los recursos y conocimientos necesarios para ejecutar
 | **1.0** | Plan de recursos. |  | Antonio Landeros, Armando Méndez Castro|
 | **1.1** | Plan de capacitación. | 5/3/2025 | Emiliano Valdivia, Miguel Uribe |
 | **2.0** | Crear guía de de plan de recursos y capacitación. | 14/05/2025 | Paola María Garrido Montes |
+| **2.1** | Especificación de la capacitación final | 5/06/2025 | Miguel Angel Uribe Esquivel |
