@@ -1,8 +1,8 @@
 ---
-title: Guía de presentaciones
+title: Guía para presentaciones
 ---
 
-# Guía de presentaciones
+# Guía para presentaciones
 
 
 ## 1. Objetivo
@@ -63,10 +63,15 @@ Cada presentación debe seguir la siguiente estructura:
   - **Rosa:** feminidad, dulzura, juventud
 
 ### 3.2. Tipografía
-- Tamaño mínimo de 30 pts para texto y 40 pts para títulos.
+- Un tamaño de mínimo 20 puntos y máximo 40 puntos para los textos.
+- Un tamaño de 40 puntos a 70 puntos para los títulos.
+- Para un título principal, un tamaño de entre 70 y 90 puntos.
 - Evitar uso excesivo de negritas, cursivas y subrayados.
 - Usar un color de letra que contraste con el fondo.
-- No exceder de tres tipos de tipografías .
+- Tipografías más usadas en el departamento:
+   - Droid Serif
+   - Roboto
+   - DM Sans
 
 ### 3.3. Imágenes
 - Lo mejor son imagenes PNG con fondo transparente.

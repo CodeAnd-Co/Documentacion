@@ -47,6 +47,7 @@ Proceso para generar reportes de estado que reflejen la salud de los proyectos d
 - [Estándar para crear nuevas plantillas](/docs/next/standards/estandar-plantillas)
 - [Definición de Ítems](/docs/next/procesos/PR2-definicion-items)
 - [Plantilla para procesos](/docs/next/plantillas/plantilla-procesos)
+- [Guía de presentaciones](/docs/next/guias/guia-presentaciones)
 
 ## 📚 Historial de cambios
 
