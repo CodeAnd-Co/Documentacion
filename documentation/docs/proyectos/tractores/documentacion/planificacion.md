@@ -15,24 +15,12 @@ _Cronograma, hitos y entregables._
 | --------------------------------------- | --------------------- | ----------- |
 | Fase de Inicio                          | 12/03/25              | Terminado   |
 | Construcción 1 (Prueba de Arquitectura) | 04/04/25              | Terminado   |
-| Construcción 2 (MVP)                    | 02/06/25              | En progreso |
-| Transición 1 (MVP)                      | 04/06/25              | No empezado |
+| Construcción 2 (MVP)                    | 03/06/25              | Terminado   |
+| Transición 1 (MVP)                      | 04/06/25              | En progeso  |
 | Construcción 3 (MBI 1)                  | 09/06/25              | No empezado |
 | Transición 2 (MBI 1)                    | 11/06/25              | No empezado |
 
 
-
-## Hitos del Proyecto
-
-| Hito                     | Descripción                             | Fecha Estimada | Estado      |
-| ------------------------ | --------------------------------------- | -------------- | ----------- |
-| Inicio del Proyecto      | Inicio formal del proyecto              | 14/02/25       | Terminado   |
-| Aprobación de Requisitos | Aprobación final de los requisitos      | 01/03/25       | Terminado   |
-| Finalización del Diseño  | Finalización de diseño del sistema      | 08/04/25       | Terminado   |
-| Desarrollo Completo      | Finalización del desarrollo del sistema | 09/06/25       | En progreso |
-| Pruebas Completas        | Finalización de las pruebas             | 09/06/25       | No empezado |
-| Implementación Exitosa   | Implementación exitosa en producción    | 11/06/25       | No empezado |
-| Cierre del Proyecto      | Cierre formal del proyecto              | 11/06/25       | No empezado |
 
 
 ## Entregables del Proyecto

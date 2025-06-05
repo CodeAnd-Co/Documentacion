@@ -73,6 +73,7 @@ De acuerdo con el modelo **CMMI PP SP 2.3 (Gestión de Datos del Proyecto)**, se
 
    - Se regulará la distribución de datos mediante permisos explícitos.
    - Se definirán formatos y protocolos de transmisión para garantizar la integridad de los datos compartidos.
+   - En caso de que un miembro del equipo necesite tener acceso a alguno estos datos, debe notificar a alguno de estos dos líderes, que evaluarán la petición y concederán acceso al dato específico que fue solicitado si lo consideran necesario.
 
 6. **Control de versiones y trazabilidad de datos (CM SP 1.1, CM SP 2.1)**
 
@@ -131,4 +132,5 @@ Para garantizar el cumplimiento de esta política, se implementarán mecanismos 
 | **1.4**             | Plan de Datos.                                                          | 28/04/2025 | Pablo Hurtado                   |
 | **1.5**             | Eliminar principios y resumir objetivo.                                 | 08/05/2025 | Daniel Contreras                |
 | **1.6**             | Definir un método para que una persona pueda acceder a datos sensibles. | 29/05/2025 | Emiliano Valdivia Lara          |
+| **1.7**             | Modificación a las directrices para la gestión de datos. | 04/06/2025 | Hiram Mendoza         |
 
