@@ -122,5 +122,6 @@ Este proceso define cómo planear un proyecto desde su inicio y cómo asegurar s
 | **3.4.0**   | Mapeo de RD 3.4 y RD 3.5 en el proceso.                                           | 30/05/2025    | Paola María Garrido, Carlos Iván Fonseca Mondragón 
 |**3.5.0**| Mapeo de RD 2.3 Identificación y documentación de requisitos de interfaz | 01/06/2025 | Emiliano Gomez Gonzalez |
 | **3.5.1**   | Mapeo de PMC 2.1 en el proceso.                                           | 30/05/2025    | Paola María Garrido, Angel Mauricio Ramírez Herrera |
+| **3.5.2**             | Implementar acciones correctivas.       | 05/06/2025 | Max Toscano          |
 
 </details>
