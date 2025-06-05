@@ -38,7 +38,7 @@ sequenceDiagram
     participant Model as Model
     participant Database as Base de Datos
 
-    alt Conexión disponible | DELETE
+    alt Conexión disponible | POST
         Usuario ->> View: Presiona "Eliminar Charola"
         activate View
 
@@ -58,11 +58,11 @@ sequenceDiagram
         deactivate Repository
         activate APIClient
 
-        APIClient ->> APIService: DELETE /charolas/{id}
+        APIClient ->> APIService: POST  /charolas/{id}
         deactivate APIClient
         activate APIService
 
-        APIService ->> Controller: DELETE /charolas/{id}
+        APIService ->> Controller: POST /charolas/{id}
         deactivate APIService
         activate Controller
 
@@ -109,7 +109,7 @@ sequenceDiagram
         View -->> Usuario: Mostrar mensaje "Charola eliminada correctamente"
         deactivate View
 
-    else Sin conexión a internet, 101 | DELETE
+    else Sin conexión a internet, 101 | POST
         Usuario ->> View: Presiona "Eliminar Charola"
         activate View
 
@@ -129,7 +129,7 @@ sequenceDiagram
         deactivate Repository
         activate APIClient
 
-        APIClient ->> APIService: DELETE /charolas/{id}
+        APIClient ->> APIService: POST /charolas/{id}
         deactivate APIClient
         activate APIService
 
@@ -156,7 +156,7 @@ sequenceDiagram
         View -->> Usuario: Mostrar mensaje "Sin conexión a internet"
         deactivate View
 
-    else Error de servidor, 500 | DELETE
+    else Error de servidor, 500 | POST
         Usuario ->> View: Presiona "Eliminar Charola"
         activate View
 
@@ -176,11 +176,11 @@ sequenceDiagram
         deactivate Repository
         activate APIClient
 
-        APIClient ->> APIService: DELETE /charolas/{id}
+        APIClient ->> APIService: POST /charolas/{id}
         deactivate APIClient
         activate APIService
 
-        APIService ->> Controller: DELETE /charolas/{id}
+        APIService ->> Controller: POST /charolas/{id}
         deactivate APIService
         activate Controller
 
