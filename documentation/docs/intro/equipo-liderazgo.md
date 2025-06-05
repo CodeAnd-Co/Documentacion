@@ -62,5 +62,5 @@ En esta sección se presenta al equipo de liderazgo responsable de la dirección
 |-------------|--------------------------------------------------------------------|---------------|-----------------------------------------------|
 | **1.0.0**   | Creación de documentacion de roles de liderazgo                    | 20/05/2025    | Nicolas Hood Figueroa                         |
 | **1.0.1**   | Actualización del equipo de liderazgo                              | 29/05/2025    | Juan Pablo Chávez Leal                        |
-
+| **1.0.2**   | Actualización del equipo de liderazgo TracTech                             | 05/06/2025    | Ian Julián Estrada Castro |
 </details>
