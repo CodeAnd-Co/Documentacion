@@ -1,9 +1,9 @@
 ---
-title: 🌻 | PRL1 Ingeniería de software
+title: 🌻 | PRL1 Codificación Technebrios
 sidebar_position: 21
 ---
 
-# 🌻 Proceso de codificación
+# 🌻 Proceso de codificación Technebrios
 
 Proceso para establecer un flujo estructurado que garantice la construcción de alta calidad, la detección temprana de defectos y la verificación efectiva para cada historia de usuario.
 
@@ -70,5 +70,6 @@ Proceso para establecer un flujo estructurado que garantice la construcción de 
   |-------------|---------------------------------------------------------|-------------|------------------------------------------|
   | **1.0.0**   | Adaptación del proceso                                    | 30/05/2025  |Emiliano Valdivia Lara, Sofia Osorio Suárez       |
   | **1.0.1**   | Mapear TS 2.3 | 02/06/2025  | Emiliano Valdivia Lara, Hiram Israel Mendoza López       |
+  | **1.0.2**   | Cambio de nombre para estandarizar en el departamento | 02/06/2025  | Miguel Angel Uribe  |
   
 </details>
