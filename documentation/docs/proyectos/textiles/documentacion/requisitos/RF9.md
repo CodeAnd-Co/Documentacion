@@ -124,6 +124,13 @@ sequenceDiagram
 
 ---
 
+## **Codigo**
+[Pull request Backend](https://github.com/CodeAnd-Co/Backend-textiles/pull/120)
+
+[Pull request Frontend](https://github.com/CodeAnd-Co/Frontend-Text-Lines/pull/162)
+
+---
+
 # Historial
 
 | **Tipo de Versión** | **Descripción**                | **Fecha**  | **Colaborador** |
