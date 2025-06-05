@@ -84,6 +84,14 @@ Los requisitos no funcionales establecen las expectativas en términos de tiempo
 
 - El sistema debe ser escalable para manejar un aumento de hasta 20 usuarios simultáneos sin que exista una decadencia significativa del rendimiento ya que Zuustento pretende una expansión a futuro en los próximos 2 años. En este plazo el límite de colaboradores es de 20, sin embargo, aunque no es mucho, es importante hacer el sistema escalable para futuros cambios.
 
+**Diagrama de paquetes Frontend:**
+
+![alt text](../../documentacion/Diagrama_paquetes_frontend.png)
+
+**Diagrama de paquetes Backend:**
+
+![alt text](../../documentacion/Diagrama_paquetes_backend.png)
+
 **Disponibilidad**
 
 - Desde la perspectiva del tiempo debe estar disponible entre semana la mayoría del tiempo, sin embargo, en fines de semana se pueden hacer servicios de mantenimiento.
@@ -284,3 +292,4 @@ Los **mockups** de la interfaz están disponibles en el siguiente enlace:
 | **2.1**     | Se agregaron y eliminaron historias              | 09/05/2025 | Juan Eduardo Rosas          |
 | **2.2**     | Modificación de los requisiton no funcionales    | 26/05/2025 | Juan Eduardo Rosas          |
 | **2.3**     | Se agrega requisitos del SRS                     | 26/05/2025 | Emiliano Gomez Gonzalez     |
+| **2.4**     | Se agregaron diagramas de paquetes               | 26/05/2025 | Emiliano Gomez Gonzalez     |
