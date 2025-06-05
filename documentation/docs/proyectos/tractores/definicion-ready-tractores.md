@@ -9,7 +9,7 @@ sidebar_position: 3
 
 ### Definición de Ready
 La historia debe:
-- Contar con **diagrama de secuencia**.
+- Contar con **diagrama de secuencia** solamente será necesario diagrama de secuencia obligatorio en historias de usuario de un tamaño igual o mayor a 5, en las menores es opcional.
 - Estar definida claramente y debe ser entendida por todo el equipo, contando con los siguientes elementos:
   - **Título**
   - **Descripción** (quién, qué, para qué, cómo)

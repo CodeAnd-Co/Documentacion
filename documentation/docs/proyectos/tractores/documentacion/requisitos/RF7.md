@@ -1,42 +1,46 @@
 ---
-title: "RF7: Usuario consulta los ranchos disponibles."  
+title: "RF7: Usuario sustituye el Excel cargado."  
 sidebar_position: 8
 ---
 
-# RF7: Usuario consulta los ranchos disponibles.
-
-**Última actualización:** 03 de abril de 2025
+# RF7: Usuario sustituye el Excel cargado.
 
 ### Historia de Usuario
 
-Yo como usuario quiero consultar una lista completa de ranchos disponibles en el sistema, con opciones de búsqueda y organización clara, para poder encontrar rápidamente la información que necesito.
+Yo como usuario quiero sustituir el excel cargado en la pestaña de inicio para poder cargar el correspondiente al análisis que haré. 
 
   **Criterios de Aceptación:**
-  - Mostrar los ranchos disponibles en un formato tabla.
-  - La lista debe cargarse en menos de 2 segundos (bajo condiciones normales de red).
-  - Permitir ordenar la lista por Nombre (A-Z / Z-A).
-  - Barra de búsqueda: Permitir buscar ranchos por nombre (búsqueda parcial, ej.: "San" → "San Miguel").
-  - Si no hay ranchos disponibles, mostrar un mensaje claro (ej.: "No se encontraron ranchos con los filtros seleccionados").
-  - En caso de error de carga, mostrar un mensaje amigable con opción de reintentar.
+  - El sistema debe de poder borrar los datos del anterior excel y cargar los del nuevo
+  - El sistema debe de mostrar el nombre del nuevo excel.
+  - El botón de analizar documento debe estar disponible cuando se cargue el nuevo excel.
+  - El sistema no debe de aceptar archivos mayores a un tamaño de 10 mb.
+  - El sistema no debe de aceptar archivos con una extensión diferente de .xlsx.
+  - El sistema permite que se arrastre y suelte un archivo .xlsx.
+  - El sistema da un mensaje de error tras soltar varios archivos a la vez.
+  - Cuando se presione el botón de cargar excel se debe de abrir el explorador de archivos del dispositivo.
 
 ---
 
 ### Diagrama de Secuencia
 
-![Diagrama de Secuencia] 
+- No aplica según nuestra [definición de Ready](../../definicion-ready-tractores.md).
 
-> *Descripción*: El diagrama de secuencia muestra cómo el usuario solicita ver los ranchos disponibless y el sistema responde con la información indicada
 ---
 
 ### Mockup
 
-![Mockup]
+![Mockup](./mockups/MockupInicioCambiar.png)
 
-> *Descripción*: El mockup representa la interfaz del sistema donde se enlistan los ranchos disponibles en una forma de menú dropdown.
+> *Descripción*: El mockup representa la interfaz del sistema donde el usuario puede sustituir el excel cargado, se muestra el nombre del anterior excel y el botón para cargar otro excel si se encuentra habilitado.
 
 ---
 
 ### Pruebas Unitarias 
-| ID Prueba | Descripción | Resultado Esperado |
-|-----------|-------------|--------------------|
-|PU-RF7-01|Cargar la lista de ranchos disponibles.|Se muestra el nombre de todos los ranchos disponibles para analizar.|
+
+#### [Pruebas de la HU](https://docs.google.com/spreadsheets/d/1W-JW32dTsfI22-Yl5LydMhiu-oXHH_xo3hWvK6FHeLw/edit?gid=1105794420#gid=1105794420)
+
+---
+
+### Pull Request
+
+_<u>[Pull Request Front-End](https://github.com/CodeAnd-Co/App-Local-TracTech/pull/11)</u>_
