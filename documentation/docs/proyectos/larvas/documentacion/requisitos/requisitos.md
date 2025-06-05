@@ -292,3 +292,4 @@ Los **mockups** de la interfaz están disponibles en el siguiente enlace:
 | **2.1**     | Se agregaron y eliminaron historias              | 09/05/2025 | Juan Eduardo Rosas          |
 | **2.2**     | Modificación de los requisiton no funcionales    | 26/05/2025 | Juan Eduardo Rosas          |
 | **2.3**     | Se agrega requisitos del SRS                     | 26/05/2025 | Emiliano Gomez Gonzalez     |
+| **2.4**     | Se agregaron diagramas de paquetes               | 26/05/2025 | Emiliano Gomez Gonzalez     |
