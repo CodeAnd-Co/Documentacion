@@ -48,6 +48,7 @@ Situación en la que el producto o acuerdo de trabajo no cumple con los requisit
 - [Estándar para crear nuevas plantillas](/docs/next/standards/estandar-plantillas)
 - [Definición de Ítems](/docs/next/procesos/PR2-definicion-items)
 - [Plantilla para procesos](/docs/next/plantillas/plantilla-procesos)
+- [Estándar para la modificación o creación de procesos](/docs/next/standards/modificacion-procesos)
 
 ## 🤗 Tabla de criterios
 
