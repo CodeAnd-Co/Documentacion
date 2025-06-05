@@ -37,7 +37,7 @@ export class RepositorioEjemplo {
             
             return respuesta.data
         }catch{
-            //El error no se esta manejando desde el backend
+            //El error no se esta manejando désde el backend
             // Se esta manejando de manera en que el error siempre será el mismo
             return "Error al crear el ejemplo"
         }
@@ -116,15 +116,15 @@ exports.crearEjemplo = async (req,res) => {
     const parametros = req.body.parametros
     
     if(!parametros) {
-        return res.status(400).json{mensaje: "No se enviaron los parametros"}
+        return res.status(400).json{mensaje: "No se enviaron los parámetros"}
     }
     
     if(!parametros.parametro1) {
-        return res.status(401).json{mensaje: "No se enviaron los parametros"}
+        return res.status(401).json{mensaje: "No se enviaron los parámetros"}
     }
 
     if(!parametros.parametro2) {
-        return res.status(404).json{mensaje: "No se enviaron los parametros"}
+        return res.status(404).json{mensaje: "No se enviaron los parámetros"}
     }
     
     try{
@@ -156,7 +156,7 @@ exports.crearEjemplo = async (parametros) => {
 
 - Se estan enviando códigos incorrectos de HTTP para los errores ej. el error status 500 significa que el servidor tiene un error.
     - El estatus 500, aunque puede significar un error en el servidor, este se refiere a un error del que el server no puede dar más información, ya sea un bug o algo parecido
-    - Si queremos dar a entender que hubo un error debido a logica de negocio, como que el usuario ya exista, o que el nombre ya exista, es mejor enviar errores `4xx`
+    - Si queremos dar a entender que hubo un error debido a lógica de negocio, como que el usuario ya exista, o que el nombre ya exista, es mejor enviar errores `4xx`
 
 - En el repositorio no se estan haciendo validaciones, solo se esta llamando a la base de datos, lo que puede hacer que en historias más grandes que tengan muchos datos no se hagan buenas validaciones.
 
@@ -226,7 +226,7 @@ exports.crearEjemplo = async (parametros, idCliente) => {
 
 - Se estan manejando 2 diferentes errores de reglas de negocio en el repositorio
 - Se estan manejando 1 error en el que se especifica que no se creo el ejemplo, este puede ser inesperado o otro tipo de error, eso depende de lo que se identifico en el analisis
-- Por último, se maneja el error en caso de que haya habido algun error al correr la query, este es el ultimo error posible, y el que esperamos que no se retorne ya que ya se deberían haber hecho las validaciones necesarias
+- Por último, se maneja el error en caso de que haya habido algun error al correr la query, este es el último error posible, y el que esperamos que no se retorne ya que ya se deberían haber hecho las validaciones necesarias
 
 - El controlador enviara 4 diferentes mensajes de error en diferentes casos, en lugar de 1 solo error no descriptivo
 
