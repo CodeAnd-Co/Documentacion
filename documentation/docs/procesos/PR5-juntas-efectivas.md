@@ -56,4 +56,5 @@ Proceso que busca asegurar que las reuniones grupales y con stakeholders se real
 | **1.3.0**   | Agregadas entradas y referencias a los procesos PR22 y PR23.                            | 25/04/2025    | Ian Julián Estrada Castro                                                           |
 | **1.4.0**   | Actualización general del proceso.                                                      | 11/05/2025    | Paola María Garrido Montes                                                          |
 | **1.5.0**   | Actualización del proceso con mejoras adicionales.                                      | 13/05/2025    | Hiram Mendoza López                                                                 |
+| **1.5.1**   | Correcciones de descripción adicionales.                                      | 05/06/2025    | Emiliano Gomez Gonzalez                                                                 |
 </details>
