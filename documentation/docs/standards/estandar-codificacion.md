@@ -984,8 +984,11 @@ const good = new User({
 
 ## Historial de Cambios
 
+<details>
+  <summary>Versiones</summary>
 | **Tipo de versión** | **Descripción**                                                                                                                | **Fecha** | **Colaborador**                                   |
 | ------------------- | ------------------------------------------------------------------------------------------------------------------------------ | --------- | ------------------------------------------------- |
 | **1.0**             | Creación de proceso de gestión de cambios en los requisitos.  | 05/03/2025 | Diego Alfaro <br/> Daniel Contreras <br/> Emiliano Gómez | 
 | **1.1**             | Gestión de la configuración                                                                            | 24/04/2025 | Max Toscano           |
 | **1.2** |  Implementar acciones correctivas.  |   27/04/2025  |  Max Toscano  | 
+</details>
