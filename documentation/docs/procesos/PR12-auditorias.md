@@ -19,6 +19,7 @@ Asegurar la evaluación sistemática de procesos y productos de trabajo mediante
 2. Política
 3. Guía
 4. Proceso
+5. Checklists
 
 ## ⚙️ Proceso
 
