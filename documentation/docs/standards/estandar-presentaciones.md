@@ -1,5 +1,5 @@
 ---
-title: Estándar de presentaciones
+title: Guía de presentaciones
 sidebar_position: 2
 ---
 
@@ -15,7 +15,7 @@ Definir buenas prácticas para la elaboración y ejecución de presentaciones en
 ### 2.1. Herramientas recomendadas
 - PowerPoint
 - Google Slides
-- Canva
+- **Canva**
 - Apple Keynote
 
 ### 2.2. Estructura de la presentación
@@ -35,9 +35,10 @@ Cada presentación debe seguir la siguiente estructura:
 4. **Desarrollo**
    - Diapositivas con puntos clave (máximo 5-7 ideas principales por sección).
    - Información concisa y enfocada en soluciones o hallazgos relevantes.
-   - Imágenes representativas o relevantes
+   - Imágenes representativas o relevantes.
    - Uso de imágenes, gráficos y tablas para reforzar la información.
-   - Máximo 30 palabras por diapositiva y evitar más de 8 cuadros de texto.
+   - Evitar sobrepasar 30 palabras en una diapositiva.
+   - Evitar más de 8 cuadros de texto.
    - Utilizar datos y ejemplos concretos que respalden los argumentos.
 
 5. **Conclusiones**
@@ -51,7 +52,7 @@ Cada presentación debe seguir la siguiente estructura:
 ## 3. Estilo visual
 
 ### 3.1. Uso de colores
-- Respetar la psicología del color según la intención
+- Respetar la psicología del color según la intención:
   - **Rojo:** peligro, energía, urgencia
   - **Azul:** seguridad, calma, profesionalismo
   - **Amarillo:** felicidad, creatividad, precaución
@@ -69,19 +70,19 @@ Cada presentación debe seguir la siguiente estructura:
 - No exceder de tres tipos de tipografías .
 
 ### 3.3. Imágenes
-- Preferir imágenes PNG con fondo transparente.
+- Lo mejor son imagenes PNG con fondo transparente.
+- Se pueden usar gifs siempre que sean adecuados al contexto de la presentación.
 
 ## 4. Prácticas de presentación
 
 - Modificar el lenguaje según la audiencia.
 - No leer directamente las diapositivas.
 - Respetar los tiempos asignados.
-- Evitar muletillas.
+- Evitar muletillas ("Bueno", "Pues", "Y bueno", "Este", "Eh...").
 - Mantener contacto visual con la audiencia.
 
 ## 5. Evaluación y retroalimentación
 
-Cada presentación deberá ser evaluada por el Presentation Owner correspondiente con base en:
 - Claridad del contenido.
 - Calidad visual.
 - Estructura coherente.
@@ -93,14 +94,16 @@ La retroalimentación debe ser:
 - Empática y reflexiva, enfocándose en el crecimiento del presentador.
 - Descriptiva y específica, basada en observaciones concretas, evitando juicios personales.
 - Equilibrada y constructiva, resaltando tanto fortalezas como áreas de mejora, y proponiendo acciones claras para futuras presentaciones.
+- Tomada bajo una mentalidad de aprendizaje, evitando una posición defensiva.
 
 ## 6. Duración de la presentación
 
-Cada presentación deberá tener una duración dependiendo del tipo de información mostrada con base en:
-- Presentación informativa: ~5-15 minutos
-- Propuestas para el proyecto: ~10 -20 minutos
-- Reportes de avances: ~5 - 10 minutos
-- Capacitaciones: ~20 - 45 minutos
+Cada presentación varía dependiendo del tema a tratar, se recomiendan los siguientes tiempos
+- Presentación informativa: ~3 - 15 minutos.
+- Propuestas para el proyecto: ~10 - 20 minutos.
+- Reportes de avances: ~5 - 10 minutos.
+- Capacitaciones: ~15 - 45 minutos.
+- Reportes de estado: ~30 - 55 minutos.
 
 ## 7. Uso de fuentes y citados
 
@@ -113,7 +116,11 @@ Cada presentación que use o cite algún material ajeno o que no sea de su autor
 
 ## Historial de cambios
 
+<details>
+  <summary>Versiones</summary>
 | **Tipo de versión** | **Descripción**                                                                                                                | **Fecha** | **Colaborador**                                   |
 | ------------------- | ------------------------------------------------------------------------------------------------------------------------------ | --------- | ------------------------------------------------- |
-| **1.0**             | Creación del estándar.  | 04/03/2025 |  Juan Eduardo Rosas Cerón <br/> Pablo Hazael Hurtado Mireles |
-| **1.1**             | Actualización del estándar.  | 09/05/2025 | Paola María Garrido |
+| **1.0.0**             | Creación del estándar.  | 04/03/2025 |  Juan Eduardo Rosas Cerón <br/> Pablo Hazael Hurtado Mireles |
+| **1.1.0**             | Actualización del estándar.  | 09/05/2025 | Paola María Garrido |
+| **2.0.0**             | Cambiar el estándar a guía                | Ian Julián Estrada Castro |
+</details>
