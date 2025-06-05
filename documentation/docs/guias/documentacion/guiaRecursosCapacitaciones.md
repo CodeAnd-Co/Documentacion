@@ -44,4 +44,4 @@ Es un documento que reúne los recursos y conocimientos necesarios para ejecutar
 | **1.0** | Plan de recursos. |  | Antonio Landeros, Armando Méndez Castro|
 | **1.1** | Plan de capacitación. | 5/3/2025 | Emiliano Valdivia, Miguel Uribe |
 | **2.0** | Crear guía de de plan de recursos y capacitación. | 14/05/2025 | Paola María Garrido Montes |
-| **2.1** | Especificación de la capacitación final | 5/06/2025 | Miguel Angel Uribe Esquivel |
+| **2.1** | Especificación de la evaluacion de conocimientos finales | 5/06/2025 | Miguel Angel Uribe Esquivel |
