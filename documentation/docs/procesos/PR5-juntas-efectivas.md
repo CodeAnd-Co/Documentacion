@@ -31,6 +31,7 @@ Proceso que busca asegurar que las reuniones grupales y con stakeholders se real
 | **Presentación**  | Anunciar el inicio de la junta, activar el temporizador y abordar los temas establecidos en la agenda con los integrantes.                                                                                        | Moderador(es) y encargado del timer |                                                                                                                                              |
 |                   | Registrar un resumen de los temas tratados, las decisiones tomadas y el porcentaje de participación IPA.                                                                                                          | Apuntador                           | **PMC SP 1.5** (Monitorear la participación de los interesados)                                                                              |
 | **Cierre**        | Registrar las conclusiones en la plantilla, indicando si se cumplió el objetivo, las tareas y decisiones definidas y los temas pendientes.                                                                        | Apuntador                           | **PMC SP 1.7** (Revisar resultados del proyecto en los hitos definidos), **PMC SP 1.2** (Monitorear compromisos contra el plan del proyecto) |
+|                   | Mostrar la métrica de participación de la junta: [Tabla de porcentaje de participación](https://docs.google.com/spreadsheets/d/1BI8daG8IYPk0f2GlqsGnUyefhCvRIRkctgRaJiQ2t1A/edit?usp=sharing)                     | Moderador                           |                                                                                                                                              |
 
 ## 📤 Salidas
 
@@ -57,4 +58,6 @@ Proceso que busca asegurar que las reuniones grupales y con stakeholders se real
 | **1.4.0**   | Actualización general del proceso.                                                      | 11/05/2025    | Paola María Garrido Montes                                                          |
 | **1.5.0**   | Actualización del proceso con mejoras adicionales.                                      | 13/05/2025    | Hiram Mendoza López                                                                 |
 | **1.5.1**   | Correcciones de descripción adicionales.                                      | 05/06/2025    | Emiliano Gomez Gonzalez                                                                 |
+| **1.6.0**   | Agregar porcentaje de paticipación                                      | 05/06/2025    | Valeria Zúñiga                                                                 |
+
 </details>
