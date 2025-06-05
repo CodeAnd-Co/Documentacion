@@ -1,9 +1,8 @@
 ---
 title: Guía de presentaciones
-sidebar_position: 2
 ---
 
-# Estándar de presentaciones
+# Guía de presentaciones
 
 
 ## 1. Objetivo
@@ -122,5 +121,5 @@ Cada presentación que use o cite algún material ajeno o que no sea de su autor
 | ------------------- | ------------------------------------------------------------------------------------------------------------------------------ | --------- | ------------------------------------------------- |
 | **1.0.0**             | Creación del estándar.  | 04/03/2025 |  Juan Eduardo Rosas Cerón <br/> Pablo Hazael Hurtado Mireles |
 | **1.1.0**             | Actualización del estándar.  | 09/05/2025 | Paola María Garrido |
-| **2.0.0**             | Cambiar el estándar a guía                | Ian Julián Estrada Castro |
+| **2.0.0**             | Cambiar el estándar a guía   | 4/06/2025  | Ian Julián Estrada Castro |
 </details>
