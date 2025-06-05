@@ -175,4 +175,5 @@ Esta guía describe los pasos para adaptar correctamente los ítems existentes c
     | ----------- | ----------------------------------------- | ------------ | -------------------------------------- |
     | **1.0.0**   | Creación inicial de la guía               | 13/05/2025   | Ethan Luna Cadó                        |
     | **1.0.1**   | Ahora la guía es para adaptar ítems       | 27/05/2025   | Angel Mauricio Ramírez Herrera         |
+    | **1.1.0**   | Agregar listado de ítems       | 05/06/2025   | Valeria Zúñiga, Mauricio Anguiano         |
 </details>
