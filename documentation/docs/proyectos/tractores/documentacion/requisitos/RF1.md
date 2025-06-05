@@ -46,3 +46,5 @@ Yo como usuario quiero consultar la página de inicio de sesión de la aplicaci�
 
 ### Pull Request
 [https://github.com/CodeAnd-Co/App-Local-TracTech/pull/1](https://github.com/CodeAnd-Co/App-Local-TracTech/pull/1)
+
+[https://github.com/CodeAnd-Co/Backend-Desacoplado-TracTech/pull/2](https://github.com/CodeAnd-Co/Backend-Desacoplado-TracTech/pull/2)
