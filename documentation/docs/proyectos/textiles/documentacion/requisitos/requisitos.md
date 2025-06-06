@@ -84,7 +84,9 @@ Los requisitos funcionales del sistema describen una variedad de acciones que lo
 - [**RF36**](RF36.md): Super Administrador Crea Evento
 - [**RF48**](RF48.md): Super Administrador, Cliente Lee Categoria de Productos
 - [**RF56**](RF56.md): Super Administrador Importa Productos
-- [**RF59**](RF59.md): Super Administrador Exportar Empleados
+- [**RF58**](RF58.md): Super Administrador Exportar Productos
+- [**RF59**](RF59.md): Super Administrador Exportar Empleados `Done`
+- [**RF62**](RF62.md): Super Administrador, Cliente Actualiza Pedido
 
 ### Requisitos Específicos MBI (Parte 2)
 
