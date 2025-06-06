@@ -16,7 +16,7 @@ Mantener informado al socio formador sobre los costos de adquisición de la infr
 ### Hosting
 
 - **Proveedor**: AWS EC2  
-- **Especificaciones**: t2.micro, 1 vCPU, 4 GiB de memoria, 10 GB de almacenamiento  
+- **Especificaciones**: t2.micro, 1 vCPU, 1 GiB de memoria, 10 GB de almacenamiento  
 - **Sistema Operativo**: Linux Ubuntu
 - **Ventajas**: Escalabilidad, seguridad, el socio tiene créditos de AWS 
 - **Nivel gratis**: 750 horas  
@@ -32,27 +32,25 @@ Mantener informado al socio formador sobre los costos de adquisición de la infr
 
 ## Base de datos
 
-- **Proveedor**: MariaDB 
-- **Capacidad**: 20 GB de almacenamiento  
-- **Ventajas**: Gratis  
+- **Proveedor**: MariaDB instalado en EC2
+- **Ventajas**: Gratis al estar incluido en la instancia de EC2
 
 ---
 
 ## Hardware
 
 - **Proveedor**: Socio formador
-
+- **Marca**: Dell
+- **Especificaciones**: Procesador Intel Core M3, RAM 8GB  
+- **Sistema Operativo**: Windows 10
+- **Ventajas**: El socio formador ya cuenta con el equipo
+- **Desventajas**: Las usuarias finales no tienen experiencia usando computadoras
 
 ---
-
-## Cotizaciones
-
-- **AWS**: Cotización generada mediante la calculadora de precios oficial de Amazon.  
-  [Ver cotización AWS](https://drive.google.com/file/d/1Ey0RAPLCcacJTQDKdy0Y2XiYEu_3BNdi/view?usp=drive_link)
 
 
 # Historial de cambios
 
 | **Tipo de Versión** | **Descripción**                                             | **Fecha** | **Colaborador**            |
 | ------------------- | ----------------------------------------------------------- | --------- | -------------------------- |
-| **1.0**             | Implementación de plan de adquisición de infraestructura                         | 05/30/2025 | Arturo Sánchez               |
+| **1.0**             | Implementación de plan de adquisición de infraestructura    | 05/06/2025 | Emiliano Valdivia Lara               |
