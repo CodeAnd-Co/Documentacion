@@ -27,7 +27,7 @@ Como **Super Administrador**, quiero consultar la información detallada de un u
 3. El panel debe tener las opciones “Editar” y “Salir”.
 4. Si el usuario no tiene ningún cliente asignado, en el apartado “Cliente” debe mostrarse el texto: “Sin cliente asignado”.
 5. Si el usuario tiene múltiples clientes asignados, en el apartado “Cliente” deben mostrarse todos los nombres de los clientes en forma de lista.
-6.  En caso de que ocurra un error al consultar la información del usuario, se debe mostrar una alerta con un mensaje que especifique el tipo de error ocurrido.
+6. En caso de que ocurra un error al consultar la información del usuario, se debe mostrar una alerta con un mensaje que especifique el tipo de error ocurrido.
 
 ---
 
@@ -102,7 +102,7 @@ end
 
 ## **Pruebas Unitarias**
 
-_<u>[Enlace a pruebas RF03 Lee Usuario](https://docs.google.com/spreadsheets/d/1NLGwGrGA5PVOEzLaqxa8Ts1D_Ng3QzzqNKWJYUzxD-M/edit?usp=sharing)</u>_
+_<u>[Enlace a pruebas RF03 Lee Usuario](https://docs.google.com/spreadsheets/d/1NLGwGrGA5PVOEzLaqxa8Ts1D_Ng3QzzqNKWJYUzxD-M/edit?gid=1608949021#gid=1608949021)</u>_
 
 ## **Código**
 
