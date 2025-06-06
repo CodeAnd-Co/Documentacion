@@ -29,24 +29,22 @@ Los requisitos funcionales del sistema describen una variedad de acciones que lo
 ### Requisitos Específicos
 
 - [**RF1**](RF1.md): Iniciar Sesión - `Done`
-- [**RF2**](RF2.md): Consultar Gráficas
 - [**RF3**](RF3.md): Consultar historial de ancestros de una charola - `Done`
 - [**RF5**](RF5.md): Registrar Charola - `Done`
 - [**RF6**](RF6.md): Buscar charola
-- [**RF7**](RF7.md): Modificar datos generales Charola - `Ready`
+- [**RF7**](RF7.md): Modificar datos generales Charola - `Done`
 - [**RF8**](RF8.md): Eliminar Charola - `Done`
 - [**RF9**](RF9.md): Cerrar sesión - `Done`
 - [**RF10**](RF10.md): Consultar información detallada de una charola - `Done`
 - [**RF11**](RF11.md): Descargar reportes - `Done`
-- [**RF12**](RF12.md): Alertas
 - [**RF13**](RF13.md): Registrar usuario
 - [**RF14**](RF14.md): Borrar usuario
 - [**RF15**](RF15.md): Filtrar las charolas por escarabajo y larva
 - [**RF16**](RF16.md): Visualizar todas las charolas registradas en el sistema - `Done`
 - [**RF18**](RF18.md): Historial de actividad de charola - `Done`
 - [**RF19**](RF19.md): Editar Usuario
+- [**RF20**](RF20.md): Seleccionar charolas para tamizar y registrar sus datos - `Ready`
 - [**RF21**](RF21.md): Consultar charolas de cambios pasados - `Done`
-- [**RF22**](RF22.md): Modificar el estado de la charola
 - [**RF23**](RF23.md): Registrar un nuevo tipo de comida en el sistema - `Done`
 - [**RF24**](RF24.md): Editar un tipo de comida en el sistema - `Done`
 - [**RF25**](RF25.md): Eliminar un tipo de comida - `Done`
@@ -55,14 +53,18 @@ Los requisitos funcionales del sistema describen una variedad de acciones que lo
 - [**RF30**](RF30.md): Editar la información del Frass obtenido
 - [**RF34**](RF34.md): Sidebar - `Done`
 - [**RF35**](RF35.md): Recuperar contraseña
-- [**RF36**](RF36.md): Registrar un nuevo tipo de hidratación al sistema
-- [**RF37**](RF37.md): Seleccionar charolas para tamizar y registrar sus datos - `Ready`
-- [**RF38**](RF38.md): Registrar nuevas charolas del tamizado - `Ready`
+- [**RF36**](RF36.md): Registrar un nuevo tipo de hidratación al sistema - `Ready`
+- [**RF38**](RF38.md): Registrar nuevas charolas del tamizado - `Done`
 - [**RF39**](RF39.md): Visualizar charolas eliminadas
 - [**RF40**](RF40.md): Editar un tipo de hidratación en el sistema - `Ready`
-- [**RF41**](RF41.md): Eliminar un tipo de hidratación en el sistema
+- [**RF41**](RF41.md): Eliminar un tipo de hidratación en el sistema `Ready`
+- [**RF42**](RF42.md):Registrar la hidratación de la charola - `Ready`
 
 ---
+
+## Matriz de dependencias
+
+[Enlace a Matriz de dependencias](https://docs.google.com/spreadsheets/d/1DETlaHYkIngbagI5yVmuYLXdmrzeVkXcPYewIm-6G0g/edit?usp=sharing )
 
 ## Requisitos No Funcionales
 
@@ -81,6 +83,14 @@ Los requisitos no funcionales establecen las expectativas en términos de tiempo
 **Escalabilidad**
 
 - El sistema debe ser escalable para manejar un aumento de hasta 20 usuarios simultáneos sin que exista una decadencia significativa del rendimiento ya que Zuustento pretende una expansión a futuro en los próximos 2 años. En este plazo el límite de colaboradores es de 20, sin embargo, aunque no es mucho, es importante hacer el sistema escalable para futuros cambios.
+
+**Diagrama de paquetes Frontend:**
+
+![alt text](../../documentacion/Diagrama_paquetes_frontend.png)
+
+**Diagrama de paquetes Backend:**
+
+![alt text](../../documentacion/Diagrama_paquetes_backend.png)
 
 **Disponibilidad**
 
@@ -282,3 +292,4 @@ Los **mockups** de la interfaz están disponibles en el siguiente enlace:
 | **2.1**     | Se agregaron y eliminaron historias              | 09/05/2025 | Juan Eduardo Rosas          |
 | **2.2**     | Modificación de los requisiton no funcionales    | 26/05/2025 | Juan Eduardo Rosas          |
 | **2.3**     | Se agrega requisitos del SRS                     | 26/05/2025 | Emiliano Gomez Gonzalez     |
+| **2.4**     | Se agregaron diagramas de paquetes               | 26/05/2025 | Emiliano Gomez Gonzalez     |

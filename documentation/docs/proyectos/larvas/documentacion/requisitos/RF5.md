@@ -54,7 +54,7 @@ sequenceDiagram
     Repository->>APIService: apiService.getAlimentos()
     deactivate Repository
     activate APIService
-    APIService->>Controller: @GET("/comida/obtener-comida")
+    APIService->>Controller: GET("/comida/obtener-comida")
     deactivate APIService
     activate Controller
     Controller->>Controller: exports.obtenerComida = async(req, res)
@@ -104,7 +104,7 @@ sequenceDiagram
     Repository->>APIService: apiService.getAlimentos()
     deactivate Repository
     activate APIService
-    APIService->>Controller: @GET("/comida/obtener-comida")
+    APIService->>Controller: GET("/comida/obtener-comida")
     deactivate APIService
     activate Controller
     Controller->>Model: charolaModel.obtenerComida()
@@ -153,7 +153,7 @@ sequenceDiagram
     Repository->>APIService: apiService.getHidratacion()
     deactivate Repository
     activate APIService
-    APIService->>Controller: @GET("/hidratacion/obtener-hidratacion")
+    APIService->>Controller: GET("/hidratacion/obtener-hidratacion")
     deactivate APIService
     activate Controller
     Controller->>Model: charolaModel.obtenerHidratacion()
@@ -202,7 +202,7 @@ sequenceDiagram
     Repository->>APIService: apiService.getHidratacion()
     deactivate Repository
     activate APIService
-    APIService->>Controller: @GET("/hidratacion/obtener-hidratacion")
+    APIService->>Controller: GET("/hidratacion/obtener-hidratacion")
     deactivate APIService
     activate Controller
     Controller->>Controller: exports.obtenerHidratacion = async(req, res)
@@ -252,7 +252,7 @@ sequenceDiagram
     Repository->>APIService: apiService.registrar(charola)
     deactivate Repository
     activate APIService
-    APIService->>Controller: @POST ("/charola/registrarCharola")
+    APIService->>Controller: POST ("/charola/registrarCharola")
     deactivate APIService
     activate Controller
     Controller->>Controller: exports.registrarCharola = async(req, res)
@@ -351,7 +351,7 @@ sequenceDiagram
     Repository->>APIService: apiService.registrar(charola)
     deactivate Repository
     activate APIService
-    APIService->>Controller: @POST ("/charola/registrarCharola")
+    APIService->>Controller: POST ("/charola/registrarCharola")
     deactivate APIService
     activate Controller
     Controller->>Model: charolaModel.registrarCharola(datos)
@@ -416,18 +416,29 @@ sequenceDiagram
 
 ---
 
+### Pull Request
+
+<a href="https://github.com/CodeAnd-Co/TECH-NEBRIOS-BACKEND/pull/25" target="_blank" rel="noopener noreferrer"> PR de Registrar Charola Backend</a>
+
+<a href="https://github.com/CodeAnd-Co/TECH-NEBRIOS-FLUTTER/pull/27" target="_blank" rel="noopener noreferrer"> PR de Registrar Charola Frontend</a>
+
+---
+
 ### Mockup
 
-![Mockup: Registrar Charola](image-1.png)
+![alt text](img/mockupRF5.png)
 
 ---
 
 ## Historial de cambios
 
-| **Tipo de Versión** | **Descripción**                            | **Fecha** | **Colaborador**         |
-| ------------------- | ------------------------------------------ | --------- | ----------------------- |
-| **1.0**             | Creacion de la historia de usuario         | 8/3/2025  | Armando Mendez          |
-| **1.0**             | Verificación de los cambios                | 8/3/2025  | Miguel Angel            |
-| **1.1**             | Creación del diagrama de secuencia         | 3/4/2025  | Emiliano Gomez Gonzalez |
-| **1.2**             | Correciones del DS y agregacion del Mockup | 22/4/2025 | Emiliano Gomez Gonzalez |
-| **1.3**             | Diagramas de actividades   | 23/5/2025  | Juan Eduardo Rosas Cerón |
+| **Tipo de Versión** | **Descripción**                               | **Fecha** | **Colaborador**          |
+| ------------------- | --------------------------------------------- | --------- | ------------------------ |
+| **1.0**             | Creacion de la historia de usuario            | 8/3/2025  | Armando Mendez           |
+| **1.0**             | Verificación de los cambios                   | 8/3/2025  | Miguel Angel             |
+| **1.1**             | Creación del diagrama de secuencia            | 3/4/2025  | Emiliano Gomez Gonzalez  |
+| **1.2**             | Correciones del DS y agregacion del Mockup    | 22/4/2025 | Emiliano Gomez Gonzalez  |
+| **1.3**             | Diagramas de actividades                      | 23/5/2025 | Juan Eduardo Rosas Cerón |
+| **1.4**             | Se corrigió mockup                            | 29/5/2025 | Mariana Juárez           |
+| **1.5**             | Se agregaron los pull request de front y back | 29/5/2025 | Sofía Osorio             |
+| **1.6**             | Pequeñas correciones                          | 02/6/2025 | Emiliano Gomez Gonzalez  |

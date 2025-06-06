@@ -10,7 +10,6 @@ Como usuario del sistema, quiero borrar los datos de una charola en la base de d
 
 
   **Criterios de Aceptación:**
-  - El sistema debe permitir la eliminación de charolas solo a usuarios autorizados.
   - Antes de eliminar una charola, se debe mostrar un mensaje de confirmación.
   - La eliminación debe reflejarse de inmediato en la base de datos sin afectar otros registros.
 
@@ -230,12 +229,19 @@ sequenceDiagram
     end
 
 ```
+---
+
+### Pull Request
+
+<a href="https://github.com/CodeAnd-Co/TECH-NEBRIOS-BACKEND/pull/17" target="_blank" rel="noopener noreferrer"> PR de Eliminar Charola Backend</a>
+
+<a href="https://github.com/CodeAnd-Co/TECH-NEBRIOS-FLUTTER/pull/12" target="_blank" rel="noopener noreferrer"> PR de Eliminar Charola Frontend</a>
 
 ---
 
 ### Mockup
 
-![Mockup](../mockupRF8.jpg)
+![alt text](<img/mockupRF8.png>)
 
 ---
 
@@ -249,3 +255,5 @@ sequenceDiagram
 | **1.2**             | Mockup y correcciones del diagrama   | 3/4/2025  | Juan Eduardo      |
 | **1.3**             | Correciones del query                | 17/5/2025 | Mariana Juárez    |
 | **1.3**             | Diagramas de actividades   | 23/5/2025  | Juan Eduardo Rosas Cerón |
+| **1.4**             | Se corrigió mockup  | 29/5/2025  | Mariana Juárez |
+| **1.5**             | Se agregaron los pull request de front y back | 29/5/2025  | Sofía Osorio |

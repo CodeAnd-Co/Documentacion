@@ -5,8 +5,6 @@ sidebar_position: 13
 
 # Plan de Comunicación
 
-**Última actualización:** 24 de abril de 2025
-
 ## **Objetivos de comunicación**
 
 - Mantener al equipo informado sobre las actividades y cambios, aumentando su compromiso y productividad.
@@ -40,18 +38,24 @@ sidebar_position: 13
 | **Comunicación externa** |
 | ------------------------ |
 
-| **Grupo de interés** | **Información requerida**                                                                                                                                                                                                                           | **Frecuencia**      | **Canales**                                                                                                       |
-| -------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------- | ----------------------------------------------------------------------------------------------------------------- |
-| **Socio Formador**   | - Avances, hitos alcanzados, próximos pasos. <br /> - Problemas técnicos o de gestión que puedan afectar la entrega. <br /> - Confirmación de que el proyecto sigue cumpliendo sus expectativas y necesidades. <br /> - Feedback sobre entregables. | Una vez por semana. | Zoom para reuniones a distancia. WhatsApp para comunicación inmediata. Reuniones presenciales cuando sea posible. |
+| **Grupo de interés**           | **Información requerida**                                                                                                                                                                                                                | **Frecuencia**              | **Canales**                                                                                                       |
+| ------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------- | ----------------------------------------------------------------------------------------------------------------- |
+| **Socio Formador**             | - Avances, hitos alcanzados, próximos pasos. <br /> - Problemas de gestión que puedan afectar la entrega. <br /> - Confirmación de que el proyecto sigue cumpliendo sus expectativas y necesidades. <br /> - Feedback sobre entregables. | Una vez por semana.         | Zoom para reuniones a distancia. WhatsApp para comunicación inmediata. Reuniones presenciales cuando sea posible. |
+| **Técnico del Socio Formador** | - Avances, hitos alcanzados, próximos pasos. <br /> - Problemas técnicos que puedan afectar la entrega. <br /> - Confirmación de que el proyecto sigue cumpliendo sus expectativas y necesidades. <br /> - Feedback sobre entregables.   | Una a dos veces por semana. | Zoom para reuniones a distancia. WhatsApp para comunicación inmediata. Reuniones presenciales cuando sea posible. |
 
 ## **Responsabilidades y evaluación del plan**
 
-- Responsable general del plan: Hiram Israel Mendoza López.
+- Responsable general del plan: Angélica Ríos Cuentas.
 - Evaluación y ajustes: Semanalmente.
 - Indicadores de éxito: Ahorro de tiempo, cumplimiento de plazos, reducción de malentendidos.
 
-### Historial de cambios
+## 📚 Historial de cambios
 
+<details>
+  <summary>Versiones</summary>
+  
 | **Tipo de Versión** | **Descripción**                        | **Fecha** | **Colaborador**               |
 | ------------------- | -------------------------------------- | --------- | ----------------------------- |
 | **1.0**             | Integración del documento a Docusaurus | 24/4/2025 | Carlos Iván Fonseca Mondragón |
+| **1.1**             | Actualización del plan de comunicación | 27/5/2025 | Angélica Ríos Cuentas         |
+</details>

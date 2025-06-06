@@ -7,6 +7,19 @@ sidebar_position: 1
 
 **Nombre de la Empresa:** Altertex US
 
+<div style={{ display: "flex", justifyContent: "space-between" }}>
+
+<div style={{ width: "48%" }}>
+<h3>Misión</h3>
+<p>Desarrollar soluciones tecnológicas innovadoras que optimicen la gestión de clientes, empleados y productos, garantizando eficiencia y satisfacción para Altertex.</p>
+</div>
+
+<div style={{ width: "48%" }}>
+<h3>Visión</h3>
+<p>Convertirse en la herramienta clave de Altertex para optimizar la gestión de clientes, empleados y productos antes de julio de 2025, garantizando procesos más ágiles y eficientes.</p>
+</div>
+</div>
+
 ## Análisis de Necesidades 😑
 
 ### Problemas Actuales
@@ -32,9 +45,9 @@ Su propósito es reducir los tiempos de ingreso de datos y facilitar la configur
 
 ### Objetivos Específicos
 
-- Reducir los tiempos en el ingreso de datos y facilitar la configuración del sistema de compras para los usuarios finales.
+- Gestionar el control de empleados y productos, mejorando la eficiencia operativa un 20% en un plazo de 2 meses.
 
-- Asegurar la satisfacción del socio formador con el uso del sistema.
+- Asegurar una experiencia de usuario satisfactoria mediante mejoras en interfaz y accesibilidad, alcanzando un 90% de satisfacción, en un plazo de 3 meses.
 
 ## Alcance del Proyecto ➡️
 
@@ -273,6 +286,7 @@ import TabItem from '@theme/TabItem';
 | Rodrigo Antonio Benítez De La Portilla | Team Member                         |
 | Carlos Iván Fonseca Mondragón          | Team Member                         |
 | Valeria Zúñiga Mendoza                 | Team Member                         |
+| Max Toscano Díaz                       | Team Member                         |
 
 ---
 
@@ -285,10 +299,11 @@ import TabItem from '@theme/TabItem';
 
 ### Historial de cambios
 
-| Tipo de Versión | Descripción                                                      | Fecha     | Colaborador                            |
-| --------------- | ---------------------------------------------------------------- | --------- | -------------------------------------- |
-| 1.0             | Creación de Descripción                                          | 7/3/2025  | Ángel Mauricio Ramírez Herrera         |
-| 1.1             | Modificación Roles                                               | 3/4/2025  | Rodrigo Antonio Benítez De La Portilla |
-| 1.2             | Modificación defeinición Roles, actualización de roles asignados | 13/5/2025 | Angélica Ríos Cuentas                  |
+| Tipo de Versión | Descripción                                                     | Fecha     | Colaborador                            |
+| --------------- | --------------------------------------------------------------- | --------- | -------------------------------------- |
+| 1.0             | Creación de Descripción                                         | 7/3/2025  | Ángel Mauricio Ramírez Herrera         |
+| 1.1             | Modificación Roles                                              | 3/4/2025  | Rodrigo Antonio Benítez De La Portilla |
+| 1.2             | Modificación definición Roles, actualización de roles asignados | 13/5/2025 | Angélica Ríos Cuentas                  |
+| 1.3             | Actualización de objetivos SMART                                | 30/5/2025 | Max Toscano                            |
 
 ---

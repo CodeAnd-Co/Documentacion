@@ -24,16 +24,6 @@ Como **Super Administrador**, quiero poder registrar nuevos usuarios en el siste
    - Dirección
    - Cliente al que pertenece
    - Rol del usuario (Ejemplo: Administrador, Usuario estándar, Moderador, etc.)
-   - # Contraseña establecida y confirmada
-   - Nombre(s)
-   - Apellido(s)
-   - Fecha de nacimiento
-   - Género
-   - Correo electrónico
-   - Número de telefono
-   - Dirección
-   - Rol del usuario (Ejemplo: Administrador, Usuario estándar, Moderador, etc.)
-   - Cliente al que pertenece
    - Contraseña establecida y confirmada
 3. Si los datos ingresados son válidos, el sistema debe registrar al nuevo usuario y mostrar un mensaje de confirmación.
 4. Si algún campo obligatorio está vacío o con formato incorrecto, se debe mostrar un mensaje de error en el campo a corregir.
@@ -118,9 +108,9 @@ sequenceDiagram
 
 ![Interfaz de crear usuario](./imagenes/crearUsuario.png)
 
-## **Pruebas**
+## **Pruebas Unitarias**
 
-_<u>[Enlace a pruebas RF2 Consultar Lista de Usuarios.](https://docs.google.com/spreadsheets/d/1NLGwGrGA5PVOEzLaqxa8Ts1D_Ng3QzzqNKWJYUzxD-M/edit?gid=336266899#gid=336266899)</u>_
+_<u>[Enlace a pruebas RF1 Crear Usuarios.](https://docs.google.com/spreadsheets/d/1NLGwGrGA5PVOEzLaqxa8Ts1D_Ng3QzzqNKWJYUzxD-M/edit?gid=336266899#gid=336266899)</u>_
 
 ## **Código**
 

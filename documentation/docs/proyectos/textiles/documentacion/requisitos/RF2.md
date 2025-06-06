@@ -24,8 +24,7 @@ Como **Super Administrador**, quiero acceder a un listado de usuarios con opcion
    - Correo electrónico
    - Teléfono
 3. Se deben poder hacer búsquedas y filtros para ubicar usuarios.
-4. Debe permitir paginación si hay muchos usuarios registrados.
-5. Si no hay usuarios en la base de datos, se debe mostrar un mensaje indicando que no hay registros disponibles.
+4. Si no hay usuarios en la base de datos, se debe mostrar un mensaje indicando que no hay filas.
 
 ---
 
@@ -119,7 +118,7 @@ sequenceDiagram
 
 > ![Interfaz de consultar lista de usuarios](imagenes/RF2CreaUsuario.png)
 
-## **Pruebas**
+## **Pruebas Unitarias**
 
 _<u>[Enlace a pruebas RF2 Consultar Lista de Usuarios.](https://docs.google.com/spreadsheets/d/1NLGwGrGA5PVOEzLaqxa8Ts1D_Ng3QzzqNKWJYUzxD-M/edit?gid=1685718554#gid=1685718554)</u>_
 

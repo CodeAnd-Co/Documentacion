@@ -18,7 +18,7 @@ Como administrador, quiero poder ver un listado de roles con filtros y opciones 
    - Nombre del rol
    - La descripción del rol
 3. Debe permitir filtrar roles por nombre.
-4. Si no hay roles registrados, se debe mostrar un mensaje indicando que no hay registros disponibles.
+4. Si no hay roles registrados, se debe mostrar un mensaje indicando que no hay filas.
 
 ---
 
@@ -77,7 +77,7 @@ sequenceDiagram
 
 > ![Interfaz de consultar lista de roles](imagenes/RF7ConsultaRoles.png)
 
-## **Pruebas**
+## **Pruebas Unitarias**
 
 _<u>[Enlace a pruebas RF7 Consultar lista de roles.](https://docs.google.com/spreadsheets/d/1NLGwGrGA5PVOEzLaqxa8Ts1D_Ng3QzzqNKWJYUzxD-M/edit?pli=1&gid=1274458259#gid=1274458259)</u>_
 

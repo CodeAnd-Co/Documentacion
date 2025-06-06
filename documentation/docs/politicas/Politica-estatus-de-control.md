@@ -34,6 +34,13 @@ Esta política aplica a:
    - Toda modificación o reclasificación debe ser documentada adecuadamente en el [repositorio de configuración](https://docs.google.com/spreadsheets/d/1e73fKSTAhxyPqiPN32u_1mkIyCbzssFc-7Ylfs-HL3w/edit?gid=620052691#gid=620052691).
    - Los elementos Bajo Revisión deben identificarse claramente y priorizarse para auditoría o ajustes según su impacto.
 
+4. **Frecuencia y método de actualización del repositorio de configuración**
+
+   * El repositorio de configuración debe actualizarse **al menos una vez por semana** o inmediatamente después de cualquier modificación significativa en un elemento de configuración.
+   * El **responsable de configuración** debe registrar cada cambio de estatus, nueva versión o inclusión de elementos, asegurando que la información esté sincronizada con la realidad operativa del proyecto.
+   * Para garantizar trazabilidad, cada entrada debe contener: identificador único, nombre del elemento, versión, estatus actual, fecha de actualización, autor del cambio y notas relevantes.
+   * Las actualizaciones deben hacerse directamente en el [repositorio de configuración](https://docs.google.com/spreadsheets/d/1e73fKSTAhxyPqiPN32u_1mkIyCbzssFc-7Ylfs-HL3w/edit?gid=620052691#gid=620052691) y notificarse a los equipos interesados si afectan entregables, dependencias o procesos clave.
+
 ## 👥 Roles y responsabilidades
 
 - **Responsable de configuración**: Clasificar y actualizar el estatus de cada elemento, asegurar trazabilidad y documentación.
@@ -60,8 +67,9 @@ El incumplimiento de esta política puede resultar en:
 
 <details>
   <summary>Versiones</summary>
-    | **Tipo de versión** | **Descripción** | **Fecha** | **Colaborador** |
-    | ------------------- | --------------- | --------- | --------------- |
-    | **1.0.0** | Creación de la política. | 14/05/2025 | Armando Méndez Castro |
-    | **1.1.0** | Refactorizar política. | 19/05/2025 | Daniel Contreras Chávez |
+    | **Tipo de versión** | **Descripción**                                          | **Fecha**  | **Colaborador**                |
+    | ------------------- | -------------------------------------------------------- | ---------- | ------------------------------ |
+    | **1.0.0** | Creación de la política.                                           | 14/05/2025 | Armando Méndez Castro          |
+    | **1.1.0** | Refactorizar política.                                             | 19/05/2025 | Daniel Contreras Chávez        |
+    | **1.1.1** | Incluir frecuencia de actualización de la matriz de configuración. | 28/05/2025 | Angel Mauricio Ramírez Herrera |
 </details>

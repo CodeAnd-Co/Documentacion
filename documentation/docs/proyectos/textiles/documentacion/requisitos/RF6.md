@@ -15,8 +15,8 @@ Como administrador, quiero poder crear nuevos roles personalizados con permisos 
 
 ## **Criterios de Aceptación:**
 
-1. El Super Administrador debe poder acceder a la opción **"Crear Rol"** dentro del panel de administración.
-2. Debe permitir ingresar un nombre para el rol y definir los permisos asociados.
+1. El Super Administrador debe poder acceder a la opción **"Crear Rol"** dentro de la vista de roles.
+2. Debe permitir ingresar un nombre para el rol, una descripción y definir los permisos asociados.
 3. Al guardar, el sistema debe validar que el nombre del rol no esté duplicado.
 4. Si la creación es exitosa, el nuevo rol debe aparecer en la lista de roles disponibles.
 5. Si hay un error, el sistema debe mostrar un mensaje indicando el problema.
@@ -29,78 +29,87 @@ Como administrador, quiero poder crear nuevos roles personalizados con permisos 
 
 ```mermaid
 sequenceDiagram
-    autonumber
-    participant Usuario
-    participant Frontend
-    participant Api_gateway
-    participant Backend
-    participant rutaRol
-    participant controladorRol
-    participant repositorioRol
-    participant RDS
+participant Usuario
+participant Frontend
+participant Api_gateway
+participant Backend
+participant rutaCrearRol
+participant controladorCrearRol
+participant repositorioCrearRol
+participant RDS
 
-    Usuario-->>Frontend: Ingresa nombre del rol y selecciona permisos
-    Frontend-->>Api_gateway: Envia petición POST
-    Api_gateway-->>Backend: Recibe petición POST
-    Backend-->>rutaRol: Llama a la ruta /api/roles
+Usuario -->> Frontend: Ingresa nombre, descripción y selecciona permisos
+Frontend -->> Api_gateway: POST /api/roles/crear-rol
+Api_gateway -->> Backend: Reenvía la solicitud
+Backend -->> rutaCrearRol: Llama a la ruta /api/roles/crear-rol
 
-    rutaRol-->>rutaRol: Revisa que la API key fue enviada
-    rutaRol-->>rutaRol: Valida la API key
+rutaCrearRol -->> rutaCrearRol: Ejecuta validarYSanitizar()
+rutaCrearRol -->> rutaCrearRol: Ejecuta revisarApiKey()
+rutaCrearRol -->> rutaCrearRol: Ejecuta autorizarToken()
+rutaCrearRol -->> rutaCrearRol: Ejecuta limitePeticionesDiarias()
 
-    alt API key inválida
-        rutaRol-->>Backend: Retorna JSON {"message": "API key invalida"}, status 400
-        Backend-->>Api_gateway: Retorna JSON {"message": "API key invalida"}, status 400
-        Api_gateway-->>Frontend: Retorna JSON {"message": "API key invalida"}, status 400
-        Frontend-->>Usuario: Muestra mensaje de error: "API key invalida"
-    else API key válida
-        rutaRol-->>controladorRol: Envía datos al controlador
-        controladorRol-->>controladorRol: Valida campos requeridos (nombre y permisos)
+alt API key inválida o token inválido
+    rutaCrearRol -->> Backend: Retorna JSON 401 "No autorizado"
+    Backend -->> Api_gateway: Retorna JSON 401 "No autorizado"
+    Api_gateway -->> Frontend: Retorna JSON 401 "No autorizado"
+    Frontend -->> Usuario: Muestra mensaje de error
+else Validaciones exitosas
+    rutaCrearRol -->> controladorCrearRol: Llama a crearRol()
 
-        alt Campos vacíos
-            controladorRol-->>rutaRol: Retorna JSON {"message": "Campos requeridos"}, status 400
-            rutaRol-->>Backend: Retorna JSON {"message": "Campos requeridos"}, status 400
-            Backend-->>Api_gateway: Retorna JSON {"message": "Campos requeridos"}, status 400
-            Api_gateway-->>Frontend: Retorna JSON {"message": "Campos requeridos"}, status 400
-            Frontend-->>Usuario: Muestra mensaje de error
-        else Campos válidos
-            controladorRol-->>repositorioRol: Verifica si el rol ya existe
-            repositorioRol-->>RDS: SELECT nombre FROM roles WHERE nombre = '...'
-            RDS-->>repositorioRol: Retorna resultado
-            repositorioRol-->>controladorRol: Retorna existencia
+    controladorCrearRol -->> controladorCrearRol: Valida nombre y permisos
+    alt Datos faltantes
+        controladorCrearRol -->> rutaCrearRol: Retorna JSON 400 "Datos incompletos"
+        rutaCrearRol -->> Backend: Retorna error de validación
+        Backend -->> Api_gateway: Retorna error
+        Api_gateway -->> Frontend: Error en formulario
+        Frontend -->> Usuario: Muestra mensaje de validación
+    else Datos válidos
+        controladorCrearRol -->> repositorioCrearRol: verificarNombreRol(nombre)
+        repositorioCrearRol -->> RDS: SELECT idRol FROM rol WHERE nombre = ?
+        RDS -->> repositorioCrearRol: Resultado
+        repositorioCrearRol -->> controladorCrearRol: ¿Existe?
 
-            alt Rol ya existe
-                controladorRol-->>rutaRol: Retorna JSON {"message": "El rol ya existe"}, status 409
-                rutaRol-->>Backend: Retorna JSON {"message": "El rol ya existe"}, status 409
-                Backend-->>Api_gateway: Retorna JSON {"message": "El rol ya existe"}, status 409
-                Api_gateway-->>Frontend: Retorna JSON {"message": "El rol ya existe"}, status 409
-                Frontend-->>Usuario: Muestra mensaje de error
-            else Rol no existe
-                controladorRol-->>repositorioRol: Verifica existencia de permisos
-                repositorioRol-->>RDS: SELECT * FROM permisos WHERE id IN (...)
-                RDS-->>repositorioRol: Retorna permisos válidos
-                repositorioRol-->>controladorRol: Permisos válidos
+        alt Rol ya existe
+            controladorCrearRol -->> rutaCrearRol: Retorna JSON 400 "Rol existente"
+            rutaCrearRol -->> Backend: Error por nombre repetido
+            Backend -->> Api_gateway: Error 400
+            Api_gateway -->> Frontend: Error 400
+            Frontend -->> Usuario: Muestra mensaje "Ya existe un rol con ese nombre"
+        else Nombre disponible
+            loop Por cada permiso
+                controladorCrearRol -->> repositorioCrearRol: verificarPermiso(id)
+                repositorioCrearRol -->> RDS: SELECT idPermiso FROM permiso WHERE idPermiso = ?
+                RDS -->> repositorioCrearRol: Permiso válido
+                repositorioCrearRol -->> controladorCrearRol: Permiso OK
+            end
 
-                alt Permisos inválidos
-                    controladorRol-->>rutaRol: Retorna JSON {"message": "Permisos inválidos"}, status 400
-                    rutaRol-->>Backend: Retorna JSON {"message": "Permisos inválidos"}, status 400
-                    Backend-->>Api_gateway: Retorna JSON {"message": "Permisos inválidos"}, status 400
-                    Api_gateway-->>Frontend: Retorna JSON {"message": "Permisos inválidos"}, status 400
-                    Frontend-->>Usuario: Muestra mensaje de error
-                else Permisos válidos
-                    controladorRol-->>repositorioRol: Llama a función para crear el rol
-                    repositorioRol-->>RDS: INSERT INTO roles (...)
-                    RDS-->>repositorioRol: Confirma inserción
-                    repositorioRol-->>controladorRol: Respuesta exitosa
+            alt Algún permiso inválido
+                controladorCrearRol -->> rutaCrearRol: Retorna JSON 400 "Permiso inválido"
+                rutaCrearRol -->> Backend: Error por permiso inválido
+                Backend -->> Api_gateway: Error 400
+                Api_gateway -->> Frontend: Error 400
+                Frontend -->> Usuario: Muestra error
+            else Todos los permisos válidos
+                controladorCrearRol -->> repositorioCrearRol: crearRol(nombre, descripcion)
+                repositorioCrearRol -->> RDS: INSERT INTO rol (...)
+                RDS -->> repositorioCrearRol: Devuelve insertId
 
-                    controladorRol-->>rutaRol: Retorna JSON {"message": "Rol creado exitosamente"}, status 201
-                    rutaRol-->>Backend: Retorna JSON {"message": "Rol creado exitosamente"}, status 201
-                    Backend-->>Api_gateway: Retorna JSON {"message": "Rol creado exitosamente"}, status 201
-                    Api_gateway-->>Frontend: Retorna JSON {"message": "Rol creado exitosamente"}, status 201
-                    Frontend-->>Usuario: Muestra mensaje "Rol creado exitosamente"
+                controladorCrearRol -->> repositorioCrearRol: asociarPermisosARol(insertId, permisos)
+                loop Inserta permisos
+                    repositorioCrearRol -->> RDS: INSERT INTO rol_permiso (...)
+                    RDS -->> repositorioCrearRol: OK
                 end
+
+                repositorioCrearRol -->> controladorCrearRol: Rol creado exitosamente
+                controladorCrearRol -->> rutaCrearRol: Retorna JSON 201 "Rol creado exitosamente"
+                rutaCrearRol -->> Backend: Rol creado con éxito
+                Backend -->> Api_gateway: Éxito 201
+                Api_gateway -->> Frontend: Éxito 201
+                Frontend -->> Usuario: Muestra mensaje de éxito
             end
         end
     end
+end
 
 ```
 
@@ -111,6 +120,10 @@ sequenceDiagram
 > _Descripción_: El mockup muestra la interfaz donde el Super Administrador puede ingresar el nombre del rol y seleccionar los permisos antes de crearlo.
 
 ![alt text](imagenes/RF6.png)
+
+## **Pruebas Unitarias**
+
+_<u>[Enlace a pruebas RF6 Crear Rol](https://docs.google.com/spreadsheets/d/1NLGwGrGA5PVOEzLaqxa8Ts1D_Ng3QzzqNKWJYUzxD-M/edit?gid=1715637979#gid=1715637979)</u>_
 
 ## **Código**
 
