@@ -1,6 +1,6 @@
 ---
 title: 🦑 | PR34 Proceso de Estrategia Técnica 
-sidebar_position: 37
+sidebar_position: 36
 ---
 
 # 🦑 Proceso de Estrategia Técnica 
@@ -50,10 +50,6 @@ Este proceso detalla únicamente la práctica **TS SP 2.1 – Desarrollar la arq
 
 4. **Plantilla de Estrategia Técnica**  
    - Copia de la plantilla original en `docs/plantillas/plantilla-estrategia-tecnica.md`, actualizada con el contenido v1.0.  
-
-## 📎 Recursos relacionados
-
-- [Plantilla CMMI – Activos de proceso organizacional](/docs/plantillas/plantilla-opf)  
 
 
 ## 📚 Historial de cambios
