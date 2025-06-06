@@ -106,7 +106,7 @@ sequenceDiagram
 
 ### Pruebas Unitarias 
 
-#### [Pruebas de la RF](https://docs.google.com/spreadsheets/d/1W-JW32dTsfI22-Yl5LydMhiu-oXHH_xo3hWvK6FHeLw/edit?gid=111374045#gid=111374045)
+#### [Pruebas del RF](https://docs.google.com/spreadsheets/d/1W-JW32dTsfI22-Yl5LydMhiu-oXHH_xo3hWvK6FHeLw/edit?gid=111374045#gid=111374045)
 
 ---
 

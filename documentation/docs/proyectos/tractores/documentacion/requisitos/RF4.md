@@ -85,14 +85,14 @@ sequenceDiagram
 
 ### Mockup
 
-![Mockup]
+![Mockup](./mockups/SeleccionaDatos.jpg)
 
 > *Descripción*: El mockup representa la interfaz del sistema donde se presentan los datos disponibles que se tienen de los tractores para su análisis.
 
 ---
 
 ### Pruebas Unitarias 
-- [Pruebas](https://docs.google.com/spreadsheets/d/1W-JW32dTsfI22-Yl5LydMhiu-oXHH_xo3hWvK6FHeLw/edit?gid=1089355168#gid=1089355168)
+#### [Pruebas del RF](https://docs.google.com/spreadsheets/d/1W-JW32dTsfI22-Yl5LydMhiu-oXHH_xo3hWvK6FHeLw/edit?gid=1089355168#gid=1089355168)
 
 ---
 

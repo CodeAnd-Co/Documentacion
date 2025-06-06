@@ -37,7 +37,7 @@ Yo como empleado de CNH y usuario de la aplicación harvester quiero ingresar co
 ---
 ### Pruebas Unitarias 
 
-#### [Pruebas de la RF](https://docs.google.com/spreadsheets/d/1W-JW32dTsfI22-Yl5LydMhiu-oXHH_xo3hWvK6FHeLw/edit?gid=710795973#gid=710795973)
+#### [Pruebas del RF](https://docs.google.com/spreadsheets/d/1W-JW32dTsfI22-Yl5LydMhiu-oXHH_xo3hWvK6FHeLw/edit?gid=710795973#gid=710795973)
 
 ---
 

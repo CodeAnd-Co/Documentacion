@@ -40,7 +40,7 @@ Yo como usuario quiero consultar la página de inicio de sesión de la aplicaci�
 
 ### Pruebas Unitarias 
 
-#### [Pruebas de la RF](https://docs.google.com/spreadsheets/d/1W-JW32dTsfI22-Yl5LydMhiu-oXHH_xo3hWvK6FHeLw/edit?gid=1905076093#gid=1905076093)
+#### [Pruebas del RF](https://docs.google.com/spreadsheets/d/1W-JW32dTsfI22-Yl5LydMhiu-oXHH_xo3hWvK6FHeLw/edit?gid=1905076093#gid=1905076093)
 
 ---
 
