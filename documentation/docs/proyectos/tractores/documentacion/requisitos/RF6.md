@@ -85,3 +85,13 @@ sequenceDiagram
 
 ### Pull Request
 [https://github.com/CodeAnd-Co/App-Local-TracTech/pull/11](https://github.com/CodeAnd-Co/App-Local-TracTech/pull/11)
+
+### Historial de cambios
+
+| **Tipo de Versión** | **Descripción**                            | **Fecha** | **Colaborador**         |
+| ------------------- | ------------------------------------------ | --------- | ----------------------- |
+| **1.0**             |  Añadir requisitos de tractores            | 5/3/2025  | Antonio Landeros           |
+| **2.0**             |  Agregar criterios de aceptacion | 3/4/2025  | Pablo Hurtda|
+| **2.1**             |  Añadir pull request a requisitos completados | 27/5/2025  | Juan Carlos Calderón|
+| **2.2**             |  Ordenar todas las RFs y actualizar los datos | 1/6/2025  | Mauricio Anguiano|
+| **2.3**             |  Actualizar mockup de cargar excel | 3/6/2025  | Mauricio Anguiano|

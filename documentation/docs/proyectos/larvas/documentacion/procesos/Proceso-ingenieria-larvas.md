@@ -1,9 +1,9 @@
 ---
-title: 🌻 | PRL1 Ingeniería de software
+title: 🌻 | PRL1 Ingeniería de software de TechNebrios
 sidebar_position: 21
 ---
 
-# 🌻 Proceso de codificación
+# 🌻 Proceso de ingenieria de software de TechNebrios
 
 Proceso para establecer un flujo estructurado que garantice la construcción de alta calidad, la detección temprana de defectos y la verificación efectiva para cada historia de usuario.
 

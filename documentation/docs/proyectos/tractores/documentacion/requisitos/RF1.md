@@ -46,3 +46,15 @@ Yo como usuario quiero consultar la página de inicio de sesión de la aplicaci�
 
 ### Pull Request
 [https://github.com/CodeAnd-Co/App-Local-TracTech/pull/1](https://github.com/CodeAnd-Co/App-Local-TracTech/pull/1)
+
+[https://github.com/CodeAnd-Co/Backend-Desacoplado-TracTech/pull/2](https://github.com/CodeAnd-Co/Backend-Desacoplado-TracTech/pull/2)
+
+### Historial de cambios
+
+| **Tipo de Versión** | **Descripción**                            | **Fecha** | **Colaborador**         |
+| ------------------- | ------------------------------------------ | --------- | ----------------------- |
+| **1.0**             |  Añadir requisitos de tractores            | 4/3/2025  | Diego Fuentes           |
+| **1.1**             |  Añadir pull request a requisitos completados | 27/5/2025  | Juan Carlos Calderón|
+| **2.0**             |  Refactor de Usuario Consulta Pagina Inicio | 30/5/2025  | Mauricio Anguiano|
+| **2.1**             |  Refactorizacion de RF2 Usuario Registrado Inicia Sesion | 31/5/2025  | Mauricio Anguiano|
+| **2.2**             |  Agregar pull requests de RF | 5/6/2025  | Sofía Osorio|

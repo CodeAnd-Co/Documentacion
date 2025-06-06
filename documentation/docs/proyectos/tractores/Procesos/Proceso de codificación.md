@@ -1,9 +1,20 @@
 ---
-title: Proceso de codificación de TracTech
+title: 🌻 | PRL1 Ingeniería de software de TracTech
 sidebar_position: 1
 ---
 
-# Proceso de codificación de TracTech
+# 🌻 | PRL1 Ingeniería de software de TracTech
+
+---
+
+## Seguimiento
+
+Para que en las sesiones de trabajo y días de _Home Office_ se mantenga una comprensión del progreso, asegúrate de comentar al equipo, ya sea oralmente o por uno de los medios oficiales de comunicación, que tareas vas a comenzar, cuanto tiempo vas a destinar (estructurando tus tareas en incrementos pequeños, como de 25 o 30 minutos) y sobretodo, comenta cuando completes tu tarea.
+
+**¿Qué conseguimos con esto?**
+- Que en las sesiones de trabajo y días de _Home Office_ donde el seguimiento no es tan estricto, se mantenga un registro de los avances que se realizan.
+- Aumentar la motivación del equipo al compartir nuestros avances.
+- Evadir la Ley de Parkinson, es decir, el obligarte a estructurar tus tareas en un tiempo concreto te fuerza a que tus tareas se realicen en incrementos manejables.
 
 ---
 
@@ -90,3 +101,4 @@ Puedes consultar un ejemplo en: `barraLateral.js`.
 | **4.0** | Reescritura para aumentar la claridad del proceso | 31/5/2025 | Rommel Toledo C. |
 | **5.0** | Reescritura completa del proceso para aumentar la concisión | 31/5/2025 | Rommel Toledo C. |
 | **5.1** | Corrección de los links a las checklist del equipo | 2/6/2025 | Rommel Toledo C. |
+| **5.2** | Se añadió una sección al documento del proceso para el seguimiento de las tareas | 2/6/2025 | Rommel Toledo C. |

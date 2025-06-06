@@ -112,3 +112,17 @@ sequenceDiagram
 
 ### Pull Request
 [https://github.com/CodeAnd-Co/App-Local-TracTech/pull/7](https://github.com/CodeAnd-Co/App-Local-TracTech/pull/7)
+
+[https://github.com/CodeAnd-Co/Backend-Desacoplado-TracTech/pull/20](https://github.com/CodeAnd-Co/Backend-Desacoplado-TracTech/pull/20)
+
+### Historial de cambios
+
+| **Tipo de Versión** | **Descripción**                            | **Fecha** | **Colaborador**         |
+| ------------------- | ------------------------------------------ | --------- | ----------------------- |
+| **1.0**             |  Añadir requisitos de tractores            | 4/3/2025  | Diego Fuentes           |
+| **1.1**             |  Añadir pull request a requisitos completados | 27/5/2025  | Juan Carlos Calderón|
+| **2.0**             |  Refactor de Usuario Consulta Modulo Analisis | 31/5/2025  | Mauricio Anguiano|
+| **2.1**             |  Arreglar documentación | 31/5/2025  | Daniel Queijeiro|
+| **2.2**             |  Ordenar todas las RFs y actualizar los datos | 1/6/2025  | Mauricio Anguiano|
+| **2.3**             |  Correccion criterios de aceptacion | 3/6/2025  | Mauricio Anguiano|
+| **2.4**             |  Agregar pull requests de RF | 5/6/2025  | Sofía Osorio|
