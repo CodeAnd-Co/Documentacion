@@ -67,7 +67,7 @@ Yo como usuario quiero eliminar el Excel cargado para cuando termine de trabajar
 
 ### Mockup
 
-![Mockup](./mockups/MockupInicio.png)
+![Mockup](./mockups/MockupInicioCambiar.png)
 
 > *Descripción*: El mockup representa la interfaz del sistema donde el usuario elimina un Excel. Muestra los campos requeridos y los botones de acción disponibles.
 
@@ -87,3 +87,12 @@ Yo como usuario quiero eliminar el Excel cargado para cuando termine de trabajar
 
 ### Pull Request
 [https://github.com/CodeAnd-Co/App-Local-TracTech/pull/19](https://github.com/CodeAnd-Co/App-Local-TracTech/pull/19)
+
+### Historial de cambios
+
+| **Tipo de Versión** | **Descripción**                            | **Fecha** | **Colaborador**         |
+| ------------------- | ------------------------------------------ | --------- | ----------------------- |
+| **1.0**             |  Añadir requisitos de tractores            | 5/3/2025  | Antonio Landeros           |
+| **2.0**             |  Agregar criterios de aceptacion | 3/4/2025  | Pablo Hurtda|
+| **2.1**             |  Ordenar todas las RFs y actualizar los datos | 1/6/2025  | Mauricio Anguiano|
+| **2.2**             |  Añadir criterios de aceptación | 2/6/2025  | Mauricio Anguiano|

@@ -1,7 +1,6 @@
 ---
 title: ⚙️ | Guía para inspeccionar procesos
 ---
-
 # ⚙️ Guía para inspeccionar procesos
 
 Esta guía permite asegurar que los equipos sigan los procesos definidos, generen los productos esperados y mantengan trazabilidad respecto a la política de [gestión de procesos](/docs/next/politicas/gestion-proceso).
@@ -25,7 +24,7 @@ Esta guía permite asegurar que los equipos sigan los procesos definidos, genere
 ### Paso 2: Identificar procesos a inspeccionar
 
 - Prioriza procesos de **uso frecuente** y **gran impacto** en el departamento.
-- Verifica que estén **documentados en la Wili** y cumplan con su [**checklist de verificación**](/docs/next/recursos/checklists).
+- Verifica que estén **documentados en la Wiki** y cumplan con su [**checklist de verificación**](/docs/next/recursos/checklists).
 
 **Resultado esperado:** Lista de procesos clave a inspeccionar.
 

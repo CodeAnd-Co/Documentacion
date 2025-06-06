@@ -14,7 +14,7 @@ Yo como usuario de la aplicación de escritorio Harvester quiero descargar el re
  - El PDF debe incluir toda la información visible y clara del reporte.
  - El sistema debe procesar todas las tarjetas de texto y gráficas presentes en el reporte.
  - Las tarjetas de texto deben mantener su formato (Título, Subtítulo, Contenido) en el PDF.
- - Las gráficas deben incluirse como imágenes PNG en el PDF.
+ - Las gráficas deben incluirse como imágenes en el PDF.
  - Las gráficas deben reflejar los datos procesados según las fórmulas aplicadas desde el botón de fórmulas.
  - Si una gráfica tiene fórmulas asociadas, los datos mostrados deben ser el resultado de aplicar esas fórmulas a los parámetros seleccionados.
  - El PDF debe mantener el orden de los elementos tal como aparecen en la previsualización.
@@ -218,3 +218,13 @@ sequenceDiagram
 
 ### Pull Request
 [https://github.com/CodeAnd-Co/App-Local-TracTech/pull/27](https://github.com/CodeAnd-Co/App-Local-TracTech/pull/27)
+
+### Historial de cambios
+
+| **Tipo de Versión** | **Descripción**                            | **Fecha** | **Colaborador**         |
+| ------------------- | ------------------------------------------ | --------- | ----------------------- |
+| **1.0**             |  Añadir requisitos de tractores            | 5/3/2025  | Antonio Landeros           |
+| **1.1**             |  Agregar precondicion en RF9 | 3/4/2025  | Ian Julian Estrada|
+| **1.2**             |  Ordenar todas las RFs y actualizar los datos | 1/6/2025  | Mauricio Anguiano|
+| **1.3**             |  Correcion de diagrama de secuencia | 2/6/2025  | Mauricio Anguiano|
+| **1.4**             |  Correccion criterios de aceptacion | 2/6/2025  | Mauricio Anguiano|

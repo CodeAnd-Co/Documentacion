@@ -31,7 +31,7 @@ Proceso para establecer un flujo estructurado que garantice la creación de cód
 | | Ejecutar git pull origin para asegurar que se tiene la versión más actualizada. | Desarrollador. | **CM, SP 2.2** (Controlar los elementos de configuración). |
 | | Crear la rama de trabajo para el requisito o historia asignado siguiendo la estrategia de ramas del equipo. | Desarollador. | **CM, SP 2.2** (Controlar los elementos de configuración). |
 |  | Verificar el código de los archivos en los que se va a trabajar, refactorizar en caso de ser necesario y listar defectos encontrados en el defect log del equipo. Se asigna un responsable y la solución al defecto. | Desarrollador. | **VER SP 1.1** (Seleccionar los productos de trabajo para la verificación), **VER SP 1.2** (Establecer el entorno de verificación). |
-|  | Los análisis de los defectos y la calidad se hacen en el defect log | Desarrollador. | **VER SP 3.2** (Analizar los resultados de la verificación). |
+|  | Los análisis de los defectos y la calidad se hacen en el defect log | Desarrollador. | **VER SP 2.3** (Analizar los datos de las revisiones entre pares), **VER SP 3.2** (Analizar los resultados de la verificación). |
 |  | Desarrollar el requisito siguiendo el diseño técnico aprobado, aplicando métodos eficaces de implementación (ej. programación modular o basada en componentes), de acuerdo con los estándares definidos. | Desarollador. | **CM, SP 2.1** (Seguimiento de solicitudes de cambio). |
 |  | Desarrollar el requisito o historia siguiendo los estándares del equipo. | Desarollador. | **CM, SP 2.2** (Controlar los elementos de configuración). |
 |  | Copiar la [checklist de desarrollo](https://docs.google.com/document/d/1ItP965B7cFppIUX3RPXg_ZuUiYZzSuGs1b5bMw2-ZpQ/edit?tab=t.0#heading=h.fhau7kjl46pa) en la carpeta correspondiente y verificar que el código cumple con lo estipulado. | Desarollador. | **PPQA, SP 1.2** (Evaluar productos objetivamente y documentar hallazgos), **VER SP 1.3** (Establecer los procedimientos y los criterios de verificación) **VER SP 3.1** (Realizar la verificación). |
@@ -75,4 +75,5 @@ Proceso para establecer un flujo estructurado que garantice la creación de cód
   | **2.0.3**   | Mapear VER 3.2 | 27/05/2025  | Ian Julián Estrada Castro       |
   | **2.0.4**   | Actualización pequeña al proceso. | 30/05/2025  | Juan Pablo Chávez Leal   |
   | **2.0.5**   | Mapear TS 2.3 | 02/06/2025  | Emiliano Valdivia Lara, Hiram Israel Mendoza López       |
+  | **2.0.6**   | Mapeo de varias áreas de VER | 05/06/2025  | Daniel Contreras Chávez       |
 </details>

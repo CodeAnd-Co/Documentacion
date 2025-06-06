@@ -1,9 +1,9 @@
 ---
-title: Política de gestión de datos del proyecto
+title: 🤝 Política de gestión de datos del proyecto
 sidebar_position: 2
 ---
 
-# **Política de gestión de datos del proyecto**
+# **🤝 Política de gestión de datos del proyecto**
 
 ---
 
@@ -35,6 +35,9 @@ Estos datos se almacenarán en sus archivos originales (en caso de ser .env, .pe
 Para salvaguardar la integridad, seguridad y confianza depositada en los datos, el acceso será restringido únicamente al Team Leader y Architecture Owner de cada proyecto. Ambos roles de liderazgo tienen la obligación de colocar dichos accesos dentro de las carpetas y delegar su acceso en caso de cambiar de rol. En caso de que un miembro del equipo necesite tener acceso a alguno estos datos, debe notificar a alguno de estos dos líderes, que evaluarán la petición y concederán acceso al dato específico que fue solicitado si lo consideran necesario.
 
 Para evitar cualquier filtración de información, **queda estrictamente prohibida la distribución de los accesos a través de cualquier medio digital distinto a los canales oficiales.**
+
+#### **3.1.1**
+Si algún stakeholder require acceso a las credenciales, se debera de acercar al lider del proyecto o al dueño de la arquitectura para que se les pueda autorizar y otorgar el acceso temporal. (Dicho acceso tendra una duración de maximo una semana por defecto).
 
 ### **3.2 Datos generales**
 
@@ -73,6 +76,7 @@ De acuerdo con el modelo **CMMI PP SP 2.3 (Gestión de Datos del Proyecto)**, se
 
    - Se regulará la distribución de datos mediante permisos explícitos.
    - Se definirán formatos y protocolos de transmisión para garantizar la integridad de los datos compartidos.
+   - En caso de que un miembro del equipo necesite tener acceso a alguno estos datos, debe notificar a alguno de estos dos líderes, que evaluarán la petición y concederán acceso al dato específico que fue solicitado si lo consideran necesario.
 
 6. **Control de versiones y trazabilidad de datos (CM SP 1.1, CM SP 2.1)**
 
@@ -131,4 +135,6 @@ Para garantizar el cumplimiento de esta política, se implementarán mecanismos 
 | **1.4**             | Plan de Datos.                                                          | 28/04/2025 | Pablo Hurtado                   |
 | **1.5**             | Eliminar principios y resumir objetivo.                                 | 08/05/2025 | Daniel Contreras                |
 | **1.6**             | Definir un método para que una persona pueda acceder a datos sensibles. | 29/05/2025 | Emiliano Valdivia Lara          |
+| **1.7**             | Modificación a las directrices para la gestión de datos. | 04/06/2025 | Hiram Mendoza         |
+| **1.8**             | Modificación al acceso a los datos sensibles | 05/06/2025 | Miguel Angel Uribe         |
 

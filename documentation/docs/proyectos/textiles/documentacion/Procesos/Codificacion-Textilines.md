@@ -1,9 +1,9 @@
 ---
-title: Proceso de codificación de Text & Lines
+title: 🌻 | PRL1 Ingeniería de software de Text & Lines
 sidebar_position: 1
 ---
 
-# Proceso de codificación de Text & Lines
+# Proceso de ingeniería de software de Text & Lines
 
 ---
 

@@ -48,6 +48,7 @@ Los requisitos funcionales del sistema describen una variedad de acciones que lo
 - [**RF18**](RF18.md): Super Administrador Lee Empleado - `Done`
 - [**RF19**](RF19.md): Super Administrador Actualiza Empleado
 - [**RF20**](RF20.md): Super Administrador Elimina Empleado - `Done`
+- [**RF21**](RF21.md): Super Administrador Crea Grupo de Empleados - `Done`
 - [**RF22**](RF22.md): Super Administrador Consulta Lista de Grupos de Empleados - `Done`
 - [**RF23**](RF23.md): Super Administrador Lee Grupo de Empleados - `Done`
 - [**RF25**](RF25.md): Super Administrador Elimina Grupo de Empleados. - `Done`
@@ -75,42 +76,27 @@ Los requisitos funcionales del sistema describen una variedad de acciones que lo
 
 ### Requisitos Específicos MBI (Parte 1)
 
-- [**RF4**](RF4.md): Super Administrador Actualiza Usuario
 - [**RF8**](RF8.md): Super Administrador Lee Rol
 - [**RF9**](RF9.md): Super Administrador Actualiza Rol
-- [**RF16**](RF16.md): Super Administrador Crea Empleado
-- [**RF21**](RF21.md): Super Administrador Crea Grupo de Empleados
 - [**RF24**](RF24.md): Super Administrador Actualiza Grupo de Empleados
 - [**RF28**](RF28.md): Super Administrador, Cliente Lee Producto
-- [**RF29**](RF29.md): Super Administrador Actualizar Producto
 - [**RF33**](RF33.md): Super Administrador, Cliente Lee Set de Cuotas
-- [**RF34**](RF34.md): Super Administrador Actualiza Set de Cuotas
 - [**RF36**](RF36.md): Super Administrador Crea Evento
-- [**RF41**](RF41.md): Super Administrador Crea Set de Productos
-- [**RF44**](RF44.md): Super Administrador Actualiza Set de Productos
 - [**RF48**](RF48.md): Super Administrador, Cliente Lee Categoria de Productos
-- [**RF49**](RF49.md): Super Administrador Actualiza Categoria de Productos
 - [**RF56**](RF56.md): Super Administrador Importa Productos
-- [**RF58**](RF58.md): Super Administrador Exportar Productos
 - [**RF59**](RF59.md): Super Administrador Exportar Empleados
-- [**RF62**](RF62.md): Super Administrador, Cliente Actualiza Pedido
 
 ### Requisitos Específicos MBI (Parte 2)
 
-- [**RF64**](RF64.md): Empleado Accede al Centro de Ayuda
-- [**RF65**](RF65.md): Empleado Lee Carrito de Compras
-- [**RF66**](RF66.md): Empleado Actualiza Carrito de Compras
-- [**RF67**](RF67.md): Empleado Elimina Productos del Carrito
-- [**RF68**](RF68.md): Empleado Agrega Producto al Carrito
-- [**RF69**](RF69.md): Empleado Crea Pedido
-- [**RF70**](RF70.md): Empleado Lee Pedido
-- [**RF71**](RF71.md): Empleado Finaliza Pedido
-- [**RF72**](RF72.md): Empleado Consulta Lista de Pedidos
-- [**RF73**](RF73.md): Empleado Recibe Notificaciones de Estado del Pedido
-- [**RF74**](RF74.md): Empleado Lee Producto
-- [**RF75**](RF75.md): Empleado Consulta Lista de Productos
-- [**RF76**](RF76.md): Empleado Lee Balance
-- [**RF77**](RF77.md): Empleado Selecciona Tipo de Pago
+- [**RF4**](RF4.md): Super Administrador Actualiza Usuario
+- [**RF16**](RF16.md): Super Administrador Crea Empleado
+- [**RF29**](RF29.md): Super Administrador Actualizar Producto
+- [**RF34**](RF34.md): Super Administrador Actualiza Set de Cuotas
+- [**RF41**](RF41.md): Super Administrador Crea Set de Productos
+- [**RF44**](RF44.md): Super Administrador Actualiza Set de Productos
+- [**RF49**](RF49.md): Super Administrador Actualiza Categoria de Productos
+- [**RF58**](RF58.md): Super Administrador Exportar Productos
+- [**RF62**](RF62.md): Super Administrador, Cliente Actualiza Pedido
 
 ---
 

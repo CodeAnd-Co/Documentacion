@@ -106,7 +106,7 @@ end
 
 ## **Pruebas Unitarias**
 
-_<u>[Enlace a pruebas RF5 Elimina Usuario](https://docs.google.com/spreadsheets/d/1NLGwGrGA5PVOEzLaqxa8Ts1D_Ng3QzzqNKWJYUzxD-M/edit?usp=sharing)</u>_
+_<u>[Enlace a pruebas RF5 Elimina Usuario](https://docs.google.com/spreadsheets/d/1NLGwGrGA5PVOEzLaqxa8Ts1D_Ng3QzzqNKWJYUzxD-M/edit?gid=742474218#gid=742474218)</u>_
 
 ## **Código**
 
