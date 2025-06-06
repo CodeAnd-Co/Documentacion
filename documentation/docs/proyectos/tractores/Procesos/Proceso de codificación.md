@@ -90,17 +90,18 @@ ipcRenderer.invoke('precargarEJS', 'ruta/de/la/vista');
 
 ## Historial de cambios
 
-| **Tipo de Versión** | **Descripción**                                                                  | **Fecha**  | **Colaborador**                                                         |
-| ------------------- | -------------------------------------------------------------------------------- | ---------- | ----------------------------------------------------------------------- |
-| **1.0**             | Creación del proceso                                                             | 15/05/2025 | Diego Fuentes, Ian Julian Estrada, Daniel Queijeiro, Juan Pablo Chávez. |
-| **2.0**             | Ajustar proceso con el refactor                                                  | 22/05/2025 | Daniel Queijeiro, Diego Fuentes                                         |
-| **2.1**             | Añadir pasos para actualizar checklists                                          | 26/05/2025 | Diego Fuentes                                                           |
-| **2.2**             | Añadir pasos para revisar componentes                                            | 26/05/2025 | Diego Fuentes                                                           |
-| **3.0**             | Refactorización del proceso                                                      | 29/5/2025  | Juan Pablo Chávez Leal                                                  |
-| **3.1**             | Corrección de errores ortográficos en el proceso                                 | 30/5/2025  | Juan Pablo Chávez Leal                                                  |
-| **3.2**             | Enlaces al proceso de RTM.                                                       | 30/05/2025 | Juan Pablo Chávez Leal                                                  |
-| **3.3**             | Añadir al proceso la actualización de Checklists                                 | 31/5/2025  | Rommel Toledo C.                                                        |
-| **4.0**             | Reescritura para aumentar la claridad del proceso                                | 31/5/2025  | Rommel Toledo C.                                                        |
-| **5.0**             | Reescritura completa del proceso para aumentar la concisión                      | 31/5/2025  | Rommel Toledo C.                                                        |
-| **5.1**             | Corrección de los links a las checklist del equipo                               | 2/6/2025   | Rommel Toledo C.                                                        |
-| **5.2**             | Se añadió una sección al documento del proceso para el seguimiento de las tareas | 2/6/2025   | Rommel Toledo C.                                                        |
+| **Tipo de Versión** | **Descripción**                                                                  | **Fecha**             | **Colaborador**                                                         |
+| ------------------- | -------------------------------------------------------------------------------- | --------------------- | ----------------------------------------------------------------------- |
+| **1.0**             | Creación del proceso                                                             | 15/05/2025            | Diego Fuentes, Ian Julian Estrada, Daniel Queijeiro, Juan Pablo Chávez. |
+| **2.0**             | Ajustar proceso con el refactor                                                  | 22/05/2025            | Daniel Queijeiro, Diego Fuentes                                         |
+| **2.1**             | Añadir pasos para actualizar checklists                                          | 26/05/2025            | Diego Fuentes                                                           |
+| **2.2**             | Añadir pasos para revisar componentes                                            | 26/05/2025            | Diego Fuentes                                                           |
+| **3.0**             | Refactorización del proceso                                                      | 29/5/2025             | Juan Pablo Chávez Leal                                                  |
+| **3.1**             | Corrección de errores ortográficos en el proceso                                 | 30/5/2025             | Juan Pablo Chávez Leal                                                  |
+| **3.2**             | Enlaces al proceso de RTM.                                                       | 30/05/2025            | Juan Pablo Chávez Leal                                                  |
+| **3.3**             | Añadir al proceso la actualización de Checklists                                 | 31/5/2025             | Rommel Toledo C.                                                        |
+| **4.0**             | Reescritura para aumentar la claridad del proceso                                | 31/5/2025             | Rommel Toledo C.                                                        |
+| **5.0**             | Reescritura completa del proceso para aumentar la concisión                      | 31/5/2025             | Rommel Toledo C.                                                        |
+| **5.1**             | Corrección de los links a las checklist del equipo                               | 2/6/2025              | Rommel Toledo C.                                                        |
+| **5.2**             | Se añadió una sección al documento del proceso para el seguimiento de las tareas | 2/6/2025              | Rommel Toledo C.                                                        |
+| **5.3**             | Se agregaron las metas específicas y se mapeo ready y done                       | Angélica Ríos Cuentas |
