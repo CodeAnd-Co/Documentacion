@@ -111,4 +111,4 @@ sequenceDiagram
 | **2.0**             |  Agregar criterios de aceptacion | 2/6/2025  | Ian Julian Estrada|
 | **2.1**             |  Ordenar todas las RFs y actualizar los datos | 1/6/2025  | Mauricio Anguiano|
 | **2.2**             |  Correccion criterios de aceptacion | 3/6/2025  | Mauricio Anguiano|
-| **2.3**             |  Agregar pull requests de backend desacoplado | 5/6/2025  | Sofía Osorio|
+| **2.3**             |  Agregar pull requests de RF | 5/6/2025  | Sofía Osorio|
