@@ -125,4 +125,4 @@ sequenceDiagram
 | **2.1**             |  Arreglar documentación | 31/5/2025  | Daniel Queijeiro|
 | **2.2**             |  Ordenar todas las RFs y actualizar los datos | 1/6/2025  | Mauricio Anguiano|
 | **2.3**             |  Correccion criterios de aceptacion | 3/6/2025  | Mauricio Anguiano|
-| **2.4**             |  Agregar pull requests de RF | 5/6/2025  | Sofía Osorio|
+| **2.4**             |  Agregar pull requests de RF back| 5/6/2025  | Sofía Osorio|

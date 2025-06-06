@@ -94,4 +94,4 @@ sequenceDiagram
 | **1.0**             |  Añadir requisitos de tractores            | 5/3/2025  | Antonio Landeros        |
 | **2.0**             |  Actualizacion del RF5 - 8 | 27/5/2025  | Pablo Hurtado|
 | **2.1**             |  Ordenar todas las RFs y actualizar los datos | 1/6/2025  | Mauricio Anguiano|
-| **2.2**             |  Agregar pull requests de RF| 5/6/2025  | Sofía Osorio|
+| **2.2**             |  Agregar pull requests de RF back| 5/6/2025  | Sofía Osorio|
