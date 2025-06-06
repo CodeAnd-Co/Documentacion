@@ -45,6 +45,6 @@ Este proceso detalla únicamente la práctica **TS SP 2.1 – Desarrollar la arq
 
   | **Versión** | **Descripción**                                                   | **Fecha**     | **Colaborador**   |
   | ----------- | ----------------------------------------------------------------- | ------------- | ----------------- |
-  | **1.0.0**   | Creación del proceso de Estrategia Técnica (TS SP 2.1) y primer borrador. | 05/06/2025    | Equipo Arquitectura |
+  | **1.0.0**   | Creación del proceso de Estrategia Técnicas | 05/06/2025    | Juan Antonio Landeros Velazquez |
 
 </details>
