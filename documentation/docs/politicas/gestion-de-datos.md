@@ -1,15 +1,15 @@
 ---
-title: Política de gestión de datos del proyecto
+title: 🤝 Política de gestión de datos del proyecto
 sidebar_position: 2
 ---
 
-# **Política de gestión de datos del proyecto**
+# **🤝 Política de gestión de datos del proyecto**
 
 ---
 
 ## **1. Objetivo**
 
-Establecer lineamientos para gestionar los datos del proyecto de forma estructurada, segura y conforme a estándares, asegurando su uso correcto y alineación con las prácticas del modelo **CMMI**.
+Establecer lineamientos para gestionar los datos del proyecto de forma estructurada, segura y conforme a estándares, asegurando su uso correcto y alineación con las prácticas del marco de referencia **CMMI**.
 
 ## **2. Alcance**
 
@@ -36,6 +36,9 @@ Para salvaguardar la integridad, seguridad y confianza depositada en los datos, 
 
 Para evitar cualquier filtración de información, **queda estrictamente prohibida la distribución de los accesos a través de cualquier medio digital distinto a los canales oficiales.**
 
+#### **3.1.1**
+Si algún stakeholder requiere acceso a las credenciales, se deberá de acercar al Team Leader o al Architecture Owner para que se les pueda autorizar y otorgar el acceso temporal. (Dicho acceso tendrá una duración de mÁximo una semana por defecto).
+
 ### **3.2 Datos generales**
 
 Son aquellos que pueden ser compartidos dentro del equipo de trabajo sin representar un riesgo para la organización. Algunos ejemplos son:
@@ -46,7 +49,7 @@ Son aquellos que pueden ser compartidos dentro del equipo de trabajo sin represe
 
 ## **4. Directrices para la gestión de datos**
 
-De acuerdo con el modelo **CMMI PP SP 2.3 (Gestión de Datos del Proyecto)**, se establecen las siguientes directrices:
+De acuerdo con el marco de referencia **CMMI PP SP 2.3 (Gestión de Datos del Proyecto)**, se establecen las siguientes directrices:
 
 1. **Identificación y documentación de datos (PP SP 2.3, PMC SP 1.4)**
 
@@ -125,7 +128,7 @@ Para garantizar el cumplimiento de esta política, se implementarán mecanismos 
 
 | **Tipo de versión** | **Descripción**                                                         | **Fecha**  | **Colaborador**                 |
 | ------------------- | ----------------------------------------------------------------------- | ---------- | ------------------------------- |
-| **1.0**             | Creación de la política.                                                |            | Diego Alfaro, Arturo Sánchez    |
+| **1.0**             | Creación de la política.                                                | 05/03/2025 | Diego Alfaro, Arturo Sánchez    |
 | **1.1**             | Eliminación de salidas de la política.                                  | 08/04/2025 | Daniel Contreras, Eduardo Rosas |
 | **1.2**             | Modificación datos sensibles.                                           | 25/04/2025 | Miguel Angel Uribe              |
 | **1.3**             | Implementar acciones correctivas.                                       | 26/04/2025 | Max Toscano                     |
@@ -133,4 +136,6 @@ Para garantizar el cumplimiento de esta política, se implementarán mecanismos 
 | **1.5**             | Eliminar principios y resumir objetivo.                                 | 08/05/2025 | Daniel Contreras                |
 | **1.6**             | Definir un método para que una persona pueda acceder a datos sensibles. | 29/05/2025 | Emiliano Valdivia Lara          |
 | **1.7**             | Modificación a las directrices para la gestión de datos. | 04/06/2025 | Hiram Mendoza         |
+| **1.8**             | Modificación al acceso a los datos sensibles | 05/06/2025 | Miguel Angel Uribe         |
+| **1.8.1**           | Añadir fecha de creación y correcciones de ortografía | 06/06/2025 | Juan Carlos Calderón García         |
 
