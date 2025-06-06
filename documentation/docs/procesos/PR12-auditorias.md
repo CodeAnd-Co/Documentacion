@@ -2,7 +2,7 @@
 title: 🩻 | PR12 Auditorías internas
 sidebar_position: 12
 ---
-# 🩻 Proceso para auditorías internas
+# 🩻 Auditorías internas
 
 Asegurar la evaluación sistemática de procesos y productos de trabajo mediante auditorías internas, con el fin de detectar desviaciones, promover la mejora continua y garantizar el cumplimiento con los estándares de calidad y objetivos organizacionales.
 

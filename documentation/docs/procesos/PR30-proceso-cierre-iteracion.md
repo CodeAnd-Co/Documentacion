@@ -1,9 +1,9 @@
 ---
-title: 🦑 | PR20 Proceso de cierre de iteración
+title: 🦑 | PR20 Cierre de iteración
 sidebar_position: 20
 ---
 
-# 🦑 Proceso de cierre de iteración
+# 🦑 Cierre de iteración
 
 Este proceso busca evaluar los resultados de la iteración para analizar logros y fallas, identificar áreas de oportunidad y fomentar la conciencia sobre nuestras acciones y decisiones. Es fundamental para la mejora continua y el aseguramiento del cumplimiento de objetivos.
 

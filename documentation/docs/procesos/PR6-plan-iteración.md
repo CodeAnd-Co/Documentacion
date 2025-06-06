@@ -3,7 +3,7 @@ title: 🚀 | PR6 Plan de iteración
 sidebar_position: 6
 ---
 
-# 🚀 Proceso para Plan de iteración
+# 🚀 Plan de iteración
 
 Proceso para definir un plan de iteración con tareas claras, viables y manejables, que permita obtener el compromiso del equipo y mantener una carga de trabajo equilibrada. Este proceso es clave para asegurar entregas incrementales dentro del marco de tiempo disponible, alineadas con los objetivos del proyecto y capacidades del equipo.
 

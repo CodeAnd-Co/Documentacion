@@ -1,9 +1,9 @@
 ---
-title: 📐 | PR35 Diseño de Software
-sidebar_position: 37
+title: 📐 | PR26 Diseño de Software
+sidebar_position: 26
 ---
 
-# 📐 Proceso de Diseño de Software
+# 📐 Diseño de Software
 
 Este proceso establece las actividades, responsabilidades y directrices para realizar el diseño técnico de un proyecto de software, asegurando que la solución propuesta sea escalable, mantenible y cumpla con los requisitos establecidos.
 
