@@ -7,15 +7,15 @@ sidebar_position: 7
 
 ### Historia de Usuario
 
-Como usuario, quiero buscar una charola específica mediante una barra de búsqueda introduciendo su identificador único, para localizar rápidamente su información sin tener que revisar manualmente todos los registros.
+Como usuario, quiero buscar una charola específica mediante una barra de búsqueda introduciendo su nombre, para localizar rápidamente su información sin tener que revisar manualmente todos los registros.
 
 **Criterios de Aceptación:**
 
-- El sistema debe permitir la búsqueda de charolas por identificador único.
+- El sistema debe permitir la búsqueda de charolas por nombre.
 - La búsqueda debe ser rápida y sin afectar el rendimiento del sistema.
-- Si el identificador no existe, debe mostrarse el mensaje: "Charola no encontrada. Verifica el identificador ingresado.
+- Si el nombre no existe, debe mostrarse el mensaje: "Charola no encontrada. Verifica el nombre ingresado.
 - La búsqueda debe devolver los resultados en menos de 2 segundos bajo condiciones normales de uso.
-- El campo de búsqueda debe aceptar un máximo de 10 caracteres alfanuméricos sin espacios.
+- El campo de búsqueda debe aceptar un máximo de 15 caracteres alfanuméricos sin espacios.
 - Los guiones medios están permitidos.
 
 🧪 Casos de Entrada (Esperadas y No Esperadas)
