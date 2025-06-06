@@ -9,7 +9,7 @@ sidebar_position: 2
 
 ## **1. Objetivo**
 
-Establecer lineamientos para gestionar los datos del proyecto de forma estructurada, segura y conforme a estándares, asegurando su uso correcto y alineación con las prácticas del modelo **CMMI**.
+Establecer lineamientos para gestionar los datos del proyecto de forma estructurada, segura y conforme a estándares, asegurando su uso correcto y alineación con las prácticas del marco de referencia **CMMI**.
 
 ## **2. Alcance**
 
@@ -37,7 +37,7 @@ Para salvaguardar la integridad, seguridad y confianza depositada en los datos, 
 Para evitar cualquier filtración de información, **queda estrictamente prohibida la distribución de los accesos a través de cualquier medio digital distinto a los canales oficiales.**
 
 #### **3.1.1**
-Si algún stakeholder requiere acceso a las credenciales, se deberá de acercar al líder del proyecto o al dueño de la arquitectura para que se les pueda autorizar y otorgar el acceso temporal. (Dicho acceso tendrá una duración de mÁximo una semana por defecto).
+Si algún stakeholder requiere acceso a las credenciales, se deberá de acercar al Team Leader o al Architecture Owner para que se les pueda autorizar y otorgar el acceso temporal. (Dicho acceso tendrá una duración de mÁximo una semana por defecto).
 
 ### **3.2 Datos generales**
 
@@ -49,7 +49,7 @@ Son aquellos que pueden ser compartidos dentro del equipo de trabajo sin represe
 
 ## **4. Directrices para la gestión de datos**
 
-De acuerdo con el modelo **CMMI PP SP 2.3 (Gestión de Datos del Proyecto)**, se establecen las siguientes directrices:
+De acuerdo con el marco de referencia **CMMI PP SP 2.3 (Gestión de Datos del Proyecto)**, se establecen las siguientes directrices:
 
 1. **Identificación y documentación de datos (PP SP 2.3, PMC SP 1.4)**
 
