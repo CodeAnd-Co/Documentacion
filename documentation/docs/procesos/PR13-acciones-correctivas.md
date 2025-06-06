@@ -49,6 +49,7 @@ Situación en la que el producto o acuerdo de trabajo no cumple con los requisit
 - [Estándar para crear nuevas plantillas](/docs/next/standards/estandar-plantillas)
 - [Definición de Ítems](/docs/next/procesos/PR2-definicion-items)
 - [Plantilla para procesos](/docs/next/plantillas/plantilla-procesos)
+- [Estándar para la modificación o creación de procesos](/docs/next/standards/modificacion-procesos)
 
 ## 🤗 Tabla de criterios
 
@@ -81,5 +82,5 @@ Situación en la que el producto o acuerdo de trabajo no cumple con los requisit
 | **3.0.0**   | Simplificación del proceso y corrección acorde al estándar CMMI  | 15/05/2025  | Paola María Garrido, Valeria Zúñiga                     |
 | **3.1.0**   | Agregado paso para introducir versión 3.2                        | 16/05/2025  | Daniel Contreras Chávez                               |
 | **3.1.1**   | Mapeo de PMC 2.1 en el proceso.                                           | 30/05/2025    | Paola María Garrido, Angel Mauricio Ramírez Herrera |
-
+| **3.2.0**   | Se agregó el estándar de modificación o creación de proceso como recurso relacionado | 4/06/2025 | Ian Julián Estrada Castro |
 </details>
