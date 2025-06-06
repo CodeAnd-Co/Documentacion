@@ -15,7 +15,7 @@ Establecer los lineamientos para la elaboración y mantenimiento del Manual Téc
 
 ## **2. Alcance**
 
-Esta política aplica a la documentación técnica encargada de instruir sobre la instalación de herramientas, entornos y dependencias necesarias para el desarrollo, prueba y ejecución local del sistema Zuustento Tracker. Es de uso principal para personal técnico y desarrolladores involucrados en el proyecto.
+Esta política aplica a la documentación técnica encargada de instruir sobre la instalación de herramientas, entornos y dependencias necesarias para el desarrollo, prueba y ejecución local de los sistemas desarrollados por el departamento. Es de uso principal para personal técnico y desarrolladores involucrados en el proyecto.
 
 ---
 
@@ -78,4 +78,5 @@ El manual debe revisarse de forma continua y actualizarse en los siguientes caso
     | **Tipo de versión** | **Descripción** | **Fecha** | **Colaborador** |
     | ------------------- | --------------- | --------- | --------------- |
     | **1.0.0** | Creación de la política. | 26/05/2025 | Armando Méndez Castro, Juan Antonio Landeros Velazquez |
+    | **1.1.0** | Ampliación del alcance al resto del departamento. | 06/06/2025 | Juan Carlos Calderón García |
 </details>
