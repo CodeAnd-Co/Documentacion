@@ -87,7 +87,7 @@ Los requisitos funcionales del sistema describen una variedad de acciones que lo
 - [**RF34**](RF34.md): Super Administrador Actualiza Set de Cuotas
 - [**RF36**](RF36.md): Super Administrador Crea Evento
 - [**RF41**](RF41.md): Super Administrador Crea Set de Productos
-- [**RF44**](RF44.md): Super Administrador Actualiza Set de Productos
+- [**RF44**](RF44.md): Super Administrador Actualiza Set de Productos - `Done`
 - [**RF48**](RF48.md): Super Administrador, Cliente Lee Categoria de Productos
 - [**RF49**](RF49.md): Super Administrador Actualiza Categoria de Productos
 - [**RF56**](RF56.md): Super Administrador Importa Productos
