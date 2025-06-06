@@ -75,4 +75,5 @@ Proceso para establecer un flujo estructurado que garantice la creación de cód
   | **2.0.3**   | Mapear VER 3.2 | 27/05/2025  | Ian Julián Estrada Castro       |
   | **2.0.4**   | Actualización pequeña al proceso. | 30/05/2025  | Juan Pablo Chávez Leal   |
   | **2.0.5**   | Mapear TS 2.3 | 02/06/2025  | Emiliano Valdivia Lara, Hiram Israel Mendoza López       |
+  | **2.0.6**   | Mapeo de varias áreas de VER | 05/06/2025  | Daniel Contreras Chávez       |
 </details>
