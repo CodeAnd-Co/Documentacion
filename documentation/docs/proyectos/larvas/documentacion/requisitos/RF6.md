@@ -15,7 +15,7 @@ Como usuario, quiero buscar una charola específica mediante una barra de búsqu
 - La búsqueda debe ser rápida y sin afectar el rendimiento del sistema.
 - Si el nombre no existe, debe mostrarse el mensaje: "Charola no encontrada. Verifica el nombre ingresado.
 - La búsqueda debe devolver los resultados en menos de 2 segundos bajo condiciones normales de uso.
-- El campo de búsqueda debe aceptar un máximo de 15 caracteres alfanuméricos sin espacios.
+- El campo de búsqueda debe aceptar un máximo de 20 caracteres alfanuméricos sin espacios.
 - Los guiones medios están permitidos.
 
 🧪 Casos de Entrada (Esperadas y No Esperadas)
@@ -125,8 +125,9 @@ participant Database as Base de Datos
 
 ## Historial de cambios
 
-| **Tipo de Versión** | **Descripción**                                                                                                          | **Fecha**  | **Colaborador**         |
-| ------------------- | ------------------------------------------------------------------------------------------------------------------------ | ---------- | ----------------------- |
-| **1.0**             | Creacion de la historia de usuario                                                                                       | 8/3/2025   | Armando Mendez          |
-| **1.1**             | Modificar historial de cambio                                                                                            | 17/05/2025 | Mariaa Juárez           |
-| **1.2**             | Actualiza criterios de aceptación y casos esperados y no esperados,, mockup, diagrama de secuencia y diseño de algoritmo | 05/06/2025 | Emiliano Gomez Gonzalez |
+| **Tipo de Versión** | **Descripción**                                                                                                         | **Fecha**  | **Colaborador**         |
+| ------------------- | ----------------------------------------------------------------------------------------------------------------------- | ---------- | ----------------------- |
+| **1.0**             | Creacion de la historia de usuario                                                                                      | 8/3/2025   | Armando Mendez          |
+| **1.1**             | Modificar historial de cambio                                                                                           | 17/05/2025 | Mariaa Juárez           |
+| **1.2**             | Actualiza criterios de aceptación y casos esperados y no esperados, mockup, diagrama de secuencia y diseño de algoritmo | 05/06/2025 | Emiliano Gomez Gonzalez |
+| **1.2.1**           | Máximo de caracteres                                                                                                    | 06/06/2025 | Emiliano Gomez Gonzalez |
