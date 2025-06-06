@@ -77,6 +77,10 @@ Documentar claramente las funcionalidades y código del sistema para lectura en 
 
 ---
 
+## Manejo de errores en el proyecto
+
+[Estandar de manejo de errores](./estandar-manejo-errores.md)
+
 ## Patrones de diseño y diagrama de paquetes
 
 ### Backend
