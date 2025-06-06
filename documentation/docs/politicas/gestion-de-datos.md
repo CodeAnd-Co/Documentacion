@@ -37,7 +37,7 @@ Para salvaguardar la integridad, seguridad y confianza depositada en los datos, 
 Para evitar cualquier filtración de información, **queda estrictamente prohibida la distribución de los accesos a través de cualquier medio digital distinto a los canales oficiales.**
 
 #### **3.1.1**
-Si algún stakeholder require acceso a las credenciales, se debera de acercar al lider del proyecto o al dueño de la arquitectura para que se les pueda autorizar y otorgar el acceso temporal. (Dicho acceso tendra una duración de maximo una semana por defecto).
+Si algún stakeholder requiere acceso a las credenciales, se deberá de acercar al líder del proyecto o al dueño de la arquitectura para que se les pueda autorizar y otorgar el acceso temporal. (Dicho acceso tendrá una duración de mÁximo una semana por defecto).
 
 ### **3.2 Datos generales**
 
@@ -128,7 +128,7 @@ Para garantizar el cumplimiento de esta política, se implementarán mecanismos 
 
 | **Tipo de versión** | **Descripción**                                                         | **Fecha**  | **Colaborador**                 |
 | ------------------- | ----------------------------------------------------------------------- | ---------- | ------------------------------- |
-| **1.0**             | Creación de la política.                                                |            | Diego Alfaro, Arturo Sánchez    |
+| **1.0**             | Creación de la política.                                                | 05/03/2025 | Diego Alfaro, Arturo Sánchez    |
 | **1.1**             | Eliminación de salidas de la política.                                  | 08/04/2025 | Daniel Contreras, Eduardo Rosas |
 | **1.2**             | Modificación datos sensibles.                                           | 25/04/2025 | Miguel Angel Uribe              |
 | **1.3**             | Implementar acciones correctivas.                                       | 26/04/2025 | Max Toscano                     |
