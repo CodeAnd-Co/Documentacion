@@ -1,9 +1,9 @@
 ---
-title: 🏇 | PR19 Proceso para planear y mantener un proyecto
+title: 🏇 | PR19 Planear y mantener un proyecto
 sidebar_position: 19
 ---
 
-# 🏇 Proceso para planear y mantener un proyecto
+# 🏇 Planear y mantener un proyecto
 
 Este proceso define cómo planear un proyecto desde su inicio y cómo asegurar su mantenimiento alineado con los objetivos organizacionales y las necesidades del stakeholder. Establece criterios claros para aceptar requisitos, detalla los entregables y conecta las prácticas con el modelo CMMI.
 

@@ -37,7 +37,7 @@ Yo como usuario quiero sustituir el excel cargado en la pestaña de inicio para 
 
 ### Pruebas Unitarias 
 
-#### [Pruebas de la HU](https://docs.google.com/spreadsheets/d/1W-JW32dTsfI22-Yl5LydMhiu-oXHH_xo3hWvK6FHeLw/edit?gid=1105794420#gid=1105794420)
+#### [Pruebas del RF](https://docs.google.com/spreadsheets/d/1W-JW32dTsfI22-Yl5LydMhiu-oXHH_xo3hWvK6FHeLw/edit?gid=1105794420#gid=1105794420)
 
 ---
 

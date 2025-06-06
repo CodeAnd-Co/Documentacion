@@ -9,7 +9,7 @@ sidebar_position: 10
 
 ## 🎯 Objetivo
 
-Establecer los lineamientos para la elaboración y mantenimiento del Manual de Despliegue, cuyo propósito es documentar los procedimientos necesarios para desplegar y mantener en operación el sistema **Zuustento Tracker** en los entornos de **staging** y **producción**, garantizando consistencia, calidad y trazabilidad en los procesos de despliegue.
+Establecer los lineamientos para la elaboración y mantenimiento del Manual de Despliegue, cuyo propósito es documentar los procedimientos necesarios para desplegar y mantener a los sistemas desarrollados en operación en los entornos de **staging** y **producción**, garantizando consistencia, calidad y trazabilidad en los procesos de despliegue.
 
 ---
 
@@ -113,5 +113,6 @@ El manual debe revisarse y actualizarse en los siguientes casos:
 | **📝 Tipo de versión** | **🗂️ Descripción** | **📅 Fecha** | **👤 Colaborador** |
 | --------------------- | ------------------ | ------------ | ----------------- |
 | **1.0.0**             | Creación de la política basada en el Manual de Despliegue. | 02/06/2025 | Armando Méndez Castro |
+| **1.1.0**             | Ampliar el objetivo para abarcar a todo el departamento. | 06/06/2025 | Juan Carlos Claderón García |
 
 </details>

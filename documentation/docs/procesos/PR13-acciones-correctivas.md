@@ -2,7 +2,7 @@
 title: 🦴 | PR13 Acciones correctivas
 sidebar_position: 13
 ---
-# 🦴 Proceso para acciones correctivas
+# 🦴 Acciones correctivas
 
 Detectar, registrar, comunicar, dar seguimiento y resolver de forma objetiva las no conformidades identificadas, asegurando que se tomen acciones correctivas adecuadas y manteniendo la calidad de los procesos y productos conforme a los estándares y procedimientos definidos por el departamento.
 

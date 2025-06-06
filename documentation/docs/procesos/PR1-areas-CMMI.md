@@ -3,7 +3,7 @@ title: 💎 | PR1 Lograr áreas del CMMI
 sidebar_position: 1
 ---
 
-# 💎 Proceso para lograr áreas del CMMI
+# 💎 Lograr áreas del CMMI
 
 Este proceso establece los pasos necesarios para implementar correctamente las áreas del CMMI en la organización, desde la selección del área hasta su institucionalización, asegurando que se cumpla con los requisitos y prácticas específicas.
 
@@ -22,7 +22,7 @@ Este proceso establece los pasos necesarios para implementar correctamente las �
 | --------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | ---------------------------------------------------------------------------------------------------- |
 | **Selección de área**                         | Seleccionar una meta específica del CMMI del [plan departamental](https://docs.google.com/spreadsheets/d/1yvqCf1wp_6ic0Xqwd4LDwk_sMfGdgWF-S9FTfnieVZQ/edit?usp=sharing) para ser SEPG.                                                                   | SEPG           | **OPF, SP 1.1**(Establecer las necesidades de proceso de la organización).                           |
 | **Preparación, investigación y capacitación** | Determinar qué prácticas específicas se relacionan y qué artefactos se requieren: plantilla, guía, proceso o actividad dentro de un proceso.                                                                                                             | SEPGs del área | **OPF, SP 2.1**(Establecer los planes de acción de proceso).                                         |
-|                                               | Hacer una capacitación a partir de la información de CMMI-DEV-Gap-Analysis (SCAMPIs) y de [CMMI® para Desarrollo, Versión 1.3](hhttps://drive.google.com/file/d/1KsgYQZIpJzSt7RWqB7WmS-BZ9vGmuig5/view?usp=sharing).                                     | SEPGs del área | **OPF, SP 2.1**(Establecer los planes de acción de proceso).                                         |
+|                                               | Hacer una capacitación a partir de la información de CMMI-DEV-Gap-Analysis (SCAMPIs) y de [CMMI® para Desarrollo, Versión 1.3](https://drive.google.com/file/d/1KsgYQZIpJzSt7RWqB7WmS-BZ9vGmuig5/view?usp=sharing).                                     | SEPGs del área | **OPF, SP 2.1**(Establecer los planes de acción de proceso).                                         |
 |                                               | Dar la capacitación al departamento.                                                                                                                                                                                                                     | SEPGs del área | **OPD, SP 1.5**(Establecer el programa de capacitación de la organización).                          |
 | **Encargado de la práctica específica**       | Asegurar que haya responsables de cada práctica específica del área en el [plan departamental](https://docs.google.com/spreadsheets/d/1yvqCf1wp_6ic0Xqwd4LDwk_sMfGdgWF-S9FTfnieVZQ/edit?usp=sharing).                                                    | SEPGs del área | **OPF, SP 3.2**(Implementar planes de acción de proceso).                                            |
 |                                               | Informarse de la práctica específica asignada previo a la junta. <br/>_Nota: Resumir la práctica en:_ [Comprendiendo las áreas de proceso del CMMI](https://docs.google.com/document/d/19lSwMuoRpzJko4hnMJNj_W6A81tCjo35x_u47YBxRyw/edit?usp=sharing).   | Team member    | **OPD, SP 1.3**(Establecer los criterios y las guías de adaptación).                                 |
@@ -56,5 +56,6 @@ Este proceso establece los pasos necesarios para implementar correctamente las �
 | **4.0.0**   | Modificación del proceso basada en áreas de proceso de CMMI y trabajo colaborativo. | 11/05/2025 | Valeria Zúñiga                              |
 | **5.0.0**   | Actualización al formato estándar de documentación de procesos.                 | 18/05/2025    | Ángel Mauricio Ramírez Herrera              |
 | **5.1.0**       | Correcciones ortográficas y de enlaces                       | 29/05/2025 | Valeria Zúñiga, Nicolas Hood                 |
-  | **5.1.1**   | Actualización de enlace al proceso de definición de items . | 30/05/2025  | Juan Pablo Chávez Leal   |
+| **5.1.1**   | Actualización de enlace al proceso de definición de items. | 30/05/2025  | Juan Pablo Chávez Leal   |
+| **5.1.2**   | Corregir links del CMMI | 06/06/2025  | Angel Mauricio Ramírez Herrera  |
 </details>

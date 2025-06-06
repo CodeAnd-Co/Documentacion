@@ -3,7 +3,7 @@ title: 🍻 | PR3 Dailys
 sidebar_position: 3
 ---
 
-# 🍻 Proceso para Dailys
+# 🍻 Dailys
 
 Este proceso establece la estructura y los pasos necesarios para realizar reuniones diarias (dailys) efectivas que permitan al equipo mantenerse alineado, monitorear el avance del proyecto y resolver impedimentos de manera oportuna.
 

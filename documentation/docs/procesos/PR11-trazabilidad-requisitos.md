@@ -3,7 +3,7 @@ title: ☢️ | PR11 Comprensión y trazabilidad de requisitos
 sidebar_position: 11
 ---
 
-# ☢️ Proceso de comprensión y trazabilidad de requisitos
+# ☢️ Comprensión y trazabilidad de requisitos
 
 Este proceso asegura la correcta comprensión y la trazabilidad bidireccional de los requisitos, desde su definición hasta su implementación, facilitando el control y la calidad del desarrollo dentro de la organización.
 
