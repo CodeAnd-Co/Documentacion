@@ -56,4 +56,4 @@ Yo como empleado de CNH y usuario de la aplicación harvester quiero ingresar co
 | **2.1**             |  Refactorizacion de RF2 Usuario Registrado Inicia Sesion | 31/5/2025  | Mauricio Anguiano|
 | **2.2**             |  Correccion criterios de aceptacion | 31/5/2025  | Mauricio Anguiano|
 | **2.3**             |  Ordenar todas las RFs y actualizar los datos | 1/6/2025  | Mauricio Anguiano|
-| **2.4**             |  Agregar pull requests de RF| 5/6/2025  | Sofía Osorio|
+| **2.4**             |  Agregar pull requests de RF back| 5/6/2025  | Sofía Osorio|

@@ -57,4 +57,4 @@ Yo como usuario quiero consultar la página de inicio de sesión de la aplicaci�
 | **1.1**             |  Añadir pull request a requisitos completados | 27/5/2025  | Juan Carlos Calderón|
 | **2.0**             |  Refactor de Usuario Consulta Pagina Inicio | 30/5/2025  | Mauricio Anguiano|
 | **2.1**             |  Refactorizacion de RF2 Usuario Registrado Inicia Sesion | 31/5/2025  | Mauricio Anguiano|
-| **2.2**             |  Agregar pull requests de RF | 5/6/2025  | Sofía Osorio|
+| **2.2**             |  Agregar pull requests de RF back | 5/6/2025  | Sofía Osorio|
