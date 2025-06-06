@@ -3,7 +3,7 @@ title: 🌻 | PR21 Codificación
 sidebar_position: 21
 ---
 
-# 🌻 Proceso de codificación
+# 🌻 Codificación
 
 Proceso para establecer un flujo estructurado que garantice la creación de código de alta calidad, la detección temprana de defectos y la verificación efectiva en el desarrollo de software.
 
