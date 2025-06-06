@@ -32,26 +32,12 @@ Este proceso detalla únicamente la práctica **TS SP 2.1 – Desarrollar la arq
 ## 📤 Salidas
 
 1. **Documento “Estrategia técnica” (v1.0)**  
-   - Ubicado en `docs/procesos/PR35-estrategia-tecnica.md`, con:  
      - Sección “Tipo de arquitectura” y justificación de alto nivel.  
      - “Desglose de componentes” (repositorios, ramas, commits, pruebas, documentación, CI/CD).  
      - “Criterios y decisiones” documentados con base en RF/RNF.  
      - Diagrama de flujos (SVG/PNG) incrustado.  
      - Tabla de trazabilidad (RF/RNF ↔ Componente ↔ Decisión).  
-     - Frontmatter con `version: v1.0` y `sidebar_position: 37`.  
-
-2. **Diagrama de flujos de la Estrategia técnica**  
-   - Archivos en `docs/diagramas/`:  
-     - `estrategia-tecnica-flujo.drawio` (fuente).  
-     - `estrategia-tecnica-flujo.svg` (exportado).  
-
-3. **Tabla de trazabilidad**  
-   - Dentro del propio documento Markdown, relacionando cada RF/RNF con el componente de Estrategia técnica y la decisión asociada.  
-
-4. **Plantilla de Estrategia Técnica**  
-   - Copia de la plantilla original en `docs/plantillas/plantilla-estrategia-tecnica.md`, actualizada con el contenido v1.0.  
-
-
+     
 ## 📚 Historial de cambios
 
 <details>
