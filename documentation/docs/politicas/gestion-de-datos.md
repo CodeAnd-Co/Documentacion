@@ -137,5 +137,5 @@ Para garantizar el cumplimiento de esta política, se implementarán mecanismos 
 | **1.6**             | Definir un método para que una persona pueda acceder a datos sensibles. | 29/05/2025 | Emiliano Valdivia Lara          |
 | **1.7**             | Modificación a las directrices para la gestión de datos. | 04/06/2025 | Hiram Mendoza         |
 | **1.8**             | Modificación al acceso a los datos sensibles | 05/06/2025 | Miguel Angel Uribe         |
-| **1.8.1**           | Añadir fecha de cereación y correcciones de ortografía | 06/06/2025 | Juan Carlos Calderón García         |
+| **1.8.1**           | Añadir fecha de creación y correcciones de ortografía | 06/06/2025 | Juan Carlos Calderón García         |
 
