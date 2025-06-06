@@ -11,6 +11,10 @@ Como usuario del sistema, quiero borrar los datos de una charola en la base de d
 
   **Criterios de Aceptación:**
   - Antes de eliminar una charola, se debe mostrar un mensaje de confirmación.
+  - Se debe solicitar una justificación de eliminación de mínimo 15 caracteres.
+  - La justificación de eliminación no puede exceder los 200 caracteres.
+  - Si no se da una justificación, el botón para enviar datos estará inactivo.
+  - Se debe guardar el nombre de la charola eliminada junto a la fecha y usuario responsable.
   - La eliminación debe reflejarse de inmediato en la base de datos sin afectar otros registros.
 
 ---
@@ -32,7 +36,6 @@ sequenceDiagram
     participant ViewModel as ViewModel
     participant Domain as Domain
     participant Repository as Repository
-    participant APIClient as API Client (MVVM)
     participant APIService as API Service (MVVM)
     participant Controller as Controller
     participant Model as Model
@@ -42,27 +45,23 @@ sequenceDiagram
         Usuario ->> View: Presiona "Eliminar Charola"
         activate View
 
-        View ->> ViewModel: eliminarCharola(id)
+        View ->> ViewModel: eliminarCharola(id, razon)
         deactivate View
         activate ViewModel
 
-        ViewModel ->> Domain: eliminarCharola(id)
+        ViewModel ->> Domain: eliminarCharola(id, razon)
         deactivate ViewModel
         activate Domain
 
-        Domain ->> Repository: eliminarCharola(id)
+        Domain ->> Repository: eliminarCharola(id, razon)
         deactivate Domain
         activate Repository
 
-        Repository ->> APIClient: eliminarCharola(id)
+        Repository ->> APIService: eliminarCharola(id, usuario, razon)
         deactivate Repository
-        activate APIClient
-
-        APIClient ->> APIService: POST  /charolas/{id}
-        deactivate APIClient
         activate APIService
 
-        APIService ->> Controller: POST /charolas/{id}
+        APIService ->> Controller: POST /charolas/{id}(usuario, razon)
         deactivate APIService
         activate Controller
 
@@ -86,12 +85,8 @@ sequenceDiagram
         deactivate Controller
         activate APIService
 
-        APIService -->> APIClient: Eliminación exitosa
+        APIService -->> Repository: Eliminación exitosa
         deactivate APIService
-        activate APIClient
-
-        APIClient -->> Repository: Eliminación exitosa
-        deactivate APIClient
         activate Repository
 
         Repository -->> Domain: Resultado de eliminación
@@ -109,39 +104,31 @@ sequenceDiagram
         View -->> Usuario: Mostrar mensaje "Charola eliminada correctamente"
         deactivate View
 
-    else Sin conexión a internet, 101 | POST
+    else Sin conexión a internet, 503 | POST
         Usuario ->> View: Presiona "Eliminar Charola"
         activate View
 
-        View ->> ViewModel: eliminarCharola(id)
+        View ->> ViewModel: eliminarCharola(id, razon)
         deactivate View
         activate ViewModel
 
-        ViewModel ->> Domain: eliminarCharola(id)
+        ViewModel ->> Domain: eliminarCharola(id, razon)
         deactivate ViewModel
         activate Domain
 
-        Domain ->> Repository: eliminarCharola(id)
+        Domain ->> Repository: eliminarCharola(id, razon)
         deactivate Domain
         activate Repository
 
-        Repository ->> APIClient: eliminarCharola(id)
+        Repository ->> APIService: eliminarCharola(id, usuario, razon)
         deactivate Repository
-        activate APIClient
-
-        APIClient ->> APIService: POST /charolas/{id}
-        deactivate APIClient
         activate APIService
 
-        APIService -->> APIClient: Error 101
+        APIService -->> Repository: Error 503
         deactivate APIService
-        activate APIClient
-
-        APIClient -->> Repository: Error 101
-        deactivate APIClient
         activate Repository
 
-        Repository -->> Domain: Error 101
+        Repository -->> Domain: Error 503
         deactivate Repository
         activate Domain
 
@@ -160,27 +147,23 @@ sequenceDiagram
         Usuario ->> View: Presiona "Eliminar Charola"
         activate View
 
-        View ->> ViewModel: eliminarCharola(id)
+        View ->> ViewModel: eliminarCharola(id, razon)
         deactivate View
         activate ViewModel
 
-        ViewModel ->> Domain: eliminarCharola(id)
+        ViewModel ->> Domain: eliminarCharola(id, razon)
         deactivate ViewModel
         activate Domain
 
-        Domain ->> Repository: eliminarCharola(id)
+        Domain ->> Repository: eliminarCharola(id, razon)
         deactivate Domain
         activate Repository
 
-        Repository ->> APIClient: eliminarCharola(id)
+        Repository ->> APIService: eliminarCharola(id, usuario, razon)
         deactivate Repository
-        activate APIClient
-
-        APIClient ->> APIService: POST /charolas/{id}
-        deactivate APIClient
         activate APIService
 
-        APIService ->> Controller: POST /charolas/{id}
+        APIService ->> Controller: POST /charolas/{id}(usuario, razon)
         deactivate APIService
         activate Controller
 
@@ -204,12 +187,8 @@ sequenceDiagram
         deactivate Controller
         activate APIService
 
-        APIService -->> APIClient: Error 500
+        APIService -->> Repository: Error 500
         deactivate APIService
-        activate APIClient
-
-        APIClient -->> Repository: Error 500
-        deactivate APIClient
         activate Repository
 
         Repository -->> Domain: Error 500
@@ -257,3 +236,4 @@ sequenceDiagram
 | **1.3**             | Diagramas de actividades   | 23/5/2025  | Juan Eduardo Rosas Cerón |
 | **1.4**             | Se corrigió mockup  | 29/5/2025  | Mariana Juárez |
 | **1.5**             | Se agregaron los pull request de front y back | 29/5/2025  | Sofía Osorio |
+| **2.0**             | Se modificó la HU para interactuar con el RF39 | 06/6/2025  | Sofía Osorio |
