@@ -113,6 +113,6 @@ El manual debe revisarse y actualizarse en los siguientes casos:
 | **📝 Tipo de versión** | **🗂️ Descripción** | **📅 Fecha** | **👤 Colaborador** |
 | --------------------- | ------------------ | ------------ | ----------------- |
 | **1.0.0**             | Creación de la política basada en el Manual de Despliegue. | 02/06/2025 | Armando Méndez Castro |
-| **1.1.0**             | CAmpliar el objetivo para abarcar a todo el departamento. | 06/06/2025 | Juan Carlos Claderón García |
+| **1.1.0**             | Ampliar el objetivo para abarcar a todo el departamento. | 06/06/2025 | Juan Carlos Claderón García |
 
 </details>
