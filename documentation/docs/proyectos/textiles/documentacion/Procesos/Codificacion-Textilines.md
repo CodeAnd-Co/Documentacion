@@ -81,3 +81,4 @@ sidebar_position: 1
 | **Tipo de Versión** | **Descripción**                            | **Fecha**  | **Colaborador**          |
 | ------------------- | ------------------------------------------ | ---------- | ------------------------ |
 | **1.0**             | Implementación del Proceso en Text & Lines | 30/05/2025 | Rodrigo Antonio Benítez. |
+| **1.1**             | Agregar definicion de ready y done         | 6/06/2025  | Diego Alfaro Pinto       |
