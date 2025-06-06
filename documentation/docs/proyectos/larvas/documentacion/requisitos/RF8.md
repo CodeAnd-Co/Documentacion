@@ -25,9 +25,13 @@ Como usuario del sistema, quiero borrar los datos de una charola en la base de d
 
 ---
 
+### Diseño de algoritmo
+
+[Pseudocódigo](https://docs.google.com/document/d/1dR7XmV4NR-5E2wJsP_hDUf-NR-hgnGipKvqIoMnLrk0/edit?usp=sharing)
+
+---
+
 ### Diagrama de Secuencia
-
-
 
 ```mermaid
 sequenceDiagram
@@ -236,4 +240,4 @@ sequenceDiagram
 | **1.3**             | Diagramas de actividades   | 23/5/2025  | Juan Eduardo Rosas Cerón |
 | **1.4**             | Se corrigió mockup  | 29/5/2025  | Mariana Juárez |
 | **1.5**             | Se agregaron los pull request de front y back | 29/5/2025  | Sofía Osorio |
-| **2.0**             | Se modificó la HU para interactuar con el RF39 | 06/6/2025  | Sofía Osorio |
+| **2.0**             | Se modificó la HU para interactuar con el RF39 | 06/6/2025  | Emiliano Valdivia |
