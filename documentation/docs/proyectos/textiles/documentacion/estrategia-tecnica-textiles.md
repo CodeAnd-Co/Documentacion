@@ -2,10 +2,6 @@
 title: Estrategia técnica
 ---
 
-**Última actualización por:** Hiram Mendoza , 24 de abril de 2025
-
----
-
 # Estrategia técnica
 
 ## Objetivo
@@ -81,6 +77,10 @@ Documentar claramente las funcionalidades y código del sistema para lectura en 
 
 ---
 
+## Manejo de errores en el proyecto
+
+[Estandar de manejo de errores](./estandar-manejo-errores.md)
+
 ## Patrones de diseño y diagrama de paquetes
 
 ### Backend
@@ -94,11 +94,9 @@ Este diagrama de paquetes representa la organización de un backend. Se divide e
 Cada módulo contiene:
 
 - **Data**: Manejo de los datos estructurados en:
-  - `Repositorios` Gestión de la base de datos.
-  - `Modelos` Creacion de los modelos de datos.
+  - `Repositorios` En el repositorio haremos las validaciones de negocio y gestion de datos, al igual que el manejo de la base de datos
 - **Controladores**: Manejo de solicitudes HTTP, estructurado en:
-  - `IndexControladores`: Archivo que contiene todos los controladores del modulo
-  - `Controladores`: Implementación de la lógica de negocio de una sola funcionalidad.
+  - `Controladores`: El controlador servira como el intermediario entre la peticion y el repositorio, donde solo se haran validaciones criticas.
 - **Rutas**: Manejo de las rutas estructuradas en:
   - `IndiceRutas`: Punto de entrada de las rutas de todo el modulo.
   - `Rutas`: Definición de rutas de cada funcionalidad.
@@ -107,6 +105,7 @@ Cada módulo contiene:
 
 - **Middlewares**: Funciones intermedias para procesar solicitudes.
 - **Servicios**: Lógica reutilizable independiente de los controladores.
+- **Base de datos**: Gestion de la conexion a la base de datos
 
 ### 3. Views
 
@@ -382,3 +381,4 @@ jobs:
 | **1.2.0**           | Modificaciones de plantilla de pull request del backend | 19/05/2025 | Arturo Sánchez                                 |
 | **1.3.0**           | Mejoras en la plantilla de Frontend                     | 19/05/2025 | Rodrigo Antonio                                |
 | **1.3.1**           | Correcciones ortográficas                               | 29/05/2025 | Valeria Zúñiga, Nicolas Hood                   |
+| **1.3.2**           | Correciones de modulos                                  | 05/06/2025 | Diego Alfaro                                   |

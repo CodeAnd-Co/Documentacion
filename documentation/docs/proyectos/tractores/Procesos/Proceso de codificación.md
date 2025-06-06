@@ -1,9 +1,21 @@
 ---
-title: Proceso de codificación de TracTech
+title: 🌻 | PRL1 Ingeniería de software de TracTech
 sidebar_position: 1
 ---
 
-# Proceso de codificación de TracTech
+# 🌻 | PRL1 Ingeniería de software de TracTech
+
+---
+
+## Seguimiento
+
+Para que en las sesiones de trabajo y días de _Home Office_ se mantenga una comprensión del progreso, asegúrate de comentar al equipo, ya sea oralmente o por uno de los medios oficiales de comunicación, que tareas vas a comenzar, cuanto tiempo vas a destinar (estructurando tus tareas en incrementos pequeños, como de 25 o 30 minutos) y sobretodo, comenta cuando completes tu tarea.
+
+**¿Qué conseguimos con esto?**
+
+- Que en las sesiones de trabajo y días de _Home Office_ donde el seguimiento no es tan estricto, se mantenga un registro de los avances que se realizan.
+- Aumentar la motivación del equipo al compartir nuestros avances.
+- Evadir la Ley de Parkinson, es decir, el obligarte a estructurar tus tareas en un tiempo concreto te fuerza a que tus tareas se realicen en incrementos manejables.
 
 ---
 
@@ -11,7 +23,7 @@ sidebar_position: 1
 
 - Establecer un flujo para el desarrollo de código de alta calidad.
 - Identificar y corregir defectos en etapas tempranas del desarrollo.
-- Asegurar la verificación efectiva de código.
+- Asegurar la verificación efectiva del código.
 
 ---
 
@@ -26,78 +38,70 @@ sidebar_position: 1
 
 ## Proceso
 
-| Fase | Descripción | Responsable | 
-|------|-------------|-------------|
-| **Verificar el análisis** | Llenar la [checklist de análisis](https://docs.google.com/document/d/1dFEBxS_WGWtgCAAW1Sp57Vlgj06-X-od6HbNy2XnZKk/edit?tab=t.0#heading=h.fhau7kjl46pa), si hay un punto faltante llevar a cabo las acciones correctivas para asegurar que el análisis es correcto. Esta checklist debe estar llena en la carpeta 'Checklists Tractech'.| Codificador del requisito |
-| **Seguir el proceso de RTM** | Abrir y seguir el proceso de RTM. | Codificador del requisito |
-| **Verificación del diseño** | Abrir el requisito a programar en el docusaurus y verificar su diseño. | Codificador del requisito |
-| | Rehacer el diagrama de secuencia a papel para verificar qué tan útil es su diseño actual. | Codificador del requisito |
-| | Llenar la [checklist de diseño](https://docs.google.com/document/d/17iPu9h6KR80SHw6kBhKG3mf926_mbkIipx1Aq1sfD2A/edit?tab=t.0#heading=h.fhau7kjl46pa) y crear una copia en la carpeta de 'Checklists TracTech'. | Codificador del requisito | 
-| **Seguir el proceso de RTM** | Abrir y seguir el proceso de RTM. | Codificador del requisito |
-| **Preparación para la codificación** | Mantén abierto el diagrama de secuencia del requisito para basarte de él a la hora de programar el requerimiento. | Codificador del requisito |
-| **Inicio de codificación** | Asegúrate de estar en la rama de develop, en el repositorio pertiente ejecutando: ```git branch```, si no estás en develop: ```git checkout develop```, después ejecuta: ```git pull origin``` y ```npm i```, finalmente ejecuta:  ```git checkout -b <NombreDeLaRama>```, recuerda seguir la estrategia de ramas. | Codificador del requisito |
-| **Selección de pareja** | En el único caso de que no exista persona con la que colaborar, se puede iniciar la codificación solo. De lo contrario, es obligatorio hacer pair programming para el desarrollo de historias de usuario. | Codificador del requisito|
-| **Codificación del backend desacoplado.** | Verifica que en ```app.js``` esté definida la ruta del módulo de tu requisito. | Codificador del requisito |
-| Si no está la ruta: | **1.** Verifica que la carpeta del módulo correspondiente exista.  | Codificador del requisito |
-| Si no está la ruta: | **2.** Verifica que dentro de la carpeta del módulo existan las carpetas (controladores, data y rutas).| Codificador del requisito |
-| | **3.** Asegúrate de que dentro de la carpeta 'data' exista la carpeta 'repositorios'. | Codificador del requisito |
-| | **4.** Verifica que exista el archivo de índice y el de la ruta de tu requisito dentro de la carpeta 'rutas'. | Codificador del requisito. Además de incluir en el archivo de índice la dirección al archivo de ruta del requisito  |
-| | En cualquiera de los casos anteriores, crea el archivo teniendo en cuenta: el patrón de diseño, el estándar para nombrar los archivos y la práctica de SOLID. | Codificador del requisito | 
-| **Codificación** |  En el archivo de rutas de tu requerimiento importa los middlewares que requieras. | Codificador del requisito
-| | Crear el controlador del requerimiento dentro de la carpeta de controladores y agregarlo al archivo de rutas de tu requerimiento. | Codificador del requisito|
-| | Crear el archivo repositorio en la carpeta con el mismo nombre del módulo pertinente. Asegúrate de hacer todas las validaciones congruentes en este archivo. | Codificador del requisito |
-| | Crear el archivo modelo del requerimiento, en el que solo debe incluirse la consulta a la base de datos. | Codificador del requisito|
-| **Seguir el proceso de RTM** | Abrir y seguir el proceso de RTM. | Codificador del requisito |
-| **Verificaciones y PR** | Revisa el código con la checklist  de codificación propia. | Codificador del requisito|
-| | Revisa el código con la checklist de codificación del equipo. | Codificador del requisito|
-| | Abre el PR asegurándote de que la rama objetivo sea develop. | Codificador del requisito|
-| | Notifica a alguien más del equipo para que diseñe y ejecute las pruebas de tu requerimiento. | Codificador del requisito |
-| | Si las pruebas arrojan correcciones, corrígelas y haz push a la rama. | Codificador del requisito |
-|**Revisa la definición de DONE** | Repasa la definición de DONE y verifica que se cumpla por completo, si cumple con la definición sigue el proceso de RTM. | Codificador del requisito | 
-| **Preparación del ambiente** | Repasa la fase de '**Inicio de codificación**'. | Codificador del requisito |
-| **Codificación del backend local** | Si necesitas comunicarte con el backend desacoplado debes: | Codificador del requisito|
-|**Comunicación** | Tener el archivo constantes.js actualizado en la carpeta 'scripts' en su primer nivel. | Codificador del requisito |
-| | Tener en la carpeta 'domain' una carpeta 'API' de tu módulo. | Codificador del requisito | 
-| | En esa carpeta 'API' debes crear tu archivo moduloAPI.js en donde debes agregar las funciones que incorporen las llamadas al servidor. | Codificador del requisito |
-| | Conecta el controlador con la ruta de la petición del servidor. | Codificador del requisito |
-| **Casos de uso** | Ingresa a la carpeta 'casosUso' y verifica si la carpeta del módulo existe, crea el archivo que contendrá toda la lógica de negocio que simula al controlador del backend, pero en la aplicación local. |  Codificador del requisito |
-| **Preparación del ambiente** | Repasa la fase de '**Inicio de codificación**'. | Codificador del requisito |
-| **Codificación del front-end** | Ir a la carpeta de "paginas"  que se encuentra en framework > vistas. Crea la carpeta de tu módulo ahí. | Codificador del requisito | 
-| | Dentro de la carpeta, crea el archivo EJS donde crearás la vista. | Codificador del requisito |
-| | Identifica los componentes que debes utilizar para desarrollar la vista y checar su existencia. Si necesitas un componente que no existe aún, avisa en el grupo para confirmar que no existe y pasar a desarrolarlo. | Codificador del requisito | 
-| | Dentro del archivo EJS añade el encabezado.ejs y piePagina.ejs que estan ubicados en framework > vistas > includes. Crea el EJS usando variables para cargar cosas como las rutas. | Codificador del requisito | 
-| | Abre la carpeta scripts en framework > utils, y crear el archivo con el código de js que correrá en el frontEnd y manejará el DOM o body. No debes incluir lógica más allá de lectura, escritura y asignación de funciones y valores de los elementos HTML. | Codificador del requisito |
-| | Si tienes lógica que NO interactúa con elementos HTML, debes agregarlo en el backend local (Consulta la fase de Codificación de backend local, específicamente el archivo de casoUso). | Codificador del requisito |
-| | Conecta el controlador a la vista del usuario a tráves del archivo de casoUso.| Codificador del requisito|
-| **Seguir el proceso de RTM** | Abrir y seguir el proceso de RTM. | Codificador del requisito |
-| **Verificaciones y PR** | Revisa el código con la checklist  de codificación propia. | Codificador del requisito|
-| | Revisa el código con la checklist de codificación del equipo. | Codificador del requisito|
-| | Abre el PR asegurándote de que la rama objetivo sea develop. | Codificador del requisito|
-| | Notifica a alguien más del equipo para que diseñe y ejecute las pruebas de tu requerimiento. | Codificador del requisito |
-| | Si las pruebas arrojan correcciones, corrígelas y haz push a la rama. | Codificador del requisito |
-|**Revisa la definición de DONE** | Repasa la definición de DONE y verifica que se cumpla por completo, si cumple con la definición sigue el proceso de RTM. | Codificador del requisito |
+| **Fase**                                  | **Descripción**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             | **Responsable**               | **Meta y práctica específica del CMMI**                                                                                                                                                           |
+| ----------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **1. Análisis**                           | **Abre y llena** la [checklist de análisis](https://docs.google.com/document/d/10oQVaYoiHrBbJjHWcvZDRMZLWdWukiI5ONUdzWmxchs/edit?tab=t.0#heading=h.fhau7kjl46pa). Revísala punto por punto y, si falta algo, haz las correcciones necesarias para asegurar que el análisis esté completo. Guarda la checklist en la carpeta correspondiente en 'Checklists Tractech'. Y sigue la parte correspondiente del [Proceso de Trazabilidad](/docs/next/procesos/PR11-trazabilidad-requisitos).                                                                                                                                                                                                                                                                     | **Codificador del requisito** | **VER SP 1.1** (Seleccionar los productos de trabajo para la verificación), **VER SP 1.3** (Establecer los procedimientos y criterios de verificación), **VER SP 3.1** (Realizar la verificación) |
+| **2. Diseño**                             | Verifica el diseño en Docusaurus en el documento del requisito. **Abre y llena** la [checklist de diseño](https://docs.google.com/document/d/1RWFAyym9Kphn2Pl4UBQtPHf09XGEX_OADpe3IqYxLe4/edit?tab=t.0#heading=h.fhau7kjl46pa). Si identificas áreas de mejora, dibuja el diagrama de secuencia a mano (en papel) para replantear su lógica. Una vez definido el nuevo diseño, actualiza el diagrama del documento del requisito. Guarda la checklist en la carpeta correspondiente en 'Checklists Tractech'. Y sigue la parte correspondiente del [Proceso de Trazabilidad](/docs/next/procesos/PR11-trazabilidad-requisitos).                                                                                                                             | **Codificador del requisito** | **TS SP 2.1** (Diseñar el producto o componentes del producto), **VER SP 1.3** (Establecer los procedimientos y criterios de verificación), **VER SP 3.1** (Realizar la verificación)             |
+| **3. Ready**                              | Verifica que se cumpla la definición de [READY](/docs/next/proyectos/tractores/definicion-ready-tractores)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  | **Codificador del requisito** | **RD SP 3.3** (Analizar los requerimentos para comprobar que sean necesarios y suficientes).                                                                                                      |
+| **4. Inicio de Codificación**             | Si no tienes con quién colaborar, puedes codificar solo. De lo contrario, es obligatorio hacer pair programming.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            | **Codificador del requisito** | **TS SP 3.1** (Implementar el diseño), **VER SP 2.1** (Preparar las revisiones entre pares)                                                                                                       |
+|                                           | Mantén abierto el diagrama de secuencia durante la codificación. Verifica que estás en la rama con `git branch` y cambia a `develop` si es necesario. Ejecuta `git pull origin`, `npm i` y crea tu rama con `git checkout -b <NombreDeLaRama>`. Recuerda seguir [la estrategia de ramas](/docs/next/guias/github/git-branches).                                                                                                                                                                                                                                                                                                                                                                                                                             | **Codificador del requisito** | **CM SP 2.2** (Controlar los elementos de configuración)                                                                                                                                          |
+| **5. Backend desacoplado**                | Verifica que la ruta esté definida en `app.js`. Si no está: crea la carpeta del módulo con subcarpetas `controladores`, `data`, `rutas` y `repositorios`. Agrega el archivo de rutas e índice aplicando [la convención de nombres](/docs/next/standards/estandar-codificacion/), los principios SOLID y el [patrón de diseño](/docs/next/proyectos/tractores/documentacion/estrategia).                                                                                                                                                                                                                                                                                                                                                                     | **Codificador del requisito** | **TS SP 3.1** (Implementar el diseño)                                                                                                                                                             |
+| **6. Implementación Backend Desacoplado** | Importa los middlewares necesarios en el archivo de rutas. Crea el controlador, el repositorio con validaciones, y el modelo con la consulta a la base de datos. Sigue la parte correspondiente del [Proceso de Trazabilidad](/docs/next/procesos/PR11-trazabilidad-requisitos).                                                                                                                                                                                                                                                                                                                                                                                                                                                                            | **Codificador del requisito** | **TS SP 3.1** (Implementar el diseño), **REQM SP 1.4** (Mantener la trazabilidad bidireccional)                                                                                                   |
+| **7. Verificación del Código**            | Revisa tu código con tu checklist personal y posteriormente con la del equipo. Realiza las modificaciones necesarias para cumplir con ambas.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                | **Codificador del requisito** | **PPQA SP 1.2** (Evaluar objetivamente los productos de trabajo), **VER SP 3.1** (Realizar la verificación)                                                                                       |
+| **8. Pull Request**                       | Abre un PR asegurándote de apuntar a `develop`. Notifica a alguien para que realice las pruebas. Si hay errores, corrígelos y haz push.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     | **Codificador del requisito** | **CM SP 2.2** (Controlar los elementos de configuración), **VER SP 2.2** (Realizar revisiones entre pares)                                                                                        |
+| **9. Done**                               | Verifica que se cumpla la definición de [DONE](/docs/next/proyectos/tractores/definicion-done-tractores) y sigue la parte correspondiente del [Proceso de Trazabilidad](/docs/next/procesos/PR11-trazabilidad-requisitos).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  | **Codificador del requisito** | **CM SP 2.2** (Controlar los elementos de configuración), **RD SP 3.3** (Analizar los requerimentos para comprobar que sean necesarios y suficientes).                                            |
+| **10. Backend Local**                     | Vuelve a repasar la segunda parte de la fase de '_Inicio de codificación_'. Si necesitas comunicarte con el backend desacoplado actualiza `constantes.js` en la carpeta `scripts`. Crea una carpeta `API` en `domain` con `moduloAPI.js` para funciones que llamen al servidor. Conecta tu controlador con la ruta del servidor. En `casosUso`, crea la lógica de negocio del módulo. Revisa tu código como se menciona en la fase de '_Verificación del Código_'.                                                                                                                                                                                                                                                                                          | **Codificador del requisito** | **TS SP 3.1** (Implementar el diseño), **VER SP 3.1** (Realizar la verificación)                                                                                                                  |
+| **11. Frontend**                          | Vuelve a repasar la segunda parte de la fase de '_Inicio de codificación_'. En `framework/vistas/paginas`, crea la carpeta del módulo y el archivo `.ejs`. Incluye `encabezado.ejs` y `piePagina.ejs`. Usa variables para rutas. Identifica componentes existentes o crea nuevos si es necesario, recordando consultar al grupo y añadiendo la tarea al Plan de Iteración correspondiente. En `scripts`, crea un archivo `.js` para manipular el DOM. Si hay lógica que no interactúa con HTML, muévela al archivo de caso de uso. Conecta el controlador con el caso de uso y este con la vista. Revisa tu código como se menciona en la fase de '_Verificación del Código_'. Para terminar realiza un Pull Request siguiendo la fase de '_Pull Request_'. | **Codificador del requisito** | **TS SP 3.1** (Implementar el diseño), **VER SP 3.1** (Realizar la verificación), **CM SP 2.2** (Controlar los elementos de configuración)                                                        |
 
+### Actualización de Checklists
 
+- La **checklist de codificación** se actualizará **cada lunes**, incorporando los defectos más frecuentemente registrados en el Defect Log.
+- Al **cierre de cada iteración**, se actualizarán las **checklists de análisis y diseño** con base en los defectos detectados durante el ciclo.
+- El objetivo de estas actualizaciones periódicas es **abordar de manera directa las áreas de oportunidad** del equipo y fomentar la mejora continua.
 
-### Notas
-- Todas las rutas que se usen dentro de HTML son absolutas en base a /harvester-app.
-    - Esto signfica que si quieres importar css o un script dentro del HTML debes usar el código `<%= rutaBase %>`.
-    - También deberás usar esta ruta absoluta en las importaciones dentro de cualquier script.
-    - Esto no aplica para código EJS aunque esté en el mismo archivo, en ese si se pueden usar rutas relativas.
-    - Si en tu script quieres implementar la carga de otro módulo o vista, usar la función de `ipcRenderer.invoke('precargarEJS')`.
-        - Añadir `const { ipcRenderer } = require('electron')`.
-        - Si quieres ver un ejemplo puedes consultar barraLateral.js.
-- Cada cierto tiempo se deben actualizar las checklists de acuerdo con nuestro defectlog, así atacando directamente las áreas de oportunidad más comunes que tenemos
+### Uso de rutas en HTML, EJS y scripts
+
+- **Todas las rutas dentro del HTML deben ser absolutas**, partiendo de `/harvester-app`. Ejemplo: para importar un script o archivo CSS en un archivo HTML, usa:
+  ```html
+  <script src="<%= rutaBase %>src/scripts/archivo.js"></script>
+  <link rel="stylesheet" href="<%= rutaBase %>src/css/estilos.css" />
+  ```
+- **También deberás usar rutas absolutas en las importaciones dentro de cualquier script JS.** Esto garantiza que el módulo cargue correctamente desde la raíz del proyecto.
+
+- **Excepción importante:** las rutas **dentro del código EJS** (aunque esté en el mismo archivo) **sí pueden ser relativas.**
+
+---
+
+### Carga dinámica de módulos o vistas (Electron)
+
+Si necesitas **cargar otra vista desde un script**, sigue estos pasos:
+
+1. **Importa ipcRenderer al inicio de tu script:**
+   ```js
+   const { ipcRenderer } = require("electron");
+   ```
+2. **Usa la función:**
+   `js
+ipcRenderer.invoke('precargarEJS', 'ruta/de/la/vista');
+`
+   Puedes consultar un ejemplo en: `barraLateral.js`.
 
 ---
 
 ## Historial de cambios
 
-| **Tipo de Versión** | **Descripción** | **Fecha**  | **Colaborador** |
-| ------------------- | --------------- | ---------- | --------------- |
-| **1.0** | Creación del proceso | 15/05/2025 | Diego Fuentes, Ian Julian Estrada, Daniel Queijeiro, Juan Pablo Chávez. |
-| **2.0** | Ajustar proceso con el refactor | 22/05/2025 | Daniel Queijeiro, Diego Fuentes |
-| **2.1** | Añadir pasos para actualizar checklists | 26/05/2025 | Diego Fuentes |
-| **2.2** | Añadir pasos para revisar componentes | 26/05/2025 | Diego Fuentes |
-| **3.0** | Refactorización del proceso | 29/5/2025 | Juan Pablo Chávez Leal |
-| **3.1** | Corrección de errores ortográficos en el proceso | 30/5/2025 | Juan Pablo Chávez Leal |
+| **Tipo de Versión** | **Descripción**                                                                  | **Fecha**             | **Colaborador**                                                         |
+| ------------------- | -------------------------------------------------------------------------------- | --------------------- | ----------------------------------------------------------------------- |
+| **1.0**             | Creación del proceso                                                             | 15/05/2025            | Diego Fuentes, Ian Julian Estrada, Daniel Queijeiro, Juan Pablo Chávez. |
+| **2.0**             | Ajustar proceso con el refactor                                                  | 22/05/2025            | Daniel Queijeiro, Diego Fuentes                                         |
+| **2.1**             | Añadir pasos para actualizar checklists                                          | 26/05/2025            | Diego Fuentes                                                           |
+| **2.2**             | Añadir pasos para revisar componentes                                            | 26/05/2025            | Diego Fuentes                                                           |
+| **3.0**             | Refactorización del proceso                                                      | 29/5/2025             | Juan Pablo Chávez Leal                                                  |
+| **3.1**             | Corrección de errores ortográficos en el proceso                                 | 30/5/2025             | Juan Pablo Chávez Leal                                                  |
+| **3.2**             | Enlaces al proceso de RTM.                                                       | 30/05/2025            | Juan Pablo Chávez Leal                                                  |
+| **3.3**             | Añadir al proceso la actualización de Checklists                                 | 31/5/2025             | Rommel Toledo C.                                                        |
+| **4.0**             | Reescritura para aumentar la claridad del proceso                                | 31/5/2025             | Rommel Toledo C.                                                        |
+| **5.0**             | Reescritura completa del proceso para aumentar la concisión                      | 31/5/2025             | Rommel Toledo C.                                                        |
+| **5.1**             | Corrección de los links a las checklist del equipo                               | 2/6/2025              | Rommel Toledo C.                                                        |
+| **5.2**             | Se añadió una sección al documento del proceso para el seguimiento de las tareas | 2/6/2025              | Rommel Toledo C.                                                        |
+| **5.3**             | Se agregaron las metas específicas y se mapeo ready y done                       | Angélica Ríos Cuentas |

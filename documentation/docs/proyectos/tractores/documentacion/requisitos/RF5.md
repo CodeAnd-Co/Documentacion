@@ -1,44 +1,92 @@
 ---
-title: "RF5: Usuario selecciona modo claro/oscuro."  
+title: "RF5: Usuario cierra sesión."  
 sidebar_position: 6
 ---
 
-# RF5: Usuario selecciona modo claro/oscuro.
+# RF5: Usuario cierra sesión.
 
-**Última actualización:** 03 de abril de 2025
+**Última actualización:** 07 de marzo de 2025
 
 ### Historia de Usuario
 
-Yo como usuario quiero cambiar entre el modo claro y oscuro del sistema, y que mi elección se mantenga incluso al reiniciar la aplicación, para tener una experiencia visual consistente y personalizada.
+Yo como usuario quiero cerrar sesión en el sistema de manera segura termino de utilizar la aplicación de escritorio, asegurando que no se puede accede a mis datos sin mis credenciales.
 
   **Criterios de Aceptación:**
-  - El sistema debe mostrar una opción en la configuración para alternar entre modo claro y modo oscuro.
-  - El cambio debe aplicarse inmediatamente al seleccionar la opción (sin requerir reinicio).
-  - La selección del tema debe guardarse automáticamente en las preferencias del usuario.
-  - Al cerrar y reabrir la aplicación, el sistema debe cargar el último tema seleccionado.
-  - Todos los componentes de la interfaz (botones, textos, fondos) deben adaptarse al tema activo sin errores (ej.: texto ilegible, contraste insuficiente).
+  - El sistema debe garantizar que una vez el usuario cierre sesión ni el sistema ni los datos del usuario sean accesibles.
+  - En caso debe que falle el cerrar sesión debe de aparecer un error con el servidor
+  - Al cerrar sesión, el sistema debe redirigir al usuario a la página de inicio de sesión.
 
 ---
 
-### Diagrama de Secuencia
+### Diagrama de Secuencia - App Local
 
 ![Diagrama de Secuencia] 
 
-> *Descripción*: El diagrama de secuencia muestra cómo el usuario cambia el modo de visualización.
+> *Descripción*: El diagrama de secuencia muestra cómo el usuario interactúa con el sistema para cerrar sesión, detallando los pasos de solicitud de datos, validación y confirmación.
 
+```mermaid
+  sequenceDiagram
+    participant Usuario
+    participant moduloPerfil_js as moduloPerfil.js
+    participant Backend as cerrarSesion.js
+    participant SesionAPI as sesionAPI
+
+    Usuario->>moduloPerfil_js: Clic en "Cerrar sesión"
+    moduloPerfil_js->>moduloPerfil_js: Deshabilita botón y muestra "Cerrando sesión..."
+    moduloPerfil_js->>Backend: cerrarSesion(token)
+    Backend->>SesionAPI: cerrarSesionAPI(token)
+    SesionAPI-->>Backend: Respuesta (éxito o error)
+    Backend-->>moduloPerfil_js: Respuesta (éxito o error)
+    alt Éxito
+        moduloPerfil_js->>moduloPerfil_js: Limpia localStorage
+        moduloPerfil_js->>moduloPerfil_js: Redirige a login
+    else Error
+        moduloPerfil_js->>Usuario: Muestra mensaje de error
+        moduloPerfil_js->>moduloPerfil_js: Reactiva botón
+    end
+```
+### Diagrama de Secuencia - Backend Desacoplado
+
+```mermaid
+sequenceDiagram
+    participant Cliente
+    participant rutas/cerrarSesion.rutas.js
+    participant controladores/cerrarSesion.controlador.js
+    participant middlewares/middlewareAutenticacion.js
+
+    Cliente->>rutas/cerrarSesion.rutas.js: POST /sesion/cerrar
+    rutas/cerrarSesion.rutas.js->>middlewares/middlewareAutenticacion.js: verificarToken(req, res, next)
+    alt Token válido
+        middlewares/middlewareAutenticacion.js->>controladores/cerrarSesion.controlador.js: cerrarSesion(req, res)
+        controladores/cerrarSesion.controlador.js->>Cliente: 200 OK (Sesión cerrada)
+    else Token inválido
+        middlewares/middlewareAutenticacion.js->>Cliente: 401 Unauthorized (Token inválido)
+    end
+```
 ---
 
 ### Mockup
 
-![Mockup]
+![alt text](./mockups/MockupUsuario.png)
 
-> *Descripción*: El mockup muestra la interfaz con la opción de cambiar el modo claro/oscuro
+> *Descripción*: El mockup representa la interfaz del sistema donde el usuario puede cerrar sesión. Muestra los campos requeridos y los botones de acción disponibles.
 
 ---
 
 ### Pruebas Unitarias 
-| ID Prueba | Descripción | Resultado Esperado |
-|-----------|-------------|--------------------|
-|PU-RF5-01|Cambiar a modo oscuro.|La interfaz cambia a modo oscuro y se guarda la preferencia dentro de la aplicación|
-|PU-RF5-02|Cambiar a modo claro.|La interfaz cambia a modoclaro y se guarda la preferencia dentro de la aplicación|
-|PU-RF5-03|Persistencia del modo.|Se mantiene la preferencia del usuario aun cuando salga de la aplicación o se cierre la sesión|
+
+#### [Pruebas del RF](https://docs.google.com/spreadsheets/d/1W-JW32dTsfI22-Yl5LydMhiu-oXHH_xo3hWvK6FHeLw/edit?gid=1725561716#gid=1725561716)
+
+### Pull Request
+[https://github.com/CodeAnd-Co/App-Local-TracTech/pull/21](https://github.com/CodeAnd-Co/App-Local-TracTech/pull/21)
+
+[https://github.com/CodeAnd-Co/Backend-Desacoplado-TracTech/pull/16](https://github.com/CodeAnd-Co/Backend-Desacoplado-TracTech/pull/16)
+
+### Historial de cambios
+
+| **Tipo de Versión** | **Descripción**                            | **Fecha** | **Colaborador**         |
+| ------------------- | ------------------------------------------ | --------- | ----------------------- |
+| **1.0**             |  Añadir requisitos de tractores            | 5/3/2025  | Antonio Landeros        |
+| **2.0**             |  Actualizacion del RF5 - 8 | 27/5/2025  | Pablo Hurtado|
+| **2.1**             |  Ordenar todas las RFs y actualizar los datos | 1/6/2025  | Mauricio Anguiano|
+| **2.2**             |  Agregar pull requests de RF back| 5/6/2025  | Sofía Osorio|

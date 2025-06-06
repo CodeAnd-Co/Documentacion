@@ -31,34 +31,34 @@ Los requisitos funcionales del sistema describen una variedad de acciones que lo
 - [**RF1**](RF1.md): Iniciar Sesión - `Done`
 - [**RF3**](RF3.md): Consultar historial de ancestros de una charola - `Done`
 - [**RF5**](RF5.md): Registrar Charola - `Done`
-- [**RF6**](RF6.md): Buscar charola
+- [**RF6**](RF6.md): Buscar charola - `Ready`
 - [**RF7**](RF7.md): Modificar datos generales Charola - `Done`
 - [**RF8**](RF8.md): Eliminar Charola - `Done`
 - [**RF9**](RF9.md): Cerrar sesión - `Done`
 - [**RF10**](RF10.md): Consultar información detallada de una charola - `Done`
 - [**RF11**](RF11.md): Descargar reportes - `Done`
-- [**RF13**](RF13.md): Registrar usuario
-- [**RF14**](RF14.md): Borrar usuario
-- [**RF15**](RF15.md): Filtrar las charolas por escarabajo y larva
+- [**RF13**](RF13.md): Registrar usuario - `Ready`
+- [**RF14**](RF14.md): Borrar usuario - `Ready`
+- [**RF15**](RF15.md): Filtrar las charolas por escarabajo y larva - `Done`
 - [**RF16**](RF16.md): Visualizar todas las charolas registradas en el sistema - `Done`
 - [**RF18**](RF18.md): Historial de actividad de charola - `Done`
-- [**RF19**](RF19.md): Editar Usuario
-- [**RF20**](RF20.md): Seleccionar charolas para tamizar y registrar sus datos - `Ready`
+- [**RF19**](RF19.md): Editar Usuario - `Ready`
+- [**RF20**](RF20.md): Seleccionar charolas para tamizar y registrar sus datos - `Done`
 - [**RF21**](RF21.md): Consultar charolas de cambios pasados - `Done`
 - [**RF23**](RF23.md): Registrar un nuevo tipo de comida en el sistema - `Done`
 - [**RF24**](RF24.md): Editar un tipo de comida en el sistema - `Done`
 - [**RF25**](RF25.md): Eliminar un tipo de comida - `Done`
 - [**RF26**](RF26.md): Registrar la alimentación de la charola - `Done`
-- [**RF29**](RF29.md): Registar la información del Frass obtenido
-- [**RF30**](RF30.md): Editar la información del Frass obtenido
+- [**RF29**](RF29.md): Registar la información del Frass obtenido - `Ready`
+- [**RF30**](RF30.md): Editar la información del Frass obtenido - `Ready`
 - [**RF34**](RF34.md): Sidebar - `Done`
-- [**RF35**](RF35.md): Recuperar contraseña
-- [**RF36**](RF36.md): Registrar un nuevo tipo de hidratación al sistema - `Ready`
+- [**RF35**](RF35.md): Recuperar contraseña - `Ready`
+- [**RF36**](RF36.md): Registrar un nuevo tipo de hidratación al sistema - `Done`
 - [**RF38**](RF38.md): Registrar nuevas charolas del tamizado - `Done`
-- [**RF39**](RF39.md): Visualizar charolas eliminadas
-- [**RF40**](RF40.md): Editar un tipo de hidratación en el sistema - `Ready`
-- [**RF41**](RF41.md): Eliminar un tipo de hidratación en el sistema `Ready`
-- [**RF42**](RF42.md):Registrar la hidratación de la charola - `Ready`
+- [**RF39**](RF39.md): Visualizar charolas eliminadas - `Ready`
+- [**RF40**](RF40.md): Editar un tipo de hidratación en el sistema - `Done`
+- [**RF41**](RF41.md): Eliminar un tipo de hidratación en el sistema - `Done`
+- [**RF42**](RF42.md):Registrar la hidratación de la charola - `Done`
 
 ---
 
@@ -83,6 +83,14 @@ Los requisitos no funcionales establecen las expectativas en términos de tiempo
 **Escalabilidad**
 
 - El sistema debe ser escalable para manejar un aumento de hasta 20 usuarios simultáneos sin que exista una decadencia significativa del rendimiento ya que Zuustento pretende una expansión a futuro en los próximos 2 años. En este plazo el límite de colaboradores es de 20, sin embargo, aunque no es mucho, es importante hacer el sistema escalable para futuros cambios.
+
+**Diagrama de paquetes Frontend:**
+
+![alt text](../../documentacion/Diagrama_paquetes_frontend.png)
+
+**Diagrama de paquetes Backend:**
+
+![alt text](../../documentacion/Diagrama_paquetes_backend.png)
 
 **Disponibilidad**
 
@@ -284,3 +292,5 @@ Los **mockups** de la interfaz están disponibles en el siguiente enlace:
 | **2.1**     | Se agregaron y eliminaron historias              | 09/05/2025 | Juan Eduardo Rosas          |
 | **2.2**     | Modificación de los requisiton no funcionales    | 26/05/2025 | Juan Eduardo Rosas          |
 | **2.3**     | Se agrega requisitos del SRS                     | 26/05/2025 | Emiliano Gomez Gonzalez     |
+| **2.4**     | Se agregaron diagramas de paquetes               | 26/05/2025 | Emiliano Gomez Gonzalez     |
+| **2.5**     | Actualizar la trazabilidad de los requisitos     | 06/06/2025 | Sofía Osorio                |
