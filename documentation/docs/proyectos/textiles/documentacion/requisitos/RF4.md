@@ -55,3 +55,8 @@ _<u>[Enlace a pruebas RF4 Actualizar Usuarios.](https://docs.google.com/spreadsh
 _<u>[Pull Request Front-End](https://github.com/CodeAnd-Co/Frontend-Text-Lines/pull/174/)</u>_
 
 _<u>[Pull Request Back-End](https://github.com/CodeAnd-Co/Backend-textiles/pull/132)</u>_
+
+| **Tipo de Versión** | **Descripción**          | **Fecha**  | **Colaborador** |
+| ------------------- | ------------------------ | ---------- | --------------- |
+| **1.0**             | Creación del requisito   | 06/03/2025 | Angélica Rios   |
+| **1.1**             | Actualizar documentación | 06/06/2025 | Max Toscano     |
