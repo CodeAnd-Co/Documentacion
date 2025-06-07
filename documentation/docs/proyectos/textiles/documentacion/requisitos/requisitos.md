@@ -76,29 +76,29 @@ Los requisitos funcionales del sistema describen una variedad de acciones que lo
 
 ### Requisitos Específicos MBI (Parte 1)
 
-- [**RF8**](RF8.md): Super Administrador Lee Rol
-- [**RF9**](RF9.md): Super Administrador Actualiza Rol
-- [**RF24**](RF24.md): Super Administrador Actualiza Grupo de Empleados
-- [**RF28**](RF28.md): Super Administrador, Cliente Lee Producto
-- [**RF33**](RF33.md): Super Administrador, Cliente Lee Set de Cuotas
-- [**RF36**](RF36.md): Super Administrador Crea Evento
-- [**RF48**](RF48.md): Super Administrador, Cliente Lee Categoria de Productos
+- [**RF8**](RF8.md): Super Administrador Lee Rol - `Done`
+- [**RF9**](RF9.md): Super Administrador Actualiza Rol - `Done`
+- [**RF24**](RF24.md): Super Administrador Actualiza Grupo de Empleados - `Done`
+- [**RF28**](RF28.md): Super Administrador, Cliente Lee Producto - `Done`
+- [**RF33**](RF33.md): Super Administrador, Cliente Lee Set de Cuotas  - `Done`
+- [**RF36**](RF36.md): Super Administrador Crea Evento - `Done`
+- [**RF48**](RF48.md): Super Administrador, Cliente Lee Categoria de Productos - `Done`
 - [**RF56**](RF56.md): Super Administrador Importa Productos - `Done`
-- [**RF58**](RF58.md): Super Administrador Exportar Productos
+- [**RF58**](RF58.md): Super Administrador Exportar Productos - `Done`
 - [**RF59**](RF59.md): Super Administrador Exportar Empleados - `Done`
-- [**RF62**](RF62.md): Super Administrador, Cliente Actualiza Pedido
+- [**RF62**](RF62.md): Super Administrador, Cliente Actualiza Pedido - `Done`
 
 ### Requisitos Específicos MBI (Parte 2)
 
 - [**RF4**](RF4.md): Super Administrador Actualiza Usuario
-- [**RF16**](RF16.md): Super Administrador Crea Empleado
+- [**RF16**](RF16.md): Super Administrador Crea Empleado - `Done`
 - [**RF29**](RF29.md): Super Administrador Actualizar Producto
-- [**RF34**](RF34.md): Super Administrador Actualiza Set de Cuotas
-- [**RF41**](RF41.md): Super Administrador Crea Set de Productos
+- [**RF34**](RF34.md): Super Administrador Actualiza Set de Cuotas - `Done`
+- [**RF41**](RF41.md): Super Administrador Crea Set de Productos - `Done`
 - [**RF44**](RF44.md): Super Administrador Actualiza Set de Productos - `Done`
-- [**RF49**](RF49.md): Super Administrador Actualiza Categoria de Productos
-- [**RF58**](RF58.md): Super Administrador Exportar Productos
-- [**RF62**](RF62.md): Super Administrador, Cliente Actualiza Pedido
+- [**RF49**](RF49.md): Super Administrador Actualiza Categoria de Productos - `Done`
+- [**RF58**](RF58.md): Super Administrador Exportar Productos - `Done`
+- [**RF62**](RF62.md): Super Administrador, Cliente Actualiza Pedido - `Done` 
 
 ---
 
