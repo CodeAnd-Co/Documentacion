@@ -43,3 +43,12 @@ Debido a la dificultad baja del requisito, no se quiere diagrama de secuencia
 ## **Pruebas Unitarias**
 
 _<u>[Enlace a pruebas RF8 Leer Rol](https://docs.google.com/spreadsheets/d/1NLGwGrGA5PVOEzLaqxa8Ts1D_Ng3QzzqNKWJYUzxD-M/edit?usp=sharing)</u>_
+
+
+## **Código**
+
+_<u>[Pull Request Front-End](https://github.com/CodeAnd-Co/Frontend-Text-Lines/pull/142)</u>_
+
+_<u>[Pull Request Back-End](https://github.com/CodeAnd-Co/Backend-textiles/pull/107)</u>_
+
+---
