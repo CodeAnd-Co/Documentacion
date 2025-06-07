@@ -228,6 +228,12 @@ sequenceDiagram
 
 ---
 
+### Pruebas
+
+[Matriz de pruebas de funcionamiento](https://docs.google.com/spreadsheets/d/1-EwSa6HMrU9eqEvx9wWw8HCH9tba0EpWPCBFGSmpnu4/edit?gid=1134506425#gid=1134506425)
+
+---
+
 ## Historial de cambios
 
 | **Tipo de Versión** | **Descripción**                      | **Fecha** | **Colaborador**   |
@@ -240,4 +246,5 @@ sequenceDiagram
 | **1.3**             | Diagramas de actividades   | 23/5/2025  | Juan Eduardo Rosas Cerón |
 | **1.4**             | Se corrigió mockup  | 29/5/2025  | Mariana Juárez |
 | **1.5**             | Se agregaron los pull request de front y back | 29/5/2025  | Sofía Osorio |
-| **2.0**             | Se modificó la HU para interactuar con el RF39 | 06/6/2025  | Emiliano Valdivia |
+| **2.0**             | Se modificó la HU para interactuar con el RF39 | 06/6/2025  | Emiliano Valdivia 
+| **2.1**             | Agregado enlace de pruebas                          | 06/6/2025 | Emiliano Valdivia Lara  |
