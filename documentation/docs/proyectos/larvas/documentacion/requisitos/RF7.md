@@ -169,6 +169,12 @@ sequenceDiagram
 
 ---
 
+### Pruebas
+
+[Matriz de pruebas de funcionamiento](https://docs.google.com/spreadsheets/d/1-EwSa6HMrU9eqEvx9wWw8HCH9tba0EpWPCBFGSmpnu4/edit?gid=1018596082#gid=1018596082)
+
+---
+
 ## Historial de cambios
 
 | **Tipo de Versión** | **Descripción**                               | **Fecha**  | **Colaborador**          |
@@ -180,3 +186,5 @@ sequenceDiagram
 | **1.5**             | Se agregaron los pull request de front y back | 29/5/2025  | Sofía Osorio             |
 | **1.6**             | Pequeñas correciones                          | 02/6/2025  | Emiliano Gomez Gonzalez  |
 | **1.7**             | Modificaciones en los criterios de aceptación | 02/6/2025  | Emiliano Gomez Gonzalez  |
+| **1.8**             | Agregado enlace de pruebas                          | 06/6/2025 | Emiliano Valdivia Lara  |
+
