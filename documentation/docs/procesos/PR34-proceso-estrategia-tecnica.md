@@ -47,8 +47,10 @@ Este proceso define cómo desarrollar y documentar la arquitectura de flujos y c
 <details>
   <summary>Versiones</summary>
 
-  | **Tipo de versión** | **Descripción** | **Fecha** | **Colaborador** |
-  | ------------------- | --------------- | --------- | --------------- |
-  | **1.0.0** | Creación inicial del proceso de Estrategia Técnica. | 06/06/2025 | Armando Méndez Castro, Juan Antonio |
+
+  | **Versión** | **Descripción**                                                   | **Fecha**     | **Colaborador**   |
+  | ----------- | ----------------------------------------------------------------- | ------------- | ----------------- |
+  | **1.0.0**   | Creación del proceso de Estrategia Técnicas | 05/06/2025    | Juan Antonio Landeros Velazquez |
+
 
 </details>
