@@ -86,6 +86,8 @@ Los requisitos funcionales del sistema describen una variedad de acciones que lo
 - [**RF56**](RF56.md): Super Administrador Importa Productos
 - [**RF58**](RF58.md): Super Administrador Exportar Productos `Done`
 - [**RF59**](RF59.md): Super Administrador Exportar Empleados `Done`
+- [**RF56**](RF56.md): Super Administrador Importa Productos - `Done`
+
 - [**RF62**](RF62.md): Super Administrador, Cliente Actualiza Pedido
 
 ### Requisitos Específicos MBI (Parte 2)
@@ -95,7 +97,7 @@ Los requisitos funcionales del sistema describen una variedad de acciones que lo
 - [**RF29**](RF29.md): Super Administrador Actualizar Producto
 - [**RF34**](RF34.md): Super Administrador Actualiza Set de Cuotas
 - [**RF41**](RF41.md): Super Administrador Crea Set de Productos
-- [**RF44**](RF44.md): Super Administrador Actualiza Set de Productos
+- [**RF44**](RF44.md): Super Administrador Actualiza Set de Productos - `Done`
 - [**RF49**](RF49.md): Super Administrador Actualiza Categoria de Productos
 - [**RF58**](RF58.md): Super Administrador Exportar Productos
 - [**RF62**](RF62.md): Super Administrador, Cliente Actualiza Pedido

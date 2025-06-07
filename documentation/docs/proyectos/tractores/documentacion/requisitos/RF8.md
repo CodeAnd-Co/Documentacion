@@ -75,13 +75,7 @@ Yo como usuario quiero eliminar el Excel cargado para cuando termine de trabajar
 
 ### Pruebas Unitarias 
 
-
-
----
-
-### Link Pruebas
-
-#### [Pruebas](https://docs.google.com/spreadsheets/d/1W-JW32dTsfI22-Yl5LydMhiu-oXHH_xo3hWvK6FHeLw/edit?gid=765173927#gid=765173927)
+#### [Pruebas del RF](https://docs.google.com/spreadsheets/d/1W-JW32dTsfI22-Yl5LydMhiu-oXHH_xo3hWvK6FHeLw/edit?gid=765173927#gid=765173927)
 
 ---
 

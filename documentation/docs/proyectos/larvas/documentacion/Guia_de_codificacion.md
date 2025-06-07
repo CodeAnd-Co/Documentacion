@@ -1,6 +1,6 @@
 ---
 title: Guía de codificación rápida
-sidebar_position: 8
+sidebar_position: 6
 ---
 
 # Guía de codificación rápida

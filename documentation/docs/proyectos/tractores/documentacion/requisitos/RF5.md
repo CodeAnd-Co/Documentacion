@@ -18,7 +18,7 @@ Yo como usuario quiero cerrar sesión en el sistema de manera segura termino de 
 
 ---
 
-### Diagrama de Secuencia
+### Diagrama de Secuencia - App Local
 
 ![Diagrama de Secuencia] 
 
@@ -45,6 +45,7 @@ Yo como usuario quiero cerrar sesión en el sistema de manera segura termino de 
         moduloPerfil_js->>moduloPerfil_js: Reactiva botón
     end
 ```
+### Diagrama de Secuencia - Backend Desacoplado
 
 ```mermaid
 sequenceDiagram
@@ -74,13 +75,7 @@ sequenceDiagram
 
 ### Pruebas Unitarias 
 
-
-
----
-
-### Link a pruebas
-
-[Pruebas](https://docs.google.com/spreadsheets/d/1W-JW32dTsfI22-Yl5LydMhiu-oXHH_xo3hWvK6FHeLw/edit?gid=1725561716#gid=1725561716)
+#### [Pruebas del RF](https://docs.google.com/spreadsheets/d/1W-JW32dTsfI22-Yl5LydMhiu-oXHH_xo3hWvK6FHeLw/edit?gid=1725561716#gid=1725561716)
 
 ### Pull Request
 [https://github.com/CodeAnd-Co/App-Local-TracTech/pull/21](https://github.com/CodeAnd-Co/App-Local-TracTech/pull/21)
@@ -94,4 +89,4 @@ sequenceDiagram
 | **1.0**             |  Añadir requisitos de tractores            | 5/3/2025  | Antonio Landeros        |
 | **2.0**             |  Actualizacion del RF5 - 8 | 27/5/2025  | Pablo Hurtado|
 | **2.1**             |  Ordenar todas las RFs y actualizar los datos | 1/6/2025  | Mauricio Anguiano|
-| **2.2**             |  Agregar pull requests de RF| 5/6/2025  | Sofía Osorio|
+| **2.2**             |  Agregar pull requests de RF back| 5/6/2025  | Sofía Osorio|
