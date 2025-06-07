@@ -3,7 +3,7 @@ title: 👯‍♀️ | PR18 Justificación y Recuperación de Asistencia
 sidebar_position: 18
 ---
 
-# 👯‍♀️ Proceso de Justificación y Recuperación de Asistencia
+# 👯‍♀️ Justificación y Recuperación de Asistencia
 
 Procedimiento para justificar ausencias y recuperar asistencias dentro del equipo. Este proceso asegura la continuidad del trabajo, fomenta la responsabilidad de los colaboradores y mantiene un registro formal de incidencias.
 

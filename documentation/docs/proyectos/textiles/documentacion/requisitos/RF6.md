@@ -121,6 +121,10 @@ end
 
 ![alt text](imagenes/RF6.png)
 
+## **Pruebas Unitarias**
+
+_<u>[Enlace a pruebas RF6 Crear Rol](https://docs.google.com/spreadsheets/d/1NLGwGrGA5PVOEzLaqxa8Ts1D_Ng3QzzqNKWJYUzxD-M/edit?gid=1715637979#gid=1715637979)</u>_
+
 ## **Código**
 
 _<u>[Pull Request Front-End](https://github.com/CodeAnd-Co/Frontend-Text-Lines/pull/43)</u>_

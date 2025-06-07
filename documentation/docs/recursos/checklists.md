@@ -27,6 +27,7 @@ Poder acceder facilmente a todas las checklists necesarias para auditar todos lo
 - Checklist de [estándares](https://docs.google.com/document/d/1qJW2hkkKnlmiSmVm8C54ae2yCWrdGK7haKh3AdN-H7E/edit?usp=drive_link).
 - Checklist de [revisión de items de trabajo para línea base de wiki](https://docs.google.com/document/d/1vV5UML4CTtQPXyDy3yU17yNy56k59rVBGTGP7uurY3g/edit?usp=sharing).
 - Checklist de [plantillas](https://docs.google.com/document/d/1b-QEWLl4lZYBZc_SUCdvRGzckdmoNuUUH-7pQ9ha0M4/edit?usp=sharing).
+- Checklist de [checklists](https://docs.google.com/document/d/1knVwqkKOZCN8SF7hDjGX727xmsxFzbeb7QR5EpkvGns/edit?tab=t.0)
 
 ### Checklists de productos de trabajo
 

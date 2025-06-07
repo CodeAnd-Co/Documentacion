@@ -10,7 +10,7 @@ sidebar_position: 1
 ### **Proveedores de Requisitos**
 
 - **Internos**: Personas dentro de Code & Co.
-- **Externos**: Cliente.
+- **Externos**: .
 
 ### **Lista de Proveedores de Requisitos**
 
@@ -26,7 +26,7 @@ sidebar_position: 1
 
 ### Descripción General
 
-Los requisitos funcionales del sistema describen una variedad de acciones que los usuarios, administradores y empleados pueden realizar dentro del sistema, como la creación, lectura, actualización y eliminación de clientes, productos, pedidos y otros elementos clave. Además, incluyen el manejo de roles, grupos, cuotas y pagos, así como la capacidad del sistema para gestionar solicitudes. Estos requisitos funcionales también contemplan la administración de seguridad, roles y permisos para garantizar que cada usuario pueda realizar únicamente las acciones que le corresponden.
+Los requisitos funcionales del sistema describen una variedad de acciones que los usuarios, administradores y empleados pueden realizar dentro del sistema, como la creación, lectura, actualización y eliminación de s, productos, pedidos y otros elementos clave. Además, incluyen el manejo de roles, grupos, cuotas y pagos, así como la capacidad del sistema para gestionar solicitudes. Estos requisitos funcionales también contemplan la administración de seguridad, roles y permisos para garantizar que cada usuario pueda realizar únicamente las acciones que le corresponden.
 
 ---
 
@@ -39,78 +39,68 @@ Los requisitos funcionales del sistema describen una variedad de acciones que lo
 - [**RF6**](RF6.md): Super Administrador Crea Rol - `Done`
 - [**RF7**](RF7.md): Super Administrador Consulta Lista de Roles - `Done`
 - [**RF10**](RF10.md): Super Administrador Elimina Rol - `Done`
-- [**RF11**](RF11.md): Super Administrador Crea Cliente - `Done`
-- [**RF12**](RF12.md): Super Administrador Consulta Lista de Clientes - `Done`
-- [**RF13**](RF13.md): Super Administrador, Lee Cliente - `Done`
-- [**RF14**](RF14.md): Super Administrador Actualiza Cliente - `Done`
-- [**RF15**](RF15.md): Super Administrador Elimina Cliente `Done`
+- [**RF11**](RF11.md): Super Administrador Crea - `Done`
+- [**RF12**](RF12.md): Super Administrador Consulta Lista de s - `Done`
+- [**RF13**](RF13.md): Super Administrador, Lee - `Done`
+- [**RF14**](RF14.md): Super Administrador Actualiza - `Done`
+- [**RF15**](RF15.md): Super Administrador Elimina `Done`
 - [**RF17**](RF17.md): Super Administrador Consulta Lista de Empleados - `Done`
 - [**RF18**](RF18.md): Super Administrador Lee Empleado - `Done`
 - [**RF19**](RF19.md): Super Administrador Actualiza Empleado
 - [**RF20**](RF20.md): Super Administrador Elimina Empleado - `Done`
+- [**RF21**](RF21.md): Super Administrador Crea Grupo de Empleados - `Done`
 - [**RF22**](RF22.md): Super Administrador Consulta Lista de Grupos de Empleados - `Done`
 - [**RF23**](RF23.md): Super Administrador Lee Grupo de Empleados - `Done`
 - [**RF25**](RF25.md): Super Administrador Elimina Grupo de Empleados. - `Done`
 - [**RF26**](RF26.md): Super Administrador Crea Producto - `Done`
-- [**RF27**](RF27.md): Super Administrador, Cliente Consulta Lista de Productos - `Done`
+- [**RF27**](RF27.md): Super Administrador, Consulta Lista de Productos - `Done`
 - [**RF30**](RF30.md): Super Administrador Elimina Producto - `Done`
 - [**RF31**](RF31.md): Super Administrador Crea Set de Cuotas - `Done`
-- [**RF32**](RF32.md): Super Administrador, Cliente Consulta Lista de Set de Cuotas - `Done`
+- [**RF32**](RF32.md): Super Administrador, Consulta Lista de Set de Cuotas - `Done`
 - [**RF35**](RF35.md): Super Administrador Elimina Set de Cuotas - `Done`
-- [**RF37**](RF37.md): Super Administrador, Cliente Consulta Lista de Eventos - `Done`
-- [**RF38**](RF38.md): Super Administrador, Cliente Lee Evento - `Done`
-- [**RF40**](RF40.md): Super Administrador, Cliente Elimina Evento - `Done`
-- [**RF42**](RF42.md): Super Administrador, Cliente Consulta Lista de Sets de Productos - `Done`
-- [**RF43**](RF43.md): Super Administrador, Cliente Lee Set de Productos - `Done`
+- [**RF37**](RF37.md): Super Administrador, Consulta Lista de Eventos - `Done`
+- [**RF38**](RF38.md): Super Administrador, Lee Evento - `Done`
+- [**RF40**](RF40.md): Super Administrador, Elimina Evento - `Done`
+- [**RF42**](RF42.md): Super Administrador, Consulta Lista de Sets de Productos - `Done`
+- [**RF43**](RF43.md): Super Administrador, Lee Set de Productos - `Done`
 - [**RF45**](RF45.md): Super Administrador Elimina Set de Productos -`Done`
 - [**RF46**](RF46.md): Super Administrador Crea Categoria de Productos - `Done`
 - [**RF47**](RF47.md): Super Administrador Consulta Lista de Categorias de Productos - `Done`
-- [**RF50**](RF50.md): Elimina Categoria de Productos - `Done`
-- [**RF52**](RF52.md): Super Administrador, Cliente Consulta Lista de Tipos de Pago - `Done`
+- [**RF50**](RF50.md): Super Administrador Elimina Categoria de Productos - `Done`
+- [**RF52**](RF52.md): Super Administrador, Consulta Lista de Tipos de Pago - `Done`
 - [**RF54**](RF54.md): Super Administrador Actualiza Tipo de Pago - `Done`
 - [**RF57**](RF57.md): Super Administrador Importa Empleados - `Done`
-- [**RF60**](RF60.md): Super Administrador, Cliente Consulta Lista de Pedidos - `Done`
+- [**RF60**](RF60.md): Super Administrador, Consulta Lista de Pedidos - `Done`
 - [**RF63**](RF63.md): Super Administrador Elimina Pedido - `Done`
 - [**RF78**](RF78.md): Iniciar Sesión - `Done`
 
 ### Requisitos Específicos MBI (Parte 1)
 
-- [**RF4**](RF4.md): Super Administrador Actualiza Usuario
-- [**RF8**](RF8.md): Super Administrador Lee Rol
-- [**RF9**](RF9.md): Super Administrador Actualiza Rol
-- [**RF16**](RF16.md): Super Administrador Crea Empleado
-- [**RF21**](RF21.md): Super Administrador Crea Grupo de Empleados
-- [**RF24**](RF24.md): Super Administrador Actualiza Grupo de Empleados
-- [**RF28**](RF28.md): Super Administrador, Cliente Lee Producto
-- [**RF29**](RF29.md): Super Administrador Actualizar Producto
-- [**RF33**](RF33.md): Super Administrador, Cliente Lee Set de Cuotas
-- [**RF34**](RF34.md): Super Administrador Actualiza Set de Cuotas
-- [**RF36**](RF36.md): Super Administrador Crea Evento
-- [**RF41**](RF41.md): Super Administrador Crea Set de Productos
-- [**RF44**](RF44.md): Super Administrador Actualiza Set de Productos
-- [**RF48**](RF48.md): Super Administrador, Cliente Lee Categoria de Productos
-- [**RF49**](RF49.md): Super Administrador Actualiza Categoria de Productos
-- [**RF56**](RF56.md): Super Administrador Importa Productos
-- [**RF58**](RF58.md): Super Administrador Exportar Productos
-- [**RF59**](RF59.md): Super Administrador Exportar Empleados
-- [**RF62**](RF62.md): Super Administrador, Cliente Actualiza Pedido
+
+- [**RF8**](RF8.md): Super Administrador Lee Rol - `Done`
+- [**RF9**](RF9.md): Super Administrador Actualiza Rol - `Done`
+- [**RF24**](RF24.md): Super Administrador Actualiza Grupo de Empleados - `Done`
+- [**RF28**](RF28.md): Super Administrador, Lee Producto - `Done`
+- [**RF33**](RF33.md): Super Administrador, Lee Set de Cuotas - `Done`
+- [**RF36**](RF36.md): Super Administrador Crea Evento - `Done`
+- [**RF48**](RF48.md): Super Administrador, Lee Categoria de Productos - `Done`
+- [**RF56**](RF56.md): Super Administrador Importa Productos - `Done`
+- [**RF58**](RF58.md): Super Administrador Exportar Productos - `Done`
+- [**RF59**](RF59.md): Super Administrador Exportar Empleados - `Done`
+- [**RF62**](RF62.md): Super Administrador, Actualiza Pedido - `Done`
+
 
 ### Requisitos Específicos MBI (Parte 2)
 
-- [**RF64**](RF64.md): Empleado Accede al Centro de Ayuda
-- [**RF65**](RF65.md): Empleado Lee Carrito de Compras
-- [**RF66**](RF66.md): Empleado Actualiza Carrito de Compras
-- [**RF67**](RF67.md): Empleado Elimina Productos del Carrito
-- [**RF68**](RF68.md): Empleado Agrega Producto al Carrito
-- [**RF69**](RF69.md): Empleado Crea Pedido
-- [**RF70**](RF70.md): Empleado Lee Pedido
-- [**RF71**](RF71.md): Empleado Finaliza Pedido
-- [**RF72**](RF72.md): Empleado Consulta Lista de Pedidos
-- [**RF73**](RF73.md): Empleado Recibe Notificaciones de Estado del Pedido
-- [**RF74**](RF74.md): Empleado Lee Producto
-- [**RF75**](RF75.md): Empleado Consulta Lista de Productos
-- [**RF76**](RF76.md): Empleado Lee Balance
-- [**RF77**](RF77.md): Empleado Selecciona Tipo de Pago
+- [**RF4**](RF4.md): Super Administrador Actualiza Usuario
+- [**RF16**](RF16.md): Super Administrador Crea Empleado - `Done`
+- [**RF29**](RF29.md): Super Administrador Actualizar Producto
+- [**RF34**](RF34.md): Super Administrador Actualiza Set de Cuotas
+- [**RF41**](RF41.md): Super Administrador Crea Set de Productos
+- [**RF44**](RF44.md): Super Administrador Actualiza Set de Productos
+- [**RF49**](RF49.md): Super Administrador Actualiza Categoria de Productos
+- [**RF58**](RF58.md): Super Administrador Exportar Productos
+- [**RF62**](RF62.md): Super Administrador, Actualiza Pedido - `Done`
 
 ---
 
@@ -210,9 +200,9 @@ import TabItem from '@theme/TabItem';
 - Descripción
 
 </TabItem>
-<TabItem value="clientes" label="Clientes y Empleados">
+<TabItem value="s" label="s y Empleados">
 
-## Cliente
+##
 
 - URL de la Imagen
 - Nombre Comercial
@@ -395,12 +385,12 @@ Las reglas de negocio son un conjunto de condiciones, restricciones y procedimie
 
 ---
 
-- Solo el administrador puede registrar, modificar o eliminar clientes y empleados.
-- Un cliente debe tener al menos un empleado asociado para poder realizar compras.
-- No se pueden registrar empleados sin asignarlos a un cliente específico.
-- Cada cliente puede tener un catálogo de productos personalizados.
+- Solo el administrador puede registrar, modificar o eliminar s y empleados.
+- Un debe tener al menos un empleado asociado para poder realizar compras.
+- No se pueden registrar empleados sin asignarlos a un específico.
+- Cada puede tener un catálogo de productos personalizados.
 - Solo los administradores pueden asignar y modificar roles.
-- Los permisos de los usuarios están definidos por su rol (administrador, cliente, empleado).
+- Los permisos de los usuarios están definidos por su rol (administrador, , empleado).
 - Un usuario no puede modificar su propio rol ni asignarse más.
 - Se debe validar el inventario antes de confirmar una orden.
 - Los pagos pueden realizarse en MXN, USD o puntos acumulados.

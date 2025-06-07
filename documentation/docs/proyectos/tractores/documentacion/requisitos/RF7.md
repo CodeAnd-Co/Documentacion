@@ -37,10 +37,19 @@ Yo como usuario quiero sustituir el excel cargado en la pestaña de inicio para 
 
 ### Pruebas Unitarias 
 
-#### [Pruebas de la HU](https://docs.google.com/spreadsheets/d/1W-JW32dTsfI22-Yl5LydMhiu-oXHH_xo3hWvK6FHeLw/edit?gid=1105794420#gid=1105794420)
+#### [Pruebas del RF](https://docs.google.com/spreadsheets/d/1W-JW32dTsfI22-Yl5LydMhiu-oXHH_xo3hWvK6FHeLw/edit?gid=1105794420#gid=1105794420)
 
 ---
 
 ### Pull Request
 
 _<u>[Pull Request Front-End](https://github.com/CodeAnd-Co/App-Local-TracTech/pull/11)</u>_
+
+### Historial de cambios
+
+| **Tipo de Versión** | **Descripción**                            | **Fecha** | **Colaborador**         |
+| ------------------- | ------------------------------------------ | --------- | ----------------------- |
+| **1.0**             |  Añadir requisitos de tractores            | 5/3/2025  | Antonio Landeros           |
+| **2.0**             |  Agregar criterios de aceptacion | 3/4/2025  | Pablo Hurtda|
+| **2.1**             |  Ordenar todas las RFs y actualizar los datos | 1/6/2025  | Mauricio Anguiano|
+| **2.2**             |  Añadir criterios de aceptación | 2/6/2025  | Mauricio Anguiano|

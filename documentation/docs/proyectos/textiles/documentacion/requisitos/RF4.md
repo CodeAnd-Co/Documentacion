@@ -5,7 +5,7 @@ sidebar_position: 6
 
 # RF4: Super Administrador Actualiza Usuario
 
-**Última actualización:** 06 de marzo de 2025
+**Última actualización:** 06 de junio de 2025
 
 ---
 
@@ -17,10 +17,18 @@ Como administrador, quiero poder modificar la información de un usuario, incluy
 
 1. El Super Administrador debe poder acceder a la opción **"Editar Usuario"** dentro del panel de información de un usuario.
 2. Se deben permitir modificaciones en los siguientes campos:
+
    - Nombre completo
+   - Fecha de nacimiento
+   - Género
    - Correo electrónico
+   - Número de teléfono
+   - Dirección
    - Rol del usuario
    - Estado (Activo/Inactivo)
+   - Cliente asignado
+   - Contraseña
+
 3. Si los datos son válidos, el sistema debe guardar los cambios y mostrar un mensaje de confirmación.
 4. Si hay errores en la entrada de datos, se debe mostrar un mensaje de error indicando qué corregir.
 
@@ -34,4 +42,21 @@ Como administrador, quiero poder modificar la información de un usuario, incluy
 
 ## **Mockup**
 
-> _Descripción_: El mockup representa la interfaz donde el Super Administrador puede modificar los datos de un usuario a través de un formulario con los campos editables y un botón de confirmación.
+> _Descripción_: El mockup representa la interfaz del sistema donde el **Super Administrador** completa los datos del nuevo usuario, selecciona su rol y permisos, y confirma la creación del usuario en el sistema.
+
+![Interfaz de crear usuario](./imagenes/mockupActualizarUsuario.png)
+
+## **Pruebas Unitarias**
+
+_<u>[Enlace a pruebas RF4 Actualizar Usuarios.](https://docs.google.com/spreadsheets/d/1NLGwGrGA5PVOEzLaqxa8Ts1D_Ng3QzzqNKWJYUzxD-M/edit?gid=2134306506#gid=2134306506)</u>_
+
+## **Código**
+
+_<u>[Pull Request Front-End](https://github.com/CodeAnd-Co/Frontend-Text-Lines/pull/174/)</u>_
+
+_<u>[Pull Request Back-End](https://github.com/CodeAnd-Co/Backend-textiles/pull/132)</u>_
+
+| **Tipo de Versión** | **Descripción**          | **Fecha**  | **Colaborador** |
+| ------------------- | ------------------------ | ---------- | --------------- |
+| **1.0**             | Creación del requisito   | 06/03/2025 | Angélica Rios   |
+| **1.1**             | Actualizar documentación | 06/06/2025 | Max Toscano     |
