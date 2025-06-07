@@ -123,6 +123,10 @@ participant Database as Base de Datos
 
 ## ![mockup - buscar charola](img/buscarCharola.png)
 
+### Pull Request
+
+![Pull Request 97 - RF6 Buscar Charola ](https://github.com/CodeAnd-Co/TECH-NEBRIOS-FLUTTER/pull/97)
+
 ## Historial de cambios
 
 | **Tipo de Versión** | **Descripción**                                                                                                         | **Fecha**  | **Colaborador**         |
@@ -131,3 +135,4 @@ participant Database as Base de Datos
 | **1.1**             | Modificar historial de cambio                                                                                           | 17/05/2025 | Mariaa Juárez           |
 | **1.2**             | Actualiza criterios de aceptación y casos esperados y no esperados, mockup, diagrama de secuencia y diseño de algoritmo | 05/06/2025 | Emiliano Gomez Gonzalez |
 | **1.2.1**           | Máximo de caracteres                                                                                                    | 06/06/2025 | Emiliano Gomez Gonzalez |
+| **1.2.2**           | Agregar Pull Request                                                                                                    | 06/06/2025 | Emiliano Gomez Gonzalez |
