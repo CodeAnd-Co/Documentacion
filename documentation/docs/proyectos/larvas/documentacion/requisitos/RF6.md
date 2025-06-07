@@ -119,6 +119,14 @@ participant Database as Base de Datos
 
 ---
 
+### Pull Request
+
+<a href="" target="_blank" rel="noopener noreferrer"> PR de Buscar charola Backend</a>
+
+<a href="https://github.com/CodeAnd-Co/TECH-NEBRIOS-FLUTTER/pull/97" target="_blank" rel="noopener noreferrer"> PR de Buscar charola Frontend</a>
+
+---
+
 ### Mockup
 
 ## ![mockup - buscar charola](img/buscarCharola.png)
