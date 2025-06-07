@@ -238,12 +238,23 @@ sequenceDiagram
     end
 ```
 
+### Pull Request
+
+<a href="https://github.com/CodeAnd-Co/TECH-NEBRIOS-BACKEND/pull/19" target="_blank" rel="noopener noreferrer"> PR de Historial de Actividad Backend</a>
+
+<a href="https://github.com/CodeAnd-Co/TECH-NEBRIOS-FLUTTER/pull/14" target="_blank" rel="noopener noreferrer"> PR de Historial de Actividad Frontend</a>
 
 ---
 
 ### Mockup
 
 ![alt text](img/mockupRF3.png)
+
+---
+
+### Pruebas
+
+[Matriz de pruebas de funcionalidad](https://docs.google.com/spreadsheets/d/1-EwSa6HMrU9eqEvx9wWw8HCH9tba0EpWPCBFGSmpnu4/edit?gid=589038835#gid=589038835)
 
 ---
 
@@ -255,3 +266,4 @@ sequenceDiagram
 | **1.1**             | Modificar historial de cambio              | 17/05/2025| Mariaa Juárez           |
 | **1.2**             | Diagramas de actividades   | 03/5/2025  | Juan Eduardo Rosas Cerón |
 | **1.2**             | Actualización mockup y diagrama de secuencia   | 03/06/2025  | Armando Méndez Castro |
+| **1.3**             | Enlazados Pull Requests y Pruebas   | 06/06/2025  | Emiliano Valdivia Lara |
