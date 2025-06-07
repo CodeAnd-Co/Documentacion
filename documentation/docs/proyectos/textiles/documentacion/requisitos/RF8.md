@@ -20,6 +20,7 @@ Como administrador, quiero poder visualizar la información de un rol para consu
    - Nombre del rol
    - Lista de permisos asignados
    - Número de usuarios asociados al rol
+   - Permisos asociados al rol
 3. La vista debe permitir solo la consulta, sin opciones de edición directa.
 
 ---
