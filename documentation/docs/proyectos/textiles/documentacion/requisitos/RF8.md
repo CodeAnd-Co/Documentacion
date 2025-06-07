@@ -5,7 +5,7 @@ sidebar_position: 10
 
 # RF8: Super Administrador Lee Rol
 
-**Última actualización:** 06 de marzo de 2025
+**Última actualización:** 06 de junio de 2025
 
 ---
 
@@ -29,10 +29,27 @@ Como administrador, quiero poder visualizar la información de un rol para consu
 
 > _Descripción_: El diagrama de secuencia representa el flujo de interacción del Super Administrador con el sistema para visualizar los detalles de un rol.
 
----
+:::warning Importante
+Debido a la dificultad baja del requisito, no se quiere diagrama de secuencia
+:::
+
 
 ## **Mockup**
 
 > _Descripción_: El mockup muestra la interfaz donde el Super Administrador puede visualizar la información detallada de un rol sin opciones de edición.
 
 ![alt text](imagenes/RF8LeeRol.png)
+
+
+## **Pruebas Unitarias**
+
+_<u>[Enlace a pruebas RF8 Leer Rol](https://docs.google.com/spreadsheets/d/1NLGwGrGA5PVOEzLaqxa8Ts1D_Ng3QzzqNKWJYUzxD-M/edit?usp=sharing)</u>_
+
+
+## **Código**
+
+_<u>[Pull Request Front-End](https://github.com/CodeAnd-Co/Frontend-Text-Lines/pull/142)</u>_
+
+_<u>[Pull Request Back-End](https://github.com/CodeAnd-Co/Backend-textiles/pull/107)</u>_
+
+---
