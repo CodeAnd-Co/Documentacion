@@ -50,11 +50,8 @@ Como administrador, quiero poder modificar la información de un usuario, incluy
 
 _<u>[Enlace a pruebas RF4 Actualizar Usuarios.](https://docs.google.com/spreadsheets/d/1NLGwGrGA5PVOEzLaqxa8Ts1D_Ng3QzzqNKWJYUzxD-M/edit?gid=2134306506#gid=2134306506)</u>_
 
-<!--
 ## **Código**
 
-_<u>[Pull Request Front-End](link)</u>_
+_<u>[Pull Request Front-End](https://github.com/CodeAnd-Co/Frontend-Text-Lines/pull/174/)</u>_
 
-_<u>[Pull Request Back-End](link)</u>_
-
--->
+_<u>[Pull Request Back-End](https://github.com/CodeAnd-Co/Backend-textiles/pull/132)</u>_
