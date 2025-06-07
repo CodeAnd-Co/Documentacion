@@ -5,7 +5,6 @@ sidebar_position: 8
 
 # RF7: Modificar datos generales Charola
 
-
 ### Historia de Usuario
 
 Como usuario del sistema, quiero modificar los datos de una charola que están guardados en la base de datos, para corregir errores o actualizar su información y mantener registros precisos.
@@ -14,6 +13,7 @@ Como usuario del sistema, quiero modificar los datos de una charola que están g
 
 - El sistema debe permitir la edición de los datos de una charola previamente registrada.
 - La actualización de datos debe reflejarse de inmediato en la base de datos.
+- Cuando una charola esta pasada solo se puede modificar su estado
 
 ---
 
@@ -152,6 +152,7 @@ sequenceDiagram
     end
 
 ```
+
 ---
 
 ### Pull Request
@@ -164,16 +165,18 @@ sequenceDiagram
 
 ### Mockup
 
-![alt text](<img/mockupRF7.png>)
+![alt text](img/mockupRF7.png)
 
 ---
+
 ## Historial de cambios
 
-| **Tipo de Versión** | **Descripción**                            | **Fecha** | **Colaborador**         |
-| ------------------- | ------------------------------------------ | --------- | ----------------------- |
-| **1.0**             | Creacion de la historia de usuario         | 8/3/2025  | Armando Mendez          |
-| **1.1**             | Modificar historial de cambio              | 17/05/2025| Mariaa Juárez           |
-| **1.3**             | Diagramas de actividades   | 23/5/2025  | Juan Eduardo Rosas Cerón |
-| **1.4**             | Se corrigió mockup  | 29/5/2025  | Mariana Juárez |
-| **1.5**             | Se agregaron los pull request de front y back | 29/5/2025  | Sofía Osorio |
-| **1.6**             | Pequeñas correciones | 02/6/2025  | Emiliano Gomez Gonzalez |
+| **Tipo de Versión** | **Descripción**                               | **Fecha**  | **Colaborador**          |
+| ------------------- | --------------------------------------------- | ---------- | ------------------------ |
+| **1.0**             | Creacion de la historia de usuario            | 8/3/2025   | Armando Mendez           |
+| **1.1**             | Modificar historial de cambio                 | 17/05/2025 | Mariaa Juárez            |
+| **1.3**             | Diagramas de actividades                      | 23/5/2025  | Juan Eduardo Rosas Cerón |
+| **1.4**             | Se corrigió mockup                            | 29/5/2025  | Mariana Juárez           |
+| **1.5**             | Se agregaron los pull request de front y back | 29/5/2025  | Sofía Osorio             |
+| **1.6**             | Pequeñas correciones                          | 02/6/2025  | Emiliano Gomez Gonzalez  |
+| **1.7**             | Modificaciones en los criterios de aceptación | 02/6/2025  | Emiliano Gomez Gonzalez  |

@@ -348,14 +348,14 @@ import TabItem from '@theme/TabItem';
 
 | Nombre                            | Rol       |
 | --------------------------------- | --------- |
-| Emiliano Valdivia Lara            | Team Leader      |
-| Miguel Ángel Uribe Esquivel   | Architecture Owner      |
-| Armando Méndez Castro  | Product Owner     |
+|   Sofía Osorio Suárez          | Team Leader      |
+|  Juan Antonio Landeros Velázquez  | Architecture Owner      |
+|  Juan Eduardo Rosas Cerón | Product Owner     |
 | Mariana Juárez Ramírez  | Team Member, UX/UI Diseñador   |
 | Emiliano Gómez González | Q/A       |
-| Sofía Osorio Suárez | Team Member |      |
-| Juan Eduardo Rosas Cerón   | Team Member   |
-| Juan Antonio Landeros Velázquez  | Team Member   |
+| Emiliano Valdivia Lara | Team Member |      |
+| Armando Méndez Castro   | Team Member   |
+| Miguel Ángel Uribe Esquivel  | Team Member   |
 
 ### Recursos Necesarios
 
@@ -370,3 +370,4 @@ import TabItem from '@theme/TabItem';
 | **1.1**             | Correciones del contenido            | 20/3/2025 | Armando Méndez    |
 | **1.2**             | Agregar misión y visión              | 25/4/2025 | Sofía Osorio      |
 | **1.3**             | Actualizar 2do objetivo del equipo   | 25/4/2025 | Sofía Osorio      |
+| **1.4**             | Actualizado equipo de liderazgo   | 05/06/2025 | Emiliano Valdivia      |

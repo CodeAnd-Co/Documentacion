@@ -19,6 +19,102 @@ Esta guía describe los pasos para adaptar correctamente los ítems existentes c
 ### Paso 1: Identificar el ítem a adaptar
 
 - Revisa la lista de ítems existentes para determinar cuál se ajusta mejor a la necesidad actual.
+
+  ### Plantillas
+
+  - Plantilla manual de arquitectura
+  - Plantilla para _Estándares_
+  - Plantilla _estrategia técnica_
+  - Plantilla de _GitHub Actions_
+  - Plantilla para _Guías_
+  - Plantilla _plan STP_
+  - Plantilla para _Políticas_
+  - Plantilla para _Procesos_
+  - Plantilla de _registro de decisiones arquitectónicas_
+
+  ***
+
+  ### Guías
+
+  1. Guía de documentación en _Docusaurus_
+  2. Guía de uso de _Markdown_
+  3. Guía de _formato para documentos_
+  4. Guía para elaborar un _WBS_
+  5. Guía para identificar recursos y establecer _capacitaciones_
+  6. Guía de uso de _Swagger UI_
+  7. Guía para la _especificación de requerimientos de software_
+  8. Guía para _adaptación de ítems existentes_
+  9. Guía de _Jest_
+  10. Guía para _fusiones de ramas_
+  11. Guía de _estrategia de ramas_
+  12. Guía de _pull request_
+  13. Guía de _buenas prácticas para commits_
+  14. Guía para _realizar rollbacks_
+  15. Guía para la _creación de archivos README_
+  16. Guía para _inspección de código_
+  17. Guía para _inspeccionar procesos_
+  18. Guía para _liberar a producción_
+
+  ***
+
+  ### Políticas
+
+  - Política de _cambio de requisitos_
+  - Política de _gestión de datos del proyecto_
+  - Política de _gestión de procesos_
+  - Política de _identificación de elementos de configuración_
+  - Política de _estatus de control_
+  - Política del _Comité de Control de Cambios (CCB)_
+  - Política sobre el _Manual de Usuario_
+  - Política sobre el _Manual Técnico de Instalación_
+  - Política de _Evaluación de Conocimiento_
+  - Política sobre el _Manual de Despliegue_
+
+  ***
+
+  ### Procesos
+
+  #### Procesos para la gestión de personas
+
+  - 👺 PR5 Juntas Efectivas
+  - ⚔️ PR9 Resolución de conflictos
+
+  #### Inception: Planificación y organización inicial
+
+  - 🏇 PR24 Proceso para planear y mantener un proyecto
+
+  #### Construcción y desarrollo
+
+  - 🚀 PR6 Plan de iteración
+  - 🍻 PR3 Dailys
+  - PR11 Comprensión y trazabilidad de requisitos
+  - 🌻 PR21 Codificación
+  - 🐥 PR15 Inspección
+  - ⛏️ PR10 Gestión de cambios de requisitos
+  - 🦑 PR20 Proceso de cierre de iteración
+
+  #### Transición: Lanzar la solución a producción
+
+  - PR32 Proceso de despliegue
+  - 👨‍🍼 PR4 Validación de entregables
+
+  #### Procesos generales
+
+  - ✅ PR2 Definición de ítems
+
+  #### Monitoreo de los proyectos
+
+  - 🦍 PR7 Reporte de Estado
+  - 😿 PR16 Llevar a cabo métricas y análisis
+
+  #### Procesos de mejora, evaluación y adaptación continua
+
+  - 🩻 PR12 Auditorías internas
+  - 🦴 PR13 Acciones correctivas
+  - 🤓 PR14 Toma de retroalimentación
+  - 🥩 PR17 Proceso de mejora continua
+  - 🚨 PR8 Gestión de Riesgos
+
 - Verifica su versión, fecha de última actualización y responsable.
 - Resultado esperado: ítem seleccionado con su información básica recopilada.
 
@@ -39,6 +135,12 @@ Esta guía describe los pasos para adaptar correctamente los ítems existentes c
 - Modifica únicamente las secciones necesarias para adecuar el ítem a su nuevo contexto.
 - Mantén la estructura, formato y estilo definidos por el estándar de documentación.
 - Evita eliminar elementos obligatorios (como objetivos, entradas, salidas o métricas).
+- Para la adaptación puedes:
+  - Modificar pasos
+  - Eliminar pasos
+  - Añadir pasos
+  - Fusionar pasos
+  - Dividir un paso
 - Resultado esperado: nueva versión adaptada conforme a necesidades.
 
 ### Paso 5: Validar y revisar la adaptación
@@ -73,4 +175,5 @@ Esta guía describe los pasos para adaptar correctamente los ítems existentes c
     | ----------- | ----------------------------------------- | ------------ | -------------------------------------- |
     | **1.0.0**   | Creación inicial de la guía               | 13/05/2025   | Ethan Luna Cadó                        |
     | **1.0.1**   | Ahora la guía es para adaptar ítems       | 27/05/2025   | Angel Mauricio Ramírez Herrera         |
+    | **1.1.0**   | Agregar listado de ítems       | 05/06/2025   | Valeria Zúñiga, Mauricio Anguiano         |
 </details>

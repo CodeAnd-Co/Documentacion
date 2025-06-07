@@ -1,9 +1,9 @@
 ---
-title: 🥩 | PR17 Proceso de mejora continua
+title: 🥩 | PR17 Mejora continua
 sidebar_position: 17
 ---
 
-# 🥩 Proceso de mejora continua
+# 🥩 Mejora continua
 
 Proceso para identificar, evaluar, institucionalizar y comunicar mejoras en los procesos organizacionales, con el fin de aumentar la eficiencia y calidad del equipo y la infraestructura.
 

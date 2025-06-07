@@ -1,6 +1,6 @@
 ---
 title: Diagrama de stack tecnológico
-sidebar_position: 8
+sidebar_position: 3
 ---
 # Diagrama de stack tecnológico
 
