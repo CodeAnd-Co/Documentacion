@@ -227,4 +227,5 @@ Los **mockups** de la interfaz están disponibles en el siguiente enlace:
 | ----------------------- | ------------------------------------------------------- | ------- |
 | Juan Pablo Chávez       | Adición de Requisitos no-funcionales                    | V1.1    |
 | Daniel Queijeiro Albo   | Adición de Requisitos  de información, reglas de negocio | V2.0    |
-| Emiliano Gomez Gonzalez | Agrega el link de lso mockups                           | V2.1    |
+| Emiliano Gomez Gonzalez | Agrega el link de los mockups                           | V2.1    |
+| Diego Fuentes  | Actualizar requisitos no funcionales, diagrama de paquetes.                   | V2.2    |
