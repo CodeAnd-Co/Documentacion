@@ -32,174 +32,89 @@ Yo como usuario de la aplicación de escritorio Harvester quiero descargar el re
 ### Diagrama de Secuencia
 
 ```mermaid
-sequenceDiagram  
-  box App local
-    actor Usuario as Usuario
-    participant vistaAnalisis as Vista: moduloAnalisis.ejs
-    participant moduloAnalisis as Script: moduloAnalisis.js
-    participant cuadroFormulas as Cuadro de Fórmulas
-    participant jsPDF as jsPDF Library
-    participant ipcRenderer as Electron IPC
-    participant sistemaArchivos as Sistema de Archivos
-  end
+sequenceDiagram
+    actor Usuario
+    participant vistaAnalisis as generarReporte.ejs
+    participant utilAnalisis as moduloAnalisis.js
+    participant vistaTractores as seleccionarTractor.ejs
+    participant moduloTractores as moduloTractores.js
+    participant usecase as seleccionaDatosAComparar.js
 
-  %% Inicio del proceso de descarga
-  Usuario ->> vistaAnalisis: Click en botón "Descargar PDF"
-  vistaAnalisis ->> moduloAnalisis: click event en #descargarPDF
-  moduloAnalisis ->> moduloAnalisis: Capturar contenido anterior del botón
-  moduloAnalisis ->> vistaAnalisis: Deshabilitar botón, cambiar texto a "Descargando..."
-  moduloAnalisis ->> vistaAnalisis: Mostrar pantalla de bloqueo (remover clase 'oculto')
-  vistaAnalisis ->> Usuario: Interfaz bloqueada con indicador de descarga
-
-  %% Validaciones iniciales
-  alt jsPDF no está disponible
-    rect rgb(255, 200, 200)
-      moduloAnalisis ->> moduloAnalisis: Verificar if (!jsPDF)
-      moduloAnalisis ->> vistaAnalisis: Mostrar Swal "Error al descargar reporte"
-      moduloAnalisis ->> moduloAnalisis: throw new Error('[PDF] jsPDF no cargado')
-      moduloAnalisis ->> vistaAnalisis: Restaurar botón y ocultar pantalla bloqueo
-      vistaAnalisis ->> Usuario: Error mostrado, interfaz restaurada
-    end
-  else jsPDF disponible
-    rect rgb(200, 255, 200)
-      moduloAnalisis ->> jsPDF: new jsPDF({orientation: 'portrait', unit: 'pt', format: 'a4'})
-      jsPDF ->> moduloAnalisis: Documento PDF inicializado
-      moduloAnalisis ->> moduloAnalisis: Configurar márgenes (40pt) y dimensiones de página
-    end
-  end
-
-  %% Obtener contenedor de previsualización
-  moduloAnalisis ->> vistaAnalisis: document.getElementById('contenedor-elementos-previsualizacion')
-
-  %% Procesamiento de elementos del reporte
-  loop Por cada elemento en el contenedor
-    alt Elemento es tarjeta de texto (.previsualizacion-texto)
-      rect rgb(200, 255, 200)
-        moduloAnalisis ->> moduloAnalisis: Detectar tipo: preview-titulo/subtitulo/contenido
-
-        alt Es título
-          moduloAnalisis ->> jsPDF: setFontSize(18), setFont(undefined, 'bold')
-          moduloAnalisis ->> moduloAnalisis: espaciado = 14
-        else Es subtítulo
-          moduloAnalisis ->> jsPDF: setFontSize(15), setFont(undefined, 'bold')
-          moduloAnalisis ->> moduloAnalisis: espaciado = 16
-        else Es contenido
-          moduloAnalisis ->> jsPDF: setFontSize(12), setFont(undefined, 'normal')
-          moduloAnalisis ->> moduloAnalisis: espaciado = 11
-        end
-
-        %% Procesar párrafos dentro de la tarjeta de texto
-        loop Por cada párrafo <p>
-          moduloAnalisis ->> moduloAnalisis: const texto = elementoSecundario.textContent
-
-          alt Texto vacío
-            moduloAnalisis ->> moduloAnalisis: return (saltar párrafo)
-          else Texto presente
-            rect rgb(200, 255, 200)
-              moduloAnalisis ->> jsPDF: splitTextToSize(texto, anchoPagina)
-              jsPDF ->> moduloAnalisis: Array de líneas ajustadas
-
-              alt Texto excede página actual
-                moduloAnalisis ->> jsPDF: addPage()
-                moduloAnalisis ->> moduloAnalisis: posicionY = margen (reiniciar)
-              end
-
-              moduloAnalisis ->> jsPDF: text(lineas, margen, posicionY)
-              moduloAnalisis ->> moduloAnalisis: posicionY += altura calculada + espaciado
-            end
-          end
-        end
+    activate Usuario
+    Usuario->>vistaTractores: Selecciona tractores y columnas
+    activate vistaTractores
+    vistaTractores->>vistaTractores: manejarClickTractor(tractorNombre, datosExcel)
+    vistaTractores->>vistaTractores: cambiarSeleccionTractor(nombreTractor, casillaVerificacion)
+    vistaTractores->>vistaTractores: seleccionarColumna(nombreTractor, nombreColumna, casillaVerificacion)
+    vistaTractores-)moduloTractores: botonReporte(datosExcel)
+    deactivate vistaTractores
+    activate moduloTractores
+    
+    Note over moduloTractores: Validación de selecciones
+    moduloTractores->>moduloTractores: Validar tractoresSeleccionados
+    
+    alt Caso exitoso
+      rect Lightgreen    
+      moduloTractores-)usecase: seleccionaDatosAComparar(datosExcel, seleccion)
+      activate usecase
+      usecase->>moduloTractores: localStorage.setItem('datosFiltradosExcel', JSON.stringify(nuevoJSON))
+      moduloTractores-)vistaAnalisis: ipcRenderer.invoke('cargar-vista')
+      activate vistaAnalisis
+      vistaAnalisis->>Usuario: HTML
+      deactivate vistaAnalisis
+      deactivate usecase
       end
-
-    else Elemento es gráfica (.previsualizacion-grafica)
-      rect rgb(200, 255, 200)
-        moduloAnalisis ->> vistaAnalisis: elemento.querySelector('canvas')
-
-        alt Canvas no encontrado
-          moduloAnalisis ->> moduloAnalisis: return (saltar gráfica)
-        else Canvas encontrado
-          vistaAnalisis ->> moduloAnalisis: canvas element
-
-          %% Verificar si la gráfica tiene fórmulas aplicadas
-          moduloAnalisis ->> cuadroFormulas: Verificar fórmulas asociadas a la gráfica
-
-          alt Gráfica tiene fórmulas aplicadas
-            rect rgb(200, 255, 200)
-              cuadroFormulas ->> moduloAnalisis: Datos procesados con fórmulas (f(y): y + k, f(y): 2x, etc.)
-              moduloAnalisis ->> moduloAnalisis: Actualizar datos del Chart.js con resultados de fórmulas
-              moduloAnalisis ->> vistaAnalisis: chart.data.datasets[0].data = datosConFormulas
-              moduloAnalisis ->> vistaAnalisis: chart.update() - regenerar gráfica
-              Note over moduloAnalisis,cuadroFormulas: La gráfica ahora refleja los datos<br/>procesados por las fórmulas seleccionadas
-            end
-          else Gráfica sin fórmulas
-            Note over moduloAnalisis: Usar datos originales del Excel<br/>sin procesamiento adicional
-          end
-
-          %% Verificar título personalizado de la gráfica
-          moduloAnalisis ->> vistaAnalisis: Obtener título de input.titulo-grafica
-
-          alt Título personalizado existe
-            vistaAnalisis ->> moduloAnalisis: Título configurado por usuario
-            moduloAnalisis ->> vistaAnalisis: chart.options.plugins.title.text = tituloPersonalizado
-            moduloAnalisis ->> vistaAnalisis: chart.update() - aplicar título
-          end
-
-          %% Convertir canvas a PNG y agregar al PDF
-          vistaAnalisis ->> moduloAnalisis: lienzo.toDataURL('image/png')
-          vistaAnalisis ->> moduloAnalisis: imagen en formato base64 (con datos de fórmulas aplicadas)
-
-          moduloAnalisis ->> moduloAnalisis: Calcular proporción y dimensiones
-          moduloAnalisis ->> moduloAnalisis: const proporcion = lienzo.height / lienzo.width
-          moduloAnalisis ->> moduloAnalisis: Configurar anchoImagen, altoImagen, desplazamiento
-
-          alt Gráfica excede página actual
-            moduloAnalisis ->> jsPDF: addPage()
-            moduloAnalisis ->> moduloAnalisis: posicionY = margen
-          end
-
-          moduloAnalisis ->> jsPDF: setFillColor(224, 224, 224) - fondo gris
-          moduloAnalisis ->> jsPDF: roundedRect() - fondo con bordes redondeados
-          moduloAnalisis ->> jsPDF: addImage(imagen, 'PNG', coordenadas, dimensiones)
-          Note over jsPDF: La imagen incluye los datos procesados<br/>por fórmulas y título personalizado
-          moduloAnalisis ->> moduloAnalisis: posicionY += altoFondo + espaciado
-        end
+    else No se selecciona ningún tractor ni columnas
+      rect Lightcoral
+      moduloTractores->>vistaTractores: mostrarAlerta('No se ha seleccionado ningún tractor ni columnas')
+      activate vistaTractores
+      vistaTractores->>Usuario: Alerta de validación
+      deactivate vistaTractores
+      end
+    else Se selecciona tractor pero no columnas
+      rect Lightcoral
+      moduloTractores->>vistaTractores: mostrarAlerta('No hay columnas seleccionadas')
+      activate vistaTractores
+      vistaTractores->>Usuario: Alerta de validación
+      deactivate vistaTractores
+      end
+    else Se seleccionan columnas de tractor no seleccionado
+      rect Lightcoral
+      moduloTractores->>vistaTractores: mostrarAlerta('Tractor no seleccionado pero tiene columnas')
+      activate vistaTractores
+      vistaTractores->>Usuario: Alerta de validación
+      deactivate vistaTractores
+      end
+    else Combinación problemática: tractores sin columnas y columnas sin tractores
+      rect Lightcoral
+      moduloTractores->>vistaTractores: mostrarAlerta('No hay columnas seleccionadas para tractores seleccionados')
+      activate vistaTractores
+      vistaTractores->>Usuario: Alerta de validación
+      deactivate vistaTractores
+      end
+    else Solo hay columnas sin tractores seleccionados
+      rect Lightcoral
+      moduloTractores->>vistaTractores: mostrarAlerta('No hay tractores seleccionados')
+      activate vistaTractores
+      vistaTractores->>Usuario: Alerta de validación
+      deactivate vistaTractores
+      end
+    else Error al filtrar los datos
+      rect Lightcoral
+      usecase->>moduloTractores: response.error()
+      moduloTractores-)vistaAnalisis: ipcRenderer.invoke('cargar-vista', error)
+      vistaAnalisis->>Usuario: HTML con error
+      end
+    else Error general
+      rect Lightcoral
+      moduloTractores-)vistaTractores: mostrarAlerta('Ocurrió un problema')
+      deactivate moduloTractores
+      activate vistaTractores
+      vistaTractores->>Usuario: Alerta de error
+      deactivate vistaTractores
       end
     end
-  end
-
-  %% Finalización y guardado
-  moduloAnalisis ->> jsPDF: output('blob')
-  jsPDF ->> moduloAnalisis: documentoNuevo (PDF blob)
-  moduloAnalisis ->> moduloAnalisis: documentoNuevo.arrayBuffer()
-  moduloAnalisis ->> moduloAnalisis: Buffer.from(pdfBufer)
-  moduloAnalisis ->> ipcRenderer: send('guardar-pdf', Buffer)
-
-  %% Comunicación con proceso principal de Electron
-  ipcRenderer ->> sistemaArchivos: Mostrar diálogo "Guardar como..."
-
-  alt Usuario cancela guardado
-    rect rgb(255, 200, 200)
-      sistemaArchivos ->> ipcRenderer: Usuario canceló operación
-      ipcRenderer ->> moduloAnalisis: once('pdf-guardado', (event, false))
-      moduloAnalisis ->> vistaAnalisis: Restaurar botón y ocultar pantalla bloqueo
-      vistaAnalisis ->> Usuario: Interfaz restaurada sin guardar
-    end
-  else Error al guardar archivo
-    rect rgb(255, 200, 200)
-      sistemaArchivos ->> ipcRenderer: Error de escritura/permisos
-      ipcRenderer ->> moduloAnalisis: once('pdf-guardado', (event, false))
-      moduloAnalisis ->> vistaAnalisis: Restaurar interfaz, mostrar error
-      vistaAnalisis ->> Usuario: Error al guardar archivo
-    end
-  else Guardado exitoso
-    rect rgb(200, 255, 200)
-      sistemaArchivos ->> ipcRenderer: Archivo guardado correctamente
-      ipcRenderer ->> moduloAnalisis: once('pdf-guardado', (event, true))
-      moduloAnalisis ->> vistaAnalisis: Restaurar texto botón, habilitar botón
-      moduloAnalisis ->> vistaAnalisis: Ocultar pantalla bloqueo (agregar clase 'oculto')
-      vistaAnalisis ->> Usuario: Descarga completada, PDF con datos procesados por fórmulas
-    end
-  end
+    deactivate Usuario
 ```
 
 > *Descripción*: El diagrama de secuencia muestra cómo el usuario solicita la descarga del reporte y el sistema genera y entrega el PDF del reporte usando jsPDF localmente, incluyendo el procesamiento de fórmulas aplicadas a las gráficas
@@ -207,7 +122,7 @@ sequenceDiagram
 
 ### Mockup
 
-![Mockup](./mockups/MockupAnálisis.png)
+![Mockup](./mockups/MockupAnálisis.jpg)
 
 > *Descripción*: El mockup representa la interfaz del sistema donde el usuario puede seleccionar la opción para descargar el archivo PDF del reporte.
 

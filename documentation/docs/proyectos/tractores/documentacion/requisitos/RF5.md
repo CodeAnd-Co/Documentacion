@@ -66,7 +66,7 @@ sequenceDiagram
 
 ### Mockup
 
-![alt text](./mockups/MockupUsuario.png)
+![alt text](./mockups/CerrarSesion.jpg)
 
 > *Descripción*: El mockup representa la interfaz del sistema donde el usuario puede cerrar sesión. Muestra los campos requeridos y los botones de acción disponibles.
 
