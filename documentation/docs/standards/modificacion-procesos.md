@@ -76,6 +76,7 @@ Establece los criterios para determinar si una modificación a un proceso existe
 - [Estándar para crear nuevas plantillas](/docs/next/standards/estandar-plantillas)
 - [Definición de Ítems](/docs/next/procesos/PR2-definicion-items)
 - [Plantilla para estándares](/docs/next/plantillas/plantilla-estandares)
+- [Guía para adaptación de ítems existentes](/docs/next/guias/documentacion/guia-adaptacion-items)
 
 ## 📚 Historial de cambios
 
@@ -85,5 +86,6 @@ Establece los criterios para determinar si una modificación a un proceso existe
 |---------------------|-----------------------------------|-------------|-------------------------------------------------------------------|
 | **1.0.0**           | Creación inicial del estándar.    | 23/03/2025  | Galo Alejandro del Río Viggiano <br/> Ian Julián Estrada Castro  |
 | **1.2.0**           | Corregir redacción y estilo.    | 26/05/2025  | Angel Mauricio Ramírez Herrera  |
+| **1.3.0**           | Agregar la guía de adaptación de ítems como recurso relacionado | 4/06/2025 | Ian Julián Estrada Castro |
 
 </details>

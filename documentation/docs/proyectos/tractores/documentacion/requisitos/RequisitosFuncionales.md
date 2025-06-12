@@ -33,8 +33,8 @@ Los Requisitos Funcionales funcionales del sistema describen una variedad de acc
 - [**RF1**](./RF1.md): Usuario consulta página de inicio de sesión.\ `Done`
 - [**RF2**](./RF2.md): Usuario registrado inicia sesión.\ `Done`
 - [**RF3**](./RF3.md): Usuario consulta módulo de análisis.\ `Done`
-- [**RF4**](./RF4.md): Usuario consulta datos disponibles.\ `Ready`
-- [**RF5**](./RF5.md): Usuario cierra sesión.\
+- [**RF4**](./RF4.md): Usuario consulta datos disponibles.\ `Done`
+- [**RF5**](./RF5.md): Usuario cierra sesión.\ `Done`
 - [**RF6**](./RF6.md): Usuario carga excel a la plataforma.\ `Done`
 - [**RF7**](./RF7.md): Usuario sustituye el excel cargado.\ `Done`
 - [**RF8**](./RF8.md): Usuario elimina el excel cargado.\ `Done`
@@ -54,18 +54,18 @@ Los Requisitos Funcionales funcionales del sistema describen una variedad de acc
 - [**RF22**](./RF22.md): Usuario guarda fórmula.\ `Done`
 - [**RF23**](./RF23.md): Usuario elimina fórmula.\ `Done`
 - [**RF24**](./RF24.md): Usuario define fórmula.\ `Done`
-- [**RF25**](./RF25.md): Usuario selecciona parámetros de fórmula.\
-- [**RF26**](./RF26.md): Usuario selecciona datos a comparar.\ `Ready`
+- [**RF25**](./RF25.md): Usuario selecciona parámetros de fórmula.\ `Done`
+- [**RF26**](./RF26.md): Usuario selecciona datos a comparar.\ `Done`
 - [**RF27**](./RF27.md): Usuario aplica fórmula.\ `Done`
 - [**RF28**](./RF28.md): Usuario modifica fórmula.\ `Done`
 - [**RF29**](./RF29.md): Usuario carga fórmula.\ `Done`
-- [**RF30**](./RF30.md): Usuario retira fórmula.\
-- [**RF31**](./RF31.md): Usuario modifica parámetros de fórmula.\
-- [**RF32**](./RF32.md): Usuario consulta plantillas de reporte.\
+- [**RF30**](./RF30.md): Usuario retira fórmula.\ `Done`
+- [**RF31**](./RF31.md): Usuario modifica parámetros de fórmula.\ `Done`
+- [**RF32**](./RF32.md): Usuario consulta plantillas de reporte.\ `Ready`
 - [**RF33**](./RF33.md): Usuario elimina plantilla de reporte.\ `Ready`
 - [**RF34**](./RF34.md): Usuario guarda plantilla de reporte.\ `Ready`
 - [**RF35**](./RF35.md): Usuario selecciona plantilla de reporte.\ `Ready`
-- [**RF36**](./RF36.md): Administrador deshabilita dispositivo.\ `Ready`
+- [**RF36**](./RF36.md): Administrador deshabilita dispositivo.\ `Done`
 
 ---
 
@@ -227,4 +227,5 @@ Los **mockups** de la interfaz están disponibles en el siguiente enlace:
 | ----------------------- | ------------------------------------------------------- | ------- |
 | Juan Pablo Chávez       | Adición de Requisitos no-funcionales                    | V1.1    |
 | Daniel Queijeiro Albo   | Adición de Requisitos  de información, reglas de negocio | V2.0    |
-| Emiliano Gomez Gonzalez | Agrega el link de lso mockups                           | V2.1    |
+| Emiliano Gomez Gonzalez | Agrega el link de los mockups                           | V2.1    |
+| Diego Fuentes  | Actualizar requisitos no funcionales, diagrama de paquetes.                   | V2.2    |

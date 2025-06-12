@@ -213,8 +213,18 @@ sequenceDiagram
 
 ### Pruebas Unitarias 
 
-[Pruebas](https://docs.google.com/spreadsheets/d/1W-JW32dTsfI22-Yl5LydMhiu-oXHH_xo3hWvK6FHeLw/edit?gid=177557881#gid=177557881)
+#### [Pruebas del RF](https://docs.google.com/spreadsheets/d/1W-JW32dTsfI22-Yl5LydMhiu-oXHH_xo3hWvK6FHeLw/edit?gid=177557881#gid=177557881)
 ---
 
 ### Pull Request
 [https://github.com/CodeAnd-Co/App-Local-TracTech/pull/27](https://github.com/CodeAnd-Co/App-Local-TracTech/pull/27)
+
+### Historial de cambios
+
+| **Tipo de Versión** | **Descripción**                            | **Fecha** | **Colaborador**         |
+| ------------------- | ------------------------------------------ | --------- | ----------------------- |
+| **1.0**             |  Añadir requisitos de tractores            | 5/3/2025  | Antonio Landeros           |
+| **1.1**             |  Agregar precondicion en RF9 | 3/4/2025  | Ian Julian Estrada|
+| **1.2**             |  Ordenar todas las RFs y actualizar los datos | 1/6/2025  | Mauricio Anguiano|
+| **1.3**             |  Correcion de diagrama de secuencia | 2/6/2025  | Mauricio Anguiano|
+| **1.4**             |  Correccion criterios de aceptacion | 2/6/2025  | Mauricio Anguiano|

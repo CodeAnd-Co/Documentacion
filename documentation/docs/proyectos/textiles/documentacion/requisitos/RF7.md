@@ -77,7 +77,7 @@ sequenceDiagram
 
 > ![Interfaz de consultar lista de roles](imagenes/RF7ConsultaRoles.png)
 
-## **Pruebas**
+## **Pruebas Unitarias**
 
 _<u>[Enlace a pruebas RF7 Consultar lista de roles.](https://docs.google.com/spreadsheets/d/1NLGwGrGA5PVOEzLaqxa8Ts1D_Ng3QzzqNKWJYUzxD-M/edit?pli=1&gid=1274458259#gid=1274458259)</u>_
 

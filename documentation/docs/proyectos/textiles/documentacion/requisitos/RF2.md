@@ -118,7 +118,7 @@ sequenceDiagram
 
 > ![Interfaz de consultar lista de usuarios](imagenes/RF2CreaUsuario.png)
 
-## **Pruebas**
+## **Pruebas Unitarias**
 
 _<u>[Enlace a pruebas RF2 Consultar Lista de Usuarios.](https://docs.google.com/spreadsheets/d/1NLGwGrGA5PVOEzLaqxa8Ts1D_Ng3QzzqNKWJYUzxD-M/edit?gid=1685718554#gid=1685718554)</u>_
 

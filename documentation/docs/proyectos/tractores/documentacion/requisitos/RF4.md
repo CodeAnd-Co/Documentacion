@@ -85,16 +85,30 @@ sequenceDiagram
 
 ### Mockup
 
-![Mockup]
+![Mockup](./mockups/SeleccionaDatos.jpg)
 
 > *Descripción*: El mockup representa la interfaz del sistema donde se presentan los datos disponibles que se tienen de los tractores para su análisis.
 
 ---
 
 ### Pruebas Unitarias 
-- [Pruebas](https://docs.google.com/spreadsheets/d/1W-JW32dTsfI22-Yl5LydMhiu-oXHH_xo3hWvK6FHeLw/edit?gid=1089355168#gid=1089355168)
+#### [Pruebas del RF](https://docs.google.com/spreadsheets/d/1W-JW32dTsfI22-Yl5LydMhiu-oXHH_xo3hWvK6FHeLw/edit?gid=1089355168#gid=1089355168)
 
 ---
 
 ### Pull Request
 [https://github.com/CodeAnd-Co/App-Local-TracTech/pull/48](https://github.com/CodeAnd-Co/App-Local-TracTech/pull/48)
+
+[https://github.com/CodeAnd-Co/App-Local-TracTech/pull/48](https://github.com/CodeAnd-Co/App-Local-TracTech/pull/48)
+
+### Historial de cambios
+
+| **Tipo de Versión** | **Descripción**                            | **Fecha** | **Colaborador**         |
+| ------------------- | ------------------------------------------ | --------- | ----------------------- |
+| **1.0**             |  Añadir requisitos de tractores            | 5/3/2025  | Antonio Landeros           |
+| **1.1**             |  Añadir pull request a requisitos completados | 27/5/2025  | Juan Carlos Calderón|
+| **1.2**             |  Correccion de diagrama de secuencia de app local | 1/6/2025  | Mauricio Anguiano|
+| **2.0**             |  Agregar criterios de aceptacion | 2/6/2025  | Ian Julian Estrada|
+| **2.1**             |  Ordenar todas las RFs y actualizar los datos | 1/6/2025  | Mauricio Anguiano|
+| **2.2**             |  Correccion criterios de aceptacion | 3/6/2025  | Mauricio Anguiano|
+| **2.3**             |  Agregar pull requests de RF back| 5/6/2025  | Sofía Osorio|

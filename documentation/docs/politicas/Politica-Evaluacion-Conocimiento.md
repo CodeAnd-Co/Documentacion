@@ -9,8 +9,8 @@ Esta política establece los lineamientos necesarios para poder evaluar y valida
 
 ## 🎯 Objetivo
 
-- Definir un marco estandarizado para todo el departamento de evaluación de conocimiento mediante cuestionarios (Kahoot, Forms u otra plataforma).  
-- Establecer el criterio de aprobación mínima (70% de las respuestas tienen que ser correctas) para asegurar el dominio de los contenidos.  
+- Definir un marco estandarizado para todo el departamento de evaluación de conocimiento mediante cuestionarios (Kahoot, Google Forms u otras plataformas).  
+- Establecer el criterio de aprobación mínima para asegurar el dominio de los contenidos.  
 - Promover la retroalimentación y el refuerzo de los conceptos según los resultados que se obtienen en estos cuestionarios.
 
 ## 📊 Alcance 
@@ -22,14 +22,14 @@ Esta política aplica para:
 
 ## 📋 Declaración de la política
 - El team member designado deberá de preparar los cuestionarios basados en los aprendizajes que se han obtenido.  
-- Se debe de cumplir con un mínimo del 70% de las respuestas correctas dentro del cuestionario para poder asegurar que se tiene dominio del área.  
-- En dado caso de no obtener este porcentaje, el team member se comprometerá a tomar asesorías sobre el tema en cuestión y retomar el cuestionario.  
-- Las evaluaciones deberán de ser avisadas en el departamento con al menos 48 hrs de anticipación.
+- Se debe de cumplir con un mínimo de 70% de respuestas correctas dentro del cuestionario para poder asegurar que se tiene dominio del área.  
+- En dado caso de no obtener este porcentaje, el team member se comprometerá a tomar asesorías sobre el tema y retomar el cuestionario.  
+- Las evaluaciones deberán ser comunicadas al departamento con al menos 48 hrs de anticipación.
 
 ## 👥 Roles y responsabilidades 
 
-- **Encargado de hacer el cuestionario:** Cualquier miembro del departamento que tenga la tarea de hacer el cuestionario es el responsable de hacerlo y aplicarlo.  
-- **Roles de liderazgo:** Dependiendo del tema a tratar, se acercará con la persona de rol de liderazgo experta en el área para validar que esté correcto.
+- **Encargado del cuestionario:** El miembro del departamento responsable de hacer el cuestionario y aplicarlo.  
+- **Roles de liderazgo:** El encargado del cuestionario se acercará con el rol de liderazgo experta en el área del cuestionario para validar que esté correcto.
 
 ## ⚠️ Consecuencias del incumplimiento
 
@@ -41,4 +41,5 @@ El incumplimiento de esta política puede resultar en:
     | **Tipo de versión** | **Descripción** | **Fecha** | **Colaborador** |
     | ------------------- | --------------- | --------- | --------------- |
     | **1.0.0**           | Creación inicial de la política. | 28/05/2025 | Mauricio Anguiano Juárez |
+    | **1.0.1**           | Hacer la política más fácil de leer. | 06/06/2025 | Juaj Carlos Calderón García |
 </details>
