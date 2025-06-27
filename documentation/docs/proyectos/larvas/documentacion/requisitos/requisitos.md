@@ -118,10 +118,6 @@ Los requisitos no funcionales establecen las expectativas en términos de tiempo
 - Todo el código debe estar documentado adecuadamente utilizando comentarios explicativos y convenciones de documentación estándar para facilitar la comprensión por parte de otros desarrolladores.
 - El código debe ser acompañado por pruebas unitarias con al menos un 80% de cobertura en Backend.
 
-**Interoperabilidad**
-
-- El sistema debe ser capaz de integrarse con servicios de almacenamiento en la nube AWS debido a que el cliente cuenta con este servicio.
-
 ---
 
 ## Requisitos de información
@@ -294,3 +290,4 @@ Los **mockups** de la interfaz están disponibles en el siguiente enlace:
 | **2.3**     | Se agrega requisitos del SRS                     | 26/05/2025 | Emiliano Gomez Gonzalez     |
 | **2.4**     | Se agregaron diagramas de paquetes               | 26/05/2025 | Emiliano Gomez Gonzalez     |
 | **2.5**     | Actualizar la trazabilidad de los requisitos     | 06/06/2025 | Sofía Osorio                |
+| **2.6**     | Actualizar  requisitos     | 06/06/2025 | Mariana Juárez             |
